@@ -1,0 +1,20 @@
+<!-- This file contains <public> resource definitions for all
+     resources that were generated from the source data. -->
+
+<resources>
+
+  <!-- PRIVATE SECTION.  These resources have not been declared public.
+       You can make them public my moving these lines into a file in res/values. -->
+
+  <!-- Declared at res/drawable/ic_cts_minitab_selected.png:0 -->
+  <public type="drawable" name="ic_cts_minitab_selected" id="0x7f020000" />
+  <!-- Declared at res/drawable/ic_cts_selected.png:0 -->
+  <public type="drawable" name="ic_cts_selected" id="0x7f020001" />
+
+  <!-- Declared at res/xml/authenticator.xml:0 -->
+  <public type="xml" name="authenticator" id="0x7f030000" />
+
+  <!-- Declared at cts/tests/tests/accounts/res/values/strings.xml:22 -->
+  <public type="string" name="label" id="0x7f040000" />
+
+</resources>

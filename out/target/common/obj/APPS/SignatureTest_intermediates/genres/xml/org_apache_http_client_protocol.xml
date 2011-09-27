@@ -1,0 +1,132 @@
+<?xml version="1.0" ?><api><package name="org.apache.http.client.protocol">
+<interface abstract="true" deprecated="not deprecated" final="false" name="ClientContext" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="AUTHSCHEME_REGISTRY" static="true" transient="false" type="java.lang.String" value="&quot;http.authscheme-registry&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUTH_SCHEME_PREF" static="true" transient="false" type="java.lang.String" value="&quot;http.auth.scheme-pref&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="COOKIESPEC_REGISTRY" static="true" transient="false" type="java.lang.String" value="&quot;http.cookiespec-registry&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="COOKIE_ORIGIN" static="true" transient="false" type="java.lang.String" value="&quot;http.cookie-origin&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="COOKIE_SPEC" static="true" transient="false" type="java.lang.String" value="&quot;http.cookie-spec&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="COOKIE_STORE" static="true" transient="false" type="java.lang.String" value="&quot;http.cookie-store&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CREDS_PROVIDER" static="true" transient="false" type="java.lang.String" value="&quot;http.auth.credentials-provider&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROXY_AUTH_STATE" static="true" transient="false" type="java.lang.String" value="&quot;http.auth.proxy-scope&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TARGET_AUTH_STATE" static="true" transient="false" type="java.lang.String" value="&quot;http.auth.target-scope&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="USER_TOKEN" static="true" transient="false" type="java.lang.String" value="&quot;http.user-token&quot;" visibility="public" volatile="false">
+</field>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ClientContextConfigurer" static="false" visibility="public">
+<implements name="org.apache.http.client.protocol.ClientContext">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ClientContextConfigurer" static="false" type="org.apache.http.client.protocol.ClientContextConfigurer" visibility="public">
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAuthSchemePref" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="list" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAuthSchemeRegistry" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="registry" type="org.apache.http.auth.AuthSchemeRegistry">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCookieSpecRegistry" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="registry" type="org.apache.http.cookie.CookieSpecRegistry">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCookieStore" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="store" type="org.apache.http.client.CookieStore">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCredentialsProvider" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="provider" type="org.apache.http.client.CredentialsProvider">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RequestAddCookies" static="false" visibility="public">
+<implements name="org.apache.http.HttpRequestInterceptor">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RequestAddCookies" static="false" type="org.apache.http.client.protocol.RequestAddCookies" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="process" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RequestDefaultHeaders" static="false" visibility="public">
+<implements name="org.apache.http.HttpRequestInterceptor">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RequestDefaultHeaders" static="false" type="org.apache.http.client.protocol.RequestDefaultHeaders" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="process" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RequestProxyAuthentication" static="false" visibility="public">
+<implements name="org.apache.http.HttpRequestInterceptor">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RequestProxyAuthentication" static="false" type="org.apache.http.client.protocol.RequestProxyAuthentication" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="process" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RequestTargetAuthentication" static="false" visibility="public">
+<implements name="org.apache.http.HttpRequestInterceptor">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RequestTargetAuthentication" static="false" type="org.apache.http.client.protocol.RequestTargetAuthentication" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="process" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ResponseProcessCookies" static="false" visibility="public">
+<implements name="org.apache.http.HttpResponseInterceptor">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ResponseProcessCookies" static="false" type="org.apache.http.client.protocol.ResponseProcessCookies" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="process" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="response" type="org.apache.http.HttpResponse">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+</package></api>

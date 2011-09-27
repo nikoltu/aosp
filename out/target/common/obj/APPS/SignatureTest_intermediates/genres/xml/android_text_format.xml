@@ -1,0 +1,490 @@
+<?xml version="1.0" ?><api><package name="android.text.format">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DateFormat" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DateFormat" static="false" type="android.text.format.DateFormat" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="format" native="false" return="java.lang.CharSequence" static="true" synchronized="false" visibility="public">
+<parameter name="inFormat" type="java.lang.CharSequence">
+</parameter>
+<parameter name="inTimeInMillis" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="format" native="false" return="java.lang.CharSequence" static="true" synchronized="false" visibility="public">
+<parameter name="inFormat" type="java.lang.CharSequence">
+</parameter>
+<parameter name="inDate" type="java.util.Date">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="format" native="false" return="java.lang.CharSequence" static="true" synchronized="false" visibility="public">
+<parameter name="inFormat" type="java.lang.CharSequence">
+</parameter>
+<parameter name="inDate" type="java.util.Calendar">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getDateFormat" native="false" return="java.text.DateFormat" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getDateFormatOrder" native="false" return="char[]" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getLongDateFormat" native="false" return="java.text.DateFormat" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getMediumDateFormat" native="false" return="java.text.DateFormat" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getTimeFormat" native="false" return="java.text.DateFormat" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="is24HourFormat" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="AM_PM" static="true" transient="false" type="char" value="97" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CAPITAL_AM_PM" static="true" transient="false" type="char" value="65" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DATE" static="true" transient="false" type="char" value="100" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DAY" static="true" transient="false" type="char" value="69" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HOUR" static="true" transient="false" type="char" value="104" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HOUR_OF_DAY" static="true" transient="false" type="char" value="107" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MINUTE" static="true" transient="false" type="char" value="109" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MONTH" static="true" transient="false" type="char" value="77" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="QUOTE" static="true" transient="false" type="char" value="39" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SECONDS" static="true" transient="false" type="char" value="115" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TIME_ZONE" static="true" transient="false" type="char" value="122" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="YEAR" static="true" transient="false" type="char" value="121" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DateUtils" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DateUtils" static="false" type="android.text.format.DateUtils" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatDateRange" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="startMillis" type="long">
+</parameter>
+<parameter name="endMillis" type="long">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatDateRange" native="false" return="java.util.Formatter" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="formatter" type="java.util.Formatter">
+</parameter>
+<parameter name="startMillis" type="long">
+</parameter>
+<parameter name="endMillis" type="long">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatDateRange" native="false" return="java.util.Formatter" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="formatter" type="java.util.Formatter">
+</parameter>
+<parameter name="startMillis" type="long">
+</parameter>
+<parameter name="endMillis" type="long">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+<parameter name="timeZone" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatDateTime" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="millis" type="long">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatElapsedTime" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="elapsedSeconds" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatElapsedTime" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="recycle" type="java.lang.StringBuilder">
+</parameter>
+<parameter name="elapsedSeconds" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="formatSameDayTime" native="false" return="java.lang.CharSequence" static="true" synchronized="false" visibility="public">
+<parameter name="then" type="long">
+</parameter>
+<parameter name="now" type="long">
+</parameter>
+<parameter name="dateStyle" type="int">
+</parameter>
+<parameter name="timeStyle" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAMPMString" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="ampm" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDayOfWeekString" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="dayOfWeek" type="int">
+</parameter>
+<parameter name="abbrev" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMonthString" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="month" type="int">
+</parameter>
+<parameter name="abbrev" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRelativeDateTimeString" native="false" return="java.lang.CharSequence" static="true" synchronized="false" visibility="public">
+<parameter name="c" type="android.content.Context">
+</parameter>
+<parameter name="time" type="long">
+</parameter>
+<parameter name="minResolution" type="long">
+</parameter>
+<parameter name="transitionResolution" type="long">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRelativeTimeSpanString" native="false" return="java.lang.CharSequence" static="true" synchronized="false" visibility="public">
+<parameter name="startTime" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRelativeTimeSpanString" native="false" return="java.lang.CharSequence" static="true" synchronized="false" visibility="public">
+<parameter name="time" type="long">
+</parameter>
+<parameter name="now" type="long">
+</parameter>
+<parameter name="minResolution" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRelativeTimeSpanString" native="false" return="java.lang.CharSequence" static="true" synchronized="false" visibility="public">
+<parameter name="time" type="long">
+</parameter>
+<parameter name="now" type="long">
+</parameter>
+<parameter name="minResolution" type="long">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRelativeTimeSpanString" native="false" return="java.lang.CharSequence" static="true" synchronized="false" visibility="public">
+<parameter name="c" type="android.content.Context">
+</parameter>
+<parameter name="millis" type="long">
+</parameter>
+<parameter name="withPreposition" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRelativeTimeSpanString" native="false" return="java.lang.CharSequence" static="true" synchronized="false" visibility="public">
+<parameter name="c" type="android.content.Context">
+</parameter>
+<parameter name="millis" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isToday" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="when" type="long">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ABBREV_MONTH_FORMAT" static="true" transient="false" type="java.lang.String" value="&quot;%b&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ABBREV_WEEKDAY_FORMAT" static="true" transient="false" type="java.lang.String" value="&quot;%a&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DAY_IN_MILLIS" static="true" transient="false" type="long" value="86400000L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_12HOUR" static="true" transient="false" type="int" value="64" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_24HOUR" static="true" transient="false" type="int" value="128" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_ABBREV_ALL" static="true" transient="false" type="int" value="524288" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_ABBREV_MONTH" static="true" transient="false" type="int" value="65536" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_ABBREV_RELATIVE" static="true" transient="false" type="int" value="262144" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_ABBREV_TIME" static="true" transient="false" type="int" value="16384" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_ABBREV_WEEKDAY" static="true" transient="false" type="int" value="32768" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_CAP_AMPM" static="true" transient="false" type="int" value="256" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_CAP_MIDNIGHT" static="true" transient="false" type="int" value="4096" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_CAP_NOON" static="true" transient="false" type="int" value="1024" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_CAP_NOON_MIDNIGHT" static="true" transient="false" type="int" value="5120" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_NO_MIDNIGHT" static="true" transient="false" type="int" value="2048" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_NO_MONTH_DAY" static="true" transient="false" type="int" value="32" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_NO_NOON" static="true" transient="false" type="int" value="512" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_NO_NOON_MIDNIGHT" static="true" transient="false" type="int" value="2560" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_NO_YEAR" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_NUMERIC_DATE" static="true" transient="false" type="int" value="131072" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_SHOW_DATE" static="true" transient="false" type="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_SHOW_TIME" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_SHOW_WEEKDAY" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_SHOW_YEAR" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="FORMAT_UTC" static="true" transient="false" type="int" value="8192" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HOUR_IN_MILLIS" static="true" transient="false" type="long" value="3600000L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HOUR_MINUTE_24" static="true" transient="false" type="java.lang.String" value="&quot;%H:%M&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LENGTH_LONG" static="true" transient="false" type="int" value="10" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LENGTH_MEDIUM" static="true" transient="false" type="int" value="20" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LENGTH_SHORT" static="true" transient="false" type="int" value="30" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LENGTH_SHORTER" static="true" transient="false" type="int" value="40" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LENGTH_SHORTEST" static="true" transient="false" type="int" value="50" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MINUTE_IN_MILLIS" static="true" transient="false" type="long" value="60000L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MONTH_DAY_FORMAT" static="true" transient="false" type="java.lang.String" value="&quot;%-d&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MONTH_FORMAT" static="true" transient="false" type="java.lang.String" value="&quot;%B&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NUMERIC_MONTH_FORMAT" static="true" transient="false" type="java.lang.String" value="&quot;%m&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SECOND_IN_MILLIS" static="true" transient="false" type="long" value="1000L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEEKDAY_FORMAT" static="true" transient="false" type="java.lang.String" value="&quot;%A&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEEK_IN_MILLIS" static="true" transient="false" type="long" value="604800000L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="YEAR_FORMAT" static="true" transient="false" type="java.lang.String" value="&quot;%Y&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="YEAR_FORMAT_TWO_DIGITS" static="true" transient="false" type="java.lang.String" value="&quot;%g&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="YEAR_IN_MILLIS" static="true" transient="false" type="long" value="31449600000L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="sameMonthTable" static="true" transient="false" type="int[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="sameYearTable" static="true" transient="false" type="int[]" value="null" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="Formatter" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Formatter" static="false" type="android.text.format.Formatter" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatFileSize" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="number" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatIpAddress" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="addr" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatShortFileSize" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="number" type="long">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Time" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Time" static="false" type="android.text.format.Time" visibility="public">
+<parameter name="timezone" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Time" static="false" type="android.text.format.Time" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Time" static="false" type="android.text.format.Time" visibility="public">
+<parameter name="other" type="android.text.format.Time">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="after" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="that" type="android.text.format.Time">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="before" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="that" type="android.text.format.Time">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="timezone" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="compare" native="true" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="a" type="android.text.format.Time">
+</parameter>
+<parameter name="b" type="android.text.format.Time">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="format" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="format" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="format2445" native="true" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="format3339" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="allDay" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getActualMaximum" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="field" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentTimezone" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getJulianDay" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="millis" type="long">
+</parameter>
+<parameter name="gmtoff" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWeekNumber" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isEpoch" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="time" type="android.text.format.Time">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="normalize" native="true" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="ignoreDst" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse3339" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="set" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="millis" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="that" type="android.text.format.Time">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="second" type="int">
+</parameter>
+<parameter name="minute" type="int">
+</parameter>
+<parameter name="hour" type="int">
+</parameter>
+<parameter name="monthDay" type="int">
+</parameter>
+<parameter name="month" type="int">
+</parameter>
+<parameter name="year" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="monthDay" type="int">
+</parameter>
+<parameter name="month" type="int">
+</parameter>
+<parameter name="year" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setJulianDay" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="julianDay" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setToNow" native="true" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="switchTimezone" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="timezone" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toMillis" native="true" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="ignoreDst" type="boolean">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="EPOCH_JULIAN_DAY" static="true" transient="false" type="int" value="2440588" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FRIDAY" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HOUR" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MINUTE" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MONDAY" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MONTH" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MONTH_DAY" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SATURDAY" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SECOND" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SUNDAY" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="THURSDAY" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TIMEZONE_UTC" static="true" transient="false" type="java.lang.String" value="&quot;UTC&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TUESDAY" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEDNESDAY" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEEK_DAY" static="true" transient="false" type="int" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEEK_NUM" static="true" transient="false" type="int" value="9" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="YEAR" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="YEAR_DAY" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="allDay" static="false" transient="false" type="boolean" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="gmtoff" static="false" transient="false" type="long" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="hour" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="isDst" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="minute" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="month" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="monthDay" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="second" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="timezone" static="false" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="weekDay" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="year" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="yearDay" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+</class>
+</package></api>

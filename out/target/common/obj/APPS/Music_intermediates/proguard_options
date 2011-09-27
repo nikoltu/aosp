@@ -1,0 +1,74 @@
+# view AndroidManifest.xml #generated:132
+-keep class com.android.music.AlbumBrowserActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:125
+-keep class com.android.music.ArtistAlbumBrowserActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:90
+-keep class com.android.music.AudioPreview { <init>(...); }
+
+# view res/layout/music_picker_item.xml #generated:19
+-keep class com.android.music.CheckableRelativeLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:256
+-keep class com.android.music.CreatePlaylist { <init>(...); }
+
+# view AndroidManifest.xml #generated:262
+-keep class com.android.music.DeleteItems { <init>(...); }
+
+# view AndroidManifest.xml #generated:269
+-keep class com.android.music.MediaAppWidgetProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class com.android.music.MediaButtonIntentReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:211
+-keep class com.android.music.MediaPickerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class com.android.music.MediaPlaybackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:266
+-keep class com.android.music.MediaPlaybackService { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class com.android.music.MusicBrowserActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:235
+-keep class com.android.music.MusicPicker { <init>(...); }
+
+# view AndroidManifest.xml #generated:139
+-keep class com.android.music.NowPlayingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:167
+-keep class com.android.music.PlaylistBrowserActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:154
+-keep class com.android.music.QueryBrowserActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:258
+-keep class com.android.music.RenamePlaylist { <init>(...); }
+
+# view res/layout-finger/audio_player_common.xml #generated:55
+# view res/layout-finger/audio_player_common.xml #generated:59
+-keep class com.android.music.RepeatingImageButton { <init>(...); }
+
+# view AndroidManifest.xml #generated:264
+-keep class com.android.music.ScanningProgress { <init>(...); }
+
+# view res/layout-finger/media_picker_activity.xml #generated:27
+# view res/layout-land-finger/media_picker_activity.xml #generated:27
+-keep class com.android.music.TouchInterceptor { <init>(...); }
+
+# view AndroidManifest.xml #generated:146
+-keep class com.android.music.TrackBrowserActivity { <init>(...); }
+
+# view res/layout-finger/weekpicker.xml #generated:35
+-keep class com.android.music.VerticalTextSpinner { <init>(...); }
+
+# view AndroidManifest.xml #generated:193
+-keep class com.android.music.VideoBrowserActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:260
+-keep class com.android.music.WeekSelector { <init>(...); }
+

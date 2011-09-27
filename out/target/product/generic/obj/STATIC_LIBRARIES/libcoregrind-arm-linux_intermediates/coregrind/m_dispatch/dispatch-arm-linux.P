@@ -1,0 +1,19 @@
+out/target/product/generic/obj/STATIC_LIBRARIES/libcoregrind-arm-linux_intermediates/coregrind/m_dispatch/dispatch-arm-linux.o: \
+ external/valgrind/main/coregrind/m_dispatch/dispatch-arm-linux.S \
+ system/core/include/arch/linux-arm/AndroidConfig.h \
+ external/valgrind/main/coregrind/pub_core_basics_asm.h \
+ external/valgrind/main/include/pub_tool_basics_asm.h \
+ external/valgrind/main/config.h \
+ external/valgrind/main/coregrind/pub_core_dispatch_asm.h \
+ external/valgrind/main/VEX/pub/libvex_trc_values.h \
+ external/valgrind/main/coregrind/pub_core_transtab_asm.h \
+ external/valgrind/main/VEX/pub/libvex_guest_offsets.h
+ external/valgrind/main/coregrind/m_dispatch/dispatch-arm-linux.S :
+ system/core/include/arch/linux-arm/AndroidConfig.h :
+ external/valgrind/main/coregrind/pub_core_basics_asm.h :
+ external/valgrind/main/include/pub_tool_basics_asm.h :
+ external/valgrind/main/config.h :
+ external/valgrind/main/coregrind/pub_core_dispatch_asm.h :
+ external/valgrind/main/VEX/pub/libvex_trc_values.h :
+ external/valgrind/main/coregrind/pub_core_transtab_asm.h :
+ external/valgrind/main/VEX/pub/libvex_guest_offsets.h :

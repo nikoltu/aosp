@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:26
+-keep class android.accessibilityservice.delegate.DelegatingAccessibilityService { <init>(...); }
+
+# view AndroidManifest.xml #generated:33
+-keep class android.accessibilityservice.delegate.DelegatingAccessibilityService$DelegatingConnectionService { <init>(...); }
+

@@ -1,0 +1,27 @@
+out/target/product/generic/obj/STATIC_LIBRARIES/libvex-arm-linux_intermediates/VEX/priv/host_x86_isel.o: \
+ external/valgrind/main/VEX/priv/host_x86_isel.c \
+ system/core/include/arch/linux-arm/AndroidConfig.h \
+ external/valgrind/main/VEX/pub/libvex_basictypes.h \
+ external/valgrind/main/VEX/pub/libvex_ir.h \
+ external/valgrind/main/VEX/pub/libvex_basictypes.h \
+ external/valgrind/main/VEX/pub/libvex.h \
+ external/valgrind/main/VEX/pub/libvex_ir.h \
+ external/valgrind/main/VEX/priv/ir_match.h \
+ external/valgrind/main/VEX/priv/main_util.h \
+ external/valgrind/main/VEX/priv/main_globals.h \
+ external/valgrind/main/VEX/priv/host_generic_regs.h \
+ external/valgrind/main/VEX/priv/host_generic_simd64.h \
+ external/valgrind/main/VEX/priv/host_x86_defs.h
+ external/valgrind/main/VEX/priv/host_x86_isel.c :
+ system/core/include/arch/linux-arm/AndroidConfig.h :
+ external/valgrind/main/VEX/pub/libvex_basictypes.h :
+ external/valgrind/main/VEX/pub/libvex_ir.h :
+ external/valgrind/main/VEX/pub/libvex_basictypes.h :
+ external/valgrind/main/VEX/pub/libvex.h :
+ external/valgrind/main/VEX/pub/libvex_ir.h :
+ external/valgrind/main/VEX/priv/ir_match.h :
+ external/valgrind/main/VEX/priv/main_util.h :
+ external/valgrind/main/VEX/priv/main_globals.h :
+ external/valgrind/main/VEX/priv/host_generic_regs.h :
+ external/valgrind/main/VEX/priv/host_generic_simd64.h :
+ external/valgrind/main/VEX/priv/host_x86_defs.h :

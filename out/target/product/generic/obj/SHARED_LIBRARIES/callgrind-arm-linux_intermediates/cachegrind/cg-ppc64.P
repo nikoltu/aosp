@@ -1,0 +1,5 @@
+out/target/product/generic/obj/SHARED_LIBRARIES/callgrind-arm-linux_intermediates/cachegrind/cg-ppc64.o: \
+ external/valgrind/main/cachegrind/cg-ppc64.c \
+ system/core/include/arch/linux-arm/AndroidConfig.h
+ external/valgrind/main/cachegrind/cg-ppc64.c :
+ system/core/include/arch/linux-arm/AndroidConfig.h :

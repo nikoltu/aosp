@@ -1,0 +1,380 @@
+<?xml version="1.0" ?><api><package name="android.bluetooth">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="BluetoothAdapter" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="cancelDiscovery" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="checkBluetoothAddress" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="address" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="disable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="enable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAddress" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBondedDevices" native="false" return="java.util.Set&lt;android.bluetooth.BluetoothDevice&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultAdapter" native="false" return="android.bluetooth.BluetoothAdapter" static="true" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRemoteDevice" native="false" return="android.bluetooth.BluetoothDevice" static="false" synchronized="false" visibility="public">
+<parameter name="address" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getScanMode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getState" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isDiscovering" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="listenUsingInsecureRfcommWithServiceRecord" native="false" return="android.bluetooth.BluetoothServerSocket" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="uuid" type="java.util.UUID">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="listenUsingRfcommWithServiceRecord" native="false" return="android.bluetooth.BluetoothServerSocket" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="uuid" type="java.util.UUID">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setName" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startDiscovery" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="ACTION_DISCOVERY_FINISHED" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.adapter.action.DISCOVERY_FINISHED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_DISCOVERY_STARTED" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.adapter.action.DISCOVERY_STARTED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_LOCAL_NAME_CHANGED" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.adapter.action.LOCAL_NAME_CHANGED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_REQUEST_DISCOVERABLE" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.adapter.action.REQUEST_DISCOVERABLE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_REQUEST_ENABLE" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.adapter.action.REQUEST_ENABLE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_SCAN_MODE_CHANGED" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.adapter.action.SCAN_MODE_CHANGED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_STATE_CHANGED" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.adapter.action.STATE_CHANGED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR" static="true" transient="false" type="int" value="-2147483648" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_DISCOVERABLE_DURATION" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.adapter.extra.DISCOVERABLE_DURATION&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_LOCAL_NAME" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.adapter.extra.LOCAL_NAME&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_PREVIOUS_SCAN_MODE" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.adapter.extra.PREVIOUS_SCAN_MODE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_PREVIOUS_STATE" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.adapter.extra.PREVIOUS_STATE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_SCAN_MODE" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.adapter.extra.SCAN_MODE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_STATE" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.adapter.extra.STATE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCAN_MODE_CONNECTABLE" static="true" transient="false" type="int" value="21" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCAN_MODE_CONNECTABLE_DISCOVERABLE" static="true" transient="false" type="int" value="23" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCAN_MODE_NONE" static="true" transient="false" type="int" value="20" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATE_OFF" static="true" transient="false" type="int" value="10" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATE_ON" static="true" transient="false" type="int" value="12" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATE_TURNING_OFF" static="true" transient="false" type="int" value="13" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATE_TURNING_ON" static="true" transient="false" type="int" value="11" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="BluetoothClass" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDeviceClass" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMajorDeviceClass" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasService" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="service" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="out" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BluetoothClass.Device" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BluetoothClass.Device" static="false" type="android.bluetooth.BluetoothClass.Device" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="AUDIO_VIDEO_CAMCORDER" static="true" transient="false" type="int" value="1076" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIO_VIDEO_CAR_AUDIO" static="true" transient="false" type="int" value="1056" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIO_VIDEO_HANDSFREE" static="true" transient="false" type="int" value="1032" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIO_VIDEO_HEADPHONES" static="true" transient="false" type="int" value="1048" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIO_VIDEO_HIFI_AUDIO" static="true" transient="false" type="int" value="1064" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIO_VIDEO_LOUDSPEAKER" static="true" transient="false" type="int" value="1044" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIO_VIDEO_MICROPHONE" static="true" transient="false" type="int" value="1040" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIO_VIDEO_PORTABLE_AUDIO" static="true" transient="false" type="int" value="1052" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIO_VIDEO_SET_TOP_BOX" static="true" transient="false" type="int" value="1060" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIO_VIDEO_UNCATEGORIZED" static="true" transient="false" type="int" value="1024" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIO_VIDEO_VCR" static="true" transient="false" type="int" value="1068" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIO_VIDEO_VIDEO_CAMERA" static="true" transient="false" type="int" value="1072" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIO_VIDEO_VIDEO_CONFERENCING" static="true" transient="false" type="int" value="1088" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIO_VIDEO_VIDEO_DISPLAY_AND_LOUDSPEAKER" static="true" transient="false" type="int" value="1084" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIO_VIDEO_VIDEO_GAMING_TOY" static="true" transient="false" type="int" value="1096" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIO_VIDEO_VIDEO_MONITOR" static="true" transient="false" type="int" value="1080" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIO_VIDEO_WEARABLE_HEADSET" static="true" transient="false" type="int" value="1028" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="COMPUTER_DESKTOP" static="true" transient="false" type="int" value="260" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="COMPUTER_HANDHELD_PC_PDA" static="true" transient="false" type="int" value="272" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="COMPUTER_LAPTOP" static="true" transient="false" type="int" value="268" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="COMPUTER_PALM_SIZE_PC_PDA" static="true" transient="false" type="int" value="276" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="COMPUTER_SERVER" static="true" transient="false" type="int" value="264" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="COMPUTER_UNCATEGORIZED" static="true" transient="false" type="int" value="256" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="COMPUTER_WEARABLE" static="true" transient="false" type="int" value="280" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HEALTH_BLOOD_PRESSURE" static="true" transient="false" type="int" value="2308" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HEALTH_DATA_DISPLAY" static="true" transient="false" type="int" value="2332" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HEALTH_GLUCOSE" static="true" transient="false" type="int" value="2320" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HEALTH_PULSE_OXIMETER" static="true" transient="false" type="int" value="2324" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HEALTH_PULSE_RATE" static="true" transient="false" type="int" value="2328" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HEALTH_THERMOMETER" static="true" transient="false" type="int" value="2312" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HEALTH_UNCATEGORIZED" static="true" transient="false" type="int" value="2304" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HEALTH_WEIGHING" static="true" transient="false" type="int" value="2316" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PHONE_CELLULAR" static="true" transient="false" type="int" value="516" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PHONE_CORDLESS" static="true" transient="false" type="int" value="520" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PHONE_ISDN" static="true" transient="false" type="int" value="532" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PHONE_MODEM_OR_GATEWAY" static="true" transient="false" type="int" value="528" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PHONE_SMART" static="true" transient="false" type="int" value="524" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PHONE_UNCATEGORIZED" static="true" transient="false" type="int" value="512" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TOY_CONTROLLER" static="true" transient="false" type="int" value="2064" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TOY_DOLL_ACTION_FIGURE" static="true" transient="false" type="int" value="2060" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TOY_GAME" static="true" transient="false" type="int" value="2068" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TOY_ROBOT" static="true" transient="false" type="int" value="2052" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TOY_UNCATEGORIZED" static="true" transient="false" type="int" value="2048" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TOY_VEHICLE" static="true" transient="false" type="int" value="2056" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEARABLE_GLASSES" static="true" transient="false" type="int" value="1812" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEARABLE_HELMET" static="true" transient="false" type="int" value="1808" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEARABLE_JACKET" static="true" transient="false" type="int" value="1804" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEARABLE_PAGER" static="true" transient="false" type="int" value="1800" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEARABLE_UNCATEGORIZED" static="true" transient="false" type="int" value="1792" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEARABLE_WRIST_WATCH" static="true" transient="false" type="int" value="1796" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BluetoothClass.Device.Major" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BluetoothClass.Device.Major" static="false" type="android.bluetooth.BluetoothClass.Device.Major" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="AUDIO_VIDEO" static="true" transient="false" type="int" value="1024" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="COMPUTER" static="true" transient="false" type="int" value="256" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HEALTH" static="true" transient="false" type="int" value="2304" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IMAGING" static="true" transient="false" type="int" value="1536" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MISC" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NETWORKING" static="true" transient="false" type="int" value="768" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PERIPHERAL" static="true" transient="false" type="int" value="1280" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PHONE" static="true" transient="false" type="int" value="512" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TOY" static="true" transient="false" type="int" value="2048" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNCATEGORIZED" static="true" transient="false" type="int" value="7936" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEARABLE" static="true" transient="false" type="int" value="1792" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="BluetoothClass.Service" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BluetoothClass.Service" static="false" type="android.bluetooth.BluetoothClass.Service" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="AUDIO" static="true" transient="false" type="int" value="2097152" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CAPTURE" static="true" transient="false" type="int" value="524288" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INFORMATION" static="true" transient="false" type="int" value="8388608" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LIMITED_DISCOVERABILITY" static="true" transient="false" type="int" value="8192" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NETWORKING" static="true" transient="false" type="int" value="131072" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OBJECT_TRANSFER" static="true" transient="false" type="int" value="1048576" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="POSITIONING" static="true" transient="false" type="int" value="65536" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RENDER" static="true" transient="false" type="int" value="262144" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TELEPHONY" static="true" transient="false" type="int" value="4194304" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="BluetoothDevice" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="createInsecureRfcommSocketToServiceRecord" native="false" return="android.bluetooth.BluetoothSocket" static="false" synchronized="false" visibility="public">
+<parameter name="uuid" type="java.util.UUID">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createRfcommSocketToServiceRecord" native="false" return="android.bluetooth.BluetoothSocket" static="false" synchronized="false" visibility="public">
+<parameter name="uuid" type="java.util.UUID">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAddress" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBluetoothClass" native="false" return="android.bluetooth.BluetoothClass" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBondState" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="out" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ACTION_ACL_CONNECTED" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.device.action.ACL_CONNECTED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_ACL_DISCONNECTED" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.device.action.ACL_DISCONNECTED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_ACL_DISCONNECT_REQUESTED" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_BOND_STATE_CHANGED" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.device.action.BOND_STATE_CHANGED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_CLASS_CHANGED" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.device.action.CLASS_CHANGED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_FOUND" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.device.action.FOUND&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_NAME_CHANGED" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.device.action.NAME_CHANGED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BOND_BONDED" static="true" transient="false" type="int" value="12" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BOND_BONDING" static="true" transient="false" type="int" value="11" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BOND_NONE" static="true" transient="false" type="int" value="10" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR" static="true" transient="false" type="int" value="-2147483648" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_BOND_STATE" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.device.extra.BOND_STATE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_CLASS" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.device.extra.CLASS&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_DEVICE" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.device.extra.DEVICE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_NAME" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.device.extra.NAME&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_PREVIOUS_BOND_STATE" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.device.extra.PREVIOUS_BOND_STATE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_RSSI" static="true" transient="false" type="java.lang.String" value="&quot;android.bluetooth.device.extra.RSSI&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="BluetoothServerSocket" static="false" visibility="public">
+<implements name="java.io.Closeable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="accept" native="false" return="android.bluetooth.BluetoothSocket" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="accept" native="false" return="android.bluetooth.BluetoothSocket" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="BluetoothSocket" static="false" visibility="public">
+<implements name="java.io.Closeable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="connect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputStream" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOutputStream" native="false" return="java.io.OutputStream" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRemoteDevice" native="false" return="android.bluetooth.BluetoothDevice" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package></api>

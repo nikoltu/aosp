@@ -1,0 +1,1052 @@
+<?xml version="1.0" ?><api><package name="javax.net.ssl">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="CertPathTrustManagerParameters" static="false" visibility="public">
+<implements name="javax.net.ssl.ManagerFactoryParameters">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="CertPathTrustManagerParameters" static="false" type="javax.net.ssl.CertPathTrustManagerParameters" visibility="public">
+<parameter name="parameters" type="java.security.cert.CertPathParameters">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParameters" native="false" return="java.security.cert.CertPathParameters" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.util.EventObject" final="false" name="HandshakeCompletedEvent" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HandshakeCompletedEvent" static="false" type="javax.net.ssl.HandshakeCompletedEvent" visibility="public">
+<parameter name="sock" type="javax.net.ssl.SSLSocket">
+</parameter>
+<parameter name="s" type="javax.net.ssl.SSLSession">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCipherSuite" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalCertificates" native="false" return="java.security.cert.Certificate[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalPrincipal" native="false" return="java.security.Principal" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPeerCertificateChain" native="false" return="javax.security.cert.X509Certificate[]" static="false" synchronized="false" visibility="public">
+<exception name="SSLPeerUnverifiedException" type="javax.net.ssl.SSLPeerUnverifiedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPeerCertificates" native="false" return="java.security.cert.Certificate[]" static="false" synchronized="false" visibility="public">
+<exception name="SSLPeerUnverifiedException" type="javax.net.ssl.SSLPeerUnverifiedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPeerPrincipal" native="false" return="java.security.Principal" static="false" synchronized="false" visibility="public">
+<exception name="SSLPeerUnverifiedException" type="javax.net.ssl.SSLPeerUnverifiedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSession" native="false" return="javax.net.ssl.SSLSession" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSocket" native="false" return="javax.net.ssl.SSLSocket" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="HandshakeCompletedListener" static="false" visibility="public">
+<implements name="java.util.EventListener">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="handshakeCompleted" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="event" type="javax.net.ssl.HandshakeCompletedEvent">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="HostnameVerifier" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="verify" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="hostname" type="java.lang.String">
+</parameter>
+<parameter name="session" type="javax.net.ssl.SSLSession">
+</parameter>
+</method>
+</interface>
+<class abstract="true" deprecated="not deprecated" extends="java.net.HttpURLConnection" final="false" name="HttpsURLConnection" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HttpsURLConnection" static="false" type="javax.net.ssl.HttpsURLConnection" visibility="protected">
+<parameter name="url" type="java.net.URL">
+</parameter>
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="getCipherSuite" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultHostnameVerifier" native="false" return="javax.net.ssl.HostnameVerifier" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultSSLSocketFactory" native="false" return="javax.net.ssl.SSLSocketFactory" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHostnameVerifier" native="false" return="javax.net.ssl.HostnameVerifier" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLocalCertificates" native="false" return="java.security.cert.Certificate[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalPrincipal" native="false" return="java.security.Principal" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPeerPrincipal" native="false" return="java.security.Principal" static="false" synchronized="false" visibility="public">
+<exception name="SSLPeerUnverifiedException" type="javax.net.ssl.SSLPeerUnverifiedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSSLSocketFactory" native="false" return="javax.net.ssl.SSLSocketFactory" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getServerCertificates" native="false" return="java.security.cert.Certificate[]" static="false" synchronized="false" visibility="public">
+<exception name="SSLPeerUnverifiedException" type="javax.net.ssl.SSLPeerUnverifiedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDefaultHostnameVerifier" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="v" type="javax.net.ssl.HostnameVerifier">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDefaultSSLSocketFactory" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="sf" type="javax.net.ssl.SSLSocketFactory">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setHostnameVerifier" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="v" type="javax.net.ssl.HostnameVerifier">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSSLSocketFactory" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="sf" type="javax.net.ssl.SSLSocketFactory">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="hostnameVerifier" static="false" transient="false" type="javax.net.ssl.HostnameVerifier" visibility="protected" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="KeyManager" static="false" visibility="public">
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="KeyManagerFactory" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="KeyManagerFactory" static="false" type="javax.net.ssl.KeyManagerFactory" visibility="protected">
+<parameter name="factorySpi" type="javax.net.ssl.KeyManagerFactorySpi">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getDefaultAlgorithm" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.net.ssl.KeyManagerFactory" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.net.ssl.KeyManagerFactory" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.net.ssl.KeyManagerFactory" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getKeyManagers" native="false" return="javax.net.ssl.KeyManager[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProvider" native="false" return="java.security.Provider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ks" type="java.security.KeyStore">
+</parameter>
+<parameter name="password" type="char[]">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="UnrecoverableKeyException" type="java.security.UnrecoverableKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="spec" type="javax.net.ssl.ManagerFactoryParameters">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="KeyManagerFactorySpi" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="KeyManagerFactorySpi" static="false" type="javax.net.ssl.KeyManagerFactorySpi" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetKeyManagers" native="false" return="javax.net.ssl.KeyManager[]" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="ks" type="java.security.KeyStore">
+</parameter>
+<parameter name="password" type="char[]">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="UnrecoverableKeyException" type="java.security.UnrecoverableKeyException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="spec" type="javax.net.ssl.ManagerFactoryParameters">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="KeyStoreBuilderParameters" static="false" visibility="public">
+<implements name="javax.net.ssl.ManagerFactoryParameters">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="KeyStoreBuilderParameters" static="false" type="javax.net.ssl.KeyStoreBuilderParameters" visibility="public">
+<parameter name="builder" type="java.security.KeyStore.Builder">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="KeyStoreBuilderParameters" static="false" type="javax.net.ssl.KeyStoreBuilderParameters" visibility="public">
+<parameter name="parameters" type="java.util.List&lt;java.security.KeyStore.Builder&gt;">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParameters" native="false" return="java.util.List&lt;java.security.KeyStore.Builder&gt;" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ManagerFactoryParameters" static="false" visibility="public">
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SSLContext" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SSLContext" static="false" type="javax.net.ssl.SSLContext" visibility="protected">
+<parameter name="contextSpi" type="javax.net.ssl.SSLContextSpi">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<parameter name="protocol" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="createSSLEngine" native="false" return="javax.net.ssl.SSLEngine" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="createSSLEngine" native="false" return="javax.net.ssl.SSLEngine" static="false" synchronized="false" visibility="public">
+<parameter name="peerHost" type="java.lang.String">
+</parameter>
+<parameter name="peerPort" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getClientSessionContext" native="false" return="javax.net.ssl.SSLSessionContext" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefault" native="false" return="javax.net.ssl.SSLContext" static="true" synchronized="false" visibility="public">
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getDefaultSSLParameters" native="false" return="javax.net.ssl.SSLParameters" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="javax.net.ssl.SSLContext" static="true" synchronized="false" visibility="public">
+<parameter name="protocol" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="javax.net.ssl.SSLContext" static="true" synchronized="false" visibility="public">
+<parameter name="protocol" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="javax.net.ssl.SSLContext" static="true" synchronized="false" visibility="public">
+<parameter name="protocol" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProtocol" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProvider" native="false" return="java.security.Provider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getServerSessionContext" native="false" return="javax.net.ssl.SSLSessionContext" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getServerSocketFactory" native="false" return="javax.net.ssl.SSLServerSocketFactory" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getSocketFactory" native="false" return="javax.net.ssl.SSLSocketFactory" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getSupportedSSLParameters" native="false" return="javax.net.ssl.SSLParameters" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="km" type="javax.net.ssl.KeyManager[]">
+</parameter>
+<parameter name="tm" type="javax.net.ssl.TrustManager[]">
+</parameter>
+<parameter name="sr" type="java.security.SecureRandom">
+</parameter>
+<exception name="KeyManagementException" type="java.security.KeyManagementException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDefault" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="sslContext" type="javax.net.ssl.SSLContext">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SSLContextSpi" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SSLContextSpi" static="false" type="javax.net.ssl.SSLContextSpi" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineCreateSSLEngine" native="false" return="javax.net.ssl.SSLEngine" static="false" synchronized="false" visibility="protected">
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineCreateSSLEngine" native="false" return="javax.net.ssl.SSLEngine" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetClientSessionContext" native="false" return="javax.net.ssl.SSLSessionContext" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineGetDefaultSSLParameters" native="false" return="javax.net.ssl.SSLParameters" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetServerSessionContext" native="false" return="javax.net.ssl.SSLSessionContext" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetServerSocketFactory" native="false" return="javax.net.ssl.SSLServerSocketFactory" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetSocketFactory" native="false" return="javax.net.ssl.SSLSocketFactory" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineGetSupportedSSLParameters" native="false" return="javax.net.ssl.SSLParameters" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="km" type="javax.net.ssl.KeyManager[]">
+</parameter>
+<parameter name="tm" type="javax.net.ssl.TrustManager[]">
+</parameter>
+<parameter name="sr" type="java.security.SecureRandom">
+</parameter>
+<exception name="KeyManagementException" type="java.security.KeyManagementException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SSLEngine" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SSLEngine" static="false" type="javax.net.ssl.SSLEngine" visibility="protected">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SSLEngine" static="false" type="javax.net.ssl.SSLEngine" visibility="protected">
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="beginHandshake" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="SSLException" type="javax.net.ssl.SSLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="closeInbound" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="SSLException" type="javax.net.ssl.SSLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="closeOutbound" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDelegatedTask" native="false" return="java.lang.Runnable" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEnableSessionCreation" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEnabledCipherSuites" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEnabledProtocols" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getHandshakeStatus" native="false" return="javax.net.ssl.SSLEngineResult.HandshakeStatus" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNeedClientAuth" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPeerHost" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPeerPort" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSSLParameters" native="false" return="javax.net.ssl.SSLParameters" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSession" native="false" return="javax.net.ssl.SSLSession" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSupportedCipherSuites" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSupportedProtocols" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getUseClientMode" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getWantClientAuth" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isInboundDone" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isOutboundDone" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setEnableSessionCreation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="flag" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setEnabledCipherSuites" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="suites" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setEnabledProtocols" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="protocols" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNeedClientAuth" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="need" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSSLParameters" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p" type="javax.net.ssl.SSLParameters">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setUseClientMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mode" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setWantClientAuth" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="want" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="unwrap" native="false" return="javax.net.ssl.SSLEngineResult" static="false" synchronized="false" visibility="public">
+<parameter name="src" type="java.nio.ByteBuffer">
+</parameter>
+<parameter name="dsts" type="java.nio.ByteBuffer[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<exception name="SSLException" type="javax.net.ssl.SSLException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unwrap" native="false" return="javax.net.ssl.SSLEngineResult" static="false" synchronized="false" visibility="public">
+<parameter name="src" type="java.nio.ByteBuffer">
+</parameter>
+<parameter name="dst" type="java.nio.ByteBuffer">
+</parameter>
+<exception name="SSLException" type="javax.net.ssl.SSLException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unwrap" native="false" return="javax.net.ssl.SSLEngineResult" static="false" synchronized="false" visibility="public">
+<parameter name="src" type="java.nio.ByteBuffer">
+</parameter>
+<parameter name="dsts" type="java.nio.ByteBuffer[]">
+</parameter>
+<exception name="SSLException" type="javax.net.ssl.SSLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="wrap" native="false" return="javax.net.ssl.SSLEngineResult" static="false" synchronized="false" visibility="public">
+<parameter name="srcs" type="java.nio.ByteBuffer[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<parameter name="dst" type="java.nio.ByteBuffer">
+</parameter>
+<exception name="SSLException" type="javax.net.ssl.SSLException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="wrap" native="false" return="javax.net.ssl.SSLEngineResult" static="false" synchronized="false" visibility="public">
+<parameter name="srcs" type="java.nio.ByteBuffer[]">
+</parameter>
+<parameter name="dst" type="java.nio.ByteBuffer">
+</parameter>
+<exception name="SSLException" type="javax.net.ssl.SSLException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="wrap" native="false" return="javax.net.ssl.SSLEngineResult" static="false" synchronized="false" visibility="public">
+<parameter name="src" type="java.nio.ByteBuffer">
+</parameter>
+<parameter name="dst" type="java.nio.ByteBuffer">
+</parameter>
+<exception name="SSLException" type="javax.net.ssl.SSLException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SSLEngineResult" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SSLEngineResult" static="false" type="javax.net.ssl.SSLEngineResult" visibility="public">
+<parameter name="status" type="javax.net.ssl.SSLEngineResult.Status">
+</parameter>
+<parameter name="handshakeStatus" type="javax.net.ssl.SSLEngineResult.HandshakeStatus">
+</parameter>
+<parameter name="bytesConsumed" type="int">
+</parameter>
+<parameter name="bytesProduced" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="bytesConsumed" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="bytesProduced" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getHandshakeStatus" native="false" return="javax.net.ssl.SSLEngineResult.HandshakeStatus" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getStatus" native="false" return="javax.net.ssl.SSLEngineResult.Status" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" final="true" name="SSLEngineResult.HandshakeStatus" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="javax.net.ssl.SSLEngineResult.HandshakeStatus" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="values" native="false" return="javax.net.ssl.SSLEngineResult.HandshakeStatus[]" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" final="true" name="SSLEngineResult.Status" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="javax.net.ssl.SSLEngineResult.Status" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="values" native="false" return="javax.net.ssl.SSLEngineResult.Status[]" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.IOException" final="false" name="SSLException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SSLException" static="false" type="javax.net.ssl.SSLException" visibility="public">
+<parameter name="reason" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SSLException" static="false" type="javax.net.ssl.SSLException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SSLException" static="false" type="javax.net.ssl.SSLException" visibility="public">
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="javax.net.ssl.SSLException" final="false" name="SSLHandshakeException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SSLHandshakeException" static="false" type="javax.net.ssl.SSLHandshakeException" visibility="public">
+<parameter name="reason" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="javax.net.ssl.SSLException" final="false" name="SSLKeyException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SSLKeyException" static="false" type="javax.net.ssl.SSLKeyException" visibility="public">
+<parameter name="reason" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SSLParameters" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SSLParameters" static="false" type="javax.net.ssl.SSLParameters" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SSLParameters" static="false" type="javax.net.ssl.SSLParameters" visibility="public">
+<parameter name="cipherSuites" type="java.lang.String[]">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SSLParameters" static="false" type="javax.net.ssl.SSLParameters" visibility="public">
+<parameter name="cipherSuites" type="java.lang.String[]">
+</parameter>
+<parameter name="protocols" type="java.lang.String[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCipherSuites" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNeedClientAuth" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProtocols" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWantClientAuth" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCipherSuites" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cipherSuites" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setNeedClientAuth" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="needClientAuth" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setProtocols" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="protocols" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setWantClientAuth" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="wantClientAuth" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="javax.net.ssl.SSLException" final="false" name="SSLPeerUnverifiedException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SSLPeerUnverifiedException" static="false" type="javax.net.ssl.SSLPeerUnverifiedException" visibility="public">
+<parameter name="reason" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.BasicPermission" final="true" name="SSLPermission" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SSLPermission" static="false" type="javax.net.ssl.SSLPermission" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SSLPermission" static="false" type="javax.net.ssl.SSLPermission" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="actions" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="javax.net.ssl.SSLException" final="false" name="SSLProtocolException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SSLProtocolException" static="false" type="javax.net.ssl.SSLProtocolException" visibility="public">
+<parameter name="reason" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.net.ServerSocket" final="false" name="SSLServerSocket" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SSLServerSocket" static="false" type="javax.net.ssl.SSLServerSocket" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SSLServerSocket" static="false" type="javax.net.ssl.SSLServerSocket" visibility="protected">
+<parameter name="port" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SSLServerSocket" static="false" type="javax.net.ssl.SSLServerSocket" visibility="protected">
+<parameter name="port" type="int">
+</parameter>
+<parameter name="backlog" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SSLServerSocket" static="false" type="javax.net.ssl.SSLServerSocket" visibility="protected">
+<parameter name="port" type="int">
+</parameter>
+<parameter name="backlog" type="int">
+</parameter>
+<parameter name="address" type="java.net.InetAddress">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEnableSessionCreation" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEnabledCipherSuites" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEnabledProtocols" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNeedClientAuth" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSupportedCipherSuites" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSupportedProtocols" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getUseClientMode" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getWantClientAuth" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setEnableSessionCreation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="flag" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setEnabledCipherSuites" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="suites" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setEnabledProtocols" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="protocols" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNeedClientAuth" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="need" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setUseClientMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mode" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setWantClientAuth" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="want" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="javax.net.ServerSocketFactory" final="false" name="SSLServerSocketFactory" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SSLServerSocketFactory" static="false" type="javax.net.ssl.SSLServerSocketFactory" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefault" native="false" return="javax.net.ServerSocketFactory" static="true" synchronized="true" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDefaultCipherSuites" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSupportedCipherSuites" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="SSLSession" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getApplicationBufferSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getCipherSuite" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getCreationTime" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getId" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLastAccessedTime" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLocalCertificates" native="false" return="java.security.cert.Certificate[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLocalPrincipal" native="false" return="java.security.Principal" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPacketBufferSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPeerCertificateChain" native="false" return="javax.security.cert.X509Certificate[]" static="false" synchronized="false" visibility="public">
+<exception name="SSLPeerUnverifiedException" type="javax.net.ssl.SSLPeerUnverifiedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPeerCertificates" native="false" return="java.security.cert.Certificate[]" static="false" synchronized="false" visibility="public">
+<exception name="SSLPeerUnverifiedException" type="javax.net.ssl.SSLPeerUnverifiedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPeerHost" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPeerPort" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPeerPrincipal" native="false" return="java.security.Principal" static="false" synchronized="false" visibility="public">
+<exception name="SSLPeerUnverifiedException" type="javax.net.ssl.SSLPeerUnverifiedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getProtocol" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSessionContext" native="false" return="javax.net.ssl.SSLSessionContext" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getValue" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getValueNames" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="invalidate" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isValid" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="putValue" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeValue" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.util.EventObject" final="false" name="SSLSessionBindingEvent" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SSLSessionBindingEvent" static="false" type="javax.net.ssl.SSLSessionBindingEvent" visibility="public">
+<parameter name="session" type="javax.net.ssl.SSLSession">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSession" native="false" return="javax.net.ssl.SSLSession" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="SSLSessionBindingListener" static="false" visibility="public">
+<implements name="java.util.EventListener">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="valueBound" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="event" type="javax.net.ssl.SSLSessionBindingEvent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="valueUnbound" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="event" type="javax.net.ssl.SSLSessionBindingEvent">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="SSLSessionContext" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getIds" native="false" return="java.util.Enumeration&lt;byte[]&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSession" native="false" return="javax.net.ssl.SSLSession" static="false" synchronized="false" visibility="public">
+<parameter name="sessionId" type="byte[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSessionCacheSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSessionTimeout" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setSessionCacheSize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setSessionTimeout" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="seconds" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</method>
+</interface>
+<class abstract="true" deprecated="not deprecated" extends="java.net.Socket" final="false" name="SSLSocket" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SSLSocket" static="false" type="javax.net.ssl.SSLSocket" visibility="protected">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SSLSocket" static="false" type="javax.net.ssl.SSLSocket" visibility="protected">
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="UnknownHostException" type="java.net.UnknownHostException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SSLSocket" static="false" type="javax.net.ssl.SSLSocket" visibility="protected">
+<parameter name="address" type="java.net.InetAddress">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SSLSocket" static="false" type="javax.net.ssl.SSLSocket" visibility="protected">
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="clientAddress" type="java.net.InetAddress">
+</parameter>
+<parameter name="clientPort" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="UnknownHostException" type="java.net.UnknownHostException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SSLSocket" static="false" type="javax.net.ssl.SSLSocket" visibility="protected">
+<parameter name="address" type="java.net.InetAddress">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="clientAddress" type="java.net.InetAddress">
+</parameter>
+<parameter name="clientPort" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="addHandshakeCompletedListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="javax.net.ssl.HandshakeCompletedListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEnableSessionCreation" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEnabledCipherSuites" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEnabledProtocols" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNeedClientAuth" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSSLParameters" native="false" return="javax.net.ssl.SSLParameters" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSession" native="false" return="javax.net.ssl.SSLSession" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSupportedCipherSuites" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSupportedProtocols" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getUseClientMode" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getWantClientAuth" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeHandshakeCompletedListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="javax.net.ssl.HandshakeCompletedListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setEnableSessionCreation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="flag" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setEnabledCipherSuites" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="suites" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setEnabledProtocols" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="protocols" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNeedClientAuth" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="need" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSSLParameters" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p" type="javax.net.ssl.SSLParameters">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setUseClientMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mode" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setWantClientAuth" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="want" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="startHandshake" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="javax.net.SocketFactory" final="false" name="SSLSocketFactory" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SSLSocketFactory" static="false" type="javax.net.ssl.SSLSocketFactory" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="createSocket" native="false" return="java.net.Socket" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="java.net.Socket">
+</parameter>
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="autoClose" type="boolean">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefault" native="false" return="javax.net.SocketFactory" static="true" synchronized="true" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDefaultCipherSuites" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSupportedCipherSuites" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="TrustManager" static="false" visibility="public">
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="TrustManagerFactory" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="TrustManagerFactory" static="false" type="javax.net.ssl.TrustManagerFactory" visibility="protected">
+<parameter name="factorySpi" type="javax.net.ssl.TrustManagerFactorySpi">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getDefaultAlgorithm" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.net.ssl.TrustManagerFactory" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.net.ssl.TrustManagerFactory" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.net.ssl.TrustManagerFactory" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProvider" native="false" return="java.security.Provider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getTrustManagers" native="false" return="javax.net.ssl.TrustManager[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ks" type="java.security.KeyStore">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="spec" type="javax.net.ssl.ManagerFactoryParameters">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="TrustManagerFactorySpi" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="TrustManagerFactorySpi" static="false" type="javax.net.ssl.TrustManagerFactorySpi" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetTrustManagers" native="false" return="javax.net.ssl.TrustManager[]" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="ks" type="java.security.KeyStore">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="spec" type="javax.net.ssl.ManagerFactoryParameters">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="X509ExtendedKeyManager" static="false" visibility="public">
+<implements name="javax.net.ssl.X509KeyManager">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="X509ExtendedKeyManager" static="false" type="javax.net.ssl.X509ExtendedKeyManager" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="chooseEngineClientAlias" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="keyType" type="java.lang.String[]">
+</parameter>
+<parameter name="issuers" type="java.security.Principal[]">
+</parameter>
+<parameter name="engine" type="javax.net.ssl.SSLEngine">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="chooseEngineServerAlias" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="keyType" type="java.lang.String">
+</parameter>
+<parameter name="issuers" type="java.security.Principal[]">
+</parameter>
+<parameter name="engine" type="javax.net.ssl.SSLEngine">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="X509KeyManager" static="false" visibility="public">
+<implements name="javax.net.ssl.KeyManager">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="chooseClientAlias" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="keyType" type="java.lang.String[]">
+</parameter>
+<parameter name="issuers" type="java.security.Principal[]">
+</parameter>
+<parameter name="socket" type="java.net.Socket">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="chooseServerAlias" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="keyType" type="java.lang.String">
+</parameter>
+<parameter name="issuers" type="java.security.Principal[]">
+</parameter>
+<parameter name="socket" type="java.net.Socket">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getCertificateChain" native="false" return="java.security.cert.X509Certificate[]" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getClientAliases" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+<parameter name="keyType" type="java.lang.String">
+</parameter>
+<parameter name="issuers" type="java.security.Principal[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPrivateKey" native="false" return="java.security.PrivateKey" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getServerAliases" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+<parameter name="keyType" type="java.lang.String">
+</parameter>
+<parameter name="issuers" type="java.security.Principal[]">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="X509TrustManager" static="false" visibility="public">
+<implements name="javax.net.ssl.TrustManager">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="checkClientTrusted" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="chain" type="java.security.cert.X509Certificate[]">
+</parameter>
+<parameter name="authType" type="java.lang.String">
+</parameter>
+<exception name="CertificateException" type="java.security.cert.CertificateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="checkServerTrusted" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="chain" type="java.security.cert.X509Certificate[]">
+</parameter>
+<parameter name="authType" type="java.lang.String">
+</parameter>
+<exception name="CertificateException" type="java.security.cert.CertificateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getAcceptedIssuers" native="false" return="java.security.cert.X509Certificate[]" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+</package></api>

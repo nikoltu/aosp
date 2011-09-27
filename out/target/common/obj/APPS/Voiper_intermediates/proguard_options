@@ -1,0 +1,9 @@
+# view AndroidManifest.xml #generated:55
+-keep class com.example.android.samplesync.authenticator.AuthenticationService { <init>(...); }
+
+# view AndroidManifest.xml #generated:80
+-keep class com.example.android.samplesync.authenticator.AuthenticatorActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class com.example.android.samplesync.syncadapter.SyncService { <init>(...); }
+

@@ -1,0 +1,132 @@
+<?xml version="1.0" ?><api><package name="javax.security.cert">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Certificate" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Certificate" static="false" type="javax.security.cert.Certificate" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEncoded" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<exception name="CertificateEncodingException" type="javax.security.cert.CertificateEncodingException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPublicKey" native="false" return="java.security.PublicKey" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="toString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="verify" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.security.PublicKey">
+</parameter>
+<exception name="CertificateException" type="javax.security.cert.CertificateException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+<exception name="SignatureException" type="java.security.SignatureException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="verify" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.security.PublicKey">
+</parameter>
+<parameter name="sigProvider" type="java.lang.String">
+</parameter>
+<exception name="CertificateException" type="javax.security.cert.CertificateException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+<exception name="SignatureException" type="java.security.SignatureException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="javax.security.cert.CertificateException" final="false" name="CertificateEncodingException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CertificateEncodingException" static="false" type="javax.security.cert.CertificateEncodingException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="CertificateEncodingException" static="false" type="javax.security.cert.CertificateEncodingException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Exception" final="false" name="CertificateException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CertificateException" static="false" type="javax.security.cert.CertificateException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="CertificateException" static="false" type="javax.security.cert.CertificateException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="javax.security.cert.CertificateException" final="false" name="CertificateExpiredException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CertificateExpiredException" static="false" type="javax.security.cert.CertificateExpiredException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="CertificateExpiredException" static="false" type="javax.security.cert.CertificateExpiredException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="javax.security.cert.CertificateException" final="false" name="CertificateNotYetValidException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CertificateNotYetValidException" static="false" type="javax.security.cert.CertificateNotYetValidException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="CertificateNotYetValidException" static="false" type="javax.security.cert.CertificateNotYetValidException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="javax.security.cert.CertificateException" final="false" name="CertificateParsingException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CertificateParsingException" static="false" type="javax.security.cert.CertificateParsingException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="CertificateParsingException" static="false" type="javax.security.cert.CertificateParsingException" visibility="public">
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="javax.security.cert.Certificate" final="false" name="X509Certificate" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="X509Certificate" static="false" type="javax.security.cert.X509Certificate" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="checkValidity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="CertificateExpiredException" type="javax.security.cert.CertificateExpiredException">
+</exception>
+<exception name="CertificateNotYetValidException" type="javax.security.cert.CertificateNotYetValidException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="checkValidity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="date" type="java.util.Date">
+</parameter>
+<exception name="CertificateExpiredException" type="javax.security.cert.CertificateExpiredException">
+</exception>
+<exception name="CertificateNotYetValidException" type="javax.security.cert.CertificateNotYetValidException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.security.cert.X509Certificate" static="true" synchronized="false" visibility="public">
+<parameter name="inStream" type="java.io.InputStream">
+</parameter>
+<exception name="CertificateException" type="javax.security.cert.CertificateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.security.cert.X509Certificate" static="true" synchronized="false" visibility="public">
+<parameter name="certData" type="byte[]">
+</parameter>
+<exception name="CertificateException" type="javax.security.cert.CertificateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getIssuerDN" native="false" return="java.security.Principal" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNotAfter" native="false" return="java.util.Date" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNotBefore" native="false" return="java.util.Date" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSerialNumber" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSigAlgName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSigAlgOID" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSigAlgParams" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSubjectDN" native="false" return="java.security.Principal" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getVersion" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package></api>

@@ -1,0 +1,10 @@
+<?xml version="1.0" ?><api><package name="javax.security.auth.login">
+<class abstract="false" deprecated="not deprecated" extends="java.security.GeneralSecurityException" final="false" name="LoginException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="LoginException" static="false" type="javax.security.auth.login.LoginException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="LoginException" static="false" type="javax.security.auth.login.LoginException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+</package></api>

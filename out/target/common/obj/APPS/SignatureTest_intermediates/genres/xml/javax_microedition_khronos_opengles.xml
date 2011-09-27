@@ -1,0 +1,3024 @@
+<?xml version="1.0" ?><api><package name="javax.microedition.khronos.opengles">
+<interface abstract="true" deprecated="not deprecated" final="false" name="GL" static="false" visibility="public">
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="GL10" static="false" visibility="public">
+<implements name="javax.microedition.khronos.opengles.GL">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="glActiveTexture" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="texture" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glAlphaFunc" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="func" type="int">
+</parameter>
+<parameter name="ref" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glAlphaFuncx" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="func" type="int">
+</parameter>
+<parameter name="ref" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glBindTexture" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="texture" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glBlendFunc" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="sfactor" type="int">
+</parameter>
+<parameter name="dfactor" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glClear" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mask" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glClearColor" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="red" type="float">
+</parameter>
+<parameter name="green" type="float">
+</parameter>
+<parameter name="blue" type="float">
+</parameter>
+<parameter name="alpha" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glClearColorx" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="red" type="int">
+</parameter>
+<parameter name="green" type="int">
+</parameter>
+<parameter name="blue" type="int">
+</parameter>
+<parameter name="alpha" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glClearDepthf" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="depth" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glClearDepthx" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="depth" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glClearStencil" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glClientActiveTexture" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="texture" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glColor4f" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="red" type="float">
+</parameter>
+<parameter name="green" type="float">
+</parameter>
+<parameter name="blue" type="float">
+</parameter>
+<parameter name="alpha" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glColor4x" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="red" type="int">
+</parameter>
+<parameter name="green" type="int">
+</parameter>
+<parameter name="blue" type="int">
+</parameter>
+<parameter name="alpha" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glColorMask" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="red" type="boolean">
+</parameter>
+<parameter name="green" type="boolean">
+</parameter>
+<parameter name="blue" type="boolean">
+</parameter>
+<parameter name="alpha" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glColorPointer" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+<parameter name="stride" type="int">
+</parameter>
+<parameter name="pointer" type="java.nio.Buffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glCompressedTexImage2D" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="level" type="int">
+</parameter>
+<parameter name="internalformat" type="int">
+</parameter>
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+<parameter name="border" type="int">
+</parameter>
+<parameter name="imageSize" type="int">
+</parameter>
+<parameter name="data" type="java.nio.Buffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glCompressedTexSubImage2D" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="level" type="int">
+</parameter>
+<parameter name="xoffset" type="int">
+</parameter>
+<parameter name="yoffset" type="int">
+</parameter>
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+<parameter name="format" type="int">
+</parameter>
+<parameter name="imageSize" type="int">
+</parameter>
+<parameter name="data" type="java.nio.Buffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glCopyTexImage2D" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="level" type="int">
+</parameter>
+<parameter name="internalformat" type="int">
+</parameter>
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+<parameter name="border" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glCopyTexSubImage2D" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="level" type="int">
+</parameter>
+<parameter name="xoffset" type="int">
+</parameter>
+<parameter name="yoffset" type="int">
+</parameter>
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glCullFace" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mode" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDeleteTextures" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<parameter name="textures" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDeleteTextures" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<parameter name="textures" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDepthFunc" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="func" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDepthMask" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="flag" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDepthRangef" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="zNear" type="float">
+</parameter>
+<parameter name="zFar" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDepthRangex" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="zNear" type="int">
+</parameter>
+<parameter name="zFar" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDisable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cap" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDisableClientState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="array" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDrawArrays" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mode" type="int">
+</parameter>
+<parameter name="first" type="int">
+</parameter>
+<parameter name="count" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDrawElements" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mode" type="int">
+</parameter>
+<parameter name="count" type="int">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+<parameter name="indices" type="java.nio.Buffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glEnable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cap" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glEnableClientState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="array" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glFinish" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glFlush" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glFogf" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glFogfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="float[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glFogfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.FloatBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glFogx" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glFogxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glFogxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glFrontFace" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mode" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glFrustumf" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="left" type="float">
+</parameter>
+<parameter name="right" type="float">
+</parameter>
+<parameter name="bottom" type="float">
+</parameter>
+<parameter name="top" type="float">
+</parameter>
+<parameter name="zNear" type="float">
+</parameter>
+<parameter name="zFar" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glFrustumx" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="left" type="int">
+</parameter>
+<parameter name="right" type="int">
+</parameter>
+<parameter name="bottom" type="int">
+</parameter>
+<parameter name="top" type="int">
+</parameter>
+<parameter name="zNear" type="int">
+</parameter>
+<parameter name="zFar" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGenTextures" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<parameter name="textures" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGenTextures" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<parameter name="textures" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetError" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetIntegerv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetIntegerv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glHint" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="mode" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glLightModelf" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glLightModelfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="float[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glLightModelfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.FloatBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glLightModelx" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glLightModelxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glLightModelxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glLightf" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="light" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glLightfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="light" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="float[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glLightfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="light" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.FloatBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glLightx" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="light" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glLightxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="light" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glLightxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="light" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glLineWidth" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="width" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glLineWidthx" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="width" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glLoadIdentity" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glLoadMatrixf" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="m" type="float[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glLoadMatrixf" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="m" type="java.nio.FloatBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glLoadMatrixx" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="m" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glLoadMatrixx" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="m" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glLogicOp" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="opcode" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glMaterialf" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="face" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glMaterialfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="face" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="float[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glMaterialfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="face" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.FloatBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glMaterialx" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="face" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glMaterialxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="face" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glMaterialxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="face" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glMatrixMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mode" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glMultMatrixf" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="m" type="float[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glMultMatrixf" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="m" type="java.nio.FloatBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glMultMatrixx" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="m" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glMultMatrixx" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="m" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glMultiTexCoord4f" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="s" type="float">
+</parameter>
+<parameter name="t" type="float">
+</parameter>
+<parameter name="r" type="float">
+</parameter>
+<parameter name="q" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glMultiTexCoord4x" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="s" type="int">
+</parameter>
+<parameter name="t" type="int">
+</parameter>
+<parameter name="r" type="int">
+</parameter>
+<parameter name="q" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glNormal3f" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="nx" type="float">
+</parameter>
+<parameter name="ny" type="float">
+</parameter>
+<parameter name="nz" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glNormal3x" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="nx" type="int">
+</parameter>
+<parameter name="ny" type="int">
+</parameter>
+<parameter name="nz" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glNormalPointer" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="type" type="int">
+</parameter>
+<parameter name="stride" type="int">
+</parameter>
+<parameter name="pointer" type="java.nio.Buffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glOrthof" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="left" type="float">
+</parameter>
+<parameter name="right" type="float">
+</parameter>
+<parameter name="bottom" type="float">
+</parameter>
+<parameter name="top" type="float">
+</parameter>
+<parameter name="zNear" type="float">
+</parameter>
+<parameter name="zFar" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glOrthox" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="left" type="int">
+</parameter>
+<parameter name="right" type="int">
+</parameter>
+<parameter name="bottom" type="int">
+</parameter>
+<parameter name="top" type="int">
+</parameter>
+<parameter name="zNear" type="int">
+</parameter>
+<parameter name="zFar" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glPixelStorei" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glPointSize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glPointSizex" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glPolygonOffset" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="factor" type="float">
+</parameter>
+<parameter name="units" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glPolygonOffsetx" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="factor" type="int">
+</parameter>
+<parameter name="units" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glPopMatrix" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glPushMatrix" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glReadPixels" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+<parameter name="format" type="int">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+<parameter name="pixels" type="java.nio.Buffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glRotatef" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="angle" type="float">
+</parameter>
+<parameter name="x" type="float">
+</parameter>
+<parameter name="y" type="float">
+</parameter>
+<parameter name="z" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glRotatex" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="angle" type="int">
+</parameter>
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+<parameter name="z" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glSampleCoverage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="float">
+</parameter>
+<parameter name="invert" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glSampleCoveragex" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="int">
+</parameter>
+<parameter name="invert" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glScalef" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="x" type="float">
+</parameter>
+<parameter name="y" type="float">
+</parameter>
+<parameter name="z" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glScalex" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+<parameter name="z" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glScissor" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glShadeModel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mode" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glStencilFunc" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="func" type="int">
+</parameter>
+<parameter name="ref" type="int">
+</parameter>
+<parameter name="mask" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glStencilMask" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mask" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glStencilOp" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="fail" type="int">
+</parameter>
+<parameter name="zfail" type="int">
+</parameter>
+<parameter name="zpass" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexCoordPointer" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+<parameter name="stride" type="int">
+</parameter>
+<parameter name="pointer" type="java.nio.Buffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexEnvf" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexEnvfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="float[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexEnvfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.FloatBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexEnvx" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexEnvxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexEnvxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexImage2D" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="level" type="int">
+</parameter>
+<parameter name="internalformat" type="int">
+</parameter>
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+<parameter name="border" type="int">
+</parameter>
+<parameter name="format" type="int">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+<parameter name="pixels" type="java.nio.Buffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexParameterf" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexParameterx" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexSubImage2D" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="level" type="int">
+</parameter>
+<parameter name="xoffset" type="int">
+</parameter>
+<parameter name="yoffset" type="int">
+</parameter>
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+<parameter name="format" type="int">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+<parameter name="pixels" type="java.nio.Buffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTranslatef" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="x" type="float">
+</parameter>
+<parameter name="y" type="float">
+</parameter>
+<parameter name="z" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTranslatex" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+<parameter name="z" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glVertexPointer" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+<parameter name="stride" type="int">
+</parameter>
+<parameter name="pointer" type="java.nio.Buffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glViewport" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="GL_ADD" static="true" transient="false" type="int" value="260" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_ALIASED_LINE_WIDTH_RANGE" static="true" transient="false" type="int" value="33902" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_ALIASED_POINT_SIZE_RANGE" static="true" transient="false" type="int" value="33901" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_ALPHA" static="true" transient="false" type="int" value="6406" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_ALPHA_BITS" static="true" transient="false" type="int" value="3413" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_ALPHA_TEST" static="true" transient="false" type="int" value="3008" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_ALWAYS" static="true" transient="false" type="int" value="519" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_AMBIENT" static="true" transient="false" type="int" value="4608" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_AMBIENT_AND_DIFFUSE" static="true" transient="false" type="int" value="5634" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_AND" static="true" transient="false" type="int" value="5377" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_AND_INVERTED" static="true" transient="false" type="int" value="5380" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_AND_REVERSE" static="true" transient="false" type="int" value="5378" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_BACK" static="true" transient="false" type="int" value="1029" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_BLEND" static="true" transient="false" type="int" value="3042" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_BLUE_BITS" static="true" transient="false" type="int" value="3412" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_BYTE" static="true" transient="false" type="int" value="5120" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_CCW" static="true" transient="false" type="int" value="2305" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_CLAMP_TO_EDGE" static="true" transient="false" type="int" value="33071" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_CLEAR" static="true" transient="false" type="int" value="5376" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ARRAY" static="true" transient="false" type="int" value="32886" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_BUFFER_BIT" static="true" transient="false" type="int" value="16384" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_LOGIC_OP" static="true" transient="false" type="int" value="3058" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_MATERIAL" static="true" transient="false" type="int" value="2903" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COMPRESSED_TEXTURE_FORMATS" static="true" transient="false" type="int" value="34467" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_CONSTANT_ATTENUATION" static="true" transient="false" type="int" value="4615" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COPY" static="true" transient="false" type="int" value="5379" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COPY_INVERTED" static="true" transient="false" type="int" value="5388" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_CULL_FACE" static="true" transient="false" type="int" value="2884" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_CW" static="true" transient="false" type="int" value="2304" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DECAL" static="true" transient="false" type="int" value="8449" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DECR" static="true" transient="false" type="int" value="7683" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DEPTH_BITS" static="true" transient="false" type="int" value="3414" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DEPTH_BUFFER_BIT" static="true" transient="false" type="int" value="256" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DEPTH_TEST" static="true" transient="false" type="int" value="2929" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DIFFUSE" static="true" transient="false" type="int" value="4609" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DITHER" static="true" transient="false" type="int" value="3024" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DONT_CARE" static="true" transient="false" type="int" value="4352" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DST_ALPHA" static="true" transient="false" type="int" value="772" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DST_COLOR" static="true" transient="false" type="int" value="774" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_EMISSION" static="true" transient="false" type="int" value="5632" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_EQUAL" static="true" transient="false" type="int" value="514" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_EQUIV" static="true" transient="false" type="int" value="5385" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_EXP" static="true" transient="false" type="int" value="2048" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_EXP2" static="true" transient="false" type="int" value="2049" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_EXTENSIONS" static="true" transient="false" type="int" value="7939" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FALSE" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FASTEST" static="true" transient="false" type="int" value="4353" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FIXED" static="true" transient="false" type="int" value="5132" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FLAT" static="true" transient="false" type="int" value="7424" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FLOAT" static="true" transient="false" type="int" value="5126" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FOG" static="true" transient="false" type="int" value="2912" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FOG_COLOR" static="true" transient="false" type="int" value="2918" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FOG_DENSITY" static="true" transient="false" type="int" value="2914" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FOG_END" static="true" transient="false" type="int" value="2916" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FOG_HINT" static="true" transient="false" type="int" value="3156" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FOG_MODE" static="true" transient="false" type="int" value="2917" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FOG_START" static="true" transient="false" type="int" value="2915" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FRONT" static="true" transient="false" type="int" value="1028" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FRONT_AND_BACK" static="true" transient="false" type="int" value="1032" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_GEQUAL" static="true" transient="false" type="int" value="518" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_GREATER" static="true" transient="false" type="int" value="516" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_GREEN_BITS" static="true" transient="false" type="int" value="3411" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_IMPLEMENTATION_COLOR_READ_FORMAT_OES" static="true" transient="false" type="int" value="35739" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_IMPLEMENTATION_COLOR_READ_TYPE_OES" static="true" transient="false" type="int" value="35738" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_INCR" static="true" transient="false" type="int" value="7682" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_INVALID_ENUM" static="true" transient="false" type="int" value="1280" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_INVALID_OPERATION" static="true" transient="false" type="int" value="1282" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_INVALID_VALUE" static="true" transient="false" type="int" value="1281" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_INVERT" static="true" transient="false" type="int" value="5386" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_KEEP" static="true" transient="false" type="int" value="7680" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LEQUAL" static="true" transient="false" type="int" value="515" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LESS" static="true" transient="false" type="int" value="513" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LIGHT0" static="true" transient="false" type="int" value="16384" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LIGHT1" static="true" transient="false" type="int" value="16385" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LIGHT2" static="true" transient="false" type="int" value="16386" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LIGHT3" static="true" transient="false" type="int" value="16387" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LIGHT4" static="true" transient="false" type="int" value="16388" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LIGHT5" static="true" transient="false" type="int" value="16389" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LIGHT6" static="true" transient="false" type="int" value="16390" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LIGHT7" static="true" transient="false" type="int" value="16391" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LIGHTING" static="true" transient="false" type="int" value="2896" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LIGHT_MODEL_AMBIENT" static="true" transient="false" type="int" value="2899" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LIGHT_MODEL_TWO_SIDE" static="true" transient="false" type="int" value="2898" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LINEAR" static="true" transient="false" type="int" value="9729" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LINEAR_ATTENUATION" static="true" transient="false" type="int" value="4616" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LINEAR_MIPMAP_LINEAR" static="true" transient="false" type="int" value="9987" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LINEAR_MIPMAP_NEAREST" static="true" transient="false" type="int" value="9985" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LINES" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LINE_LOOP" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LINE_SMOOTH" static="true" transient="false" type="int" value="2848" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LINE_SMOOTH_HINT" static="true" transient="false" type="int" value="3154" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LINE_STRIP" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LUMINANCE" static="true" transient="false" type="int" value="6409" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LUMINANCE_ALPHA" static="true" transient="false" type="int" value="6410" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MAX_ELEMENTS_INDICES" static="true" transient="false" type="int" value="33001" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MAX_ELEMENTS_VERTICES" static="true" transient="false" type="int" value="33000" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MAX_LIGHTS" static="true" transient="false" type="int" value="3377" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MAX_MODELVIEW_STACK_DEPTH" static="true" transient="false" type="int" value="3382" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MAX_PROJECTION_STACK_DEPTH" static="true" transient="false" type="int" value="3384" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MAX_TEXTURE_SIZE" static="true" transient="false" type="int" value="3379" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MAX_TEXTURE_STACK_DEPTH" static="true" transient="false" type="int" value="3385" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MAX_TEXTURE_UNITS" static="true" transient="false" type="int" value="34018" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MAX_VIEWPORT_DIMS" static="true" transient="false" type="int" value="3386" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MODELVIEW" static="true" transient="false" type="int" value="5888" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MODULATE" static="true" transient="false" type="int" value="8448" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MULTISAMPLE" static="true" transient="false" type="int" value="32925" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_NAND" static="true" transient="false" type="int" value="5390" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_NEAREST" static="true" transient="false" type="int" value="9728" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_NEAREST_MIPMAP_LINEAR" static="true" transient="false" type="int" value="9986" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_NEAREST_MIPMAP_NEAREST" static="true" transient="false" type="int" value="9984" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_NEVER" static="true" transient="false" type="int" value="512" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_NICEST" static="true" transient="false" type="int" value="4354" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_NOOP" static="true" transient="false" type="int" value="5381" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_NOR" static="true" transient="false" type="int" value="5384" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_NORMALIZE" static="true" transient="false" type="int" value="2977" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_NORMAL_ARRAY" static="true" transient="false" type="int" value="32885" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_NOTEQUAL" static="true" transient="false" type="int" value="517" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_NO_ERROR" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_NUM_COMPRESSED_TEXTURE_FORMATS" static="true" transient="false" type="int" value="34466" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_ONE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_ONE_MINUS_DST_ALPHA" static="true" transient="false" type="int" value="773" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_ONE_MINUS_DST_COLOR" static="true" transient="false" type="int" value="775" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_ONE_MINUS_SRC_ALPHA" static="true" transient="false" type="int" value="771" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_ONE_MINUS_SRC_COLOR" static="true" transient="false" type="int" value="769" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_OR" static="true" transient="false" type="int" value="5383" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_OR_INVERTED" static="true" transient="false" type="int" value="5389" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_OR_REVERSE" static="true" transient="false" type="int" value="5387" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_OUT_OF_MEMORY" static="true" transient="false" type="int" value="1285" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_PACK_ALIGNMENT" static="true" transient="false" type="int" value="3333" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_PALETTE4_R5_G6_B5_OES" static="true" transient="false" type="int" value="35730" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_PALETTE4_RGB5_A1_OES" static="true" transient="false" type="int" value="35732" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_PALETTE4_RGB8_OES" static="true" transient="false" type="int" value="35728" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_PALETTE4_RGBA4_OES" static="true" transient="false" type="int" value="35731" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_PALETTE4_RGBA8_OES" static="true" transient="false" type="int" value="35729" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_PALETTE8_R5_G6_B5_OES" static="true" transient="false" type="int" value="35735" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_PALETTE8_RGB5_A1_OES" static="true" transient="false" type="int" value="35737" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_PALETTE8_RGB8_OES" static="true" transient="false" type="int" value="35733" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_PALETTE8_RGBA4_OES" static="true" transient="false" type="int" value="35736" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_PALETTE8_RGBA8_OES" static="true" transient="false" type="int" value="35734" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_PERSPECTIVE_CORRECTION_HINT" static="true" transient="false" type="int" value="3152" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_POINTS" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_POINT_FADE_THRESHOLD_SIZE" static="true" transient="false" type="int" value="33064" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_POINT_SIZE" static="true" transient="false" type="int" value="2833" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_POINT_SMOOTH" static="true" transient="false" type="int" value="2832" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_POINT_SMOOTH_HINT" static="true" transient="false" type="int" value="3153" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_POLYGON_OFFSET_FILL" static="true" transient="false" type="int" value="32823" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_POLYGON_SMOOTH_HINT" static="true" transient="false" type="int" value="3155" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_POSITION" static="true" transient="false" type="int" value="4611" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_PROJECTION" static="true" transient="false" type="int" value="5889" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_QUADRATIC_ATTENUATION" static="true" transient="false" type="int" value="4617" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RED_BITS" static="true" transient="false" type="int" value="3410" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RENDERER" static="true" transient="false" type="int" value="7937" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_REPEAT" static="true" transient="false" type="int" value="10497" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_REPLACE" static="true" transient="false" type="int" value="7681" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RESCALE_NORMAL" static="true" transient="false" type="int" value="32826" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RGB" static="true" transient="false" type="int" value="6407" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RGBA" static="true" transient="false" type="int" value="6408" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SAMPLE_ALPHA_TO_COVERAGE" static="true" transient="false" type="int" value="32926" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SAMPLE_ALPHA_TO_ONE" static="true" transient="false" type="int" value="32927" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SAMPLE_COVERAGE" static="true" transient="false" type="int" value="32928" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SCISSOR_TEST" static="true" transient="false" type="int" value="3089" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SET" static="true" transient="false" type="int" value="5391" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SHININESS" static="true" transient="false" type="int" value="5633" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SHORT" static="true" transient="false" type="int" value="5122" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SMOOTH" static="true" transient="false" type="int" value="7425" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SMOOTH_LINE_WIDTH_RANGE" static="true" transient="false" type="int" value="2850" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SMOOTH_POINT_SIZE_RANGE" static="true" transient="false" type="int" value="2834" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SPECULAR" static="true" transient="false" type="int" value="4610" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SPOT_CUTOFF" static="true" transient="false" type="int" value="4614" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SPOT_DIRECTION" static="true" transient="false" type="int" value="4612" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SPOT_EXPONENT" static="true" transient="false" type="int" value="4613" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SRC_ALPHA" static="true" transient="false" type="int" value="770" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SRC_ALPHA_SATURATE" static="true" transient="false" type="int" value="776" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SRC_COLOR" static="true" transient="false" type="int" value="768" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_STACK_OVERFLOW" static="true" transient="false" type="int" value="1283" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_STACK_UNDERFLOW" static="true" transient="false" type="int" value="1284" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_STENCIL_BITS" static="true" transient="false" type="int" value="3415" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_STENCIL_BUFFER_BIT" static="true" transient="false" type="int" value="1024" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_STENCIL_TEST" static="true" transient="false" type="int" value="2960" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SUBPIXEL_BITS" static="true" transient="false" type="int" value="3408" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE" static="true" transient="false" type="int" value="5890" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE0" static="true" transient="false" type="int" value="33984" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE1" static="true" transient="false" type="int" value="33985" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE10" static="true" transient="false" type="int" value="33994" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE11" static="true" transient="false" type="int" value="33995" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE12" static="true" transient="false" type="int" value="33996" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE13" static="true" transient="false" type="int" value="33997" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE14" static="true" transient="false" type="int" value="33998" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE15" static="true" transient="false" type="int" value="33999" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE16" static="true" transient="false" type="int" value="34000" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE17" static="true" transient="false" type="int" value="34001" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE18" static="true" transient="false" type="int" value="34002" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE19" static="true" transient="false" type="int" value="34003" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE2" static="true" transient="false" type="int" value="33986" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE20" static="true" transient="false" type="int" value="34004" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE21" static="true" transient="false" type="int" value="34005" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE22" static="true" transient="false" type="int" value="34006" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE23" static="true" transient="false" type="int" value="34007" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE24" static="true" transient="false" type="int" value="34008" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE25" static="true" transient="false" type="int" value="34009" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE26" static="true" transient="false" type="int" value="34010" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE27" static="true" transient="false" type="int" value="34011" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE28" static="true" transient="false" type="int" value="34012" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE29" static="true" transient="false" type="int" value="34013" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE3" static="true" transient="false" type="int" value="33987" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE30" static="true" transient="false" type="int" value="34014" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE31" static="true" transient="false" type="int" value="34015" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE4" static="true" transient="false" type="int" value="33988" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE5" static="true" transient="false" type="int" value="33989" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE6" static="true" transient="false" type="int" value="33990" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE7" static="true" transient="false" type="int" value="33991" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE8" static="true" transient="false" type="int" value="33992" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE9" static="true" transient="false" type="int" value="33993" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_2D" static="true" transient="false" type="int" value="3553" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_COORD_ARRAY" static="true" transient="false" type="int" value="32888" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_ENV" static="true" transient="false" type="int" value="8960" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_ENV_COLOR" static="true" transient="false" type="int" value="8705" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_ENV_MODE" static="true" transient="false" type="int" value="8704" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_MAG_FILTER" static="true" transient="false" type="int" value="10240" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_MIN_FILTER" static="true" transient="false" type="int" value="10241" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_WRAP_S" static="true" transient="false" type="int" value="10242" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_WRAP_T" static="true" transient="false" type="int" value="10243" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TRIANGLES" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TRIANGLE_FAN" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TRIANGLE_STRIP" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TRUE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_UNPACK_ALIGNMENT" static="true" transient="false" type="int" value="3317" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_UNSIGNED_BYTE" static="true" transient="false" type="int" value="5121" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_UNSIGNED_SHORT" static="true" transient="false" type="int" value="5123" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_UNSIGNED_SHORT_4_4_4_4" static="true" transient="false" type="int" value="32819" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_UNSIGNED_SHORT_5_5_5_1" static="true" transient="false" type="int" value="32820" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_UNSIGNED_SHORT_5_6_5" static="true" transient="false" type="int" value="33635" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_VENDOR" static="true" transient="false" type="int" value="7936" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_VERSION" static="true" transient="false" type="int" value="7938" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_VERTEX_ARRAY" static="true" transient="false" type="int" value="32884" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_XOR" static="true" transient="false" type="int" value="5382" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_ZERO" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="GL10Ext" static="false" visibility="public">
+<implements name="javax.microedition.khronos.opengles.GL">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="glQueryMatrixxOES" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="mantissa" type="int[]">
+</parameter>
+<parameter name="mantissaOffset" type="int">
+</parameter>
+<parameter name="exponent" type="int[]">
+</parameter>
+<parameter name="exponentOffset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glQueryMatrixxOES" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="mantissa" type="java.nio.IntBuffer">
+</parameter>
+<parameter name="exponent" type="java.nio.IntBuffer">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="GL11" static="false" visibility="public">
+<implements name="javax.microedition.khronos.opengles.GL10">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="glBindBuffer" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="buffer" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glBufferData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="size" type="int">
+</parameter>
+<parameter name="data" type="java.nio.Buffer">
+</parameter>
+<parameter name="usage" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glBufferSubData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="size" type="int">
+</parameter>
+<parameter name="data" type="java.nio.Buffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glClipPlanef" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="plane" type="int">
+</parameter>
+<parameter name="equation" type="float[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glClipPlanef" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="plane" type="int">
+</parameter>
+<parameter name="equation" type="java.nio.FloatBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glClipPlanex" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="plane" type="int">
+</parameter>
+<parameter name="equation" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glClipPlanex" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="plane" type="int">
+</parameter>
+<parameter name="equation" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glColor4ub" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="red" type="byte">
+</parameter>
+<parameter name="green" type="byte">
+</parameter>
+<parameter name="blue" type="byte">
+</parameter>
+<parameter name="alpha" type="byte">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glColorPointer" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+<parameter name="stride" type="int">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDeleteBuffers" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<parameter name="buffers" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDeleteBuffers" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<parameter name="buffers" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDrawElements" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mode" type="int">
+</parameter>
+<parameter name="count" type="int">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGenBuffers" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<parameter name="buffers" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGenBuffers" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<parameter name="buffers" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetBooleanv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="boolean[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetBooleanv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetBufferParameteriv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetBufferParameteriv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetClipPlanef" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="eqn" type="float[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetClipPlanef" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="eqn" type="java.nio.FloatBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetClipPlanex" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="eqn" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetClipPlanex" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="eqn" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetFixedv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetFixedv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetFloatv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="float[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetFloatv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.FloatBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetLightfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="light" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="float[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetLightfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="light" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.FloatBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetLightxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="light" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetLightxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="light" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetMaterialfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="face" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="float[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetMaterialfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="face" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.FloatBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetMaterialxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="face" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetMaterialxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="face" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetPointerv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.Buffer[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetTexEnviv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="env" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetTexEnviv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="env" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetTexEnvxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="env" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetTexEnvxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="env" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetTexParameterfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="float[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetTexParameterfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.FloatBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetTexParameteriv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetTexParameteriv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetTexParameterxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetTexParameterxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glIsBuffer" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glIsEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="cap" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glIsTexture" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="texture" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glNormalPointer" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="type" type="int">
+</parameter>
+<parameter name="stride" type="int">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glPointParameterf" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glPointParameterfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="float[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glPointParameterfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.FloatBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glPointParameterx" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glPointParameterxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glPointParameterxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glPointSizePointerOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="type" type="int">
+</parameter>
+<parameter name="stride" type="int">
+</parameter>
+<parameter name="pointer" type="java.nio.Buffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexCoordPointer" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+<parameter name="stride" type="int">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexEnvi" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexEnviv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexEnviv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexParameterfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="float[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexParameterfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.FloatBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexParameteri" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexParameteriv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexParameteriv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexParameterxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexParameterxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glVertexPointer" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+<parameter name="stride" type="int">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="GL_ACTIVE_TEXTURE" static="true" transient="false" type="int" value="34016" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_ADD_SIGNED" static="true" transient="false" type="int" value="34164" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_ALPHA_SCALE" static="true" transient="false" type="int" value="3356" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_ALPHA_TEST_FUNC" static="true" transient="false" type="int" value="3009" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_ALPHA_TEST_REF" static="true" transient="false" type="int" value="3010" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_ARRAY_BUFFER" static="true" transient="false" type="int" value="34962" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_ARRAY_BUFFER_BINDING" static="true" transient="false" type="int" value="34964" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_BLEND_DST" static="true" transient="false" type="int" value="3040" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_BLEND_SRC" static="true" transient="false" type="int" value="3041" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_BUFFER_ACCESS" static="true" transient="false" type="int" value="35003" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_BUFFER_SIZE" static="true" transient="false" type="int" value="34660" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_BUFFER_USAGE" static="true" transient="false" type="int" value="34661" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_CLIENT_ACTIVE_TEXTURE" static="true" transient="false" type="int" value="34017" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_CLIP_PLANE0" static="true" transient="false" type="int" value="12288" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_CLIP_PLANE1" static="true" transient="false" type="int" value="12289" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_CLIP_PLANE2" static="true" transient="false" type="int" value="12290" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_CLIP_PLANE3" static="true" transient="false" type="int" value="12291" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_CLIP_PLANE4" static="true" transient="false" type="int" value="12292" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_CLIP_PLANE5" static="true" transient="false" type="int" value="12293" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ARRAY_BUFFER_BINDING" static="true" transient="false" type="int" value="34968" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ARRAY_POINTER" static="true" transient="false" type="int" value="32912" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ARRAY_SIZE" static="true" transient="false" type="int" value="32897" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ARRAY_STRIDE" static="true" transient="false" type="int" value="32899" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ARRAY_TYPE" static="true" transient="false" type="int" value="32898" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_CLEAR_VALUE" static="true" transient="false" type="int" value="3106" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_WRITEMASK" static="true" transient="false" type="int" value="3107" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COMBINE" static="true" transient="false" type="int" value="34160" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COMBINE_ALPHA" static="true" transient="false" type="int" value="34162" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COMBINE_RGB" static="true" transient="false" type="int" value="34161" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_CONSTANT" static="true" transient="false" type="int" value="34166" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COORD_REPLACE_OES" static="true" transient="false" type="int" value="34914" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_CULL_FACE_MODE" static="true" transient="false" type="int" value="2885" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_CURRENT_COLOR" static="true" transient="false" type="int" value="2816" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_CURRENT_NORMAL" static="true" transient="false" type="int" value="2818" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_CURRENT_TEXTURE_COORDS" static="true" transient="false" type="int" value="2819" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DEPTH_CLEAR_VALUE" static="true" transient="false" type="int" value="2931" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DEPTH_FUNC" static="true" transient="false" type="int" value="2932" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DEPTH_RANGE" static="true" transient="false" type="int" value="2928" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DEPTH_WRITEMASK" static="true" transient="false" type="int" value="2930" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DOT3_RGB" static="true" transient="false" type="int" value="34478" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DOT3_RGBA" static="true" transient="false" type="int" value="34479" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DYNAMIC_DRAW" static="true" transient="false" type="int" value="35048" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_ELEMENT_ARRAY_BUFFER" static="true" transient="false" type="int" value="34963" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_ELEMENT_ARRAY_BUFFER_BINDING" static="true" transient="false" type="int" value="34965" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FRONT_FACE" static="true" transient="false" type="int" value="2886" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_GENERATE_MIPMAP" static="true" transient="false" type="int" value="33169" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_GENERATE_MIPMAP_HINT" static="true" transient="false" type="int" value="33170" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_INTERPOLATE" static="true" transient="false" type="int" value="34165" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LINE_WIDTH" static="true" transient="false" type="int" value="2849" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_LOGIC_OP_MODE" static="true" transient="false" type="int" value="3056" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MATRIX_MODE" static="true" transient="false" type="int" value="2976" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MAX_CLIP_PLANES" static="true" transient="false" type="int" value="3378" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MODELVIEW_MATRIX" static="true" transient="false" type="int" value="2982" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MODELVIEW_MATRIX_FLOAT_AS_INT_BITS_OES" static="true" transient="false" type="int" value="35213" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MODELVIEW_STACK_DEPTH" static="true" transient="false" type="int" value="2979" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_NORMAL_ARRAY_BUFFER_BINDING" static="true" transient="false" type="int" value="34967" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_NORMAL_ARRAY_POINTER" static="true" transient="false" type="int" value="32911" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_NORMAL_ARRAY_STRIDE" static="true" transient="false" type="int" value="32895" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_NORMAL_ARRAY_TYPE" static="true" transient="false" type="int" value="32894" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_OPERAND0_ALPHA" static="true" transient="false" type="int" value="34200" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_OPERAND0_RGB" static="true" transient="false" type="int" value="34192" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_OPERAND1_ALPHA" static="true" transient="false" type="int" value="34201" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_OPERAND1_RGB" static="true" transient="false" type="int" value="34193" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_OPERAND2_ALPHA" static="true" transient="false" type="int" value="34202" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_OPERAND2_RGB" static="true" transient="false" type="int" value="34194" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_POINT_DISTANCE_ATTENUATION" static="true" transient="false" type="int" value="33065" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_POINT_FADE_THRESHOLD_SIZE" static="true" transient="false" type="int" value="33064" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_POINT_SIZE" static="true" transient="false" type="int" value="2833" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_POINT_SIZE_ARRAY_BUFFER_BINDING_OES" static="true" transient="false" type="int" value="35743" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_POINT_SIZE_ARRAY_OES" static="true" transient="false" type="int" value="35740" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_POINT_SIZE_ARRAY_POINTER_OES" static="true" transient="false" type="int" value="35212" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_POINT_SIZE_ARRAY_STRIDE_OES" static="true" transient="false" type="int" value="35211" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_POINT_SIZE_ARRAY_TYPE_OES" static="true" transient="false" type="int" value="35210" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_POINT_SIZE_MAX" static="true" transient="false" type="int" value="33063" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_POINT_SIZE_MIN" static="true" transient="false" type="int" value="33062" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_POINT_SPRITE_OES" static="true" transient="false" type="int" value="34913" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_POLYGON_OFFSET_FACTOR" static="true" transient="false" type="int" value="32824" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_POLYGON_OFFSET_UNITS" static="true" transient="false" type="int" value="10752" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_PREVIOUS" static="true" transient="false" type="int" value="34168" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_PRIMARY_COLOR" static="true" transient="false" type="int" value="34167" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_PROJECTION_MATRIX" static="true" transient="false" type="int" value="2983" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_PROJECTION_MATRIX_FLOAT_AS_INT_BITS_OES" static="true" transient="false" type="int" value="35214" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_PROJECTION_STACK_DEPTH" static="true" transient="false" type="int" value="2980" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RGB_SCALE" static="true" transient="false" type="int" value="34163" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SAMPLES" static="true" transient="false" type="int" value="32937" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SAMPLE_BUFFERS" static="true" transient="false" type="int" value="32936" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SAMPLE_COVERAGE_INVERT" static="true" transient="false" type="int" value="32939" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SAMPLE_COVERAGE_VALUE" static="true" transient="false" type="int" value="32938" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SCISSOR_BOX" static="true" transient="false" type="int" value="3088" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SHADE_MODEL" static="true" transient="false" type="int" value="2900" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SRC0_ALPHA" static="true" transient="false" type="int" value="34184" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SRC0_RGB" static="true" transient="false" type="int" value="34176" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SRC1_ALPHA" static="true" transient="false" type="int" value="34185" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SRC1_RGB" static="true" transient="false" type="int" value="34177" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SRC2_ALPHA" static="true" transient="false" type="int" value="34186" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SRC2_RGB" static="true" transient="false" type="int" value="34178" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_STATIC_DRAW" static="true" transient="false" type="int" value="35044" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_STENCIL_CLEAR_VALUE" static="true" transient="false" type="int" value="2961" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_STENCIL_FAIL" static="true" transient="false" type="int" value="2964" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_STENCIL_FUNC" static="true" transient="false" type="int" value="2962" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_STENCIL_PASS_DEPTH_FAIL" static="true" transient="false" type="int" value="2965" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_STENCIL_PASS_DEPTH_PASS" static="true" transient="false" type="int" value="2966" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_STENCIL_REF" static="true" transient="false" type="int" value="2967" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_STENCIL_VALUE_MASK" static="true" transient="false" type="int" value="2963" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_STENCIL_WRITEMASK" static="true" transient="false" type="int" value="2968" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_SUBTRACT" static="true" transient="false" type="int" value="34023" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_BINDING_2D" static="true" transient="false" type="int" value="32873" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_COORD_ARRAY_BUFFER_BINDING" static="true" transient="false" type="int" value="34970" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_COORD_ARRAY_POINTER" static="true" transient="false" type="int" value="32914" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_COORD_ARRAY_SIZE" static="true" transient="false" type="int" value="32904" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_COORD_ARRAY_STRIDE" static="true" transient="false" type="int" value="32906" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_COORD_ARRAY_TYPE" static="true" transient="false" type="int" value="32905" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_MATRIX" static="true" transient="false" type="int" value="2984" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_MATRIX_FLOAT_AS_INT_BITS_OES" static="true" transient="false" type="int" value="35215" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_STACK_DEPTH" static="true" transient="false" type="int" value="2981" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_VERTEX_ARRAY_BUFFER_BINDING" static="true" transient="false" type="int" value="34966" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_VERTEX_ARRAY_POINTER" static="true" transient="false" type="int" value="32910" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_VERTEX_ARRAY_SIZE" static="true" transient="false" type="int" value="32890" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_VERTEX_ARRAY_STRIDE" static="true" transient="false" type="int" value="32892" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_VERTEX_ARRAY_TYPE" static="true" transient="false" type="int" value="32891" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_VIEWPORT" static="true" transient="false" type="int" value="2978" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_WRITE_ONLY" static="true" transient="false" type="int" value="35001" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="GL11Ext" static="false" visibility="public">
+<implements name="javax.microedition.khronos.opengles.GL">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="glCurrentPaletteMatrixOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="matrixpaletteindex" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDrawTexfOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="x" type="float">
+</parameter>
+<parameter name="y" type="float">
+</parameter>
+<parameter name="z" type="float">
+</parameter>
+<parameter name="width" type="float">
+</parameter>
+<parameter name="height" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDrawTexfvOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coords" type="float[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDrawTexfvOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coords" type="java.nio.FloatBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDrawTexiOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+<parameter name="z" type="int">
+</parameter>
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDrawTexivOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coords" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDrawTexivOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coords" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDrawTexsOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="x" type="short">
+</parameter>
+<parameter name="y" type="short">
+</parameter>
+<parameter name="z" type="short">
+</parameter>
+<parameter name="width" type="short">
+</parameter>
+<parameter name="height" type="short">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDrawTexsvOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coords" type="short[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDrawTexsvOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coords" type="java.nio.ShortBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDrawTexxOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+<parameter name="z" type="int">
+</parameter>
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDrawTexxvOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coords" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDrawTexxvOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coords" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glEnable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cap" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glEnableClientState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="array" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glLoadPaletteFromModelViewMatrixOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glMatrixIndexPointerOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+<parameter name="stride" type="int">
+</parameter>
+<parameter name="pointer" type="java.nio.Buffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glMatrixIndexPointerOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+<parameter name="stride" type="int">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexParameterfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="float[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glWeightPointerOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+<parameter name="stride" type="int">
+</parameter>
+<parameter name="pointer" type="java.nio.Buffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glWeightPointerOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+<parameter name="stride" type="int">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="GL_MATRIX_INDEX_ARRAY_BUFFER_BINDING_OES" static="true" transient="false" type="int" value="35742" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MATRIX_INDEX_ARRAY_OES" static="true" transient="false" type="int" value="34884" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MATRIX_INDEX_ARRAY_POINTER_OES" static="true" transient="false" type="int" value="34889" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MATRIX_INDEX_ARRAY_SIZE_OES" static="true" transient="false" type="int" value="34886" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MATRIX_INDEX_ARRAY_STRIDE_OES" static="true" transient="false" type="int" value="34888" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MATRIX_INDEX_ARRAY_TYPE_OES" static="true" transient="false" type="int" value="34887" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MATRIX_PALETTE_OES" static="true" transient="false" type="int" value="34880" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MAX_PALETTE_MATRICES_OES" static="true" transient="false" type="int" value="34882" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MAX_VERTEX_UNITS_OES" static="true" transient="false" type="int" value="34468" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_CROP_RECT_OES" static="true" transient="false" type="int" value="35741" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_WEIGHT_ARRAY_BUFFER_BINDING_OES" static="true" transient="false" type="int" value="34974" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_WEIGHT_ARRAY_OES" static="true" transient="false" type="int" value="34477" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_WEIGHT_ARRAY_POINTER_OES" static="true" transient="false" type="int" value="34476" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_WEIGHT_ARRAY_SIZE_OES" static="true" transient="false" type="int" value="34475" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_WEIGHT_ARRAY_STRIDE_OES" static="true" transient="false" type="int" value="34474" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_WEIGHT_ARRAY_TYPE_OES" static="true" transient="false" type="int" value="34473" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="GL11ExtensionPack" static="false" visibility="public">
+<implements name="javax.microedition.khronos.opengles.GL">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="glBindFramebufferOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="framebuffer" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glBindRenderbufferOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="renderbuffer" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glBindTexture" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="texture" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glBlendEquation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mode" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glBlendEquationSeparate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="modeRGB" type="int">
+</parameter>
+<parameter name="modeAlpha" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glBlendFuncSeparate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="srcRGB" type="int">
+</parameter>
+<parameter name="dstRGB" type="int">
+</parameter>
+<parameter name="srcAlpha" type="int">
+</parameter>
+<parameter name="dstAlpha" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glCheckFramebufferStatusOES" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glCompressedTexImage2D" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="level" type="int">
+</parameter>
+<parameter name="internalformat" type="int">
+</parameter>
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+<parameter name="border" type="int">
+</parameter>
+<parameter name="imageSize" type="int">
+</parameter>
+<parameter name="data" type="java.nio.Buffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glCopyTexImage2D" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="level" type="int">
+</parameter>
+<parameter name="internalformat" type="int">
+</parameter>
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+<parameter name="border" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDeleteFramebuffersOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<parameter name="framebuffers" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDeleteFramebuffersOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<parameter name="framebuffers" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDeleteRenderbuffersOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<parameter name="renderbuffers" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glDeleteRenderbuffersOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<parameter name="renderbuffers" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glEnable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cap" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glFramebufferRenderbufferOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="attachment" type="int">
+</parameter>
+<parameter name="renderbuffertarget" type="int">
+</parameter>
+<parameter name="renderbuffer" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glFramebufferTexture2DOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="attachment" type="int">
+</parameter>
+<parameter name="textarget" type="int">
+</parameter>
+<parameter name="texture" type="int">
+</parameter>
+<parameter name="level" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGenFramebuffersOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<parameter name="framebuffers" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGenFramebuffersOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<parameter name="framebuffers" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGenRenderbuffersOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<parameter name="renderbuffers" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGenRenderbuffersOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<parameter name="renderbuffers" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGenerateMipmapOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetFramebufferAttachmentParameterivOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="attachment" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetFramebufferAttachmentParameterivOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="attachment" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetIntegerv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetIntegerv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetRenderbufferParameterivOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetRenderbufferParameterivOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetTexGenfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coord" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="float[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetTexGenfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coord" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.FloatBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetTexGeniv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coord" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetTexGeniv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coord" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetTexGenxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coord" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glGetTexGenxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coord" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glIsFramebufferOES" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="framebuffer" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glIsRenderbufferOES" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="renderbuffer" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glRenderbufferStorageOES" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="internalformat" type="int">
+</parameter>
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glStencilOp" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="fail" type="int">
+</parameter>
+<parameter name="zfail" type="int">
+</parameter>
+<parameter name="zpass" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexEnvf" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexEnvfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="float[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexEnvfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.FloatBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexEnvx" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexEnvxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexEnvxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexGenf" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coord" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexGenfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coord" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="float[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexGenfv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coord" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.FloatBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexGeni" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coord" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexGeniv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coord" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexGeniv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coord" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexGenx" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coord" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexGenxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coord" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="int[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexGenxv" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coord" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="params" type="java.nio.IntBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="glTexParameterf" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="int">
+</parameter>
+<parameter name="pname" type="int">
+</parameter>
+<parameter name="param" type="float">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="GL_BLEND_DST_ALPHA" static="true" transient="false" type="int" value="32970" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_BLEND_DST_RGB" static="true" transient="false" type="int" value="32968" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_BLEND_EQUATION" static="true" transient="false" type="int" value="32777" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_BLEND_EQUATION_ALPHA" static="true" transient="false" type="int" value="34877" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_BLEND_EQUATION_RGB" static="true" transient="false" type="int" value="32777" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_BLEND_SRC_ALPHA" static="true" transient="false" type="int" value="32971" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_BLEND_SRC_RGB" static="true" transient="false" type="int" value="32969" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ATTACHMENT0_OES" static="true" transient="false" type="int" value="36064" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ATTACHMENT10_OES" static="true" transient="false" type="int" value="36074" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ATTACHMENT11_OES" static="true" transient="false" type="int" value="36075" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ATTACHMENT12_OES" static="true" transient="false" type="int" value="36076" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ATTACHMENT13_OES" static="true" transient="false" type="int" value="36077" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ATTACHMENT14_OES" static="true" transient="false" type="int" value="36078" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ATTACHMENT15_OES" static="true" transient="false" type="int" value="36079" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ATTACHMENT1_OES" static="true" transient="false" type="int" value="36065" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ATTACHMENT2_OES" static="true" transient="false" type="int" value="36066" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ATTACHMENT3_OES" static="true" transient="false" type="int" value="36067" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ATTACHMENT4_OES" static="true" transient="false" type="int" value="36068" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ATTACHMENT5_OES" static="true" transient="false" type="int" value="36069" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ATTACHMENT6_OES" static="true" transient="false" type="int" value="36070" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ATTACHMENT7_OES" static="true" transient="false" type="int" value="36071" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ATTACHMENT8_OES" static="true" transient="false" type="int" value="36072" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_COLOR_ATTACHMENT9_OES" static="true" transient="false" type="int" value="36073" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DECR_WRAP" static="true" transient="false" type="int" value="34056" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DEPTH_ATTACHMENT_OES" static="true" transient="false" type="int" value="36096" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DEPTH_COMPONENT" static="true" transient="false" type="int" value="6402" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DEPTH_COMPONENT16" static="true" transient="false" type="int" value="33189" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DEPTH_COMPONENT24" static="true" transient="false" type="int" value="33190" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_DEPTH_COMPONENT32" static="true" transient="false" type="int" value="33191" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FRAMEBUFFER_ATTACHMENT_OBJECT_NAME_OES" static="true" transient="false" type="int" value="36049" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE_OES" static="true" transient="false" type="int" value="36048" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE_OES" static="true" transient="false" type="int" value="36051" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL_OES" static="true" transient="false" type="int" value="36050" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FRAMEBUFFER_BINDING_OES" static="true" transient="false" type="int" value="36006" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FRAMEBUFFER_COMPLETE_OES" static="true" transient="false" type="int" value="36053" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FRAMEBUFFER_INCOMPLETE_ATTACHMENT_OES" static="true" transient="false" type="int" value="36054" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FRAMEBUFFER_INCOMPLETE_DIMENSIONS_OES" static="true" transient="false" type="int" value="36057" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FRAMEBUFFER_INCOMPLETE_DRAW_BUFFER_OES" static="true" transient="false" type="int" value="36059" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FRAMEBUFFER_INCOMPLETE_FORMATS_OES" static="true" transient="false" type="int" value="36058" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT_OES" static="true" transient="false" type="int" value="36055" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FRAMEBUFFER_INCOMPLETE_READ_BUFFER_OES" static="true" transient="false" type="int" value="36060" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FRAMEBUFFER_OES" static="true" transient="false" type="int" value="36160" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FRAMEBUFFER_UNSUPPORTED_OES" static="true" transient="false" type="int" value="36061" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FUNC_ADD" static="true" transient="false" type="int" value="32774" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FUNC_REVERSE_SUBTRACT" static="true" transient="false" type="int" value="32779" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_FUNC_SUBTRACT" static="true" transient="false" type="int" value="32778" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_INCR_WRAP" static="true" transient="false" type="int" value="34055" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_INVALID_FRAMEBUFFER_OPERATION_OES" static="true" transient="false" type="int" value="1286" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MAX_COLOR_ATTACHMENTS_OES" static="true" transient="false" type="int" value="36063" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MAX_CUBE_MAP_TEXTURE_SIZE" static="true" transient="false" type="int" value="34076" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MAX_RENDERBUFFER_SIZE_OES" static="true" transient="false" type="int" value="34024" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_MIRRORED_REPEAT" static="true" transient="false" type="int" value="33648" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_NORMAL_MAP" static="true" transient="false" type="int" value="34065" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_REFLECTION_MAP" static="true" transient="false" type="int" value="34066" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RENDERBUFFER_ALPHA_SIZE_OES" static="true" transient="false" type="int" value="36179" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RENDERBUFFER_BINDING_OES" static="true" transient="false" type="int" value="36007" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RENDERBUFFER_BLUE_SIZE_OES" static="true" transient="false" type="int" value="36178" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RENDERBUFFER_DEPTH_SIZE_OES" static="true" transient="false" type="int" value="36180" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RENDERBUFFER_GREEN_SIZE_OES" static="true" transient="false" type="int" value="36177" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RENDERBUFFER_HEIGHT_OES" static="true" transient="false" type="int" value="36163" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RENDERBUFFER_INTERNAL_FORMAT_OES" static="true" transient="false" type="int" value="36164" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RENDERBUFFER_OES" static="true" transient="false" type="int" value="36161" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RENDERBUFFER_RED_SIZE_OES" static="true" transient="false" type="int" value="36176" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RENDERBUFFER_STENCIL_SIZE_OES" static="true" transient="false" type="int" value="36181" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RENDERBUFFER_WIDTH_OES" static="true" transient="false" type="int" value="36162" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RGB565_OES" static="true" transient="false" type="int" value="36194" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RGB5_A1" static="true" transient="false" type="int" value="32855" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RGB8" static="true" transient="false" type="int" value="32849" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RGBA4" static="true" transient="false" type="int" value="32854" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_RGBA8" static="true" transient="false" type="int" value="32856" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_STENCIL_ATTACHMENT_OES" static="true" transient="false" type="int" value="36128" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_STENCIL_INDEX" static="true" transient="false" type="int" value="6401" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_STENCIL_INDEX1_OES" static="true" transient="false" type="int" value="36166" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_STENCIL_INDEX4_OES" static="true" transient="false" type="int" value="36167" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_STENCIL_INDEX8_OES" static="true" transient="false" type="int" value="36168" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_STR" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_BINDING_CUBE_MAP" static="true" transient="false" type="int" value="34068" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_CUBE_MAP" static="true" transient="false" type="int" value="34067" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_CUBE_MAP_NEGATIVE_X" static="true" transient="false" type="int" value="34070" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_CUBE_MAP_NEGATIVE_Y" static="true" transient="false" type="int" value="34072" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_CUBE_MAP_NEGATIVE_Z" static="true" transient="false" type="int" value="34074" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_CUBE_MAP_POSITIVE_X" static="true" transient="false" type="int" value="34069" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_CUBE_MAP_POSITIVE_Y" static="true" transient="false" type="int" value="34071" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_CUBE_MAP_POSITIVE_Z" static="true" transient="false" type="int" value="34073" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_GEN_MODE" static="true" transient="false" type="int" value="9472" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GL_TEXTURE_GEN_STR" static="true" transient="false" type="int" value="36192" visibility="public" volatile="false">
+</field>
+</interface>
+</package></api>

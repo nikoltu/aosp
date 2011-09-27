@@ -1,0 +1,54 @@
+<?xml version="1.0" ?><api><package name="android.os.storage">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="OnObbStateChangeListener" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="OnObbStateChangeListener" static="false" type="android.os.storage.OnObbStateChangeListener" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onObbStateChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="state" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ERROR_ALREADY_MOUNTED" static="true" transient="false" type="int" value="24" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_COULD_NOT_MOUNT" static="true" transient="false" type="int" value="21" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_COULD_NOT_UNMOUNT" static="true" transient="false" type="int" value="22" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_INTERNAL" static="true" transient="false" type="int" value="20" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_NOT_MOUNTED" static="true" transient="false" type="int" value="23" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_PERMISSION_DENIED" static="true" transient="false" type="int" value="25" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MOUNTED" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNMOUNTED" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="StorageManager" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getMountedObbPath" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="filename" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isObbMounted" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="filename" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="mountObb" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="filename" type="java.lang.String">
+</parameter>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="listener" type="android.os.storage.OnObbStateChangeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unmountObb" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="filename" type="java.lang.String">
+</parameter>
+<parameter name="force" type="boolean">
+</parameter>
+<parameter name="listener" type="android.os.storage.OnObbStateChangeListener">
+</parameter>
+</method>
+</class>
+</package></api>

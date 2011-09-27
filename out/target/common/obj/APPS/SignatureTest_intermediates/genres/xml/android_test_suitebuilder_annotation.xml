@@ -1,0 +1,22 @@
+<?xml version="1.0" ?><api><package name="android.test.suitebuilder.annotation">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="LargeTest" static="false" visibility="public">
+<implements name="java.lang.annotation.Annotation">
+</implements>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="MediumTest" static="false" visibility="public">
+<implements name="java.lang.annotation.Annotation">
+</implements>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SmallTest" static="false" visibility="public">
+<implements name="java.lang.annotation.Annotation">
+</implements>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Smoke" static="false" visibility="public">
+<implements name="java.lang.annotation.Annotation">
+</implements>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Suppress" static="false" visibility="public">
+<implements name="java.lang.annotation.Annotation">
+</implements>
+</class>
+</package></api>

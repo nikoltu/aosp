@@ -1,0 +1,23 @@
+out/target/product/generic/obj/SHARED_LIBRARIES/libcts_jni_intermediates/android_os_cts_CpuFeatures.o: \
+ cts/tests/jni/android_os_cts_CpuFeatures.cpp \
+ system/core/include/arch/linux-arm/AndroidConfig.h \
+ ndk/sources/cpufeatures/cpu-features.h bionic/libc/include/sys/cdefs.h \
+ bionic/libc/include/sys/cdefs_elf.h \
+ bionic/libc/include/android/api-level.h bionic/libc/include/stdint.h \
+ prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include/stddef.h \
+ bionic/libc/include/sys/_types.h \
+ bionic/libc/arch-arm/include/machine/_types.h \
+ dalvik/libnativehelper/include/nativehelper/jni.h \
+ prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include/stdarg.h \
+ bionic/libc/include/string.h bionic/libc/include/malloc.h
+ cts/tests/jni/android_os_cts_CpuFeatures.cpp :
+ system/core/include/arch/linux-arm/AndroidConfig.h :
+ ndk/sources/cpufeatures/cpu-features.h bionic/libc/include/sys/cdefs.h :
+ bionic/libc/include/sys/cdefs_elf.h :
+ bionic/libc/include/android/api-level.h bionic/libc/include/stdint.h :
+ prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include/stddef.h :
+ bionic/libc/include/sys/_types.h :
+ bionic/libc/arch-arm/include/machine/_types.h :
+ dalvik/libnativehelper/include/nativehelper/jni.h :
+ prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include/stdarg.h :
+ bionic/libc/include/string.h bionic/libc/include/malloc.h :

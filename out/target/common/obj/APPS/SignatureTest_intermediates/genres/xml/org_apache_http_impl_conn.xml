@@ -1,0 +1,702 @@
+<?xml version="1.0" ?><api><package name="org.apache.http.impl.conn">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AbstractClientConnAdapter" static="false" visibility="public">
+<implements name="org.apache.http.conn.ManagedClientConnection">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractClientConnAdapter" static="false" type="org.apache.http.impl.conn.AbstractClientConnAdapter" visibility="protected">
+<parameter name="mgr" type="org.apache.http.conn.ClientConnectionManager">
+</parameter>
+<parameter name="conn" type="org.apache.http.conn.OperatedClientConnection">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="abortConnection" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="assertNotAborted" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="InterruptedIOException" type="java.io.InterruptedIOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="assertValid" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="wrappedConn" type="org.apache.http.conn.OperatedClientConnection">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="detach" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="flush" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalAddress" native="false" return="java.net.InetAddress" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalPort" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getManager" native="false" return="org.apache.http.conn.ClientConnectionManager" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMetrics" native="false" return="org.apache.http.HttpConnectionMetrics" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRemoteAddress" native="false" return="java.net.InetAddress" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRemotePort" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSSLSession" native="false" return="javax.net.ssl.SSLSession" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSocketTimeout" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWrappedConnection" native="false" return="org.apache.http.conn.OperatedClientConnection" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isMarkedReusable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isOpen" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isResponseAvailable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isSecure" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isStale" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="markReusable" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="receiveResponseEntity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="response" type="org.apache.http.HttpResponse">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="receiveResponseHeader" native="false" return="org.apache.http.HttpResponse" static="false" synchronized="false" visibility="public">
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="releaseConnection" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendRequestEntity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="request" type="org.apache.http.HttpEntityEnclosingRequest">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendRequestHeader" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setIdleDuration" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="duration" type="long">
+</parameter>
+<parameter name="unit" type="java.util.concurrent.TimeUnit">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSocketTimeout" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unmarkReusable" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AbstractPoolEntry" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AbstractPoolEntry" static="false" type="org.apache.http.impl.conn.AbstractPoolEntry" visibility="protected">
+<parameter name="connOperator" type="org.apache.http.conn.ClientConnectionOperator">
+</parameter>
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getState" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="layerProtocol" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="open" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="state" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shutdownEntry" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tunnelProxy" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="next" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="secure" type="boolean">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tunnelTarget" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="secure" type="boolean">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="connOperator" static="false" transient="false" type="org.apache.http.conn.ClientConnectionOperator" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="connection" static="false" transient="false" type="org.apache.http.conn.OperatedClientConnection" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="route" static="false" transient="false" type="org.apache.http.conn.routing.HttpRoute" visibility="protected" volatile="true">
+</field>
+<field deprecated="not deprecated" final="false" name="state" static="false" transient="false" type="java.lang.Object" visibility="protected" volatile="true">
+</field>
+<field deprecated="not deprecated" final="false" name="tracker" static="false" transient="false" type="org.apache.http.conn.routing.RouteTracker" visibility="protected" volatile="true">
+</field>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="org.apache.http.impl.conn.AbstractClientConnAdapter" final="false" name="AbstractPooledConnAdapter" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AbstractPooledConnAdapter" static="false" type="org.apache.http.impl.conn.AbstractPooledConnAdapter" visibility="protected">
+<parameter name="manager" type="org.apache.http.conn.ClientConnectionManager">
+</parameter>
+<parameter name="entry" type="org.apache.http.impl.conn.AbstractPoolEntry">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="assertAttached" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRoute" native="false" return="org.apache.http.conn.routing.HttpRoute" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getState" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="layerProtocol" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="open" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="state" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shutdown" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tunnelProxy" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="next" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="secure" type="boolean">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tunnelTarget" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="secure" type="boolean">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="false" name="poolEntry" static="false" transient="false" type="org.apache.http.impl.conn.AbstractPoolEntry" visibility="protected" volatile="true">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.SocketHttpClientConnection" final="false" name="DefaultClientConnection" static="false" visibility="public">
+<implements name="org.apache.http.conn.OperatedClientConnection">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DefaultClientConnection" static="false" type="org.apache.http.impl.conn.DefaultClientConnection" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="getSocket" native="false" return="java.net.Socket" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getTargetHost" native="false" return="org.apache.http.HttpHost" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isSecure" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="openCompleted" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="secure" type="boolean">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="opening" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="sock" type="java.net.Socket">
+</parameter>
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="sock" type="java.net.Socket">
+</parameter>
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="secure" type="boolean">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DefaultClientConnectionOperator" static="false" visibility="public">
+<implements name="org.apache.http.conn.ClientConnectionOperator">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DefaultClientConnectionOperator" static="false" type="org.apache.http.impl.conn.DefaultClientConnectionOperator" visibility="public">
+<parameter name="schemes" type="org.apache.http.conn.scheme.SchemeRegistry">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="createConnection" native="false" return="org.apache.http.conn.OperatedClientConnection" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="openConnection" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="conn" type="org.apache.http.conn.OperatedClientConnection">
+</parameter>
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="local" type="java.net.InetAddress">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="prepareSocket" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="sock" type="java.net.Socket">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateSecureConnection" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="conn" type="org.apache.http.conn.OperatedClientConnection">
+</parameter>
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="false" name="schemeRegistry" static="false" transient="false" type="org.apache.http.conn.scheme.SchemeRegistry" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DefaultHttpRoutePlanner" static="false" visibility="public">
+<implements name="org.apache.http.conn.routing.HttpRoutePlanner">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DefaultHttpRoutePlanner" static="false" type="org.apache.http.impl.conn.DefaultHttpRoutePlanner" visibility="public">
+<parameter name="schreg" type="org.apache.http.conn.scheme.SchemeRegistry">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="determineRoute" native="false" return="org.apache.http.conn.routing.HttpRoute" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="false" name="schemeRegistry" static="false" transient="false" type="org.apache.http.conn.scheme.SchemeRegistry" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.io.AbstractMessageParser" final="false" name="DefaultResponseParser" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DefaultResponseParser" static="false" type="org.apache.http.impl.conn.DefaultResponseParser" visibility="public">
+<parameter name="buffer" type="org.apache.http.io.SessionInputBuffer">
+</parameter>
+<parameter name="parser" type="org.apache.http.message.LineParser">
+</parameter>
+<parameter name="responseFactory" type="org.apache.http.HttpResponseFactory">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseHead" native="false" return="org.apache.http.HttpMessage" static="false" synchronized="false" visibility="protected">
+<parameter name="sessionBuffer" type="org.apache.http.io.SessionInputBuffer">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="IdleConnectionHandler" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IdleConnectionHandler" static="false" type="org.apache.http.impl.conn.IdleConnectionHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="add" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="connection" type="org.apache.http.HttpConnection">
+</parameter>
+<parameter name="validDuration" type="long">
+</parameter>
+<parameter name="unit" type="java.util.concurrent.TimeUnit">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="closeExpiredConnections" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="closeIdleConnections" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="idleTime" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="remove" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="connection" type="org.apache.http.HttpConnection">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeAll" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="LoggingSessionInputBuffer" static="false" visibility="public">
+<implements name="org.apache.http.io.SessionInputBuffer">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="LoggingSessionInputBuffer" static="false" type="org.apache.http.impl.conn.LoggingSessionInputBuffer" visibility="public">
+<parameter name="in" type="org.apache.http.io.SessionInputBuffer">
+</parameter>
+<parameter name="wire" type="org.apache.http.impl.conn.Wire">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMetrics" native="false" return="org.apache.http.io.HttpTransportMetrics" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isDataAvailable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readLine" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readLine" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="LoggingSessionOutputBuffer" static="false" visibility="public">
+<implements name="org.apache.http.io.SessionOutputBuffer">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="LoggingSessionOutputBuffer" static="false" type="org.apache.http.impl.conn.LoggingSessionOutputBuffer" visibility="public">
+<parameter name="out" type="org.apache.http.io.SessionOutputBuffer">
+</parameter>
+<parameter name="wire" type="org.apache.http.impl.conn.Wire">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="flush" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMetrics" native="false" return="org.apache.http.io.HttpTransportMetrics" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeLine" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeLine" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ProxySelectorRoutePlanner" static="false" visibility="public">
+<implements name="org.apache.http.conn.routing.HttpRoutePlanner">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ProxySelectorRoutePlanner" static="false" type="org.apache.http.impl.conn.ProxySelectorRoutePlanner" visibility="public">
+<parameter name="schreg" type="org.apache.http.conn.scheme.SchemeRegistry">
+</parameter>
+<parameter name="prosel" type="java.net.ProxySelector">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="chooseProxy" native="false" return="java.net.Proxy" static="false" synchronized="false" visibility="protected">
+<parameter name="proxies" type="java.util.List&lt;java.net.Proxy&gt;">
+</parameter>
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="determineProxy" native="false" return="org.apache.http.HttpHost" static="false" synchronized="false" visibility="protected">
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="determineRoute" native="false" return="org.apache.http.conn.routing.HttpRoute" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHost" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+<parameter name="isa" type="java.net.InetSocketAddress">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProxySelector" native="false" return="java.net.ProxySelector" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setProxySelector" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="prosel" type="java.net.ProxySelector">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="proxySelector" static="false" transient="false" type="java.net.ProxySelector" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="schemeRegistry" static="false" transient="false" type="org.apache.http.conn.scheme.SchemeRegistry" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SingleClientConnManager" static="false" visibility="public">
+<implements name="org.apache.http.conn.ClientConnectionManager">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="SingleClientConnManager" static="false" type="org.apache.http.impl.conn.SingleClientConnManager" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="schreg" type="org.apache.http.conn.scheme.SchemeRegistry">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="assertStillUp" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="closeExpiredConnections" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="closeIdleConnections" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="idletime" type="long">
+</parameter>
+<parameter name="tunit" type="java.util.concurrent.TimeUnit">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createConnectionOperator" native="false" return="org.apache.http.conn.ClientConnectionOperator" static="false" synchronized="false" visibility="protected">
+<parameter name="schreg" type="org.apache.http.conn.scheme.SchemeRegistry">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getConnection" native="false" return="org.apache.http.conn.ManagedClientConnection" static="false" synchronized="false" visibility="public">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+<parameter name="state" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSchemeRegistry" native="false" return="org.apache.http.conn.scheme.SchemeRegistry" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="releaseConnection" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="conn" type="org.apache.http.conn.ManagedClientConnection">
+</parameter>
+<parameter name="validDuration" type="long">
+</parameter>
+<parameter name="timeUnit" type="java.util.concurrent.TimeUnit">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="requestConnection" native="false" return="org.apache.http.conn.ClientConnectionRequest" static="false" synchronized="false" visibility="public">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+<parameter name="state" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="revokeConnection" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shutdown" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="MISUSE_MESSAGE" static="true" transient="false" type="java.lang.String" value="&quot;Invalid use of SingleClientConnManager: connection still allocated.\nMake sure to release the connection before allocating another one.&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="alwaysShutDown" static="false" transient="false" type="boolean" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="connOperator" static="false" transient="false" type="org.apache.http.conn.ClientConnectionOperator" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="connectionExpiresTime" static="false" transient="false" type="long" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="isShutDown" static="false" transient="false" type="boolean" visibility="protected" volatile="true">
+</field>
+<field deprecated="not deprecated" final="false" name="lastReleaseTime" static="false" transient="false" type="long" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="managedConn" static="false" transient="false" type="org.apache.http.impl.conn.SingleClientConnManager.ConnAdapter" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="schemeRegistry" static="false" transient="false" type="org.apache.http.conn.scheme.SchemeRegistry" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="uniquePoolEntry" static="false" transient="false" type="org.apache.http.impl.conn.SingleClientConnManager.PoolEntry" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.conn.AbstractPooledConnAdapter" final="false" name="SingleClientConnManager.ConnAdapter" static="false" visibility="protected">
+<constructor deprecated="not deprecated" final="false" name="SingleClientConnManager.ConnAdapter" static="false" type="org.apache.http.impl.conn.SingleClientConnManager.ConnAdapter" visibility="protected">
+<parameter name="entry" type="org.apache.http.impl.conn.SingleClientConnManager.PoolEntry">
+</parameter>
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.conn.AbstractPoolEntry" final="false" name="SingleClientConnManager.PoolEntry" static="false" visibility="protected">
+<constructor deprecated="not deprecated" final="false" name="SingleClientConnManager.PoolEntry" static="false" type="org.apache.http.impl.conn.SingleClientConnManager.PoolEntry" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shutdown" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Wire" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Wire" static="false" type="org.apache.http.impl.conn.Wire" visibility="public">
+<parameter name="log" type="org.apache.commons.logging.Log">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="enabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="input" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="instream" type="java.io.InputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="input" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="input" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="input" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="input" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="output" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="outstream" type="java.io.InputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="output" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="output" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="output" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="output" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+</package></api>

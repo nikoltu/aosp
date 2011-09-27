@@ -1,0 +1,22 @@
+<?xml version="1.0" ?><api><package name="org.apache.http.cookie.params">
+<interface abstract="true" deprecated="not deprecated" final="false" name="CookieSpecPNames" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="DATE_PATTERNS" static="true" transient="false" type="java.lang.String" value="&quot;http.protocol.cookie-datepatterns&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SINGLE_COOKIE_HEADER" static="true" transient="false" type="java.lang.String" value="&quot;http.protocol.single-cookie-header&quot;" visibility="public" volatile="false">
+</field>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.params.HttpAbstractParamBean" final="false" name="CookieSpecParamBean" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CookieSpecParamBean" static="false" type="org.apache.http.cookie.params.CookieSpecParamBean" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDatePatterns" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="patterns" type="java.util.Collection&lt;java.lang.String&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSingleHeader" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="singleHeader" type="boolean">
+</parameter>
+</method>
+</class>
+</package></api>

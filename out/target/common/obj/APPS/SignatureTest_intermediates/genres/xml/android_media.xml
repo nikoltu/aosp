@@ -1,0 +1,2202 @@
+<?xml version="1.0" ?><api><package name="android.media">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AsyncPlayer" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AsyncPlayer" static="false" type="android.media.AsyncPlayer" visibility="public">
+<parameter name="tag" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="play" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+<parameter name="looping" type="boolean">
+</parameter>
+<parameter name="stream" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stop" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AudioFormat" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AudioFormat" static="false" type="android.media.AudioFormat" visibility="public">
+</constructor>
+<field deprecated="deprecated" final="true" name="CHANNEL_CONFIGURATION_DEFAULT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="CHANNEL_CONFIGURATION_INVALID" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="CHANNEL_CONFIGURATION_MONO" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="CHANNEL_CONFIGURATION_STEREO" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_INVALID" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_IN_BACK" static="true" transient="false" type="int" value="32" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_IN_BACK_PROCESSED" static="true" transient="false" type="int" value="512" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_IN_DEFAULT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_IN_FRONT" static="true" transient="false" type="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_IN_FRONT_PROCESSED" static="true" transient="false" type="int" value="256" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_IN_LEFT" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_IN_LEFT_PROCESSED" static="true" transient="false" type="int" value="64" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_IN_MONO" static="true" transient="false" type="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_IN_PRESSURE" static="true" transient="false" type="int" value="1024" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_IN_RIGHT" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_IN_RIGHT_PROCESSED" static="true" transient="false" type="int" value="128" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_IN_STEREO" static="true" transient="false" type="int" value="12" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_IN_VOICE_DNLINK" static="true" transient="false" type="int" value="32768" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_IN_VOICE_UPLINK" static="true" transient="false" type="int" value="16384" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_IN_X_AXIS" static="true" transient="false" type="int" value="2048" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_IN_Y_AXIS" static="true" transient="false" type="int" value="4096" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_IN_Z_AXIS" static="true" transient="false" type="int" value="8192" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_OUT_5POINT1" static="true" transient="false" type="int" value="252" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_OUT_7POINT1" static="true" transient="false" type="int" value="1020" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_OUT_BACK_CENTER" static="true" transient="false" type="int" value="1024" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_OUT_BACK_LEFT" static="true" transient="false" type="int" value="64" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_OUT_BACK_RIGHT" static="true" transient="false" type="int" value="128" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_OUT_DEFAULT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_OUT_FRONT_CENTER" static="true" transient="false" type="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_OUT_FRONT_LEFT" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_OUT_FRONT_LEFT_OF_CENTER" static="true" transient="false" type="int" value="256" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_OUT_FRONT_RIGHT" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_OUT_FRONT_RIGHT_OF_CENTER" static="true" transient="false" type="int" value="512" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_OUT_LOW_FREQUENCY" static="true" transient="false" type="int" value="32" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_OUT_MONO" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_OUT_QUAD" static="true" transient="false" type="int" value="204" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_OUT_STEREO" static="true" transient="false" type="int" value="12" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHANNEL_OUT_SURROUND" static="true" transient="false" type="int" value="1052" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ENCODING_DEFAULT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ENCODING_INVALID" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ENCODING_PCM_16BIT" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ENCODING_PCM_8BIT" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AudioManager" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="abandonAudioFocus" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="l" type="android.media.AudioManager.OnAudioFocusChangeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="adjustStreamVolume" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="streamType" type="int">
+</parameter>
+<parameter name="direction" type="int">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="adjustSuggestedStreamVolume" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="direction" type="int">
+</parameter>
+<parameter name="suggestedStreamType" type="int">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="adjustVolume" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="direction" type="int">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParameters" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="keys" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRingerMode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getRouting" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="mode" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStreamMaxVolume" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="streamType" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStreamVolume" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="streamType" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVibrateSetting" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="vibrateType" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isBluetoothA2dpOn" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isBluetoothScoAvailableOffCall" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isBluetoothScoOn" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isMicrophoneMute" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isMusicActive" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isSpeakerphoneOn" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isWiredHeadsetOn" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadSoundEffects" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="playSoundEffect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="effectType" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="playSoundEffect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="effectType" type="int">
+</parameter>
+<parameter name="volume" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="registerMediaButtonEventReceiver" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="eventReceiver" type="android.content.ComponentName">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="requestAudioFocus" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="l" type="android.media.AudioManager.OnAudioFocusChangeListener">
+</parameter>
+<parameter name="streamType" type="int">
+</parameter>
+<parameter name="durationHint" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="setBluetoothA2dpOn" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="on" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setBluetoothScoOn" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="on" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMicrophoneMute" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="on" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mode" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setParameters" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="keyValuePairs" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRingerMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ringerMode" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="setRouting" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mode" type="int">
+</parameter>
+<parameter name="routes" type="int">
+</parameter>
+<parameter name="mask" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSpeakerphoneOn" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="on" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStreamMute" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="streamType" type="int">
+</parameter>
+<parameter name="state" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStreamSolo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="streamType" type="int">
+</parameter>
+<parameter name="state" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStreamVolume" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="streamType" type="int">
+</parameter>
+<parameter name="index" type="int">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVibrateSetting" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="vibrateType" type="int">
+</parameter>
+<parameter name="vibrateSetting" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="setWiredHeadsetOn" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="on" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shouldVibrate" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="vibrateType" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startBluetoothSco" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stopBluetoothSco" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unloadSoundEffects" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unregisterMediaButtonEventReceiver" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="eventReceiver" type="android.content.ComponentName">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ACTION_AUDIO_BECOMING_NOISY" static="true" transient="false" type="java.lang.String" value="&quot;android.media.AUDIO_BECOMING_NOISY&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_SCO_AUDIO_STATE_CHANGED" static="true" transient="false" type="java.lang.String" value="&quot;android.media.SCO_AUDIO_STATE_CHANGED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ADJUST_LOWER" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ADJUST_RAISE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ADJUST_SAME" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIOFOCUS_GAIN" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIOFOCUS_GAIN_TRANSIENT" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIOFOCUS_LOSS" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIOFOCUS_LOSS_TRANSIENT" static="true" transient="false" type="int" value="-2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK" static="true" transient="false" type="int" value="-3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIOFOCUS_REQUEST_FAILED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUDIOFOCUS_REQUEST_GRANTED" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_RINGER_MODE" static="true" transient="false" type="java.lang.String" value="&quot;android.media.EXTRA_RINGER_MODE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_SCO_AUDIO_STATE" static="true" transient="false" type="java.lang.String" value="&quot;android.media.extra.SCO_AUDIO_STATE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_VIBRATE_SETTING" static="true" transient="false" type="java.lang.String" value="&quot;android.media.EXTRA_VIBRATE_SETTING&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_VIBRATE_TYPE" static="true" transient="false" type="java.lang.String" value="&quot;android.media.EXTRA_VIBRATE_TYPE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAG_ALLOW_RINGER_MODES" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAG_PLAY_SOUND" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAG_REMOVE_SOUND_AND_VIBRATE" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAG_SHOW_UI" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAG_VIBRATE" static="true" transient="false" type="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FX_FOCUS_NAVIGATION_DOWN" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FX_FOCUS_NAVIGATION_LEFT" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FX_FOCUS_NAVIGATION_RIGHT" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FX_FOCUS_NAVIGATION_UP" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FX_KEYPRESS_DELETE" static="true" transient="false" type="int" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FX_KEYPRESS_RETURN" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FX_KEYPRESS_SPACEBAR" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FX_KEYPRESS_STANDARD" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FX_KEY_CLICK" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MODE_CURRENT" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MODE_INVALID" static="true" transient="false" type="int" value="-2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MODE_IN_CALL" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MODE_NORMAL" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MODE_RINGTONE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="NUM_STREAMS" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RINGER_MODE_CHANGED_ACTION" static="true" transient="false" type="java.lang.String" value="&quot;android.media.RINGER_MODE_CHANGED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RINGER_MODE_NORMAL" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RINGER_MODE_SILENT" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RINGER_MODE_VIBRATE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="ROUTE_ALL" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="ROUTE_BLUETOOTH" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="ROUTE_BLUETOOTH_A2DP" static="true" transient="false" type="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="ROUTE_BLUETOOTH_SCO" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="ROUTE_EARPIECE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="ROUTE_HEADSET" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="ROUTE_SPEAKER" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCO_AUDIO_STATE_CONNECTED" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCO_AUDIO_STATE_DISCONNECTED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCO_AUDIO_STATE_ERROR" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STREAM_ALARM" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STREAM_DTMF" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STREAM_MUSIC" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STREAM_NOTIFICATION" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STREAM_RING" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STREAM_SYSTEM" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STREAM_VOICE_CALL" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="USE_DEFAULT_STREAM_TYPE" static="true" transient="false" type="int" value="-2147483648" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VIBRATE_SETTING_CHANGED_ACTION" static="true" transient="false" type="java.lang.String" value="&quot;android.media.VIBRATE_SETTING_CHANGED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VIBRATE_SETTING_OFF" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VIBRATE_SETTING_ON" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VIBRATE_SETTING_ONLY_SILENT" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VIBRATE_TYPE_NOTIFICATION" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VIBRATE_TYPE_RINGER" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="AudioManager.OnAudioFocusChangeListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onAudioFocusChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="focusChange" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AudioRecord" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AudioRecord" static="false" type="android.media.AudioRecord" visibility="public">
+<parameter name="audioSource" type="int">
+</parameter>
+<parameter name="sampleRateInHz" type="int">
+</parameter>
+<parameter name="channelConfig" type="int">
+</parameter>
+<parameter name="audioFormat" type="int">
+</parameter>
+<parameter name="bufferSizeInBytes" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAudioFormat" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAudioSource" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getChannelConfiguration" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getChannelCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMinBufferSize" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="sampleRateInHz" type="int">
+</parameter>
+<parameter name="channelConfig" type="int">
+</parameter>
+<parameter name="audioFormat" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNotificationMarkerPosition" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPositionNotificationPeriod" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRecordingState" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSampleRate" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getState" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="audioData" type="byte[]">
+</parameter>
+<parameter name="offsetInBytes" type="int">
+</parameter>
+<parameter name="sizeInBytes" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="audioData" type="short[]">
+</parameter>
+<parameter name="offsetInShorts" type="int">
+</parameter>
+<parameter name="sizeInShorts" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="audioBuffer" type="java.nio.ByteBuffer">
+</parameter>
+<parameter name="sizeInBytes" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="release" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setNotificationMarkerPosition" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="markerInFrames" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPositionNotificationPeriod" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="periodInFrames" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRecordPositionUpdateListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.AudioRecord.OnRecordPositionUpdateListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRecordPositionUpdateListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.AudioRecord.OnRecordPositionUpdateListener">
+</parameter>
+<parameter name="handler" type="android.os.Handler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startRecording" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stop" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="ERROR" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_BAD_VALUE" static="true" transient="false" type="int" value="-2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_INVALID_OPERATION" static="true" transient="false" type="int" value="-3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RECORDSTATE_RECORDING" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RECORDSTATE_STOPPED" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATE_INITIALIZED" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATE_UNINITIALIZED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SUCCESS" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="AudioRecord.OnRecordPositionUpdateListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onMarkerReached" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="recorder" type="android.media.AudioRecord">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onPeriodicNotification" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="recorder" type="android.media.AudioRecord">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AudioTrack" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AudioTrack" static="false" type="android.media.AudioTrack" visibility="public">
+<parameter name="streamType" type="int">
+</parameter>
+<parameter name="sampleRateInHz" type="int">
+</parameter>
+<parameter name="channelConfig" type="int">
+</parameter>
+<parameter name="audioFormat" type="int">
+</parameter>
+<parameter name="bufferSizeInBytes" type="int">
+</parameter>
+<parameter name="mode" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AudioTrack" static="false" type="android.media.AudioTrack" visibility="public">
+<parameter name="streamType" type="int">
+</parameter>
+<parameter name="sampleRateInHz" type="int">
+</parameter>
+<parameter name="channelConfig" type="int">
+</parameter>
+<parameter name="audioFormat" type="int">
+</parameter>
+<parameter name="bufferSizeInBytes" type="int">
+</parameter>
+<parameter name="mode" type="int">
+</parameter>
+<parameter name="sessionId" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="attachAuxEffect" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="effectId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="flush" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAudioFormat" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAudioSessionId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getChannelConfiguration" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getChannelCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMaxVolume" native="false" return="float" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMinBufferSize" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="sampleRateInHz" type="int">
+</parameter>
+<parameter name="channelConfig" type="int">
+</parameter>
+<parameter name="audioFormat" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMinVolume" native="false" return="float" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNativeFrameCount" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNativeOutputSampleRate" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="streamType" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNotificationMarkerPosition" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPlayState" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPlaybackHeadPosition" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPlaybackRate" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPositionNotificationPeriod" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSampleRate" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getState" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStreamType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pause" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="play" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="release" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reloadStaticData" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAuxEffectSendLevel" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="level" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLoopPoints" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="startInFrames" type="int">
+</parameter>
+<parameter name="endInFrames" type="int">
+</parameter>
+<parameter name="loopCount" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setNotificationMarkerPosition" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="markerInFrames" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPlaybackHeadPosition" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="positionInFrames" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPlaybackPositionUpdateListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.AudioTrack.OnPlaybackPositionUpdateListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPlaybackPositionUpdateListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.AudioTrack.OnPlaybackPositionUpdateListener">
+</parameter>
+<parameter name="handler" type="android.os.Handler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPlaybackRate" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="sampleRateInHz" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPositionNotificationPeriod" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="periodInFrames" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setState" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="state" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStereoVolume" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="leftVolume" type="float">
+</parameter>
+<parameter name="rightVolume" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stop" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="audioData" type="byte[]">
+</parameter>
+<parameter name="offsetInBytes" type="int">
+</parameter>
+<parameter name="sizeInBytes" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="audioData" type="short[]">
+</parameter>
+<parameter name="offsetInShorts" type="int">
+</parameter>
+<parameter name="sizeInShorts" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ERROR" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_BAD_VALUE" static="true" transient="false" type="int" value="-2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_INVALID_OPERATION" static="true" transient="false" type="int" value="-3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MODE_STATIC" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MODE_STREAM" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PLAYSTATE_PAUSED" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PLAYSTATE_PLAYING" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PLAYSTATE_STOPPED" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATE_INITIALIZED" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATE_NO_STATIC_DATA" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATE_UNINITIALIZED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SUCCESS" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="AudioTrack.OnPlaybackPositionUpdateListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onMarkerReached" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="track" type="android.media.AudioTrack">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onPeriodicNotification" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="track" type="android.media.AudioTrack">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="CamcorderProfile" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="android.media.CamcorderProfile" static="true" synchronized="false" visibility="public">
+<parameter name="quality" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="android.media.CamcorderProfile" static="true" synchronized="false" visibility="public">
+<parameter name="cameraId" type="int">
+</parameter>
+<parameter name="quality" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="QUALITY_HIGH" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="QUALITY_LOW" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="audioBitRate" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="audioChannels" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="audioCodec" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="audioSampleRate" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="duration" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="fileFormat" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="quality" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="videoBitRate" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="videoCodec" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="videoFrameHeight" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="videoFrameRate" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="videoFrameWidth" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="CameraProfile" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CameraProfile" static="false" type="android.media.CameraProfile" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getJpegEncodingQualityParameter" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="quality" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getJpegEncodingQualityParameter" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="cameraId" type="int">
+</parameter>
+<parameter name="quality" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="QUALITY_HIGH" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="QUALITY_LOW" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="QUALITY_MEDIUM" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ExifInterface" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ExifInterface" static="false" type="android.media.ExifInterface" visibility="public">
+<parameter name="filename" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAltitude" native="false" return="double" static="false" synchronized="false" visibility="public">
+<parameter name="defaultValue" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAttribute" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="tag" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAttributeDouble" native="false" return="double" static="false" synchronized="false" visibility="public">
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAttributeInt" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLatLong" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="output" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getThumbnail" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasThumbnail" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="saveAttributes" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAttribute" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ORIENTATION_FLIP_HORIZONTAL" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ORIENTATION_FLIP_VERTICAL" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ORIENTATION_NORMAL" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ORIENTATION_ROTATE_180" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ORIENTATION_ROTATE_270" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ORIENTATION_ROTATE_90" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ORIENTATION_TRANSPOSE" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ORIENTATION_TRANSVERSE" static="true" transient="false" type="int" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ORIENTATION_UNDEFINED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TAG_DATETIME" static="true" transient="false" type="java.lang.String" value="&quot;DateTime&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TAG_FLASH" static="true" transient="false" type="java.lang.String" value="&quot;Flash&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TAG_FOCAL_LENGTH" static="true" transient="false" type="java.lang.String" value="&quot;FocalLength&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TAG_GPS_ALTITUDE" static="true" transient="false" type="java.lang.String" value="&quot;GPSAltitude&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TAG_GPS_ALTITUDE_REF" static="true" transient="false" type="java.lang.String" value="&quot;GPSAltitudeRef&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TAG_GPS_DATESTAMP" static="true" transient="false" type="java.lang.String" value="&quot;GPSDateStamp&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TAG_GPS_LATITUDE" static="true" transient="false" type="java.lang.String" value="&quot;GPSLatitude&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TAG_GPS_LATITUDE_REF" static="true" transient="false" type="java.lang.String" value="&quot;GPSLatitudeRef&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TAG_GPS_LONGITUDE" static="true" transient="false" type="java.lang.String" value="&quot;GPSLongitude&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TAG_GPS_LONGITUDE_REF" static="true" transient="false" type="java.lang.String" value="&quot;GPSLongitudeRef&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TAG_GPS_PROCESSING_METHOD" static="true" transient="false" type="java.lang.String" value="&quot;GPSProcessingMethod&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TAG_GPS_TIMESTAMP" static="true" transient="false" type="java.lang.String" value="&quot;GPSTimeStamp&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TAG_IMAGE_LENGTH" static="true" transient="false" type="java.lang.String" value="&quot;ImageLength&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TAG_IMAGE_WIDTH" static="true" transient="false" type="java.lang.String" value="&quot;ImageWidth&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TAG_MAKE" static="true" transient="false" type="java.lang.String" value="&quot;Make&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TAG_MODEL" static="true" transient="false" type="java.lang.String" value="&quot;Model&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TAG_ORIENTATION" static="true" transient="false" type="java.lang.String" value="&quot;Orientation&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TAG_WHITE_BALANCE" static="true" transient="false" type="java.lang.String" value="&quot;WhiteBalance&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WHITEBALANCE_AUTO" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WHITEBALANCE_MANUAL" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="FaceDetector" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="FaceDetector" static="false" type="android.media.FaceDetector" visibility="public">
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+<parameter name="maxFaces" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="findFaces" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="bitmap" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="faces" type="android.media.FaceDetector.Face[]">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="FaceDetector.Face" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="confidence" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="eyesDistance" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMidPoint" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="point" type="android.graphics.PointF">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pose" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="euler" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CONFIDENCE_THRESHOLD" static="true" transient="false" type="float" value="0.4f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EULER_X" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EULER_Y" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EULER_Z" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="JetPlayer" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="clearQueue" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="closeJetFile" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getJetPlayer" native="false" return="android.media.JetPlayer" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMaxTracks" native="false" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadJetFile" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadJetFile" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="afd" type="android.content.res.AssetFileDescriptor">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pause" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="play" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="queueJetSegment" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="segmentNum" type="int">
+</parameter>
+<parameter name="libNum" type="int">
+</parameter>
+<parameter name="repeatCount" type="int">
+</parameter>
+<parameter name="transpose" type="int">
+</parameter>
+<parameter name="muteFlags" type="int">
+</parameter>
+<parameter name="userID" type="byte">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="queueJetSegmentMuteArray" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="segmentNum" type="int">
+</parameter>
+<parameter name="libNum" type="int">
+</parameter>
+<parameter name="repeatCount" type="int">
+</parameter>
+<parameter name="transpose" type="int">
+</parameter>
+<parameter name="muteArray" type="boolean[]">
+</parameter>
+<parameter name="userID" type="byte">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="release" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEventListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.JetPlayer.OnJetEventListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEventListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.JetPlayer.OnJetEventListener">
+</parameter>
+<parameter name="handler" type="android.os.Handler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMuteArray" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="muteArray" type="boolean[]">
+</parameter>
+<parameter name="sync" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMuteFlag" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="trackId" type="int">
+</parameter>
+<parameter name="muteFlag" type="boolean">
+</parameter>
+<parameter name="sync" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMuteFlags" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="muteFlags" type="int">
+</parameter>
+<parameter name="sync" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="triggerClip" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="clipId" type="int">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="JetPlayer.OnJetEventListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onJetEvent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="player" type="android.media.JetPlayer">
+</parameter>
+<parameter name="segment" type="short">
+</parameter>
+<parameter name="track" type="byte">
+</parameter>
+<parameter name="channel" type="byte">
+</parameter>
+<parameter name="controller" type="byte">
+</parameter>
+<parameter name="value" type="byte">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onJetNumQueuedSegmentUpdate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="player" type="android.media.JetPlayer">
+</parameter>
+<parameter name="nbSegments" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onJetPauseUpdate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="player" type="android.media.JetPlayer">
+</parameter>
+<parameter name="paused" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onJetUserIdUpdate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="player" type="android.media.JetPlayer">
+</parameter>
+<parameter name="userId" type="int">
+</parameter>
+<parameter name="repeatCount" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="MediaMetadataRetriever" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="MediaMetadataRetriever" static="false" type="android.media.MediaMetadataRetriever" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="extractMetadata" native="true" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="keyCode" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEmbeddedPicture" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFrameAtTime" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="timeUs" type="long">
+</parameter>
+<parameter name="option" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFrameAtTime" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="timeUs" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFrameAtTime" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="release" native="true" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="fd" type="java.io.FileDescriptor">
+</parameter>
+<parameter name="offset" type="long">
+</parameter>
+<parameter name="length" type="long">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="fd" type="java.io.FileDescriptor">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="METADATA_KEY_ALBUM" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="METADATA_KEY_ALBUMARTIST" static="true" transient="false" type="int" value="13" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="METADATA_KEY_ARTIST" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="METADATA_KEY_AUTHOR" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="METADATA_KEY_CD_TRACK_NUMBER" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="METADATA_KEY_COMPILATION" static="true" transient="false" type="int" value="15" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="METADATA_KEY_COMPOSER" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="METADATA_KEY_DATE" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="METADATA_KEY_DISC_NUMBER" static="true" transient="false" type="int" value="14" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="METADATA_KEY_DURATION" static="true" transient="false" type="int" value="9" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="METADATA_KEY_GENRE" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="METADATA_KEY_MIMETYPE" static="true" transient="false" type="int" value="12" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="METADATA_KEY_NUM_TRACKS" static="true" transient="false" type="int" value="10" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="METADATA_KEY_TITLE" static="true" transient="false" type="int" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="METADATA_KEY_WRITER" static="true" transient="false" type="int" value="11" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="METADATA_KEY_YEAR" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OPTION_CLOSEST" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OPTION_CLOSEST_SYNC" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OPTION_NEXT_SYNC" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OPTION_PREVIOUS_SYNC" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="MediaPlayer" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="MediaPlayer" static="false" type="android.media.MediaPlayer" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="attachAuxEffect" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="effectId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="create" native="false" return="android.media.MediaPlayer" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="create" native="false" return="android.media.MediaPlayer" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+<parameter name="holder" type="android.view.SurfaceHolder">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="create" native="false" return="android.media.MediaPlayer" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="resid" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAudioSessionId" native="true" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentPosition" native="true" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDuration" native="true" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVideoHeight" native="true" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVideoWidth" native="true" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isLooping" native="true" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isPlaying" native="true" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pause" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="prepare" native="true" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="prepareAsync" native="true" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="release" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="seekTo" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="msec" type="int">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAudioSessionId" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="sessionId" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAudioStreamType" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="streamtype" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAuxEffectSendLevel" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="level" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="fd" type="java.io.FileDescriptor">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="fd" type="java.io.FileDescriptor">
+</parameter>
+<parameter name="offset" type="long">
+</parameter>
+<parameter name="length" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDisplay" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="sh" type="android.view.SurfaceHolder">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLooping" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="looping" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnBufferingUpdateListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.MediaPlayer.OnBufferingUpdateListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnCompletionListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.MediaPlayer.OnCompletionListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnErrorListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.MediaPlayer.OnErrorListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnInfoListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.MediaPlayer.OnInfoListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnPreparedListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.MediaPlayer.OnPreparedListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnSeekCompleteListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.MediaPlayer.OnSeekCompleteListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnVideoSizeChangedListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.MediaPlayer.OnVideoSizeChangedListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setScreenOnWhilePlaying" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="screenOn" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVolume" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="leftVolume" type="float">
+</parameter>
+<parameter name="rightVolume" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setWakeMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="mode" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="start" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stop" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="MEDIA_ERROR_NOT_VALID_FOR_PROGRESSIVE_PLAYBACK" static="true" transient="false" type="int" value="200" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_ERROR_SERVER_DIED" static="true" transient="false" type="int" value="100" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_ERROR_UNKNOWN" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_BAD_INTERLEAVING" static="true" transient="false" type="int" value="800" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_BUFFERING_END" static="true" transient="false" type="int" value="702" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_BUFFERING_START" static="true" transient="false" type="int" value="701" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_METADATA_UPDATE" static="true" transient="false" type="int" value="802" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_NOT_SEEKABLE" static="true" transient="false" type="int" value="801" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_UNKNOWN" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_VIDEO_TRACK_LAGGING" static="true" transient="false" type="int" value="700" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="MediaPlayer.OnBufferingUpdateListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onBufferingUpdate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mp" type="android.media.MediaPlayer">
+</parameter>
+<parameter name="percent" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="MediaPlayer.OnCompletionListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onCompletion" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mp" type="android.media.MediaPlayer">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="MediaPlayer.OnErrorListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onError" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="mp" type="android.media.MediaPlayer">
+</parameter>
+<parameter name="what" type="int">
+</parameter>
+<parameter name="extra" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="MediaPlayer.OnInfoListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onInfo" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="mp" type="android.media.MediaPlayer">
+</parameter>
+<parameter name="what" type="int">
+</parameter>
+<parameter name="extra" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="MediaPlayer.OnPreparedListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onPrepared" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mp" type="android.media.MediaPlayer">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="MediaPlayer.OnSeekCompleteListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onSeekComplete" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mp" type="android.media.MediaPlayer">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="MediaPlayer.OnVideoSizeChangedListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onVideoSizeChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mp" type="android.media.MediaPlayer">
+</parameter>
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="MediaRecorder" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="MediaRecorder" static="false" type="android.media.MediaRecorder" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAudioSourceMax" native="false" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMaxAmplitude" native="true" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="prepare" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="release" native="true" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAudioChannels" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="numChannels" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAudioEncoder" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="audio_encoder" type="int">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAudioEncodingBitRate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="bitRate" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAudioSamplingRate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="samplingRate" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAudioSource" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="audio_source" type="int">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCamera" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="c" type="android.hardware.Camera">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMaxDuration" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="max_duration_ms" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMaxFileSize" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="max_filesize_bytes" type="long">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnErrorListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="l" type="android.media.MediaRecorder.OnErrorListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnInfoListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.MediaRecorder.OnInfoListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOrientationHint" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="degrees" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOutputFile" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="fd" type="java.io.FileDescriptor">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOutputFile" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOutputFormat" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="output_format" type="int">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPreviewDisplay" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="sv" type="android.view.Surface">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setProfile" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="profile" type="android.media.CamcorderProfile">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVideoEncoder" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="video_encoder" type="int">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVideoEncodingBitRate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="bitRate" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVideoFrameRate" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="rate" type="int">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVideoSize" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVideoSource" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="video_source" type="int">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="start" native="true" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stop" native="true" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="MEDIA_RECORDER_ERROR_UNKNOWN" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_RECORDER_INFO_MAX_DURATION_REACHED" static="true" transient="false" type="int" value="800" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_RECORDER_INFO_MAX_FILESIZE_REACHED" static="true" transient="false" type="int" value="801" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_RECORDER_INFO_UNKNOWN" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="MediaRecorder.AudioEncoder" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="AAC" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AMR_NB" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AMR_WB" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFAULT" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="MediaRecorder.AudioSource" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="CAMCORDER" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFAULT" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MIC" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VOICE_CALL" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VOICE_DOWNLINK" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VOICE_RECOGNITION" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VOICE_UPLINK" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="MediaRecorder.OnErrorListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onError" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mr" type="android.media.MediaRecorder">
+</parameter>
+<parameter name="what" type="int">
+</parameter>
+<parameter name="extra" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="MediaRecorder.OnInfoListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onInfo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mr" type="android.media.MediaRecorder">
+</parameter>
+<parameter name="what" type="int">
+</parameter>
+<parameter name="extra" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="MediaRecorder.OutputFormat" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="AMR_NB" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AMR_WB" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFAULT" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MPEG_4" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RAW_AMR" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="THREE_GPP" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="MediaRecorder.VideoEncoder" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="DEFAULT" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="H263" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="H264" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MPEG_4_SP" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="MediaRecorder.VideoSource" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="CAMERA" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFAULT" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="MediaScannerConnection" static="false" visibility="public">
+<implements name="android.content.ServiceConnection">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="MediaScannerConnection" static="false" type="android.media.MediaScannerConnection" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="client" type="android.media.MediaScannerConnection.MediaScannerConnectionClient">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="connect" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="disconnect" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isConnected" native="false" return="boolean" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onServiceConnected" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="className" type="android.content.ComponentName">
+</parameter>
+<parameter name="service" type="android.os.IBinder">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onServiceDisconnected" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="className" type="android.content.ComponentName">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="scanFile" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="mimeType" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="scanFile" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="paths" type="java.lang.String[]">
+</parameter>
+<parameter name="mimeTypes" type="java.lang.String[]">
+</parameter>
+<parameter name="callback" type="android.media.MediaScannerConnection.OnScanCompletedListener">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="MediaScannerConnection.MediaScannerConnectionClient" static="true" visibility="public">
+<implements name="android.media.MediaScannerConnection.OnScanCompletedListener">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="onMediaScannerConnected" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onScanCompleted" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="MediaScannerConnection.OnScanCompletedListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onScanCompleted" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Ringtone" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getStreamType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTitle" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isPlaying" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="play" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStreamType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="streamType" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stop" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RingtoneManager" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RingtoneManager" static="false" type="android.media.RingtoneManager" visibility="public">
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="RingtoneManager" static="false" type="android.media.RingtoneManager" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getActualDefaultRingtoneUri" native="false" return="android.net.Uri" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCursor" native="false" return="android.database.Cursor" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultType" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="defaultRingtoneUri" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultUri" native="false" return="android.net.Uri" static="true" synchronized="false" visibility="public">
+<parameter name="type" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIncludeDrm" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRingtone" native="false" return="android.media.Ringtone" static="false" synchronized="false" visibility="public">
+<parameter name="position" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRingtone" native="false" return="android.media.Ringtone" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="ringtoneUri" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRingtonePosition" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="ringtoneUri" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRingtoneUri" native="false" return="android.net.Uri" static="false" synchronized="false" visibility="public">
+<parameter name="position" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStopPreviousRingtone" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValidRingtoneUri" native="false" return="android.net.Uri" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="inferStreamType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isDefault" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="ringtoneUri" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setActualDefaultRingtoneUri" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+<parameter name="ringtoneUri" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setIncludeDrm" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="includeDrm" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStopPreviousRingtone" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="stopPreviousRingtone" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="type" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stopPreviousRingtone" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="ACTION_RINGTONE_PICKER" static="true" transient="false" type="java.lang.String" value="&quot;android.intent.action.RINGTONE_PICKER&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_RINGTONE_DEFAULT_URI" static="true" transient="false" type="java.lang.String" value="&quot;android.intent.extra.ringtone.DEFAULT_URI&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_RINGTONE_EXISTING_URI" static="true" transient="false" type="java.lang.String" value="&quot;android.intent.extra.ringtone.EXISTING_URI&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_RINGTONE_INCLUDE_DRM" static="true" transient="false" type="java.lang.String" value="&quot;android.intent.extra.ringtone.INCLUDE_DRM&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_RINGTONE_PICKED_URI" static="true" transient="false" type="java.lang.String" value="&quot;android.intent.extra.ringtone.PICKED_URI&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_RINGTONE_SHOW_DEFAULT" static="true" transient="false" type="java.lang.String" value="&quot;android.intent.extra.ringtone.SHOW_DEFAULT&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_RINGTONE_SHOW_SILENT" static="true" transient="false" type="java.lang.String" value="&quot;android.intent.extra.ringtone.SHOW_SILENT&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_RINGTONE_TITLE" static="true" transient="false" type="java.lang.String" value="&quot;android.intent.extra.ringtone.TITLE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_RINGTONE_TYPE" static="true" transient="false" type="java.lang.String" value="&quot;android.intent.extra.ringtone.TYPE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ID_COLUMN_INDEX" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TITLE_COLUMN_INDEX" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_ALARM" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_ALL" static="true" transient="false" type="int" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_NOTIFICATION" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_RINGTONE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="URI_COLUMN_INDEX" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SoundPool" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SoundPool" static="false" type="android.media.SoundPool" visibility="public">
+<parameter name="maxStreams" type="int">
+</parameter>
+<parameter name="streamType" type="int">
+</parameter>
+<parameter name="srcQuality" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="autoPause" native="true" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="autoResume" native="true" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="load" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="priority" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="load" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="resId" type="int">
+</parameter>
+<parameter name="priority" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="load" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="afd" type="android.content.res.AssetFileDescriptor">
+</parameter>
+<parameter name="priority" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="load" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="fd" type="java.io.FileDescriptor">
+</parameter>
+<parameter name="offset" type="long">
+</parameter>
+<parameter name="length" type="long">
+</parameter>
+<parameter name="priority" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="pause" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="streamID" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="play" native="true" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="soundID" type="int">
+</parameter>
+<parameter name="leftVolume" type="float">
+</parameter>
+<parameter name="rightVolume" type="float">
+</parameter>
+<parameter name="priority" type="int">
+</parameter>
+<parameter name="loop" type="int">
+</parameter>
+<parameter name="rate" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="release" native="true" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="resume" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="streamID" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setLoop" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="streamID" type="int">
+</parameter>
+<parameter name="loop" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnLoadCompleteListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.SoundPool.OnLoadCompleteListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setPriority" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="streamID" type="int">
+</parameter>
+<parameter name="priority" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setRate" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="streamID" type="int">
+</parameter>
+<parameter name="rate" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setVolume" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="streamID" type="int">
+</parameter>
+<parameter name="leftVolume" type="float">
+</parameter>
+<parameter name="rightVolume" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="stop" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="streamID" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="unload" native="true" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="soundID" type="int">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="SoundPool.OnLoadCompleteListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onLoadComplete" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="soundPool" type="android.media.SoundPool">
+</parameter>
+<parameter name="sampleId" type="int">
+</parameter>
+<parameter name="status" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ThumbnailUtils" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ThumbnailUtils" static="false" type="android.media.ThumbnailUtils" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="createVideoThumbnail" native="false" return="android.graphics.Bitmap" static="true" synchronized="false" visibility="public">
+<parameter name="filePath" type="java.lang.String">
+</parameter>
+<parameter name="kind" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="extractThumbnail" native="false" return="android.graphics.Bitmap" static="true" synchronized="false" visibility="public">
+<parameter name="source" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="extractThumbnail" native="false" return="android.graphics.Bitmap" static="true" synchronized="false" visibility="public">
+<parameter name="source" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+<parameter name="options" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="OPTIONS_RECYCLE_INPUT" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ToneGenerator" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ToneGenerator" static="false" type="android.media.ToneGenerator" visibility="public">
+<parameter name="streamType" type="int">
+</parameter>
+<parameter name="volume" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="release" native="true" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startTone" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="toneType" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startTone" native="true" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="toneType" type="int">
+</parameter>
+<parameter name="durationMs" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stopTone" native="true" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="MAX_VOLUME" static="true" transient="false" type="int" value="100" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MIN_VOLUME" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_ABBR_ALERT" static="true" transient="false" type="int" value="97" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_ABBR_INTERCEPT" static="true" transient="false" type="int" value="37" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_ABBR_REORDER" static="true" transient="false" type="int" value="39" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_ALERT_AUTOREDIAL_LITE" static="true" transient="false" type="int" value="87" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_ALERT_CALL_GUARD" static="true" transient="false" type="int" value="93" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_ALERT_INCALL_LITE" static="true" transient="false" type="int" value="91" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_ALERT_NETWORK_LITE" static="true" transient="false" type="int" value="86" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_ANSWER" static="true" transient="false" type="int" value="42" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_CALLDROP_LITE" static="true" transient="false" type="int" value="95" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_CALL_SIGNAL_ISDN_INTERGROUP" static="true" transient="false" type="int" value="46" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_CALL_SIGNAL_ISDN_NORMAL" static="true" transient="false" type="int" value="45" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_CALL_SIGNAL_ISDN_PAT3" static="true" transient="false" type="int" value="48" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_CALL_SIGNAL_ISDN_PAT5" static="true" transient="false" type="int" value="50" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_CALL_SIGNAL_ISDN_PAT6" static="true" transient="false" type="int" value="51" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_CALL_SIGNAL_ISDN_PAT7" static="true" transient="false" type="int" value="52" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_CALL_SIGNAL_ISDN_PING_RING" static="true" transient="false" type="int" value="49" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_CALL_SIGNAL_ISDN_SP_PRI" static="true" transient="false" type="int" value="47" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_CONFIRM" static="true" transient="false" type="int" value="41" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_DIAL_TONE_LITE" static="true" transient="false" type="int" value="34" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_EMERGENCY_RINGBACK" static="true" transient="false" type="int" value="92" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_HIGH_L" static="true" transient="false" type="int" value="53" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_HIGH_PBX_L" static="true" transient="false" type="int" value="71" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_HIGH_PBX_SLS" static="true" transient="false" type="int" value="80" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_HIGH_PBX_SS" static="true" transient="false" type="int" value="74" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_HIGH_PBX_SSL" static="true" transient="false" type="int" value="77" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_HIGH_PBX_S_X4" static="true" transient="false" type="int" value="83" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_HIGH_SLS" static="true" transient="false" type="int" value="65" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_HIGH_SS" static="true" transient="false" type="int" value="56" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_HIGH_SSL" static="true" transient="false" type="int" value="59" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_HIGH_SS_2" static="true" transient="false" type="int" value="62" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_HIGH_S_X4" static="true" transient="false" type="int" value="68" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_INTERCEPT" static="true" transient="false" type="int" value="36" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_KEYPAD_VOLUME_KEY_LITE" static="true" transient="false" type="int" value="89" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_LOW_L" static="true" transient="false" type="int" value="55" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_LOW_PBX_L" static="true" transient="false" type="int" value="73" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_LOW_PBX_SLS" static="true" transient="false" type="int" value="82" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_LOW_PBX_SS" static="true" transient="false" type="int" value="76" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_LOW_PBX_SSL" static="true" transient="false" type="int" value="79" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_LOW_PBX_S_X4" static="true" transient="false" type="int" value="85" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_LOW_SLS" static="true" transient="false" type="int" value="67" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_LOW_SS" static="true" transient="false" type="int" value="58" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_LOW_SSL" static="true" transient="false" type="int" value="61" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_LOW_SS_2" static="true" transient="false" type="int" value="64" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_LOW_S_X4" static="true" transient="false" type="int" value="70" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_MED_L" static="true" transient="false" type="int" value="54" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_MED_PBX_L" static="true" transient="false" type="int" value="72" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_MED_PBX_SLS" static="true" transient="false" type="int" value="81" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_MED_PBX_SS" static="true" transient="false" type="int" value="75" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_MED_PBX_SSL" static="true" transient="false" type="int" value="78" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_MED_PBX_S_X4" static="true" transient="false" type="int" value="84" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_MED_SLS" static="true" transient="false" type="int" value="66" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_MED_SS" static="true" transient="false" type="int" value="57" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_MED_SSL" static="true" transient="false" type="int" value="60" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_MED_SS_2" static="true" transient="false" type="int" value="63" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_MED_S_X4" static="true" transient="false" type="int" value="69" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_NETWORK_BUSY" static="true" transient="false" type="int" value="40" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_NETWORK_BUSY_ONE_SHOT" static="true" transient="false" type="int" value="96" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_NETWORK_CALLWAITING" static="true" transient="false" type="int" value="43" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_NETWORK_USA_RINGBACK" static="true" transient="false" type="int" value="35" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_ONE_MIN_BEEP" static="true" transient="false" type="int" value="88" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_PIP" static="true" transient="false" type="int" value="44" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_PRESSHOLDKEY_LITE" static="true" transient="false" type="int" value="90" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_REORDER" static="true" transient="false" type="int" value="38" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_SIGNAL_OFF" static="true" transient="false" type="int" value="98" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_CDMA_SOFT_ERROR_LITE" static="true" transient="false" type="int" value="94" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_DTMF_0" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_DTMF_1" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_DTMF_2" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_DTMF_3" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_DTMF_4" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_DTMF_5" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_DTMF_6" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_DTMF_7" static="true" transient="false" type="int" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_DTMF_8" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_DTMF_9" static="true" transient="false" type="int" value="9" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_DTMF_A" static="true" transient="false" type="int" value="12" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_DTMF_B" static="true" transient="false" type="int" value="13" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_DTMF_C" static="true" transient="false" type="int" value="14" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_DTMF_D" static="true" transient="false" type="int" value="15" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_DTMF_P" static="true" transient="false" type="int" value="11" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_DTMF_S" static="true" transient="false" type="int" value="10" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_PROP_ACK" static="true" transient="false" type="int" value="25" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_PROP_BEEP" static="true" transient="false" type="int" value="24" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_PROP_BEEP2" static="true" transient="false" type="int" value="28" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_PROP_NACK" static="true" transient="false" type="int" value="26" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_PROP_PROMPT" static="true" transient="false" type="int" value="27" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_SUP_BUSY" static="true" transient="false" type="int" value="17" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_SUP_CALL_WAITING" static="true" transient="false" type="int" value="22" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_SUP_CONFIRM" static="true" transient="false" type="int" value="32" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_SUP_CONGESTION" static="true" transient="false" type="int" value="18" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_SUP_CONGESTION_ABBREV" static="true" transient="false" type="int" value="31" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_SUP_DIAL" static="true" transient="false" type="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_SUP_ERROR" static="true" transient="false" type="int" value="21" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_SUP_INTERCEPT" static="true" transient="false" type="int" value="29" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_SUP_INTERCEPT_ABBREV" static="true" transient="false" type="int" value="30" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_SUP_PIP" static="true" transient="false" type="int" value="33" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_SUP_RADIO_ACK" static="true" transient="false" type="int" value="19" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_SUP_RADIO_NOTAVAIL" static="true" transient="false" type="int" value="20" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TONE_SUP_RINGTONE" static="true" transient="false" type="int" value="23" visibility="public" volatile="false">
+</field>
+</class>
+</package></api>

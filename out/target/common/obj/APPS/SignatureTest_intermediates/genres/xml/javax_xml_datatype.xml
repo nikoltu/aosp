@@ -1,0 +1,516 @@
+<?xml version="1.0" ?><api><package name="javax.xml.datatype">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Exception" final="false" name="DatatypeConfigurationException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DatatypeConfigurationException" static="false" type="javax.xml.datatype.DatatypeConfigurationException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DatatypeConfigurationException" static="false" type="javax.xml.datatype.DatatypeConfigurationException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DatatypeConfigurationException" static="false" type="javax.xml.datatype.DatatypeConfigurationException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DatatypeConfigurationException" static="false" type="javax.xml.datatype.DatatypeConfigurationException" visibility="public">
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="DatatypeConstants" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="APRIL" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AUGUST" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DATE" static="true" transient="false" type="javax.xml.namespace.QName" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DATETIME" static="true" transient="false" type="javax.xml.namespace.QName" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DAYS" static="true" transient="false" type="javax.xml.datatype.DatatypeConstants.Field" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DECEMBER" static="true" transient="false" type="int" value="12" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DURATION" static="true" transient="false" type="javax.xml.namespace.QName" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DURATION_DAYTIME" static="true" transient="false" type="javax.xml.namespace.QName" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DURATION_YEARMONTH" static="true" transient="false" type="javax.xml.namespace.QName" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EQUAL" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FEBRUARY" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FIELD_UNDEFINED" static="true" transient="false" type="int" value="-2147483648" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GDAY" static="true" transient="false" type="javax.xml.namespace.QName" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GMONTH" static="true" transient="false" type="javax.xml.namespace.QName" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GMONTHDAY" static="true" transient="false" type="javax.xml.namespace.QName" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GREATER" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GYEAR" static="true" transient="false" type="javax.xml.namespace.QName" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GYEARMONTH" static="true" transient="false" type="javax.xml.namespace.QName" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HOURS" static="true" transient="false" type="javax.xml.datatype.DatatypeConstants.Field" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INDETERMINATE" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="JANUARY" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="JULY" static="true" transient="false" type="int" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="JUNE" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LESSER" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MARCH" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MAX_TIMEZONE_OFFSET" static="true" transient="false" type="int" value="-840" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MAY" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MINUTES" static="true" transient="false" type="javax.xml.datatype.DatatypeConstants.Field" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MIN_TIMEZONE_OFFSET" static="true" transient="false" type="int" value="840" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MONTHS" static="true" transient="false" type="javax.xml.datatype.DatatypeConstants.Field" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NOVEMBER" static="true" transient="false" type="int" value="11" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OCTOBER" static="true" transient="false" type="int" value="10" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SECONDS" static="true" transient="false" type="javax.xml.datatype.DatatypeConstants.Field" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SEPTEMBER" static="true" transient="false" type="int" value="9" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TIME" static="true" transient="false" type="javax.xml.namespace.QName" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="YEARS" static="true" transient="false" type="javax.xml.datatype.DatatypeConstants.Field" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="DatatypeConstants.Field" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DatatypeFactory" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DatatypeFactory" static="false" type="javax.xml.datatype.DatatypeFactory" visibility="protected">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="newDuration" native="false" return="javax.xml.datatype.Duration" static="false" synchronized="false" visibility="public">
+<parameter name="lexicalRepresentation" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newDuration" native="false" return="javax.xml.datatype.Duration" static="false" synchronized="false" visibility="public">
+<parameter name="durationInMilliSeconds" type="long">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newDuration" native="false" return="javax.xml.datatype.Duration" static="false" synchronized="false" visibility="public">
+<parameter name="isPositive" type="boolean">
+</parameter>
+<parameter name="years" type="java.math.BigInteger">
+</parameter>
+<parameter name="months" type="java.math.BigInteger">
+</parameter>
+<parameter name="days" type="java.math.BigInteger">
+</parameter>
+<parameter name="hours" type="java.math.BigInteger">
+</parameter>
+<parameter name="minutes" type="java.math.BigInteger">
+</parameter>
+<parameter name="seconds" type="java.math.BigDecimal">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newDuration" native="false" return="javax.xml.datatype.Duration" static="false" synchronized="false" visibility="public">
+<parameter name="isPositive" type="boolean">
+</parameter>
+<parameter name="years" type="int">
+</parameter>
+<parameter name="months" type="int">
+</parameter>
+<parameter name="days" type="int">
+</parameter>
+<parameter name="hours" type="int">
+</parameter>
+<parameter name="minutes" type="int">
+</parameter>
+<parameter name="seconds" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newDurationDayTime" native="false" return="javax.xml.datatype.Duration" static="false" synchronized="false" visibility="public">
+<parameter name="lexicalRepresentation" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newDurationDayTime" native="false" return="javax.xml.datatype.Duration" static="false" synchronized="false" visibility="public">
+<parameter name="durationInMilliseconds" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newDurationDayTime" native="false" return="javax.xml.datatype.Duration" static="false" synchronized="false" visibility="public">
+<parameter name="isPositive" type="boolean">
+</parameter>
+<parameter name="day" type="java.math.BigInteger">
+</parameter>
+<parameter name="hour" type="java.math.BigInteger">
+</parameter>
+<parameter name="minute" type="java.math.BigInteger">
+</parameter>
+<parameter name="second" type="java.math.BigInteger">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newDurationDayTime" native="false" return="javax.xml.datatype.Duration" static="false" synchronized="false" visibility="public">
+<parameter name="isPositive" type="boolean">
+</parameter>
+<parameter name="day" type="int">
+</parameter>
+<parameter name="hour" type="int">
+</parameter>
+<parameter name="minute" type="int">
+</parameter>
+<parameter name="second" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newDurationYearMonth" native="false" return="javax.xml.datatype.Duration" static="false" synchronized="false" visibility="public">
+<parameter name="lexicalRepresentation" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newDurationYearMonth" native="false" return="javax.xml.datatype.Duration" static="false" synchronized="false" visibility="public">
+<parameter name="durationInMilliseconds" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newDurationYearMonth" native="false" return="javax.xml.datatype.Duration" static="false" synchronized="false" visibility="public">
+<parameter name="isPositive" type="boolean">
+</parameter>
+<parameter name="year" type="java.math.BigInteger">
+</parameter>
+<parameter name="month" type="java.math.BigInteger">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newDurationYearMonth" native="false" return="javax.xml.datatype.Duration" static="false" synchronized="false" visibility="public">
+<parameter name="isPositive" type="boolean">
+</parameter>
+<parameter name="year" type="int">
+</parameter>
+<parameter name="month" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="javax.xml.datatype.DatatypeFactory" static="true" synchronized="false" visibility="public">
+<exception name="DatatypeConfigurationException" type="javax.xml.datatype.DatatypeConfigurationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="javax.xml.datatype.DatatypeFactory" static="true" synchronized="false" visibility="public">
+<parameter name="factoryClassName" type="java.lang.String">
+</parameter>
+<parameter name="classLoader" type="java.lang.ClassLoader">
+</parameter>
+<exception name="DatatypeConfigurationException" type="javax.xml.datatype.DatatypeConfigurationException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newXMLGregorianCalendar" native="false" return="javax.xml.datatype.XMLGregorianCalendar" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newXMLGregorianCalendar" native="false" return="javax.xml.datatype.XMLGregorianCalendar" static="false" synchronized="false" visibility="public">
+<parameter name="lexicalRepresentation" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newXMLGregorianCalendar" native="false" return="javax.xml.datatype.XMLGregorianCalendar" static="false" synchronized="false" visibility="public">
+<parameter name="cal" type="java.util.GregorianCalendar">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newXMLGregorianCalendar" native="false" return="javax.xml.datatype.XMLGregorianCalendar" static="false" synchronized="false" visibility="public">
+<parameter name="year" type="java.math.BigInteger">
+</parameter>
+<parameter name="month" type="int">
+</parameter>
+<parameter name="day" type="int">
+</parameter>
+<parameter name="hour" type="int">
+</parameter>
+<parameter name="minute" type="int">
+</parameter>
+<parameter name="second" type="int">
+</parameter>
+<parameter name="fractionalSecond" type="java.math.BigDecimal">
+</parameter>
+<parameter name="timezone" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newXMLGregorianCalendar" native="false" return="javax.xml.datatype.XMLGregorianCalendar" static="false" synchronized="false" visibility="public">
+<parameter name="year" type="int">
+</parameter>
+<parameter name="month" type="int">
+</parameter>
+<parameter name="day" type="int">
+</parameter>
+<parameter name="hour" type="int">
+</parameter>
+<parameter name="minute" type="int">
+</parameter>
+<parameter name="second" type="int">
+</parameter>
+<parameter name="millisecond" type="int">
+</parameter>
+<parameter name="timezone" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newXMLGregorianCalendarDate" native="false" return="javax.xml.datatype.XMLGregorianCalendar" static="false" synchronized="false" visibility="public">
+<parameter name="year" type="int">
+</parameter>
+<parameter name="month" type="int">
+</parameter>
+<parameter name="day" type="int">
+</parameter>
+<parameter name="timezone" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newXMLGregorianCalendarTime" native="false" return="javax.xml.datatype.XMLGregorianCalendar" static="false" synchronized="false" visibility="public">
+<parameter name="hours" type="int">
+</parameter>
+<parameter name="minutes" type="int">
+</parameter>
+<parameter name="seconds" type="int">
+</parameter>
+<parameter name="timezone" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newXMLGregorianCalendarTime" native="false" return="javax.xml.datatype.XMLGregorianCalendar" static="false" synchronized="false" visibility="public">
+<parameter name="hours" type="int">
+</parameter>
+<parameter name="minutes" type="int">
+</parameter>
+<parameter name="seconds" type="int">
+</parameter>
+<parameter name="fractionalSecond" type="java.math.BigDecimal">
+</parameter>
+<parameter name="timezone" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newXMLGregorianCalendarTime" native="false" return="javax.xml.datatype.XMLGregorianCalendar" static="false" synchronized="false" visibility="public">
+<parameter name="hours" type="int">
+</parameter>
+<parameter name="minutes" type="int">
+</parameter>
+<parameter name="seconds" type="int">
+</parameter>
+<parameter name="milliseconds" type="int">
+</parameter>
+<parameter name="timezone" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="DATATYPEFACTORY_IMPLEMENTATION_CLASS" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DATATYPEFACTORY_PROPERTY" static="true" transient="false" type="java.lang.String" value="&quot;javax.xml.datatype.DatatypeFactory&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Duration" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Duration" static="false" type="javax.xml.datatype.Duration" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="add" native="false" return="javax.xml.datatype.Duration" static="false" synchronized="false" visibility="public">
+<parameter name="rhs" type="javax.xml.datatype.Duration">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="addTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="calendar" type="java.util.Calendar">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="date" type="java.util.Date">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="compare" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="duration" type="javax.xml.datatype.Duration">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDays" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getField" native="false" return="java.lang.Number" static="false" synchronized="false" visibility="public">
+<parameter name="field" type="javax.xml.datatype.DatatypeConstants.Field">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHours" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMinutes" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMonths" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSeconds" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSign" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTimeInMillis" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="startInstant" type="java.util.Calendar">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTimeInMillis" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="startInstant" type="java.util.Date">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getXMLSchemaType" native="false" return="javax.xml.namespace.QName" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getYears" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="hashCode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isLongerThan" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="duration" type="javax.xml.datatype.Duration">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="field" type="javax.xml.datatype.DatatypeConstants.Field">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isShorterThan" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="duration" type="javax.xml.datatype.Duration">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="multiply" native="false" return="javax.xml.datatype.Duration" static="false" synchronized="false" visibility="public">
+<parameter name="factor" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="multiply" native="false" return="javax.xml.datatype.Duration" static="false" synchronized="false" visibility="public">
+<parameter name="factor" type="java.math.BigDecimal">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="negate" native="false" return="javax.xml.datatype.Duration" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="normalizeWith" native="false" return="javax.xml.datatype.Duration" static="false" synchronized="false" visibility="public">
+<parameter name="startTimeInstant" type="java.util.Calendar">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="subtract" native="false" return="javax.xml.datatype.Duration" static="false" synchronized="false" visibility="public">
+<parameter name="rhs" type="javax.xml.datatype.Duration">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="XMLGregorianCalendar" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="XMLGregorianCalendar" static="false" type="javax.xml.datatype.XMLGregorianCalendar" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="add" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="duration" type="javax.xml.datatype.Duration">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="compare" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="xmlGregorianCalendar" type="javax.xml.datatype.XMLGregorianCalendar">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDay" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEon" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEonAndYear" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getFractionalSecond" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getHour" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMillisecond" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getMinute" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getMonth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSecond" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTimeZone" native="false" return="java.util.TimeZone" static="false" synchronized="false" visibility="public">
+<parameter name="defaultZoneoffset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTimezone" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getXMLSchemaType" native="false" return="javax.xml.namespace.QName" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getYear" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isValid" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="normalize" native="false" return="javax.xml.datatype.XMLGregorianCalendar" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setDay" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="day" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setFractionalSecond" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="fractional" type="java.math.BigDecimal">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setHour" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="hour" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setMillisecond" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="millisecond" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setMinute" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="minute" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setMonth" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="month" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setSecond" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="second" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTime" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="hour" type="int">
+</parameter>
+<parameter name="minute" type="int">
+</parameter>
+<parameter name="second" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTime" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="hour" type="int">
+</parameter>
+<parameter name="minute" type="int">
+</parameter>
+<parameter name="second" type="int">
+</parameter>
+<parameter name="fractional" type="java.math.BigDecimal">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTime" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="hour" type="int">
+</parameter>
+<parameter name="minute" type="int">
+</parameter>
+<parameter name="second" type="int">
+</parameter>
+<parameter name="millisecond" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setTimezone" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="offset" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setYear" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="year" type="java.math.BigInteger">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setYear" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="year" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="toGregorianCalendar" native="false" return="java.util.GregorianCalendar" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="toGregorianCalendar" native="false" return="java.util.GregorianCalendar" static="false" synchronized="false" visibility="public">
+<parameter name="timezone" type="java.util.TimeZone">
+</parameter>
+<parameter name="aLocale" type="java.util.Locale">
+</parameter>
+<parameter name="defaults" type="javax.xml.datatype.XMLGregorianCalendar">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="toXMLFormat" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package></api>

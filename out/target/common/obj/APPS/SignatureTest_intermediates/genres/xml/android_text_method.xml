@@ -1,0 +1,864 @@
+<?xml version="1.0" ?><api><package name="android.text.method">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ArrowKeyMovementMethod" static="false" visibility="public">
+<implements name="android.text.method.MovementMethod">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ArrowKeyMovementMethod" static="false" type="android.text.method.ArrowKeyMovementMethod" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="canSelectArbitrarily" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="android.text.method.MovementMethod" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="initialize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onKeyDown" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="buffer" type="android.text.Spannable">
+</parameter>
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onKeyOther" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.widget.TextView">
+</parameter>
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onKeyUp" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="buffer" type="android.text.Spannable">
+</parameter>
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTakeFocus" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.widget.TextView">
+</parameter>
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+<parameter name="dir" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTouchEvent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="buffer" type="android.text.Spannable">
+</parameter>
+<parameter name="event" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTrackballEvent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+<parameter name="event" type="android.view.MotionEvent">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="android.text.method.MetaKeyKeyListener" final="false" name="BaseKeyListener" static="false" visibility="public">
+<implements name="android.text.method.KeyListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BaseKeyListener" static="false" type="android.text.method.BaseKeyListener" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="backspace" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="content" type="android.text.Editable">
+</parameter>
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onKeyOther" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="content" type="android.text.Editable">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.app.Dialog" final="false" name="CharacterPickerDialog" static="false" visibility="public">
+<implements name="android.widget.AdapterView.OnItemClickListener">
+</implements>
+<implements name="android.view.View.OnClickListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="CharacterPickerDialog" static="false" type="android.text.method.CharacterPickerDialog" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="text" type="android.text.Editable">
+</parameter>
+<parameter name="options" type="java.lang.String">
+</parameter>
+<parameter name="insert" type="boolean">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="v" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onItemClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parent" type="android.widget.AdapterView">
+</parameter>
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="position" type="int">
+</parameter>
+<parameter name="id" type="long">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.method.NumberKeyListener" final="false" name="DateKeyListener" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DateKeyListener" static="false" type="android.text.method.DateKeyListener" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAcceptedChars" native="false" return="char[]" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="android.text.method.DateKeyListener" static="true" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="CHARACTERS" static="true" transient="false" type="char[]" value="null" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.method.NumberKeyListener" final="false" name="DateTimeKeyListener" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DateTimeKeyListener" static="false" type="android.text.method.DateTimeKeyListener" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAcceptedChars" native="false" return="char[]" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="android.text.method.DateTimeKeyListener" static="true" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="CHARACTERS" static="true" transient="false" type="char[]" value="null" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.method.NumberKeyListener" final="false" name="DialerKeyListener" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DialerKeyListener" static="false" type="android.text.method.DialerKeyListener" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAcceptedChars" native="false" return="char[]" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="android.text.method.DialerKeyListener" static="true" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="CHARACTERS" static="true" transient="false" type="char[]" value="null" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.method.NumberKeyListener" final="false" name="DigitsKeyListener" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DigitsKeyListener" static="false" type="android.text.method.DigitsKeyListener" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DigitsKeyListener" static="false" type="android.text.method.DigitsKeyListener" visibility="public">
+<parameter name="sign" type="boolean">
+</parameter>
+<parameter name="decimal" type="boolean">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAcceptedChars" native="false" return="char[]" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="android.text.method.DigitsKeyListener" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="android.text.method.DigitsKeyListener" static="true" synchronized="false" visibility="public">
+<parameter name="sign" type="boolean">
+</parameter>
+<parameter name="decimal" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="android.text.method.DigitsKeyListener" static="true" synchronized="false" visibility="public">
+<parameter name="accepted" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.method.ReplacementTransformationMethod" final="false" name="HideReturnsTransformationMethod" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HideReturnsTransformationMethod" static="false" type="android.text.method.HideReturnsTransformationMethod" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="android.text.method.HideReturnsTransformationMethod" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOriginal" native="false" return="char[]" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReplacement" native="false" return="char[]" static="false" synchronized="false" visibility="protected">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="KeyListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="clearMetaKeyState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="content" type="android.text.Editable">
+</parameter>
+<parameter name="states" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getInputType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onKeyDown" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="text" type="android.text.Editable">
+</parameter>
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onKeyOther" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="text" type="android.text.Editable">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onKeyUp" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="text" type="android.text.Editable">
+</parameter>
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="android.text.method.ScrollingMovementMethod" final="false" name="LinkMovementMethod" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="LinkMovementMethod" static="false" type="android.text.method.LinkMovementMethod" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="android.text.method.MovementMethod" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="MetaKeyKeyListener" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="MetaKeyKeyListener" static="false" type="android.text.method.MetaKeyKeyListener" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="adjustMetaAfterKeypress" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="content" type="android.text.Spannable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="adjustMetaAfterKeypress" native="false" return="long" static="true" synchronized="false" visibility="public">
+<parameter name="state" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearMetaKeyState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="content" type="android.text.Editable">
+</parameter>
+<parameter name="states" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearMetaKeyState" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="content" type="android.text.Editable">
+</parameter>
+<parameter name="states" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearMetaKeyState" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="state" type="long">
+</parameter>
+<parameter name="which" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getMetaState" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getMetaState" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="meta" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getMetaState" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="state" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getMetaState" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="state" type="long">
+</parameter>
+<parameter name="meta" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="handleKeyDown" native="false" return="long" static="true" synchronized="false" visibility="public">
+<parameter name="state" type="long">
+</parameter>
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="handleKeyUp" native="false" return="long" static="true" synchronized="false" visibility="public">
+<parameter name="state" type="long">
+</parameter>
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isMetaTracker" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="what" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isSelectingMetaTracker" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="what" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onKeyDown" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="content" type="android.text.Editable">
+</parameter>
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onKeyUp" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="content" type="android.text.Editable">
+</parameter>
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetLockedMeta" native="false" return="void" static="true" synchronized="false" visibility="protected">
+<parameter name="content" type="android.text.Spannable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetLockedMeta" native="false" return="long" static="true" synchronized="false" visibility="public">
+<parameter name="state" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetMetaState" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="META_ALT_LOCKED" static="true" transient="false" type="int" value="512" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="META_ALT_ON" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="META_CAP_LOCKED" static="true" transient="false" type="int" value="256" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="META_SHIFT_ON" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="META_SYM_LOCKED" static="true" transient="false" type="int" value="1024" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="META_SYM_ON" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="MovementMethod" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="canSelectArbitrarily" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="initialize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onKeyDown" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onKeyOther" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.widget.TextView">
+</parameter>
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onKeyUp" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onTakeFocus" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+<parameter name="direction" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onTouchEvent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+<parameter name="event" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onTrackballEvent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+<parameter name="event" type="android.view.MotionEvent">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="android.text.method.BaseKeyListener" final="false" name="MultiTapKeyListener" static="false" visibility="public">
+<implements name="android.text.SpanWatcher">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="MultiTapKeyListener" static="false" type="android.text.method.MultiTapKeyListener" visibility="public">
+<parameter name="cap" type="android.text.method.TextKeyListener.Capitalize">
+</parameter>
+<parameter name="autotext" type="boolean">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="android.text.method.MultiTapKeyListener" static="true" synchronized="false" visibility="public">
+<parameter name="autotext" type="boolean">
+</parameter>
+<parameter name="cap" type="android.text.method.TextKeyListener.Capitalize">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSpanAdded" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="android.text.Spannable">
+</parameter>
+<parameter name="what" type="java.lang.Object">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSpanChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="buf" type="android.text.Spannable">
+</parameter>
+<parameter name="what" type="java.lang.Object">
+</parameter>
+<parameter name="s" type="int">
+</parameter>
+<parameter name="e" type="int">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="stop" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSpanRemoved" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="android.text.Spannable">
+</parameter>
+<parameter name="what" type="java.lang.Object">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="android.text.method.BaseKeyListener" final="false" name="NumberKeyListener" static="false" visibility="public">
+<implements name="android.text.InputFilter">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="NumberKeyListener" static="false" type="android.text.method.NumberKeyListener" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="filter" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="source" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+<parameter name="dest" type="android.text.Spanned">
+</parameter>
+<parameter name="dstart" type="int">
+</parameter>
+<parameter name="dend" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getAcceptedChars" native="false" return="char[]" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="lookup" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+<parameter name="content" type="android.text.Spannable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ok" native="false" return="boolean" static="true" synchronized="false" visibility="protected">
+<parameter name="accept" type="char[]">
+</parameter>
+<parameter name="c" type="char">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="PasswordTransformationMethod" static="false" visibility="public">
+<implements name="android.text.TextWatcher">
+</implements>
+<implements name="android.text.method.TransformationMethod">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="PasswordTransformationMethod" static="false" type="android.text.method.PasswordTransformationMethod" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="afterTextChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="android.text.Editable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="beforeTextChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="count" type="int">
+</parameter>
+<parameter name="after" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="android.text.method.PasswordTransformationMethod" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTransformation" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="source" type="java.lang.CharSequence">
+</parameter>
+<parameter name="view" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onFocusChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="sourceText" type="java.lang.CharSequence">
+</parameter>
+<parameter name="focused" type="boolean">
+</parameter>
+<parameter name="direction" type="int">
+</parameter>
+<parameter name="previouslyFocusedRect" type="android.graphics.Rect">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTextChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="before" type="int">
+</parameter>
+<parameter name="count" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.method.BaseKeyListener" final="false" name="QwertyKeyListener" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="QwertyKeyListener" static="false" type="android.text.method.QwertyKeyListener" visibility="public">
+<parameter name="cap" type="android.text.method.TextKeyListener.Capitalize">
+</parameter>
+<parameter name="autotext" type="boolean">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="android.text.method.QwertyKeyListener" static="true" synchronized="false" visibility="public">
+<parameter name="autotext" type="boolean">
+</parameter>
+<parameter name="cap" type="android.text.method.TextKeyListener.Capitalize">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="markAsReplaced" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="content" type="android.text.Spannable">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+<parameter name="original" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ReplacementTransformationMethod" static="false" visibility="public">
+<implements name="android.text.method.TransformationMethod">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ReplacementTransformationMethod" static="false" type="android.text.method.ReplacementTransformationMethod" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="getOriginal" native="false" return="char[]" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getReplacement" native="false" return="char[]" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTransformation" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="source" type="java.lang.CharSequence">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onFocusChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="sourceText" type="java.lang.CharSequence">
+</parameter>
+<parameter name="focused" type="boolean">
+</parameter>
+<parameter name="direction" type="int">
+</parameter>
+<parameter name="previouslyFocusedRect" type="android.graphics.Rect">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ScrollingMovementMethod" static="false" visibility="public">
+<implements name="android.text.method.MovementMethod">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ScrollingMovementMethod" static="false" type="android.text.method.ScrollingMovementMethod" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="canSelectArbitrarily" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="down" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="buffer" type="android.text.Spannable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="android.text.method.MovementMethod" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="initialize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="left" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="buffer" type="android.text.Spannable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onKeyDown" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="buffer" type="android.text.Spannable">
+</parameter>
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onKeyOther" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.widget.TextView">
+</parameter>
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onKeyUp" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="buffer" type="android.text.Spannable">
+</parameter>
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTakeFocus" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+<parameter name="dir" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTouchEvent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="buffer" type="android.text.Spannable">
+</parameter>
+<parameter name="event" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTrackballEvent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+<parameter name="event" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="right" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="buffer" type="android.text.Spannable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="up" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="buffer" type="android.text.Spannable">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.method.ReplacementTransformationMethod" final="false" name="SingleLineTransformationMethod" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SingleLineTransformationMethod" static="false" type="android.text.method.SingleLineTransformationMethod" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="android.text.method.SingleLineTransformationMethod" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOriginal" native="false" return="char[]" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReplacement" native="false" return="char[]" static="false" synchronized="false" visibility="protected">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.method.BaseKeyListener" final="false" name="TextKeyListener" static="false" visibility="public">
+<implements name="android.text.SpanWatcher">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="TextKeyListener" static="false" type="android.text.method.TextKeyListener" visibility="public">
+<parameter name="cap" type="android.text.method.TextKeyListener.Capitalize">
+</parameter>
+<parameter name="autotext" type="boolean">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="e" type="android.text.Editable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="android.text.method.TextKeyListener" static="true" synchronized="false" visibility="public">
+<parameter name="autotext" type="boolean">
+</parameter>
+<parameter name="cap" type="android.text.method.TextKeyListener.Capitalize">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="android.text.method.TextKeyListener" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSpanAdded" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="android.text.Spannable">
+</parameter>
+<parameter name="what" type="java.lang.Object">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSpanChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="android.text.Spannable">
+</parameter>
+<parameter name="what" type="java.lang.Object">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+<parameter name="st" type="int">
+</parameter>
+<parameter name="en" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSpanRemoved" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="android.text.Spannable">
+</parameter>
+<parameter name="what" type="java.lang.Object">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="release" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shouldCap" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="cap" type="android.text.method.TextKeyListener.Capitalize">
+</parameter>
+<parameter name="cs" type="java.lang.CharSequence">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" final="true" name="TextKeyListener.Capitalize" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="android.text.method.TextKeyListener.Capitalize" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="values" native="false" return="android.text.method.TextKeyListener.Capitalize[]" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.method.NumberKeyListener" final="false" name="TimeKeyListener" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="TimeKeyListener" static="false" type="android.text.method.TimeKeyListener" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAcceptedChars" native="false" return="char[]" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="android.text.method.TimeKeyListener" static="true" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="CHARACTERS" static="true" transient="false" type="char[]" value="null" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Touch" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getInitialScrollX" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="buffer" type="android.text.Spannable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInitialScrollY" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="buffer" type="android.text.Spannable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTouchEvent" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="buffer" type="android.text.Spannable">
+</parameter>
+<parameter name="event" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="scrollTo" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="widget" type="android.widget.TextView">
+</parameter>
+<parameter name="layout" type="android.text.Layout">
+</parameter>
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="TransformationMethod" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getTransformation" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="source" type="java.lang.CharSequence">
+</parameter>
+<parameter name="view" type="android.view.View">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onFocusChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="sourceText" type="java.lang.CharSequence">
+</parameter>
+<parameter name="focused" type="boolean">
+</parameter>
+<parameter name="direction" type="int">
+</parameter>
+<parameter name="previouslyFocusedRect" type="android.graphics.Rect">
+</parameter>
+</method>
+</interface>
+</package></api>

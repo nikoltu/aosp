@@ -1,0 +1,29 @@
+out/host/linux-x86/obj/STATIC_LIBRARIES/emulator-target-arm_intermediates/fpu/softfloat.o: \
+ external/qemu/fpu/softfloat.c external/qemu/fpu/softfloat.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/inttypes.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/features.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/cdefs.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/wordsize.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/gnu/stubs.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/gnu/stubs-32.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/stdint.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/wchar.h \
+ external/qemu/android/config/target-arm/config.h \
+ external/qemu/android/config/config.h \
+ external/qemu/android/config/linux-x86/config-host.h \
+ external/qemu/fpu/softfloat-macros.h \
+ external/qemu/fpu/softfloat-specialize.h
+ external/qemu/fpu/softfloat.c external/qemu/fpu/softfloat.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/inttypes.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/features.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/cdefs.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/wordsize.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/gnu/stubs.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/gnu/stubs-32.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/stdint.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/wchar.h :
+ external/qemu/android/config/target-arm/config.h :
+ external/qemu/android/config/config.h :
+ external/qemu/android/config/linux-x86/config-host.h :
+ external/qemu/fpu/softfloat-macros.h :
+ external/qemu/fpu/softfloat-specialize.h :

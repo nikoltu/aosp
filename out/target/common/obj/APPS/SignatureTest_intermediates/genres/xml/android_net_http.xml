@@ -1,0 +1,234 @@
+<?xml version="1.0" ?><api><package name="android.net.http">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="AndroidHttpClient" static="false" visibility="public">
+<implements name="org.apache.http.client.HttpClient">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="disableCurlLogging" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="enableCurlLogging" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="level" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="execute" native="false" return="org.apache.http.HttpResponse" static="false" synchronized="false" visibility="public">
+<parameter name="request" type="org.apache.http.client.methods.HttpUriRequest">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="execute" native="false" return="org.apache.http.HttpResponse" static="false" synchronized="false" visibility="public">
+<parameter name="request" type="org.apache.http.client.methods.HttpUriRequest">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="execute" native="false" return="org.apache.http.HttpResponse" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="execute" native="false" return="org.apache.http.HttpResponse" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="execute" native="false" return="T" static="false" synchronized="false" visibility="public">
+<parameter name="request" type="org.apache.http.client.methods.HttpUriRequest">
+</parameter>
+<parameter name="responseHandler" type="org.apache.http.client.ResponseHandler&lt;? extends T&gt;">
+</parameter>
+<exception name="ClientProtocolException" type="org.apache.http.client.ClientProtocolException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="execute" native="false" return="T" static="false" synchronized="false" visibility="public">
+<parameter name="request" type="org.apache.http.client.methods.HttpUriRequest">
+</parameter>
+<parameter name="responseHandler" type="org.apache.http.client.ResponseHandler&lt;? extends T&gt;">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="ClientProtocolException" type="org.apache.http.client.ClientProtocolException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="execute" native="false" return="T" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<parameter name="responseHandler" type="org.apache.http.client.ResponseHandler&lt;? extends T&gt;">
+</parameter>
+<exception name="ClientProtocolException" type="org.apache.http.client.ClientProtocolException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="execute" native="false" return="T" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<parameter name="responseHandler" type="org.apache.http.client.ResponseHandler&lt;? extends T&gt;">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="ClientProtocolException" type="org.apache.http.client.ClientProtocolException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCompressedEntity" native="false" return="org.apache.http.entity.AbstractHttpEntity" static="true" synchronized="false" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="resolver" type="android.content.ContentResolver">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getConnectionManager" native="false" return="org.apache.http.conn.ClientConnectionManager" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMinGzipSize" native="false" return="long" static="true" synchronized="false" visibility="public">
+<parameter name="resolver" type="android.content.ContentResolver">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParams" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUngzippedContent" native="false" return="java.io.InputStream" static="true" synchronized="false" visibility="public">
+<parameter name="entity" type="org.apache.http.HttpEntity">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="modifyRequestToAcceptGzipResponse" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="android.net.http.AndroidHttpClient" static="true" synchronized="false" visibility="public">
+<parameter name="userAgent" type="java.lang.String">
+</parameter>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="android.net.http.AndroidHttpClient" static="true" synchronized="false" visibility="public">
+<parameter name="userAgent" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseDate" native="false" return="long" static="true" synchronized="false" visibility="public">
+<parameter name="dateString" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="DEFAULT_SYNC_MIN_GZIP_BYTES" static="true" transient="false" type="long" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SslCertificate" static="false" visibility="public">
+<constructor deprecated="deprecated" final="false" name="SslCertificate" static="false" type="android.net.http.SslCertificate" visibility="public">
+<parameter name="issuedTo" type="java.lang.String">
+</parameter>
+<parameter name="issuedBy" type="java.lang.String">
+</parameter>
+<parameter name="validNotBefore" type="java.lang.String">
+</parameter>
+<parameter name="validNotAfter" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SslCertificate" static="false" type="android.net.http.SslCertificate" visibility="public">
+<parameter name="issuedTo" type="java.lang.String">
+</parameter>
+<parameter name="issuedBy" type="java.lang.String">
+</parameter>
+<parameter name="validNotBefore" type="java.util.Date">
+</parameter>
+<parameter name="validNotAfter" type="java.util.Date">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SslCertificate" static="false" type="android.net.http.SslCertificate" visibility="public">
+<parameter name="certificate" type="java.security.cert.X509Certificate">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIssuedBy" native="false" return="android.net.http.SslCertificate.DName" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIssuedTo" native="false" return="android.net.http.SslCertificate.DName" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getValidNotAfter" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValidNotAfterDate" native="false" return="java.util.Date" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getValidNotBefore" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValidNotBeforeDate" native="false" return="java.util.Date" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="restoreState" native="false" return="android.net.http.SslCertificate" static="true" synchronized="false" visibility="public">
+<parameter name="bundle" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="saveState" native="false" return="android.os.Bundle" static="true" synchronized="false" visibility="public">
+<parameter name="certificate" type="android.net.http.SslCertificate">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SslCertificate.DName" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SslCertificate.DName" static="false" type="android.net.http.SslCertificate.DName" visibility="public">
+<parameter name="dName" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SslError" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SslError" static="false" type="android.net.http.SslError" visibility="public">
+<parameter name="error" type="int">
+</parameter>
+<parameter name="certificate" type="android.net.http.SslCertificate">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SslError" static="false" type="android.net.http.SslError" visibility="public">
+<parameter name="error" type="int">
+</parameter>
+<parameter name="certificate" type="java.security.cert.X509Certificate">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addError" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="error" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCertificate" native="false" return="android.net.http.SslCertificate" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrimaryError" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasError" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="error" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="SSL_EXPIRED" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SSL_IDMISMATCH" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SSL_MAX_ERROR" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SSL_NOTYETVALID" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SSL_UNTRUSTED" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+</class>
+</package></api>

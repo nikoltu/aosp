@@ -1,0 +1,48 @@
+<!-- This file contains <public> resource definitions for all
+     resources that were generated from the source data. -->
+
+<resources>
+
+  <!-- PRIVATE SECTION.  These resources have not been declared public.
+       You can make them public my moving these lines into a file in res/values. -->
+
+  <!-- Declared at res/drawable-ldpi/icon.png:0 -->
+  <!-- Declared at res/drawable-mdpi/icon.png:0 -->
+  <!-- Declared at res/drawable-hdpi/icon.png:0 -->
+  <public type="drawable" name="icon" id="0x7f020000" />
+
+  <!-- Declared at res/layout/main.xml:0 -->
+  <public type="layout" name="main" id="0x7f030000" />
+
+  <!-- Declared at frameworks/base/packages/WAPPushManager/tests/res/layout/main.xml:16 -->
+  <public type="id" name="widget133" id="0x7f040000" />
+  <!-- Declared at frameworks/base/packages/WAPPushManager/tests/res/layout/main.xml:22 -->
+  <public type="id" name="app_id" id="0x7f040001" />
+  <!-- Declared at frameworks/base/packages/WAPPushManager/tests/res/layout/main.xml:32 -->
+  <public type="id" name="cont" id="0x7f040002" />
+  <!-- Declared at frameworks/base/packages/WAPPushManager/tests/res/layout/main.xml:42 -->
+  <public type="id" name="pkg" id="0x7f040003" />
+  <!-- Declared at frameworks/base/packages/WAPPushManager/tests/res/layout/main.xml:52 -->
+  <public type="id" name="cls" id="0x7f040004" />
+  <!-- Declared at frameworks/base/packages/WAPPushManager/tests/res/layout/main.xml:62 -->
+  <public type="id" name="addpkg" id="0x7f040005" />
+  <!-- Declared at frameworks/base/packages/WAPPushManager/tests/res/layout/main.xml:71 -->
+  <public type="id" name="widget52" id="0x7f040006" />
+  <!-- Declared at frameworks/base/packages/WAPPushManager/tests/res/layout/main.xml:81 -->
+  <public type="id" name="procmsg" id="0x7f040007" />
+  <!-- Declared at frameworks/base/packages/WAPPushManager/tests/res/layout/main.xml:90 -->
+  <public type="id" name="widget137" id="0x7f040008" />
+  <!-- Declared at frameworks/base/packages/WAPPushManager/tests/res/layout/main.xml:98 -->
+  <public type="id" name="act" id="0x7f040009" />
+  <!-- Declared at frameworks/base/packages/WAPPushManager/tests/res/layout/main.xml:106 -->
+  <public type="id" name="svc" id="0x7f04000a" />
+  <!-- Declared at frameworks/base/packages/WAPPushManager/tests/res/layout/main.xml:114 -->
+  <public type="id" name="delpkg" id="0x7f04000b" />
+  <!-- Declared at frameworks/base/packages/WAPPushManager/tests/res/layout/main.xml:123 -->
+  <public type="id" name="pdu" id="0x7f04000c" />
+  <!-- Declared at frameworks/base/packages/WAPPushManager/tests/res/layout/main.xml:133 -->
+  <public type="id" name="ftr" id="0x7f04000d" />
+  <!-- Declared at frameworks/base/packages/WAPPushManager/tests/res/layout/main.xml:142 -->
+  <public type="id" name="sig" id="0x7f04000e" />
+
+</resources>

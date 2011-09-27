@@ -1,0 +1,1102 @@
+<?xml version="1.0" ?><api><package name="android.graphics.drawable">
+<interface abstract="true" deprecated="not deprecated" final="false" name="Animatable" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="isRunning" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="start" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="stop" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.DrawableContainer" final="false" name="AnimationDrawable" static="false" visibility="public">
+<implements name="android.graphics.drawable.Animatable">
+</implements>
+<implements name="java.lang.Runnable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AnimationDrawable" static="false" type="android.graphics.drawable.AnimationDrawable" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addFrame" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="frame" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="duration" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDuration" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFrame" native="false" return="android.graphics.drawable.Drawable" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNumberOfFrames" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isOneShot" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isRunning" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOneShot" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="oneShot" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="start" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stop" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.Drawable" final="false" name="BitmapDrawable" static="false" visibility="public">
+<constructor deprecated="deprecated" final="false" name="BitmapDrawable" static="false" type="android.graphics.drawable.BitmapDrawable" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BitmapDrawable" static="false" type="android.graphics.drawable.BitmapDrawable" visibility="public">
+<parameter name="res" type="android.content.res.Resources">
+</parameter>
+</constructor>
+<constructor deprecated="deprecated" final="false" name="BitmapDrawable" static="false" type="android.graphics.drawable.BitmapDrawable" visibility="public">
+<parameter name="bitmap" type="android.graphics.Bitmap">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BitmapDrawable" static="false" type="android.graphics.drawable.BitmapDrawable" visibility="public">
+<parameter name="res" type="android.content.res.Resources">
+</parameter>
+<parameter name="bitmap" type="android.graphics.Bitmap">
+</parameter>
+</constructor>
+<constructor deprecated="deprecated" final="false" name="BitmapDrawable" static="false" type="android.graphics.drawable.BitmapDrawable" visibility="public">
+<parameter name="filepath" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BitmapDrawable" static="false" type="android.graphics.drawable.BitmapDrawable" visibility="public">
+<parameter name="res" type="android.content.res.Resources">
+</parameter>
+<parameter name="filepath" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="deprecated" final="false" name="BitmapDrawable" static="false" type="android.graphics.drawable.BitmapDrawable" visibility="public">
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BitmapDrawable" static="false" type="android.graphics.drawable.BitmapDrawable" visibility="public">
+<parameter name="res" type="android.content.res.Resources">
+</parameter>
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getConstantState" native="false" return="android.graphics.drawable.Drawable.ConstantState" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGravity" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOpacity" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getPaint" native="false" return="android.graphics.Paint" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTileModeX" native="false" return="android.graphics.Shader.TileMode" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTileModeY" native="false" return="android.graphics.Shader.TileMode" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAlpha" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alpha" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAntiAlias" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="aa" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setColorFilter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cf" type="android.graphics.ColorFilter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGravity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="gravity" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTargetDensity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTargetDensity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="metrics" type="android.util.DisplayMetrics">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTargetDensity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="density" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTileModeX" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mode" type="android.graphics.Shader.TileMode">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTileModeXY" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="xmode" type="android.graphics.Shader.TileMode">
+</parameter>
+<parameter name="ymode" type="android.graphics.Shader.TileMode">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setTileModeY" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mode" type="android.graphics.Shader.TileMode">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.Drawable" final="false" name="ClipDrawable" static="false" visibility="public">
+<implements name="android.graphics.drawable.Drawable.Callback">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ClipDrawable" static="false" type="android.graphics.drawable.ClipDrawable" visibility="public">
+<parameter name="drawable" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="gravity" type="int">
+</parameter>
+<parameter name="orientation" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOpacity" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="invalidateDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="scheduleDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="what" type="java.lang.Runnable">
+</parameter>
+<parameter name="when" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAlpha" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alpha" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setColorFilter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cf" type="android.graphics.ColorFilter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unscheduleDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="what" type="java.lang.Runnable">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="HORIZONTAL" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERTICAL" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.Drawable" final="false" name="ColorDrawable" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ColorDrawable" static="false" type="android.graphics.drawable.ColorDrawable" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ColorDrawable" static="false" type="android.graphics.drawable.ColorDrawable" visibility="public">
+<parameter name="color" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAlpha" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOpacity" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAlpha" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alpha" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setColorFilter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="colorFilter" type="android.graphics.ColorFilter">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Drawable" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Drawable" static="false" type="android.graphics.drawable.Drawable" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearColorFilter" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="copyBounds" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="bounds" type="android.graphics.Rect">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="copyBounds" native="false" return="android.graphics.Rect" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createFromPath" native="false" return="android.graphics.drawable.Drawable" static="true" synchronized="false" visibility="public">
+<parameter name="pathName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createFromResourceStream" native="false" return="android.graphics.drawable.Drawable" static="true" synchronized="false" visibility="public">
+<parameter name="res" type="android.content.res.Resources">
+</parameter>
+<parameter name="value" type="android.util.TypedValue">
+</parameter>
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<parameter name="srcName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createFromResourceStream" native="false" return="android.graphics.drawable.Drawable" static="true" synchronized="false" visibility="public">
+<parameter name="res" type="android.content.res.Resources">
+</parameter>
+<parameter name="value" type="android.util.TypedValue">
+</parameter>
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<parameter name="srcName" type="java.lang.String">
+</parameter>
+<parameter name="opts" type="android.graphics.BitmapFactory.Options">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createFromStream" native="false" return="android.graphics.drawable.Drawable" static="true" synchronized="false" visibility="public">
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<parameter name="srcName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createFromXml" native="false" return="android.graphics.drawable.Drawable" static="true" synchronized="false" visibility="public">
+<parameter name="r" type="android.content.res.Resources">
+</parameter>
+<parameter name="parser" type="org.xmlpull.v1.XmlPullParser">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createFromXmlInner" native="false" return="android.graphics.drawable.Drawable" static="true" synchronized="false" visibility="public">
+<parameter name="r" type="android.content.res.Resources">
+</parameter>
+<parameter name="parser" type="org.xmlpull.v1.XmlPullParser">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getBounds" native="false" return="android.graphics.Rect" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getChangingConfigurations" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getConstantState" native="false" return="android.graphics.drawable.Drawable.ConstantState" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrent" native="false" return="android.graphics.drawable.Drawable" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIntrinsicHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIntrinsicWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getLevel" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMinimumHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMinimumWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getOpacity" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPadding" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="padding" type="android.graphics.Rect">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getState" native="false" return="int[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTransparentRegion" native="false" return="android.graphics.Region" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="inflate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="r" type="android.content.res.Resources">
+</parameter>
+<parameter name="parser" type="org.xmlpull.v1.XmlPullParser">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="invalidateSelf" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isStateful" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isVisible" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="mutate" native="false" return="android.graphics.drawable.Drawable" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onBoundsChange" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="bounds" type="android.graphics.Rect">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onLevelChange" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="level" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onStateChange" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="state" type="int[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resolveOpacity" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="op1" type="int">
+</parameter>
+<parameter name="op2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="scheduleSelf" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="what" type="java.lang.Runnable">
+</parameter>
+<parameter name="when" type="long">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setAlpha" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alpha" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setBounds" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="left" type="int">
+</parameter>
+<parameter name="top" type="int">
+</parameter>
+<parameter name="right" type="int">
+</parameter>
+<parameter name="bottom" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setBounds" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="bounds" type="android.graphics.Rect">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setCallback" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cb" type="android.graphics.drawable.Drawable.Callback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setChangingConfigurations" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="configs" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setColorFilter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cf" type="android.graphics.ColorFilter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setColorFilter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="color" type="int">
+</parameter>
+<parameter name="mode" type="android.graphics.PorterDuff.Mode">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDither" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dither" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFilterBitmap" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="filter" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setLevel" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="level" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setState" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="stateSet" type="int[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVisible" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="visible" type="boolean">
+</parameter>
+<parameter name="restart" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unscheduleSelf" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="what" type="java.lang.Runnable">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Drawable.Callback" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="invalidateDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="scheduleDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="what" type="java.lang.Runnable">
+</parameter>
+<parameter name="when" type="long">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="unscheduleDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="what" type="java.lang.Runnable">
+</parameter>
+</method>
+</interface>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Drawable.ConstantState" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Drawable.ConstantState" static="false" type="android.graphics.drawable.Drawable.ConstantState" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="getChangingConfigurations" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newDrawable" native="false" return="android.graphics.drawable.Drawable" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newDrawable" native="false" return="android.graphics.drawable.Drawable" static="false" synchronized="false" visibility="public">
+<parameter name="res" type="android.content.res.Resources">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.Drawable" final="false" name="DrawableContainer" static="false" visibility="public">
+<implements name="android.graphics.drawable.Drawable.Callback">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DrawableContainer" static="false" type="android.graphics.drawable.DrawableContainer" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOpacity" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="invalidateDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="scheduleDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="what" type="java.lang.Runnable">
+</parameter>
+<parameter name="when" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="selectDrawable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="idx" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAlpha" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alpha" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setColorFilter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cf" type="android.graphics.ColorFilter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setConstantState" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="state" type="android.graphics.drawable.DrawableContainer.DrawableContainerState">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unscheduleDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="what" type="java.lang.Runnable">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="android.graphics.drawable.Drawable.ConstantState" final="false" name="DrawableContainer.DrawableContainerState" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="true" name="addChild" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="dr" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="canConstantState" native="false" return="boolean" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getChangingConfigurations" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getChildCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getChildren" native="false" return="android.graphics.drawable.Drawable[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getConstantHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getConstantMinimumHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getConstantMinimumWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getConstantPadding" native="false" return="android.graphics.Rect" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getConstantWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getOpacity" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="growArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="oldSize" type="int">
+</parameter>
+<parameter name="newSize" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isConstantSize" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isStateful" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setConstantSize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="constant" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setVariablePadding" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="variable" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.Drawable" final="false" name="GradientDrawable" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="GradientDrawable" static="false" type="android.graphics.drawable.GradientDrawable" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="GradientDrawable" static="false" type="android.graphics.drawable.GradientDrawable" visibility="public">
+<parameter name="orientation" type="android.graphics.drawable.GradientDrawable.Orientation">
+</parameter>
+<parameter name="colors" type="int[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOpacity" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAlpha" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alpha" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setColor" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="argb" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setColorFilter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cf" type="android.graphics.ColorFilter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCornerRadii" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="radii" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCornerRadius" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="radius" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGradientCenter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="x" type="float">
+</parameter>
+<parameter name="y" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGradientRadius" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="gradientRadius" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGradientType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="gradient" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setShape" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="shape" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStroke" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="width" type="int">
+</parameter>
+<parameter name="color" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStroke" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="width" type="int">
+</parameter>
+<parameter name="color" type="int">
+</parameter>
+<parameter name="dashWidth" type="float">
+</parameter>
+<parameter name="dashGap" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setUseLevel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="useLevel" type="boolean">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="LINE" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LINEAR_GRADIENT" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OVAL" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RADIAL_GRADIENT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RECTANGLE" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RING" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SWEEP_GRADIENT" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" final="true" name="GradientDrawable.Orientation" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="android.graphics.drawable.GradientDrawable.Orientation" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="values" native="false" return="android.graphics.drawable.GradientDrawable.Orientation[]" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.Drawable" final="false" name="InsetDrawable" static="false" visibility="public">
+<implements name="android.graphics.drawable.Drawable.Callback">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="InsetDrawable" static="false" type="android.graphics.drawable.InsetDrawable" visibility="public">
+<parameter name="drawable" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="inset" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InsetDrawable" static="false" type="android.graphics.drawable.InsetDrawable" visibility="public">
+<parameter name="drawable" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="insetLeft" type="int">
+</parameter>
+<parameter name="insetTop" type="int">
+</parameter>
+<parameter name="insetRight" type="int">
+</parameter>
+<parameter name="insetBottom" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOpacity" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="invalidateDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="scheduleDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="what" type="java.lang.Runnable">
+</parameter>
+<parameter name="when" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAlpha" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alpha" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setColorFilter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cf" type="android.graphics.ColorFilter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unscheduleDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="what" type="java.lang.Runnable">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.Drawable" final="false" name="LayerDrawable" static="false" visibility="public">
+<implements name="android.graphics.drawable.Drawable.Callback">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="LayerDrawable" static="false" type="android.graphics.drawable.LayerDrawable" visibility="public">
+<parameter name="layers" type="android.graphics.drawable.Drawable[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="findDrawableByLayerId" native="false" return="android.graphics.drawable.Drawable" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDrawable" native="false" return="android.graphics.drawable.Drawable" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getId" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNumberOfLayers" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOpacity" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="invalidateDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="scheduleDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="what" type="java.lang.Runnable">
+</parameter>
+<parameter name="when" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAlpha" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alpha" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setColorFilter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cf" type="android.graphics.ColorFilter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDrawableByLayerId" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<parameter name="drawable" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="id" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLayerInset" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="l" type="int">
+</parameter>
+<parameter name="t" type="int">
+</parameter>
+<parameter name="r" type="int">
+</parameter>
+<parameter name="b" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unscheduleDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="what" type="java.lang.Runnable">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.DrawableContainer" final="false" name="LevelListDrawable" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="LevelListDrawable" static="false" type="android.graphics.drawable.LevelListDrawable" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addLevel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="low" type="int">
+</parameter>
+<parameter name="high" type="int">
+</parameter>
+<parameter name="drawable" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.Drawable" final="false" name="NinePatchDrawable" static="false" visibility="public">
+<constructor deprecated="deprecated" final="false" name="NinePatchDrawable" static="false" type="android.graphics.drawable.NinePatchDrawable" visibility="public">
+<parameter name="bitmap" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="chunk" type="byte[]">
+</parameter>
+<parameter name="padding" type="android.graphics.Rect">
+</parameter>
+<parameter name="srcName" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="NinePatchDrawable" static="false" type="android.graphics.drawable.NinePatchDrawable" visibility="public">
+<parameter name="res" type="android.content.res.Resources">
+</parameter>
+<parameter name="bitmap" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="chunk" type="byte[]">
+</parameter>
+<parameter name="padding" type="android.graphics.Rect">
+</parameter>
+<parameter name="srcName" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="deprecated" final="false" name="NinePatchDrawable" static="false" type="android.graphics.drawable.NinePatchDrawable" visibility="public">
+<parameter name="patch" type="android.graphics.NinePatch">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="NinePatchDrawable" static="false" type="android.graphics.drawable.NinePatchDrawable" visibility="public">
+<parameter name="res" type="android.content.res.Resources">
+</parameter>
+<parameter name="patch" type="android.graphics.NinePatch">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOpacity" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPaint" native="false" return="android.graphics.Paint" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAlpha" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alpha" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setColorFilter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cf" type="android.graphics.ColorFilter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTargetDensity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTargetDensity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="metrics" type="android.util.DisplayMetrics">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTargetDensity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="density" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.ShapeDrawable" final="false" name="PaintDrawable" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PaintDrawable" static="false" type="android.graphics.drawable.PaintDrawable" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="PaintDrawable" static="false" type="android.graphics.drawable.PaintDrawable" visibility="public">
+<parameter name="color" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCornerRadii" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="radii" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCornerRadius" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="radius" type="float">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.Drawable" final="false" name="PictureDrawable" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PictureDrawable" static="false" type="android.graphics.drawable.PictureDrawable" visibility="public">
+<parameter name="picture" type="android.graphics.Picture">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOpacity" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPicture" native="false" return="android.graphics.Picture" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAlpha" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alpha" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setColorFilter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="colorFilter" type="android.graphics.ColorFilter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPicture" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="picture" type="android.graphics.Picture">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.Drawable" final="false" name="RotateDrawable" static="false" visibility="public">
+<implements name="android.graphics.drawable.Drawable.Callback">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RotateDrawable" static="false" type="android.graphics.drawable.RotateDrawable" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDrawable" native="false" return="android.graphics.drawable.Drawable" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOpacity" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="invalidateDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="scheduleDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="what" type="java.lang.Runnable">
+</parameter>
+<parameter name="when" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAlpha" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alpha" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setColorFilter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cf" type="android.graphics.ColorFilter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unscheduleDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="what" type="java.lang.Runnable">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.Drawable" final="false" name="ScaleDrawable" static="false" visibility="public">
+<implements name="android.graphics.drawable.Drawable.Callback">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ScaleDrawable" static="false" type="android.graphics.drawable.ScaleDrawable" visibility="public">
+<parameter name="drawable" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="gravity" type="int">
+</parameter>
+<parameter name="scaleWidth" type="float">
+</parameter>
+<parameter name="scaleHeight" type="float">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDrawable" native="false" return="android.graphics.drawable.Drawable" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOpacity" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="invalidateDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="scheduleDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="what" type="java.lang.Runnable">
+</parameter>
+<parameter name="when" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAlpha" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alpha" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setColorFilter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cf" type="android.graphics.ColorFilter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unscheduleDrawable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="what" type="java.lang.Runnable">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.Drawable" final="false" name="ShapeDrawable" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ShapeDrawable" static="false" type="android.graphics.drawable.ShapeDrawable" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ShapeDrawable" static="false" type="android.graphics.drawable.ShapeDrawable" visibility="public">
+<parameter name="s" type="android.graphics.drawable.shapes.Shape">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOpacity" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPaint" native="false" return="android.graphics.Paint" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getShaderFactory" native="false" return="android.graphics.drawable.ShapeDrawable.ShaderFactory" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getShape" native="false" return="android.graphics.drawable.shapes.Shape" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="inflateTag" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="r" type="android.content.res.Resources">
+</parameter>
+<parameter name="parser" type="org.xmlpull.v1.XmlPullParser">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDraw" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="shape" type="android.graphics.drawable.shapes.Shape">
+</parameter>
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+<parameter name="paint" type="android.graphics.Paint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAlpha" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alpha" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setColorFilter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cf" type="android.graphics.ColorFilter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setIntrinsicHeight" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="height" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setIntrinsicWidth" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="width" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPadding" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="left" type="int">
+</parameter>
+<parameter name="top" type="int">
+</parameter>
+<parameter name="right" type="int">
+</parameter>
+<parameter name="bottom" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPadding" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="padding" type="android.graphics.Rect">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setShaderFactory" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="fact" type="android.graphics.drawable.ShapeDrawable.ShaderFactory">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setShape" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="android.graphics.drawable.shapes.Shape">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ShapeDrawable.ShaderFactory" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ShapeDrawable.ShaderFactory" static="false" type="android.graphics.drawable.ShapeDrawable.ShaderFactory" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="resize" native="false" return="android.graphics.Shader" static="false" synchronized="false" visibility="public">
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.DrawableContainer" final="false" name="StateListDrawable" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="StateListDrawable" static="false" type="android.graphics.drawable.StateListDrawable" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="stateSet" type="int[]">
+</parameter>
+<parameter name="drawable" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.LayerDrawable" final="false" name="TransitionDrawable" static="false" visibility="public">
+<implements name="android.graphics.drawable.Drawable.Callback">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="TransitionDrawable" static="false" type="android.graphics.drawable.TransitionDrawable" visibility="public">
+<parameter name="layers" type="android.graphics.drawable.Drawable[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="isCrossFadeEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetTransition" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reverseTransition" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="duration" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCrossFadeEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="enabled" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startTransition" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="durationMillis" type="int">
+</parameter>
+</method>
+</class>
+</package></api>

@@ -1,0 +1,272 @@
+<?xml version="1.0" ?><api><package name="org.apache.http.conn.routing">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BasicRouteDirector" static="false" visibility="public">
+<implements name="org.apache.http.conn.routing.HttpRouteDirector">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicRouteDirector" static="false" type="org.apache.http.conn.routing.BasicRouteDirector" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="directStep" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="plan" type="org.apache.http.conn.routing.RouteInfo">
+</parameter>
+<parameter name="fact" type="org.apache.http.conn.routing.RouteInfo">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="firstStep" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="plan" type="org.apache.http.conn.routing.RouteInfo">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="nextStep" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="plan" type="org.apache.http.conn.routing.RouteInfo">
+</parameter>
+<parameter name="fact" type="org.apache.http.conn.routing.RouteInfo">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="proxiedStep" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="plan" type="org.apache.http.conn.routing.RouteInfo">
+</parameter>
+<parameter name="fact" type="org.apache.http.conn.routing.RouteInfo">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="HttpRoute" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<implements name="org.apache.http.conn.routing.RouteInfo">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="HttpRoute" static="false" type="org.apache.http.conn.routing.HttpRoute" visibility="public">
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="local" type="java.net.InetAddress">
+</parameter>
+<parameter name="proxies" type="org.apache.http.HttpHost[]">
+</parameter>
+<parameter name="secure" type="boolean">
+</parameter>
+<parameter name="tunnelled" type="org.apache.http.conn.routing.RouteInfo.TunnelType">
+</parameter>
+<parameter name="layered" type="org.apache.http.conn.routing.RouteInfo.LayerType">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpRoute" static="false" type="org.apache.http.conn.routing.HttpRoute" visibility="public">
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="local" type="java.net.InetAddress">
+</parameter>
+<parameter name="proxy" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="secure" type="boolean">
+</parameter>
+<parameter name="tunnelled" type="org.apache.http.conn.routing.RouteInfo.TunnelType">
+</parameter>
+<parameter name="layered" type="org.apache.http.conn.routing.RouteInfo.LayerType">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpRoute" static="false" type="org.apache.http.conn.routing.HttpRoute" visibility="public">
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="local" type="java.net.InetAddress">
+</parameter>
+<parameter name="secure" type="boolean">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpRoute" static="false" type="org.apache.http.conn.routing.HttpRoute" visibility="public">
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpRoute" static="false" type="org.apache.http.conn.routing.HttpRoute" visibility="public">
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="local" type="java.net.InetAddress">
+</parameter>
+<parameter name="proxy" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="secure" type="boolean">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="equals" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="o" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getHopCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getHopTarget" native="false" return="org.apache.http.HttpHost" static="false" synchronized="false" visibility="public">
+<parameter name="hop" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getLayerType" native="false" return="org.apache.http.conn.routing.RouteInfo.LayerType" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getLocalAddress" native="false" return="java.net.InetAddress" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProxyHost" native="false" return="org.apache.http.HttpHost" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getTargetHost" native="false" return="org.apache.http.HttpHost" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getTunnelType" native="false" return="org.apache.http.conn.routing.RouteInfo.TunnelType" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="hashCode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isLayered" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isSecure" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isTunnelled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="toString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="HttpRouteDirector" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="nextStep" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="plan" type="org.apache.http.conn.routing.RouteInfo">
+</parameter>
+<parameter name="fact" type="org.apache.http.conn.routing.RouteInfo">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="COMPLETE" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CONNECT_PROXY" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CONNECT_TARGET" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LAYER_PROTOCOL" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TUNNEL_PROXY" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TUNNEL_TARGET" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNREACHABLE" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="HttpRoutePlanner" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="determineRoute" native="false" return="org.apache.http.conn.routing.HttpRoute" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="RouteInfo" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getHopCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getHopTarget" native="false" return="org.apache.http.HttpHost" static="false" synchronized="false" visibility="public">
+<parameter name="hop" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLayerType" native="false" return="org.apache.http.conn.routing.RouteInfo.LayerType" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLocalAddress" native="false" return="java.net.InetAddress" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getProxyHost" native="false" return="org.apache.http.HttpHost" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTargetHost" native="false" return="org.apache.http.HttpHost" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTunnelType" native="false" return="org.apache.http.conn.routing.RouteInfo.TunnelType" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isLayered" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isSecure" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isTunnelled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" final="true" name="RouteInfo.LayerType" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="org.apache.http.conn.routing.RouteInfo.LayerType" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="values" native="false" return="org.apache.http.conn.routing.RouteInfo.LayerType[]" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" final="true" name="RouteInfo.TunnelType" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="org.apache.http.conn.routing.RouteInfo.TunnelType" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="values" native="false" return="org.apache.http.conn.routing.RouteInfo.TunnelType[]" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="RouteTracker" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<implements name="org.apache.http.conn.routing.RouteInfo">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RouteTracker" static="false" type="org.apache.http.conn.routing.RouteTracker" visibility="public">
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="local" type="java.net.InetAddress">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="RouteTracker" static="false" type="org.apache.http.conn.routing.RouteTracker" visibility="public">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="connectProxy" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="proxy" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="secure" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="connectTarget" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="secure" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="equals" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="o" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getHopCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getHopTarget" native="false" return="org.apache.http.HttpHost" static="false" synchronized="false" visibility="public">
+<parameter name="hop" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getLayerType" native="false" return="org.apache.http.conn.routing.RouteInfo.LayerType" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getLocalAddress" native="false" return="java.net.InetAddress" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProxyHost" native="false" return="org.apache.http.HttpHost" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getTargetHost" native="false" return="org.apache.http.HttpHost" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getTunnelType" native="false" return="org.apache.http.conn.routing.RouteInfo.TunnelType" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="hashCode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isConnected" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isLayered" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isSecure" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isTunnelled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="layerProtocol" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="secure" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="toRoute" native="false" return="org.apache.http.conn.routing.HttpRoute" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="toString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="tunnelProxy" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="proxy" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="secure" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="tunnelTarget" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="secure" type="boolean">
+</parameter>
+</method>
+</class>
+</package></api>

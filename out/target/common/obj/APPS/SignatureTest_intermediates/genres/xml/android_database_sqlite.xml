@@ -1,0 +1,758 @@
+<?xml version="1.0" ?><api><package name="android.database.sqlite">
+<class abstract="false" deprecated="not deprecated" extends="android.database.sqlite.SQLiteException" final="false" name="SQLiteAbortException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SQLiteAbortException" static="false" type="android.database.sqlite.SQLiteAbortException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SQLiteAbortException" static="false" type="android.database.sqlite.SQLiteAbortException" visibility="public">
+<parameter name="error" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SQLiteClosable" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SQLiteClosable" static="false" type="android.database.sqlite.SQLiteClosable" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="acquireReference" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onAllReferencesReleased" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onAllReferencesReleasedFromContainer" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="releaseReference" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="releaseReferenceFromContainer" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.database.sqlite.SQLiteException" final="false" name="SQLiteConstraintException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SQLiteConstraintException" static="false" type="android.database.sqlite.SQLiteConstraintException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SQLiteConstraintException" static="false" type="android.database.sqlite.SQLiteConstraintException" visibility="public">
+<parameter name="error" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.database.AbstractWindowedCursor" final="false" name="SQLiteCursor" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SQLiteCursor" static="false" type="android.database.sqlite.SQLiteCursor" visibility="public">
+<parameter name="db" type="android.database.sqlite.SQLiteDatabase">
+</parameter>
+<parameter name="driver" type="android.database.sqlite.SQLiteCursorDriver">
+</parameter>
+<parameter name="editTable" type="java.lang.String">
+</parameter>
+<parameter name="query" type="android.database.sqlite.SQLiteQuery">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getColumnNames" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDatabase" native="false" return="android.database.sqlite.SQLiteDatabase" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSelectionArguments" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="selectionArgs" type="java.lang.String[]">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="SQLiteCursorDriver" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="cursorClosed" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="cursorDeactivated" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="cursorRequeried" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cursor" type="android.database.Cursor">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="query" native="false" return="android.database.Cursor" static="false" synchronized="false" visibility="public">
+<parameter name="factory" type="android.database.sqlite.SQLiteDatabase.CursorFactory">
+</parameter>
+<parameter name="bindArgs" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setBindArguments" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="bindArgs" type="java.lang.String[]">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="android.database.sqlite.SQLiteClosable" final="false" name="SQLiteDatabase" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="beginTransaction" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="beginTransactionWithListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="transactionListener" type="android.database.sqlite.SQLiteTransactionListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="compileStatement" native="false" return="android.database.sqlite.SQLiteStatement" static="false" synchronized="false" visibility="public">
+<parameter name="sql" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="android.database.SQLException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="create" native="false" return="android.database.sqlite.SQLiteDatabase" static="true" synchronized="false" visibility="public">
+<parameter name="factory" type="android.database.sqlite.SQLiteDatabase.CursorFactory">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="delete" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="table" type="java.lang.String">
+</parameter>
+<parameter name="whereClause" type="java.lang.String">
+</parameter>
+<parameter name="whereArgs" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="endTransaction" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="execSQL" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="sql" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="android.database.SQLException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="execSQL" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="sql" type="java.lang.String">
+</parameter>
+<parameter name="bindArgs" type="java.lang.Object[]">
+</parameter>
+<exception name="SQLException" type="android.database.SQLException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="findEditTable" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="tables" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMaximumSize" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPageSize" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getPath" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSyncedTables" native="false" return="java.util.Map&lt;java.lang.String, java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVersion" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="inTransaction" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="insert" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="table" type="java.lang.String">
+</parameter>
+<parameter name="nullColumnHack" type="java.lang.String">
+</parameter>
+<parameter name="values" type="android.content.ContentValues">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="insertOrThrow" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="table" type="java.lang.String">
+</parameter>
+<parameter name="nullColumnHack" type="java.lang.String">
+</parameter>
+<parameter name="values" type="android.content.ContentValues">
+</parameter>
+<exception name="SQLException" type="android.database.SQLException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="insertWithOnConflict" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="table" type="java.lang.String">
+</parameter>
+<parameter name="nullColumnHack" type="java.lang.String">
+</parameter>
+<parameter name="initialValues" type="android.content.ContentValues">
+</parameter>
+<parameter name="conflictAlgorithm" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isDbLockedByCurrentThread" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isDbLockedByOtherThreads" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isOpen" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isReadOnly" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="markTableSyncable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="table" type="java.lang.String">
+</parameter>
+<parameter name="deletedTable" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="markTableSyncable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="table" type="java.lang.String">
+</parameter>
+<parameter name="foreignKey" type="java.lang.String">
+</parameter>
+<parameter name="updateTable" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="needUpgrade" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="newVersion" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onAllReferencesReleased" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="openDatabase" native="false" return="android.database.sqlite.SQLiteDatabase" static="true" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="factory" type="android.database.sqlite.SQLiteDatabase.CursorFactory">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="openOrCreateDatabase" native="false" return="android.database.sqlite.SQLiteDatabase" static="true" synchronized="false" visibility="public">
+<parameter name="file" type="java.io.File">
+</parameter>
+<parameter name="factory" type="android.database.sqlite.SQLiteDatabase.CursorFactory">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="openOrCreateDatabase" native="false" return="android.database.sqlite.SQLiteDatabase" static="true" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="factory" type="android.database.sqlite.SQLiteDatabase.CursorFactory">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="query" native="false" return="android.database.Cursor" static="false" synchronized="false" visibility="public">
+<parameter name="distinct" type="boolean">
+</parameter>
+<parameter name="table" type="java.lang.String">
+</parameter>
+<parameter name="columns" type="java.lang.String[]">
+</parameter>
+<parameter name="selection" type="java.lang.String">
+</parameter>
+<parameter name="selectionArgs" type="java.lang.String[]">
+</parameter>
+<parameter name="groupBy" type="java.lang.String">
+</parameter>
+<parameter name="having" type="java.lang.String">
+</parameter>
+<parameter name="orderBy" type="java.lang.String">
+</parameter>
+<parameter name="limit" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="query" native="false" return="android.database.Cursor" static="false" synchronized="false" visibility="public">
+<parameter name="table" type="java.lang.String">
+</parameter>
+<parameter name="columns" type="java.lang.String[]">
+</parameter>
+<parameter name="selection" type="java.lang.String">
+</parameter>
+<parameter name="selectionArgs" type="java.lang.String[]">
+</parameter>
+<parameter name="groupBy" type="java.lang.String">
+</parameter>
+<parameter name="having" type="java.lang.String">
+</parameter>
+<parameter name="orderBy" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="query" native="false" return="android.database.Cursor" static="false" synchronized="false" visibility="public">
+<parameter name="table" type="java.lang.String">
+</parameter>
+<parameter name="columns" type="java.lang.String[]">
+</parameter>
+<parameter name="selection" type="java.lang.String">
+</parameter>
+<parameter name="selectionArgs" type="java.lang.String[]">
+</parameter>
+<parameter name="groupBy" type="java.lang.String">
+</parameter>
+<parameter name="having" type="java.lang.String">
+</parameter>
+<parameter name="orderBy" type="java.lang.String">
+</parameter>
+<parameter name="limit" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="queryWithFactory" native="false" return="android.database.Cursor" static="false" synchronized="false" visibility="public">
+<parameter name="cursorFactory" type="android.database.sqlite.SQLiteDatabase.CursorFactory">
+</parameter>
+<parameter name="distinct" type="boolean">
+</parameter>
+<parameter name="table" type="java.lang.String">
+</parameter>
+<parameter name="columns" type="java.lang.String[]">
+</parameter>
+<parameter name="selection" type="java.lang.String">
+</parameter>
+<parameter name="selectionArgs" type="java.lang.String[]">
+</parameter>
+<parameter name="groupBy" type="java.lang.String">
+</parameter>
+<parameter name="having" type="java.lang.String">
+</parameter>
+<parameter name="orderBy" type="java.lang.String">
+</parameter>
+<parameter name="limit" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="rawQuery" native="false" return="android.database.Cursor" static="false" synchronized="false" visibility="public">
+<parameter name="sql" type="java.lang.String">
+</parameter>
+<parameter name="selectionArgs" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="rawQueryWithFactory" native="false" return="android.database.Cursor" static="false" synchronized="false" visibility="public">
+<parameter name="cursorFactory" type="android.database.sqlite.SQLiteDatabase.CursorFactory">
+</parameter>
+<parameter name="sql" type="java.lang.String">
+</parameter>
+<parameter name="selectionArgs" type="java.lang.String[]">
+</parameter>
+<parameter name="editTable" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="releaseMemory" native="true" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="replace" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="table" type="java.lang.String">
+</parameter>
+<parameter name="nullColumnHack" type="java.lang.String">
+</parameter>
+<parameter name="initialValues" type="android.content.ContentValues">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="replaceOrThrow" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="table" type="java.lang.String">
+</parameter>
+<parameter name="nullColumnHack" type="java.lang.String">
+</parameter>
+<parameter name="initialValues" type="android.content.ContentValues">
+</parameter>
+<exception name="SQLException" type="android.database.SQLException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLocale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="locale" type="java.util.Locale">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLockingEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="lockingEnabled" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMaximumSize" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="numBytes" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPageSize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="numBytes" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTransactionSuccessful" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVersion" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="version" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="update" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="table" type="java.lang.String">
+</parameter>
+<parameter name="values" type="android.content.ContentValues">
+</parameter>
+<parameter name="whereClause" type="java.lang.String">
+</parameter>
+<parameter name="whereArgs" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateWithOnConflict" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="table" type="java.lang.String">
+</parameter>
+<parameter name="values" type="android.content.ContentValues">
+</parameter>
+<parameter name="whereClause" type="java.lang.String">
+</parameter>
+<parameter name="whereArgs" type="java.lang.String[]">
+</parameter>
+<parameter name="conflictAlgorithm" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="yieldIfContended" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="yieldIfContendedSafely" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="yieldIfContendedSafely" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="sleepAfterYieldDelay" type="long">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CONFLICT_ABORT" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CONFLICT_FAIL" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CONFLICT_IGNORE" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CONFLICT_NONE" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CONFLICT_REPLACE" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CONFLICT_ROLLBACK" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CREATE_IF_NECESSARY" static="true" transient="false" type="int" value="268435456" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NO_LOCALIZED_COLLATORS" static="true" transient="false" type="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OPEN_READONLY" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OPEN_READWRITE" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SQLITE_MAX_LIKE_PATTERN_LENGTH" static="true" transient="false" type="int" value="50000" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="SQLiteDatabase.CursorFactory" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="newCursor" native="false" return="android.database.Cursor" static="false" synchronized="false" visibility="public">
+<parameter name="db" type="android.database.sqlite.SQLiteDatabase">
+</parameter>
+<parameter name="masterQuery" type="android.database.sqlite.SQLiteCursorDriver">
+</parameter>
+<parameter name="editTable" type="java.lang.String">
+</parameter>
+<parameter name="query" type="android.database.sqlite.SQLiteQuery">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="android.database.sqlite.SQLiteException" final="false" name="SQLiteDatabaseCorruptException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SQLiteDatabaseCorruptException" static="false" type="android.database.sqlite.SQLiteDatabaseCorruptException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SQLiteDatabaseCorruptException" static="false" type="android.database.sqlite.SQLiteDatabaseCorruptException" visibility="public">
+<parameter name="error" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.database.sqlite.SQLiteException" final="false" name="SQLiteDiskIOException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SQLiteDiskIOException" static="false" type="android.database.sqlite.SQLiteDiskIOException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SQLiteDiskIOException" static="false" type="android.database.sqlite.SQLiteDiskIOException" visibility="public">
+<parameter name="error" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.database.sqlite.SQLiteException" final="false" name="SQLiteDoneException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SQLiteDoneException" static="false" type="android.database.sqlite.SQLiteDoneException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SQLiteDoneException" static="false" type="android.database.sqlite.SQLiteDoneException" visibility="public">
+<parameter name="error" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.database.SQLException" final="false" name="SQLiteException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SQLiteException" static="false" type="android.database.sqlite.SQLiteException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SQLiteException" static="false" type="android.database.sqlite.SQLiteException" visibility="public">
+<parameter name="error" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.database.sqlite.SQLiteException" final="false" name="SQLiteFullException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SQLiteFullException" static="false" type="android.database.sqlite.SQLiteFullException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SQLiteFullException" static="false" type="android.database.sqlite.SQLiteFullException" visibility="public">
+<parameter name="error" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.database.sqlite.SQLiteException" final="false" name="SQLiteMisuseException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SQLiteMisuseException" static="false" type="android.database.sqlite.SQLiteMisuseException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SQLiteMisuseException" static="false" type="android.database.sqlite.SQLiteMisuseException" visibility="public">
+<parameter name="error" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SQLiteOpenHelper" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SQLiteOpenHelper" static="false" type="android.database.sqlite.SQLiteOpenHelper" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="factory" type="android.database.sqlite.SQLiteDatabase.CursorFactory">
+</parameter>
+<parameter name="version" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReadableDatabase" native="false" return="android.database.sqlite.SQLiteDatabase" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWritableDatabase" native="false" return="android.database.sqlite.SQLiteDatabase" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onCreate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="db" type="android.database.sqlite.SQLiteDatabase">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onOpen" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="db" type="android.database.sqlite.SQLiteDatabase">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onUpgrade" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="db" type="android.database.sqlite.SQLiteDatabase">
+</parameter>
+<parameter name="oldVersion" type="int">
+</parameter>
+<parameter name="newVersion" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="android.database.sqlite.SQLiteClosable" final="false" name="SQLiteProgram" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="bindBlob" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="value" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="bindDouble" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="value" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="bindLong" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="value" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="bindNull" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="bindString" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearBindings" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="compile" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="sql" type="java.lang.String">
+</parameter>
+<parameter name="forceCompilation" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getUniqueId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="native_bind_blob" native="true" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="value" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="native_bind_double" native="true" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="value" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="native_bind_long" native="true" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="value" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="native_bind_null" native="true" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="native_bind_string" native="true" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="true" name="native_compile" native="true" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="sql" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="true" name="native_finalize" native="true" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onAllReferencesReleased" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<field deprecated="deprecated" final="false" name="mDatabase" static="false" transient="false" type="android.database.sqlite.SQLiteDatabase" visibility="protected" volatile="false">
+</field>
+<field deprecated="deprecated" final="false" name="nHandle" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="deprecated" final="false" name="nStatement" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.database.sqlite.SQLiteProgram" final="false" name="SQLiteQuery" static="false" visibility="public">
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SQLiteQueryBuilder" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SQLiteQueryBuilder" static="false" type="android.database.sqlite.SQLiteQueryBuilder" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="appendColumns" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.StringBuilder">
+</parameter>
+<parameter name="columns" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="appendWhere" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="inWhere" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="appendWhereEscapeString" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="inWhere" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="buildQuery" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="projectionIn" type="java.lang.String[]">
+</parameter>
+<parameter name="selection" type="java.lang.String">
+</parameter>
+<parameter name="groupBy" type="java.lang.String">
+</parameter>
+<parameter name="having" type="java.lang.String">
+</parameter>
+<parameter name="sortOrder" type="java.lang.String">
+</parameter>
+<parameter name="limit" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="buildQuery" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="projectionIn" type="java.lang.String[]">
+</parameter>
+<parameter name="selection" type="java.lang.String">
+</parameter>
+<parameter name="selectionArgs" type="java.lang.String[]">
+</parameter>
+<parameter name="groupBy" type="java.lang.String">
+</parameter>
+<parameter name="having" type="java.lang.String">
+</parameter>
+<parameter name="sortOrder" type="java.lang.String">
+</parameter>
+<parameter name="limit" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="buildQueryString" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="distinct" type="boolean">
+</parameter>
+<parameter name="tables" type="java.lang.String">
+</parameter>
+<parameter name="columns" type="java.lang.String[]">
+</parameter>
+<parameter name="where" type="java.lang.String">
+</parameter>
+<parameter name="groupBy" type="java.lang.String">
+</parameter>
+<parameter name="having" type="java.lang.String">
+</parameter>
+<parameter name="orderBy" type="java.lang.String">
+</parameter>
+<parameter name="limit" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="buildUnionQuery" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="subQueries" type="java.lang.String[]">
+</parameter>
+<parameter name="sortOrder" type="java.lang.String">
+</parameter>
+<parameter name="limit" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="buildUnionSubQuery" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="typeDiscriminatorColumn" type="java.lang.String">
+</parameter>
+<parameter name="unionColumns" type="java.lang.String[]">
+</parameter>
+<parameter name="columnsPresentInTable" type="java.util.Set&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="computedColumnsOffset" type="int">
+</parameter>
+<parameter name="typeDiscriminatorValue" type="java.lang.String">
+</parameter>
+<parameter name="selection" type="java.lang.String">
+</parameter>
+<parameter name="groupBy" type="java.lang.String">
+</parameter>
+<parameter name="having" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="buildUnionSubQuery" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="typeDiscriminatorColumn" type="java.lang.String">
+</parameter>
+<parameter name="unionColumns" type="java.lang.String[]">
+</parameter>
+<parameter name="columnsPresentInTable" type="java.util.Set&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="computedColumnsOffset" type="int">
+</parameter>
+<parameter name="typeDiscriminatorValue" type="java.lang.String">
+</parameter>
+<parameter name="selection" type="java.lang.String">
+</parameter>
+<parameter name="selectionArgs" type="java.lang.String[]">
+</parameter>
+<parameter name="groupBy" type="java.lang.String">
+</parameter>
+<parameter name="having" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTables" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="query" native="false" return="android.database.Cursor" static="false" synchronized="false" visibility="public">
+<parameter name="db" type="android.database.sqlite.SQLiteDatabase">
+</parameter>
+<parameter name="projectionIn" type="java.lang.String[]">
+</parameter>
+<parameter name="selection" type="java.lang.String">
+</parameter>
+<parameter name="selectionArgs" type="java.lang.String[]">
+</parameter>
+<parameter name="groupBy" type="java.lang.String">
+</parameter>
+<parameter name="having" type="java.lang.String">
+</parameter>
+<parameter name="sortOrder" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="query" native="false" return="android.database.Cursor" static="false" synchronized="false" visibility="public">
+<parameter name="db" type="android.database.sqlite.SQLiteDatabase">
+</parameter>
+<parameter name="projectionIn" type="java.lang.String[]">
+</parameter>
+<parameter name="selection" type="java.lang.String">
+</parameter>
+<parameter name="selectionArgs" type="java.lang.String[]">
+</parameter>
+<parameter name="groupBy" type="java.lang.String">
+</parameter>
+<parameter name="having" type="java.lang.String">
+</parameter>
+<parameter name="sortOrder" type="java.lang.String">
+</parameter>
+<parameter name="limit" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCursorFactory" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="factory" type="android.database.sqlite.SQLiteDatabase.CursorFactory">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDistinct" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="distinct" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setProjectionMap" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="columnMap" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTables" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="inTables" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.database.sqlite.SQLiteProgram" final="false" name="SQLiteStatement" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="execute" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="executeInsert" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="simpleQueryForLong" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="simpleQueryForString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="SQLiteTransactionListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onBegin" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onCommit" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onRollback" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+</package></api>

@@ -1,0 +1,842 @@
+<?xml version="1.0" ?><api><package name="android.hardware">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Camera" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="true" name="addCallbackBuffer" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="callbackBuffer" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="autoFocus" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cb" type="android.hardware.Camera.AutoFocusCallback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="cancelAutoFocus" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCameraInfo" native="true" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="cameraId" type="int">
+</parameter>
+<parameter name="cameraInfo" type="android.hardware.Camera.CameraInfo">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNumberOfCameras" native="true" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParameters" native="false" return="android.hardware.Camera.Parameters" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="lock" native="true" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="open" native="false" return="android.hardware.Camera" static="true" synchronized="false" visibility="public">
+<parameter name="cameraId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="open" native="false" return="android.hardware.Camera" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="reconnect" native="true" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="release" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setDisplayOrientation" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="degrees" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setErrorCallback" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cb" type="android.hardware.Camera.ErrorCallback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setOneShotPreviewCallback" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cb" type="android.hardware.Camera.PreviewCallback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setParameters" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="params" type="android.hardware.Camera.Parameters">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setPreviewCallback" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cb" type="android.hardware.Camera.PreviewCallback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setPreviewCallbackWithBuffer" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cb" type="android.hardware.Camera.PreviewCallback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setPreviewDisplay" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="holder" type="android.view.SurfaceHolder">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setZoomChangeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.hardware.Camera.OnZoomChangeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="startPreview" native="true" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="startSmoothZoom" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="stopPreview" native="true" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="stopSmoothZoom" native="true" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="takePicture" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="shutter" type="android.hardware.Camera.ShutterCallback">
+</parameter>
+<parameter name="raw" type="android.hardware.Camera.PictureCallback">
+</parameter>
+<parameter name="jpeg" type="android.hardware.Camera.PictureCallback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="takePicture" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="shutter" type="android.hardware.Camera.ShutterCallback">
+</parameter>
+<parameter name="raw" type="android.hardware.Camera.PictureCallback">
+</parameter>
+<parameter name="postview" type="android.hardware.Camera.PictureCallback">
+</parameter>
+<parameter name="jpeg" type="android.hardware.Camera.PictureCallback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="unlock" native="true" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="CAMERA_ERROR_SERVER_DIED" static="true" transient="false" type="int" value="100" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CAMERA_ERROR_UNKNOWN" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Camera.AutoFocusCallback" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onAutoFocus" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="success" type="boolean">
+</parameter>
+<parameter name="camera" type="android.hardware.Camera">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Camera.CameraInfo" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Camera.CameraInfo" static="false" type="android.hardware.Camera.CameraInfo" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="CAMERA_FACING_BACK" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CAMERA_FACING_FRONT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="facing" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="orientation" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Camera.ErrorCallback" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onError" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="error" type="int">
+</parameter>
+<parameter name="camera" type="android.hardware.Camera">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Camera.OnZoomChangeListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onZoomChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="zoomValue" type="int">
+</parameter>
+<parameter name="stopped" type="boolean">
+</parameter>
+<parameter name="camera" type="android.hardware.Camera">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Camera.Parameters" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="flatten" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAntibanding" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getColorEffect" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getExposureCompensation" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getExposureCompensationStep" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFlashMode" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFocalLength" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFocusDistances" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="output" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFocusMode" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHorizontalViewAngle" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInt" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getJpegQuality" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getJpegThumbnailQuality" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getJpegThumbnailSize" native="false" return="android.hardware.Camera.Size" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMaxExposureCompensation" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMaxZoom" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMinExposureCompensation" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPictureFormat" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPictureSize" native="false" return="android.hardware.Camera.Size" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPreviewFormat" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPreviewFpsRange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="range" type="int[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getPreviewFrameRate" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPreviewSize" native="false" return="android.hardware.Camera.Size" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSceneMode" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSupportedAntibanding" native="false" return="java.util.List&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSupportedColorEffects" native="false" return="java.util.List&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSupportedFlashModes" native="false" return="java.util.List&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSupportedFocusModes" native="false" return="java.util.List&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSupportedJpegThumbnailSizes" native="false" return="java.util.List&lt;android.hardware.Camera.Size&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSupportedPictureFormats" native="false" return="java.util.List&lt;java.lang.Integer&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSupportedPictureSizes" native="false" return="java.util.List&lt;android.hardware.Camera.Size&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSupportedPreviewFormats" native="false" return="java.util.List&lt;java.lang.Integer&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSupportedPreviewFpsRange" native="false" return="java.util.List&lt;int[]&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getSupportedPreviewFrameRates" native="false" return="java.util.List&lt;java.lang.Integer&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSupportedPreviewSizes" native="false" return="java.util.List&lt;android.hardware.Camera.Size&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSupportedSceneModes" native="false" return="java.util.List&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSupportedWhiteBalance" native="false" return="java.util.List&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVerticalViewAngle" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWhiteBalance" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getZoom" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getZoomRatios" native="false" return="java.util.List&lt;java.lang.Integer&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isSmoothZoomSupported" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isZoomSupported" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="remove" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeGpsData" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAntibanding" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="antibanding" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setColorEffect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setExposureCompensation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFlashMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFocusMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGpsAltitude" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="altitude" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGpsLatitude" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="latitude" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGpsLongitude" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="longitude" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGpsProcessingMethod" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="processing_method" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGpsTimestamp" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="timestamp" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setJpegQuality" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="quality" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setJpegThumbnailQuality" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="quality" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setJpegThumbnailSize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPictureFormat" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pixel_format" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPictureSize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPreviewFormat" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pixel_format" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPreviewFpsRange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="min" type="int">
+</parameter>
+<parameter name="max" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="setPreviewFrameRate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="fps" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPreviewSize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRotation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="rotation" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSceneMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setWhiteBalance" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setZoom" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unflatten" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="flattened" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ANTIBANDING_50HZ" static="true" transient="false" type="java.lang.String" value="&quot;50hz&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ANTIBANDING_60HZ" static="true" transient="false" type="java.lang.String" value="&quot;60hz&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ANTIBANDING_AUTO" static="true" transient="false" type="java.lang.String" value="&quot;auto&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ANTIBANDING_OFF" static="true" transient="false" type="java.lang.String" value="&quot;off&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EFFECT_AQUA" static="true" transient="false" type="java.lang.String" value="&quot;aqua&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EFFECT_BLACKBOARD" static="true" transient="false" type="java.lang.String" value="&quot;blackboard&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EFFECT_MONO" static="true" transient="false" type="java.lang.String" value="&quot;mono&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EFFECT_NEGATIVE" static="true" transient="false" type="java.lang.String" value="&quot;negative&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EFFECT_NONE" static="true" transient="false" type="java.lang.String" value="&quot;none&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EFFECT_POSTERIZE" static="true" transient="false" type="java.lang.String" value="&quot;posterize&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EFFECT_SEPIA" static="true" transient="false" type="java.lang.String" value="&quot;sepia&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EFFECT_SOLARIZE" static="true" transient="false" type="java.lang.String" value="&quot;solarize&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EFFECT_WHITEBOARD" static="true" transient="false" type="java.lang.String" value="&quot;whiteboard&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLASH_MODE_AUTO" static="true" transient="false" type="java.lang.String" value="&quot;auto&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLASH_MODE_OFF" static="true" transient="false" type="java.lang.String" value="&quot;off&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLASH_MODE_ON" static="true" transient="false" type="java.lang.String" value="&quot;on&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLASH_MODE_RED_EYE" static="true" transient="false" type="java.lang.String" value="&quot;red-eye&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLASH_MODE_TORCH" static="true" transient="false" type="java.lang.String" value="&quot;torch&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FOCUS_DISTANCE_FAR_INDEX" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FOCUS_DISTANCE_NEAR_INDEX" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FOCUS_DISTANCE_OPTIMAL_INDEX" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FOCUS_MODE_AUTO" static="true" transient="false" type="java.lang.String" value="&quot;auto&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FOCUS_MODE_CONTINUOUS_VIDEO" static="true" transient="false" type="java.lang.String" value="&quot;continuous-video&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FOCUS_MODE_EDOF" static="true" transient="false" type="java.lang.String" value="&quot;edof&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FOCUS_MODE_FIXED" static="true" transient="false" type="java.lang.String" value="&quot;fixed&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FOCUS_MODE_INFINITY" static="true" transient="false" type="java.lang.String" value="&quot;infinity&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FOCUS_MODE_MACRO" static="true" transient="false" type="java.lang.String" value="&quot;macro&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PREVIEW_FPS_MAX_INDEX" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PREVIEW_FPS_MIN_INDEX" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCENE_MODE_ACTION" static="true" transient="false" type="java.lang.String" value="&quot;action&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCENE_MODE_AUTO" static="true" transient="false" type="java.lang.String" value="&quot;auto&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCENE_MODE_BARCODE" static="true" transient="false" type="java.lang.String" value="&quot;barcode&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCENE_MODE_BEACH" static="true" transient="false" type="java.lang.String" value="&quot;beach&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCENE_MODE_CANDLELIGHT" static="true" transient="false" type="java.lang.String" value="&quot;candlelight&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCENE_MODE_FIREWORKS" static="true" transient="false" type="java.lang.String" value="&quot;fireworks&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCENE_MODE_LANDSCAPE" static="true" transient="false" type="java.lang.String" value="&quot;landscape&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCENE_MODE_NIGHT" static="true" transient="false" type="java.lang.String" value="&quot;night&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCENE_MODE_NIGHT_PORTRAIT" static="true" transient="false" type="java.lang.String" value="&quot;night-portrait&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCENE_MODE_PARTY" static="true" transient="false" type="java.lang.String" value="&quot;party&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCENE_MODE_PORTRAIT" static="true" transient="false" type="java.lang.String" value="&quot;portrait&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCENE_MODE_SNOW" static="true" transient="false" type="java.lang.String" value="&quot;snow&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCENE_MODE_SPORTS" static="true" transient="false" type="java.lang.String" value="&quot;sports&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCENE_MODE_STEADYPHOTO" static="true" transient="false" type="java.lang.String" value="&quot;steadyphoto&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCENE_MODE_SUNSET" static="true" transient="false" type="java.lang.String" value="&quot;sunset&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCENE_MODE_THEATRE" static="true" transient="false" type="java.lang.String" value="&quot;theatre&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WHITE_BALANCE_AUTO" static="true" transient="false" type="java.lang.String" value="&quot;auto&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WHITE_BALANCE_CLOUDY_DAYLIGHT" static="true" transient="false" type="java.lang.String" value="&quot;cloudy-daylight&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WHITE_BALANCE_DAYLIGHT" static="true" transient="false" type="java.lang.String" value="&quot;daylight&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WHITE_BALANCE_FLUORESCENT" static="true" transient="false" type="java.lang.String" value="&quot;fluorescent&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WHITE_BALANCE_INCANDESCENT" static="true" transient="false" type="java.lang.String" value="&quot;incandescent&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WHITE_BALANCE_SHADE" static="true" transient="false" type="java.lang.String" value="&quot;shade&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WHITE_BALANCE_TWILIGHT" static="true" transient="false" type="java.lang.String" value="&quot;twilight&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WHITE_BALANCE_WARM_FLUORESCENT" static="true" transient="false" type="java.lang.String" value="&quot;warm-fluorescent&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Camera.PictureCallback" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onPictureTaken" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="camera" type="android.hardware.Camera">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Camera.PreviewCallback" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onPreviewFrame" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="camera" type="android.hardware.Camera">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Camera.ShutterCallback" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onShutter" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Camera.Size" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Camera.Size" static="false" type="android.hardware.Camera.Size" visibility="public">
+<parameter name="w" type="int">
+</parameter>
+<parameter name="h" type="int">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="false" name="height" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="width" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="GeomagneticField" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="GeomagneticField" static="false" type="android.hardware.GeomagneticField" visibility="public">
+<parameter name="gdLatitudeDeg" type="float">
+</parameter>
+<parameter name="gdLongitudeDeg" type="float">
+</parameter>
+<parameter name="altitudeMeters" type="float">
+</parameter>
+<parameter name="timeMillis" type="long">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDeclination" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFieldStrength" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHorizontalStrength" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInclination" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getX" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getY" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getZ" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Sensor" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getMaximumRange" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMinDelay" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPower" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getResolution" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVendor" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVersion" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="TYPE_ACCELEROMETER" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_ALL" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_GRAVITY" static="true" transient="false" type="int" value="9" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_GYROSCOPE" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_LIGHT" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_LINEAR_ACCELERATION" static="true" transient="false" type="int" value="10" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_MAGNETIC_FIELD" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="TYPE_ORIENTATION" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_PRESSURE" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_PROXIMITY" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_RELATIVE_HUMIDITY" static="true" transient="false" type="int" value="12" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_ROTATION_VECTOR" static="true" transient="false" type="int" value="11" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_TEMPERATURE" static="true" transient="false" type="int" value="7" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SensorEvent" static="false" visibility="public">
+<field deprecated="not deprecated" final="false" name="accuracy" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="sensor" static="false" transient="false" type="android.hardware.Sensor" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="timestamp" static="false" transient="false" type="long" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="values" static="false" transient="false" type="float[]" value="null" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="SensorEventListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onAccuracyChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="sensor" type="android.hardware.Sensor">
+</parameter>
+<parameter name="accuracy" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onSensorChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="event" type="android.hardware.SensorEvent">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="deprecated" final="false" name="SensorListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onAccuracyChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="sensor" type="int">
+</parameter>
+<parameter name="accuracy" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onSensorChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="sensor" type="int">
+</parameter>
+<parameter name="values" type="float[]">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SensorManager" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getAltitude" native="false" return="float" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAngleChange" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="angleChange" type="float[]">
+</parameter>
+<parameter name="R" type="float[]">
+</parameter>
+<parameter name="prevR" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultSensor" native="false" return="android.hardware.Sensor" static="false" synchronized="false" visibility="public">
+<parameter name="type" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInclination" native="false" return="float" static="true" synchronized="false" visibility="public">
+<parameter name="I" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOrientation" native="false" return="float[]" static="true" synchronized="false" visibility="public">
+<parameter name="R" type="float[]">
+</parameter>
+<parameter name="values" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getQuaternionFromVector" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="Q" type="float[]">
+</parameter>
+<parameter name="rv" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRotationMatrix" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="R" type="float[]">
+</parameter>
+<parameter name="I" type="float[]">
+</parameter>
+<parameter name="gravity" type="float[]">
+</parameter>
+<parameter name="geomagnetic" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRotationMatrixFromVector" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="R" type="float[]">
+</parameter>
+<parameter name="rotationVector" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSensorList" native="false" return="java.util.List&lt;android.hardware.Sensor&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="type" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getSensors" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="registerListener" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.hardware.SensorListener">
+</parameter>
+<parameter name="sensors" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="registerListener" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.hardware.SensorListener">
+</parameter>
+<parameter name="sensors" type="int">
+</parameter>
+<parameter name="rate" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="registerListener" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.hardware.SensorEventListener">
+</parameter>
+<parameter name="sensor" type="android.hardware.Sensor">
+</parameter>
+<parameter name="rate" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="registerListener" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.hardware.SensorEventListener">
+</parameter>
+<parameter name="sensor" type="android.hardware.Sensor">
+</parameter>
+<parameter name="rate" type="int">
+</parameter>
+<parameter name="handler" type="android.os.Handler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="remapCoordinateSystem" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="inR" type="float[]">
+</parameter>
+<parameter name="X" type="int">
+</parameter>
+<parameter name="Y" type="int">
+</parameter>
+<parameter name="outR" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="unregisterListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.hardware.SensorListener">
+</parameter>
+<parameter name="sensors" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="unregisterListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.hardware.SensorListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unregisterListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.hardware.SensorEventListener">
+</parameter>
+<parameter name="sensor" type="android.hardware.Sensor">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unregisterListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.hardware.SensorEventListener">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="AXIS_MINUS_X" static="true" transient="false" type="int" value="129" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AXIS_MINUS_Y" static="true" transient="false" type="int" value="130" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AXIS_MINUS_Z" static="true" transient="false" type="int" value="131" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AXIS_X" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AXIS_Y" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AXIS_Z" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="DATA_X" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="DATA_Y" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="DATA_Z" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GRAVITY_DEATH_STAR_I" static="true" transient="false" type="float" value="3.5303614E-7f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GRAVITY_EARTH" static="true" transient="false" type="float" value="9.80665f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GRAVITY_JUPITER" static="true" transient="false" type="float" value="23.12f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GRAVITY_MARS" static="true" transient="false" type="float" value="3.71f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GRAVITY_MERCURY" static="true" transient="false" type="float" value="3.7f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GRAVITY_MOON" static="true" transient="false" type="float" value="1.6f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GRAVITY_NEPTUNE" static="true" transient="false" type="float" value="11.0f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GRAVITY_PLUTO" static="true" transient="false" type="float" value="0.6f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GRAVITY_SATURN" static="true" transient="false" type="float" value="8.96f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GRAVITY_SUN" static="true" transient="false" type="float" value="275.0f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GRAVITY_THE_ISLAND" static="true" transient="false" type="float" value="4.815162f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GRAVITY_URANUS" static="true" transient="false" type="float" value="8.69f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GRAVITY_VENUS" static="true" transient="false" type="float" value="8.87f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LIGHT_CLOUDY" static="true" transient="false" type="float" value="100.0f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LIGHT_FULLMOON" static="true" transient="false" type="float" value="0.25f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LIGHT_NO_MOON" static="true" transient="false" type="float" value="0.0010f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LIGHT_OVERCAST" static="true" transient="false" type="float" value="10000.0f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LIGHT_SHADE" static="true" transient="false" type="float" value="20000.0f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LIGHT_SUNLIGHT" static="true" transient="false" type="float" value="110000.0f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LIGHT_SUNLIGHT_MAX" static="true" transient="false" type="float" value="120000.0f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LIGHT_SUNRISE" static="true" transient="false" type="float" value="400.0f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MAGNETIC_FIELD_EARTH_MAX" static="true" transient="false" type="float" value="60.0f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MAGNETIC_FIELD_EARTH_MIN" static="true" transient="false" type="float" value="30.0f" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PRESSURE_STANDARD_ATMOSPHERE" static="true" transient="false" type="float" value="1013.25f" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="RAW_DATA_INDEX" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="RAW_DATA_X" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="RAW_DATA_Y" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="RAW_DATA_Z" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="SENSOR_ACCELEROMETER" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="SENSOR_ALL" static="true" transient="false" type="int" value="127" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SENSOR_DELAY_FASTEST" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SENSOR_DELAY_GAME" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SENSOR_DELAY_NORMAL" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SENSOR_DELAY_UI" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="SENSOR_LIGHT" static="true" transient="false" type="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="SENSOR_MAGNETIC_FIELD" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="SENSOR_MAX" static="true" transient="false" type="int" value="64" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="SENSOR_MIN" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="SENSOR_ORIENTATION" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="SENSOR_ORIENTATION_RAW" static="true" transient="false" type="int" value="128" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="SENSOR_PROXIMITY" static="true" transient="false" type="int" value="32" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SENSOR_STATUS_ACCURACY_HIGH" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SENSOR_STATUS_ACCURACY_LOW" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SENSOR_STATUS_ACCURACY_MEDIUM" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SENSOR_STATUS_UNRELIABLE" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="SENSOR_TEMPERATURE" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="SENSOR_TRICORDER" static="true" transient="false" type="int" value="64" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STANDARD_GRAVITY" static="true" transient="false" type="float" value="9.80665f" visibility="public" volatile="false">
+</field>
+</class>
+</package></api>

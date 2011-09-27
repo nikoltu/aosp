@@ -1,0 +1,140 @@
+<?xml version="1.0" ?><api><package name="java.security.interfaces">
+<interface abstract="true" deprecated="not deprecated" final="false" name="DSAKey" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getParams" native="false" return="java.security.interfaces.DSAParams" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DSAKeyPairGenerator" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="initialize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="params" type="java.security.interfaces.DSAParams">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+<exception name="InvalidParameterException" type="java.security.InvalidParameterException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="initialize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="modlen" type="int">
+</parameter>
+<parameter name="genParams" type="boolean">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+<exception name="InvalidParameterException" type="java.security.InvalidParameterException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DSAParams" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getG" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getP" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getQ" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DSAPrivateKey" static="false" visibility="public">
+<implements name="java.security.interfaces.DSAKey">
+</implements>
+<implements name="java.security.PrivateKey">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getX" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="serialVersionUID" static="true" transient="false" type="long" value="7776497482533790279L" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DSAPublicKey" static="false" visibility="public">
+<implements name="java.security.interfaces.DSAKey">
+</implements>
+<implements name="java.security.PublicKey">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getY" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="serialVersionUID" static="true" transient="false" type="long" value="1234526332779022332L" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ECKey" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getParams" native="false" return="java.security.spec.ECParameterSpec" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ECPrivateKey" static="false" visibility="public">
+<implements name="java.security.interfaces.ECKey">
+</implements>
+<implements name="java.security.PrivateKey">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getS" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="serialVersionUID" static="true" transient="false" type="long" value="-7896394956925609184L" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ECPublicKey" static="false" visibility="public">
+<implements name="java.security.interfaces.ECKey">
+</implements>
+<implements name="java.security.PublicKey">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getW" native="false" return="java.security.spec.ECPoint" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="serialVersionUID" static="true" transient="false" type="long" value="-3314988629879632826L" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="RSAKey" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getModulus" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="RSAMultiPrimePrivateCrtKey" static="false" visibility="public">
+<implements name="java.security.interfaces.RSAPrivateKey">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getCrtCoefficient" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getOtherPrimeInfo" native="false" return="java.security.spec.RSAOtherPrimeInfo[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPrimeExponentP" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPrimeExponentQ" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPrimeP" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPrimeQ" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPublicExponent" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="serialVersionUID" static="true" transient="false" type="long" value="618058533534628008L" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="RSAPrivateCrtKey" static="false" visibility="public">
+<implements name="java.security.interfaces.RSAPrivateKey">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getCrtCoefficient" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPrimeExponentP" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPrimeExponentQ" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPrimeP" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPrimeQ" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPublicExponent" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="serialVersionUID" static="true" transient="false" type="long" value="-5682214253527700368L" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="RSAPrivateKey" static="false" visibility="public">
+<implements name="java.security.PrivateKey">
+</implements>
+<implements name="java.security.interfaces.RSAKey">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPrivateExponent" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="serialVersionUID" static="true" transient="false" type="long" value="5187144804936595022L" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="RSAPublicKey" static="false" visibility="public">
+<implements name="java.security.PublicKey">
+</implements>
+<implements name="java.security.interfaces.RSAKey">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPublicExponent" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="serialVersionUID" static="true" transient="false" type="long" value="-8727434096241101194L" visibility="public" volatile="false">
+</field>
+</interface>
+</package></api>

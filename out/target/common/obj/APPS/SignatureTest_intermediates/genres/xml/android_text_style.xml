@@ -1,0 +1,1142 @@
+<?xml version="1.0" ?><api><package name="android.text.style">
+<class abstract="false" deprecated="not deprecated" extends="android.text.style.MetricAffectingSpan" final="false" name="AbsoluteSizeSpan" static="false" visibility="public">
+<implements name="android.text.ParcelableSpan">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbsoluteSizeSpan" static="false" type="android.text.style.AbsoluteSizeSpan" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AbsoluteSizeSpan" static="false" type="android.text.style.AbsoluteSizeSpan" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+<parameter name="dip" type="boolean">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AbsoluteSizeSpan" static="false" type="android.text.style.AbsoluteSizeSpan" visibility="public">
+<parameter name="src" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDip" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpanTypeId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateDrawState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ds" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateMeasureState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ds" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="AlignmentSpan" static="false" visibility="public">
+<implements name="android.text.style.ParagraphStyle">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getAlignment" native="false" return="android.text.Layout.Alignment" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AlignmentSpan.Standard" static="true" visibility="public">
+<implements name="android.text.style.AlignmentSpan">
+</implements>
+<implements name="android.text.ParcelableSpan">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AlignmentSpan.Standard" static="false" type="android.text.style.AlignmentSpan.Standard" visibility="public">
+<parameter name="align" type="android.text.Layout.Alignment">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AlignmentSpan.Standard" static="false" type="android.text.style.AlignmentSpan.Standard" visibility="public">
+<parameter name="src" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAlignment" native="false" return="android.text.Layout.Alignment" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpanTypeId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.style.CharacterStyle" final="false" name="BackgroundColorSpan" static="false" visibility="public">
+<implements name="android.text.ParcelableSpan">
+</implements>
+<implements name="android.text.style.UpdateAppearance">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BackgroundColorSpan" static="false" type="android.text.style.BackgroundColorSpan" visibility="public">
+<parameter name="color" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BackgroundColorSpan" static="false" type="android.text.style.BackgroundColorSpan" visibility="public">
+<parameter name="src" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBackgroundColor" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpanTypeId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateDrawState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ds" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BulletSpan" static="false" visibility="public">
+<implements name="android.text.style.LeadingMarginSpan">
+</implements>
+<implements name="android.text.ParcelableSpan">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BulletSpan" static="false" type="android.text.style.BulletSpan" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BulletSpan" static="false" type="android.text.style.BulletSpan" visibility="public">
+<parameter name="gapWidth" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BulletSpan" static="false" type="android.text.style.BulletSpan" visibility="public">
+<parameter name="gapWidth" type="int">
+</parameter>
+<parameter name="color" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BulletSpan" static="false" type="android.text.style.BulletSpan" visibility="public">
+<parameter name="src" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="drawLeadingMargin" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="c" type="android.graphics.Canvas">
+</parameter>
+<parameter name="p" type="android.graphics.Paint">
+</parameter>
+<parameter name="x" type="int">
+</parameter>
+<parameter name="dir" type="int">
+</parameter>
+<parameter name="top" type="int">
+</parameter>
+<parameter name="baseline" type="int">
+</parameter>
+<parameter name="bottom" type="int">
+</parameter>
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+<parameter name="first" type="boolean">
+</parameter>
+<parameter name="l" type="android.text.Layout">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLeadingMargin" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="first" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpanTypeId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="STANDARD_GAP_WIDTH" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="CharacterStyle" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CharacterStyle" static="false" type="android.text.style.CharacterStyle" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUnderlying" native="false" return="android.text.style.CharacterStyle" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="updateDrawState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="tp" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="wrap" native="false" return="android.text.style.CharacterStyle" static="true" synchronized="false" visibility="public">
+<parameter name="cs" type="android.text.style.CharacterStyle">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="android.text.style.CharacterStyle" final="false" name="ClickableSpan" static="false" visibility="public">
+<implements name="android.text.style.UpdateAppearance">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ClickableSpan" static="false" type="android.text.style.ClickableSpan" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="widget" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateDrawState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ds" type="android.text.TextPaint">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DrawableMarginSpan" static="false" visibility="public">
+<implements name="android.text.style.LeadingMarginSpan">
+</implements>
+<implements name="android.text.style.LineHeightSpan">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DrawableMarginSpan" static="false" type="android.text.style.DrawableMarginSpan" visibility="public">
+<parameter name="b" type="android.graphics.drawable.Drawable">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DrawableMarginSpan" static="false" type="android.text.style.DrawableMarginSpan" visibility="public">
+<parameter name="b" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="pad" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="chooseHeight" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+<parameter name="istartv" type="int">
+</parameter>
+<parameter name="v" type="int">
+</parameter>
+<parameter name="fm" type="android.graphics.Paint.FontMetricsInt">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="drawLeadingMargin" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="c" type="android.graphics.Canvas">
+</parameter>
+<parameter name="p" type="android.graphics.Paint">
+</parameter>
+<parameter name="x" type="int">
+</parameter>
+<parameter name="dir" type="int">
+</parameter>
+<parameter name="top" type="int">
+</parameter>
+<parameter name="baseline" type="int">
+</parameter>
+<parameter name="bottom" type="int">
+</parameter>
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+<parameter name="first" type="boolean">
+</parameter>
+<parameter name="layout" type="android.text.Layout">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLeadingMargin" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="first" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="android.text.style.ReplacementSpan" final="false" name="DynamicDrawableSpan" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DynamicDrawableSpan" static="false" type="android.text.style.DynamicDrawableSpan" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DynamicDrawableSpan" static="false" type="android.text.style.DynamicDrawableSpan" visibility="protected">
+<parameter name="verticalAlignment" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+<parameter name="x" type="float">
+</parameter>
+<parameter name="top" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+<parameter name="bottom" type="int">
+</parameter>
+<parameter name="paint" type="android.graphics.Paint">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDrawable" native="false" return="android.graphics.drawable.Drawable" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="paint" type="android.graphics.Paint">
+</parameter>
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+<parameter name="fm" type="android.graphics.Paint.FontMetricsInt">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVerticalAlignment" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="ALIGN_BASELINE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ALIGN_BOTTOM" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="mVerticalAlignment" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.style.CharacterStyle" final="false" name="ForegroundColorSpan" static="false" visibility="public">
+<implements name="android.text.ParcelableSpan">
+</implements>
+<implements name="android.text.style.UpdateAppearance">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ForegroundColorSpan" static="false" type="android.text.style.ForegroundColorSpan" visibility="public">
+<parameter name="color" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ForegroundColorSpan" static="false" type="android.text.style.ForegroundColorSpan" visibility="public">
+<parameter name="src" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getForegroundColor" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpanTypeId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateDrawState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ds" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="IconMarginSpan" static="false" visibility="public">
+<implements name="android.text.style.LeadingMarginSpan">
+</implements>
+<implements name="android.text.style.LineHeightSpan">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="IconMarginSpan" static="false" type="android.text.style.IconMarginSpan" visibility="public">
+<parameter name="b" type="android.graphics.Bitmap">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="IconMarginSpan" static="false" type="android.text.style.IconMarginSpan" visibility="public">
+<parameter name="b" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="pad" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="chooseHeight" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+<parameter name="istartv" type="int">
+</parameter>
+<parameter name="v" type="int">
+</parameter>
+<parameter name="fm" type="android.graphics.Paint.FontMetricsInt">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="drawLeadingMargin" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="c" type="android.graphics.Canvas">
+</parameter>
+<parameter name="p" type="android.graphics.Paint">
+</parameter>
+<parameter name="x" type="int">
+</parameter>
+<parameter name="dir" type="int">
+</parameter>
+<parameter name="top" type="int">
+</parameter>
+<parameter name="baseline" type="int">
+</parameter>
+<parameter name="bottom" type="int">
+</parameter>
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+<parameter name="first" type="boolean">
+</parameter>
+<parameter name="layout" type="android.text.Layout">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLeadingMargin" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="first" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.style.DynamicDrawableSpan" final="false" name="ImageSpan" static="false" visibility="public">
+<constructor deprecated="deprecated" final="false" name="ImageSpan" static="false" type="android.text.style.ImageSpan" visibility="public">
+<parameter name="b" type="android.graphics.Bitmap">
+</parameter>
+</constructor>
+<constructor deprecated="deprecated" final="false" name="ImageSpan" static="false" type="android.text.style.ImageSpan" visibility="public">
+<parameter name="b" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="verticalAlignment" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ImageSpan" static="false" type="android.text.style.ImageSpan" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="b" type="android.graphics.Bitmap">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ImageSpan" static="false" type="android.text.style.ImageSpan" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="b" type="android.graphics.Bitmap">
+</parameter>
+<parameter name="verticalAlignment" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ImageSpan" static="false" type="android.text.style.ImageSpan" visibility="public">
+<parameter name="d" type="android.graphics.drawable.Drawable">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ImageSpan" static="false" type="android.text.style.ImageSpan" visibility="public">
+<parameter name="d" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="verticalAlignment" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ImageSpan" static="false" type="android.text.style.ImageSpan" visibility="public">
+<parameter name="d" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="source" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ImageSpan" static="false" type="android.text.style.ImageSpan" visibility="public">
+<parameter name="d" type="android.graphics.drawable.Drawable">
+</parameter>
+<parameter name="source" type="java.lang.String">
+</parameter>
+<parameter name="verticalAlignment" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ImageSpan" static="false" type="android.text.style.ImageSpan" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ImageSpan" static="false" type="android.text.style.ImageSpan" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+<parameter name="verticalAlignment" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ImageSpan" static="false" type="android.text.style.ImageSpan" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="resourceId" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ImageSpan" static="false" type="android.text.style.ImageSpan" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="resourceId" type="int">
+</parameter>
+<parameter name="verticalAlignment" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDrawable" native="false" return="android.graphics.drawable.Drawable" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSource" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="LeadingMarginSpan" static="false" visibility="public">
+<implements name="android.text.style.ParagraphStyle">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="drawLeadingMargin" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="c" type="android.graphics.Canvas">
+</parameter>
+<parameter name="p" type="android.graphics.Paint">
+</parameter>
+<parameter name="x" type="int">
+</parameter>
+<parameter name="dir" type="int">
+</parameter>
+<parameter name="top" type="int">
+</parameter>
+<parameter name="baseline" type="int">
+</parameter>
+<parameter name="bottom" type="int">
+</parameter>
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+<parameter name="first" type="boolean">
+</parameter>
+<parameter name="layout" type="android.text.Layout">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLeadingMargin" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="first" type="boolean">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="LeadingMarginSpan.LeadingMarginSpan2" static="true" visibility="public">
+<implements name="android.text.style.LeadingMarginSpan">
+</implements>
+<implements name="android.text.style.WrapTogetherSpan">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLeadingMarginLineCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="LeadingMarginSpan.Standard" static="true" visibility="public">
+<implements name="android.text.style.LeadingMarginSpan">
+</implements>
+<implements name="android.text.ParcelableSpan">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="LeadingMarginSpan.Standard" static="false" type="android.text.style.LeadingMarginSpan.Standard" visibility="public">
+<parameter name="first" type="int">
+</parameter>
+<parameter name="rest" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="LeadingMarginSpan.Standard" static="false" type="android.text.style.LeadingMarginSpan.Standard" visibility="public">
+<parameter name="every" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="LeadingMarginSpan.Standard" static="false" type="android.text.style.LeadingMarginSpan.Standard" visibility="public">
+<parameter name="src" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="drawLeadingMargin" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="c" type="android.graphics.Canvas">
+</parameter>
+<parameter name="p" type="android.graphics.Paint">
+</parameter>
+<parameter name="x" type="int">
+</parameter>
+<parameter name="dir" type="int">
+</parameter>
+<parameter name="top" type="int">
+</parameter>
+<parameter name="baseline" type="int">
+</parameter>
+<parameter name="bottom" type="int">
+</parameter>
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+<parameter name="first" type="boolean">
+</parameter>
+<parameter name="layout" type="android.text.Layout">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLeadingMargin" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="first" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpanTypeId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="LineBackgroundSpan" static="false" visibility="public">
+<implements name="android.text.style.ParagraphStyle">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="drawBackground" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="c" type="android.graphics.Canvas">
+</parameter>
+<parameter name="p" type="android.graphics.Paint">
+</parameter>
+<parameter name="left" type="int">
+</parameter>
+<parameter name="right" type="int">
+</parameter>
+<parameter name="top" type="int">
+</parameter>
+<parameter name="baseline" type="int">
+</parameter>
+<parameter name="bottom" type="int">
+</parameter>
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+<parameter name="lnum" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="LineHeightSpan" static="false" visibility="public">
+<implements name="android.text.style.ParagraphStyle">
+</implements>
+<implements name="android.text.style.WrapTogetherSpan">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="chooseHeight" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+<parameter name="spanstartv" type="int">
+</parameter>
+<parameter name="v" type="int">
+</parameter>
+<parameter name="fm" type="android.graphics.Paint.FontMetricsInt">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="LineHeightSpan.WithDensity" static="true" visibility="public">
+<implements name="android.text.style.LineHeightSpan">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="chooseHeight" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+<parameter name="spanstartv" type="int">
+</parameter>
+<parameter name="v" type="int">
+</parameter>
+<parameter name="fm" type="android.graphics.Paint.FontMetricsInt">
+</parameter>
+<parameter name="paint" type="android.text.TextPaint">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="android.text.style.CharacterStyle" final="false" name="MaskFilterSpan" static="false" visibility="public">
+<implements name="android.text.style.UpdateAppearance">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="MaskFilterSpan" static="false" type="android.text.style.MaskFilterSpan" visibility="public">
+<parameter name="filter" type="android.graphics.MaskFilter">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMaskFilter" native="false" return="android.graphics.MaskFilter" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateDrawState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ds" type="android.text.TextPaint">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="android.text.style.CharacterStyle" final="false" name="MetricAffectingSpan" static="false" visibility="public">
+<implements name="android.text.style.UpdateLayout">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="MetricAffectingSpan" static="false" type="android.text.style.MetricAffectingSpan" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="updateMeasureState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p" type="android.text.TextPaint">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ParagraphStyle" static="false" visibility="public">
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="QuoteSpan" static="false" visibility="public">
+<implements name="android.text.style.LeadingMarginSpan">
+</implements>
+<implements name="android.text.ParcelableSpan">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="QuoteSpan" static="false" type="android.text.style.QuoteSpan" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="QuoteSpan" static="false" type="android.text.style.QuoteSpan" visibility="public">
+<parameter name="color" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="QuoteSpan" static="false" type="android.text.style.QuoteSpan" visibility="public">
+<parameter name="src" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="drawLeadingMargin" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="c" type="android.graphics.Canvas">
+</parameter>
+<parameter name="p" type="android.graphics.Paint">
+</parameter>
+<parameter name="x" type="int">
+</parameter>
+<parameter name="dir" type="int">
+</parameter>
+<parameter name="top" type="int">
+</parameter>
+<parameter name="baseline" type="int">
+</parameter>
+<parameter name="bottom" type="int">
+</parameter>
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+<parameter name="first" type="boolean">
+</parameter>
+<parameter name="layout" type="android.text.Layout">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getColor" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLeadingMargin" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="first" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpanTypeId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.style.CharacterStyle" final="false" name="RasterizerSpan" static="false" visibility="public">
+<implements name="android.text.style.UpdateAppearance">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RasterizerSpan" static="false" type="android.text.style.RasterizerSpan" visibility="public">
+<parameter name="r" type="android.graphics.Rasterizer">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRasterizer" native="false" return="android.graphics.Rasterizer" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateDrawState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ds" type="android.text.TextPaint">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.style.MetricAffectingSpan" final="false" name="RelativeSizeSpan" static="false" visibility="public">
+<implements name="android.text.ParcelableSpan">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RelativeSizeSpan" static="false" type="android.text.style.RelativeSizeSpan" visibility="public">
+<parameter name="proportion" type="float">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="RelativeSizeSpan" static="false" type="android.text.style.RelativeSizeSpan" visibility="public">
+<parameter name="src" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSizeChange" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpanTypeId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateDrawState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ds" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateMeasureState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ds" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="android.text.style.MetricAffectingSpan" final="false" name="ReplacementSpan" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ReplacementSpan" static="false" type="android.text.style.ReplacementSpan" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+<parameter name="x" type="float">
+</parameter>
+<parameter name="top" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+<parameter name="bottom" type="int">
+</parameter>
+<parameter name="paint" type="android.graphics.Paint">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="paint" type="android.graphics.Paint">
+</parameter>
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+<parameter name="fm" type="android.graphics.Paint.FontMetricsInt">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateDrawState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ds" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateMeasureState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p" type="android.text.TextPaint">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.style.MetricAffectingSpan" final="false" name="ScaleXSpan" static="false" visibility="public">
+<implements name="android.text.ParcelableSpan">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ScaleXSpan" static="false" type="android.text.style.ScaleXSpan" visibility="public">
+<parameter name="proportion" type="float">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ScaleXSpan" static="false" type="android.text.style.ScaleXSpan" visibility="public">
+<parameter name="src" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getScaleX" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpanTypeId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateDrawState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ds" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateMeasureState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ds" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.style.CharacterStyle" final="false" name="StrikethroughSpan" static="false" visibility="public">
+<implements name="android.text.ParcelableSpan">
+</implements>
+<implements name="android.text.style.UpdateAppearance">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="StrikethroughSpan" static="false" type="android.text.style.StrikethroughSpan" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StrikethroughSpan" static="false" type="android.text.style.StrikethroughSpan" visibility="public">
+<parameter name="src" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpanTypeId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateDrawState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ds" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.style.MetricAffectingSpan" final="false" name="StyleSpan" static="false" visibility="public">
+<implements name="android.text.ParcelableSpan">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="StyleSpan" static="false" type="android.text.style.StyleSpan" visibility="public">
+<parameter name="style" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StyleSpan" static="false" type="android.text.style.StyleSpan" visibility="public">
+<parameter name="src" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpanTypeId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStyle" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateDrawState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ds" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateMeasureState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="paint" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.style.MetricAffectingSpan" final="false" name="SubscriptSpan" static="false" visibility="public">
+<implements name="android.text.ParcelableSpan">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="SubscriptSpan" static="false" type="android.text.style.SubscriptSpan" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SubscriptSpan" static="false" type="android.text.style.SubscriptSpan" visibility="public">
+<parameter name="src" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpanTypeId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateDrawState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="tp" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateMeasureState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="tp" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.style.MetricAffectingSpan" final="false" name="SuperscriptSpan" static="false" visibility="public">
+<implements name="android.text.ParcelableSpan">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="SuperscriptSpan" static="false" type="android.text.style.SuperscriptSpan" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SuperscriptSpan" static="false" type="android.text.style.SuperscriptSpan" visibility="public">
+<parameter name="src" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpanTypeId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateDrawState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="tp" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateMeasureState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="tp" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="TabStopSpan" static="false" visibility="public">
+<implements name="android.text.style.ParagraphStyle">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTabStop" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="TabStopSpan.Standard" static="true" visibility="public">
+<implements name="android.text.style.TabStopSpan">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="TabStopSpan.Standard" static="false" type="android.text.style.TabStopSpan.Standard" visibility="public">
+<parameter name="where" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTabStop" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.style.MetricAffectingSpan" final="false" name="TextAppearanceSpan" static="false" visibility="public">
+<implements name="android.text.ParcelableSpan">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="TextAppearanceSpan" static="false" type="android.text.style.TextAppearanceSpan" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="appearance" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="TextAppearanceSpan" static="false" type="android.text.style.TextAppearanceSpan" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="appearance" type="int">
+</parameter>
+<parameter name="colorList" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="TextAppearanceSpan" static="false" type="android.text.style.TextAppearanceSpan" visibility="public">
+<parameter name="family" type="java.lang.String">
+</parameter>
+<parameter name="style" type="int">
+</parameter>
+<parameter name="size" type="int">
+</parameter>
+<parameter name="color" type="android.content.res.ColorStateList">
+</parameter>
+<parameter name="linkColor" type="android.content.res.ColorStateList">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="TextAppearanceSpan" static="false" type="android.text.style.TextAppearanceSpan" visibility="public">
+<parameter name="src" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFamily" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLinkTextColor" native="false" return="android.content.res.ColorStateList" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpanTypeId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTextColor" native="false" return="android.content.res.ColorStateList" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTextSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTextStyle" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateDrawState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ds" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateMeasureState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ds" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.style.MetricAffectingSpan" final="false" name="TypefaceSpan" static="false" visibility="public">
+<implements name="android.text.ParcelableSpan">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="TypefaceSpan" static="false" type="android.text.style.TypefaceSpan" visibility="public">
+<parameter name="family" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="TypefaceSpan" static="false" type="android.text.style.TypefaceSpan" visibility="public">
+<parameter name="src" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFamily" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpanTypeId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateDrawState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ds" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateMeasureState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="paint" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.style.ClickableSpan" final="false" name="URLSpan" static="false" visibility="public">
+<implements name="android.text.ParcelableSpan">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="URLSpan" static="false" type="android.text.style.URLSpan" visibility="public">
+<parameter name="url" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="URLSpan" static="false" type="android.text.style.URLSpan" visibility="public">
+<parameter name="src" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpanTypeId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getURL" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="widget" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.text.style.CharacterStyle" final="false" name="UnderlineSpan" static="false" visibility="public">
+<implements name="android.text.ParcelableSpan">
+</implements>
+<implements name="android.text.style.UpdateAppearance">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="UnderlineSpan" static="false" type="android.text.style.UnderlineSpan" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="UnderlineSpan" static="false" type="android.text.style.UnderlineSpan" visibility="public">
+<parameter name="src" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpanTypeId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateDrawState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ds" type="android.text.TextPaint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="UpdateAppearance" static="false" visibility="public">
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="UpdateLayout" static="false" visibility="public">
+<implements name="android.text.style.UpdateAppearance">
+</implements>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="WrapTogetherSpan" static="false" visibility="public">
+<implements name="android.text.style.ParagraphStyle">
+</implements>
+</interface>
+</package></api>

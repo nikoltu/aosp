@@ -1,0 +1,21 @@
+out/host/linux-x86/obj/STATIC_LIBRARIES/emulator-target-i386_intermediates/varint.o: \
+ external/qemu/varint.c \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/inttypes.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/features.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/cdefs.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/wordsize.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/gnu/stubs.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/gnu/stubs-32.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/stdint.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/wchar.h \
+ external/qemu/varint.h
+ external/qemu/varint.c :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/inttypes.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/features.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/cdefs.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/wordsize.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/gnu/stubs.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/gnu/stubs-32.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/stdint.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/wchar.h :
+ external/qemu/varint.h :

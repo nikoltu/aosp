@@ -1,0 +1,400 @@
+# view AndroidManifest.xml #generated:872
+-keep class android.app.ActivityGroup { <init>(...); }
+
+# view AndroidManifest.xml #generated:827
+-keep class android.app.cts.ActivityManagerRecentOneActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:836
+-keep class android.app.cts.ActivityManagerRecentTwoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:845
+-keep class android.app.cts.ActivityManagerStubCrashActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:819
+-keep class android.app.cts.ActivityManagerStubFooActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:644
+-keep class android.app.cts.AliasActivityStub { <init>(...); }
+
+# view AndroidManifest.xml #generated:804
+-keep class android.app.cts.AppStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:657
+-keep class android.app.cts.ChildActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:792
+-keep class android.app.cts.ChildTabActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:708
+-keep class android.app.cts.ClearTop { <init>(...); }
+
+# view AndroidManifest.xml #generated:159
+# view AndroidManifest.xml #generated:811
+-keep class android.app.cts.DialogStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:740
+-keep class android.app.cts.ExpandableListTestActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:637
+-keep class android.app.cts.InstrumentationTestActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:904
+-keep class android.app.cts.IntentServiceStub { <init>(...); }
+
+# view AndroidManifest.xml #generated:875
+-keep class android.app.cts.KeyguardManagerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:794
+-keep class android.app.cts.LauncherActivityStub { <init>(...); }
+
+# view AndroidManifest.xml #generated:906
+-keep class android.app.cts.LaunchpadActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:724
+-keep class android.app.cts.LaunchpadTabActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:727
+-keep class android.app.cts.LocalActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:718
+-keep class android.app.cts.LocalActivityManagerStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:721
+-keep class android.app.cts.LocalActivityManagerTestHelper { <init>(...); }
+
+# view AndroidManifest.xml #generated:696
+-keep class android.app.cts.LocalDeniedService { <init>(...); }
+
+# view AndroidManifest.xml #generated:711
+-keep class android.app.cts.LocalDialog { <init>(...); }
+
+# view AndroidManifest.xml #generated:689
+-keep class android.app.cts.LocalGrantedService { <init>(...); }
+
+# view AndroidManifest.xml #generated:706
+-keep class android.app.cts.LocalScreen { <init>(...); }
+
+# view AndroidManifest.xml #generated:677
+-keep class android.app.cts.LocalService { <init>(...); }
+
+# view AndroidManifest.xml #generated:197
+-keep class android.app.cts.MockActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:111
+-keep class android.app.cts.MockApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:629
+-keep class android.app.cts.MockApplicationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:660
+-keep class android.app.cts.MockReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:666
+-keep class android.app.cts.MockService { <init>(...); }
+
+# view AndroidManifest.xml #generated:802
+-keep class android.app.cts.MockTabActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:715
+-keep class android.app.cts.PendingIntentStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:668
+-keep class android.app.cts.SearchManagerStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:862
+-keep class android.app.cts.StubRemoteService { <init>(...); }
+
+# view AndroidManifest.xml #generated:736
+-keep class android.app.cts.TestedActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:703
+-keep class android.app.cts.TestedScreen { <init>(...); }
+
+# view AndroidManifest.xml #generated:414
+-keep class android.content.cts.AvailableIntentsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:788
+-keep class android.content.cts.DummyProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:920
+-keep class android.content.cts.MockAccountService { <init>(...); }
+
+# view AndroidManifest.xml #generated:786
+-keep class android.content.cts.MockContentProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:380
+-keep class android.content.cts.MockContextWrapperService { <init>(...); }
+
+# view AndroidManifest.xml #generated:398
+-keep class android.content.cts.MockReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:393
+-keep class android.content.cts.MockReceiverAbort { <init>(...); }
+
+# view AndroidManifest.xml #generated:388
+-keep class android.content.cts.MockReceiverFirst { <init>(...); }
+
+# view AndroidManifest.xml #generated:911
+-keep class android.content.cts.MockSyncAdapterService { <init>(...); }
+
+# view AndroidManifest.xml #generated:779
+-keep class android.content.pm.cts.PmTestReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:758
+-keep class android.content.pm.cts.TestPmActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:766
+-keep class android.content.pm.cts.TestPmCompare { <init>(...); }
+
+# view AndroidManifest.xml #generated:945
+-keep class android.content.pm.cts.TestPmInstrumentation { <init>(...); }
+
+# view AndroidManifest.xml #generated:773
+-keep class android.content.pm.cts.TestPmService { <init>(...); }
+
+# view AndroidManifest.xml #generated:551
+-keep class android.hardware.cts.CameraStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:114
+-keep class android.media.cts.AudioManagerStub { <init>(...); }
+
+# view AndroidManifest.xml #generated:116
+-keep class android.media.cts.AudioManagerStubHelper { <init>(...); }
+
+# view AndroidManifest.xml #generated:506
+-keep class android.media.cts.FaceDetectorStub { <init>(...); }
+
+# view AndroidManifest.xml #generated:127
+-keep class android.media.cts.MediaStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:135
+-keep class android.media.cts.RingtonePickerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:935
+-keep class android.opengl.cts.EglConfigStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:930
+-keep class android.opengl.cts.GLSurfaceViewStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:933
+-keep class android.opengl.cts.OpenGlEsVersionStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:883
+-keep class android.os.cts.CountDownTimerTestStub { <init>(...); }
+
+# view AndroidManifest.xml #generated:891
+-keep class android.os.cts.EmptyService { <init>(...); }
+
+# view AndroidManifest.xml #generated:901
+-keep class android.os.cts.MessengerService { <init>(...); }
+
+# view AndroidManifest.xml #generated:937
+-keep class android.preference.cts.PreferenceStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:406
+-keep class android.provider.cts.BrowserStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:580
+-keep class android.text.method.cts.KeyListenerStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:583
+# view AndroidManifest.xml #generated:854
+-keep class android.text.method.cts.StubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:599
+-keep class android.text.style.cts.MockURLSpanTestActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:591
+-keep class android.text.style.cts.URLSpanStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:438
+-keep class android.view.animation.cts.AnimationTestStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:446
+-keep class android.view.animation.cts.GridLayoutAnimStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:454
+-keep class android.view.animation.cts.LayoutAnimStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:748
+-keep class android.view.cts.FocusFinderStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:190
+-keep class android.view.cts.FocusHandlingStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:754
+-keep class android.view.cts.GestureDetectorStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:572
+-keep class android.view.cts.MenuInflaterStubActivity { <init>(...); }
+
+# view res/layout/view_layout.xml #generated:26
+# view res/layout/view_layout.xml #generated:31
+-keep class android.view.cts.MockView { <init>(...); }
+
+# view res/layout/inflater_layout.xml #generated:61
+-keep class android.view.cts.MockViewStub { <init>(...); }
+
+# view AndroidManifest.xml #generated:621
+-keep class android.view.cts.SurfaceViewStubActivity { <init>(...); }
+
+# view res/layout/focus_finder_layout.xml #generated:24
+# view res/layout/focus_finder_layout.xml #generated:28
+# view res/layout/focus_finder_layout.xml #generated:34
+# view res/layout/focus_finder_layout.xml #generated:38
+-keep class android.view.cts.TestButton { <init>(...); }
+
+# view AndroidManifest.xml #generated:183
+-keep class android.view.cts.UsingViewsStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:296
+-keep class android.view.cts.ViewGroupStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:309
+-keep class android.view.cts.ViewLayoutPositionTestStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:143
+-keep class android.view.cts.ViewStubStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:302
+-keep class android.view.cts.ViewTestStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:317
+-keep class android.view.cts.WindowStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:563
+-keep class android.view.inputmethod.cts.InputMethodInfoStub { <init>(...); }
+
+# view AndroidManifest.xml #generated:556
+-keep class android.view.inputmethod.cts.InputMethodStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:462
+-keep class android.webkit.cts.CookieSyncManagerStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:649
+-keep class android.webkit.cts.WebViewStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:540
+-keep class android.widget.cts.AdapterViewStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:341
+-keep class android.widget.cts.AutoCompleteStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:548
+-keep class android.widget.cts.CheckedTextViewStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:264
+-keep class android.widget.cts.ChronometerStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:525
+-keep class android.widget.cts.DialerFilterStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:208
+-keep class android.widget.cts.DigitalClockStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:470
+-keep class android.widget.cts.ExpandableListSimple { <init>(...); }
+
+# view AndroidManifest.xml #generated:486
+-keep class android.widget.cts.ExpandableListWithHeaders { <init>(...); }
+
+# view AndroidManifest.xml #generated:240
+# view AndroidManifest.xml #generated:372
+-keep class android.widget.cts.FrameLayoutStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:494
+-keep class android.widget.cts.GalleryStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:356
+-keep class android.widget.cts.GridViewStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:167
+-keep class android.widget.cts.HorizontalScrollViewStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:216
+-keep class android.widget.cts.ImageViewStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:248
+-keep class android.widget.cts.LinearLayoutStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:509
+-keep class android.widget.cts.ListViewStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:272
+-keep class android.widget.cts.MediaControllerStubActivity { <init>(...); }
+
+# view res/layout/viewgrouptest_stub.xml #generated:18
+-keep class android.widget.cts.MockLinearLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:500
+-keep class android.widget.cts.MockPopupWindowStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:532
+-keep class android.widget.cts.MultiAutoCompleteTextViewStubActivity { <init>(...); }
+
+# view res/layout/gallery_test.xml #generated:22
+-keep class android.widget.cts.MyGallery { <init>(...); }
+
+# view res/layout/horizontal_scrollview.xml #generated:17
+-keep class android.widget.cts.MyHorizontalScrollView { <init>(...); }
+
+# view res/layout/scrollview_layout.xml #generated:17
+-keep class android.widget.cts.MyScrollView { <init>(...); }
+
+# view AndroidManifest.xml #generated:256
+-keep class android.widget.cts.ProgressBarStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:280
+-keep class android.widget.cts.RatingBarStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:364
+-keep class android.widget.cts.RelativeLayoutStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:288
+-keep class android.widget.cts.RemoteViewsStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:232
+-keep class android.widget.cts.ScrollViewStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:224
+-keep class android.widget.cts.SeekBarStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:175
+-keep class android.widget.cts.SlidingDrawerStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:478
+-keep class android.widget.cts.StubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:430
+-keep class android.widget.cts.TabHostStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:422
+-keep class android.widget.cts.TableStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:517
+-keep class android.widget.cts.TextViewStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:119
+-keep class android.widget.cts.TwoLineListItemStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:333
+-keep class android.widget.cts.VideoViewStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:349
+-keep class android.widget.cts.ViewAnimatorStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:151
+-keep class android.widget.cts.ViewFlipperStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:325
+-keep class android.widget.cts.ViewGroupStubActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:613
+-keep class android.widget.cts.ZoomButtonStubActivity { <init>(...); }
+
+# view res/layout/digitalclock_layout.xml #generated:17
+-keep class com.android.cts.stub.alarmclock.DigitalClock { <init>(...); }
+
+# view AndroidManifest.xml #generated:381
+-keep class com.android.cts.stub.content.ContextWrapperStubActivity { <init>(...); }
+

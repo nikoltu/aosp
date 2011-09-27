@@ -1,0 +1,59 @@
+# view AndroidManifest.xml #generated:24
+-keep class com.android.internal.app.ExternalMediaFormatActivity { <init>(...); }
+
+# view res/layout/status_bar.xml #generated:73
+# view res/layout/status_bar.xml #generated:77
+# view res/layout/status_bar_icon.xml #generated:28
+-keep class com.android.systemui.statusbar.AnimatedImageView { <init>(...); }
+
+# view res/layout/status_bar_expanded.xml #generated:36
+-keep class com.android.systemui.statusbar.CarrierLabel { <init>(...); }
+
+# view res/layout/status_bar.xml #generated:52
+-keep class com.android.systemui.statusbar.Clock { <init>(...); }
+
+# view res/layout/status_bar_tracking.xml #generated:36
+-keep class com.android.systemui.statusbar.CloseDragHandle { <init>(...); }
+
+# view res/layout/status_bar.xml #generated:103
+-keep class com.android.systemui.statusbar.DateView { <init>(...); }
+
+# view res/layout/status_bar_expanded.xml #generated:21
+-keep class com.android.systemui.statusbar.ExpandedView { <init>(...); }
+
+# view res/layout/status_bar.xml #generated:35
+-keep class com.android.systemui.statusbar.IconMerger { <init>(...); }
+
+# view res/layout/status_bar_latest_event.xml #generated:7
+-keep class com.android.systemui.statusbar.LatestItemView { <init>(...); }
+
+# view res/layout/status_bar_expanded.xml #generated:76
+-keep class com.android.systemui.statusbar.NotificationLinearLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:16
+-keep class com.android.systemui.statusbar.StatusBarService { <init>(...); }
+
+# view res/layout/status_bar.xml #generated:22
+-keep class com.android.systemui.statusbar.StatusBarView { <init>(...); }
+
+# view res/layout/status_bar.xml #generated:82
+-keep class com.android.systemui.statusbar.TickerView { <init>(...); }
+
+# view res/layout/status_bar_tracking.xml #generated:18
+-keep class com.android.systemui.statusbar.TrackingView { <init>(...); }
+
+# view AndroidManifest.xml #generated:57
+-keep class com.android.systemui.usb.UsbAccessoryUriActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class com.android.systemui.usb.UsbConfirmActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:39
+-keep class com.android.systemui.usb.UsbPermissionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:48
+-keep class com.android.systemui.usb.UsbResolverActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:21
+-keep class com.android.systemui.usb.UsbStorageActivity { <init>(...); }
+

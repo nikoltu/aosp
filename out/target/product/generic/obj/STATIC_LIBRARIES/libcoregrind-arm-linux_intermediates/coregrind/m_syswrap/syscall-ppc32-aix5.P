@@ -1,0 +1,5 @@
+out/target/product/generic/obj/STATIC_LIBRARIES/libcoregrind-arm-linux_intermediates/coregrind/m_syswrap/syscall-ppc32-aix5.o: \
+ external/valgrind/main/coregrind/m_syswrap/syscall-ppc32-aix5.S \
+ system/core/include/arch/linux-arm/AndroidConfig.h
+ external/valgrind/main/coregrind/m_syswrap/syscall-ppc32-aix5.S :
+ system/core/include/arch/linux-arm/AndroidConfig.h :

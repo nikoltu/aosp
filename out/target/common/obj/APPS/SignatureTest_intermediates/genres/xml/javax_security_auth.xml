@@ -1,0 +1,144 @@
+<?xml version="1.0" ?><api><package name="javax.security.auth">
+<class abstract="false" deprecated="not deprecated" extends="java.security.BasicPermission" final="true" name="AuthPermission" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AuthPermission" static="false" type="javax.security.auth.AuthPermission" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AuthPermission" static="false" type="javax.security.auth.AuthPermission" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="actions" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Exception" final="false" name="DestroyFailedException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DestroyFailedException" static="false" type="javax.security.auth.DestroyFailedException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DestroyFailedException" static="false" type="javax.security.auth.DestroyFailedException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Destroyable" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="destroy" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="DestroyFailedException" type="javax.security.auth.DestroyFailedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isDestroyed" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.security.Permission" final="true" name="PrivateCredentialPermission" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PrivateCredentialPermission" static="false" type="javax.security.auth.PrivateCredentialPermission" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="action" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="equals" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getActions" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCredentialClass" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrincipals" native="false" return="java.lang.String[][]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hashCode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="implies" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="permission" type="java.security.Permission">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="Subject" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Subject" static="false" type="javax.security.auth.Subject" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Subject" static="false" type="javax.security.auth.Subject" visibility="public">
+<parameter name="readOnly" type="boolean">
+</parameter>
+<parameter name="subjPrincipals" type="java.util.Set&lt;? extends java.security.Principal&gt;">
+</parameter>
+<parameter name="pubCredentials" type="java.util.Set&lt;?&gt;">
+</parameter>
+<parameter name="privCredentials" type="java.util.Set&lt;?&gt;">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="doAs" native="false" return="T" static="true" synchronized="false" visibility="public">
+<parameter name="subject" type="javax.security.auth.Subject">
+</parameter>
+<parameter name="action" type="java.security.PrivilegedAction&lt;T&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doAs" native="false" return="T" static="true" synchronized="false" visibility="public">
+<parameter name="subject" type="javax.security.auth.Subject">
+</parameter>
+<parameter name="action" type="java.security.PrivilegedExceptionAction&lt;T&gt;">
+</parameter>
+<exception name="PrivilegedActionException" type="java.security.PrivilegedActionException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doAsPrivileged" native="false" return="T" static="true" synchronized="false" visibility="public">
+<parameter name="subject" type="javax.security.auth.Subject">
+</parameter>
+<parameter name="action" type="java.security.PrivilegedAction&lt;T&gt;">
+</parameter>
+<parameter name="context" type="java.security.AccessControlContext">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doAsPrivileged" native="false" return="T" static="true" synchronized="false" visibility="public">
+<parameter name="subject" type="javax.security.auth.Subject">
+</parameter>
+<parameter name="action" type="java.security.PrivilegedExceptionAction&lt;T&gt;">
+</parameter>
+<parameter name="context" type="java.security.AccessControlContext">
+</parameter>
+<exception name="PrivilegedActionException" type="java.security.PrivilegedActionException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrincipals" native="false" return="java.util.Set&lt;java.security.Principal&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrincipals" native="false" return="java.util.Set&lt;T&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="c" type="java.lang.Class&lt;T&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrivateCredentials" native="false" return="java.util.Set&lt;java.lang.Object&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrivateCredentials" native="false" return="java.util.Set&lt;T&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="c" type="java.lang.Class&lt;T&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPublicCredentials" native="false" return="java.util.Set&lt;java.lang.Object&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPublicCredentials" native="false" return="java.util.Set&lt;T&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="c" type="java.lang.Class&lt;T&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSubject" native="false" return="javax.security.auth.Subject" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="java.security.AccessControlContext">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isReadOnly" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReadOnly" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SubjectDomainCombiner" static="false" visibility="public">
+<implements name="java.security.DomainCombiner">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="SubjectDomainCombiner" static="false" type="javax.security.auth.SubjectDomainCombiner" visibility="public">
+<parameter name="subject" type="javax.security.auth.Subject">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="combine" native="false" return="java.security.ProtectionDomain[]" static="false" synchronized="false" visibility="public">
+<parameter name="currentDomains" type="java.security.ProtectionDomain[]">
+</parameter>
+<parameter name="assignedDomains" type="java.security.ProtectionDomain[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSubject" native="false" return="javax.security.auth.Subject" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package></api>

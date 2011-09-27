@@ -1,0 +1,226 @@
+<?xml version="1.0" ?><api><package name="javax.xml.xpath">
+<interface abstract="true" deprecated="not deprecated" final="false" name="XPath" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="compile" native="false" return="javax.xml.xpath.XPathExpression" static="false" synchronized="false" visibility="public">
+<parameter name="expression" type="java.lang.String">
+</parameter>
+<exception name="XPathExpressionException" type="javax.xml.xpath.XPathExpressionException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="evaluate" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="expression" type="java.lang.String">
+</parameter>
+<parameter name="item" type="java.lang.Object">
+</parameter>
+<parameter name="returnType" type="javax.xml.namespace.QName">
+</parameter>
+<exception name="XPathExpressionException" type="javax.xml.xpath.XPathExpressionException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="evaluate" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="expression" type="java.lang.String">
+</parameter>
+<parameter name="item" type="java.lang.Object">
+</parameter>
+<exception name="XPathExpressionException" type="javax.xml.xpath.XPathExpressionException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="evaluate" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="expression" type="java.lang.String">
+</parameter>
+<parameter name="source" type="org.xml.sax.InputSource">
+</parameter>
+<parameter name="returnType" type="javax.xml.namespace.QName">
+</parameter>
+<exception name="XPathExpressionException" type="javax.xml.xpath.XPathExpressionException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="evaluate" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="expression" type="java.lang.String">
+</parameter>
+<parameter name="source" type="org.xml.sax.InputSource">
+</parameter>
+<exception name="XPathExpressionException" type="javax.xml.xpath.XPathExpressionException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNamespaceContext" native="false" return="javax.xml.namespace.NamespaceContext" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getXPathFunctionResolver" native="false" return="javax.xml.xpath.XPathFunctionResolver" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getXPathVariableResolver" native="false" return="javax.xml.xpath.XPathVariableResolver" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNamespaceContext" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="nsContext" type="javax.xml.namespace.NamespaceContext">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setXPathFunctionResolver" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="resolver" type="javax.xml.xpath.XPathFunctionResolver">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setXPathVariableResolver" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="resolver" type="javax.xml.xpath.XPathVariableResolver">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="XPathConstants" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="BOOLEAN" static="true" transient="false" type="javax.xml.namespace.QName" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DOM_OBJECT_MODEL" static="true" transient="false" type="java.lang.String" value="&quot;http://java.sun.com/jaxp/xpath/dom&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NODE" static="true" transient="false" type="javax.xml.namespace.QName" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NODESET" static="true" transient="false" type="javax.xml.namespace.QName" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NUMBER" static="true" transient="false" type="javax.xml.namespace.QName" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STRING" static="true" transient="false" type="javax.xml.namespace.QName" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Exception" final="false" name="XPathException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="XPathException" static="false" type="javax.xml.xpath.XPathException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="XPathException" static="false" type="javax.xml.xpath.XPathException" visibility="public">
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="XPathExpression" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="evaluate" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="item" type="java.lang.Object">
+</parameter>
+<parameter name="returnType" type="javax.xml.namespace.QName">
+</parameter>
+<exception name="XPathExpressionException" type="javax.xml.xpath.XPathExpressionException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="evaluate" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="item" type="java.lang.Object">
+</parameter>
+<exception name="XPathExpressionException" type="javax.xml.xpath.XPathExpressionException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="evaluate" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="source" type="org.xml.sax.InputSource">
+</parameter>
+<parameter name="returnType" type="javax.xml.namespace.QName">
+</parameter>
+<exception name="XPathExpressionException" type="javax.xml.xpath.XPathExpressionException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="evaluate" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="source" type="org.xml.sax.InputSource">
+</parameter>
+<exception name="XPathExpressionException" type="javax.xml.xpath.XPathExpressionException">
+</exception>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="javax.xml.xpath.XPathException" final="false" name="XPathExpressionException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="XPathExpressionException" static="false" type="javax.xml.xpath.XPathExpressionException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="XPathExpressionException" static="false" type="javax.xml.xpath.XPathExpressionException" visibility="public">
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="XPathFactory" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="XPathFactory" static="false" type="javax.xml.xpath.XPathFactory" visibility="protected">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="getFeature" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="XPathFactoryConfigurationException" type="javax.xml.xpath.XPathFactoryConfigurationException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isObjectModelSupported" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="objectModel" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="newInstance" native="false" return="javax.xml.xpath.XPathFactory" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="newInstance" native="false" return="javax.xml.xpath.XPathFactory" static="true" synchronized="false" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<exception name="XPathFactoryConfigurationException" type="javax.xml.xpath.XPathFactoryConfigurationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="javax.xml.xpath.XPathFactory" static="true" synchronized="false" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<parameter name="factoryClassName" type="java.lang.String">
+</parameter>
+<parameter name="classLoader" type="java.lang.ClassLoader">
+</parameter>
+<exception name="XPathFactoryConfigurationException" type="javax.xml.xpath.XPathFactoryConfigurationException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newXPath" native="false" return="javax.xml.xpath.XPath" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setFeature" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="boolean">
+</parameter>
+<exception name="XPathFactoryConfigurationException" type="javax.xml.xpath.XPathFactoryConfigurationException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setXPathFunctionResolver" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="resolver" type="javax.xml.xpath.XPathFunctionResolver">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setXPathVariableResolver" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="resolver" type="javax.xml.xpath.XPathVariableResolver">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="DEFAULT_OBJECT_MODEL_URI" static="true" transient="false" type="java.lang.String" value="&quot;http://java.sun.com/jaxp/xpath/dom&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFAULT_PROPERTY_NAME" static="true" transient="false" type="java.lang.String" value="&quot;javax.xml.xpath.XPathFactory&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="javax.xml.xpath.XPathException" final="false" name="XPathFactoryConfigurationException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="XPathFactoryConfigurationException" static="false" type="javax.xml.xpath.XPathFactoryConfigurationException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="XPathFactoryConfigurationException" static="false" type="javax.xml.xpath.XPathFactoryConfigurationException" visibility="public">
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="XPathFunction" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="evaluate" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="args" type="java.util.List">
+</parameter>
+<exception name="XPathFunctionException" type="javax.xml.xpath.XPathFunctionException">
+</exception>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="javax.xml.xpath.XPathExpressionException" final="false" name="XPathFunctionException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="XPathFunctionException" static="false" type="javax.xml.xpath.XPathFunctionException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="XPathFunctionException" static="false" type="javax.xml.xpath.XPathFunctionException" visibility="public">
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="XPathFunctionResolver" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="resolveFunction" native="false" return="javax.xml.xpath.XPathFunction" static="false" synchronized="false" visibility="public">
+<parameter name="functionName" type="javax.xml.namespace.QName">
+</parameter>
+<parameter name="arity" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="XPathVariableResolver" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="resolveVariable" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="variableName" type="javax.xml.namespace.QName">
+</parameter>
+</method>
+</interface>
+</package></api>

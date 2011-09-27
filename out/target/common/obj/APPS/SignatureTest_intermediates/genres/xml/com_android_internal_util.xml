@@ -1,0 +1,8 @@
+<?xml version="1.0" ?><api><package name="com.android.internal.util">
+<interface abstract="true" deprecated="not deprecated" final="false" name="Predicate" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="apply" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="arg0" type="T">
+</parameter>
+</method>
+</interface>
+</package></api>

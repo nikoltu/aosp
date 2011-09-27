@@ -1,0 +1,17 @@
+out/target/product/generic/obj/SHARED_LIBRARIES/libwnndict_intermediates/engine/ndbdic.o: \
+ packages/inputmethods/OpenWnn/libs/libwnnDictionary/engine/ndbdic.c \
+ system/core/include/arch/linux-arm/AndroidConfig.h \
+ packages/inputmethods/OpenWnn/libs/libwnnDictionary/include/nj_lib.h \
+ packages/inputmethods/OpenWnn/libs/libwnnDictionary/include/njx_lib.h \
+ packages/inputmethods/OpenWnn/libs/libwnnDictionary/include/nj_err.h \
+ packages/inputmethods/OpenWnn/libs/libwnnDictionary/include/nj_ext.h \
+ packages/inputmethods/OpenWnn/libs/libwnnDictionary/include/nj_dic.h \
+ packages/inputmethods/OpenWnn/libs/libwnnDictionary/include/njd.h
+ packages/inputmethods/OpenWnn/libs/libwnnDictionary/engine/ndbdic.c :
+ system/core/include/arch/linux-arm/AndroidConfig.h :
+ packages/inputmethods/OpenWnn/libs/libwnnDictionary/include/nj_lib.h :
+ packages/inputmethods/OpenWnn/libs/libwnnDictionary/include/njx_lib.h :
+ packages/inputmethods/OpenWnn/libs/libwnnDictionary/include/nj_err.h :
+ packages/inputmethods/OpenWnn/libs/libwnnDictionary/include/nj_ext.h :
+ packages/inputmethods/OpenWnn/libs/libwnnDictionary/include/nj_dic.h :
+ packages/inputmethods/OpenWnn/libs/libwnnDictionary/include/njd.h :

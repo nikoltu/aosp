@@ -1,0 +1,168 @@
+<?xml version="1.0" ?><api><package name="android.view.accessibility">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="AccessibilityEvent" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAddedCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBeforeText" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getClassName" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContentDescription" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentItemIndex" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEventTime" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEventType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFromIndex" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getItemCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPackageName" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParcelableData" native="false" return="android.os.Parcelable" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRemovedCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getText" native="false" return="java.util.List&lt;java.lang.CharSequence&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="initFromParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parcel" type="android.os.Parcel">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isChecked" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isFullScreen" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isPassword" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="obtain" native="false" return="android.view.accessibility.AccessibilityEvent" static="true" synchronized="false" visibility="public">
+<parameter name="eventType" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="obtain" native="false" return="android.view.accessibility.AccessibilityEvent" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="recycle" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAddedCount" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="addedCount" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setBeforeText" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="beforeText" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setChecked" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="isChecked" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setClassName" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="className" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setContentDescription" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="contentDescription" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCurrentItemIndex" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="currentItemIndex" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="isEnabled" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEventTime" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="eventTime" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEventType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="eventType" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFromIndex" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="fromIndex" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFullScreen" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="isFullScreen" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setItemCount" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="itemCount" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPackageName" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="packageName" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setParcelableData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parcelableData" type="android.os.Parcelable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPassword" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="isPassword" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRemovedCount" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="removedCount" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parcel" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INVALID_POSITION" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MAX_TEXT_LENGTH" static="true" transient="false" type="int" value="500" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPES_ALL_MASK" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_NOTIFICATION_STATE_CHANGED" static="true" transient="false" type="int" value="64" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_VIEW_CLICKED" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_VIEW_FOCUSED" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_VIEW_LONG_CLICKED" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_VIEW_SELECTED" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_VIEW_TEXT_CHANGED" static="true" transient="false" type="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_WINDOW_STATE_CHANGED" static="true" transient="false" type="int" value="32" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="AccessibilityEventSource" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="sendAccessibilityEvent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="eventType" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="sendAccessibilityEventUnchecked" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="event" type="android.view.accessibility.AccessibilityEvent">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="AccessibilityManager" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getAccessibilityServiceList" native="false" return="java.util.List&lt;android.content.pm.ServiceInfo&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="interrupt" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendAccessibilityEvent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="event" type="android.view.accessibility.AccessibilityEvent">
+</parameter>
+</method>
+</class>
+</package></api>

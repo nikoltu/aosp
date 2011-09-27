@@ -1,0 +1,7 @@
+out/target/product/generic/obj/STATIC_LIBRARIES/tfnativetestsamplelib_intermediates/TradeFedNativeTestSampleLib.o: \
+ tools/tradefederation/tests/test-apps/NativeTestSampleApp/src/TradeFedNativeTestSampleLib.cpp \
+ system/core/include/arch/linux-arm/AndroidConfig.h \
+ tools/tradefederation/tests/test-apps/NativeTestSampleApp/src/../include/TradeFedNativeTestSampleLib.h
+ tools/tradefederation/tests/test-apps/NativeTestSampleApp/src/TradeFedNativeTestSampleLib.cpp :
+ system/core/include/arch/linux-arm/AndroidConfig.h :
+ tools/tradefederation/tests/test-apps/NativeTestSampleApp/src/../include/TradeFedNativeTestSampleLib.h :

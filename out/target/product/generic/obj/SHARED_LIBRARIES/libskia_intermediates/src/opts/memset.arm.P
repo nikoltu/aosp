@@ -1,0 +1,5 @@
+out/target/product/generic/obj/SHARED_LIBRARIES/libskia_intermediates/src/opts/memset.arm.o: \
+ external/skia/src/opts/memset.arm.S \
+ system/core/include/arch/linux-arm/AndroidConfig.h
+ external/skia/src/opts/memset.arm.S :
+ system/core/include/arch/linux-arm/AndroidConfig.h :

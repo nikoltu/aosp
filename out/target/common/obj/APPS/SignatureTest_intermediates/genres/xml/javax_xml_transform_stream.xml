@@ -1,0 +1,112 @@
+<?xml version="1.0" ?><api><package name="javax.xml.transform.stream">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="StreamResult" static="false" visibility="public">
+<implements name="javax.xml.transform.Result">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="StreamResult" static="false" type="javax.xml.transform.stream.StreamResult" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StreamResult" static="false" type="javax.xml.transform.stream.StreamResult" visibility="public">
+<parameter name="outputStream" type="java.io.OutputStream">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StreamResult" static="false" type="javax.xml.transform.stream.StreamResult" visibility="public">
+<parameter name="writer" type="java.io.Writer">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StreamResult" static="false" type="javax.xml.transform.stream.StreamResult" visibility="public">
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StreamResult" static="false" type="javax.xml.transform.stream.StreamResult" visibility="public">
+<parameter name="f" type="java.io.File">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOutputStream" native="false" return="java.io.OutputStream" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSystemId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWriter" native="false" return="java.io.Writer" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOutputStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="outputStream" type="java.io.OutputStream">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSystemId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSystemId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="f" type="java.io.File">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setWriter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="writer" type="java.io.Writer">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="FEATURE" static="true" transient="false" type="java.lang.String" value="&quot;http://javax.xml.transform.stream.StreamResult/feature&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="StreamSource" static="false" visibility="public">
+<implements name="javax.xml.transform.Source">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="StreamSource" static="false" type="javax.xml.transform.stream.StreamSource" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StreamSource" static="false" type="javax.xml.transform.stream.StreamSource" visibility="public">
+<parameter name="inputStream" type="java.io.InputStream">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StreamSource" static="false" type="javax.xml.transform.stream.StreamSource" visibility="public">
+<parameter name="inputStream" type="java.io.InputStream">
+</parameter>
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StreamSource" static="false" type="javax.xml.transform.stream.StreamSource" visibility="public">
+<parameter name="reader" type="java.io.Reader">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StreamSource" static="false" type="javax.xml.transform.stream.StreamSource" visibility="public">
+<parameter name="reader" type="java.io.Reader">
+</parameter>
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StreamSource" static="false" type="javax.xml.transform.stream.StreamSource" visibility="public">
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StreamSource" static="false" type="javax.xml.transform.stream.StreamSource" visibility="public">
+<parameter name="f" type="java.io.File">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputStream" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPublicId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReader" native="false" return="java.io.Reader" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSystemId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setInputStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="inputStream" type="java.io.InputStream">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPublicId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="publicId" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReader" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="reader" type="java.io.Reader">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSystemId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSystemId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="f" type="java.io.File">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="FEATURE" static="true" transient="false" type="java.lang.String" value="&quot;http://javax.xml.transform.stream.StreamSource/feature&quot;" visibility="public" volatile="false">
+</field>
+</class>
+</package></api>

@@ -1,0 +1,214 @@
+<?xml version="1.0" ?><api><package name="android.app.backup">
+<class abstract="true" deprecated="not deprecated" extends="android.content.ContextWrapper" final="false" name="BackupAgent" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BackupAgent" static="false" type="android.app.backup.BackupAgent" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="onBackup" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="oldState" type="android.os.ParcelFileDescriptor">
+</parameter>
+<parameter name="data" type="android.app.backup.BackupDataOutput">
+</parameter>
+<parameter name="newState" type="android.os.ParcelFileDescriptor">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCreate" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDestroy" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onRestore" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="android.app.backup.BackupDataInput">
+</parameter>
+<parameter name="appVersionCode" type="int">
+</parameter>
+<parameter name="newState" type="android.os.ParcelFileDescriptor">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.app.backup.BackupAgent" final="false" name="BackupAgentHelper" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BackupAgentHelper" static="false" type="android.app.backup.BackupAgentHelper" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addHelper" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="keyPrefix" type="java.lang.String">
+</parameter>
+<parameter name="helper" type="android.app.backup.BackupHelper">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onBackup" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="oldState" type="android.os.ParcelFileDescriptor">
+</parameter>
+<parameter name="data" type="android.app.backup.BackupDataOutput">
+</parameter>
+<parameter name="newState" type="android.os.ParcelFileDescriptor">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onRestore" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="android.app.backup.BackupDataInput">
+</parameter>
+<parameter name="appVersionCode" type="int">
+</parameter>
+<parameter name="newState" type="android.os.ParcelFileDescriptor">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BackupDataInput" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getDataSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getKey" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readEntityData" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="size" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readNextHeader" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="skipEntityData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.InputStream" final="false" name="BackupDataInputStream" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getKey" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="size" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BackupDataOutput" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="writeEntityData" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="size" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeEntityHeader" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="dataSize" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="BackupHelper" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="performBackup" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="oldState" type="android.os.ParcelFileDescriptor">
+</parameter>
+<parameter name="data" type="android.app.backup.BackupDataOutput">
+</parameter>
+<parameter name="newState" type="android.os.ParcelFileDescriptor">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="restoreEntity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="android.app.backup.BackupDataInputStream">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeNewStateDescription" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="newState" type="android.os.ParcelFileDescriptor">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BackupManager" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BackupManager" static="false" type="android.app.backup.BackupManager" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="dataChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dataChanged" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="packageName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="requestRestore" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="observer" type="android.app.backup.RestoreObserver">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.app.backup.FileBackupHelperBase" final="false" name="FileBackupHelper" static="false" visibility="public">
+<implements name="android.app.backup.BackupHelper">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="FileBackupHelper" static="false" type="android.app.backup.FileBackupHelper" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="files" type="java.lang.String...">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="performBackup" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="oldState" type="android.os.ParcelFileDescriptor">
+</parameter>
+<parameter name="data" type="android.app.backup.BackupDataOutput">
+</parameter>
+<parameter name="newState" type="android.os.ParcelFileDescriptor">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="restoreEntity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="android.app.backup.BackupDataInputStream">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="FileBackupHelperBase" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="writeNewStateDescription" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="fd" type="android.os.ParcelFileDescriptor">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RestoreObserver" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RestoreObserver" static="false" type="android.app.backup.RestoreObserver" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onUpdate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="nowBeingRestored" type="int">
+</parameter>
+<parameter name="currentPackage" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="restoreFinished" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="error" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="restoreStarting" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="numPackages" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.app.backup.FileBackupHelperBase" final="false" name="SharedPreferencesBackupHelper" static="false" visibility="public">
+<implements name="android.app.backup.BackupHelper">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="SharedPreferencesBackupHelper" static="false" type="android.app.backup.SharedPreferencesBackupHelper" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="prefGroups" type="java.lang.String...">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="performBackup" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="oldState" type="android.os.ParcelFileDescriptor">
+</parameter>
+<parameter name="data" type="android.app.backup.BackupDataOutput">
+</parameter>
+<parameter name="newState" type="android.os.ParcelFileDescriptor">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="restoreEntity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="android.app.backup.BackupDataInputStream">
+</parameter>
+</method>
+</class>
+</package></api>

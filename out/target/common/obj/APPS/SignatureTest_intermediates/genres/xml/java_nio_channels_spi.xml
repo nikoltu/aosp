@@ -1,0 +1,150 @@
+<?xml version="1.0" ?><api><package name="java.nio.channels.spi">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AbstractInterruptibleChannel" static="false" visibility="public">
+<implements name="java.nio.channels.Channel">
+</implements>
+<implements name="java.nio.channels.InterruptibleChannel">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractInterruptibleChannel" static="false" type="java.nio.channels.spi.AbstractInterruptibleChannel" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="begin" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="end" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="success" type="boolean">
+</parameter>
+<exception name="AsynchronousCloseException" type="java.nio.channels.AsynchronousCloseException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="implCloseChannel" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isOpen" native="false" return="boolean" static="false" synchronized="true" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.nio.channels.SelectableChannel" final="false" name="AbstractSelectableChannel" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AbstractSelectableChannel" static="false" type="java.nio.channels.spi.AbstractSelectableChannel" visibility="protected">
+<parameter name="selectorProvider" type="java.nio.channels.spi.SelectorProvider">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="blockingLock" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="configureBlocking" native="false" return="java.nio.channels.SelectableChannel" static="false" synchronized="false" visibility="public">
+<parameter name="blockingMode" type="boolean">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="implCloseChannel" native="false" return="void" static="false" synchronized="true" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="implCloseSelectableChannel" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="implConfigureBlocking" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="blockingMode" type="boolean">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isBlocking" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isRegistered" native="false" return="boolean" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="keyFor" native="false" return="java.nio.channels.SelectionKey" static="false" synchronized="true" visibility="public">
+<parameter name="selector" type="java.nio.channels.Selector">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="provider" native="false" return="java.nio.channels.spi.SelectorProvider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="register" native="false" return="java.nio.channels.SelectionKey" static="false" synchronized="false" visibility="public">
+<parameter name="selector" type="java.nio.channels.Selector">
+</parameter>
+<parameter name="interestSet" type="int">
+</parameter>
+<parameter name="attachment" type="java.lang.Object">
+</parameter>
+<exception name="ClosedChannelException" type="java.nio.channels.ClosedChannelException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.nio.channels.SelectionKey" final="false" name="AbstractSelectionKey" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AbstractSelectionKey" static="false" type="java.nio.channels.spi.AbstractSelectionKey" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="cancel" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isValid" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.nio.channels.Selector" final="false" name="AbstractSelector" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AbstractSelector" static="false" type="java.nio.channels.spi.AbstractSelector" visibility="protected">
+<parameter name="selectorProvider" type="java.nio.channels.spi.SelectorProvider">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="begin" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="cancelledKeys" native="false" return="java.util.Set&lt;java.nio.channels.SelectionKey&gt;" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="deregister" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="key" type="java.nio.channels.spi.AbstractSelectionKey">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="end" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="implCloseSelector" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isOpen" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="provider" native="false" return="java.nio.channels.spi.SelectorProvider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="register" native="false" return="java.nio.channels.SelectionKey" static="false" synchronized="false" visibility="protected">
+<parameter name="channel" type="java.nio.channels.spi.AbstractSelectableChannel">
+</parameter>
+<parameter name="operations" type="int">
+</parameter>
+<parameter name="attachment" type="java.lang.Object">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SelectorProvider" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SelectorProvider" static="false" type="java.nio.channels.spi.SelectorProvider" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="inheritedChannel" native="false" return="java.nio.channels.Channel" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="openDatagramChannel" native="false" return="java.nio.channels.DatagramChannel" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="openPipe" native="false" return="java.nio.channels.Pipe" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="openSelector" native="false" return="java.nio.channels.spi.AbstractSelector" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="openServerSocketChannel" native="false" return="java.nio.channels.ServerSocketChannel" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="openSocketChannel" native="false" return="java.nio.channels.SocketChannel" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="provider" native="false" return="java.nio.channels.spi.SelectorProvider" static="true" synchronized="true" visibility="public">
+</method>
+</class>
+</package></api>

@@ -1,0 +1,3 @@
+out/target/common/obj/APPS/WAPPushManagerTests_intermediates/src/src/com/android/smspush/unitTests/IDataVerify.java: \
+  frameworks/base/packages/WAPPushManager/tests/src/com/android/smspush/unitTests/IDataVerify.aidl 
+

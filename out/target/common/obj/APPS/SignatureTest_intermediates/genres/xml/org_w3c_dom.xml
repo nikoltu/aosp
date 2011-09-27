@@ -1,0 +1,918 @@
+<?xml version="1.0" ?><api><package name="org.w3c.dom">
+<interface abstract="true" deprecated="not deprecated" final="false" name="Attr" static="false" visibility="public">
+<implements name="org.w3c.dom.Node">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getOwnerElement" native="false" return="org.w3c.dom.Element" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSchemaTypeInfo" native="false" return="org.w3c.dom.TypeInfo" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSpecified" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getValue" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isId" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setValue" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="CDATASection" static="false" visibility="public">
+<implements name="org.w3c.dom.Text">
+</implements>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="CharacterData" static="false" visibility="public">
+<implements name="org.w3c.dom.Node">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="appendData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="deleteData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="count" type="int">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getData" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="insertData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="arg" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="replaceData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="count" type="int">
+</parameter>
+<parameter name="arg" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="substringData" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="count" type="int">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Comment" static="false" visibility="public">
+<implements name="org.w3c.dom.CharacterData">
+</implements>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DOMConfiguration" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="canSetParameter" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getParameter" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getParameterNames" native="false" return="org.w3c.dom.DOMStringList" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setParameter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DOMError" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getLocation" native="false" return="org.w3c.dom.DOMLocator" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getMessage" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getRelatedData" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getRelatedException" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSeverity" native="false" return="short" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="SEVERITY_ERROR" static="true" transient="false" type="short" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SEVERITY_FATAL_ERROR" static="true" transient="false" type="short" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SEVERITY_WARNING" static="true" transient="false" type="short" value="1" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DOMErrorHandler" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="handleError" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="error" type="org.w3c.dom.DOMError">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.RuntimeException" final="false" name="DOMException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DOMException" static="false" type="org.w3c.dom.DOMException" visibility="public">
+<parameter name="code" type="short">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="true" name="DOMSTRING_SIZE_ERR" static="true" transient="false" type="short" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HIERARCHY_REQUEST_ERR" static="true" transient="false" type="short" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INDEX_SIZE_ERR" static="true" transient="false" type="short" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INUSE_ATTRIBUTE_ERR" static="true" transient="false" type="short" value="10" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INVALID_ACCESS_ERR" static="true" transient="false" type="short" value="15" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INVALID_CHARACTER_ERR" static="true" transient="false" type="short" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INVALID_MODIFICATION_ERR" static="true" transient="false" type="short" value="13" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INVALID_STATE_ERR" static="true" transient="false" type="short" value="11" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NAMESPACE_ERR" static="true" transient="false" type="short" value="14" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NOT_FOUND_ERR" static="true" transient="false" type="short" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NOT_SUPPORTED_ERR" static="true" transient="false" type="short" value="9" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NO_DATA_ALLOWED_ERR" static="true" transient="false" type="short" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NO_MODIFICATION_ALLOWED_ERR" static="true" transient="false" type="short" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SYNTAX_ERR" static="true" transient="false" type="short" value="12" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_MISMATCH_ERR" static="true" transient="false" type="short" value="17" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VALIDATION_ERR" static="true" transient="false" type="short" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WRONG_DOCUMENT_ERR" static="true" transient="false" type="short" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="code" static="false" transient="false" type="short" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DOMImplementation" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="createDocument" native="false" return="org.w3c.dom.Document" static="false" synchronized="false" visibility="public">
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+<parameter name="qualifiedName" type="java.lang.String">
+</parameter>
+<parameter name="doctype" type="org.w3c.dom.DocumentType">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createDocumentType" native="false" return="org.w3c.dom.DocumentType" static="false" synchronized="false" visibility="public">
+<parameter name="qualifiedName" type="java.lang.String">
+</parameter>
+<parameter name="publicId" type="java.lang.String">
+</parameter>
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getFeature" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="feature" type="java.lang.String">
+</parameter>
+<parameter name="version" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="hasFeature" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="feature" type="java.lang.String">
+</parameter>
+<parameter name="version" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DOMImplementationList" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="item" native="false" return="org.w3c.dom.DOMImplementation" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DOMImplementationSource" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getDOMImplementation" native="false" return="org.w3c.dom.DOMImplementation" static="false" synchronized="false" visibility="public">
+<parameter name="features" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDOMImplementationList" native="false" return="org.w3c.dom.DOMImplementationList" static="false" synchronized="false" visibility="public">
+<parameter name="features" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DOMLocator" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getByteOffset" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getColumnNumber" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLineNumber" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getRelatedNode" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getUri" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getUtf16Offset" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DOMStringList" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="contains" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="str" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="item" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Document" static="false" visibility="public">
+<implements name="org.w3c.dom.Node">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="adoptNode" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+<parameter name="source" type="org.w3c.dom.Node">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createAttribute" native="false" return="org.w3c.dom.Attr" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createAttributeNS" native="false" return="org.w3c.dom.Attr" static="false" synchronized="false" visibility="public">
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+<parameter name="qualifiedName" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createCDATASection" native="false" return="org.w3c.dom.CDATASection" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createComment" native="false" return="org.w3c.dom.Comment" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createDocumentFragment" native="false" return="org.w3c.dom.DocumentFragment" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createElement" native="false" return="org.w3c.dom.Element" static="false" synchronized="false" visibility="public">
+<parameter name="tagName" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createElementNS" native="false" return="org.w3c.dom.Element" static="false" synchronized="false" visibility="public">
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+<parameter name="qualifiedName" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createEntityReference" native="false" return="org.w3c.dom.EntityReference" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createProcessingInstruction" native="false" return="org.w3c.dom.ProcessingInstruction" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="java.lang.String">
+</parameter>
+<parameter name="data" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createTextNode" native="false" return="org.w3c.dom.Text" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDoctype" native="false" return="org.w3c.dom.DocumentType" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDocumentElement" native="false" return="org.w3c.dom.Element" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDocumentURI" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDomConfig" native="false" return="org.w3c.dom.DOMConfiguration" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getElementById" native="false" return="org.w3c.dom.Element" static="false" synchronized="false" visibility="public">
+<parameter name="elementId" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getElementsByTagName" native="false" return="org.w3c.dom.NodeList" static="false" synchronized="false" visibility="public">
+<parameter name="tagname" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getElementsByTagNameNS" native="false" return="org.w3c.dom.NodeList" static="false" synchronized="false" visibility="public">
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+<parameter name="localName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getImplementation" native="false" return="org.w3c.dom.DOMImplementation" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getInputEncoding" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getStrictErrorChecking" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getXmlEncoding" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getXmlStandalone" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getXmlVersion" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="importNode" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+<parameter name="importedNode" type="org.w3c.dom.Node">
+</parameter>
+<parameter name="deep" type="boolean">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="normalizeDocument" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="renameNode" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="org.w3c.dom.Node">
+</parameter>
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+<parameter name="qualifiedName" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setDocumentURI" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="documentURI" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setStrictErrorChecking" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="strictErrorChecking" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setXmlStandalone" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="xmlStandalone" type="boolean">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setXmlVersion" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="xmlVersion" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DocumentFragment" static="false" visibility="public">
+<implements name="org.w3c.dom.Node">
+</implements>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DocumentType" static="false" visibility="public">
+<implements name="org.w3c.dom.Node">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEntities" native="false" return="org.w3c.dom.NamedNodeMap" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getInternalSubset" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNotations" native="false" return="org.w3c.dom.NamedNodeMap" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPublicId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSystemId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Element" static="false" visibility="public">
+<implements name="org.w3c.dom.Node">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getAttribute" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getAttributeNS" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+<parameter name="localName" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getAttributeNode" native="false" return="org.w3c.dom.Attr" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getAttributeNodeNS" native="false" return="org.w3c.dom.Attr" static="false" synchronized="false" visibility="public">
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+<parameter name="localName" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getElementsByTagName" native="false" return="org.w3c.dom.NodeList" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getElementsByTagNameNS" native="false" return="org.w3c.dom.NodeList" static="false" synchronized="false" visibility="public">
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+<parameter name="localName" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSchemaTypeInfo" native="false" return="org.w3c.dom.TypeInfo" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTagName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="hasAttribute" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="hasAttributeNS" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+<parameter name="localName" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeAttribute" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeAttributeNS" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+<parameter name="localName" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeAttributeNode" native="false" return="org.w3c.dom.Attr" static="false" synchronized="false" visibility="public">
+<parameter name="oldAttr" type="org.w3c.dom.Attr">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setAttribute" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setAttributeNS" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+<parameter name="qualifiedName" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setAttributeNode" native="false" return="org.w3c.dom.Attr" static="false" synchronized="false" visibility="public">
+<parameter name="newAttr" type="org.w3c.dom.Attr">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setAttributeNodeNS" native="false" return="org.w3c.dom.Attr" static="false" synchronized="false" visibility="public">
+<parameter name="newAttr" type="org.w3c.dom.Attr">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setIdAttribute" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="isId" type="boolean">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setIdAttributeNS" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+<parameter name="localName" type="java.lang.String">
+</parameter>
+<parameter name="isId" type="boolean">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setIdAttributeNode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="idAttr" type="org.w3c.dom.Attr">
+</parameter>
+<parameter name="isId" type="boolean">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Entity" static="false" visibility="public">
+<implements name="org.w3c.dom.Node">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getInputEncoding" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNotationName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPublicId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSystemId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getXmlEncoding" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getXmlVersion" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="EntityReference" static="false" visibility="public">
+<implements name="org.w3c.dom.Node">
+</implements>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="NameList" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="contains" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="str" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="containsNS" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNamespaceURI" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="NamedNodeMap" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNamedItem" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNamedItemNS" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+<parameter name="localName" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="item" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeNamedItem" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeNamedItemNS" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+<parameter name="localName" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNamedItem" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+<parameter name="arg" type="org.w3c.dom.Node">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNamedItemNS" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+<parameter name="arg" type="org.w3c.dom.Node">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Node" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="appendChild" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+<parameter name="newChild" type="org.w3c.dom.Node">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="cloneNode" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+<parameter name="deep" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="compareDocumentPosition" native="false" return="short" static="false" synchronized="false" visibility="public">
+<parameter name="other" type="org.w3c.dom.Node">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getAttributes" native="false" return="org.w3c.dom.NamedNodeMap" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getBaseURI" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getChildNodes" native="false" return="org.w3c.dom.NodeList" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getFeature" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="feature" type="java.lang.String">
+</parameter>
+<parameter name="version" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getFirstChild" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLastChild" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLocalName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNamespaceURI" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNextSibling" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNodeName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNodeType" native="false" return="short" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNodeValue" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getOwnerDocument" native="false" return="org.w3c.dom.Document" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getParentNode" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPrefix" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPreviousSibling" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTextContent" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getUserData" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="hasAttributes" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="hasChildNodes" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="insertBefore" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+<parameter name="newChild" type="org.w3c.dom.Node">
+</parameter>
+<parameter name="refChild" type="org.w3c.dom.Node">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isDefaultNamespace" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isEqualNode" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="arg" type="org.w3c.dom.Node">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isSameNode" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="other" type="org.w3c.dom.Node">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isSupported" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="feature" type="java.lang.String">
+</parameter>
+<parameter name="version" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="lookupNamespaceURI" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="prefix" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="lookupPrefix" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="normalize" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeChild" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+<parameter name="oldChild" type="org.w3c.dom.Node">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="replaceChild" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+<parameter name="newChild" type="org.w3c.dom.Node">
+</parameter>
+<parameter name="oldChild" type="org.w3c.dom.Node">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNodeValue" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="nodeValue" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setPrefix" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="prefix" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setTextContent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="textContent" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setUserData" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="data" type="java.lang.Object">
+</parameter>
+<parameter name="handler" type="org.w3c.dom.UserDataHandler">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ATTRIBUTE_NODE" static="true" transient="false" type="short" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CDATA_SECTION_NODE" static="true" transient="false" type="short" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="COMMENT_NODE" static="true" transient="false" type="short" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DOCUMENT_FRAGMENT_NODE" static="true" transient="false" type="short" value="11" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DOCUMENT_NODE" static="true" transient="false" type="short" value="9" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DOCUMENT_POSITION_CONTAINED_BY" static="true" transient="false" type="short" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DOCUMENT_POSITION_CONTAINS" static="true" transient="false" type="short" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DOCUMENT_POSITION_DISCONNECTED" static="true" transient="false" type="short" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DOCUMENT_POSITION_FOLLOWING" static="true" transient="false" type="short" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC" static="true" transient="false" type="short" value="32" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DOCUMENT_POSITION_PRECEDING" static="true" transient="false" type="short" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DOCUMENT_TYPE_NODE" static="true" transient="false" type="short" value="10" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ELEMENT_NODE" static="true" transient="false" type="short" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ENTITY_NODE" static="true" transient="false" type="short" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ENTITY_REFERENCE_NODE" static="true" transient="false" type="short" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NOTATION_NODE" static="true" transient="false" type="short" value="12" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROCESSING_INSTRUCTION_NODE" static="true" transient="false" type="short" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TEXT_NODE" static="true" transient="false" type="short" value="3" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="NodeList" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="item" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Notation" static="false" visibility="public">
+<implements name="org.w3c.dom.Node">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPublicId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSystemId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ProcessingInstruction" static="false" visibility="public">
+<implements name="org.w3c.dom.Node">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getData" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTarget" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Text" static="false" visibility="public">
+<implements name="org.w3c.dom.CharacterData">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getWholeText" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isElementContentWhitespace" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="replaceWholeText" native="false" return="org.w3c.dom.Text" static="false" synchronized="false" visibility="public">
+<parameter name="content" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="splitText" native="false" return="org.w3c.dom.Text" static="false" synchronized="false" visibility="public">
+<parameter name="offset" type="int">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="TypeInfo" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getTypeName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTypeNamespace" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isDerivedFrom" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="typeNamespaceArg" type="java.lang.String">
+</parameter>
+<parameter name="typeNameArg" type="java.lang.String">
+</parameter>
+<parameter name="derivationMethod" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="DERIVATION_EXTENSION" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DERIVATION_LIST" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DERIVATION_RESTRICTION" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DERIVATION_UNION" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="UserDataHandler" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="handle" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="operation" type="short">
+</parameter>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="data" type="java.lang.Object">
+</parameter>
+<parameter name="src" type="org.w3c.dom.Node">
+</parameter>
+<parameter name="dst" type="org.w3c.dom.Node">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="NODE_ADOPTED" static="true" transient="false" type="short" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NODE_CLONED" static="true" transient="false" type="short" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NODE_DELETED" static="true" transient="false" type="short" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NODE_IMPORTED" static="true" transient="false" type="short" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NODE_RENAMED" static="true" transient="false" type="short" value="4" visibility="public" volatile="false">
+</field>
+</interface>
+</package></api>

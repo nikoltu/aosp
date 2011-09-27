@@ -1,0 +1,234 @@
+<?xml version="1.0" ?><api><package name="android.speech">
+<interface abstract="true" deprecated="not deprecated" final="false" name="RecognitionListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onBeginningOfSpeech" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onBufferReceived" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="byte[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onEndOfSpeech" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onError" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="error" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onEvent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="eventType" type="int">
+</parameter>
+<parameter name="params" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onPartialResults" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="partialResults" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onReadyForSpeech" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="params" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onResults" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="results" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onRmsChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="rmsdB" type="float">
+</parameter>
+</method>
+</interface>
+<class abstract="true" deprecated="not deprecated" extends="android.app.Service" final="false" name="RecognitionService" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RecognitionService" static="false" type="android.speech.RecognitionService" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="onBind" native="false" return="android.os.IBinder" static="false" synchronized="false" visibility="public">
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onCancel" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="listener" type="android.speech.RecognitionService.Callback">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onStartListening" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="recognizerIntent" type="android.content.Intent">
+</parameter>
+<parameter name="listener" type="android.speech.RecognitionService.Callback">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onStopListening" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="listener" type="android.speech.RecognitionService.Callback">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="SERVICE_INTERFACE" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.RecognitionService&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SERVICE_META_DATA" static="true" transient="false" type="java.lang.String" value="&quot;android.speech&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RecognitionService.Callback" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="beginningOfSpeech" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="bufferReceived" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="byte[]">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="endOfSpeech" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="error" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="error" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="partialResults" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="partialResults" type="android.os.Bundle">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readyForSpeech" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="params" type="android.os.Bundle">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="results" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="results" type="android.os.Bundle">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="rmsChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="rmsdB" type="float">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RecognizerIntent" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="true" name="getVoiceDetailsIntent" native="false" return="android.content.Intent" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ACTION_GET_LANGUAGE_DETAILS" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.action.GET_LANGUAGE_DETAILS&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_RECOGNIZE_SPEECH" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.action.RECOGNIZE_SPEECH&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_WEB_SEARCH" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.action.WEB_SEARCH&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DETAILS_META_DATA" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.DETAILS&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_CALLING_PACKAGE" static="true" transient="false" type="java.lang.String" value="&quot;calling_package&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_LANGUAGE" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.extra.LANGUAGE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_LANGUAGE_MODEL" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.extra.LANGUAGE_MODEL&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_LANGUAGE_PREFERENCE" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.extra.LANGUAGE_PREFERENCE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_MAX_RESULTS" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.extra.MAX_RESULTS&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_ONLY_RETURN_LANGUAGE_PREFERENCE" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.extra.ONLY_RETURN_LANGUAGE_PREFERENCE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_PARTIAL_RESULTS" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.extra.PARTIAL_RESULTS&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_PROMPT" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.extra.PROMPT&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_RESULTS" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.extra.RESULTS&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_RESULTS_PENDINGINTENT" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.extra.RESULTS_PENDINGINTENT&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_RESULTS_PENDINGINTENT_BUNDLE" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.extra.RESULTS_PENDINGINTENT_BUNDLE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.extras.SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_SPEECH_INPUT_MINIMUM_LENGTH_MILLIS" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.extras.SPEECH_INPUT_MINIMUM_LENGTH_MILLIS&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.extras.SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_SUPPORTED_LANGUAGES" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.extra.SUPPORTED_LANGUAGES&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LANGUAGE_MODEL_FREE_FORM" static="true" transient="false" type="java.lang.String" value="&quot;free_form&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LANGUAGE_MODEL_WEB_SEARCH" static="true" transient="false" type="java.lang.String" value="&quot;web_search&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RESULT_AUDIO_ERROR" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RESULT_CLIENT_ERROR" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RESULT_NETWORK_ERROR" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RESULT_NO_MATCH" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RESULT_SERVER_ERROR" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RecognizerResultsIntent" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="ACTION_VOICE_SEARCH_RESULTS" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.action.VOICE_SEARCH_RESULTS&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_VOICE_SEARCH_RESULT_HTML" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.extras.VOICE_SEARCH_RESULT_HTML&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_VOICE_SEARCH_RESULT_HTML_BASE_URLS" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.extras.VOICE_SEARCH_RESULT_HTML_BASE_URLS&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_VOICE_SEARCH_RESULT_HTTP_HEADERS" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.extras.EXTRA_VOICE_SEARCH_RESULT_HTTP_HEADERS&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_VOICE_SEARCH_RESULT_STRINGS" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.extras.VOICE_SEARCH_RESULT_STRINGS&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_VOICE_SEARCH_RESULT_URLS" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.extras.VOICE_SEARCH_RESULT_URLS&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="URI_SCHEME_INLINE" static="true" transient="false" type="java.lang.String" value="&quot;inline&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SpeechRecognizer" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="cancel" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createSpeechRecognizer" native="false" return="android.speech.SpeechRecognizer" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createSpeechRecognizer" native="false" return="android.speech.SpeechRecognizer" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="serviceComponent" type="android.content.ComponentName">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="destroy" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isRecognitionAvailable" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRecognitionListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.speech.RecognitionListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startListening" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="recognizerIntent" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stopListening" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="ERROR_AUDIO" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_CLIENT" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_INSUFFICIENT_PERMISSIONS" static="true" transient="false" type="int" value="9" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_NETWORK" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_NETWORK_TIMEOUT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_NO_MATCH" static="true" transient="false" type="int" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_RECOGNIZER_BUSY" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_SERVER" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_SPEECH_TIMEOUT" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RESULTS_RECOGNITION" static="true" transient="false" type="java.lang.String" value="&quot;results_recognition&quot;" visibility="public" volatile="false">
+</field>
+</class>
+</package></api>

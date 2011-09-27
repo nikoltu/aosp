@@ -1,0 +1,348 @@
+<?xml version="1.0" ?><api><package name="java.nio.charset">
+<class abstract="false" deprecated="not deprecated" extends="java.io.IOException" final="false" name="CharacterCodingException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CharacterCodingException" static="false" type="java.nio.charset.CharacterCodingException" visibility="public">
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Charset" static="false" visibility="public">
+<implements name="java.lang.Comparable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Charset" static="false" type="java.nio.charset.Charset" visibility="protected">
+<parameter name="canonicalName" type="java.lang.String">
+</parameter>
+<parameter name="aliases" type="java.lang.String[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="aliases" native="false" return="java.util.Set&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="availableCharsets" native="false" return="java.util.SortedMap&lt;java.lang.String, java.nio.charset.Charset&gt;" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="canEncode" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="compareTo" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="charset" type="java.nio.charset.Charset">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="contains" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="charset" type="java.nio.charset.Charset">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="decode" native="false" return="java.nio.CharBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="java.nio.ByteBuffer">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="defaultCharset" native="false" return="java.nio.charset.Charset" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="displayName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="displayName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="l" type="java.util.Locale">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="encode" native="false" return="java.nio.ByteBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="java.nio.CharBuffer">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="encode" native="false" return="java.nio.ByteBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="equals" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="forName" native="false" return="java.nio.charset.Charset" static="true" synchronized="false" visibility="public">
+<parameter name="charsetName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="hashCode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isRegistered" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isSupported" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="charsetName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="name" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newDecoder" native="false" return="java.nio.charset.CharsetDecoder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newEncoder" native="false" return="java.nio.charset.CharsetEncoder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="toString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="CharsetDecoder" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CharsetDecoder" static="false" type="java.nio.charset.CharsetDecoder" visibility="protected">
+<parameter name="charset" type="java.nio.charset.Charset">
+</parameter>
+<parameter name="averageCharsPerByte" type="float">
+</parameter>
+<parameter name="maxCharsPerByte" type="float">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="averageCharsPerByte" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="charset" native="false" return="java.nio.charset.Charset" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="decode" native="false" return="java.nio.CharBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="in" type="java.nio.ByteBuffer">
+</parameter>
+<exception name="CharacterCodingException" type="java.nio.charset.CharacterCodingException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="decode" native="false" return="java.nio.charset.CoderResult" static="false" synchronized="false" visibility="public">
+<parameter name="in" type="java.nio.ByteBuffer">
+</parameter>
+<parameter name="out" type="java.nio.CharBuffer">
+</parameter>
+<parameter name="endOfInput" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="decodeLoop" native="false" return="java.nio.charset.CoderResult" static="false" synchronized="false" visibility="protected">
+<parameter name="in" type="java.nio.ByteBuffer">
+</parameter>
+<parameter name="out" type="java.nio.CharBuffer">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="detectedCharset" native="false" return="java.nio.charset.Charset" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="flush" native="false" return="java.nio.charset.CoderResult" static="false" synchronized="false" visibility="public">
+<parameter name="out" type="java.nio.CharBuffer">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="implFlush" native="false" return="java.nio.charset.CoderResult" static="false" synchronized="false" visibility="protected">
+<parameter name="out" type="java.nio.CharBuffer">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="implOnMalformedInput" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="newAction" type="java.nio.charset.CodingErrorAction">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="implOnUnmappableCharacter" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="newAction" type="java.nio.charset.CodingErrorAction">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="implReplaceWith" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="newReplacement" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="implReset" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isAutoDetecting" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isCharsetDetected" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="malformedInputAction" native="false" return="java.nio.charset.CodingErrorAction" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="maxCharsPerByte" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="onMalformedInput" native="false" return="java.nio.charset.CharsetDecoder" static="false" synchronized="false" visibility="public">
+<parameter name="newAction" type="java.nio.charset.CodingErrorAction">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="onUnmappableCharacter" native="false" return="java.nio.charset.CharsetDecoder" static="false" synchronized="false" visibility="public">
+<parameter name="newAction" type="java.nio.charset.CodingErrorAction">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="replaceWith" native="false" return="java.nio.charset.CharsetDecoder" static="false" synchronized="false" visibility="public">
+<parameter name="newReplacement" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="replacement" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="reset" native="false" return="java.nio.charset.CharsetDecoder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unmappableCharacterAction" native="false" return="java.nio.charset.CodingErrorAction" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="CharsetEncoder" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CharsetEncoder" static="false" type="java.nio.charset.CharsetEncoder" visibility="protected">
+<parameter name="cs" type="java.nio.charset.Charset">
+</parameter>
+<parameter name="averageBytesPerChar" type="float">
+</parameter>
+<parameter name="maxBytesPerChar" type="float">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="CharsetEncoder" static="false" type="java.nio.charset.CharsetEncoder" visibility="protected">
+<parameter name="cs" type="java.nio.charset.Charset">
+</parameter>
+<parameter name="averageBytesPerChar" type="float">
+</parameter>
+<parameter name="maxBytesPerChar" type="float">
+</parameter>
+<parameter name="replacement" type="byte[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="averageBytesPerChar" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="canEncode" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="c" type="char">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="canEncode" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="sequence" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="charset" native="false" return="java.nio.charset.Charset" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="encode" native="false" return="java.nio.ByteBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="in" type="java.nio.CharBuffer">
+</parameter>
+<exception name="CharacterCodingException" type="java.nio.charset.CharacterCodingException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="encode" native="false" return="java.nio.charset.CoderResult" static="false" synchronized="false" visibility="public">
+<parameter name="in" type="java.nio.CharBuffer">
+</parameter>
+<parameter name="out" type="java.nio.ByteBuffer">
+</parameter>
+<parameter name="endOfInput" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="encodeLoop" native="false" return="java.nio.charset.CoderResult" static="false" synchronized="false" visibility="protected">
+<parameter name="in" type="java.nio.CharBuffer">
+</parameter>
+<parameter name="out" type="java.nio.ByteBuffer">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="flush" native="false" return="java.nio.charset.CoderResult" static="false" synchronized="false" visibility="public">
+<parameter name="out" type="java.nio.ByteBuffer">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="implFlush" native="false" return="java.nio.charset.CoderResult" static="false" synchronized="false" visibility="protected">
+<parameter name="out" type="java.nio.ByteBuffer">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="implOnMalformedInput" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="newAction" type="java.nio.charset.CodingErrorAction">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="implOnUnmappableCharacter" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="newAction" type="java.nio.charset.CodingErrorAction">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="implReplaceWith" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="newReplacement" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="implReset" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isLegalReplacement" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="replacement" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="malformedInputAction" native="false" return="java.nio.charset.CodingErrorAction" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="maxBytesPerChar" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="onMalformedInput" native="false" return="java.nio.charset.CharsetEncoder" static="false" synchronized="false" visibility="public">
+<parameter name="newAction" type="java.nio.charset.CodingErrorAction">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="onUnmappableCharacter" native="false" return="java.nio.charset.CharsetEncoder" static="false" synchronized="false" visibility="public">
+<parameter name="newAction" type="java.nio.charset.CodingErrorAction">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="replaceWith" native="false" return="java.nio.charset.CharsetEncoder" static="false" synchronized="false" visibility="public">
+<parameter name="replacement" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="replacement" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="reset" native="false" return="java.nio.charset.CharsetEncoder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unmappableCharacterAction" native="false" return="java.nio.charset.CodingErrorAction" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Error" final="false" name="CoderMalfunctionError" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CoderMalfunctionError" static="false" type="java.nio.charset.CoderMalfunctionError" visibility="public">
+<parameter name="ex" type="java.lang.Exception">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="CoderResult" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="isError" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isMalformed" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isOverflow" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isUnderflow" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isUnmappable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="length" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="malformedForLength" native="false" return="java.nio.charset.CoderResult" static="true" synchronized="true" visibility="public">
+<parameter name="length" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="throwException" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="BufferOverflowException" type="java.nio.BufferOverflowException">
+</exception>
+<exception name="BufferUnderflowException" type="java.nio.BufferUnderflowException">
+</exception>
+<exception name="CharacterCodingException" type="java.nio.charset.CharacterCodingException">
+</exception>
+<exception name="MalformedInputException" type="java.nio.charset.MalformedInputException">
+</exception>
+<exception name="UnmappableCharacterException" type="java.nio.charset.UnmappableCharacterException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unmappableForLength" native="false" return="java.nio.charset.CoderResult" static="true" synchronized="true" visibility="public">
+<parameter name="length" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="OVERFLOW" static="true" transient="false" type="java.nio.charset.CoderResult" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNDERFLOW" static="true" transient="false" type="java.nio.charset.CoderResult" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="CodingErrorAction" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="IGNORE" static="true" transient="false" type="java.nio.charset.CodingErrorAction" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REPLACE" static="true" transient="false" type="java.nio.charset.CodingErrorAction" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REPORT" static="true" transient="false" type="java.nio.charset.CodingErrorAction" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.IllegalArgumentException" final="false" name="IllegalCharsetNameException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IllegalCharsetNameException" static="false" type="java.nio.charset.IllegalCharsetNameException" visibility="public">
+<parameter name="charsetName" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCharsetName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.nio.charset.CharacterCodingException" final="false" name="MalformedInputException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="MalformedInputException" static="false" type="java.nio.charset.MalformedInputException" visibility="public">
+<parameter name="length" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.nio.charset.CharacterCodingException" final="false" name="UnmappableCharacterException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="UnmappableCharacterException" static="false" type="java.nio.charset.UnmappableCharacterException" visibility="public">
+<parameter name="length" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.IllegalArgumentException" final="false" name="UnsupportedCharsetException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="UnsupportedCharsetException" static="false" type="java.nio.charset.UnsupportedCharsetException" visibility="public">
+<parameter name="charsetName" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCharsetName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package></api>

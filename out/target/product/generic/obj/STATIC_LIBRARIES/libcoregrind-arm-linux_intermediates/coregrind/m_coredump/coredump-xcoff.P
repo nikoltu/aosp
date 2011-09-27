@@ -1,0 +1,5 @@
+out/target/product/generic/obj/STATIC_LIBRARIES/libcoregrind-arm-linux_intermediates/coregrind/m_coredump/coredump-xcoff.o: \
+ external/valgrind/main/coregrind/m_coredump/coredump-xcoff.c \
+ system/core/include/arch/linux-arm/AndroidConfig.h
+ external/valgrind/main/coregrind/m_coredump/coredump-xcoff.c :
+ system/core/include/arch/linux-arm/AndroidConfig.h :

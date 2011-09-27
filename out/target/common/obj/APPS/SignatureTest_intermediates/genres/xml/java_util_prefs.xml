@@ -1,0 +1,504 @@
+<?xml version="1.0" ?><api><package name="java.util.prefs">
+<class abstract="true" deprecated="not deprecated" extends="java.util.prefs.Preferences" final="false" name="AbstractPreferences" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AbstractPreferences" static="false" type="java.util.prefs.AbstractPreferences" visibility="protected">
+<parameter name="parent" type="java.util.prefs.AbstractPreferences">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="absolutePath" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addNodeChangeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ncl" type="java.util.prefs.NodeChangeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addPreferenceChangeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pcl" type="java.util.prefs.PreferenceChangeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="cachedChildren" native="false" return="java.util.prefs.AbstractPreferences[]" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="childSpi" native="false" return="java.util.prefs.AbstractPreferences" static="false" synchronized="false" visibility="protected">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="childrenNames" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="childrenNamesSpi" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="protected">
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="exportNode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ostream" type="java.io.OutputStream">
+</parameter>
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="exportSubtree" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ostream" type="java.io.OutputStream">
+</parameter>
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="flush" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="flushSpi" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="deflt" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBoolean" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="deflt" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getByteArray" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="deflt" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getChild" native="false" return="java.util.prefs.AbstractPreferences" static="false" synchronized="false" visibility="protected">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDouble" native="false" return="double" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="deflt" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFloat" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="deflt" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInt" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="deflt" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLong" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="deflt" type="long">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSpi" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isRemoved" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isUserNode" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="keys" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="keysSpi" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="protected">
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="name" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="node" native="false" return="java.util.prefs.Preferences" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="nodeExists" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parent" native="false" return="java.util.prefs.Preferences" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="put" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putBoolean" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putByteArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putDouble" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putFloat" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putInt" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putLong" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="long">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="putSpi" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="remove" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeNode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeNodeChangeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ncl" type="java.util.prefs.NodeChangeListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeNodeSpi" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removePreferenceChangeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pcl" type="java.util.prefs.PreferenceChangeListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeSpi" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sync" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="syncSpi" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="lock" static="false" transient="false" type="java.lang.Object" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="newNode" static="false" transient="false" type="boolean" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Exception" final="false" name="BackingStoreException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BackingStoreException" static="false" type="java.util.prefs.BackingStoreException" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BackingStoreException" static="false" type="java.util.prefs.BackingStoreException" visibility="public">
+<parameter name="t" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Exception" final="false" name="InvalidPreferencesFormatException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="InvalidPreferencesFormatException" static="false" type="java.util.prefs.InvalidPreferencesFormatException" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InvalidPreferencesFormatException" static="false" type="java.util.prefs.InvalidPreferencesFormatException" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+<parameter name="t" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InvalidPreferencesFormatException" static="false" type="java.util.prefs.InvalidPreferencesFormatException" visibility="public">
+<parameter name="t" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.util.EventObject" final="false" name="NodeChangeEvent" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="NodeChangeEvent" static="false" type="java.util.prefs.NodeChangeEvent" visibility="public">
+<parameter name="p" type="java.util.prefs.Preferences">
+</parameter>
+<parameter name="c" type="java.util.prefs.Preferences">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getChild" native="false" return="java.util.prefs.Preferences" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParent" native="false" return="java.util.prefs.Preferences" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="NodeChangeListener" static="false" visibility="public">
+<implements name="java.util.EventListener">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="childAdded" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="e" type="java.util.prefs.NodeChangeEvent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="childRemoved" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="e" type="java.util.prefs.NodeChangeEvent">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.util.EventObject" final="false" name="PreferenceChangeEvent" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="PreferenceChangeEvent" static="false" type="java.util.prefs.PreferenceChangeEvent" visibility="public">
+<parameter name="p" type="java.util.prefs.Preferences">
+</parameter>
+<parameter name="k" type="java.lang.String">
+</parameter>
+<parameter name="v" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getKey" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNewValue" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNode" native="false" return="java.util.prefs.Preferences" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PreferenceChangeListener" static="false" visibility="public">
+<implements name="java.util.EventListener">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="preferenceChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pce" type="java.util.prefs.PreferenceChangeEvent">
+</parameter>
+</method>
+</interface>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Preferences" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Preferences" static="false" type="java.util.prefs.Preferences" visibility="protected">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="absolutePath" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="addNodeChangeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ncl" type="java.util.prefs.NodeChangeListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="addPreferenceChangeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pcl" type="java.util.prefs.PreferenceChangeListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="childrenNames" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="exportNode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ostream" type="java.io.OutputStream">
+</parameter>
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="exportSubtree" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ostream" type="java.io.OutputStream">
+</parameter>
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="flush" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="get" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="deflt" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getBoolean" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="deflt" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getByteArray" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="deflt" type="byte[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDouble" native="false" return="double" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="deflt" type="double">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getFloat" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="deflt" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getInt" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="deflt" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLong" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="deflt" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="importPreferences" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="istream" type="java.io.InputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="InvalidPreferencesFormatException" type="java.util.prefs.InvalidPreferencesFormatException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isUserNode" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="keys" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="name" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="node" native="false" return="java.util.prefs.Preferences" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="nodeExists" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="parent" native="false" return="java.util.prefs.Preferences" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="put" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="putBoolean" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="putByteArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="byte[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="putDouble" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="double">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="putFloat" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="putInt" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="putLong" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="long">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="remove" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeNode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeNodeChangeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ncl" type="java.util.prefs.NodeChangeListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removePreferenceChangeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pcl" type="java.util.prefs.PreferenceChangeListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="sync" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="BackingStoreException" type="java.util.prefs.BackingStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="systemNodeForPackage" native="false" return="java.util.prefs.Preferences" static="true" synchronized="false" visibility="public">
+<parameter name="c" type="java.lang.Class&lt;?&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="systemRoot" native="false" return="java.util.prefs.Preferences" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="toString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="userNodeForPackage" native="false" return="java.util.prefs.Preferences" static="true" synchronized="false" visibility="public">
+<parameter name="c" type="java.lang.Class&lt;?&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="userRoot" native="false" return="java.util.prefs.Preferences" static="true" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="MAX_KEY_LENGTH" static="true" transient="false" type="int" value="80" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MAX_NAME_LENGTH" static="true" transient="false" type="int" value="80" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MAX_VALUE_LENGTH" static="true" transient="false" type="int" value="8192" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PreferencesFactory" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="systemRoot" native="false" return="java.util.prefs.Preferences" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="userRoot" native="false" return="java.util.prefs.Preferences" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+</package></api>

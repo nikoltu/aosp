@@ -1,0 +1,28 @@
+<?xml version="1.0" ?><api><package name="org.apache.http.auth.params">
+<interface abstract="true" deprecated="not deprecated" final="false" name="AuthPNames" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="CREDENTIAL_CHARSET" static="true" transient="false" type="java.lang.String" value="&quot;http.auth.credential-charset&quot;" visibility="public" volatile="false">
+</field>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.params.HttpAbstractParamBean" final="false" name="AuthParamBean" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AuthParamBean" static="false" type="org.apache.http.auth.params.AuthParamBean" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCredentialCharset" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="charset" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="AuthParams" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getCredentialCharset" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCredentialCharset" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="charset" type="java.lang.String">
+</parameter>
+</method>
+</class>
+</package></api>

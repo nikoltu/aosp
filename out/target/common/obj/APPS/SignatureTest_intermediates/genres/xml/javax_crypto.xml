@@ -1,0 +1,1344 @@
+<?xml version="1.0" ?><api><package name="javax.crypto">
+<class abstract="false" deprecated="not deprecated" extends="java.security.GeneralSecurityException" final="false" name="BadPaddingException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BadPaddingException" static="false" type="javax.crypto.BadPaddingException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BadPaddingException" static="false" type="javax.crypto.BadPaddingException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Cipher" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Cipher" static="false" type="javax.crypto.Cipher" visibility="protected">
+<parameter name="cipherSpi" type="javax.crypto.CipherSpi">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<parameter name="transformation" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="doFinal" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<exception name="BadPaddingException" type="javax.crypto.BadPaddingException">
+</exception>
+<exception name="IllegalBlockSizeException" type="javax.crypto.IllegalBlockSizeException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="doFinal" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="output" type="byte[]">
+</parameter>
+<parameter name="outputOffset" type="int">
+</parameter>
+<exception name="BadPaddingException" type="javax.crypto.BadPaddingException">
+</exception>
+<exception name="IllegalBlockSizeException" type="javax.crypto.IllegalBlockSizeException">
+</exception>
+<exception name="ShortBufferException" type="javax.crypto.ShortBufferException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="doFinal" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="byte[]">
+</parameter>
+<exception name="BadPaddingException" type="javax.crypto.BadPaddingException">
+</exception>
+<exception name="IllegalBlockSizeException" type="javax.crypto.IllegalBlockSizeException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="doFinal" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="byte[]">
+</parameter>
+<parameter name="inputOffset" type="int">
+</parameter>
+<parameter name="inputLen" type="int">
+</parameter>
+<exception name="BadPaddingException" type="javax.crypto.BadPaddingException">
+</exception>
+<exception name="IllegalBlockSizeException" type="javax.crypto.IllegalBlockSizeException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="doFinal" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="byte[]">
+</parameter>
+<parameter name="inputOffset" type="int">
+</parameter>
+<parameter name="inputLen" type="int">
+</parameter>
+<parameter name="output" type="byte[]">
+</parameter>
+<exception name="BadPaddingException" type="javax.crypto.BadPaddingException">
+</exception>
+<exception name="IllegalBlockSizeException" type="javax.crypto.IllegalBlockSizeException">
+</exception>
+<exception name="ShortBufferException" type="javax.crypto.ShortBufferException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="doFinal" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="byte[]">
+</parameter>
+<parameter name="inputOffset" type="int">
+</parameter>
+<parameter name="inputLen" type="int">
+</parameter>
+<parameter name="output" type="byte[]">
+</parameter>
+<parameter name="outputOffset" type="int">
+</parameter>
+<exception name="BadPaddingException" type="javax.crypto.BadPaddingException">
+</exception>
+<exception name="IllegalBlockSizeException" type="javax.crypto.IllegalBlockSizeException">
+</exception>
+<exception name="ShortBufferException" type="javax.crypto.ShortBufferException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="doFinal" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="java.nio.ByteBuffer">
+</parameter>
+<parameter name="output" type="java.nio.ByteBuffer">
+</parameter>
+<exception name="BadPaddingException" type="javax.crypto.BadPaddingException">
+</exception>
+<exception name="IllegalBlockSizeException" type="javax.crypto.IllegalBlockSizeException">
+</exception>
+<exception name="ShortBufferException" type="javax.crypto.ShortBufferException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getBlockSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getExemptionMechanism" native="false" return="javax.crypto.ExemptionMechanism" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getIV" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.crypto.Cipher" static="true" synchronized="false" visibility="public">
+<parameter name="transformation" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchPaddingException" type="javax.crypto.NoSuchPaddingException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.crypto.Cipher" static="true" synchronized="false" visibility="public">
+<parameter name="transformation" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchPaddingException" type="javax.crypto.NoSuchPaddingException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.crypto.Cipher" static="true" synchronized="false" visibility="public">
+<parameter name="transformation" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchPaddingException" type="javax.crypto.NoSuchPaddingException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getMaxAllowedKeyLength" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="transformation" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getMaxAllowedParameterSpec" native="false" return="java.security.spec.AlgorithmParameterSpec" static="true" synchronized="false" visibility="public">
+<parameter name="transformation" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getOutputSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="inputLen" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getParameters" native="false" return="java.security.AlgorithmParameters" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProvider" native="false" return="java.security.Provider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="opmode" type="int">
+</parameter>
+<parameter name="key" type="java.security.Key">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="opmode" type="int">
+</parameter>
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="opmode" type="int">
+</parameter>
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="params" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="opmode" type="int">
+</parameter>
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="params" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="opmode" type="int">
+</parameter>
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="params" type="java.security.AlgorithmParameters">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="opmode" type="int">
+</parameter>
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="params" type="java.security.AlgorithmParameters">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="opmode" type="int">
+</parameter>
+<parameter name="certificate" type="java.security.cert.Certificate">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="opmode" type="int">
+</parameter>
+<parameter name="certificate" type="java.security.cert.Certificate">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="unwrap" native="false" return="java.security.Key" static="false" synchronized="false" visibility="public">
+<parameter name="wrappedKey" type="byte[]">
+</parameter>
+<parameter name="wrappedKeyAlgorithm" type="java.lang.String">
+</parameter>
+<parameter name="wrappedKeyType" type="int">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="update" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="update" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="byte[]">
+</parameter>
+<parameter name="inputOffset" type="int">
+</parameter>
+<parameter name="inputLen" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="update" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="byte[]">
+</parameter>
+<parameter name="inputOffset" type="int">
+</parameter>
+<parameter name="inputLen" type="int">
+</parameter>
+<parameter name="output" type="byte[]">
+</parameter>
+<exception name="ShortBufferException" type="javax.crypto.ShortBufferException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="update" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="byte[]">
+</parameter>
+<parameter name="inputOffset" type="int">
+</parameter>
+<parameter name="inputLen" type="int">
+</parameter>
+<parameter name="output" type="byte[]">
+</parameter>
+<parameter name="outputOffset" type="int">
+</parameter>
+<exception name="ShortBufferException" type="javax.crypto.ShortBufferException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="update" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="java.nio.ByteBuffer">
+</parameter>
+<parameter name="output" type="java.nio.ByteBuffer">
+</parameter>
+<exception name="ShortBufferException" type="javax.crypto.ShortBufferException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="wrap" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<exception name="IllegalBlockSizeException" type="javax.crypto.IllegalBlockSizeException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="DECRYPT_MODE" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ENCRYPT_MODE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PRIVATE_KEY" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PUBLIC_KEY" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SECRET_KEY" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNWRAP_MODE" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WRAP_MODE" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.FilterInputStream" final="false" name="CipherInputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CipherInputStream" static="false" type="javax.crypto.CipherInputStream" visibility="public">
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<parameter name="c" type="javax.crypto.Cipher">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="CipherInputStream" static="false" type="javax.crypto.CipherInputStream" visibility="protected">
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.FilterOutputStream" final="false" name="CipherOutputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CipherOutputStream" static="false" type="javax.crypto.CipherOutputStream" visibility="public">
+<parameter name="os" type="java.io.OutputStream">
+</parameter>
+<parameter name="c" type="javax.crypto.Cipher">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="CipherOutputStream" static="false" type="javax.crypto.CipherOutputStream" visibility="protected">
+<parameter name="os" type="java.io.OutputStream">
+</parameter>
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="CipherSpi" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CipherSpi" static="false" type="javax.crypto.CipherSpi" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineDoFinal" native="false" return="byte[]" static="false" synchronized="false" visibility="protected">
+<parameter name="input" type="byte[]">
+</parameter>
+<parameter name="inputOffset" type="int">
+</parameter>
+<parameter name="inputLen" type="int">
+</parameter>
+<exception name="BadPaddingException" type="javax.crypto.BadPaddingException">
+</exception>
+<exception name="IllegalBlockSizeException" type="javax.crypto.IllegalBlockSizeException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineDoFinal" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="input" type="byte[]">
+</parameter>
+<parameter name="inputOffset" type="int">
+</parameter>
+<parameter name="inputLen" type="int">
+</parameter>
+<parameter name="output" type="byte[]">
+</parameter>
+<parameter name="outputOffset" type="int">
+</parameter>
+<exception name="BadPaddingException" type="javax.crypto.BadPaddingException">
+</exception>
+<exception name="IllegalBlockSizeException" type="javax.crypto.IllegalBlockSizeException">
+</exception>
+<exception name="ShortBufferException" type="javax.crypto.ShortBufferException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineDoFinal" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="input" type="java.nio.ByteBuffer">
+</parameter>
+<parameter name="output" type="java.nio.ByteBuffer">
+</parameter>
+<exception name="BadPaddingException" type="javax.crypto.BadPaddingException">
+</exception>
+<exception name="IllegalBlockSizeException" type="javax.crypto.IllegalBlockSizeException">
+</exception>
+<exception name="ShortBufferException" type="javax.crypto.ShortBufferException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetBlockSize" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetIV" native="false" return="byte[]" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineGetKeySize" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetOutputSize" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="inputLen" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetParameters" native="false" return="java.security.AlgorithmParameters" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="opmode" type="int">
+</parameter>
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="opmode" type="int">
+</parameter>
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="params" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="opmode" type="int">
+</parameter>
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="params" type="java.security.AlgorithmParameters">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineSetMode" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="mode" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineSetPadding" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="padding" type="java.lang.String">
+</parameter>
+<exception name="NoSuchPaddingException" type="javax.crypto.NoSuchPaddingException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineUnwrap" native="false" return="java.security.Key" static="false" synchronized="false" visibility="protected">
+<parameter name="wrappedKey" type="byte[]">
+</parameter>
+<parameter name="wrappedKeyAlgorithm" type="java.lang.String">
+</parameter>
+<parameter name="wrappedKeyType" type="int">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineUpdate" native="false" return="byte[]" static="false" synchronized="false" visibility="protected">
+<parameter name="input" type="byte[]">
+</parameter>
+<parameter name="inputOffset" type="int">
+</parameter>
+<parameter name="inputLen" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineUpdate" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="input" type="byte[]">
+</parameter>
+<parameter name="inputOffset" type="int">
+</parameter>
+<parameter name="inputLen" type="int">
+</parameter>
+<parameter name="output" type="byte[]">
+</parameter>
+<parameter name="outputOffset" type="int">
+</parameter>
+<exception name="ShortBufferException" type="javax.crypto.ShortBufferException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineUpdate" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="input" type="java.nio.ByteBuffer">
+</parameter>
+<parameter name="output" type="java.nio.ByteBuffer">
+</parameter>
+<exception name="ShortBufferException" type="javax.crypto.ShortBufferException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineWrap" native="false" return="byte[]" static="false" synchronized="false" visibility="protected">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<exception name="IllegalBlockSizeException" type="javax.crypto.IllegalBlockSizeException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="EncryptedPrivateKeyInfo" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="EncryptedPrivateKeyInfo" static="false" type="javax.crypto.EncryptedPrivateKeyInfo" visibility="public">
+<parameter name="encoded" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="EncryptedPrivateKeyInfo" static="false" type="javax.crypto.EncryptedPrivateKeyInfo" visibility="public">
+<parameter name="encrAlgName" type="java.lang.String">
+</parameter>
+<parameter name="encryptedData" type="byte[]">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="EncryptedPrivateKeyInfo" static="false" type="javax.crypto.EncryptedPrivateKeyInfo" visibility="public">
+<parameter name="algParams" type="java.security.AlgorithmParameters">
+</parameter>
+<parameter name="encryptedData" type="byte[]">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAlgName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAlgParameters" native="false" return="java.security.AlgorithmParameters" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEncoded" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEncryptedData" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getKeySpec" native="false" return="java.security.spec.PKCS8EncodedKeySpec" static="false" synchronized="false" visibility="public">
+<parameter name="cipher" type="javax.crypto.Cipher">
+</parameter>
+<exception name="InvalidKeySpecException" type="java.security.spec.InvalidKeySpecException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getKeySpec" native="false" return="java.security.spec.PKCS8EncodedKeySpec" static="false" synchronized="false" visibility="public">
+<parameter name="decryptKey" type="java.security.Key">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getKeySpec" native="false" return="java.security.spec.PKCS8EncodedKeySpec" static="false" synchronized="false" visibility="public">
+<parameter name="decryptKey" type="java.security.Key">
+</parameter>
+<parameter name="providerName" type="java.lang.String">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getKeySpec" native="false" return="java.security.spec.PKCS8EncodedKeySpec" static="false" synchronized="false" visibility="public">
+<parameter name="decryptKey" type="java.security.Key">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ExemptionMechanism" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ExemptionMechanism" static="false" type="javax.crypto.ExemptionMechanism" visibility="protected">
+<parameter name="exmechSpi" type="javax.crypto.ExemptionMechanismSpi">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<parameter name="mechanism" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="genExemptionBlob" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<exception name="ExemptionMechanismException" type="javax.crypto.ExemptionMechanismException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="genExemptionBlob" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="output" type="byte[]">
+</parameter>
+<exception name="ExemptionMechanismException" type="javax.crypto.ExemptionMechanismException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="ShortBufferException" type="javax.crypto.ShortBufferException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="genExemptionBlob" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="output" type="byte[]">
+</parameter>
+<parameter name="outputOffset" type="int">
+</parameter>
+<exception name="ExemptionMechanismException" type="javax.crypto.ExemptionMechanismException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="ShortBufferException" type="javax.crypto.ShortBufferException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.crypto.ExemptionMechanism" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.crypto.ExemptionMechanism" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.crypto.ExemptionMechanism" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getOutputSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="inputLen" type="int">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProvider" native="false" return="java.security.Provider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<exception name="ExemptionMechanismException" type="javax.crypto.ExemptionMechanismException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="param" type="java.security.AlgorithmParameters">
+</parameter>
+<exception name="ExemptionMechanismException" type="javax.crypto.ExemptionMechanismException">
+</exception>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="param" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<exception name="ExemptionMechanismException" type="javax.crypto.ExemptionMechanismException">
+</exception>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isCryptoAllowed" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<exception name="ExemptionMechanismException" type="javax.crypto.ExemptionMechanismException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.GeneralSecurityException" final="false" name="ExemptionMechanismException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ExemptionMechanismException" static="false" type="javax.crypto.ExemptionMechanismException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ExemptionMechanismException" static="false" type="javax.crypto.ExemptionMechanismException" visibility="public">
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ExemptionMechanismSpi" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ExemptionMechanismSpi" static="false" type="javax.crypto.ExemptionMechanismSpi" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGenExemptionBlob" native="false" return="byte[]" static="false" synchronized="false" visibility="protected">
+<exception name="ExemptionMechanismException" type="javax.crypto.ExemptionMechanismException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGenExemptionBlob" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="output" type="byte[]">
+</parameter>
+<parameter name="outputOffset" type="int">
+</parameter>
+<exception name="ExemptionMechanismException" type="javax.crypto.ExemptionMechanismException">
+</exception>
+<exception name="ShortBufferException" type="javax.crypto.ShortBufferException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetOutputSize" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="inputLen" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<exception name="ExemptionMechanismException" type="javax.crypto.ExemptionMechanismException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="params" type="java.security.AlgorithmParameters">
+</parameter>
+<exception name="ExemptionMechanismException" type="javax.crypto.ExemptionMechanismException">
+</exception>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="params" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<exception name="ExemptionMechanismException" type="javax.crypto.ExemptionMechanismException">
+</exception>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.GeneralSecurityException" final="false" name="IllegalBlockSizeException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IllegalBlockSizeException" static="false" type="javax.crypto.IllegalBlockSizeException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="IllegalBlockSizeException" static="false" type="javax.crypto.IllegalBlockSizeException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="KeyAgreement" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="KeyAgreement" static="false" type="javax.crypto.KeyAgreement" visibility="protected">
+<parameter name="keyAgreeSpi" type="javax.crypto.KeyAgreementSpi">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="doPhase" native="false" return="java.security.Key" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="lastPhase" type="boolean">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="generateSecret" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="generateSecret" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="sharedSecret" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="ShortBufferException" type="javax.crypto.ShortBufferException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="generateSecret" native="false" return="javax.crypto.SecretKey" static="false" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.crypto.KeyAgreement" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.crypto.KeyAgreement" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.crypto.KeyAgreement" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProvider" native="false" return="java.security.Provider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="params" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="params" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="KeyAgreementSpi" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="KeyAgreementSpi" static="false" type="javax.crypto.KeyAgreementSpi" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineDoPhase" native="false" return="java.security.Key" static="false" synchronized="false" visibility="protected">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="lastPhase" type="boolean">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGenerateSecret" native="false" return="byte[]" static="false" synchronized="false" visibility="protected">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGenerateSecret" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="sharedSecret" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="ShortBufferException" type="javax.crypto.ShortBufferException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGenerateSecret" native="false" return="javax.crypto.SecretKey" static="false" synchronized="false" visibility="protected">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="params" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="KeyGenerator" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="KeyGenerator" static="false" type="javax.crypto.KeyGenerator" visibility="protected">
+<parameter name="keyGenSpi" type="javax.crypto.KeyGeneratorSpi">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="generateKey" native="false" return="javax.crypto.SecretKey" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.crypto.KeyGenerator" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.crypto.KeyGenerator" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.crypto.KeyGenerator" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProvider" native="false" return="java.security.Provider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="params" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="params" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="keysize" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="keysize" type="int">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="KeyGeneratorSpi" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="KeyGeneratorSpi" static="false" type="javax.crypto.KeyGeneratorSpi" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGenerateKey" native="false" return="javax.crypto.SecretKey" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="params" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="keysize" type="int">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Mac" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Mac" static="false" type="javax.crypto.Mac" visibility="protected">
+<parameter name="macSpi" type="javax.crypto.MacSpi">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="doFinal" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="doFinal" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="output" type="byte[]">
+</parameter>
+<parameter name="outOffset" type="int">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="ShortBufferException" type="javax.crypto.ShortBufferException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="doFinal" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="byte[]">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.crypto.Mac" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.crypto.Mac" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.crypto.Mac" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getMacLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProvider" native="false" return="java.security.Provider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="params" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="reset" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="byte">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="byte[]">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="java.nio.ByteBuffer">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="MacSpi" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="MacSpi" static="false" type="javax.crypto.MacSpi" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineDoFinal" native="false" return="byte[]" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetMacLength" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="params" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineReset" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineUpdate" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="input" type="byte">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineUpdate" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="input" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineUpdate" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="input" type="java.nio.ByteBuffer">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.GeneralSecurityException" final="false" name="NoSuchPaddingException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="NoSuchPaddingException" static="false" type="javax.crypto.NoSuchPaddingException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="NoSuchPaddingException" static="false" type="javax.crypto.NoSuchPaddingException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="javax.crypto.Cipher" final="false" name="NullCipher" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="NullCipher" static="false" type="javax.crypto.NullCipher" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SealedObject" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="SealedObject" static="false" type="javax.crypto.SealedObject" visibility="public">
+<parameter name="object" type="java.io.Serializable">
+</parameter>
+<parameter name="c" type="javax.crypto.Cipher">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalBlockSizeException" type="javax.crypto.IllegalBlockSizeException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SealedObject" static="false" type="javax.crypto.SealedObject" visibility="protected">
+<parameter name="so" type="javax.crypto.SealedObject">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getObject" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<exception name="ClassNotFoundException" type="java.lang.ClassNotFoundException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getObject" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="c" type="javax.crypto.Cipher">
+</parameter>
+<exception name="BadPaddingException" type="javax.crypto.BadPaddingException">
+</exception>
+<exception name="ClassNotFoundException" type="java.lang.ClassNotFoundException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalBlockSizeException" type="javax.crypto.IllegalBlockSizeException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getObject" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="provider" type="java.lang.String">
+</parameter>
+<exception name="ClassNotFoundException" type="java.lang.ClassNotFoundException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="false" name="encodedParams" static="false" transient="false" type="byte[]" value="null" visibility="protected" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="SecretKey" static="false" visibility="public">
+<implements name="java.security.Key">
+</implements>
+<field deprecated="not deprecated" final="true" name="serialVersionUID" static="true" transient="false" type="long" value="-4795878709595146952L" visibility="public" volatile="false">
+</field>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SecretKeyFactory" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SecretKeyFactory" static="false" type="javax.crypto.SecretKeyFactory" visibility="protected">
+<parameter name="keyFacSpi" type="javax.crypto.SecretKeyFactorySpi">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="generateSecret" native="false" return="javax.crypto.SecretKey" static="false" synchronized="false" visibility="public">
+<parameter name="keySpec" type="java.security.spec.KeySpec">
+</parameter>
+<exception name="InvalidKeySpecException" type="java.security.spec.InvalidKeySpecException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.crypto.SecretKeyFactory" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.crypto.SecretKeyFactory" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getInstance" native="false" return="javax.crypto.SecretKeyFactory" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getKeySpec" native="false" return="java.security.spec.KeySpec" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="javax.crypto.SecretKey">
+</parameter>
+<parameter name="keySpec" type="java.lang.Class">
+</parameter>
+<exception name="InvalidKeySpecException" type="java.security.spec.InvalidKeySpecException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProvider" native="false" return="java.security.Provider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="translateKey" native="false" return="javax.crypto.SecretKey" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="javax.crypto.SecretKey">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SecretKeyFactorySpi" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SecretKeyFactorySpi" static="false" type="javax.crypto.SecretKeyFactorySpi" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGenerateSecret" native="false" return="javax.crypto.SecretKey" static="false" synchronized="false" visibility="protected">
+<parameter name="keySpec" type="java.security.spec.KeySpec">
+</parameter>
+<exception name="InvalidKeySpecException" type="java.security.spec.InvalidKeySpecException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetKeySpec" native="false" return="java.security.spec.KeySpec" static="false" synchronized="false" visibility="protected">
+<parameter name="key" type="javax.crypto.SecretKey">
+</parameter>
+<parameter name="keySpec" type="java.lang.Class">
+</parameter>
+<exception name="InvalidKeySpecException" type="java.security.spec.InvalidKeySpecException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineTranslateKey" native="false" return="javax.crypto.SecretKey" static="false" synchronized="false" visibility="protected">
+<parameter name="key" type="javax.crypto.SecretKey">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.GeneralSecurityException" final="false" name="ShortBufferException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ShortBufferException" static="false" type="javax.crypto.ShortBufferException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ShortBufferException" static="false" type="javax.crypto.ShortBufferException" visibility="public">
+</constructor>
+</class>
+</package></api>

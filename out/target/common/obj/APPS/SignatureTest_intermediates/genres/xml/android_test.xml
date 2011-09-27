@@ -1,0 +1,1184 @@
+<?xml version="1.0" ?><api><package name="android.test">
+<class abstract="true" deprecated="deprecated" extends="android.test.ActivityTestCase" final="false" name="ActivityInstrumentationTestCase" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ActivityInstrumentationTestCase" static="false" type="android.test.ActivityInstrumentationTestCase" visibility="public">
+<parameter name="pkg" type="java.lang.String">
+</parameter>
+<parameter name="activityClass" type="java.lang.Class&lt;T&gt;">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ActivityInstrumentationTestCase" static="false" type="android.test.ActivityInstrumentationTestCase" visibility="public">
+<parameter name="pkg" type="java.lang.String">
+</parameter>
+<parameter name="activityClass" type="java.lang.Class&lt;T&gt;">
+</parameter>
+<parameter name="initialTouchMode" type="boolean">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getActivity" native="false" return="T" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="testActivityTestCaseSetUpProperly" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="Exception" type="java.lang.Exception">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="android.test.ActivityTestCase" final="false" name="ActivityInstrumentationTestCase2" static="false" visibility="public">
+<constructor deprecated="deprecated" final="false" name="ActivityInstrumentationTestCase2" static="false" type="android.test.ActivityInstrumentationTestCase2" visibility="public">
+<parameter name="pkg" type="java.lang.String">
+</parameter>
+<parameter name="activityClass" type="java.lang.Class&lt;T&gt;">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ActivityInstrumentationTestCase2" static="false" type="android.test.ActivityInstrumentationTestCase2" visibility="public">
+<parameter name="activityClass" type="java.lang.Class&lt;T&gt;">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getActivity" native="false" return="T" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setActivityInitialTouchMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="initialTouchMode" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setActivityIntent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="android.content.Intent">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="android.test.InstrumentationTestCase" final="false" name="ActivityTestCase" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ActivityTestCase" static="false" type="android.test.ActivityTestCase" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getActivity" native="false" return="android.app.Activity" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="scrubClass" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="testCaseClass" type="java.lang.Class&lt;?&gt;">
+</parameter>
+<exception name="IllegalAccessException" type="java.lang.IllegalAccessException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setActivity" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="testActivity" type="android.app.Activity">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="android.test.ActivityTestCase" final="false" name="ActivityUnitTestCase" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ActivityUnitTestCase" static="false" type="android.test.ActivityUnitTestCase" visibility="public">
+<parameter name="activityClass" type="java.lang.Class&lt;T&gt;">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getActivity" native="false" return="T" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFinishedActivityRequest" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRequestedOrientation" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStartedActivityIntent" native="false" return="android.content.Intent" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStartedActivityRequest" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isFinishCalled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setActivityContext" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="activityContext" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setApplication" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="application" type="android.app.Application">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startActivity" native="false" return="T" static="false" synchronized="false" visibility="protected">
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+<parameter name="savedInstanceState" type="android.os.Bundle">
+</parameter>
+<parameter name="lastNonConfigurationInstance" type="java.lang.Object">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="junit.framework.TestCase" final="false" name="AndroidTestCase" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AndroidTestCase" static="false" type="android.test.AndroidTestCase" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertActivityRequiresPermission" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="packageName" type="java.lang.String">
+</parameter>
+<parameter name="className" type="java.lang.String">
+</parameter>
+<parameter name="permission" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertReadingContentUriRequiresPermission" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+<parameter name="permission" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertWritingContentUriRequiresPermission" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+<parameter name="permission" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContext" native="false" return="android.content.Context" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="scrubClass" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="testCaseClass" type="java.lang.Class&lt;?&gt;">
+</parameter>
+<exception name="IllegalAccessException" type="java.lang.IllegalAccessException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setContext" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="testAndroidTestCaseSetupProperly" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="false" name="mContext" static="false" transient="false" type="android.content.Context" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="junit.runner.BaseTestRunner" final="false" name="AndroidTestRunner" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AndroidTestRunner" static="false" type="android.test.AndroidTestRunner" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addTestListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="testListener" type="junit.framework.TestListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearTestListeners" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createTestResult" native="false" return="junit.framework.TestResult" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTestCases" native="false" return="java.util.List&lt;junit.framework.TestCase&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTestClassName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTestResult" native="false" return="junit.framework.TestResult" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="runFailed" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="message" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="runTest" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="runTest" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="testResult" type="junit.framework.TestResult">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setContext" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="setInstrumentaiton" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="instrumentation" type="android.app.Instrumentation">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setInstrumentation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="instrumentation" type="android.app.Instrumentation">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTest" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="test" type="junit.framework.Test">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTestClassName" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="testClassName" type="java.lang.String">
+</parameter>
+<parameter name="testMethodName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="testEnded" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="testName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="testFailed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="status" type="int">
+</parameter>
+<parameter name="test" type="junit.framework.Test">
+</parameter>
+<parameter name="t" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="testStarted" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="testName" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="android.test.AndroidTestCase" final="false" name="ApplicationTestCase" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ApplicationTestCase" static="false" type="android.test.ApplicationTestCase" visibility="public">
+<parameter name="applicationClass" type="java.lang.Class&lt;T&gt;">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="createApplication" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getApplication" native="false" return="T" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSystemContext" native="false" return="android.content.Context" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="terminateApplication" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="testApplicationTestCaseSetUpProperly" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="Exception" type="java.lang.Exception">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Error" final="false" name="AssertionFailedError" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AssertionFailedError" static="false" type="android.test.AssertionFailedError" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AssertionFailedError" static="false" type="android.test.AssertionFailedError" visibility="public">
+<parameter name="errorMessage" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.test.AssertionFailedError" final="false" name="ComparisonFailure" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ComparisonFailure" static="false" type="android.test.ComparisonFailure" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expected" type="java.lang.String">
+</parameter>
+<parameter name="actual" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="FlakyTest" static="false" visibility="public">
+<implements name="java.lang.annotation.Annotation">
+</implements>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="junit.framework.TestCase" final="false" name="InstrumentationTestCase" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="InstrumentationTestCase" static="false" type="android.test.InstrumentationTestCase" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstrumentation" native="false" return="android.app.Instrumentation" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="injectInsrumentation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="instrumentation" type="android.app.Instrumentation">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="injectInstrumentation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="instrumentation" type="android.app.Instrumentation">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="launchActivity" native="false" return="T" static="false" synchronized="false" visibility="public">
+<parameter name="pkg" type="java.lang.String">
+</parameter>
+<parameter name="activityCls" type="java.lang.Class&lt;T&gt;">
+</parameter>
+<parameter name="extras" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="launchActivityWithIntent" native="false" return="T" static="false" synchronized="false" visibility="public">
+<parameter name="pkg" type="java.lang.String">
+</parameter>
+<parameter name="activityCls" type="java.lang.Class&lt;T&gt;">
+</parameter>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="runTestOnUiThread" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="r" type="java.lang.Runnable">
+</parameter>
+<exception name="Throwable" type="java.lang.Throwable">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendKeys" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="keysSequence" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendKeys" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="keys" type="int...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendRepeatedKeys" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="keys" type="int...">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.app.Instrumentation" final="false" name="InstrumentationTestRunner" static="false" visibility="public">
+<implements name="android.test.TestSuiteProvider">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="InstrumentationTestRunner" static="false" type="android.test.InstrumentationTestRunner" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAllTests" native="false" return="junit.framework.TestSuite" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAndroidTestRunner" native="false" return="android.test.AndroidTestRunner" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLoader" native="false" return="java.lang.ClassLoader" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTestSuite" native="false" return="junit.framework.TestSuite" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="REPORT_KEY_NAME_CLASS" static="true" transient="false" type="java.lang.String" value="&quot;class&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REPORT_KEY_NAME_TEST" static="true" transient="false" type="java.lang.String" value="&quot;test&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REPORT_KEY_NUM_CURRENT" static="true" transient="false" type="java.lang.String" value="&quot;current&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REPORT_KEY_NUM_TOTAL" static="true" transient="false" type="java.lang.String" value="&quot;numtests&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REPORT_KEY_STACK" static="true" transient="false" type="java.lang.String" value="&quot;stack&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REPORT_VALUE_ID" static="true" transient="false" type="java.lang.String" value="&quot;InstrumentationTestRunner&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REPORT_VALUE_RESULT_ERROR" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REPORT_VALUE_RESULT_FAILURE" static="true" transient="false" type="int" value="-2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REPORT_VALUE_RESULT_OK" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REPORT_VALUE_RESULT_START" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="junit.framework.TestSuite" final="false" name="InstrumentationTestSuite" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="InstrumentationTestSuite" static="false" type="android.test.InstrumentationTestSuite" visibility="public">
+<parameter name="instr" type="android.app.Instrumentation">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InstrumentationTestSuite" static="false" type="android.test.InstrumentationTestSuite" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="instr" type="android.app.Instrumentation">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InstrumentationTestSuite" static="false" type="android.test.InstrumentationTestSuite" visibility="public">
+<parameter name="theClass" type="java.lang.Class">
+</parameter>
+<parameter name="instr" type="android.app.Instrumentation">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.content.ContextWrapper" final="false" name="IsolatedContext" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IsolatedContext" static="false" type="android.test.IsolatedContext" visibility="public">
+<parameter name="resolver" type="android.content.ContentResolver">
+</parameter>
+<parameter name="targetContext" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAndClearBroadcastIntents" native="false" return="java.util.List&lt;android.content.Intent&gt;" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="MoreAsserts" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="assertAssignableFrom" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="expected" type="java.lang.Class&lt;?&gt;">
+</parameter>
+<parameter name="actual" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertAssignableFrom" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="expected" type="java.lang.Class&lt;?&gt;">
+</parameter>
+<parameter name="actual" type="java.lang.Class&lt;?&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertContainsRegex" native="false" return="java.util.regex.MatchResult" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expectedRegex" type="java.lang.String">
+</parameter>
+<parameter name="actual" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertContainsRegex" native="false" return="java.util.regex.MatchResult" static="true" synchronized="false" visibility="public">
+<parameter name="expectedRegex" type="java.lang.String">
+</parameter>
+<parameter name="actual" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertContentsInAnyOrder" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="actual" type="java.lang.Iterable&lt;?&gt;">
+</parameter>
+<parameter name="expected" type="java.lang.Object...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertContentsInAnyOrder" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="actual" type="java.lang.Iterable&lt;?&gt;">
+</parameter>
+<parameter name="expected" type="java.lang.Object...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertContentsInOrder" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="actual" type="java.lang.Iterable&lt;?&gt;">
+</parameter>
+<parameter name="expected" type="java.lang.Object...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertContentsInOrder" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="actual" type="java.lang.Iterable&lt;?&gt;">
+</parameter>
+<parameter name="expected" type="java.lang.Object...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEmpty" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="iterable" type="java.lang.Iterable&lt;?&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEmpty" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="iterable" type="java.lang.Iterable&lt;?&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEmpty" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="map" type="java.util.Map&lt;?, ?&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEmpty" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="map" type="java.util.Map&lt;?, ?&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expected" type="byte[]">
+</parameter>
+<parameter name="actual" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="expected" type="byte[]">
+</parameter>
+<parameter name="actual" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expected" type="int[]">
+</parameter>
+<parameter name="actual" type="int[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="expected" type="int[]">
+</parameter>
+<parameter name="actual" type="int[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expected" type="double[]">
+</parameter>
+<parameter name="actual" type="double[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="expected" type="double[]">
+</parameter>
+<parameter name="actual" type="double[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expected" type="java.lang.Object[]">
+</parameter>
+<parameter name="actual" type="java.lang.Object[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="expected" type="java.lang.Object[]">
+</parameter>
+<parameter name="actual" type="java.lang.Object[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expected" type="java.util.Set&lt;? extends java.lang.Object&gt;">
+</parameter>
+<parameter name="actual" type="java.util.Set&lt;? extends java.lang.Object&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="expected" type="java.util.Set&lt;? extends java.lang.Object&gt;">
+</parameter>
+<parameter name="actual" type="java.util.Set&lt;? extends java.lang.Object&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertMatchesRegex" native="false" return="java.util.regex.MatchResult" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expectedRegex" type="java.lang.String">
+</parameter>
+<parameter name="actual" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertMatchesRegex" native="false" return="java.util.regex.MatchResult" static="true" synchronized="false" visibility="public">
+<parameter name="expectedRegex" type="java.lang.String">
+</parameter>
+<parameter name="actual" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertNotContainsRegex" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expectedRegex" type="java.lang.String">
+</parameter>
+<parameter name="actual" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertNotContainsRegex" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="expectedRegex" type="java.lang.String">
+</parameter>
+<parameter name="actual" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertNotEmpty" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="iterable" type="java.lang.Iterable&lt;?&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertNotEmpty" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="iterable" type="java.lang.Iterable&lt;?&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertNotEmpty" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="map" type="java.util.Map&lt;?, ?&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertNotEmpty" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="map" type="java.util.Map&lt;?, ?&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertNotEqual" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="unexpected" type="java.lang.Object">
+</parameter>
+<parameter name="actual" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertNotEqual" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="unexpected" type="java.lang.Object">
+</parameter>
+<parameter name="actual" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertNotMatchesRegex" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expectedRegex" type="java.lang.String">
+</parameter>
+<parameter name="actual" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertNotMatchesRegex" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="expectedRegex" type="java.lang.String">
+</parameter>
+<parameter name="actual" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="checkEqualsAndHashCodeMethods" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="lhs" type="java.lang.Object">
+</parameter>
+<parameter name="rhs" type="java.lang.Object">
+</parameter>
+<parameter name="expectedResult" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="checkEqualsAndHashCodeMethods" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="lhs" type="java.lang.Object">
+</parameter>
+<parameter name="rhs" type="java.lang.Object">
+</parameter>
+<parameter name="expectedResult" type="boolean">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PerformanceTestCase" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="isPerformanceOnly" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="startPerformance" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="intermediates" type="android.test.PerformanceTestCase.Intermediates">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PerformanceTestCase.Intermediates" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="addIntermediate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="addIntermediate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="timeInNS" type="long">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="finishTiming" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="realTime" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setInternalIterations" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="count" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="startTiming" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="realTime" type="boolean">
+</parameter>
+</method>
+</interface>
+<class abstract="true" deprecated="deprecated" extends="android.test.InstrumentationTestCase" final="false" name="ProviderTestCase" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ProviderTestCase" static="false" type="android.test.ProviderTestCase" visibility="public">
+<parameter name="providerClass" type="java.lang.Class&lt;T&gt;">
+</parameter>
+<parameter name="providerAuthority" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMockContentResolver" native="false" return="android.test.mock.MockContentResolver" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMockContext" native="false" return="android.test.IsolatedContext" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProvider" native="false" return="T" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newResolverWithContentProviderFromSql" native="false" return="android.content.ContentResolver" static="true" synchronized="false" visibility="public">
+<parameter name="targetContext" type="android.content.Context">
+</parameter>
+<parameter name="providerClass" type="java.lang.Class&lt;T&gt;">
+</parameter>
+<parameter name="authority" type="java.lang.String">
+</parameter>
+<parameter name="databaseName" type="java.lang.String">
+</parameter>
+<parameter name="databaseVersion" type="int">
+</parameter>
+<parameter name="sql" type="java.lang.String">
+</parameter>
+<exception name="IllegalAccessException" type="java.lang.IllegalAccessException">
+</exception>
+<exception name="InstantiationException" type="java.lang.InstantiationException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="android.test.AndroidTestCase" final="false" name="ProviderTestCase2" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ProviderTestCase2" static="false" type="android.test.ProviderTestCase2" visibility="public">
+<parameter name="providerClass" type="java.lang.Class&lt;T&gt;">
+</parameter>
+<parameter name="providerAuthority" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMockContentResolver" native="false" return="android.test.mock.MockContentResolver" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMockContext" native="false" return="android.test.IsolatedContext" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProvider" native="false" return="T" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newResolverWithContentProviderFromSql" native="false" return="android.content.ContentResolver" static="true" synchronized="false" visibility="public">
+<parameter name="targetContext" type="android.content.Context">
+</parameter>
+<parameter name="filenamePrefix" type="java.lang.String">
+</parameter>
+<parameter name="providerClass" type="java.lang.Class&lt;T&gt;">
+</parameter>
+<parameter name="authority" type="java.lang.String">
+</parameter>
+<parameter name="databaseName" type="java.lang.String">
+</parameter>
+<parameter name="databaseVersion" type="int">
+</parameter>
+<parameter name="sql" type="java.lang.String">
+</parameter>
+<exception name="IllegalAccessException" type="java.lang.IllegalAccessException">
+</exception>
+<exception name="InstantiationException" type="java.lang.InstantiationException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.content.ContextWrapper" final="false" name="RenamingDelegatingContext" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RenamingDelegatingContext" static="false" type="android.test.RenamingDelegatingContext" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="filePrefix" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="RenamingDelegatingContext" static="false" type="android.test.RenamingDelegatingContext" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="fileContext" type="android.content.Context">
+</parameter>
+<parameter name="filePrefix" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDatabasePrefix" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="makeExistingFilesAndDbsAccessible" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="providerWithRenamedContext" native="false" return="T" static="true" synchronized="false" visibility="public">
+<parameter name="contentProvider" type="java.lang.Class&lt;T&gt;">
+</parameter>
+<parameter name="c" type="android.content.Context">
+</parameter>
+<parameter name="filePrefix" type="java.lang.String">
+</parameter>
+<exception name="IllegalAccessException" type="java.lang.IllegalAccessException">
+</exception>
+<exception name="InstantiationException" type="java.lang.InstantiationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="providerWithRenamedContext" native="false" return="T" static="true" synchronized="false" visibility="public">
+<parameter name="contentProvider" type="java.lang.Class&lt;T&gt;">
+</parameter>
+<parameter name="c" type="android.content.Context">
+</parameter>
+<parameter name="filePrefix" type="java.lang.String">
+</parameter>
+<parameter name="allowAccessToExistingFilesAndDbs" type="boolean">
+</parameter>
+<exception name="IllegalAccessException" type="java.lang.IllegalAccessException">
+</exception>
+<exception name="InstantiationException" type="java.lang.InstantiationException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="android.test.AndroidTestCase" final="false" name="ServiceTestCase" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ServiceTestCase" static="false" type="android.test.ServiceTestCase" visibility="public">
+<parameter name="serviceClass" type="java.lang.Class&lt;T&gt;">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="bindService" native="false" return="android.os.IBinder" static="false" synchronized="false" visibility="protected">
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getApplication" native="false" return="android.app.Application" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getService" native="false" return="T" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSystemContext" native="false" return="android.content.Context" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setApplication" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="application" type="android.app.Application">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setupService" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shutdownService" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startService" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="testServiceTestCaseSetUpProperly" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="Exception" type="java.lang.Exception">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="android.test.InstrumentationTestCase" final="false" name="SingleLaunchActivityTestCase" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SingleLaunchActivityTestCase" static="false" type="android.test.SingleLaunchActivityTestCase" visibility="public">
+<parameter name="pkg" type="java.lang.String">
+</parameter>
+<parameter name="activityClass" type="java.lang.Class&lt;T&gt;">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getActivity" native="false" return="T" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="testActivityTestCaseSetUpProperly" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="Exception" type="java.lang.Exception">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.test.InstrumentationTestCase" final="false" name="SyncBaseInstrumentation" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SyncBaseInstrumentation" static="false" type="android.test.SyncBaseInstrumentation" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="cancelSyncsandDisableAutoSync" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="syncProvider" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+<parameter name="accountName" type="java.lang.String">
+</parameter>
+<parameter name="authority" type="java.lang.String">
+</parameter>
+<exception name="Exception" type="java.lang.Exception">
+</exception>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="TestSuiteProvider" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getTestSuite" native="false" return="junit.framework.TestSuite" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="TouchUtils" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="TouchUtils" static="false" type="android.test.TouchUtils" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clickView" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.InstrumentationTestCase">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="drag" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.ActivityInstrumentationTestCase">
+</parameter>
+<parameter name="fromX" type="float">
+</parameter>
+<parameter name="toX" type="float">
+</parameter>
+<parameter name="fromY" type="float">
+</parameter>
+<parameter name="toY" type="float">
+</parameter>
+<parameter name="stepCount" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="drag" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.InstrumentationTestCase">
+</parameter>
+<parameter name="fromX" type="float">
+</parameter>
+<parameter name="toX" type="float">
+</parameter>
+<parameter name="fromY" type="float">
+</parameter>
+<parameter name="toY" type="float">
+</parameter>
+<parameter name="stepCount" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="dragQuarterScreenDown" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.ActivityInstrumentationTestCase">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dragQuarterScreenDown" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.InstrumentationTestCase">
+</parameter>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="dragQuarterScreenUp" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.ActivityInstrumentationTestCase">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dragQuarterScreenUp" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.InstrumentationTestCase">
+</parameter>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="dragViewBy" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.ActivityInstrumentationTestCase">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+<parameter name="gravity" type="int">
+</parameter>
+<parameter name="deltaX" type="int">
+</parameter>
+<parameter name="deltaY" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="dragViewBy" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.InstrumentationTestCase">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+<parameter name="gravity" type="int">
+</parameter>
+<parameter name="deltaX" type="int">
+</parameter>
+<parameter name="deltaY" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="dragViewTo" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.ActivityInstrumentationTestCase">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+<parameter name="gravity" type="int">
+</parameter>
+<parameter name="toX" type="int">
+</parameter>
+<parameter name="toY" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dragViewTo" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.InstrumentationTestCase">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+<parameter name="gravity" type="int">
+</parameter>
+<parameter name="toX" type="int">
+</parameter>
+<parameter name="toY" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="dragViewToBottom" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.ActivityInstrumentationTestCase">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dragViewToBottom" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.InstrumentationTestCase">
+</parameter>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="dragViewToBottom" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.ActivityInstrumentationTestCase">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+<parameter name="stepCount" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dragViewToBottom" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.InstrumentationTestCase">
+</parameter>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+<parameter name="stepCount" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="dragViewToTop" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.ActivityInstrumentationTestCase">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="dragViewToTop" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.ActivityInstrumentationTestCase">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+<parameter name="stepCount" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dragViewToTop" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.InstrumentationTestCase">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dragViewToTop" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.InstrumentationTestCase">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+<parameter name="stepCount" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="dragViewToX" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.ActivityInstrumentationTestCase">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+<parameter name="gravity" type="int">
+</parameter>
+<parameter name="toX" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dragViewToX" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.InstrumentationTestCase">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+<parameter name="gravity" type="int">
+</parameter>
+<parameter name="toX" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="dragViewToY" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.ActivityInstrumentationTestCase">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+<parameter name="gravity" type="int">
+</parameter>
+<parameter name="toY" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dragViewToY" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.InstrumentationTestCase">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+<parameter name="gravity" type="int">
+</parameter>
+<parameter name="toY" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="longClickView" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.ActivityInstrumentationTestCase">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="longClickView" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.InstrumentationTestCase">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="scrollToBottom" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.ActivityInstrumentationTestCase">
+</parameter>
+<parameter name="v" type="android.view.ViewGroup">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="scrollToBottom" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.InstrumentationTestCase">
+</parameter>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+<parameter name="v" type="android.view.ViewGroup">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="scrollToTop" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.ActivityInstrumentationTestCase">
+</parameter>
+<parameter name="v" type="android.view.ViewGroup">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="scrollToTop" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.InstrumentationTestCase">
+</parameter>
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+<parameter name="v" type="android.view.ViewGroup">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tapView" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.InstrumentationTestCase">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="touchAndCancelView" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="test" type="android.test.InstrumentationTestCase">
+</parameter>
+<parameter name="v" type="android.view.View">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="UiThreadTest" static="false" visibility="public">
+<implements name="java.lang.annotation.Annotation">
+</implements>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ViewAsserts" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="assertBaselineAligned" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="first" type="android.view.View">
+</parameter>
+<parameter name="second" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertBottomAligned" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="first" type="android.view.View">
+</parameter>
+<parameter name="second" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertBottomAligned" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="first" type="android.view.View">
+</parameter>
+<parameter name="second" type="android.view.View">
+</parameter>
+<parameter name="margin" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertGroupContains" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="parent" type="android.view.ViewGroup">
+</parameter>
+<parameter name="child" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertGroupIntegrity" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="parent" type="android.view.ViewGroup">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertGroupNotContains" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="parent" type="android.view.ViewGroup">
+</parameter>
+<parameter name="child" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertHasScreenCoordinates" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="origin" type="android.view.View">
+</parameter>
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertHorizontalCenterAligned" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="reference" type="android.view.View">
+</parameter>
+<parameter name="test" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertLeftAligned" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="first" type="android.view.View">
+</parameter>
+<parameter name="second" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertLeftAligned" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="first" type="android.view.View">
+</parameter>
+<parameter name="second" type="android.view.View">
+</parameter>
+<parameter name="margin" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertOffScreenAbove" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="origin" type="android.view.View">
+</parameter>
+<parameter name="view" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertOffScreenBelow" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="origin" type="android.view.View">
+</parameter>
+<parameter name="view" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertOnScreen" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="origin" type="android.view.View">
+</parameter>
+<parameter name="view" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertRightAligned" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="first" type="android.view.View">
+</parameter>
+<parameter name="second" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertRightAligned" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="first" type="android.view.View">
+</parameter>
+<parameter name="second" type="android.view.View">
+</parameter>
+<parameter name="margin" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertTopAligned" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="first" type="android.view.View">
+</parameter>
+<parameter name="second" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertTopAligned" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="first" type="android.view.View">
+</parameter>
+<parameter name="second" type="android.view.View">
+</parameter>
+<parameter name="margin" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertVerticalCenterAligned" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="reference" type="android.view.View">
+</parameter>
+<parameter name="test" type="android.view.View">
+</parameter>
+</method>
+</class>
+</package></api>

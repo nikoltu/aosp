@@ -1,0 +1,164 @@
+<?xml version="1.0" ?><api><package name="android.text.util">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Linkify" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Linkify" static="false" type="android.text.util.Linkify" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="addLinks" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+<parameter name="mask" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="addLinks" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="text" type="android.widget.TextView">
+</parameter>
+<parameter name="mask" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="addLinks" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="text" type="android.widget.TextView">
+</parameter>
+<parameter name="pattern" type="java.util.regex.Pattern">
+</parameter>
+<parameter name="scheme" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="addLinks" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="text" type="android.widget.TextView">
+</parameter>
+<parameter name="p" type="java.util.regex.Pattern">
+</parameter>
+<parameter name="scheme" type="java.lang.String">
+</parameter>
+<parameter name="matchFilter" type="android.text.util.Linkify.MatchFilter">
+</parameter>
+<parameter name="transformFilter" type="android.text.util.Linkify.TransformFilter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="addLinks" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+<parameter name="pattern" type="java.util.regex.Pattern">
+</parameter>
+<parameter name="scheme" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="addLinks" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="s" type="android.text.Spannable">
+</parameter>
+<parameter name="p" type="java.util.regex.Pattern">
+</parameter>
+<parameter name="scheme" type="java.lang.String">
+</parameter>
+<parameter name="matchFilter" type="android.text.util.Linkify.MatchFilter">
+</parameter>
+<parameter name="transformFilter" type="android.text.util.Linkify.TransformFilter">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ALL" static="true" transient="false" type="int" value="15" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EMAIL_ADDRESSES" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MAP_ADDRESSES" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PHONE_NUMBERS" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEB_URLS" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="sPhoneNumberMatchFilter" static="true" transient="false" type="android.text.util.Linkify.MatchFilter" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="sPhoneNumberTransformFilter" static="true" transient="false" type="android.text.util.Linkify.TransformFilter" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="sUrlMatchFilter" static="true" transient="false" type="android.text.util.Linkify.MatchFilter" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Linkify.MatchFilter" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="acceptMatch" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Linkify.TransformFilter" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="transformUrl" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="match" type="java.util.regex.Matcher">
+</parameter>
+<parameter name="url" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Rfc822Token" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Rfc822Token" static="false" type="android.text.util.Rfc822Token" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="address" type="java.lang.String">
+</parameter>
+<parameter name="comment" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAddress" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getComment" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="quoteComment" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="comment" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="quoteName" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="quoteNameIfNecessary" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAddress" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="address" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setComment" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="comment" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setName" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Rfc822Tokenizer" static="false" visibility="public">
+<implements name="android.widget.MultiAutoCompleteTextView.Tokenizer">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Rfc822Tokenizer" static="false" type="android.text.util.Rfc822Tokenizer" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="findTokenEnd" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="cursor" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="findTokenStart" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="cursor" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="terminateToken" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tokenize" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="out" type="java.util.Collection&lt;android.text.util.Rfc822Token&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tokenize" native="false" return="android.text.util.Rfc822Token[]" static="true" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+</method>
+</class>
+</package></api>

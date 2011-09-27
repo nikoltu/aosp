@@ -1,0 +1,216 @@
+<?xml version="1.0" ?><api><package name="android.telephony.gsm">
+<class abstract="false" deprecated="not deprecated" extends="android.telephony.CellLocation" final="false" name="GsmCellLocation" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="GsmCellLocation" static="false" type="android.telephony.gsm.GsmCellLocation" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="GsmCellLocation" static="false" type="android.telephony.gsm.GsmCellLocation" visibility="public">
+<parameter name="bundle" type="android.os.Bundle">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="fillInNotifierBundle" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="m" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCid" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLac" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPsc" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLacAndCid" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="lac" type="int">
+</parameter>
+<parameter name="cid" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStateInvalid" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="deprecated" extends="java.lang.Object" final="true" name="SmsManager" static="false" visibility="public">
+<method abstract="false" deprecated="deprecated" final="true" name="divideMessage" native="false" return="java.util.ArrayList&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="true" name="getDefault" native="false" return="android.telephony.gsm.SmsManager" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="true" name="sendDataMessage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="destinationAddress" type="java.lang.String">
+</parameter>
+<parameter name="scAddress" type="java.lang.String">
+</parameter>
+<parameter name="destinationPort" type="short">
+</parameter>
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="sentIntent" type="android.app.PendingIntent">
+</parameter>
+<parameter name="deliveryIntent" type="android.app.PendingIntent">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="true" name="sendMultipartTextMessage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="destinationAddress" type="java.lang.String">
+</parameter>
+<parameter name="scAddress" type="java.lang.String">
+</parameter>
+<parameter name="parts" type="java.util.ArrayList&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="sentIntents" type="java.util.ArrayList&lt;android.app.PendingIntent&gt;">
+</parameter>
+<parameter name="deliveryIntents" type="java.util.ArrayList&lt;android.app.PendingIntent&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="true" name="sendTextMessage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="destinationAddress" type="java.lang.String">
+</parameter>
+<parameter name="scAddress" type="java.lang.String">
+</parameter>
+<parameter name="text" type="java.lang.String">
+</parameter>
+<parameter name="sentIntent" type="android.app.PendingIntent">
+</parameter>
+<parameter name="deliveryIntent" type="android.app.PendingIntent">
+</parameter>
+</method>
+<field deprecated="deprecated" final="true" name="RESULT_ERROR_GENERIC_FAILURE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="RESULT_ERROR_NO_SERVICE" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="RESULT_ERROR_NULL_PDU" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="RESULT_ERROR_RADIO_OFF" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="STATUS_ON_SIM_FREE" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="STATUS_ON_SIM_READ" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="STATUS_ON_SIM_SENT" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="STATUS_ON_SIM_UNREAD" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="STATUS_ON_SIM_UNSENT" static="true" transient="false" type="int" value="7" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="deprecated" extends="java.lang.Object" final="false" name="SmsMessage" static="false" visibility="public">
+<constructor deprecated="deprecated" final="false" name="SmsMessage" static="false" type="android.telephony.gsm.SmsMessage" visibility="public">
+</constructor>
+<method abstract="false" deprecated="deprecated" final="false" name="calculateLength" native="false" return="int[]" static="true" synchronized="false" visibility="public">
+<parameter name="messageBody" type="java.lang.CharSequence">
+</parameter>
+<parameter name="use7bitOnly" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="calculateLength" native="false" return="int[]" static="true" synchronized="false" visibility="public">
+<parameter name="messageBody" type="java.lang.String">
+</parameter>
+<parameter name="use7bitOnly" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="createFromPdu" native="false" return="android.telephony.gsm.SmsMessage" static="true" synchronized="false" visibility="public">
+<parameter name="pdu" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getDisplayMessageBody" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getDisplayOriginatingAddress" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getEmailBody" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getEmailFrom" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getIndexOnSim" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getMessageBody" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getMessageClass" native="false" return="android.telephony.gsm.SmsMessage.MessageClass" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getOriginatingAddress" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getPdu" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getProtocolIdentifier" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getPseudoSubject" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getServiceCenterAddress" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getStatus" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getStatusOnSim" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getSubmitPdu" native="false" return="android.telephony.gsm.SmsMessage.SubmitPdu" static="true" synchronized="false" visibility="public">
+<parameter name="scAddress" type="java.lang.String">
+</parameter>
+<parameter name="destinationAddress" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="statusReportRequested" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getSubmitPdu" native="false" return="android.telephony.gsm.SmsMessage.SubmitPdu" static="true" synchronized="false" visibility="public">
+<parameter name="scAddress" type="java.lang.String">
+</parameter>
+<parameter name="destinationAddress" type="java.lang.String">
+</parameter>
+<parameter name="destinationPort" type="short">
+</parameter>
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="statusReportRequested" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getTPLayerLengthForPDU" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="pdu" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getTimestampMillis" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getUserData" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="isCphsMwiMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="isEmail" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="isMWIClearMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="isMWISetMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="isMwiDontStore" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="isReplace" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="isReplyPathPresent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="isStatusReportMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="deprecated" final="true" name="ENCODING_16BIT" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="ENCODING_7BIT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="ENCODING_8BIT" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="ENCODING_UNKNOWN" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="MAX_USER_DATA_BYTES" static="true" transient="false" type="int" value="140" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="MAX_USER_DATA_SEPTETS" static="true" transient="false" type="int" value="160" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="MAX_USER_DATA_SEPTETS_WITH_HEADER" static="true" transient="false" type="int" value="153" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="deprecated" extends="java.lang.Enum" final="true" name="SmsMessage.MessageClass" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="android.telephony.gsm.SmsMessage.MessageClass" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="values" native="false" return="android.telephony.gsm.SmsMessage.MessageClass[]" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="deprecated" extends="java.lang.Object" final="false" name="SmsMessage.SubmitPdu" static="true" visibility="public">
+<constructor deprecated="deprecated" final="false" name="SmsMessage.SubmitPdu" static="false" type="android.telephony.gsm.SmsMessage.SubmitPdu" visibility="public">
+</constructor>
+<field deprecated="deprecated" final="false" name="encodedMessage" static="false" transient="false" type="byte[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="false" name="encodedScAddress" static="false" transient="false" type="byte[]" value="null" visibility="public" volatile="false">
+</field>
+</class>
+</package></api>

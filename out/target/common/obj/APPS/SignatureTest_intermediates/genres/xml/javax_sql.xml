@@ -1,0 +1,1222 @@
+<?xml version="1.0" ?><api><package name="javax.sql">
+<interface abstract="true" deprecated="not deprecated" final="false" name="CommonDataSource" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getLogWriter" native="false" return="java.io.PrintWriter" static="false" synchronized="false" visibility="public">
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLoginTimeout" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setLogWriter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="out" type="java.io.PrintWriter">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setLoginTimeout" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="seconds" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.util.EventObject" final="false" name="ConnectionEvent" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ConnectionEvent" static="false" type="javax.sql.ConnectionEvent" visibility="public">
+<parameter name="theConnection" type="javax.sql.PooledConnection">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ConnectionEvent" static="false" type="javax.sql.ConnectionEvent" visibility="public">
+<parameter name="theConnection" type="javax.sql.PooledConnection">
+</parameter>
+<parameter name="theException" type="java.sql.SQLException">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSQLException" native="false" return="java.sql.SQLException" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ConnectionEventListener" static="false" visibility="public">
+<implements name="java.util.EventListener">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="connectionClosed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="theEvent" type="javax.sql.ConnectionEvent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="connectionErrorOccurred" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="theEvent" type="javax.sql.ConnectionEvent">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ConnectionPoolDataSource" static="false" visibility="public">
+<implements name="javax.sql.CommonDataSource">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPooledConnection" native="false" return="javax.sql.PooledConnection" static="false" synchronized="false" visibility="public">
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPooledConnection" native="false" return="javax.sql.PooledConnection" static="false" synchronized="false" visibility="public">
+<parameter name="theUser" type="java.lang.String">
+</parameter>
+<parameter name="thePassword" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DataSource" static="false" visibility="public">
+<implements name="javax.sql.CommonDataSource">
+</implements>
+<implements name="java.sql.Wrapper">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getConnection" native="false" return="java.sql.Connection" static="false" synchronized="false" visibility="public">
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getConnection" native="false" return="java.sql.Connection" static="false" synchronized="false" visibility="public">
+<parameter name="theUsername" type="java.lang.String">
+</parameter>
+<parameter name="thePassword" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PooledConnection" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="addConnectionEventListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="theListener" type="javax.sql.ConnectionEventListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="addStatementEventListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="javax.sql.StatementEventListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getConnection" native="false" return="java.sql.Connection" static="false" synchronized="false" visibility="public">
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeConnectionEventListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="theListener" type="javax.sql.ConnectionEventListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeStatementEventListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="javax.sql.StatementEventListener">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="RowSet" static="false" visibility="public">
+<implements name="java.sql.ResultSet">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="addRowSetListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="theListener" type="javax.sql.RowSetListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="clearParameters" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="execute" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getCommand" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDataSourceName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEscapeProcessing" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getMaxFieldSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getMaxRows" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPassword" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getQueryTimeout" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTransactionIsolation" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTypeMap" native="false" return="java.util.Map&lt;java.lang.String, java.lang.Class&lt;?&gt;&gt;" static="false" synchronized="false" visibility="public">
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getUrl" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getUsername" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isReadOnly" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeRowSetListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="theListener" type="javax.sql.RowSetListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theArray" type="java.sql.Array">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setAsciiStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theInputStream" type="java.io.InputStream">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setAsciiStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theInputStream" type="java.io.InputStream">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setAsciiStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theInputStream" type="java.io.InputStream">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setAsciiStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theInputStream" type="java.io.InputStream">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setBigDecimal" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theBigDecimal" type="java.math.BigDecimal">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setBigDecimal" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theBigDecimal" type="java.math.BigDecimal">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setBinaryStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theInputStream" type="java.io.InputStream">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setBinaryStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theInputStream" type="java.io.InputStream">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setBinaryStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theInputStream" type="java.io.InputStream">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setBinaryStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theInputStream" type="java.io.InputStream">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setBlob" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theBlob" type="java.sql.Blob">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setBlob" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theInputStream" type="java.io.InputStream">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setBlob" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theInputStream" type="java.io.InputStream">
+</parameter>
+<parameter name="length" type="long">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setBlob" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theInputStream" type="java.io.InputStream">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setBlob" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theInputStream" type="java.io.InputStream">
+</parameter>
+<parameter name="length" type="long">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setBlob" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theBlob" type="java.sql.Blob">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setBoolean" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theBoolean" type="boolean">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setBoolean" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theBoolean" type="boolean">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setByte" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theByte" type="byte">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setByte" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theByte" type="byte">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setBytes" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theByteArray" type="byte[]">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setBytes" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theByteArray" type="byte[]">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setCharacterStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theReader" type="java.io.Reader">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setCharacterStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theReader" type="java.io.Reader">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setCharacterStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theReader" type="java.io.Reader">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setCharacterStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theReader" type="java.io.Reader">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setClob" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theClob" type="java.sql.Clob">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setClob" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theReader" type="java.io.Reader">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setClob" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theReader" type="java.io.Reader">
+</parameter>
+<parameter name="length" type="long">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setClob" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theClob" type="java.sql.Clob">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setClob" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theReader" type="java.io.Reader">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setClob" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theReader" type="java.io.Reader">
+</parameter>
+<parameter name="length" type="long">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setCommand" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cmd" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setConcurrency" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="concurrency" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setDataSourceName" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setDate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theDate" type="java.sql.Date">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setDate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theDate" type="java.sql.Date">
+</parameter>
+<parameter name="theCalendar" type="java.util.Calendar">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setDate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theDate" type="java.sql.Date">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setDate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theDate" type="java.sql.Date">
+</parameter>
+<parameter name="theCalendar" type="java.util.Calendar">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setDouble" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theDouble" type="double">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setDouble" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theDouble" type="double">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setEscapeProcessing" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="enable" type="boolean">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setFloat" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theFloat" type="float">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setFloat" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theFloat" type="float">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setInt" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theInteger" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setInt" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theInteger" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setLong" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theLong" type="long">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setLong" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theLong" type="long">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setMaxFieldSize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="max" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setMaxRows" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="max" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNCharacterStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theReader" type="java.io.Reader">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNCharacterStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theReader" type="java.io.Reader">
+</parameter>
+<parameter name="length" type="long">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNCharacterStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theReader" type="java.io.Reader">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNCharacterStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theReader" type="java.io.Reader">
+</parameter>
+<parameter name="length" type="long">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNClob" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theNClob" type="java.sql.NClob">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNClob" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theReader" type="java.io.Reader">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNClob" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theReader" type="java.io.Reader">
+</parameter>
+<parameter name="length" type="long">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNClob" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theNClob" type="java.sql.NClob">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNClob" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theReader" type="java.io.Reader">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNClob" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theReader" type="java.io.Reader">
+</parameter>
+<parameter name="length" type="long">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNString" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theNString" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNString" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theNString" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNull" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="sqlType" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNull" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="sqlType" type="int">
+</parameter>
+<parameter name="typeName" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNull" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="sqlType" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNull" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="sqlType" type="int">
+</parameter>
+<parameter name="typeName" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setObject" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theObject" type="java.lang.Object">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setObject" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theObject" type="java.lang.Object">
+</parameter>
+<parameter name="targetSqlType" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setObject" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theObject" type="java.lang.Object">
+</parameter>
+<parameter name="targetSqlType" type="int">
+</parameter>
+<parameter name="scale" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setObject" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theObject" type="java.lang.Object">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setObject" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theObject" type="java.lang.Object">
+</parameter>
+<parameter name="targetSqlType" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setObject" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theObject" type="java.lang.Object">
+</parameter>
+<parameter name="targetSqlType" type="int">
+</parameter>
+<parameter name="scale" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setPassword" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="password" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setQueryTimeout" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="seconds" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setReadOnly" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="readOnly" type="boolean">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setRef" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theRef" type="java.sql.Ref">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setRowId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theRowId" type="java.sql.RowId">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setRowId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theRowId" type="java.sql.RowId">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setSQLXML" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theSQLXML" type="java.sql.SQLXML">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setSQLXML" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theSQLXML" type="java.sql.SQLXML">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setShort" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theShort" type="short">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setShort" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theShort" type="short">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setString" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theString" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setString" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theString" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setTime" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theTime" type="java.sql.Time">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setTime" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theTime" type="java.sql.Time">
+</parameter>
+<parameter name="theCalendar" type="java.util.Calendar">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setTime" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theTime" type="java.sql.Time">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setTime" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theTime" type="java.sql.Time">
+</parameter>
+<parameter name="theCalendar" type="java.util.Calendar">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setTimestamp" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theTimestamp" type="java.sql.Timestamp">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setTimestamp" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theTimestamp" type="java.sql.Timestamp">
+</parameter>
+<parameter name="theCalendar" type="java.util.Calendar">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setTimestamp" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theTimestamp" type="java.sql.Timestamp">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setTimestamp" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterName" type="java.lang.String">
+</parameter>
+<parameter name="theTimestamp" type="java.sql.Timestamp">
+</parameter>
+<parameter name="theCalendar" type="java.util.Calendar">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setTransactionIsolation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="level" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="type" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setTypeMap" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="theTypeMap" type="java.util.Map&lt;java.lang.String, java.lang.Class&lt;?&gt;&gt;">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setURL" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameterIndex" type="int">
+</parameter>
+<parameter name="theURL" type="java.net.URL">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setUrl" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="theURL" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setUsername" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="theUsername" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.util.EventObject" final="false" name="RowSetEvent" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RowSetEvent" static="false" type="javax.sql.RowSetEvent" visibility="public">
+<parameter name="theSource" type="javax.sql.RowSet">
+</parameter>
+</constructor>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="RowSetInternal" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getConnection" native="false" return="java.sql.Connection" static="false" synchronized="false" visibility="public">
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getOriginal" native="false" return="java.sql.ResultSet" static="false" synchronized="false" visibility="public">
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getOriginalRow" native="false" return="java.sql.ResultSet" static="false" synchronized="false" visibility="public">
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getParams" native="false" return="java.lang.Object[]" static="false" synchronized="false" visibility="public">
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setMetaData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="theMetaData" type="javax.sql.RowSetMetaData">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="RowSetListener" static="false" visibility="public">
+<implements name="java.util.EventListener">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="cursorMoved" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="theEvent" type="javax.sql.RowSetEvent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="rowChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="theEvent" type="javax.sql.RowSetEvent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="rowSetChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="theEvent" type="javax.sql.RowSetEvent">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="RowSetMetaData" static="false" visibility="public">
+<implements name="java.sql.ResultSetMetaData">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="setAutoIncrement" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="columnIndex" type="int">
+</parameter>
+<parameter name="autoIncrement" type="boolean">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setCaseSensitive" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="columnIndex" type="int">
+</parameter>
+<parameter name="caseSensitive" type="boolean">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setCatalogName" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="columnIndex" type="int">
+</parameter>
+<parameter name="catalogName" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setColumnCount" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="columnCount" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setColumnDisplaySize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="columnIndex" type="int">
+</parameter>
+<parameter name="displaySize" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setColumnLabel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="columnIndex" type="int">
+</parameter>
+<parameter name="theLabel" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setColumnName" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="columnIndex" type="int">
+</parameter>
+<parameter name="theColumnName" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setColumnType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="columnIndex" type="int">
+</parameter>
+<parameter name="theSQLType" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setColumnTypeName" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="columnIndex" type="int">
+</parameter>
+<parameter name="theTypeName" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setCurrency" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="columnIndex" type="int">
+</parameter>
+<parameter name="isCurrency" type="boolean">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNullable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="columnIndex" type="int">
+</parameter>
+<parameter name="nullability" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setPrecision" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="columnIndex" type="int">
+</parameter>
+<parameter name="thePrecision" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setScale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="columnIndex" type="int">
+</parameter>
+<parameter name="theScale" type="int">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setSchemaName" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="columnIndex" type="int">
+</parameter>
+<parameter name="theSchemaName" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setSearchable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="columnIndex" type="int">
+</parameter>
+<parameter name="isSearchable" type="boolean">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setSigned" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="columnIndex" type="int">
+</parameter>
+<parameter name="isSigned" type="boolean">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setTableName" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="columnIndex" type="int">
+</parameter>
+<parameter name="theTableName" type="java.lang.String">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="RowSetReader" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="readData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="theCaller" type="javax.sql.RowSetInternal">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="RowSetWriter" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="writeData" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="theRowSet" type="javax.sql.RowSetInternal">
+</parameter>
+<exception name="SQLException" type="java.sql.SQLException">
+</exception>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.util.EventObject" final="false" name="StatementEvent" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="StatementEvent" static="false" type="javax.sql.StatementEvent" visibility="public">
+<parameter name="con" type="javax.sql.PooledConnection">
+</parameter>
+<parameter name="statement" type="java.sql.PreparedStatement">
+</parameter>
+<parameter name="exception" type="java.sql.SQLException">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StatementEvent" static="false" type="javax.sql.StatementEvent" visibility="public">
+<parameter name="con" type="javax.sql.PooledConnection">
+</parameter>
+<parameter name="statement" type="java.sql.PreparedStatement">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSQLException" native="false" return="java.sql.SQLException" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStatement" native="false" return="java.sql.PreparedStatement" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="StatementEventListener" static="false" visibility="public">
+<implements name="java.util.EventListener">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="statementClosed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="event" type="javax.sql.StatementEvent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="statementErrorOccurred" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="event" type="javax.sql.StatementEvent">
+</parameter>
+</method>
+</interface>
+</package></api>

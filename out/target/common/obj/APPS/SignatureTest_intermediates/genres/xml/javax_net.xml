@@ -1,0 +1,90 @@
+<?xml version="1.0" ?><api><package name="javax.net">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ServerSocketFactory" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ServerSocketFactory" static="false" type="javax.net.ServerSocketFactory" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="createServerSocket" native="false" return="java.net.ServerSocket" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createServerSocket" native="false" return="java.net.ServerSocket" static="false" synchronized="false" visibility="public">
+<parameter name="port" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createServerSocket" native="false" return="java.net.ServerSocket" static="false" synchronized="false" visibility="public">
+<parameter name="port" type="int">
+</parameter>
+<parameter name="backlog" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createServerSocket" native="false" return="java.net.ServerSocket" static="false" synchronized="false" visibility="public">
+<parameter name="port" type="int">
+</parameter>
+<parameter name="backlog" type="int">
+</parameter>
+<parameter name="iAddress" type="java.net.InetAddress">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefault" native="false" return="javax.net.ServerSocketFactory" static="true" synchronized="true" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SocketFactory" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SocketFactory" static="false" type="javax.net.SocketFactory" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="createSocket" native="false" return="java.net.Socket" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createSocket" native="false" return="java.net.Socket" static="false" synchronized="false" visibility="public">
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="UnknownHostException" type="java.net.UnknownHostException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createSocket" native="false" return="java.net.Socket" static="false" synchronized="false" visibility="public">
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="localHost" type="java.net.InetAddress">
+</parameter>
+<parameter name="localPort" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="UnknownHostException" type="java.net.UnknownHostException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createSocket" native="false" return="java.net.Socket" static="false" synchronized="false" visibility="public">
+<parameter name="host" type="java.net.InetAddress">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createSocket" native="false" return="java.net.Socket" static="false" synchronized="false" visibility="public">
+<parameter name="address" type="java.net.InetAddress">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="localAddress" type="java.net.InetAddress">
+</parameter>
+<parameter name="localPort" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefault" native="false" return="javax.net.SocketFactory" static="true" synchronized="true" visibility="public">
+</method>
+</class>
+</package></api>

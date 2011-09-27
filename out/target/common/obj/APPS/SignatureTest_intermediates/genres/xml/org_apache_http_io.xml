@@ -1,0 +1,108 @@
+<?xml version="1.0" ?><api><package name="org.apache.http.io">
+<interface abstract="true" deprecated="not deprecated" final="false" name="HttpMessageParser" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="parse" native="false" return="org.apache.http.HttpMessage" static="false" synchronized="false" visibility="public">
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="HttpMessageWriter" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="message" type="org.apache.http.HttpMessage">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="HttpTransportMetrics" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getBytesTransferred" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="SessionInputBuffer" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getMetrics" native="false" return="org.apache.http.io.HttpTransportMetrics" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isDataAvailable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readLine" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readLine" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="SessionOutputBuffer" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="flush" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getMetrics" native="false" return="org.apache.http.io.HttpTransportMetrics" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeLine" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeLine" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</interface>
+</package></api>

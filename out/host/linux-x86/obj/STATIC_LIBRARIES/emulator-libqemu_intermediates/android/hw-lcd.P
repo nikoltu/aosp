@@ -1,0 +1,37 @@
+out/host/linux-x86/obj/STATIC_LIBRARIES/emulator-libqemu_intermediates/android/hw-lcd.o: \
+ external/qemu/android/hw-lcd.c external/qemu/android/hw-lcd.h \
+ external/qemu/android/boot-properties.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/stdio.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/features.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/cdefs.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/wordsize.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/gnu/stubs.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/gnu/stubs-32.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../lib/gcc/i686-linux/4.4.3/include/stddef.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/types.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/typesizes.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/libio.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/_G_config.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/wchar.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../lib/gcc/i686-linux/4.4.3/include/stdarg.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/stdio_lim.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/sys_errlist.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/stdio.h
+ external/qemu/android/hw-lcd.c external/qemu/android/hw-lcd.h :
+ external/qemu/android/boot-properties.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/stdio.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/features.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/cdefs.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/wordsize.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/gnu/stubs.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/gnu/stubs-32.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../lib/gcc/i686-linux/4.4.3/include/stddef.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/types.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/typesizes.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/libio.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/_G_config.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/wchar.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../lib/gcc/i686-linux/4.4.3/include/stdarg.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/stdio_lim.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/sys_errlist.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/stdio.h :

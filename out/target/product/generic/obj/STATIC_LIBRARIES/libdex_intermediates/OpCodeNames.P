@@ -1,0 +1,13 @@
+out/target/product/generic/obj/STATIC_LIBRARIES/libdex_intermediates/OpCodeNames.o: \
+ dalvik/libdex/OpCodeNames.c \
+ system/core/include/arch/linux-arm/AndroidConfig.h \
+ dalvik/libdex/OpCodeNames.h dalvik/libdex/OpCode.h \
+ bionic/libc/include/assert.h bionic/libc/include/sys/cdefs.h \
+ bionic/libc/include/sys/cdefs_elf.h \
+ bionic/libc/include/android/api-level.h
+ dalvik/libdex/OpCodeNames.c :
+ system/core/include/arch/linux-arm/AndroidConfig.h :
+ dalvik/libdex/OpCodeNames.h dalvik/libdex/OpCode.h :
+ bionic/libc/include/assert.h bionic/libc/include/sys/cdefs.h :
+ bionic/libc/include/sys/cdefs_elf.h :
+ bionic/libc/include/android/api-level.h :

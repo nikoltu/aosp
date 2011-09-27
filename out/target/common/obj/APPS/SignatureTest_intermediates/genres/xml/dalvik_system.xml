@@ -1,0 +1,80 @@
+<?xml version="1.0" ?><api><package name="dalvik.system">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.ClassLoader" final="false" name="DexClassLoader" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DexClassLoader" static="false" type="dalvik.system.DexClassLoader" visibility="public">
+<parameter name="dexPath" type="java.lang.String">
+</parameter>
+<parameter name="dexOutputDir" type="java.lang.String">
+</parameter>
+<parameter name="libPath" type="java.lang.String">
+</parameter>
+<parameter name="parent" type="java.lang.ClassLoader">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="DexFile" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DexFile" static="false" type="dalvik.system.DexFile" visibility="public">
+<parameter name="file" type="java.io.File">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DexFile" static="false" type="dalvik.system.DexFile" visibility="public">
+<parameter name="fileName" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="entries" native="false" return="java.util.Enumeration&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isDexOptNeeded" native="true" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="fileName" type="java.lang.String">
+</parameter>
+<exception name="FileNotFoundException" type="java.io.FileNotFoundException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadClass" native="false" return="java.lang.Class" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="loader" type="java.lang.ClassLoader">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadDex" native="false" return="dalvik.system.DexFile" static="true" synchronized="false" visibility="public">
+<parameter name="sourcePathName" type="java.lang.String">
+</parameter>
+<parameter name="outputPathName" type="java.lang.String">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.ClassLoader" final="false" name="PathClassLoader" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PathClassLoader" static="false" type="dalvik.system.PathClassLoader" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="parent" type="java.lang.ClassLoader">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="PathClassLoader" static="false" type="dalvik.system.PathClassLoader" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="libPath" type="java.lang.String">
+</parameter>
+<parameter name="parent" type="java.lang.ClassLoader">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="findLibrary" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="libname" type="java.lang.String">
+</parameter>
+</method>
+</class>
+</package></api>

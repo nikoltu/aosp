@@ -1,0 +1,3 @@
+out/target/common/obj/APPS/CtsDelegatingAccessibilityService_intermediates/src/src/android/accessibilityservice/IAccessibilityServiceDelegateConnection.java: \
+  cts/tests/accessibilityservice/src/android/accessibilityservice/IAccessibilityServiceDelegateConnection.aidl \
+

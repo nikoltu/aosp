@@ -1,0 +1,340 @@
+<?xml version="1.0" ?><api><package name="javax.microedition.khronos.egl">
+<interface abstract="true" deprecated="not deprecated" final="false" name="EGL" static="false" visibility="public">
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="EGL10" static="false" visibility="public">
+<implements name="javax.microedition.khronos.egl.EGL">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglChooseConfig" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="display" type="javax.microedition.khronos.egl.EGLDisplay">
+</parameter>
+<parameter name="attrib_list" type="int[]">
+</parameter>
+<parameter name="configs" type="javax.microedition.khronos.egl.EGLConfig[]">
+</parameter>
+<parameter name="config_size" type="int">
+</parameter>
+<parameter name="num_config" type="int[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglCopyBuffers" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="display" type="javax.microedition.khronos.egl.EGLDisplay">
+</parameter>
+<parameter name="surface" type="javax.microedition.khronos.egl.EGLSurface">
+</parameter>
+<parameter name="native_pixmap" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglCreateContext" native="false" return="javax.microedition.khronos.egl.EGLContext" static="false" synchronized="false" visibility="public">
+<parameter name="display" type="javax.microedition.khronos.egl.EGLDisplay">
+</parameter>
+<parameter name="config" type="javax.microedition.khronos.egl.EGLConfig">
+</parameter>
+<parameter name="share_context" type="javax.microedition.khronos.egl.EGLContext">
+</parameter>
+<parameter name="attrib_list" type="int[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglCreatePbufferSurface" native="false" return="javax.microedition.khronos.egl.EGLSurface" static="false" synchronized="false" visibility="public">
+<parameter name="display" type="javax.microedition.khronos.egl.EGLDisplay">
+</parameter>
+<parameter name="config" type="javax.microedition.khronos.egl.EGLConfig">
+</parameter>
+<parameter name="attrib_list" type="int[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglCreatePixmapSurface" native="false" return="javax.microedition.khronos.egl.EGLSurface" static="false" synchronized="false" visibility="public">
+<parameter name="display" type="javax.microedition.khronos.egl.EGLDisplay">
+</parameter>
+<parameter name="config" type="javax.microedition.khronos.egl.EGLConfig">
+</parameter>
+<parameter name="native_pixmap" type="java.lang.Object">
+</parameter>
+<parameter name="attrib_list" type="int[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglCreateWindowSurface" native="false" return="javax.microedition.khronos.egl.EGLSurface" static="false" synchronized="false" visibility="public">
+<parameter name="display" type="javax.microedition.khronos.egl.EGLDisplay">
+</parameter>
+<parameter name="config" type="javax.microedition.khronos.egl.EGLConfig">
+</parameter>
+<parameter name="native_window" type="java.lang.Object">
+</parameter>
+<parameter name="attrib_list" type="int[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglDestroyContext" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="display" type="javax.microedition.khronos.egl.EGLDisplay">
+</parameter>
+<parameter name="context" type="javax.microedition.khronos.egl.EGLContext">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglDestroySurface" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="display" type="javax.microedition.khronos.egl.EGLDisplay">
+</parameter>
+<parameter name="surface" type="javax.microedition.khronos.egl.EGLSurface">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglGetConfigAttrib" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="display" type="javax.microedition.khronos.egl.EGLDisplay">
+</parameter>
+<parameter name="config" type="javax.microedition.khronos.egl.EGLConfig">
+</parameter>
+<parameter name="attribute" type="int">
+</parameter>
+<parameter name="value" type="int[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglGetConfigs" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="display" type="javax.microedition.khronos.egl.EGLDisplay">
+</parameter>
+<parameter name="configs" type="javax.microedition.khronos.egl.EGLConfig[]">
+</parameter>
+<parameter name="config_size" type="int">
+</parameter>
+<parameter name="num_config" type="int[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglGetCurrentContext" native="false" return="javax.microedition.khronos.egl.EGLContext" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglGetCurrentDisplay" native="false" return="javax.microedition.khronos.egl.EGLDisplay" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglGetCurrentSurface" native="false" return="javax.microedition.khronos.egl.EGLSurface" static="false" synchronized="false" visibility="public">
+<parameter name="readdraw" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglGetDisplay" native="false" return="javax.microedition.khronos.egl.EGLDisplay" static="false" synchronized="false" visibility="public">
+<parameter name="native_display" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglGetError" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglInitialize" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="display" type="javax.microedition.khronos.egl.EGLDisplay">
+</parameter>
+<parameter name="major_minor" type="int[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglMakeCurrent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="display" type="javax.microedition.khronos.egl.EGLDisplay">
+</parameter>
+<parameter name="draw" type="javax.microedition.khronos.egl.EGLSurface">
+</parameter>
+<parameter name="read" type="javax.microedition.khronos.egl.EGLSurface">
+</parameter>
+<parameter name="context" type="javax.microedition.khronos.egl.EGLContext">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglQueryContext" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="display" type="javax.microedition.khronos.egl.EGLDisplay">
+</parameter>
+<parameter name="context" type="javax.microedition.khronos.egl.EGLContext">
+</parameter>
+<parameter name="attribute" type="int">
+</parameter>
+<parameter name="value" type="int[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglQueryString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="display" type="javax.microedition.khronos.egl.EGLDisplay">
+</parameter>
+<parameter name="name" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglQuerySurface" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="display" type="javax.microedition.khronos.egl.EGLDisplay">
+</parameter>
+<parameter name="surface" type="javax.microedition.khronos.egl.EGLSurface">
+</parameter>
+<parameter name="attribute" type="int">
+</parameter>
+<parameter name="value" type="int[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglSwapBuffers" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="display" type="javax.microedition.khronos.egl.EGLDisplay">
+</parameter>
+<parameter name="surface" type="javax.microedition.khronos.egl.EGLSurface">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglTerminate" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="display" type="javax.microedition.khronos.egl.EGLDisplay">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglWaitGL" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="eglWaitNative" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="engine" type="int">
+</parameter>
+<parameter name="bindTarget" type="java.lang.Object">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="EGL_ALPHA_FORMAT" static="true" transient="false" type="int" value="12424" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_ALPHA_MASK_SIZE" static="true" transient="false" type="int" value="12350" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_ALPHA_SIZE" static="true" transient="false" type="int" value="12321" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_BAD_ACCESS" static="true" transient="false" type="int" value="12290" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_BAD_ALLOC" static="true" transient="false" type="int" value="12291" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_BAD_ATTRIBUTE" static="true" transient="false" type="int" value="12292" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_BAD_CONFIG" static="true" transient="false" type="int" value="12293" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_BAD_CONTEXT" static="true" transient="false" type="int" value="12294" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_BAD_CURRENT_SURFACE" static="true" transient="false" type="int" value="12295" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_BAD_DISPLAY" static="true" transient="false" type="int" value="12296" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_BAD_MATCH" static="true" transient="false" type="int" value="12297" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_BAD_NATIVE_PIXMAP" static="true" transient="false" type="int" value="12298" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_BAD_NATIVE_WINDOW" static="true" transient="false" type="int" value="12299" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_BAD_PARAMETER" static="true" transient="false" type="int" value="12300" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_BAD_SURFACE" static="true" transient="false" type="int" value="12301" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_BLUE_SIZE" static="true" transient="false" type="int" value="12322" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_BUFFER_SIZE" static="true" transient="false" type="int" value="12320" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_COLORSPACE" static="true" transient="false" type="int" value="12423" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_COLOR_BUFFER_TYPE" static="true" transient="false" type="int" value="12351" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_CONFIG_CAVEAT" static="true" transient="false" type="int" value="12327" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_CONFIG_ID" static="true" transient="false" type="int" value="12328" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_CORE_NATIVE_ENGINE" static="true" transient="false" type="int" value="12379" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_DEFAULT_DISPLAY" static="true" transient="false" type="java.lang.Object" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_DEPTH_SIZE" static="true" transient="false" type="int" value="12325" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_DONT_CARE" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_DRAW" static="true" transient="false" type="int" value="12377" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_EXTENSIONS" static="true" transient="false" type="int" value="12373" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_GREEN_SIZE" static="true" transient="false" type="int" value="12323" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_HEIGHT" static="true" transient="false" type="int" value="12374" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_HORIZONTAL_RESOLUTION" static="true" transient="false" type="int" value="12432" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_LARGEST_PBUFFER" static="true" transient="false" type="int" value="12376" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_LEVEL" static="true" transient="false" type="int" value="12329" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_LUMINANCE_BUFFER" static="true" transient="false" type="int" value="12431" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_LUMINANCE_SIZE" static="true" transient="false" type="int" value="12349" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_MAX_PBUFFER_HEIGHT" static="true" transient="false" type="int" value="12330" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_MAX_PBUFFER_PIXELS" static="true" transient="false" type="int" value="12331" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_MAX_PBUFFER_WIDTH" static="true" transient="false" type="int" value="12332" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_NATIVE_RENDERABLE" static="true" transient="false" type="int" value="12333" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_NATIVE_VISUAL_ID" static="true" transient="false" type="int" value="12334" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_NATIVE_VISUAL_TYPE" static="true" transient="false" type="int" value="12335" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_NONE" static="true" transient="false" type="int" value="12344" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_NON_CONFORMANT_CONFIG" static="true" transient="false" type="int" value="12369" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_NOT_INITIALIZED" static="true" transient="false" type="int" value="12289" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_NO_CONTEXT" static="true" transient="false" type="javax.microedition.khronos.egl.EGLContext" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_NO_DISPLAY" static="true" transient="false" type="javax.microedition.khronos.egl.EGLDisplay" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_NO_SURFACE" static="true" transient="false" type="javax.microedition.khronos.egl.EGLSurface" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_PBUFFER_BIT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_PIXEL_ASPECT_RATIO" static="true" transient="false" type="int" value="12434" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_PIXMAP_BIT" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_READ" static="true" transient="false" type="int" value="12378" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_RED_SIZE" static="true" transient="false" type="int" value="12324" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_RENDERABLE_TYPE" static="true" transient="false" type="int" value="12352" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_RENDER_BUFFER" static="true" transient="false" type="int" value="12422" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_RGB_BUFFER" static="true" transient="false" type="int" value="12430" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_SAMPLES" static="true" transient="false" type="int" value="12337" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_SAMPLE_BUFFERS" static="true" transient="false" type="int" value="12338" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_SINGLE_BUFFER" static="true" transient="false" type="int" value="12421" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_SLOW_CONFIG" static="true" transient="false" type="int" value="12368" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_STENCIL_SIZE" static="true" transient="false" type="int" value="12326" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_SUCCESS" static="true" transient="false" type="int" value="12288" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_SURFACE_TYPE" static="true" transient="false" type="int" value="12339" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_TRANSPARENT_BLUE_VALUE" static="true" transient="false" type="int" value="12341" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_TRANSPARENT_GREEN_VALUE" static="true" transient="false" type="int" value="12342" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_TRANSPARENT_RED_VALUE" static="true" transient="false" type="int" value="12343" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_TRANSPARENT_RGB" static="true" transient="false" type="int" value="12370" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_TRANSPARENT_TYPE" static="true" transient="false" type="int" value="12340" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_VENDOR" static="true" transient="false" type="int" value="12371" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_VERSION" static="true" transient="false" type="int" value="12372" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_VERTICAL_RESOLUTION" static="true" transient="false" type="int" value="12433" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_WIDTH" static="true" transient="false" type="int" value="12375" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EGL_WINDOW_BIT" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="EGL11" static="false" visibility="public">
+<implements name="javax.microedition.khronos.egl.EGL10">
+</implements>
+<field deprecated="not deprecated" final="true" name="EGL_CONTEXT_LOST" static="true" transient="false" type="int" value="12302" visibility="public" volatile="false">
+</field>
+</interface>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="EGLConfig" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="EGLConfig" static="false" type="javax.microedition.khronos.egl.EGLConfig" visibility="public">
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="EGLContext" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="EGLContext" static="false" type="javax.microedition.khronos.egl.EGLContext" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEGL" native="false" return="javax.microedition.khronos.egl.EGL" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getGL" native="false" return="javax.microedition.khronos.opengles.GL" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="EGLDisplay" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="EGLDisplay" static="false" type="javax.microedition.khronos.egl.EGLDisplay" visibility="public">
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="EGLSurface" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="EGLSurface" static="false" type="javax.microedition.khronos.egl.EGLSurface" visibility="public">
+</constructor>
+</class>
+</package></api>

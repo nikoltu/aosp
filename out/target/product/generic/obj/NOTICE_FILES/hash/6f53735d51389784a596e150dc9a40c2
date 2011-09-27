@@ -1,0 +1,5 @@
+out/target/product/generic/obj/NOTICE_FILES/src/system/lib/libdbus-tools-common.a.txt
+out/target/product/generic/obj/NOTICE_FILES/src/system/lib/libdbus.so.txt
+out/target/product/generic/obj/NOTICE_FILES/src/system/bin/dbus-daemon.txt
+out/target/product/generic/obj/NOTICE_FILES/src/system/xbin/dbus-send.txt
+out/target/product/generic/obj/NOTICE_FILES/src/system/xbin/dbus-monitor.txt

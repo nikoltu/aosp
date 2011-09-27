@@ -1,0 +1,610 @@
+<?xml version="1.0" ?><api><package name="java.util.concurrent.locks">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AbstractOwnableSynchronizer" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractOwnableSynchronizer" static="false" type="java.util.concurrent.locks.AbstractOwnableSynchronizer" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="getExclusiveOwnerThread" native="false" return="java.lang.Thread" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setExclusiveOwnerThread" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="t" type="java.lang.Thread">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.util.concurrent.locks.AbstractOwnableSynchronizer" final="false" name="AbstractQueuedLongSynchronizer" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractQueuedLongSynchronizer" static="false" type="java.util.concurrent.locks.AbstractQueuedLongSynchronizer" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="acquire" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="acquireInterruptibly" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg" type="long">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="acquireShared" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="acquireSharedInterruptibly" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg" type="long">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="compareAndSetState" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="expect" type="long">
+</parameter>
+<parameter name="update" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getExclusiveQueuedThreads" native="false" return="java.util.Collection&lt;java.lang.Thread&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getFirstQueuedThread" native="false" return="java.lang.Thread" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getQueueLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getQueuedThreads" native="false" return="java.util.Collection&lt;java.lang.Thread&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getSharedQueuedThreads" native="false" return="java.util.Collection&lt;java.lang.Thread&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getState" native="false" return="long" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getWaitQueueLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="condition" type="java.util.concurrent.locks.AbstractQueuedLongSynchronizer.ConditionObject">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getWaitingThreads" native="false" return="java.util.Collection&lt;java.lang.Thread&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="condition" type="java.util.concurrent.locks.AbstractQueuedLongSynchronizer.ConditionObject">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="hasContended" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="hasQueuedThreads" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="hasWaiters" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="condition" type="java.util.concurrent.locks.AbstractQueuedLongSynchronizer.ConditionObject">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isHeldExclusively" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isQueued" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="thread" type="java.lang.Thread">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="owns" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="condition" type="java.util.concurrent.locks.AbstractQueuedLongSynchronizer.ConditionObject">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="release" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="arg" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="releaseShared" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="arg" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setState" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="newState" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tryAcquire" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="arg" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="tryAcquireNanos" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="arg" type="long">
+</parameter>
+<parameter name="nanosTimeout" type="long">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tryAcquireShared" native="false" return="long" static="false" synchronized="false" visibility="protected">
+<parameter name="arg" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="tryAcquireSharedNanos" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="arg" type="long">
+</parameter>
+<parameter name="nanosTimeout" type="long">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tryRelease" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="arg" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tryReleaseShared" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="arg" type="long">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AbstractQueuedLongSynchronizer.ConditionObject" static="false" visibility="public">
+<implements name="java.util.concurrent.locks.Condition">
+</implements>
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractQueuedLongSynchronizer.ConditionObject" static="false" type="java.util.concurrent.locks.AbstractQueuedLongSynchronizer.ConditionObject" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="await" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="await" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="time" type="long">
+</parameter>
+<parameter name="unit" type="java.util.concurrent.TimeUnit">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="awaitNanos" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="nanosTimeout" type="long">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="awaitUninterruptibly" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="awaitUntil" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="deadline" type="java.util.Date">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getWaitQueueLength" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getWaitingThreads" native="false" return="java.util.Collection&lt;java.lang.Thread&gt;" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="hasWaiters" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="signal" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="signalAll" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.util.concurrent.locks.AbstractOwnableSynchronizer" final="false" name="AbstractQueuedSynchronizer" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractQueuedSynchronizer" static="false" type="java.util.concurrent.locks.AbstractQueuedSynchronizer" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="acquire" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="acquireInterruptibly" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg" type="int">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="acquireShared" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="acquireSharedInterruptibly" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg" type="int">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="compareAndSetState" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="expect" type="int">
+</parameter>
+<parameter name="update" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getExclusiveQueuedThreads" native="false" return="java.util.Collection&lt;java.lang.Thread&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getFirstQueuedThread" native="false" return="java.lang.Thread" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getQueueLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getQueuedThreads" native="false" return="java.util.Collection&lt;java.lang.Thread&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getSharedQueuedThreads" native="false" return="java.util.Collection&lt;java.lang.Thread&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getState" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getWaitQueueLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="condition" type="java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getWaitingThreads" native="false" return="java.util.Collection&lt;java.lang.Thread&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="condition" type="java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="hasContended" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="hasQueuedThreads" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="hasWaiters" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="condition" type="java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isHeldExclusively" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isQueued" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="thread" type="java.lang.Thread">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="owns" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="condition" type="java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="release" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="arg" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="releaseShared" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="arg" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setState" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="newState" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tryAcquire" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="arg" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="tryAcquireNanos" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="arg" type="int">
+</parameter>
+<parameter name="nanosTimeout" type="long">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tryAcquireShared" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="arg" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="tryAcquireSharedNanos" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="arg" type="int">
+</parameter>
+<parameter name="nanosTimeout" type="long">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tryRelease" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="arg" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tryReleaseShared" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="arg" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AbstractQueuedSynchronizer.ConditionObject" static="false" visibility="public">
+<implements name="java.util.concurrent.locks.Condition">
+</implements>
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractQueuedSynchronizer.ConditionObject" static="false" type="java.util.concurrent.locks.AbstractQueuedSynchronizer.ConditionObject" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="await" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="await" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="time" type="long">
+</parameter>
+<parameter name="unit" type="java.util.concurrent.TimeUnit">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="awaitNanos" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="nanosTimeout" type="long">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="awaitUninterruptibly" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="awaitUntil" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="deadline" type="java.util.Date">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getWaitQueueLength" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getWaitingThreads" native="false" return="java.util.Collection&lt;java.lang.Thread&gt;" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="hasWaiters" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="signal" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="signalAll" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Condition" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="await" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="await" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="time" type="long">
+</parameter>
+<parameter name="unit" type="java.util.concurrent.TimeUnit">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="awaitNanos" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="nanosTimeout" type="long">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="awaitUninterruptibly" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="awaitUntil" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="deadline" type="java.util.Date">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="signal" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="signalAll" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Lock" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="lock" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="lockInterruptibly" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newCondition" native="false" return="java.util.concurrent.locks.Condition" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="tryLock" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="tryLock" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="time" type="long">
+</parameter>
+<parameter name="unit" type="java.util.concurrent.TimeUnit">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="unlock" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="LockSupport" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getBlocker" native="false" return="java.lang.Object" static="true" synchronized="false" visibility="public">
+<parameter name="t" type="java.lang.Thread">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="park" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="blocker" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="park" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parkNanos" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="blocker" type="java.lang.Object">
+</parameter>
+<parameter name="nanos" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parkNanos" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="nanos" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parkUntil" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="blocker" type="java.lang.Object">
+</parameter>
+<parameter name="deadline" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parkUntil" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="deadline" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unpark" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="thread" type="java.lang.Thread">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ReadWriteLock" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="readLock" native="false" return="java.util.concurrent.locks.Lock" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeLock" native="false" return="java.util.concurrent.locks.Lock" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ReentrantLock" static="false" visibility="public">
+<implements name="java.util.concurrent.locks.Lock">
+</implements>
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ReentrantLock" static="false" type="java.util.concurrent.locks.ReentrantLock" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ReentrantLock" static="false" type="java.util.concurrent.locks.ReentrantLock" visibility="public">
+<parameter name="fair" type="boolean">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHoldCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOwner" native="false" return="java.lang.Thread" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getQueueLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getQueuedThreads" native="false" return="java.util.Collection&lt;java.lang.Thread&gt;" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWaitQueueLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="condition" type="java.util.concurrent.locks.Condition">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWaitingThreads" native="false" return="java.util.Collection&lt;java.lang.Thread&gt;" static="false" synchronized="false" visibility="protected">
+<parameter name="condition" type="java.util.concurrent.locks.Condition">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="hasQueuedThread" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="thread" type="java.lang.Thread">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="hasQueuedThreads" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasWaiters" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="condition" type="java.util.concurrent.locks.Condition">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isFair" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isHeldByCurrentThread" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isLocked" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="lock" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="lockInterruptibly" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newCondition" native="false" return="java.util.concurrent.locks.Condition" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tryLock" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tryLock" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="long">
+</parameter>
+<parameter name="unit" type="java.util.concurrent.TimeUnit">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unlock" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ReentrantReadWriteLock" static="false" visibility="public">
+<implements name="java.util.concurrent.locks.ReadWriteLock">
+</implements>
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ReentrantReadWriteLock" static="false" type="java.util.concurrent.locks.ReentrantReadWriteLock" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ReentrantReadWriteLock" static="false" type="java.util.concurrent.locks.ReentrantReadWriteLock" visibility="public">
+<parameter name="fair" type="boolean">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOwner" native="false" return="java.lang.Thread" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getQueueLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getQueuedReaderThreads" native="false" return="java.util.Collection&lt;java.lang.Thread&gt;" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getQueuedThreads" native="false" return="java.util.Collection&lt;java.lang.Thread&gt;" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getQueuedWriterThreads" native="false" return="java.util.Collection&lt;java.lang.Thread&gt;" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReadHoldCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReadLockCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWaitQueueLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="condition" type="java.util.concurrent.locks.Condition">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWaitingThreads" native="false" return="java.util.Collection&lt;java.lang.Thread&gt;" static="false" synchronized="false" visibility="protected">
+<parameter name="condition" type="java.util.concurrent.locks.Condition">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWriteHoldCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="hasQueuedThread" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="thread" type="java.lang.Thread">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="hasQueuedThreads" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasWaiters" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="condition" type="java.util.concurrent.locks.Condition">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isFair" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isWriteLocked" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isWriteLockedByCurrentThread" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readLock" native="false" return="java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeLock" native="false" return="java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ReentrantReadWriteLock.ReadLock" static="true" visibility="public">
+<implements name="java.util.concurrent.locks.Lock">
+</implements>
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ReentrantReadWriteLock.ReadLock" static="false" type="java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock" visibility="protected">
+<parameter name="lock" type="java.util.concurrent.locks.ReentrantReadWriteLock">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="lock" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="lockInterruptibly" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newCondition" native="false" return="java.util.concurrent.locks.Condition" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tryLock" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tryLock" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="long">
+</parameter>
+<parameter name="unit" type="java.util.concurrent.TimeUnit">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unlock" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ReentrantReadWriteLock.WriteLock" static="true" visibility="public">
+<implements name="java.util.concurrent.locks.Lock">
+</implements>
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ReentrantReadWriteLock.WriteLock" static="false" type="java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock" visibility="protected">
+<parameter name="lock" type="java.util.concurrent.locks.ReentrantReadWriteLock">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHoldCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isHeldByCurrentThread" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="lock" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="lockInterruptibly" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newCondition" native="false" return="java.util.concurrent.locks.Condition" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tryLock" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tryLock" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="long">
+</parameter>
+<parameter name="unit" type="java.util.concurrent.TimeUnit">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unlock" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package></api>

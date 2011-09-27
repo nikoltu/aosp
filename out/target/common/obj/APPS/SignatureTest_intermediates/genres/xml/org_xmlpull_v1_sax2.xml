@@ -1,0 +1,196 @@
+<?xml version="1.0" ?><api><package name="org.xmlpull.v1.sax2">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Driver" static="false" visibility="public">
+<implements name="org.xml.sax.Attributes">
+</implements>
+<implements name="org.xml.sax.Locator">
+</implements>
+<implements name="org.xml.sax.XMLReader">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Driver" static="false" type="org.xmlpull.v1.sax2.Driver" visibility="public">
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Driver" static="false" type="org.xmlpull.v1.sax2.Driver" visibility="public">
+<parameter name="pp" type="org.xmlpull.v1.XmlPullParser">
+</parameter>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getColumnNumber" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContentHandler" native="false" return="org.xml.sax.ContentHandler" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDTDHandler" native="false" return="org.xml.sax.DTDHandler" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEntityResolver" native="false" return="org.xml.sax.EntityResolver" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getErrorHandler" native="false" return="org.xml.sax.ErrorHandler" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFeature" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="SAXNotRecognizedException" type="org.xml.sax.SAXNotRecognizedException">
+</exception>
+<exception name="SAXNotSupportedException" type="org.xml.sax.SAXNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIndex" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<parameter name="localName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIndex" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="qName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLineNumber" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProperty" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="SAXNotRecognizedException" type="org.xml.sax.SAXNotRecognizedException">
+</exception>
+<exception name="SAXNotSupportedException" type="org.xml.sax.SAXNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPublicId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getQName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSystemId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<parameter name="localName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="qName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getURI" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValue" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValue" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<parameter name="localName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValue" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="qName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="source" type="org.xml.sax.InputSource">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseSubTree" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pp" type="org.xmlpull.v1.XmlPullParser">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setContentHandler" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="handler" type="org.xml.sax.ContentHandler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDTDHandler" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="handler" type="org.xml.sax.DTDHandler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEntityResolver" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="resolver" type="org.xml.sax.EntityResolver">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setErrorHandler" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="handler" type="org.xml.sax.ErrorHandler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFeature" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="boolean">
+</parameter>
+<exception name="SAXNotRecognizedException" type="org.xml.sax.SAXNotRecognizedException">
+</exception>
+<exception name="SAXNotSupportedException" type="org.xml.sax.SAXNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setProperty" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+<exception name="SAXNotRecognizedException" type="org.xml.sax.SAXNotRecognizedException">
+</exception>
+<exception name="SAXNotSupportedException" type="org.xml.sax.SAXNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startElement" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="namespace" type="java.lang.String">
+</parameter>
+<parameter name="localName" type="java.lang.String">
+</parameter>
+<parameter name="qName" type="java.lang.String">
+</parameter>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="APACHE_DYNAMIC_VALIDATION_FEATURE" static="true" transient="false" type="java.lang.String" value="&quot;http://apache.org/xml/features/validation/dynamic&quot;" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="APACHE_SCHEMA_VALIDATION_FEATURE" static="true" transient="false" type="java.lang.String" value="&quot;http://apache.org/xml/features/validation/schema&quot;" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DECLARATION_HANDLER_PROPERTY" static="true" transient="false" type="java.lang.String" value="&quot;http://xml.org/sax/properties/declaration-handler&quot;" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LEXICAL_HANDLER_PROPERTY" static="true" transient="false" type="java.lang.String" value="&quot;http://xml.org/sax/properties/lexical-handler&quot;" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NAMESPACES_FEATURE" static="true" transient="false" type="java.lang.String" value="&quot;http://xml.org/sax/features/namespaces&quot;" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NAMESPACE_PREFIXES_FEATURE" static="true" transient="false" type="java.lang.String" value="&quot;http://xml.org/sax/features/namespace-prefixes&quot;" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VALIDATION_FEATURE" static="true" transient="false" type="java.lang.String" value="&quot;http://xml.org/sax/features/validation&quot;" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="contentHandler" static="false" transient="false" type="org.xml.sax.ContentHandler" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="errorHandler" static="false" transient="false" type="org.xml.sax.ErrorHandler" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="pp" static="false" transient="false" type="org.xmlpull.v1.XmlPullParser" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="systemId" static="false" transient="false" type="java.lang.String" visibility="protected" volatile="false">
+</field>
+</class>
+</package></api>

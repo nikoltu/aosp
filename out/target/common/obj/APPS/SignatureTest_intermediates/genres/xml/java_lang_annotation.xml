@@ -1,0 +1,86 @@
+<?xml version="1.0" ?><api><package name="java.lang.annotation">
+<interface abstract="true" deprecated="not deprecated" final="false" name="Annotation" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="annotationType" native="false" return="java.lang.Class&lt;? extends java.lang.annotation.Annotation&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="equals" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="hashCode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="toString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Error" final="false" name="AnnotationFormatError" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AnnotationFormatError" static="false" type="java.lang.annotation.AnnotationFormatError" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AnnotationFormatError" static="false" type="java.lang.annotation.AnnotationFormatError" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AnnotationFormatError" static="false" type="java.lang.annotation.AnnotationFormatError" visibility="public">
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.RuntimeException" final="false" name="AnnotationTypeMismatchException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AnnotationTypeMismatchException" static="false" type="java.lang.annotation.AnnotationTypeMismatchException" visibility="public">
+<parameter name="element" type="java.lang.reflect.Method">
+</parameter>
+<parameter name="foundType" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="element" native="false" return="java.lang.reflect.Method" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="foundType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Documented" static="false" visibility="public">
+<implements name="java.lang.annotation.Annotation">
+</implements>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" final="true" name="ElementType" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="java.lang.annotation.ElementType" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="values" native="false" return="java.lang.annotation.ElementType[]" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.RuntimeException" final="false" name="IncompleteAnnotationException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IncompleteAnnotationException" static="false" type="java.lang.annotation.IncompleteAnnotationException" visibility="public">
+<parameter name="annotationType" type="java.lang.Class&lt;? extends java.lang.annotation.Annotation&gt;">
+</parameter>
+<parameter name="elementName" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="annotationType" native="false" return="java.lang.Class&lt;? extends java.lang.annotation.Annotation&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="elementName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Inherited" static="false" visibility="public">
+<implements name="java.lang.annotation.Annotation">
+</implements>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Retention" static="false" visibility="public">
+<implements name="java.lang.annotation.Annotation">
+</implements>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" final="true" name="RetentionPolicy" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="java.lang.annotation.RetentionPolicy" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="values" native="false" return="java.lang.annotation.RetentionPolicy[]" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Target" static="false" visibility="public">
+<implements name="java.lang.annotation.Annotation">
+</implements>
+</class>
+</package></api>

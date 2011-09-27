@@ -1,0 +1,178 @@
+<?xml version="1.0" ?><api><package name="android.speech.tts">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="TextToSpeech" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="TextToSpeech" static="false" type="android.speech.tts.TextToSpeech" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="listener" type="android.speech.tts.TextToSpeech.OnInitListener">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addEarcon" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="earcon" type="java.lang.String">
+</parameter>
+<parameter name="packagename" type="java.lang.String">
+</parameter>
+<parameter name="resourceId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addEarcon" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="earcon" type="java.lang.String">
+</parameter>
+<parameter name="filename" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addSpeech" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.String">
+</parameter>
+<parameter name="packagename" type="java.lang.String">
+</parameter>
+<parameter name="resourceId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addSpeech" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.String">
+</parameter>
+<parameter name="filename" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="areDefaultsEnforced" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultEngine" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLanguage" native="false" return="java.util.Locale" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isLanguageAvailable" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="loc" type="java.util.Locale">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isSpeaking" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="playEarcon" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="earcon" type="java.lang.String">
+</parameter>
+<parameter name="queueMode" type="int">
+</parameter>
+<parameter name="params" type="java.util.HashMap&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="playSilence" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="durationInMs" type="long">
+</parameter>
+<parameter name="queueMode" type="int">
+</parameter>
+<parameter name="params" type="java.util.HashMap&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEngineByPackageName" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="enginePackageName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLanguage" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="loc" type="java.util.Locale">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnUtteranceCompletedListener" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.speech.tts.TextToSpeech.OnUtteranceCompletedListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPitch" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="pitch" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSpeechRate" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="speechRate" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shutdown" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="speak" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.String">
+</parameter>
+<parameter name="queueMode" type="int">
+</parameter>
+<parameter name="params" type="java.util.HashMap&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stop" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="synthesizeToFile" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.String">
+</parameter>
+<parameter name="params" type="java.util.HashMap&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+<parameter name="filename" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ACTION_TTS_QUEUE_PROCESSING_COMPLETED" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.tts.TTS_QUEUE_PROCESSING_COMPLETED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LANG_AVAILABLE" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LANG_COUNTRY_AVAILABLE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LANG_COUNTRY_VAR_AVAILABLE" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LANG_MISSING_DATA" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LANG_NOT_SUPPORTED" static="true" transient="false" type="int" value="-2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="QUEUE_ADD" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="QUEUE_FLUSH" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SUCCESS" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="TextToSpeech.Engine" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="TextToSpeech.Engine" static="false" type="android.speech.tts.TextToSpeech.Engine" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="ACTION_CHECK_TTS_DATA" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.tts.engine.CHECK_TTS_DATA&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_INSTALL_TTS_DATA" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.tts.engine.INSTALL_TTS_DATA&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_TTS_DATA_INSTALLED" static="true" transient="false" type="java.lang.String" value="&quot;android.speech.tts.engine.TTS_DATA_INSTALLED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHECK_VOICE_DATA_BAD_DATA" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHECK_VOICE_DATA_FAIL" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHECK_VOICE_DATA_MISSING_DATA" static="true" transient="false" type="int" value="-2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHECK_VOICE_DATA_MISSING_VOLUME" static="true" transient="false" type="int" value="-3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHECK_VOICE_DATA_PASS" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFAULT_STREAM" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_AVAILABLE_VOICES" static="true" transient="false" type="java.lang.String" value="&quot;availableVoices&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_CHECK_VOICE_DATA_FOR" static="true" transient="false" type="java.lang.String" value="&quot;checkVoiceDataFor&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_TTS_DATA_INSTALLED" static="true" transient="false" type="java.lang.String" value="&quot;dataInstalled&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_UNAVAILABLE_VOICES" static="true" transient="false" type="java.lang.String" value="&quot;unavailableVoices&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_VOICE_DATA_FILES" static="true" transient="false" type="java.lang.String" value="&quot;dataFiles&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_VOICE_DATA_FILES_INFO" static="true" transient="false" type="java.lang.String" value="&quot;dataFilesInfo&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_VOICE_DATA_ROOT_DIRECTORY" static="true" transient="false" type="java.lang.String" value="&quot;dataRoot&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEY_PARAM_STREAM" static="true" transient="false" type="java.lang.String" value="&quot;streamType&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEY_PARAM_UTTERANCE_ID" static="true" transient="false" type="java.lang.String" value="&quot;utteranceId&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="TextToSpeech.OnInitListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onInit" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="status" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="TextToSpeech.OnUtteranceCompletedListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onUtteranceCompleted" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="utteranceId" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+</package></api>

@@ -1,0 +1,516 @@
+<?xml version="1.0" ?><api><package name="org.xmlpull.v1">
+<interface abstract="true" deprecated="not deprecated" final="false" name="XmlPullParser" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="defineEntityReplacementText" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="entityName" type="java.lang.String">
+</parameter>
+<parameter name="replacementText" type="java.lang.String">
+</parameter>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getAttributeCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getAttributeName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getAttributeNamespace" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getAttributePrefix" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getAttributeType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getAttributeValue" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getAttributeValue" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="namespace" type="java.lang.String">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getColumnNumber" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDepth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEventType" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getFeature" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getInputEncoding" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLineNumber" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNamespace" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="prefix" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNamespace" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNamespaceCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="depth" type="int">
+</parameter>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNamespacePrefix" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="pos" type="int">
+</parameter>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNamespaceUri" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="pos" type="int">
+</parameter>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPositionDescription" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPrefix" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getProperty" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getText" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTextCharacters" native="false" return="char[]" static="false" synchronized="false" visibility="public">
+<parameter name="holderForStartAndLength" type="int[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isAttributeDefault" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isEmptyElementTag" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isWhitespace" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="next" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="nextTag" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="nextText" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="nextToken" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="require" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="type" type="int">
+</parameter>
+<parameter name="namespace" type="java.lang.String">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setFeature" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="state" type="boolean">
+</parameter>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="in" type="java.io.Reader">
+</parameter>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="inputStream" type="java.io.InputStream">
+</parameter>
+<parameter name="inputEncoding" type="java.lang.String">
+</parameter>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setProperty" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="CDSECT" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="COMMENT" static="true" transient="false" type="int" value="9" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DOCDECL" static="true" transient="false" type="int" value="10" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="END_DOCUMENT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="END_TAG" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ENTITY_REF" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FEATURE_PROCESS_DOCDECL" static="true" transient="false" type="java.lang.String" value="&quot;http://xmlpull.org/v1/doc/features.html#process-docdecl&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FEATURE_PROCESS_NAMESPACES" static="true" transient="false" type="java.lang.String" value="&quot;http://xmlpull.org/v1/doc/features.html#process-namespaces&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FEATURE_REPORT_NAMESPACE_ATTRIBUTES" static="true" transient="false" type="java.lang.String" value="&quot;http://xmlpull.org/v1/doc/features.html#report-namespace-prefixes&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FEATURE_VALIDATION" static="true" transient="false" type="java.lang.String" value="&quot;http://xmlpull.org/v1/doc/features.html#validation&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IGNORABLE_WHITESPACE" static="true" transient="false" type="int" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NO_NAMESPACE" static="true" transient="false" type="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROCESSING_INSTRUCTION" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="START_DOCUMENT" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="START_TAG" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TEXT" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPES" static="true" transient="false" type="java.lang.String[]" value="null" visibility="public" volatile="false">
+</field>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Exception" final="false" name="XmlPullParserException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="XmlPullParserException" static="false" type="org.xmlpull.v1.XmlPullParserException" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="XmlPullParserException" static="false" type="org.xmlpull.v1.XmlPullParserException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+<parameter name="parser" type="org.xmlpull.v1.XmlPullParser">
+</parameter>
+<parameter name="chain" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getColumnNumber" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDetail" native="false" return="java.lang.Throwable" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLineNumber" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="false" name="column" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="detail" static="false" transient="false" type="java.lang.Throwable" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="row" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="XmlPullParserFactory" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="XmlPullParserFactory" static="false" type="org.xmlpull.v1.XmlPullParserFactory" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFeature" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isNamespaceAware" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isValidating" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="org.xmlpull.v1.XmlPullParserFactory" static="true" synchronized="false" visibility="public">
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="org.xmlpull.v1.XmlPullParserFactory" static="true" synchronized="false" visibility="public">
+<parameter name="classNames" type="java.lang.String">
+</parameter>
+<parameter name="context" type="java.lang.Class">
+</parameter>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newPullParser" native="false" return="org.xmlpull.v1.XmlPullParser" static="false" synchronized="false" visibility="public">
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newSerializer" native="false" return="org.xmlpull.v1.XmlSerializer" static="false" synchronized="false" visibility="public">
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFeature" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="state" type="boolean">
+</parameter>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setNamespaceAware" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="awareness" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setValidating" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="validating" type="boolean">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="PROPERTY_NAME" static="true" transient="false" type="java.lang.String" value="&quot;org.xmlpull.v1.XmlPullParserFactory&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="classNamesLocation" static="false" transient="false" type="java.lang.String" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="features" static="false" transient="false" type="java.util.HashMap" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="parserClasses" static="false" transient="false" type="java.util.ArrayList" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="serializerClasses" static="false" transient="false" type="java.util.ArrayList" visibility="protected" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="XmlSerializer" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="attribute" native="false" return="org.xmlpull.v1.XmlSerializer" static="false" synchronized="false" visibility="public">
+<parameter name="namespace" type="java.lang.String">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="cdsect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="comment" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="docdecl" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="endDocument" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="endTag" native="false" return="org.xmlpull.v1.XmlSerializer" static="false" synchronized="false" visibility="public">
+<parameter name="namespace" type="java.lang.String">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="entityRef" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="flush" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDepth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getFeature" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNamespace" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPrefix" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="namespace" type="java.lang.String">
+</parameter>
+<parameter name="generatePrefix" type="boolean">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getProperty" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="ignorableWhitespace" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="processingInstruction" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setFeature" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="state" type="boolean">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setOutput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="os" type="java.io.OutputStream">
+</parameter>
+<parameter name="encoding" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setOutput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="writer" type="java.io.Writer">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setPrefix" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="prefix" type="java.lang.String">
+</parameter>
+<parameter name="namespace" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setProperty" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="startDocument" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="encoding" type="java.lang.String">
+</parameter>
+<parameter name="standalone" type="java.lang.Boolean">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="startTag" native="false" return="org.xmlpull.v1.XmlSerializer" static="false" synchronized="false" visibility="public">
+<parameter name="namespace" type="java.lang.String">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="text" native="false" return="org.xmlpull.v1.XmlSerializer" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="text" native="false" return="org.xmlpull.v1.XmlSerializer" static="false" synchronized="false" visibility="public">
+<parameter name="buf" type="char[]">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+</interface>
+</package></api>

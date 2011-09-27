@@ -1,0 +1,19 @@
+out/target/product/generic/obj/SHARED_LIBRARIES/callgrind-arm-linux_intermediates/cachegrind/cg-arm.o: \
+ external/valgrind/main/cachegrind/cg-arm.c \
+ system/core/include/arch/linux-arm/AndroidConfig.h \
+ external/valgrind/main/include/pub_tool_basics.h \
+ external/valgrind/main/VEX/pub/libvex_basictypes.h \
+ prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include/stdarg.h \
+ external/valgrind/main/include/pub_tool_libcbase.h \
+ external/valgrind/main/include/pub_tool_libcassert.h \
+ external/valgrind/main/include/pub_tool_libcprint.h \
+ external/valgrind/main/cachegrind/cg_arch.h
+ external/valgrind/main/cachegrind/cg-arm.c :
+ system/core/include/arch/linux-arm/AndroidConfig.h :
+ external/valgrind/main/include/pub_tool_basics.h :
+ external/valgrind/main/VEX/pub/libvex_basictypes.h :
+ prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include/stdarg.h :
+ external/valgrind/main/include/pub_tool_libcbase.h :
+ external/valgrind/main/include/pub_tool_libcassert.h :
+ external/valgrind/main/include/pub_tool_libcprint.h :
+ external/valgrind/main/cachegrind/cg_arch.h :

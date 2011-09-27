@@ -1,0 +1,9 @@
+out/target/product/generic/obj/STATIC_LIBRARIES/libvex-arm-linux_intermediates/VEX/priv/host_generic_simd64.o: \
+ external/valgrind/main/VEX/priv/host_generic_simd64.c \
+ system/core/include/arch/linux-arm/AndroidConfig.h \
+ external/valgrind/main/VEX/pub/libvex_basictypes.h \
+ external/valgrind/main/VEX/priv/host_generic_simd64.h
+ external/valgrind/main/VEX/priv/host_generic_simd64.c :
+ system/core/include/arch/linux-arm/AndroidConfig.h :
+ external/valgrind/main/VEX/pub/libvex_basictypes.h :
+ external/valgrind/main/VEX/priv/host_generic_simd64.h :

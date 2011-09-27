@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:32
+-keep class android.test.InstrumentationTestRunner { <init>(...); }
+
+# view AndroidManifest.xml #generated:20
+-keep class com.android.tradefed.uitestapp.EditBoxActivity { <init>(...); }
+

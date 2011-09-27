@@ -1,0 +1,310 @@
+<?xml version="1.0" ?><api><package name="org.apache.http.entity">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AbstractHttpEntity" static="false" visibility="public">
+<implements name="org.apache.http.HttpEntity">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractHttpEntity" static="false" type="org.apache.http.entity.AbstractHttpEntity" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="consumeContent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContentEncoding" native="false" return="org.apache.http.Header" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContentType" native="false" return="org.apache.http.Header" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isChunked" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setChunked" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setContentEncoding" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="contentEncoding" type="org.apache.http.Header">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setContentEncoding" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ceString" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setContentType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="contentType" type="org.apache.http.Header">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setContentType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ctString" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="chunked" static="false" transient="false" type="boolean" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="contentEncoding" static="false" transient="false" type="org.apache.http.Header" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="contentType" static="false" transient="false" type="org.apache.http.Header" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.entity.AbstractHttpEntity" final="false" name="BasicHttpEntity" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BasicHttpEntity" static="false" type="org.apache.http.entity.BasicHttpEntity" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContent" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContentLength" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isRepeatable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isStreaming" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setContent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="instream" type="java.io.InputStream">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setContentLength" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="len" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="outstream" type="java.io.OutputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.entity.HttpEntityWrapper" final="false" name="BufferedHttpEntity" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BufferedHttpEntity" static="false" type="org.apache.http.entity.BufferedHttpEntity" visibility="public">
+<parameter name="entity" type="org.apache.http.HttpEntity">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.entity.AbstractHttpEntity" final="false" name="ByteArrayEntity" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ByteArrayEntity" static="false" type="org.apache.http.entity.ByteArrayEntity" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContent" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContentLength" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isRepeatable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isStreaming" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="outstream" type="java.io.OutputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="content" static="false" transient="false" type="byte[]" value="null" visibility="protected" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ContentLengthStrategy" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="determineLength" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="message" type="org.apache.http.HttpMessage">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="CHUNKED" static="true" transient="false" type="int" value="-2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IDENTITY" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ContentProducer" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="writeTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="outstream" type="java.io.OutputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.entity.AbstractHttpEntity" final="false" name="EntityTemplate" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="EntityTemplate" static="false" type="org.apache.http.entity.EntityTemplate" visibility="public">
+<parameter name="contentproducer" type="org.apache.http.entity.ContentProducer">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContent" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContentLength" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isRepeatable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isStreaming" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="outstream" type="java.io.OutputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.entity.AbstractHttpEntity" final="false" name="FileEntity" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="FileEntity" static="false" type="org.apache.http.entity.FileEntity" visibility="public">
+<parameter name="file" type="java.io.File">
+</parameter>
+<parameter name="contentType" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContent" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContentLength" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isRepeatable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isStreaming" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="outstream" type="java.io.OutputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="file" static="false" transient="false" type="java.io.File" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="HttpEntityWrapper" static="false" visibility="public">
+<implements name="org.apache.http.HttpEntity">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="HttpEntityWrapper" static="false" type="org.apache.http.entity.HttpEntityWrapper" visibility="public">
+<parameter name="wrapped" type="org.apache.http.HttpEntity">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="consumeContent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContent" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContentEncoding" native="false" return="org.apache.http.Header" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContentLength" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContentType" native="false" return="org.apache.http.Header" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isChunked" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isRepeatable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isStreaming" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="outstream" type="java.io.OutputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="false" name="wrappedEntity" static="false" transient="false" type="org.apache.http.HttpEntity" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.entity.AbstractHttpEntity" final="false" name="InputStreamEntity" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="InputStreamEntity" static="false" type="org.apache.http.entity.InputStreamEntity" visibility="public">
+<parameter name="instream" type="java.io.InputStream">
+</parameter>
+<parameter name="length" type="long">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContent" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContentLength" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isRepeatable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isStreaming" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="outstream" type="java.io.OutputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.entity.AbstractHttpEntity" final="false" name="SerializableEntity" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SerializableEntity" static="false" type="org.apache.http.entity.SerializableEntity" visibility="public">
+<parameter name="ser" type="java.io.Serializable">
+</parameter>
+<parameter name="bufferize" type="boolean">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContent" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContentLength" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isRepeatable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isStreaming" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="outstream" type="java.io.OutputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.entity.AbstractHttpEntity" final="false" name="StringEntity" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="StringEntity" static="false" type="org.apache.http.entity.StringEntity" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+<parameter name="charset" type="java.lang.String">
+</parameter>
+<exception name="UnsupportedEncodingException" type="java.io.UnsupportedEncodingException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StringEntity" static="false" type="org.apache.http.entity.StringEntity" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+<exception name="UnsupportedEncodingException" type="java.io.UnsupportedEncodingException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContent" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContentLength" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isRepeatable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isStreaming" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="outstream" type="java.io.OutputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="content" static="false" transient="false" type="byte[]" value="null" visibility="protected" volatile="false">
+</field>
+</class>
+</package></api>

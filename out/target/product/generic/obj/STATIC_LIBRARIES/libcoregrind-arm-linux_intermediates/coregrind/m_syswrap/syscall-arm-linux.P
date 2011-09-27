@@ -1,0 +1,19 @@
+out/target/product/generic/obj/STATIC_LIBRARIES/libcoregrind-arm-linux_intermediates/coregrind/m_syswrap/syscall-arm-linux.o: \
+ external/valgrind/main/coregrind/m_syswrap/syscall-arm-linux.S \
+ system/core/include/arch/linux-arm/AndroidConfig.h \
+ external/valgrind/main/coregrind/pub_core_basics_asm.h \
+ external/valgrind/main/include/pub_tool_basics_asm.h \
+ external/valgrind/main/config.h \
+ external/valgrind/main/coregrind/pub_core_vkiscnums_asm.h \
+ external/valgrind/main/include/pub_tool_vkiscnums_asm.h \
+ external/valgrind/main/include/vki/vki-scnums-arm-linux.h \
+ external/valgrind/main/VEX/pub/libvex_guest_offsets.h
+ external/valgrind/main/coregrind/m_syswrap/syscall-arm-linux.S :
+ system/core/include/arch/linux-arm/AndroidConfig.h :
+ external/valgrind/main/coregrind/pub_core_basics_asm.h :
+ external/valgrind/main/include/pub_tool_basics_asm.h :
+ external/valgrind/main/config.h :
+ external/valgrind/main/coregrind/pub_core_vkiscnums_asm.h :
+ external/valgrind/main/include/pub_tool_vkiscnums_asm.h :
+ external/valgrind/main/include/vki/vki-scnums-arm-linux.h :
+ external/valgrind/main/VEX/pub/libvex_guest_offsets.h :

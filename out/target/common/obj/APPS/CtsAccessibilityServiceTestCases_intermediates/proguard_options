@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:26
+-keep class android.accessibilityservice.cts.AccessibilityEndToEndTestActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:31
+-keep class android.test.InstrumentationTestRunner { <init>(...); }
+

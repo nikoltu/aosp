@@ -1,0 +1,5 @@
+out/target/product/generic/obj/EXECUTABLES/crasher_intermediates/arm/crashglue.o: \
+ system/core/debuggerd/arm/crashglue.S \
+ system/core/include/arch/linux-arm/AndroidConfig.h
+ system/core/debuggerd/arm/crashglue.S :
+ system/core/include/arch/linux-arm/AndroidConfig.h :

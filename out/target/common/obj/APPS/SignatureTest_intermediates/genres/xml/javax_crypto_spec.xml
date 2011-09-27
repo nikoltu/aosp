@@ -1,0 +1,352 @@
+<?xml version="1.0" ?><api><package name="javax.crypto.spec">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DESKeySpec" static="false" visibility="public">
+<implements name="java.security.spec.KeySpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DESKeySpec" static="false" type="javax.crypto.spec.DESKeySpec" visibility="public">
+<parameter name="key" type="byte[]">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DESKeySpec" static="false" type="javax.crypto.spec.DESKeySpec" visibility="public">
+<parameter name="key" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getKey" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isParityAdjusted" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="key" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isWeak" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="key" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="DES_KEY_LEN" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DESedeKeySpec" static="false" visibility="public">
+<implements name="java.security.spec.KeySpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DESedeKeySpec" static="false" type="javax.crypto.spec.DESedeKeySpec" visibility="public">
+<parameter name="key" type="byte[]">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DESedeKeySpec" static="false" type="javax.crypto.spec.DESedeKeySpec" visibility="public">
+<parameter name="key" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getKey" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isParityAdjusted" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="key" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="DES_EDE_KEY_LEN" static="true" transient="false" type="int" value="24" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DHGenParameterSpec" static="false" visibility="public">
+<implements name="java.security.spec.AlgorithmParameterSpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DHGenParameterSpec" static="false" type="javax.crypto.spec.DHGenParameterSpec" visibility="public">
+<parameter name="primeSize" type="int">
+</parameter>
+<parameter name="exponentSize" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getExponentSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrimeSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DHParameterSpec" static="false" visibility="public">
+<implements name="java.security.spec.AlgorithmParameterSpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DHParameterSpec" static="false" type="javax.crypto.spec.DHParameterSpec" visibility="public">
+<parameter name="p" type="java.math.BigInteger">
+</parameter>
+<parameter name="g" type="java.math.BigInteger">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DHParameterSpec" static="false" type="javax.crypto.spec.DHParameterSpec" visibility="public">
+<parameter name="p" type="java.math.BigInteger">
+</parameter>
+<parameter name="g" type="java.math.BigInteger">
+</parameter>
+<parameter name="l" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getG" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getL" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getP" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DHPrivateKeySpec" static="false" visibility="public">
+<implements name="java.security.spec.KeySpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DHPrivateKeySpec" static="false" type="javax.crypto.spec.DHPrivateKeySpec" visibility="public">
+<parameter name="x" type="java.math.BigInteger">
+</parameter>
+<parameter name="p" type="java.math.BigInteger">
+</parameter>
+<parameter name="g" type="java.math.BigInteger">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getG" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getP" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getX" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DHPublicKeySpec" static="false" visibility="public">
+<implements name="java.security.spec.KeySpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DHPublicKeySpec" static="false" type="javax.crypto.spec.DHPublicKeySpec" visibility="public">
+<parameter name="y" type="java.math.BigInteger">
+</parameter>
+<parameter name="p" type="java.math.BigInteger">
+</parameter>
+<parameter name="g" type="java.math.BigInteger">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getG" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getP" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getY" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="IvParameterSpec" static="false" visibility="public">
+<implements name="java.security.spec.AlgorithmParameterSpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="IvParameterSpec" static="false" type="javax.crypto.spec.IvParameterSpec" visibility="public">
+<parameter name="iv" type="byte[]">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="IvParameterSpec" static="false" type="javax.crypto.spec.IvParameterSpec" visibility="public">
+<parameter name="iv" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIV" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="OAEPParameterSpec" static="false" visibility="public">
+<implements name="java.security.spec.AlgorithmParameterSpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="OAEPParameterSpec" static="false" type="javax.crypto.spec.OAEPParameterSpec" visibility="public">
+<parameter name="mdName" type="java.lang.String">
+</parameter>
+<parameter name="mgfName" type="java.lang.String">
+</parameter>
+<parameter name="mgfSpec" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<parameter name="pSrc" type="javax.crypto.spec.PSource">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDigestAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMGFAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMGFParameters" native="false" return="java.security.spec.AlgorithmParameterSpec" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPSource" native="false" return="javax.crypto.spec.PSource" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="DEFAULT" static="true" transient="false" type="javax.crypto.spec.OAEPParameterSpec" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="PBEKeySpec" static="false" visibility="public">
+<implements name="java.security.spec.KeySpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="PBEKeySpec" static="false" type="javax.crypto.spec.PBEKeySpec" visibility="public">
+<parameter name="password" type="char[]">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="PBEKeySpec" static="false" type="javax.crypto.spec.PBEKeySpec" visibility="public">
+<parameter name="password" type="char[]">
+</parameter>
+<parameter name="salt" type="byte[]">
+</parameter>
+<parameter name="iterationCount" type="int">
+</parameter>
+<parameter name="keyLength" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="PBEKeySpec" static="false" type="javax.crypto.spec.PBEKeySpec" visibility="public">
+<parameter name="password" type="char[]">
+</parameter>
+<parameter name="salt" type="byte[]">
+</parameter>
+<parameter name="iterationCount" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="clearPassword" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getIterationCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getKeyLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getPassword" native="false" return="char[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getSalt" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="PBEParameterSpec" static="false" visibility="public">
+<implements name="java.security.spec.AlgorithmParameterSpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="PBEParameterSpec" static="false" type="javax.crypto.spec.PBEParameterSpec" visibility="public">
+<parameter name="salt" type="byte[]">
+</parameter>
+<parameter name="iterationCount" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIterationCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSalt" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="PSource" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PSource" static="false" type="javax.crypto.spec.PSource" visibility="protected">
+<parameter name="pSrcName" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="javax.crypto.spec.PSource" final="true" name="PSource.PSpecified" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PSource.PSpecified" static="false" type="javax.crypto.spec.PSource.PSpecified" visibility="public">
+<parameter name="p" type="byte[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValue" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="DEFAULT" static="true" transient="false" type="javax.crypto.spec.PSource.PSpecified" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RC2ParameterSpec" static="false" visibility="public">
+<implements name="java.security.spec.AlgorithmParameterSpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RC2ParameterSpec" static="false" type="javax.crypto.spec.RC2ParameterSpec" visibility="public">
+<parameter name="effectiveKeyBits" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="RC2ParameterSpec" static="false" type="javax.crypto.spec.RC2ParameterSpec" visibility="public">
+<parameter name="effectiveKeyBits" type="int">
+</parameter>
+<parameter name="iv" type="byte[]">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="RC2ParameterSpec" static="false" type="javax.crypto.spec.RC2ParameterSpec" visibility="public">
+<parameter name="effectiveKeyBits" type="int">
+</parameter>
+<parameter name="iv" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEffectiveKeyBits" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIV" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RC5ParameterSpec" static="false" visibility="public">
+<implements name="java.security.spec.AlgorithmParameterSpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RC5ParameterSpec" static="false" type="javax.crypto.spec.RC5ParameterSpec" visibility="public">
+<parameter name="version" type="int">
+</parameter>
+<parameter name="rounds" type="int">
+</parameter>
+<parameter name="wordSize" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="RC5ParameterSpec" static="false" type="javax.crypto.spec.RC5ParameterSpec" visibility="public">
+<parameter name="version" type="int">
+</parameter>
+<parameter name="rounds" type="int">
+</parameter>
+<parameter name="wordSize" type="int">
+</parameter>
+<parameter name="iv" type="byte[]">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="RC5ParameterSpec" static="false" type="javax.crypto.spec.RC5ParameterSpec" visibility="public">
+<parameter name="version" type="int">
+</parameter>
+<parameter name="rounds" type="int">
+</parameter>
+<parameter name="wordSize" type="int">
+</parameter>
+<parameter name="iv" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIV" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRounds" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVersion" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWordSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SecretKeySpec" static="false" visibility="public">
+<implements name="java.security.spec.KeySpec">
+</implements>
+<implements name="javax.crypto.SecretKey">
+</implements>
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="SecretKeySpec" static="false" type="javax.crypto.spec.SecretKeySpec" visibility="public">
+<parameter name="key" type="byte[]">
+</parameter>
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SecretKeySpec" static="false" type="javax.crypto.spec.SecretKeySpec" visibility="public">
+<parameter name="key" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEncoded" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFormat" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package></api>

@@ -1,0 +1,594 @@
+<?xml version="1.0" ?><api><package name="android.net.sip">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SipAudioCall" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SipAudioCall" static="false" type="android.net.sip.SipAudioCall" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="localProfile" type="android.net.sip.SipProfile">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="answerCall" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="int">
+</parameter>
+<exception name="SipException" type="android.net.sip.SipException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="attachCall" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="session" type="android.net.sip.SipSession">
+</parameter>
+<parameter name="sessionDescription" type="java.lang.String">
+</parameter>
+<exception name="SipException" type="android.net.sip.SipException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="continueCall" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="int">
+</parameter>
+<exception name="SipException" type="android.net.sip.SipException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="endCall" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="SipException" type="android.net.sip.SipException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalProfile" native="false" return="android.net.sip.SipProfile" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPeerProfile" native="false" return="android.net.sip.SipProfile" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getState" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="holdCall" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="int">
+</parameter>
+<exception name="SipException" type="android.net.sip.SipException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isInCall" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isMuted" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isOnHold" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="makeCall" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="peerProfile" type="android.net.sip.SipProfile">
+</parameter>
+<parameter name="sipSession" type="android.net.sip.SipSession">
+</parameter>
+<parameter name="timeout" type="int">
+</parameter>
+<exception name="SipException" type="android.net.sip.SipException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendDtmf" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="code" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendDtmf" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="code" type="int">
+</parameter>
+<parameter name="result" type="android.os.Message">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.net.sip.SipAudioCall.Listener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.net.sip.SipAudioCall.Listener">
+</parameter>
+<parameter name="callbackImmediately" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSpeakerMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="speakerMode" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startAudio" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toggleMute" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SipAudioCall.Listener" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SipAudioCall.Listener" static="false" type="android.net.sip.SipAudioCall.Listener" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCallBusy" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="call" type="android.net.sip.SipAudioCall">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCallEnded" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="call" type="android.net.sip.SipAudioCall">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCallEstablished" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="call" type="android.net.sip.SipAudioCall">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCallHeld" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="call" type="android.net.sip.SipAudioCall">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCalling" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="call" type="android.net.sip.SipAudioCall">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="call" type="android.net.sip.SipAudioCall">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onError" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="call" type="android.net.sip.SipAudioCall">
+</parameter>
+<parameter name="errorCode" type="int">
+</parameter>
+<parameter name="errorMessage" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onReadyToCall" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="call" type="android.net.sip.SipAudioCall">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onRinging" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="call" type="android.net.sip.SipAudioCall">
+</parameter>
+<parameter name="caller" type="android.net.sip.SipProfile">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onRingingBack" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="call" type="android.net.sip.SipAudioCall">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SipErrorCode" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="toString" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="errorCode" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CLIENT_ERROR" static="true" transient="false" type="int" value="-4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CROSS_DOMAIN_AUTHENTICATION" static="true" transient="false" type="int" value="-11" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DATA_CONNECTION_LOST" static="true" transient="false" type="int" value="-10" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INVALID_CREDENTIALS" static="true" transient="false" type="int" value="-8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INVALID_REMOTE_URI" static="true" transient="false" type="int" value="-6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IN_PROGRESS" static="true" transient="false" type="int" value="-9" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NO_ERROR" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PEER_NOT_REACHABLE" static="true" transient="false" type="int" value="-7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SERVER_ERROR" static="true" transient="false" type="int" value="-2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SERVER_UNREACHABLE" static="true" transient="false" type="int" value="-12" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SOCKET_ERROR" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TIME_OUT" static="true" transient="false" type="int" value="-5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TRANSACTION_TERMINTED" static="true" transient="false" type="int" value="-3" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Exception" final="false" name="SipException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SipException" static="false" type="android.net.sip.SipException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SipException" static="false" type="android.net.sip.SipException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SipException" static="false" type="android.net.sip.SipException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SipManager" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="localProfileUri" type="java.lang.String">
+</parameter>
+<exception name="SipException" type="android.net.sip.SipException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createSipSession" native="false" return="android.net.sip.SipSession" static="false" synchronized="false" visibility="public">
+<parameter name="localProfile" type="android.net.sip.SipProfile">
+</parameter>
+<parameter name="listener" type="android.net.sip.SipSession.Listener">
+</parameter>
+<exception name="SipException" type="android.net.sip.SipException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCallId" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="incomingCallIntent" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOfferSessionDescription" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="incomingCallIntent" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSessionFor" native="false" return="android.net.sip.SipSession" static="false" synchronized="false" visibility="public">
+<parameter name="incomingCallIntent" type="android.content.Intent">
+</parameter>
+<exception name="SipException" type="android.net.sip.SipException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isApiSupported" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isIncomingCallIntent" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isOpened" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="localProfileUri" type="java.lang.String">
+</parameter>
+<exception name="SipException" type="android.net.sip.SipException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isRegistered" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="localProfileUri" type="java.lang.String">
+</parameter>
+<exception name="SipException" type="android.net.sip.SipException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isSipWifiOnly" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isVoipSupported" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="makeAudioCall" native="false" return="android.net.sip.SipAudioCall" static="false" synchronized="false" visibility="public">
+<parameter name="localProfile" type="android.net.sip.SipProfile">
+</parameter>
+<parameter name="peerProfile" type="android.net.sip.SipProfile">
+</parameter>
+<parameter name="listener" type="android.net.sip.SipAudioCall.Listener">
+</parameter>
+<parameter name="timeout" type="int">
+</parameter>
+<exception name="SipException" type="android.net.sip.SipException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="makeAudioCall" native="false" return="android.net.sip.SipAudioCall" static="false" synchronized="false" visibility="public">
+<parameter name="localProfileUri" type="java.lang.String">
+</parameter>
+<parameter name="peerProfileUri" type="java.lang.String">
+</parameter>
+<parameter name="listener" type="android.net.sip.SipAudioCall.Listener">
+</parameter>
+<parameter name="timeout" type="int">
+</parameter>
+<exception name="SipException" type="android.net.sip.SipException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="android.net.sip.SipManager" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="open" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="localProfile" type="android.net.sip.SipProfile">
+</parameter>
+<exception name="SipException" type="android.net.sip.SipException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="open" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="localProfile" type="android.net.sip.SipProfile">
+</parameter>
+<parameter name="incomingCallPendingIntent" type="android.app.PendingIntent">
+</parameter>
+<parameter name="listener" type="android.net.sip.SipRegistrationListener">
+</parameter>
+<exception name="SipException" type="android.net.sip.SipException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="register" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="localProfile" type="android.net.sip.SipProfile">
+</parameter>
+<parameter name="expiryTime" type="int">
+</parameter>
+<parameter name="listener" type="android.net.sip.SipRegistrationListener">
+</parameter>
+<exception name="SipException" type="android.net.sip.SipException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRegistrationListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="localProfileUri" type="java.lang.String">
+</parameter>
+<parameter name="listener" type="android.net.sip.SipRegistrationListener">
+</parameter>
+<exception name="SipException" type="android.net.sip.SipException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="takeAudioCall" native="false" return="android.net.sip.SipAudioCall" static="false" synchronized="false" visibility="public">
+<parameter name="incomingCallIntent" type="android.content.Intent">
+</parameter>
+<parameter name="listener" type="android.net.sip.SipAudioCall.Listener">
+</parameter>
+<exception name="SipException" type="android.net.sip.SipException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unregister" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="localProfile" type="android.net.sip.SipProfile">
+</parameter>
+<parameter name="listener" type="android.net.sip.SipRegistrationListener">
+</parameter>
+<exception name="SipException" type="android.net.sip.SipException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="EXTRA_CALL_ID" static="true" transient="false" type="java.lang.String" value="&quot;android:sipCallID&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_OFFER_SD" static="true" transient="false" type="java.lang.String" value="&quot;android:sipOfferSD&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INCOMING_CALL_RESULT_CODE" static="true" transient="false" type="int" value="101" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SipProfile" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<implements name="android.os.Parcelable">
+</implements>
+<implements name="java.io.Serializable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAutoRegistration" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDisplayName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPassword" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPort" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProfileName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProtocol" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProxyAddress" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSendKeepAlive" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSipDomain" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUriString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUserName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="out" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SipProfile.Builder" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SipProfile.Builder" static="false" type="android.net.sip.SipProfile.Builder" visibility="public">
+<parameter name="profile" type="android.net.sip.SipProfile">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SipProfile.Builder" static="false" type="android.net.sip.SipProfile.Builder" visibility="public">
+<parameter name="uriString" type="java.lang.String">
+</parameter>
+<exception name="ParseException" type="java.text.ParseException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SipProfile.Builder" static="false" type="android.net.sip.SipProfile.Builder" visibility="public">
+<parameter name="username" type="java.lang.String">
+</parameter>
+<parameter name="serverDomain" type="java.lang.String">
+</parameter>
+<exception name="ParseException" type="java.text.ParseException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="build" native="false" return="android.net.sip.SipProfile" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAutoRegistration" native="false" return="android.net.sip.SipProfile.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="flag" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDisplayName" native="false" return="android.net.sip.SipProfile.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="displayName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOutboundProxy" native="false" return="android.net.sip.SipProfile.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="outboundProxy" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPassword" native="false" return="android.net.sip.SipProfile.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="password" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPort" native="false" return="android.net.sip.SipProfile.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="port" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setProfileName" native="false" return="android.net.sip.SipProfile.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setProtocol" native="false" return="android.net.sip.SipProfile.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="protocol" type="java.lang.String">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSendKeepAlive" native="false" return="android.net.sip.SipProfile.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="flag" type="boolean">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="SipRegistrationListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onRegistering" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="localProfileUri" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onRegistrationDone" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="localProfileUri" type="java.lang.String">
+</parameter>
+<parameter name="expiryTime" type="long">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onRegistrationFailed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="localProfileUri" type="java.lang.String">
+</parameter>
+<parameter name="errorCode" type="int">
+</parameter>
+<parameter name="errorMessage" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="SipSession" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="answerCall" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="sessionDescription" type="java.lang.String">
+</parameter>
+<parameter name="timeout" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="changeCall" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="sessionDescription" type="java.lang.String">
+</parameter>
+<parameter name="timeout" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="endCall" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCallId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalIp" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalProfile" native="false" return="android.net.sip.SipProfile" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPeerProfile" native="false" return="android.net.sip.SipProfile" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getState" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isInCall" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="makeCall" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="callee" type="android.net.sip.SipProfile">
+</parameter>
+<parameter name="sessionDescription" type="java.lang.String">
+</parameter>
+<parameter name="timeout" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="register" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="duration" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.net.sip.SipSession.Listener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unregister" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SipSession.Listener" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SipSession.Listener" static="false" type="android.net.sip.SipSession.Listener" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCallBusy" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="session" type="android.net.sip.SipSession">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCallChangeFailed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="session" type="android.net.sip.SipSession">
+</parameter>
+<parameter name="errorCode" type="int">
+</parameter>
+<parameter name="errorMessage" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCallEnded" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="session" type="android.net.sip.SipSession">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCallEstablished" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="session" type="android.net.sip.SipSession">
+</parameter>
+<parameter name="sessionDescription" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCalling" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="session" type="android.net.sip.SipSession">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onError" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="session" type="android.net.sip.SipSession">
+</parameter>
+<parameter name="errorCode" type="int">
+</parameter>
+<parameter name="errorMessage" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onRegistering" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="session" type="android.net.sip.SipSession">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onRegistrationDone" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="session" type="android.net.sip.SipSession">
+</parameter>
+<parameter name="duration" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onRegistrationFailed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="session" type="android.net.sip.SipSession">
+</parameter>
+<parameter name="errorCode" type="int">
+</parameter>
+<parameter name="errorMessage" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onRegistrationTimeout" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="session" type="android.net.sip.SipSession">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onRinging" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="session" type="android.net.sip.SipSession">
+</parameter>
+<parameter name="caller" type="android.net.sip.SipProfile">
+</parameter>
+<parameter name="sessionDescription" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onRingingBack" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="session" type="android.net.sip.SipSession">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SipSession.State" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="toString" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="state" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="DEREGISTERING" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INCOMING_CALL" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INCOMING_CALL_ANSWERING" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IN_CALL" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NOT_DEFINED" static="true" transient="false" type="int" value="101" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OUTGOING_CALL" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OUTGOING_CALL_CANCELING" static="true" transient="false" type="int" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OUTGOING_CALL_RING_BACK" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PINGING" static="true" transient="false" type="int" value="9" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="READY_TO_CALL" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REGISTERING" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+</class>
+</package></api>

@@ -1,0 +1,23 @@
+out/target/product/generic/obj/SHARED_LIBRARIES/libstagefright_enc_common_intermediates/cmnMemory.o: \
+ frameworks/base/media/libstagefright/codecs/common/cmnMemory.c \
+ system/core/include/arch/linux-arm/AndroidConfig.h \
+ frameworks/base/media/libstagefright/codecs/common/include/cmnMemory.h \
+ frameworks/base/media/libstagefright/codecs/common/include/voMem.h \
+ frameworks/base/media/libstagefright/codecs/common/include/voIndex.h \
+ frameworks/base/media/libstagefright/codecs/common/include/voType.h \
+ bionic/libc/include/malloc.h bionic/libc/include/sys/cdefs.h \
+ bionic/libc/include/sys/cdefs_elf.h \
+ bionic/libc/include/android/api-level.h \
+ prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include/stddef.h \
+ bionic/libc/include/string.h
+ frameworks/base/media/libstagefright/codecs/common/cmnMemory.c :
+ system/core/include/arch/linux-arm/AndroidConfig.h :
+ frameworks/base/media/libstagefright/codecs/common/include/cmnMemory.h :
+ frameworks/base/media/libstagefright/codecs/common/include/voMem.h :
+ frameworks/base/media/libstagefright/codecs/common/include/voIndex.h :
+ frameworks/base/media/libstagefright/codecs/common/include/voType.h :
+ bionic/libc/include/malloc.h bionic/libc/include/sys/cdefs.h :
+ bionic/libc/include/sys/cdefs_elf.h :
+ bionic/libc/include/android/api-level.h :
+ prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include/stddef.h :
+ bionic/libc/include/string.h :

@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:35
+-keep class android.tests.sigtest.InstrumentationRunner { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class android.tests.sigtest.SignatureTestActivity { <init>(...); }
+

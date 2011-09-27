@@ -1,0 +1,10 @@
+<?xml version="1.0" ?><api><package name="dalvik.annotation">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="TestTarget" static="false" visibility="public">
+<implements name="java.lang.annotation.Annotation">
+</implements>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="TestTargetClass" static="false" visibility="public">
+<implements name="java.lang.annotation.Annotation">
+</implements>
+</class>
+</package></api>

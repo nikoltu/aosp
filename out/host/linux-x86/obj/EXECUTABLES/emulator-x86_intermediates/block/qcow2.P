@@ -1,0 +1,227 @@
+out/host/linux-x86/obj/EXECUTABLES/emulator-x86_intermediates/block/qcow2.o: \
+ external/qemu/block/qcow2.c external/qemu/qemu-common.h \
+ external/qemu/android/config/linux-x86/config-host.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/stdlib.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/features.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/cdefs.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/wordsize.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/gnu/stubs.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/gnu/stubs-32.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../lib/gcc/i686-linux/4.4.3/include/stddef.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/waitflags.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/waitstatus.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/endian.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/endian.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/xlocale.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/types.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/types.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/typesizes.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/time.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/select.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/select.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/sigset.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/time.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/sysmacros.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/pthreadtypes.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/alloca.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/stdio.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/libio.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/_G_config.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/wchar.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../lib/gcc/i686-linux/4.4.3/include/stdarg.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/stdio_lim.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/sys_errlist.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/stdio.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../lib/gcc/i686-linux/4.4.3/include/stdbool.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/string.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/string.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/string2.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/strings.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/inttypes.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/stdint.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/wchar.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../lib/gcc/i686-linux/4.4.3/include-fixed/limits.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../lib/gcc/i686-linux/4.4.3/include-fixed/syslimits.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/limits.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/posix1_lim.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/local_lim.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/linux/limits.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/posix2_lim.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/xopen_lim.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/ctype.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/errno.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/errno.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/linux/errno.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/asm/errno.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/asm-generic/errno.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/asm-generic/errno-base.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/unistd.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/posix_opt.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/environments.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/confname.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/getopt.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/fcntl.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/fcntl.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/uio.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/stat.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/stat.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/time.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/assert.h \
+ external/qemu/qemu-os-posix.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/uio.h \
+ external/qemu/target-i386/cpu.h \
+ external/qemu/android/config/target-x86/config.h \
+ external/qemu/android/config/config.h external/qemu/cpu-defs.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/setjmp.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/setjmp.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/signal.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/signum.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/siginfo.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/sigaction.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/sigcontext.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/sigstack.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/ucontext.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/sigthread.h \
+ external/qemu/osdep.h external/qemu/qemu-queue.h \
+ external/qemu/targphys.h external/qemu/fpu/softfloat.h \
+ external/qemu/fpu/softfloat-native.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/math.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/huge_val.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/huge_valf.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/huge_vall.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/inf.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/nan.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/mathdef.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/mathcalls.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/mathinline.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/fenv.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/fenv.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/fenvinline.h \
+ external/qemu/cpu-all.h external/qemu/qemu-common.h \
+ external/qemu/cpu-common.h external/qemu/bswap.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/byteswap.h \
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/byteswap.h \
+ external/qemu/ioport.h external/qemu/exec-all.h external/qemu/qemu-log.h \
+ external/qemu/qemu-lock.h external/qemu/softmmu_defs.h \
+ external/qemu/softmmu_header.h external/qemu/target-i386/svm.h \
+ external/qemu/module.h external/qemu/block_int.h external/qemu/block.h \
+ external/qemu/qemu-aio.h external/qemu/qemu-char.h \
+ external/qemu/qemu-option.h external/qemu/qdict.h \
+ external/qemu/qobject.h external/qemu/qlist.h \
+ external/qemu/qemu-config.h external/qemu/qstring.h \
+ external/qemu/module.h external/qemu/distrib/zlib-1.2.3/zlib.h \
+ external/qemu/distrib/zlib-1.2.3/zconf.h external/qemu/aes.h \
+ external/qemu/block/qcow2.h
+ external/qemu/block/qcow2.c external/qemu/qemu-common.h :
+ external/qemu/android/config/linux-x86/config-host.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/stdlib.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/features.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/cdefs.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/wordsize.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/gnu/stubs.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/gnu/stubs-32.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../lib/gcc/i686-linux/4.4.3/include/stddef.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/waitflags.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/waitstatus.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/endian.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/endian.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/xlocale.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/types.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/types.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/typesizes.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/time.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/select.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/select.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/sigset.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/time.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/sysmacros.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/pthreadtypes.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/alloca.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/stdio.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/libio.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/_G_config.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/wchar.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../lib/gcc/i686-linux/4.4.3/include/stdarg.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/stdio_lim.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/sys_errlist.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/stdio.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../lib/gcc/i686-linux/4.4.3/include/stdbool.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/string.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/string.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/string2.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/strings.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/inttypes.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/stdint.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/wchar.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../lib/gcc/i686-linux/4.4.3/include-fixed/limits.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../lib/gcc/i686-linux/4.4.3/include-fixed/syslimits.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/limits.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/posix1_lim.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/local_lim.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/linux/limits.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/posix2_lim.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/xopen_lim.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/ctype.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/errno.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/errno.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/linux/errno.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/asm/errno.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/asm-generic/errno.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/asm-generic/errno-base.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/unistd.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/posix_opt.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/environments.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/confname.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/getopt.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/fcntl.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/fcntl.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/uio.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/stat.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/stat.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/time.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/assert.h :
+ external/qemu/qemu-os-posix.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/uio.h :
+ external/qemu/target-i386/cpu.h :
+ external/qemu/android/config/target-x86/config.h :
+ external/qemu/android/config/config.h external/qemu/cpu-defs.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/setjmp.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/setjmp.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/signal.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/signum.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/siginfo.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/sigaction.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/sigcontext.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/sigstack.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/sys/ucontext.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/sigthread.h :
+ external/qemu/osdep.h external/qemu/qemu-queue.h :
+ external/qemu/targphys.h external/qemu/fpu/softfloat.h :
+ external/qemu/fpu/softfloat-native.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/math.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/huge_val.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/huge_valf.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/huge_vall.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/inf.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/nan.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/mathdef.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/mathcalls.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/mathinline.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/fenv.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/fenv.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/fenvinline.h :
+ external/qemu/cpu-all.h external/qemu/qemu-common.h :
+ external/qemu/cpu-common.h external/qemu/bswap.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/byteswap.h :
+ prebuilt/linux-x86/toolchain/i686-linux-glibc2.7-4.4.3/bin/../sysroot/usr/include/bits/byteswap.h :
+ external/qemu/ioport.h external/qemu/exec-all.h external/qemu/qemu-log.h :
+ external/qemu/qemu-lock.h external/qemu/softmmu_defs.h :
+ external/qemu/softmmu_header.h external/qemu/target-i386/svm.h :
+ external/qemu/module.h external/qemu/block_int.h external/qemu/block.h :
+ external/qemu/qemu-aio.h external/qemu/qemu-char.h :
+ external/qemu/qemu-option.h external/qemu/qdict.h :
+ external/qemu/qobject.h external/qemu/qlist.h :
+ external/qemu/qemu-config.h external/qemu/qstring.h :
+ external/qemu/module.h external/qemu/distrib/zlib-1.2.3/zlib.h :
+ external/qemu/distrib/zlib-1.2.3/zconf.h external/qemu/aes.h :
+ external/qemu/block/qcow2.h :

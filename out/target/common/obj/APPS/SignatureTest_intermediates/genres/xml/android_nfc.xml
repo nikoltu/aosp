@@ -1,0 +1,182 @@
+<?xml version="1.0" ?><api><package name="android.nfc">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Exception" final="false" name="FormatException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="FormatException" static="false" type="android.nfc.FormatException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="FormatException" static="false" type="android.nfc.FormatException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="NdefMessage" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="NdefMessage" static="false" type="android.nfc.NdefMessage" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<exception name="FormatException" type="android.nfc.FormatException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="NdefMessage" static="false" type="android.nfc.NdefMessage" visibility="public">
+<parameter name="records" type="android.nfc.NdefRecord[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRecords" native="false" return="android.nfc.NdefRecord[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toByteArray" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="NdefRecord" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="NdefRecord" static="false" type="android.nfc.NdefRecord" visibility="public">
+<parameter name="tnf" type="short">
+</parameter>
+<parameter name="type" type="byte[]">
+</parameter>
+<parameter name="id" type="byte[]">
+</parameter>
+<parameter name="payload" type="byte[]">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="NdefRecord" static="false" type="android.nfc.NdefRecord" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<exception name="FormatException" type="android.nfc.FormatException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getId" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPayload" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTnf" native="false" return="short" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getType" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toByteArray" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RTD_ALTERNATIVE_CARRIER" static="true" transient="false" type="byte[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RTD_HANDOVER_CARRIER" static="true" transient="false" type="byte[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RTD_HANDOVER_REQUEST" static="true" transient="false" type="byte[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RTD_HANDOVER_SELECT" static="true" transient="false" type="byte[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RTD_SMART_POSTER" static="true" transient="false" type="byte[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RTD_TEXT" static="true" transient="false" type="byte[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RTD_URI" static="true" transient="false" type="byte[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TNF_ABSOLUTE_URI" static="true" transient="false" type="short" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TNF_EMPTY" static="true" transient="false" type="short" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TNF_EXTERNAL_TYPE" static="true" transient="false" type="short" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TNF_MIME_MEDIA" static="true" transient="false" type="short" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TNF_UNCHANGED" static="true" transient="false" type="short" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TNF_UNKNOWN" static="true" transient="false" type="short" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TNF_WELL_KNOWN" static="true" transient="false" type="short" value="1" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="NfcAdapter" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="disableForegroundDispatch" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="disableForegroundNdefPush" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="enableForegroundDispatch" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+<parameter name="intent" type="android.app.PendingIntent">
+</parameter>
+<parameter name="filters" type="android.content.IntentFilter[]">
+</parameter>
+<parameter name="techLists" type="java.lang.String[][]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="enableForegroundNdefPush" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="activity" type="android.app.Activity">
+</parameter>
+<parameter name="msg" type="android.nfc.NdefMessage">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultAdapter" native="false" return="android.nfc.NfcAdapter" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getDefaultAdapter" native="false" return="android.nfc.NfcAdapter" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="ACTION_NDEF_DISCOVERED" static="true" transient="false" type="java.lang.String" value="&quot;android.nfc.action.NDEF_DISCOVERED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_TAG_DISCOVERED" static="true" transient="false" type="java.lang.String" value="&quot;android.nfc.action.TAG_DISCOVERED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_TECH_DISCOVERED" static="true" transient="false" type="java.lang.String" value="&quot;android.nfc.action.TECH_DISCOVERED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_ID" static="true" transient="false" type="java.lang.String" value="&quot;android.nfc.extra.ID&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_NDEF_MESSAGES" static="true" transient="false" type="java.lang.String" value="&quot;android.nfc.extra.NDEF_MESSAGES&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_TAG" static="true" transient="false" type="java.lang.String" value="&quot;android.nfc.extra.TAG&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="NfcManager" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultAdapter" native="false" return="android.nfc.NfcAdapter" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="Tag" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getId" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTechList" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.IOException" final="false" name="TagLostException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="TagLostException" static="false" type="android.nfc.TagLostException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="TagLostException" static="false" type="android.nfc.TagLostException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+</package></api>

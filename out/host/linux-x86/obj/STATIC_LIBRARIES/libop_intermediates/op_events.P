@@ -1,0 +1,57 @@
+out/host/linux-x86/obj/STATIC_LIBRARIES/libop_intermediates/op_events.o: \
+ external/oprofile/libop/op_events.c \
+ system/core/include/arch/linux-x86/AndroidConfig.h \
+ external/oprofile/libop/op_events.h \
+ external/oprofile/libop/op_cpu_type.h \
+ external/oprofile/libutil/op_types.h /usr/include/sys/types.h \
+ /usr/include/features.h /usr/include/bits/predefs.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-32.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/time.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stddef.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/byteswap.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/sigset.h \
+ /usr/include/bits/time.h /usr/include/sys/sysmacros.h \
+ /usr/include/bits/pthreadtypes.h external/oprofile/libutil/op_list.h \
+ external/oprofile/libutil/op_libiberty.h external/oprofile/config.h \
+ external/oprofile/libutil/op_fileio.h \
+ external/oprofile/libutil/op_types.h /usr/include/stdio.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdarg.h \
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
+ /usr/include/bits/stdio.h external/oprofile/libutil/op_string.h \
+ /usr/include/string.h /usr/include/xlocale.h /usr/include/bits/string.h \
+ /usr/include/bits/string2.h /usr/include/stdlib.h \
+ external/oprofile/libutil/op_cpufreq.h \
+ external/oprofile/libop/op_hw_specific.h /usr/include/bits/waitflags.h \
+ /usr/include/bits/waitstatus.h /usr/include/alloca.h
+ external/oprofile/libop/op_events.c :
+ system/core/include/arch/linux-x86/AndroidConfig.h :
+ external/oprofile/libop/op_events.h :
+ external/oprofile/libop/op_cpu_type.h :
+ external/oprofile/libutil/op_types.h /usr/include/sys/types.h :
+ /usr/include/features.h /usr/include/bits/predefs.h :
+ /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h :
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-32.h :
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h :
+ /usr/include/time.h :
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stddef.h :
+ /usr/include/endian.h /usr/include/bits/endian.h :
+ /usr/include/bits/byteswap.h /usr/include/sys/select.h :
+ /usr/include/bits/select.h /usr/include/bits/sigset.h :
+ /usr/include/bits/time.h /usr/include/sys/sysmacros.h :
+ /usr/include/bits/pthreadtypes.h external/oprofile/libutil/op_list.h :
+ external/oprofile/libutil/op_libiberty.h external/oprofile/config.h :
+ external/oprofile/libutil/op_fileio.h :
+ external/oprofile/libutil/op_types.h /usr/include/stdio.h :
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h :
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdarg.h :
+ /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h :
+ /usr/include/bits/stdio.h external/oprofile/libutil/op_string.h :
+ /usr/include/string.h /usr/include/xlocale.h /usr/include/bits/string.h :
+ /usr/include/bits/string2.h /usr/include/stdlib.h :
+ external/oprofile/libutil/op_cpufreq.h :
+ external/oprofile/libop/op_hw_specific.h /usr/include/bits/waitflags.h :
+ /usr/include/bits/waitstatus.h /usr/include/alloca.h :

@@ -1,0 +1,406 @@
+<?xml version="1.0" ?><api><package name="org.apache.http.impl.conn.tsccm">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AbstractConnPool" static="false" visibility="public">
+<implements name="org.apache.http.impl.conn.tsccm.RefQueueHandler">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractConnPool" static="false" type="org.apache.http.impl.conn.tsccm.AbstractConnPool" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="closeConnection" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="conn" type="org.apache.http.conn.OperatedClientConnection">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="closeExpiredConnections" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="closeIdleConnections" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="idletime" type="long">
+</parameter>
+<parameter name="tunit" type="java.util.concurrent.TimeUnit">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="deleteClosedConnections" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="enableConnectionGC" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="freeEntry" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="entry" type="org.apache.http.impl.conn.tsccm.BasicPoolEntry">
+</parameter>
+<parameter name="reusable" type="boolean">
+</parameter>
+<parameter name="validDuration" type="long">
+</parameter>
+<parameter name="timeUnit" type="java.util.concurrent.TimeUnit">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getEntry" native="false" return="org.apache.http.impl.conn.tsccm.BasicPoolEntry" static="false" synchronized="false" visibility="public">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+<parameter name="state" type="java.lang.Object">
+</parameter>
+<parameter name="timeout" type="long">
+</parameter>
+<parameter name="tunit" type="java.util.concurrent.TimeUnit">
+</parameter>
+<exception name="ConnectionPoolTimeoutException" type="org.apache.http.conn.ConnectionPoolTimeoutException">
+</exception>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="handleLostEntry" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="handleReference" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ref" type="java.lang.ref.Reference">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="requestPoolEntry" native="false" return="org.apache.http.impl.conn.tsccm.PoolEntryRequest" static="false" synchronized="false" visibility="public">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+<parameter name="state" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shutdown" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="false" name="idleConnHandler" static="false" transient="false" type="org.apache.http.impl.conn.IdleConnectionHandler" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="isShutDown" static="false" transient="false" type="boolean" visibility="protected" volatile="true">
+</field>
+<field deprecated="not deprecated" final="false" name="issuedConnections" static="false" transient="false" type="java.util.Set" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="numConnections" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="poolLock" static="false" transient="false" type="java.util.concurrent.locks.Lock" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="refQueue" static="false" transient="false" type="java.lang.ref.ReferenceQueue" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.conn.AbstractPoolEntry" final="false" name="BasicPoolEntry" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BasicPoolEntry" static="false" type="org.apache.http.impl.conn.tsccm.BasicPoolEntry" visibility="public">
+<parameter name="op" type="org.apache.http.conn.ClientConnectionOperator">
+</parameter>
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+<parameter name="queue" type="java.lang.ref.ReferenceQueue&lt;java.lang.Object&gt;">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="getConnection" native="false" return="org.apache.http.conn.OperatedClientConnection" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getPlannedRoute" native="false" return="org.apache.http.conn.routing.HttpRoute" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getWeakRef" native="false" return="org.apache.http.impl.conn.tsccm.BasicPoolEntryRef" static="false" synchronized="false" visibility="protected">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.ref.WeakReference" final="false" name="BasicPoolEntryRef" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BasicPoolEntryRef" static="false" type="org.apache.http.impl.conn.tsccm.BasicPoolEntryRef" visibility="public">
+<parameter name="entry" type="org.apache.http.impl.conn.tsccm.BasicPoolEntry">
+</parameter>
+<parameter name="queue" type="java.lang.ref.ReferenceQueue&lt;java.lang.Object&gt;">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="getRoute" native="false" return="org.apache.http.conn.routing.HttpRoute" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.conn.AbstractPooledConnAdapter" final="false" name="BasicPooledConnAdapter" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BasicPooledConnAdapter" static="false" type="org.apache.http.impl.conn.tsccm.BasicPooledConnAdapter" visibility="protected">
+<parameter name="tsccm" type="org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager">
+</parameter>
+<parameter name="entry" type="org.apache.http.impl.conn.AbstractPoolEntry">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPoolEntry" native="false" return="org.apache.http.impl.conn.AbstractPoolEntry" static="false" synchronized="false" visibility="protected">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.conn.tsccm.AbstractConnPool" final="false" name="ConnPoolByRoute" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ConnPoolByRoute" static="false" type="org.apache.http.impl.conn.tsccm.ConnPoolByRoute" visibility="public">
+<parameter name="operator" type="org.apache.http.conn.ClientConnectionOperator">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="createEntry" native="false" return="org.apache.http.impl.conn.tsccm.BasicPoolEntry" static="false" synchronized="false" visibility="protected">
+<parameter name="rospl" type="org.apache.http.impl.conn.tsccm.RouteSpecificPool">
+</parameter>
+<parameter name="op" type="org.apache.http.conn.ClientConnectionOperator">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createFreeConnQueue" native="false" return="java.util.Queue&lt;org.apache.http.impl.conn.tsccm.BasicPoolEntry&gt;" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createRouteToPoolMap" native="false" return="java.util.Map&lt;org.apache.http.conn.routing.HttpRoute, org.apache.http.impl.conn.tsccm.RouteSpecificPool&gt;" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createWaitingThreadQueue" native="false" return="java.util.Queue&lt;org.apache.http.impl.conn.tsccm.WaitingThread&gt;" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="deleteClosedConnections" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="deleteEntry" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="entry" type="org.apache.http.impl.conn.tsccm.BasicPoolEntry">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="deleteLeastUsedEntry" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="freeEntry" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="entry" type="org.apache.http.impl.conn.tsccm.BasicPoolEntry">
+</parameter>
+<parameter name="reusable" type="boolean">
+</parameter>
+<parameter name="validDuration" type="long">
+</parameter>
+<parameter name="timeUnit" type="java.util.concurrent.TimeUnit">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getConnectionsInPool" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEntryBlocking" native="false" return="org.apache.http.impl.conn.tsccm.BasicPoolEntry" static="false" synchronized="false" visibility="protected">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+<parameter name="state" type="java.lang.Object">
+</parameter>
+<parameter name="timeout" type="long">
+</parameter>
+<parameter name="tunit" type="java.util.concurrent.TimeUnit">
+</parameter>
+<parameter name="aborter" type="org.apache.http.impl.conn.tsccm.WaitingThreadAborter">
+</parameter>
+<exception name="ConnectionPoolTimeoutException" type="org.apache.http.conn.ConnectionPoolTimeoutException">
+</exception>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFreeEntry" native="false" return="org.apache.http.impl.conn.tsccm.BasicPoolEntry" static="false" synchronized="false" visibility="protected">
+<parameter name="rospl" type="org.apache.http.impl.conn.tsccm.RouteSpecificPool">
+</parameter>
+<parameter name="state" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRoutePool" native="false" return="org.apache.http.impl.conn.tsccm.RouteSpecificPool" static="false" synchronized="false" visibility="protected">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+<parameter name="create" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="handleLostEntry" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newRouteSpecificPool" native="false" return="org.apache.http.impl.conn.tsccm.RouteSpecificPool" static="false" synchronized="false" visibility="protected">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newWaitingThread" native="false" return="org.apache.http.impl.conn.tsccm.WaitingThread" static="false" synchronized="false" visibility="protected">
+<parameter name="cond" type="java.util.concurrent.locks.Condition">
+</parameter>
+<parameter name="rospl" type="org.apache.http.impl.conn.tsccm.RouteSpecificPool">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="notifyWaitingThread" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="rospl" type="org.apache.http.impl.conn.tsccm.RouteSpecificPool">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="requestPoolEntry" native="false" return="org.apache.http.impl.conn.tsccm.PoolEntryRequest" static="false" synchronized="false" visibility="public">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+<parameter name="state" type="java.lang.Object">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="freeConnections" static="false" transient="false" type="java.util.Queue" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="maxTotalConnections" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="operator" static="false" transient="false" type="org.apache.http.conn.ClientConnectionOperator" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="routeToPool" static="false" transient="false" type="java.util.Map" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="waitingThreads" static="false" transient="false" type="java.util.Queue" visibility="protected" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PoolEntryRequest" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="abortRequest" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPoolEntry" native="false" return="org.apache.http.impl.conn.tsccm.BasicPoolEntry" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="long">
+</parameter>
+<parameter name="tunit" type="java.util.concurrent.TimeUnit">
+</parameter>
+<exception name="ConnectionPoolTimeoutException" type="org.apache.http.conn.ConnectionPoolTimeoutException">
+</exception>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="RefQueueHandler" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="handleReference" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ref" type="java.lang.ref.Reference&lt;?&gt;">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RefQueueWorker" static="false" visibility="public">
+<implements name="java.lang.Runnable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RefQueueWorker" static="false" type="org.apache.http.impl.conn.tsccm.RefQueueWorker" visibility="public">
+<parameter name="queue" type="java.lang.ref.ReferenceQueue&lt;?&gt;">
+</parameter>
+<parameter name="handler" type="org.apache.http.impl.conn.tsccm.RefQueueHandler">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shutdown" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="refHandler" static="false" transient="false" type="org.apache.http.impl.conn.tsccm.RefQueueHandler" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="refQueue" static="false" transient="false" type="java.lang.ref.ReferenceQueue" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="workerThread" static="false" transient="false" type="java.lang.Thread" visibility="protected" volatile="true">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RouteSpecificPool" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RouteSpecificPool" static="false" type="org.apache.http.impl.conn.tsccm.RouteSpecificPool" visibility="public">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+<parameter name="maxEntries" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="allocEntry" native="false" return="org.apache.http.impl.conn.tsccm.BasicPoolEntry" static="false" synchronized="false" visibility="public">
+<parameter name="state" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createdEntry" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="entry" type="org.apache.http.impl.conn.tsccm.BasicPoolEntry">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="deleteEntry" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="entry" type="org.apache.http.impl.conn.tsccm.BasicPoolEntry">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dropEntry" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="freeEntry" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="entry" type="org.apache.http.impl.conn.tsccm.BasicPoolEntry">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCapacity" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getEntryCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getMaxEntries" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getRoute" native="false" return="org.apache.http.conn.routing.HttpRoute" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasThread" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isUnused" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="nextThread" native="false" return="org.apache.http.impl.conn.tsccm.WaitingThread" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="queueThread" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="wt" type="org.apache.http.impl.conn.tsccm.WaitingThread">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeThread" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="wt" type="org.apache.http.impl.conn.tsccm.WaitingThread">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="freeEntries" static="false" transient="false" type="java.util.LinkedList" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="maxEntries" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="numEntries" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="route" static="false" transient="false" type="org.apache.http.conn.routing.HttpRoute" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="waitingThreads" static="false" transient="false" type="java.util.Queue" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ThreadSafeClientConnManager" static="false" visibility="public">
+<implements name="org.apache.http.conn.ClientConnectionManager">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ThreadSafeClientConnManager" static="false" type="org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="schreg" type="org.apache.http.conn.scheme.SchemeRegistry">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="closeExpiredConnections" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="closeIdleConnections" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="idleTimeout" type="long">
+</parameter>
+<parameter name="tunit" type="java.util.concurrent.TimeUnit">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createConnectionOperator" native="false" return="org.apache.http.conn.ClientConnectionOperator" static="false" synchronized="false" visibility="protected">
+<parameter name="schreg" type="org.apache.http.conn.scheme.SchemeRegistry">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createConnectionPool" native="false" return="org.apache.http.impl.conn.tsccm.AbstractConnPool" static="false" synchronized="false" visibility="protected">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getConnectionsInPool" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getConnectionsInPool" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSchemeRegistry" native="false" return="org.apache.http.conn.scheme.SchemeRegistry" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="releaseConnection" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="conn" type="org.apache.http.conn.ManagedClientConnection">
+</parameter>
+<parameter name="validDuration" type="long">
+</parameter>
+<parameter name="timeUnit" type="java.util.concurrent.TimeUnit">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="requestConnection" native="false" return="org.apache.http.conn.ClientConnectionRequest" static="false" synchronized="false" visibility="public">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+<parameter name="state" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shutdown" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="false" name="connOperator" static="false" transient="false" type="org.apache.http.conn.ClientConnectionOperator" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="connectionPool" static="false" transient="false" type="org.apache.http.impl.conn.tsccm.AbstractConnPool" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="schemeRegistry" static="false" transient="false" type="org.apache.http.conn.scheme.SchemeRegistry" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="WaitingThread" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="WaitingThread" static="false" type="org.apache.http.impl.conn.tsccm.WaitingThread" visibility="public">
+<parameter name="cond" type="java.util.concurrent.locks.Condition">
+</parameter>
+<parameter name="pool" type="org.apache.http.impl.conn.tsccm.RouteSpecificPool">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="await" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="deadline" type="java.util.Date">
+</parameter>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getCondition" native="false" return="java.util.concurrent.locks.Condition" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getPool" native="false" return="org.apache.http.impl.conn.tsccm.RouteSpecificPool" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getThread" native="false" return="java.lang.Thread" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="interrupt" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="wakeup" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="WaitingThreadAborter" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="WaitingThreadAborter" static="false" type="org.apache.http.impl.conn.tsccm.WaitingThreadAborter" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="abort" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setWaitingThread" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="waitingThread" type="org.apache.http.impl.conn.tsccm.WaitingThread">
+</parameter>
+</method>
+</class>
+</package></api>

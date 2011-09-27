@@ -1,0 +1,17 @@
+out/target/product/generic/obj/STATIC_LIBRARIES/libstagefright_aacenc_intermediates/src/memalign.o: \
+ frameworks/base/media/libstagefright/codecs/aacenc/src/memalign.c \
+ system/core/include/arch/linux-arm/AndroidConfig.h \
+ frameworks/base/media/libstagefright/codecs/aacenc/inc/memalign.h \
+ frameworks/base/media/libstagefright/codecs/common/include/voMem.h \
+ frameworks/base/media/libstagefright/codecs/common/include/voIndex.h \
+ frameworks/base/media/libstagefright/codecs/common/include/voType.h \
+ frameworks/base/media/libstagefright/codecs/aacenc/basic_op/typedef.h \
+ frameworks/base/media/libstagefright/codecs/aacenc/basic_op/typedefs.h
+ frameworks/base/media/libstagefright/codecs/aacenc/src/memalign.c :
+ system/core/include/arch/linux-arm/AndroidConfig.h :
+ frameworks/base/media/libstagefright/codecs/aacenc/inc/memalign.h :
+ frameworks/base/media/libstagefright/codecs/common/include/voMem.h :
+ frameworks/base/media/libstagefright/codecs/common/include/voIndex.h :
+ frameworks/base/media/libstagefright/codecs/common/include/voType.h :
+ frameworks/base/media/libstagefright/codecs/aacenc/basic_op/typedef.h :
+ frameworks/base/media/libstagefright/codecs/aacenc/basic_op/typedefs.h :

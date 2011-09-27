@@ -1,0 +1,2680 @@
+<?xml version="1.0" ?><api><package name="android.os">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AsyncTask" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AsyncTask" static="false" type="android.os.AsyncTask" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="cancel" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="mayInterruptIfRunning" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="doInBackground" native="false" return="Result" static="false" synchronized="false" visibility="protected">
+<parameter name="params" type="Params...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="execute" native="false" return="android.os.AsyncTask&lt;Params, Progress, Result&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="params" type="Params...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="get" native="false" return="Result" static="false" synchronized="false" visibility="public">
+<exception name="ExecutionException" type="java.util.concurrent.ExecutionException">
+</exception>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="get" native="false" return="Result" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="long">
+</parameter>
+<parameter name="unit" type="java.util.concurrent.TimeUnit">
+</parameter>
+<exception name="ExecutionException" type="java.util.concurrent.ExecutionException">
+</exception>
+<exception name="InterruptedException" type="java.lang.InterruptedException">
+</exception>
+<exception name="TimeoutException" type="java.util.concurrent.TimeoutException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getStatus" native="false" return="android.os.AsyncTask.Status" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isCancelled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCancelled" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onPostExecute" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="result" type="Result">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onPreExecute" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onProgressUpdate" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="values" type="Progress...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="publishProgress" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="values" type="Progress...">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" final="true" name="AsyncTask.Status" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="android.os.AsyncTask.Status" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="values" native="false" return="android.os.AsyncTask.Status[]" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.util.AndroidRuntimeException" final="false" name="BadParcelableException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BadParcelableException" static="false" type="android.os.BadParcelableException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BadParcelableException" static="false" type="android.os.BadParcelableException" visibility="public">
+<parameter name="cause" type="java.lang.Exception">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BatteryManager" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BatteryManager" static="false" type="android.os.BatteryManager" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="BATTERY_HEALTH_COLD" static="true" transient="false" type="int" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BATTERY_HEALTH_DEAD" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BATTERY_HEALTH_GOOD" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BATTERY_HEALTH_OVERHEAT" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BATTERY_HEALTH_OVER_VOLTAGE" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BATTERY_HEALTH_UNKNOWN" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BATTERY_HEALTH_UNSPECIFIED_FAILURE" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BATTERY_PLUGGED_AC" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BATTERY_PLUGGED_USB" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BATTERY_STATUS_CHARGING" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BATTERY_STATUS_DISCHARGING" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BATTERY_STATUS_FULL" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BATTERY_STATUS_NOT_CHARGING" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BATTERY_STATUS_UNKNOWN" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_HEALTH" static="true" transient="false" type="java.lang.String" value="&quot;health&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_ICON_SMALL" static="true" transient="false" type="java.lang.String" value="&quot;icon-small&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_LEVEL" static="true" transient="false" type="java.lang.String" value="&quot;level&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_PLUGGED" static="true" transient="false" type="java.lang.String" value="&quot;plugged&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_PRESENT" static="true" transient="false" type="java.lang.String" value="&quot;present&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_SCALE" static="true" transient="false" type="java.lang.String" value="&quot;scale&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_STATUS" static="true" transient="false" type="java.lang.String" value="&quot;status&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_TECHNOLOGY" static="true" transient="false" type="java.lang.String" value="&quot;technology&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_TEMPERATURE" static="true" transient="false" type="java.lang.String" value="&quot;temperature&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_VOLTAGE" static="true" transient="false" type="java.lang.String" value="&quot;voltage&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Binder" static="false" visibility="public">
+<implements name="android.os.IBinder">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Binder" static="false" type="android.os.Binder" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="attachInterface" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="owner" type="android.os.IInterface">
+</parameter>
+<parameter name="descriptor" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="clearCallingIdentity" native="true" return="long" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dump" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="fd" type="java.io.FileDescriptor">
+</parameter>
+<parameter name="args" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dump" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="fd" type="java.io.FileDescriptor">
+</parameter>
+<parameter name="fout" type="java.io.PrintWriter">
+</parameter>
+<parameter name="args" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="flushPendingCommands" native="true" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getCallingPid" native="true" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getCallingUid" native="true" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInterfaceDescriptor" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isBinderAlive" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="joinThreadPool" native="true" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="linkToDeath" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="recipient" type="android.os.IBinder.DeathRecipient">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTransact" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="code" type="int">
+</parameter>
+<parameter name="data" type="android.os.Parcel">
+</parameter>
+<parameter name="reply" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pingBinder" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="queryLocalInterface" native="false" return="android.os.IInterface" static="false" synchronized="false" visibility="public">
+<parameter name="descriptor" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="restoreCallingIdentity" native="true" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="token" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="transact" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="code" type="int">
+</parameter>
+<parameter name="data" type="android.os.Parcel">
+</parameter>
+<parameter name="reply" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unlinkToDeath" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="recipient" type="android.os.IBinder.DeathRecipient">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Build" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Build" static="false" type="android.os.Build" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="BOARD" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BOOTLOADER" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BRAND" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CPU_ABI" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CPU_ABI2" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEVICE" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DISPLAY" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FINGERPRINT" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HARDWARE" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HOST" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ID" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MANUFACTURER" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MODEL" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PRODUCT" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RADIO" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SERIAL" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TAGS" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TIME" static="true" transient="false" type="long" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNKNOWN" static="true" transient="false" type="java.lang.String" value="&quot;unknown&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="USER" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Build.VERSION" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Build.VERSION" static="false" type="android.os.Build.VERSION" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="CODENAME" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INCREMENTAL" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RELEASE" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="SDK" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SDK_INT" static="true" transient="false" type="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Build.VERSION_CODES" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Build.VERSION_CODES" static="false" type="android.os.Build.VERSION_CODES" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="BASE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BASE_1_1" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CUPCAKE" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CUR_DEVELOPMENT" static="true" transient="false" type="int" value="10000" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DONUT" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ECLAIR" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ECLAIR_0_1" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ECLAIR_MR1" static="true" transient="false" type="int" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FROYO" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GINGERBREAD" static="true" transient="false" type="int" value="9" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GINGERBREAD_MR1" static="true" transient="false" type="int" value="10" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="Bundle" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Bundle" static="false" type="android.os.Bundle" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Bundle" static="false" type="android.os.Bundle" visibility="public">
+<parameter name="loader" type="java.lang.ClassLoader">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Bundle" static="false" type="android.os.Bundle" visibility="public">
+<parameter name="capacity" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Bundle" static="false" type="android.os.Bundle" visibility="public">
+<parameter name="b" type="android.os.Bundle">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="containsKey" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBoolean" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBoolean" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBooleanArray" native="false" return="boolean[]" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBundle" native="false" return="android.os.Bundle" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getByte" native="false" return="byte" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getByte" native="false" return="java.lang.Byte" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="byte">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getByteArray" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getChar" native="false" return="char" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getChar" native="false" return="char" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="char">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCharArray" native="false" return="char[]" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCharSequence" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCharSequenceArray" native="false" return="java.lang.CharSequence[]" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCharSequenceArrayList" native="false" return="java.util.ArrayList&lt;java.lang.CharSequence&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDouble" native="false" return="double" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDouble" native="false" return="double" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDoubleArray" native="false" return="double[]" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFloat" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFloat" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFloatArray" native="false" return="float[]" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInt" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInt" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIntArray" native="false" return="int[]" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIntegerArrayList" native="false" return="java.util.ArrayList&lt;java.lang.Integer&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLong" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLong" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLongArray" native="false" return="long[]" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParcelable" native="false" return="T" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParcelableArray" native="false" return="android.os.Parcelable[]" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParcelableArrayList" native="false" return="java.util.ArrayList&lt;T&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSerializable" native="false" return="java.io.Serializable" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getShort" native="false" return="short" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getShort" native="false" return="short" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="short">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getShortArray" native="false" return="short[]" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSparseParcelableArray" native="false" return="android.util.SparseArray&lt;T&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStringArray" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStringArrayList" native="false" return="java.util.ArrayList&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasFileDescriptors" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isEmpty" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="keySet" native="false" return="java.util.Set&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putAll" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="map" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putBoolean" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putBooleanArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="boolean[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putBundle" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putByte" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="byte">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putByteArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putChar" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="char">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putCharArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="char[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putCharSequence" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putCharSequenceArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.CharSequence[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putCharSequenceArrayList" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.util.ArrayList&lt;java.lang.CharSequence&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putDouble" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putDoubleArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="double[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putFloat" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putFloatArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putInt" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putIntArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="int[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putIntegerArrayList" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.util.ArrayList&lt;java.lang.Integer&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putLong" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putLongArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="long[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putParcelable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="android.os.Parcelable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putParcelableArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="android.os.Parcelable[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putParcelableArrayList" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.util.ArrayList&lt;? extends android.os.Parcelable&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putSerializable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.io.Serializable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putShort" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="short">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putShortArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="short[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putSparseParcelableArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="android.util.SparseArray&lt;? extends android.os.Parcelable&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putString" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putStringArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putStringArrayList" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.util.ArrayList&lt;java.lang.String&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readFromParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parcel" type="android.os.Parcel">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="remove" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setClassLoader" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="loader" type="java.lang.ClassLoader">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="size" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parcel" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EMPTY" static="true" transient="false" type="android.os.Bundle" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ConditionVariable" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ConditionVariable" static="false" type="android.os.ConditionVariable" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ConditionVariable" static="false" type="android.os.ConditionVariable" visibility="public">
+<parameter name="state" type="boolean">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="block" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="block" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="open" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="CountDownTimer" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CountDownTimer" static="false" type="android.os.CountDownTimer" visibility="public">
+<parameter name="millisInFuture" type="long">
+</parameter>
+<parameter name="countDownInterval" type="long">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="cancel" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onFinish" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onTick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="millisUntilFinished" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="start" native="false" return="android.os.CountDownTimer" static="false" synchronized="true" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.os.RemoteException" final="false" name="DeadObjectException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DeadObjectException" static="false" type="android.os.DeadObjectException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="Debug" static="false" visibility="public">
+<method abstract="false" deprecated="deprecated" final="false" name="changeDebugPort" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="port" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dumpHprofData" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="fileName" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dumpService" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="fd" type="java.io.FileDescriptor">
+</parameter>
+<parameter name="args" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="enableEmulatorTraceOutput" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getBinderDeathObjectCount" native="true" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getBinderLocalObjectCount" native="true" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getBinderProxyObjectCount" native="true" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBinderReceivedTransactions" native="true" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBinderSentTransactions" native="true" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGlobalAllocCount" native="false" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGlobalAllocSize" native="false" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGlobalClassInitCount" native="false" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGlobalClassInitTime" native="false" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGlobalExternalAllocCount" native="false" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGlobalExternalAllocSize" native="false" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGlobalExternalFreedCount" native="false" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGlobalExternalFreedSize" native="false" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGlobalFreedCount" native="false" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGlobalFreedSize" native="false" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGlobalGcInvocationCount" native="false" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLoadedClassCount" native="false" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMemoryInfo" native="true" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="memoryInfo" type="android.os.Debug.MemoryInfo">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNativeHeapAllocatedSize" native="true" return="long" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNativeHeapFreeSize" native="true" return="long" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNativeHeapSize" native="true" return="long" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getThreadAllocCount" native="false" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getThreadAllocSize" native="false" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getThreadExternalAllocCount" native="false" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getThreadExternalAllocSize" native="false" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getThreadGcInvocationCount" native="false" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isDebuggerConnected" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="printLoadedClasses" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetAllCounts" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetGlobalAllocCount" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetGlobalAllocSize" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetGlobalClassInitCount" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetGlobalClassInitTime" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetGlobalExternalAllocCount" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetGlobalExternalAllocSize" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetGlobalExternalFreedCount" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetGlobalExternalFreedSize" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetGlobalFreedCount" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetGlobalFreedSize" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetGlobalGcInvocationCount" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetThreadAllocCount" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetThreadAllocSize" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetThreadExternalAllocCount" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetThreadExternalAllocSize" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetThreadGcInvocationCount" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAllocationLimit" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="limit" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGlobalAllocationLimit" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="limit" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startAllocCounting" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startMethodTracing" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startMethodTracing" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="traceName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startMethodTracing" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="traceName" type="java.lang.String">
+</parameter>
+<parameter name="bufferSize" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startMethodTracing" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="traceName" type="java.lang.String">
+</parameter>
+<parameter name="bufferSize" type="int">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startNativeTracing" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stopAllocCounting" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stopMethodTracing" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stopNativeTracing" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="threadCpuTimeNanos" native="false" return="long" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="waitForDebugger" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="waitingForDebugger" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="SHOW_CLASSLOADER" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SHOW_FULL_DETAIL" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SHOW_INITIALIZED" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TRACE_COUNT_ALLOCS" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Debug.InstructionCount" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Debug.InstructionCount" static="false" type="android.os.Debug.InstructionCount" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="collect" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="globalMethodInvocations" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="globalTotal" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetAndStart" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Debug.MemoryInfo" static="true" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Debug.MemoryInfo" static="false" type="android.os.Debug.MemoryInfo" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTotalPrivateDirty" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTotalPss" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTotalSharedDirty" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readFromParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="source" type="android.os.Parcel">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="dalvikPrivateDirty" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="dalvikPss" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="dalvikSharedDirty" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="nativePrivateDirty" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="nativePss" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="nativeSharedDirty" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="otherPrivateDirty" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="otherPss" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="otherSharedDirty" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DropBoxManager" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DropBoxManager" static="false" type="android.os.DropBoxManager" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addFile" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="file" type="java.io.File">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addText" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="data" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNextEntry" native="false" return="android.os.DropBoxManager.Entry" static="false" synchronized="false" visibility="public">
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="msec" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isTagEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="tag" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ACTION_DROPBOX_ENTRY_ADDED" static="true" transient="false" type="java.lang.String" value="&quot;android.intent.action.DROPBOX_ENTRY_ADDED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_TAG" static="true" transient="false" type="java.lang.String" value="&quot;tag&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_TIME" static="true" transient="false" type="java.lang.String" value="&quot;time&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IS_EMPTY" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IS_GZIPPED" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IS_TEXT" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DropBoxManager.Entry" static="true" visibility="public">
+<implements name="java.io.Closeable">
+</implements>
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DropBoxManager.Entry" static="false" type="android.os.DropBoxManager.Entry" visibility="public">
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="millis" type="long">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DropBoxManager.Entry" static="false" type="android.os.DropBoxManager.Entry" visibility="public">
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="millis" type="long">
+</parameter>
+<parameter name="text" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DropBoxManager.Entry" static="false" type="android.os.DropBoxManager.Entry" visibility="public">
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="millis" type="long">
+</parameter>
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DropBoxManager.Entry" static="false" type="android.os.DropBoxManager.Entry" visibility="public">
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="millis" type="long">
+</parameter>
+<parameter name="data" type="android.os.ParcelFileDescriptor">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DropBoxManager.Entry" static="false" type="android.os.DropBoxManager.Entry" visibility="public">
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="millis" type="long">
+</parameter>
+<parameter name="data" type="java.io.File">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFlags" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputStream" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTag" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getText" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="maxBytes" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTimeMillis" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="out" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Environment" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Environment" static="false" type="android.os.Environment" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDataDirectory" native="false" return="java.io.File" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDownloadCacheDirectory" native="false" return="java.io.File" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getExternalStorageDirectory" native="false" return="java.io.File" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getExternalStoragePublicDirectory" native="false" return="java.io.File" static="true" synchronized="false" visibility="public">
+<parameter name="type" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getExternalStorageState" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRootDirectory" native="false" return="java.io.File" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isExternalStorageRemovable" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="false" name="DIRECTORY_ALARMS" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="DIRECTORY_DCIM" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="DIRECTORY_DOWNLOADS" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="DIRECTORY_MOVIES" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="DIRECTORY_MUSIC" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="DIRECTORY_NOTIFICATIONS" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="DIRECTORY_PICTURES" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="DIRECTORY_PODCASTS" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="DIRECTORY_RINGTONES" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_BAD_REMOVAL" static="true" transient="false" type="java.lang.String" value="&quot;bad_removal&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_CHECKING" static="true" transient="false" type="java.lang.String" value="&quot;checking&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_MOUNTED" static="true" transient="false" type="java.lang.String" value="&quot;mounted&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_MOUNTED_READ_ONLY" static="true" transient="false" type="java.lang.String" value="&quot;mounted_ro&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_NOFS" static="true" transient="false" type="java.lang.String" value="&quot;nofs&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_REMOVED" static="true" transient="false" type="java.lang.String" value="&quot;removed&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_SHARED" static="true" transient="false" type="java.lang.String" value="&quot;shared&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_UNMOUNTABLE" static="true" transient="false" type="java.lang.String" value="&quot;unmountable&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_UNMOUNTED" static="true" transient="false" type="java.lang.String" value="&quot;unmounted&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="FileObserver" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="FileObserver" static="false" type="android.os.FileObserver" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="FileObserver" static="false" type="android.os.FileObserver" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="mask" type="int">
+</parameter>
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="onEvent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="event" type="int">
+</parameter>
+<parameter name="path" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startWatching" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stopWatching" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="ACCESS" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ALL_EVENTS" static="true" transient="false" type="int" value="4095" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ATTRIB" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CLOSE_NOWRITE" static="true" transient="false" type="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CLOSE_WRITE" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CREATE" static="true" transient="false" type="int" value="256" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DELETE" static="true" transient="false" type="int" value="512" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DELETE_SELF" static="true" transient="false" type="int" value="1024" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MODIFY" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MOVED_FROM" static="true" transient="false" type="int" value="64" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MOVED_TO" static="true" transient="false" type="int" value="128" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MOVE_SELF" static="true" transient="false" type="int" value="2048" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OPEN" static="true" transient="false" type="int" value="32" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Handler" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Handler" static="false" type="android.os.Handler" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Handler" static="false" type="android.os.Handler" visibility="public">
+<parameter name="callback" type="android.os.Handler.Callback">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Handler" static="false" type="android.os.Handler" visibility="public">
+<parameter name="looper" type="android.os.Looper">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Handler" static="false" type="android.os.Handler" visibility="public">
+<parameter name="looper" type="android.os.Looper">
+</parameter>
+<parameter name="callback" type="android.os.Handler.Callback">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="dispatchMessage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="msg" type="android.os.Message">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="dump" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pw" type="android.util.Printer">
+</parameter>
+<parameter name="prefix" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getLooper" native="false" return="android.os.Looper" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="handleMessage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="msg" type="android.os.Message">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="hasMessages" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="what" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="hasMessages" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="what" type="int">
+</parameter>
+<parameter name="object" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="obtainMessage" native="false" return="android.os.Message" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="obtainMessage" native="false" return="android.os.Message" static="false" synchronized="false" visibility="public">
+<parameter name="what" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="obtainMessage" native="false" return="android.os.Message" static="false" synchronized="false" visibility="public">
+<parameter name="what" type="int">
+</parameter>
+<parameter name="obj" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="obtainMessage" native="false" return="android.os.Message" static="false" synchronized="false" visibility="public">
+<parameter name="what" type="int">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+<parameter name="arg2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="obtainMessage" native="false" return="android.os.Message" static="false" synchronized="false" visibility="public">
+<parameter name="what" type="int">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+<parameter name="arg2" type="int">
+</parameter>
+<parameter name="obj" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="post" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="r" type="java.lang.Runnable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="postAtFrontOfQueue" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="r" type="java.lang.Runnable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="postAtTime" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="r" type="java.lang.Runnable">
+</parameter>
+<parameter name="uptimeMillis" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="postAtTime" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="r" type="java.lang.Runnable">
+</parameter>
+<parameter name="token" type="java.lang.Object">
+</parameter>
+<parameter name="uptimeMillis" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="postDelayed" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="r" type="java.lang.Runnable">
+</parameter>
+<parameter name="delayMillis" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="removeCallbacks" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="r" type="java.lang.Runnable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="removeCallbacks" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="r" type="java.lang.Runnable">
+</parameter>
+<parameter name="token" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="removeCallbacksAndMessages" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="token" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="removeMessages" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="what" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="removeMessages" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="what" type="int">
+</parameter>
+<parameter name="object" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="sendEmptyMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="what" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="sendEmptyMessageAtTime" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="what" type="int">
+</parameter>
+<parameter name="uptimeMillis" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="sendEmptyMessageDelayed" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="what" type="int">
+</parameter>
+<parameter name="delayMillis" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="sendMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="msg" type="android.os.Message">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="sendMessageAtFrontOfQueue" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="msg" type="android.os.Message">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendMessageAtTime" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="msg" type="android.os.Message">
+</parameter>
+<parameter name="uptimeMillis" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="sendMessageDelayed" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="msg" type="android.os.Message">
+</parameter>
+<parameter name="delayMillis" type="long">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Handler.Callback" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="handleMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="msg" type="android.os.Message">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Thread" final="false" name="HandlerThread" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HandlerThread" static="false" type="android.os.HandlerThread" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HandlerThread" static="false" type="android.os.HandlerThread" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="priority" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLooper" native="false" return="android.os.Looper" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getThreadId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onLooperPrepared" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="quit" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IBinder" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="dump" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="fd" type="java.io.FileDescriptor">
+</parameter>
+<parameter name="args" type="java.lang.String[]">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getInterfaceDescriptor" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isBinderAlive" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="linkToDeath" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="recipient" type="android.os.IBinder.DeathRecipient">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="pingBinder" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="queryLocalInterface" native="false" return="android.os.IInterface" static="false" synchronized="false" visibility="public">
+<parameter name="descriptor" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="transact" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="code" type="int">
+</parameter>
+<parameter name="data" type="android.os.Parcel">
+</parameter>
+<parameter name="reply" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="unlinkToDeath" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="recipient" type="android.os.IBinder.DeathRecipient">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="DUMP_TRANSACTION" static="true" transient="false" type="int" value="1598311760" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FIRST_CALL_TRANSACTION" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAG_ONEWAY" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INTERFACE_TRANSACTION" static="true" transient="false" type="int" value="1598968902" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LAST_CALL_TRANSACTION" static="true" transient="false" type="int" value="16777215" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PING_TRANSACTION" static="true" transient="false" type="int" value="1599098439" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IBinder.DeathRecipient" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="binderDied" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IInterface" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="asBinder" native="false" return="android.os.IBinder" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Looper" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="dump" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pw" type="android.util.Printer">
+</parameter>
+<parameter name="prefix" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getMainLooper" native="false" return="android.os.Looper" static="true" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getThread" native="false" return="java.lang.Thread" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="loop" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="myLooper" native="false" return="android.os.Looper" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="myQueue" native="false" return="android.os.MessageQueue" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="prepare" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="prepareMainLooper" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="quit" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMessageLogging" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="printer" type="android.util.Printer">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="MemoryFile" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="MemoryFile" static="false" type="android.os.MemoryFile" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="allowPurging" native="false" return="boolean" static="false" synchronized="true" visibility="public">
+<parameter name="allowPurging" type="boolean">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputStream" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOutputStream" native="false" return="java.io.OutputStream" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isPurgingAllowed" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="length" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readBytes" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="byte[]">
+</parameter>
+<parameter name="srcOffset" type="int">
+</parameter>
+<parameter name="destOffset" type="int">
+</parameter>
+<parameter name="count" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeBytes" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="byte[]">
+</parameter>
+<parameter name="srcOffset" type="int">
+</parameter>
+<parameter name="destOffset" type="int">
+</parameter>
+<parameter name="count" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="Message" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Message" static="false" type="android.os.Message" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="copyFrom" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="o" type="android.os.Message">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCallback" native="false" return="java.lang.Runnable" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getData" native="false" return="android.os.Bundle" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTarget" native="false" return="android.os.Handler" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWhen" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="obtain" native="false" return="android.os.Message" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="obtain" native="false" return="android.os.Message" static="true" synchronized="false" visibility="public">
+<parameter name="orig" type="android.os.Message">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="obtain" native="false" return="android.os.Message" static="true" synchronized="false" visibility="public">
+<parameter name="h" type="android.os.Handler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="obtain" native="false" return="android.os.Message" static="true" synchronized="false" visibility="public">
+<parameter name="h" type="android.os.Handler">
+</parameter>
+<parameter name="callback" type="java.lang.Runnable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="obtain" native="false" return="android.os.Message" static="true" synchronized="false" visibility="public">
+<parameter name="h" type="android.os.Handler">
+</parameter>
+<parameter name="what" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="obtain" native="false" return="android.os.Message" static="true" synchronized="false" visibility="public">
+<parameter name="h" type="android.os.Handler">
+</parameter>
+<parameter name="what" type="int">
+</parameter>
+<parameter name="obj" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="obtain" native="false" return="android.os.Message" static="true" synchronized="false" visibility="public">
+<parameter name="h" type="android.os.Handler">
+</parameter>
+<parameter name="what" type="int">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+<parameter name="arg2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="obtain" native="false" return="android.os.Message" static="true" synchronized="false" visibility="public">
+<parameter name="h" type="android.os.Handler">
+</parameter>
+<parameter name="what" type="int">
+</parameter>
+<parameter name="arg1" type="int">
+</parameter>
+<parameter name="arg2" type="int">
+</parameter>
+<parameter name="obj" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="peekData" native="false" return="android.os.Bundle" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="recycle" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendToTarget" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTarget" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="android.os.Handler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="arg1" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="arg2" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="obj" static="false" transient="false" type="java.lang.Object" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="replyTo" static="false" transient="false" type="android.os.Messenger" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="what" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="MessageQueue" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="true" name="addIdleHandler" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="handler" type="android.os.MessageQueue.IdleHandler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="removeIdleHandler" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="handler" type="android.os.MessageQueue.IdleHandler">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="MessageQueue.IdleHandler" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="queueIdle" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="Messenger" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Messenger" static="false" type="android.os.Messenger" visibility="public">
+<parameter name="target" type="android.os.Handler">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Messenger" static="false" type="android.os.Messenger" visibility="public">
+<parameter name="target" type="android.os.IBinder">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBinder" native="false" return="android.os.IBinder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readMessengerOrNullFromParcel" native="false" return="android.os.Messenger" static="true" synchronized="false" visibility="public">
+<parameter name="in" type="android.os.Parcel">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="send" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="message" type="android.os.Message">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeMessengerOrNullToParcel" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="messenger" type="android.os.Messenger">
+</parameter>
+<parameter name="out" type="android.os.Parcel">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="out" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="Parcel" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="true" name="appendFrom" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parcel" type="android.os.Parcel">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="createBinderArray" native="false" return="android.os.IBinder[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="createBinderArrayList" native="false" return="java.util.ArrayList&lt;android.os.IBinder&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="createBooleanArray" native="false" return="boolean[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="createByteArray" native="true" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="createCharArray" native="false" return="char[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="createDoubleArray" native="false" return="double[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="createFloatArray" native="false" return="float[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="createIntArray" native="false" return="int[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="createLongArray" native="false" return="long[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="createStringArray" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="createStringArrayList" native="false" return="java.util.ArrayList&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="createTypedArray" native="false" return="T[]" static="false" synchronized="false" visibility="public">
+<parameter name="c" type="android.os.Parcelable.Creator&lt;T&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="createTypedArrayList" native="false" return="java.util.ArrayList&lt;T&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="c" type="android.os.Parcelable.Creator&lt;T&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="dataAvail" native="true" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="dataCapacity" native="true" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="dataPosition" native="true" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="dataSize" native="true" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="enforceInterface" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="interfaceName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="hasFileDescriptors" native="true" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="marshall" native="true" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="obtain" native="false" return="android.os.Parcel" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="obtain" native="false" return="android.os.Parcel" static="true" synchronized="false" visibility="protected">
+<parameter name="obj" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readArray" native="false" return="java.lang.Object[]" static="false" synchronized="false" visibility="public">
+<parameter name="loader" type="java.lang.ClassLoader">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readArrayList" native="false" return="java.util.ArrayList" static="false" synchronized="false" visibility="public">
+<parameter name="loader" type="java.lang.ClassLoader">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readBinderArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="android.os.IBinder[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readBinderList" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="list" type="java.util.List&lt;android.os.IBinder&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readBooleanArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="boolean[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readBundle" native="false" return="android.os.Bundle" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readBundle" native="false" return="android.os.Bundle" static="false" synchronized="false" visibility="public">
+<parameter name="loader" type="java.lang.ClassLoader">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readByte" native="false" return="byte" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readByteArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readCharArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="char[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readDouble" native="true" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readDoubleArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="double[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readException" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readException" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="code" type="int">
+</parameter>
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readFileDescriptor" native="false" return="android.os.ParcelFileDescriptor" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readFloat" native="true" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readFloatArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readHashMap" native="false" return="java.util.HashMap" static="false" synchronized="false" visibility="public">
+<parameter name="loader" type="java.lang.ClassLoader">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readInt" native="true" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readIntArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="int[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readList" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="outVal" type="java.util.List">
+</parameter>
+<parameter name="loader" type="java.lang.ClassLoader">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readLong" native="true" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readLongArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="long[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readMap" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="outVal" type="java.util.Map">
+</parameter>
+<parameter name="loader" type="java.lang.ClassLoader">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readParcelable" native="false" return="T" static="false" synchronized="false" visibility="public">
+<parameter name="loader" type="java.lang.ClassLoader">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readParcelableArray" native="false" return="android.os.Parcelable[]" static="false" synchronized="false" visibility="public">
+<parameter name="loader" type="java.lang.ClassLoader">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readSerializable" native="false" return="java.io.Serializable" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readSparseArray" native="false" return="android.util.SparseArray" static="false" synchronized="false" visibility="public">
+<parameter name="loader" type="java.lang.ClassLoader">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readSparseBooleanArray" native="false" return="android.util.SparseBooleanArray" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readString" native="true" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readStringArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readStringList" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="list" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readStrongBinder" native="true" return="android.os.IBinder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readTypedArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="T[]">
+</parameter>
+<parameter name="c" type="android.os.Parcelable.Creator&lt;T&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readTypedList" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="list" type="java.util.List&lt;T&gt;">
+</parameter>
+<parameter name="c" type="android.os.Parcelable.Creator&lt;T&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="readValue" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="loader" type="java.lang.ClassLoader">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="recycle" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setDataCapacity" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setDataPosition" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pos" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setDataSize" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="unmarshall" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="offest" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="java.lang.Object[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeBinderArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="android.os.IBinder[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeBinderList" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="java.util.List&lt;android.os.IBinder&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeBooleanArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="boolean[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeBundle" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeByte" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="byte">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeByteArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeByteArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeCharArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="char[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeDouble" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeDoubleArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="double[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeException" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="e" type="java.lang.Exception">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeFileDescriptor" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="java.io.FileDescriptor">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeFloat" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeFloatArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeInt" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeIntArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="int[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeInterfaceToken" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="interfaceName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeList" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="java.util.List">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeLong" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeLongArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="long[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeMap" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="java.util.Map">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeNoException" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeParcelable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p" type="android.os.Parcelable">
+</parameter>
+<parameter name="parcelableFlags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeParcelableArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="T[]">
+</parameter>
+<parameter name="parcelableFlags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeSerializable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="java.io.Serializable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeSparseArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="android.util.SparseArray&lt;java.lang.Object&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeSparseBooleanArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="android.util.SparseBooleanArray">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeString" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeStringArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeStringList" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeStrongBinder" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="android.os.IBinder">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeStrongInterface" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="android.os.IInterface">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeTypedArray" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="T[]">
+</parameter>
+<parameter name="parcelableFlags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeTypedList" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="java.util.List&lt;T&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="writeValue" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="v" type="java.lang.Object">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="STRING_CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ParcelFileDescriptor" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ParcelFileDescriptor" static="false" type="android.os.ParcelFileDescriptor" visibility="public">
+<parameter name="descriptor" type="android.os.ParcelFileDescriptor">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createPipe" native="false" return="android.os.ParcelFileDescriptor[]" static="true" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fromSocket" native="false" return="android.os.ParcelFileDescriptor" static="true" synchronized="false" visibility="public">
+<parameter name="socket" type="java.net.Socket">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFileDescriptor" native="false" return="java.io.FileDescriptor" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStatSize" native="true" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="open" native="false" return="android.os.ParcelFileDescriptor" static="true" synchronized="false" visibility="public">
+<parameter name="file" type="java.io.File">
+</parameter>
+<parameter name="mode" type="int">
+</parameter>
+<exception name="FileNotFoundException" type="java.io.FileNotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="out" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MODE_APPEND" static="true" transient="false" type="int" value="33554432" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MODE_CREATE" static="true" transient="false" type="int" value="134217728" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MODE_READ_ONLY" static="true" transient="false" type="int" value="268435456" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MODE_READ_WRITE" static="true" transient="false" type="int" value="805306368" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MODE_TRUNCATE" static="true" transient="false" type="int" value="67108864" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MODE_WORLD_READABLE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MODE_WORLD_WRITEABLE" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MODE_WRITE_ONLY" static="true" transient="false" type="int" value="536870912" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.FileInputStream" final="false" name="ParcelFileDescriptor.AutoCloseInputStream" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ParcelFileDescriptor.AutoCloseInputStream" static="false" type="android.os.ParcelFileDescriptor.AutoCloseInputStream" visibility="public">
+<parameter name="fd" type="android.os.ParcelFileDescriptor">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.FileOutputStream" final="false" name="ParcelFileDescriptor.AutoCloseOutputStream" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ParcelFileDescriptor.AutoCloseOutputStream" static="false" type="android.os.ParcelFileDescriptor.AutoCloseOutputStream" visibility="public">
+<parameter name="fd" type="android.os.ParcelFileDescriptor">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.RuntimeException" final="false" name="ParcelFormatException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ParcelFormatException" static="false" type="android.os.ParcelFormatException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ParcelFormatException" static="false" type="android.os.ParcelFormatException" visibility="public">
+<parameter name="reason" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="ParcelUuid" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ParcelUuid" static="false" type="android.os.ParcelUuid" visibility="public">
+<parameter name="uuid" type="java.util.UUID">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fromString" native="false" return="android.os.ParcelUuid" static="true" synchronized="false" visibility="public">
+<parameter name="uuid" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUuid" native="false" return="java.util.UUID" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Parcelable" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CONTENTS_FILE_DESCRIPTOR" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARCELABLE_WRITE_RETURN_VALUE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Parcelable.Creator" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="createFromParcel" native="false" return="T" static="false" synchronized="false" visibility="public">
+<parameter name="source" type="android.os.Parcel">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newArray" native="false" return="T[]" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="PatternMatcher" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="PatternMatcher" static="false" type="android.os.PatternMatcher" visibility="public">
+<parameter name="pattern" type="java.lang.String">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="PatternMatcher" static="false" type="android.os.PatternMatcher" visibility="public">
+<parameter name="src" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getPath" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="match" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="str" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PATTERN_LITERAL" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PATTERN_PREFIX" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PATTERN_SIMPLE_GLOB" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="PowerManager" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="goToSleep" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="time" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isScreenOn" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newWakeLock" native="false" return="android.os.PowerManager.WakeLock" static="false" synchronized="false" visibility="public">
+<parameter name="flags" type="int">
+</parameter>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reboot" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="reason" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="userActivity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="when" type="long">
+</parameter>
+<parameter name="noChangeLights" type="boolean">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ACQUIRE_CAUSES_WAKEUP" static="true" transient="false" type="int" value="268435456" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FULL_WAKE_LOCK" static="true" transient="false" type="int" value="26" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ON_AFTER_RELEASE" static="true" transient="false" type="int" value="536870912" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARTIAL_WAKE_LOCK" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCREEN_BRIGHT_WAKE_LOCK" static="true" transient="false" type="int" value="10" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCREEN_DIM_WAKE_LOCK" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="PowerManager.WakeLock" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="acquire" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="acquire" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isHeld" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="release" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReferenceCounted" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setWorkSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ws" type="android.os.WorkSource">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Process" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Process" static="false" type="android.os.Process" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="getElapsedCpuTime" native="true" return="long" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getGidForName" native="true" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getThreadPriority" native="true" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="tid" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getUidForName" native="true" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="killProcess" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="pid" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="myPid" native="true" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="myTid" native="true" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="myUid" native="true" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="sendSignal" native="true" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="pid" type="int">
+</parameter>
+<parameter name="signal" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setThreadPriority" native="true" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="tid" type="int">
+</parameter>
+<parameter name="priority" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setThreadPriority" native="true" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="priority" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="supportsProcesses" native="true" return="boolean" static="true" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="BLUETOOTH_GID" static="true" transient="false" type="int" value="2000" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FIRST_APPLICATION_UID" static="true" transient="false" type="int" value="10000" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LAST_APPLICATION_UID" static="true" transient="false" type="int" value="99999" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PHONE_UID" static="true" transient="false" type="int" value="1001" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SIGNAL_KILL" static="true" transient="false" type="int" value="9" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SIGNAL_QUIT" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SIGNAL_USR1" static="true" transient="false" type="int" value="10" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SYSTEM_UID" static="true" transient="false" type="int" value="1000" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="THREAD_PRIORITY_AUDIO" static="true" transient="false" type="int" value="-16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="THREAD_PRIORITY_BACKGROUND" static="true" transient="false" type="int" value="10" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="THREAD_PRIORITY_DEFAULT" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="THREAD_PRIORITY_DISPLAY" static="true" transient="false" type="int" value="-4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="THREAD_PRIORITY_FOREGROUND" static="true" transient="false" type="int" value="-2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="THREAD_PRIORITY_LESS_FAVORABLE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="THREAD_PRIORITY_LOWEST" static="true" transient="false" type="int" value="19" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="THREAD_PRIORITY_MORE_FAVORABLE" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="THREAD_PRIORITY_URGENT_AUDIO" static="true" transient="false" type="int" value="-19" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="THREAD_PRIORITY_URGENT_DISPLAY" static="true" transient="false" type="int" value="-8" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RecoverySystem" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RecoverySystem" static="false" type="android.os.RecoverySystem" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="installPackage" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="packageFile" type="java.io.File">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="rebootWipeUserData" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="verifyPackage" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="packageFile" type="java.io.File">
+</parameter>
+<parameter name="listener" type="android.os.RecoverySystem.ProgressListener">
+</parameter>
+<parameter name="deviceCertsZipFile" type="java.io.File">
+</parameter>
+<exception name="GeneralSecurityException" type="java.security.GeneralSecurityException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="RecoverySystem.ProgressListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onProgress" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="progress" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RemoteCallbackList" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RemoteCallbackList" static="false" type="android.os.RemoteCallbackList" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="beginBroadcast" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="finishBroadcast" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBroadcastCookie" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBroadcastItem" native="false" return="E" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="kill" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCallbackDied" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="callback" type="E">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCallbackDied" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="callback" type="E">
+</parameter>
+<parameter name="cookie" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="register" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="callback" type="E">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="register" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="callback" type="E">
+</parameter>
+<parameter name="cookie" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unregister" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="callback" type="E">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.util.AndroidException" final="false" name="RemoteException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RemoteException" static="false" type="android.os.RemoteException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ResultReceiver" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ResultReceiver" static="false" type="android.os.ResultReceiver" visibility="public">
+<parameter name="handler" type="android.os.Handler">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onReceiveResult" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="resultCode" type="int">
+</parameter>
+<parameter name="resultData" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="send" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="resultCode" type="int">
+</parameter>
+<parameter name="resultData" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="out" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="StatFs" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="StatFs" static="false" type="android.os.StatFs" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAvailableBlocks" native="true" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBlockCount" native="true" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBlockSize" native="true" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFreeBlocks" native="true" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="restat" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="StrictMode" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="allowThreadDiskReads" native="false" return="android.os.StrictMode.ThreadPolicy" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="allowThreadDiskWrites" native="false" return="android.os.StrictMode.ThreadPolicy" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="enableDefaults" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getThreadPolicy" native="false" return="android.os.StrictMode.ThreadPolicy" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVmPolicy" native="false" return="android.os.StrictMode.VmPolicy" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setThreadPolicy" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="policy" type="android.os.StrictMode.ThreadPolicy">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVmPolicy" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="policy" type="android.os.StrictMode.VmPolicy">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="StrictMode.ThreadPolicy" static="true" visibility="public">
+<field deprecated="not deprecated" final="true" name="LAX" static="true" transient="false" type="android.os.StrictMode.ThreadPolicy" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="StrictMode.ThreadPolicy.Builder" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="StrictMode.ThreadPolicy.Builder" static="false" type="android.os.StrictMode.ThreadPolicy.Builder" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="StrictMode.ThreadPolicy.Builder" static="false" type="android.os.StrictMode.ThreadPolicy.Builder" visibility="public">
+<parameter name="policy" type="android.os.StrictMode.ThreadPolicy">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="build" native="false" return="android.os.StrictMode.ThreadPolicy" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="detectAll" native="false" return="android.os.StrictMode.ThreadPolicy.Builder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="detectDiskReads" native="false" return="android.os.StrictMode.ThreadPolicy.Builder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="detectDiskWrites" native="false" return="android.os.StrictMode.ThreadPolicy.Builder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="detectNetwork" native="false" return="android.os.StrictMode.ThreadPolicy.Builder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="penaltyDeath" native="false" return="android.os.StrictMode.ThreadPolicy.Builder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="penaltyDialog" native="false" return="android.os.StrictMode.ThreadPolicy.Builder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="penaltyDropBox" native="false" return="android.os.StrictMode.ThreadPolicy.Builder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="penaltyLog" native="false" return="android.os.StrictMode.ThreadPolicy.Builder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="permitAll" native="false" return="android.os.StrictMode.ThreadPolicy.Builder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="permitDiskReads" native="false" return="android.os.StrictMode.ThreadPolicy.Builder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="permitDiskWrites" native="false" return="android.os.StrictMode.ThreadPolicy.Builder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="permitNetwork" native="false" return="android.os.StrictMode.ThreadPolicy.Builder" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="StrictMode.VmPolicy" static="true" visibility="public">
+<field deprecated="not deprecated" final="true" name="LAX" static="true" transient="false" type="android.os.StrictMode.VmPolicy" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="StrictMode.VmPolicy.Builder" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="StrictMode.VmPolicy.Builder" static="false" type="android.os.StrictMode.VmPolicy.Builder" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="build" native="false" return="android.os.StrictMode.VmPolicy" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="detectAll" native="false" return="android.os.StrictMode.VmPolicy.Builder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="detectLeakedSqlLiteObjects" native="false" return="android.os.StrictMode.VmPolicy.Builder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="penaltyDeath" native="false" return="android.os.StrictMode.VmPolicy.Builder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="penaltyDropBox" native="false" return="android.os.StrictMode.VmPolicy.Builder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="penaltyLog" native="false" return="android.os.StrictMode.VmPolicy.Builder" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="SystemClock" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="currentThreadTimeMillis" native="true" return="long" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="elapsedRealtime" native="true" return="long" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCurrentTimeMillis" native="true" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="millis" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sleep" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="ms" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="uptimeMillis" native="true" return="long" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="TokenWatcher" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="TokenWatcher" static="false" type="android.os.TokenWatcher" visibility="public">
+<parameter name="h" type="android.os.Handler">
+</parameter>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="acquire" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="token" type="android.os.IBinder">
+</parameter>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="acquired" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="cleanup" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="token" type="android.os.IBinder">
+</parameter>
+<parameter name="unlink" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dump" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isAcquired" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="release" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="token" type="android.os.IBinder">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="released" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Vibrator" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="cancel" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vibrate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="milliseconds" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vibrate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pattern" type="long[]">
+</parameter>
+<parameter name="repeat" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="WorkSource" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="WorkSource" static="false" type="android.os.WorkSource" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="WorkSource" static="false" type="android.os.WorkSource" visibility="public">
+<parameter name="orig" type="android.os.WorkSource">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="add" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="other" type="android.os.WorkSource">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="diff" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="other" type="android.os.WorkSource">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="remove" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="other" type="android.os.WorkSource">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="other" type="android.os.WorkSource">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+</class>
+</package></api>

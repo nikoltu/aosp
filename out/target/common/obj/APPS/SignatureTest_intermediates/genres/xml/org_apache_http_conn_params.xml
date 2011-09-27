@@ -1,0 +1,182 @@
+<?xml version="1.0" ?><api><package name="org.apache.http.conn.params">
+<interface abstract="true" deprecated="not deprecated" final="false" name="ConnConnectionPNames" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="MAX_STATUS_LINE_GARBAGE" static="true" transient="false" type="java.lang.String" value="&quot;http.connection.max-status-line-garbage&quot;" visibility="public" volatile="false">
+</field>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.params.HttpAbstractParamBean" final="false" name="ConnConnectionParamBean" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ConnConnectionParamBean" static="false" type="org.apache.http.conn.params.ConnConnectionParamBean" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMaxStatusLineGarbage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="maxStatusLineGarbage" type="int">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ConnManagerPNames" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="MAX_CONNECTIONS_PER_ROUTE" static="true" transient="false" type="java.lang.String" value="&quot;http.conn-manager.max-per-route&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MAX_TOTAL_CONNECTIONS" static="true" transient="false" type="java.lang.String" value="&quot;http.conn-manager.max-total&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TIMEOUT" static="true" transient="false" type="java.lang.String" value="&quot;http.conn-manager.timeout&quot;" visibility="public" volatile="false">
+</field>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.params.HttpAbstractParamBean" final="false" name="ConnManagerParamBean" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ConnManagerParamBean" static="false" type="org.apache.http.conn.params.ConnManagerParamBean" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="setConnectionsPerRoute" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="connPerRoute" type="org.apache.http.conn.params.ConnPerRouteBean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMaxTotalConnections" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="maxConnections" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTimeout" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="long">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="ConnManagerParams" static="false" visibility="public">
+<implements name="org.apache.http.conn.params.ConnManagerPNames">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ConnManagerParams" static="false" type="org.apache.http.conn.params.ConnManagerParams" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMaxConnectionsPerRoute" native="false" return="org.apache.http.conn.params.ConnPerRoute" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMaxTotalConnections" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTimeout" native="false" return="long" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMaxConnectionsPerRoute" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="connPerRoute" type="org.apache.http.conn.params.ConnPerRoute">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMaxTotalConnections" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="maxTotalConnections" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTimeout" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="timeout" type="long">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="DEFAULT_MAX_TOTAL_CONNECTIONS" static="true" transient="false" type="int" value="20" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ConnPerRoute" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getMaxForRoute" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="ConnPerRouteBean" static="false" visibility="public">
+<implements name="org.apache.http.conn.params.ConnPerRoute">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ConnPerRouteBean" static="false" type="org.apache.http.conn.params.ConnPerRouteBean" visibility="public">
+<parameter name="defaultMax" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ConnPerRouteBean" static="false" type="org.apache.http.conn.params.ConnPerRouteBean" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultMax" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMaxForRoute" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDefaultMaxPerRoute" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="max" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMaxForRoute" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+<parameter name="max" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMaxForRoutes" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="map" type="java.util.Map&lt;org.apache.http.conn.routing.HttpRoute, java.lang.Integer&gt;">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="DEFAULT_MAX_CONNECTIONS_PER_ROUTE" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ConnRoutePNames" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="DEFAULT_PROXY" static="true" transient="false" type="java.lang.String" value="&quot;http.route.default-proxy&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORCED_ROUTE" static="true" transient="false" type="java.lang.String" value="&quot;http.route.forced-route&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LOCAL_ADDRESS" static="true" transient="false" type="java.lang.String" value="&quot;http.route.local-address&quot;" visibility="public" volatile="false">
+</field>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.params.HttpAbstractParamBean" final="false" name="ConnRouteParamBean" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ConnRouteParamBean" static="false" type="org.apache.http.conn.params.ConnRouteParamBean" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDefaultProxy" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="defaultProxy" type="org.apache.http.HttpHost">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setForcedRoute" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLocalAddress" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="address" type="java.net.InetAddress">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ConnRouteParams" static="false" visibility="public">
+<implements name="org.apache.http.conn.params.ConnRoutePNames">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultProxy" native="false" return="org.apache.http.HttpHost" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getForcedRoute" native="false" return="org.apache.http.conn.routing.HttpRoute" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalAddress" native="false" return="java.net.InetAddress" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDefaultProxy" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="proxy" type="org.apache.http.HttpHost">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setForcedRoute" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLocalAddress" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="local" type="java.net.InetAddress">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="NO_HOST" static="true" transient="false" type="org.apache.http.HttpHost" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NO_ROUTE" static="true" transient="false" type="org.apache.http.conn.routing.HttpRoute" visibility="public" volatile="false">
+</field>
+</class>
+</package></api>

@@ -1,0 +1,4 @@
+out/target/common/obj/APPS/CtsDelegatingAccessibilityService_intermediates/src/src/android/accessibilityservice/IAccessibilityServiceDelegate.java: \
+  cts/tests/accessibilityservice/src/android/accessibilityservice/IAccessibilityServiceDelegate.aidl \
+  frameworks/base/core/java/android/view/accessibility/AccessibilityEvent.aidl 
+

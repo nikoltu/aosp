@@ -1,0 +1,9 @@
+out/target/product/generic/obj/SHARED_LIBRARIES/libWnnEngDic_intermediates/WnnEngDic.o: \
+ packages/inputmethods/OpenWnn/libs/libwnnEngDic/WnnEngDic.c \
+ system/core/include/arch/linux-arm/AndroidConfig.h \
+ packages/inputmethods/OpenWnn/libs/libwnnEngDic/../libwnnDictionary/include/nj_lib.h \
+ packages/inputmethods/OpenWnn/libs/libwnnEngDic/../libwnnDictionary/include/njx_lib.h
+ packages/inputmethods/OpenWnn/libs/libwnnEngDic/WnnEngDic.c :
+ system/core/include/arch/linux-arm/AndroidConfig.h :
+ packages/inputmethods/OpenWnn/libs/libwnnEngDic/../libwnnDictionary/include/nj_lib.h :
+ packages/inputmethods/OpenWnn/libs/libwnnEngDic/../libwnnDictionary/include/njx_lib.h :

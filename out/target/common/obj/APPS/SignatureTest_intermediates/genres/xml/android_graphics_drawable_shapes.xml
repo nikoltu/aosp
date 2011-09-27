@@ -1,0 +1,86 @@
+<?xml version="1.0" ?><api><package name="android.graphics.drawable.shapes">
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.shapes.RectShape" final="false" name="ArcShape" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ArcShape" static="false" type="android.graphics.drawable.shapes.ArcShape" visibility="public">
+<parameter name="startAngle" type="float">
+</parameter>
+<parameter name="sweepAngle" type="float">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.shapes.RectShape" final="false" name="OvalShape" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="OvalShape" static="false" type="android.graphics.drawable.shapes.OvalShape" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.shapes.Shape" final="false" name="PathShape" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PathShape" static="false" type="android.graphics.drawable.shapes.PathShape" visibility="public">
+<parameter name="path" type="android.graphics.Path">
+</parameter>
+<parameter name="stdWidth" type="float">
+</parameter>
+<parameter name="stdHeight" type="float">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+<parameter name="paint" type="android.graphics.Paint">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.shapes.Shape" final="false" name="RectShape" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RectShape" static="false" type="android.graphics.drawable.shapes.RectShape" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+<parameter name="paint" type="android.graphics.Paint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="rect" native="false" return="android.graphics.RectF" static="false" synchronized="false" visibility="protected">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.graphics.drawable.shapes.RectShape" final="false" name="RoundRectShape" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RoundRectShape" static="false" type="android.graphics.drawable.shapes.RoundRectShape" visibility="public">
+<parameter name="outerRadii" type="float[]">
+</parameter>
+<parameter name="inset" type="android.graphics.RectF">
+</parameter>
+<parameter name="innerRadii" type="float[]">
+</parameter>
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Shape" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Shape" static="false" type="android.graphics.drawable.shapes.Shape" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="android.graphics.drawable.shapes.Shape" static="false" synchronized="false" visibility="public">
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="draw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+<parameter name="paint" type="android.graphics.Paint">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getHeight" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getWidth" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasAlpha" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onResize" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="width" type="float">
+</parameter>
+<parameter name="height" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="resize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="width" type="float">
+</parameter>
+<parameter name="height" type="float">
+</parameter>
+</method>
+</class>
+</package></api>

@@ -1,0 +1,7 @@
+out/target/product/generic/obj/SHARED_LIBRARIES/libskia_intermediates/src/utils/SkEGLContext_none.o: \
+ external/skia/src/utils/SkEGLContext_none.cpp \
+ system/core/include/arch/linux-arm/AndroidConfig.h \
+ external/skia/include/utils/SkEGLContext.h
+ external/skia/src/utils/SkEGLContext_none.cpp :
+ system/core/include/arch/linux-arm/AndroidConfig.h :
+ external/skia/include/utils/SkEGLContext.h :

@@ -1,0 +1,1144 @@
+<?xml version="1.0" ?><api><package name="org.apache.http.message">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AbstractHttpMessage" static="false" visibility="public">
+<implements name="org.apache.http.HttpMessage">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractHttpMessage" static="false" type="org.apache.http.message.AbstractHttpMessage" visibility="protected">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AbstractHttpMessage" static="false" type="org.apache.http.message.AbstractHttpMessage" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addHeader" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="header" type="org.apache.http.Header">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addHeader" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="containsHeader" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAllHeaders" native="false" return="org.apache.http.Header[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFirstHeader" native="false" return="org.apache.http.Header" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaders" native="false" return="org.apache.http.Header[]" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLastHeader" native="false" return="org.apache.http.Header" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParams" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="headerIterator" native="false" return="org.apache.http.HeaderIterator" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="headerIterator" native="false" return="org.apache.http.HeaderIterator" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeHeader" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="header" type="org.apache.http.Header">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeHeaders" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setHeader" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="header" type="org.apache.http.Header">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setHeader" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setHeaders" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="headers" type="org.apache.http.Header[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setParams" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="headergroup" static="false" transient="false" type="org.apache.http.message.HeaderGroup" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="params" static="false" transient="false" type="org.apache.http.params.HttpParams" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BasicHeader" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<implements name="org.apache.http.Header">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicHeader" static="false" type="org.apache.http.message.BasicHeader" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getElements" native="false" return="org.apache.http.HeaderElement[]" static="false" synchronized="false" visibility="public">
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValue" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BasicHeaderElement" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<implements name="org.apache.http.HeaderElement">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicHeaderElement" static="false" type="org.apache.http.message.BasicHeaderElement" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<parameter name="parameters" type="org.apache.http.NameValuePair[]">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BasicHeaderElement" static="false" type="org.apache.http.message.BasicHeaderElement" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParameter" native="false" return="org.apache.http.NameValuePair" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParameterByName" native="false" return="org.apache.http.NameValuePair" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParameterCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParameters" native="false" return="org.apache.http.NameValuePair[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValue" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BasicHeaderElementIterator" static="false" visibility="public">
+<implements name="org.apache.http.HeaderElementIterator">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicHeaderElementIterator" static="false" type="org.apache.http.message.BasicHeaderElementIterator" visibility="public">
+<parameter name="headerIterator" type="org.apache.http.HeaderIterator">
+</parameter>
+<parameter name="parser" type="org.apache.http.message.HeaderValueParser">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BasicHeaderElementIterator" static="false" type="org.apache.http.message.BasicHeaderElementIterator" visibility="public">
+<parameter name="headerIterator" type="org.apache.http.HeaderIterator">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasNext" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="next" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="NoSuchElementException" type="java.util.NoSuchElementException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="nextElement" native="false" return="org.apache.http.HeaderElement" static="false" synchronized="false" visibility="public">
+<exception name="NoSuchElementException" type="java.util.NoSuchElementException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="remove" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BasicHeaderIterator" static="false" visibility="public">
+<implements name="org.apache.http.HeaderIterator">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicHeaderIterator" static="false" type="org.apache.http.message.BasicHeaderIterator" visibility="public">
+<parameter name="headers" type="org.apache.http.Header[]">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="filterHeader" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="findNext" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="from" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasNext" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="next" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="NoSuchElementException" type="java.util.NoSuchElementException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="nextHeader" native="false" return="org.apache.http.Header" static="false" synchronized="false" visibility="public">
+<exception name="NoSuchElementException" type="java.util.NoSuchElementException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="remove" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="allHeaders" static="false" transient="false" type="org.apache.http.Header[]" value="null" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="currentIndex" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="headerName" static="false" transient="false" type="java.lang.String" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BasicHeaderValueFormatter" static="false" visibility="public">
+<implements name="org.apache.http.message.HeaderValueFormatter">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicHeaderValueFormatter" static="false" type="org.apache.http.message.BasicHeaderValueFormatter" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="doFormatValue" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<parameter name="quote" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="estimateElementsLen" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="elems" type="org.apache.http.HeaderElement[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="estimateHeaderElementLen" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="elem" type="org.apache.http.HeaderElement">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="estimateNameValuePairLen" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="nvp" type="org.apache.http.NameValuePair">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="estimateParametersLen" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="nvps" type="org.apache.http.NameValuePair[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="formatElements" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="elems" type="org.apache.http.HeaderElement[]">
+</parameter>
+<parameter name="quote" type="boolean">
+</parameter>
+<parameter name="formatter" type="org.apache.http.message.HeaderValueFormatter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatElements" native="false" return="org.apache.http.util.CharArrayBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="elems" type="org.apache.http.HeaderElement[]">
+</parameter>
+<parameter name="quote" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="formatHeaderElement" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="elem" type="org.apache.http.HeaderElement">
+</parameter>
+<parameter name="quote" type="boolean">
+</parameter>
+<parameter name="formatter" type="org.apache.http.message.HeaderValueFormatter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatHeaderElement" native="false" return="org.apache.http.util.CharArrayBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="elem" type="org.apache.http.HeaderElement">
+</parameter>
+<parameter name="quote" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="formatNameValuePair" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="nvp" type="org.apache.http.NameValuePair">
+</parameter>
+<parameter name="quote" type="boolean">
+</parameter>
+<parameter name="formatter" type="org.apache.http.message.HeaderValueFormatter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatNameValuePair" native="false" return="org.apache.http.util.CharArrayBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="nvp" type="org.apache.http.NameValuePair">
+</parameter>
+<parameter name="quote" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="formatParameters" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="nvps" type="org.apache.http.NameValuePair[]">
+</parameter>
+<parameter name="quote" type="boolean">
+</parameter>
+<parameter name="formatter" type="org.apache.http.message.HeaderValueFormatter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatParameters" native="false" return="org.apache.http.util.CharArrayBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="nvps" type="org.apache.http.NameValuePair[]">
+</parameter>
+<parameter name="quote" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isSeparator" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="ch" type="char">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isUnsafe" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="ch" type="char">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="DEFAULT" static="true" transient="false" type="org.apache.http.message.BasicHeaderValueFormatter" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SEPARATORS" static="true" transient="false" type="java.lang.String" value="&quot; ;,:@()&lt;&gt;\\\&quot;/[]?={}\t&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNSAFE_CHARS" static="true" transient="false" type="java.lang.String" value="&quot;\&quot;\\&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BasicHeaderValueParser" static="false" visibility="public">
+<implements name="org.apache.http.message.HeaderValueParser">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicHeaderValueParser" static="false" type="org.apache.http.message.BasicHeaderValueParser" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="createHeaderElement" native="false" return="org.apache.http.HeaderElement" static="false" synchronized="false" visibility="protected">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<parameter name="params" type="org.apache.http.NameValuePair[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createNameValuePair" native="false" return="org.apache.http.NameValuePair" static="false" synchronized="false" visibility="protected">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="parseElements" native="false" return="org.apache.http.HeaderElement[]" static="true" synchronized="false" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+<parameter name="parser" type="org.apache.http.message.HeaderValueParser">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseElements" native="false" return="org.apache.http.HeaderElement[]" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="cursor" type="org.apache.http.message.ParserCursor">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="parseHeaderElement" native="false" return="org.apache.http.HeaderElement" static="true" synchronized="false" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+<parameter name="parser" type="org.apache.http.message.HeaderValueParser">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseHeaderElement" native="false" return="org.apache.http.HeaderElement" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="cursor" type="org.apache.http.message.ParserCursor">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="parseNameValuePair" native="false" return="org.apache.http.NameValuePair" static="true" synchronized="false" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+<parameter name="parser" type="org.apache.http.message.HeaderValueParser">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseNameValuePair" native="false" return="org.apache.http.NameValuePair" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="cursor" type="org.apache.http.message.ParserCursor">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseNameValuePair" native="false" return="org.apache.http.NameValuePair" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="cursor" type="org.apache.http.message.ParserCursor">
+</parameter>
+<parameter name="delimiters" type="char[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="parseParameters" native="false" return="org.apache.http.NameValuePair[]" static="true" synchronized="false" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+<parameter name="parser" type="org.apache.http.message.HeaderValueParser">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseParameters" native="false" return="org.apache.http.NameValuePair[]" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="cursor" type="org.apache.http.message.ParserCursor">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="DEFAULT" static="true" transient="false" type="org.apache.http.message.BasicHeaderValueParser" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.message.BasicHttpRequest" final="false" name="BasicHttpEntityEnclosingRequest" static="false" visibility="public">
+<implements name="org.apache.http.HttpEntityEnclosingRequest">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicHttpEntityEnclosingRequest" static="false" type="org.apache.http.message.BasicHttpEntityEnclosingRequest" visibility="public">
+<parameter name="method" type="java.lang.String">
+</parameter>
+<parameter name="uri" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BasicHttpEntityEnclosingRequest" static="false" type="org.apache.http.message.BasicHttpEntityEnclosingRequest" visibility="public">
+<parameter name="method" type="java.lang.String">
+</parameter>
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<parameter name="ver" type="org.apache.http.ProtocolVersion">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BasicHttpEntityEnclosingRequest" static="false" type="org.apache.http.message.BasicHttpEntityEnclosingRequest" visibility="public">
+<parameter name="requestline" type="org.apache.http.RequestLine">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="expectContinue" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEntity" native="false" return="org.apache.http.HttpEntity" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEntity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="entity" type="org.apache.http.HttpEntity">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.message.AbstractHttpMessage" final="false" name="BasicHttpRequest" static="false" visibility="public">
+<implements name="org.apache.http.HttpRequest">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicHttpRequest" static="false" type="org.apache.http.message.BasicHttpRequest" visibility="public">
+<parameter name="method" type="java.lang.String">
+</parameter>
+<parameter name="uri" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BasicHttpRequest" static="false" type="org.apache.http.message.BasicHttpRequest" visibility="public">
+<parameter name="method" type="java.lang.String">
+</parameter>
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<parameter name="ver" type="org.apache.http.ProtocolVersion">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BasicHttpRequest" static="false" type="org.apache.http.message.BasicHttpRequest" visibility="public">
+<parameter name="requestline" type="org.apache.http.RequestLine">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProtocolVersion" native="false" return="org.apache.http.ProtocolVersion" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRequestLine" native="false" return="org.apache.http.RequestLine" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.message.AbstractHttpMessage" final="false" name="BasicHttpResponse" static="false" visibility="public">
+<implements name="org.apache.http.HttpResponse">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicHttpResponse" static="false" type="org.apache.http.message.BasicHttpResponse" visibility="public">
+<parameter name="statusline" type="org.apache.http.StatusLine">
+</parameter>
+<parameter name="catalog" type="org.apache.http.ReasonPhraseCatalog">
+</parameter>
+<parameter name="locale" type="java.util.Locale">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BasicHttpResponse" static="false" type="org.apache.http.message.BasicHttpResponse" visibility="public">
+<parameter name="statusline" type="org.apache.http.StatusLine">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BasicHttpResponse" static="false" type="org.apache.http.message.BasicHttpResponse" visibility="public">
+<parameter name="ver" type="org.apache.http.ProtocolVersion">
+</parameter>
+<parameter name="code" type="int">
+</parameter>
+<parameter name="reason" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEntity" native="false" return="org.apache.http.HttpEntity" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocale" native="false" return="java.util.Locale" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProtocolVersion" native="false" return="org.apache.http.ProtocolVersion" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReason" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+<parameter name="code" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStatusLine" native="false" return="org.apache.http.StatusLine" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEntity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="entity" type="org.apache.http.HttpEntity">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLocale" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="loc" type="java.util.Locale">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReasonPhrase" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="reason" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStatusCode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="code" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStatusLine" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="statusline" type="org.apache.http.StatusLine">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStatusLine" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ver" type="org.apache.http.ProtocolVersion">
+</parameter>
+<parameter name="code" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStatusLine" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ver" type="org.apache.http.ProtocolVersion">
+</parameter>
+<parameter name="code" type="int">
+</parameter>
+<parameter name="reason" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BasicLineFormatter" static="false" visibility="public">
+<implements name="org.apache.http.message.LineFormatter">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicLineFormatter" static="false" type="org.apache.http.message.BasicLineFormatter" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="appendProtocolVersion" native="false" return="org.apache.http.util.CharArrayBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="version" type="org.apache.http.ProtocolVersion">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doFormatHeader" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="header" type="org.apache.http.Header">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doFormatRequestLine" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="reqline" type="org.apache.http.RequestLine">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doFormatStatusLine" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="statline" type="org.apache.http.StatusLine">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="estimateProtocolVersionLen" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="version" type="org.apache.http.ProtocolVersion">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="formatHeader" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="header" type="org.apache.http.Header">
+</parameter>
+<parameter name="formatter" type="org.apache.http.message.LineFormatter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatHeader" native="false" return="org.apache.http.util.CharArrayBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="header" type="org.apache.http.Header">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="formatProtocolVersion" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="version" type="org.apache.http.ProtocolVersion">
+</parameter>
+<parameter name="formatter" type="org.apache.http.message.LineFormatter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="formatRequestLine" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="reqline" type="org.apache.http.RequestLine">
+</parameter>
+<parameter name="formatter" type="org.apache.http.message.LineFormatter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatRequestLine" native="false" return="org.apache.http.util.CharArrayBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="reqline" type="org.apache.http.RequestLine">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="formatStatusLine" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="statline" type="org.apache.http.StatusLine">
+</parameter>
+<parameter name="formatter" type="org.apache.http.message.LineFormatter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatStatusLine" native="false" return="org.apache.http.util.CharArrayBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="statline" type="org.apache.http.StatusLine">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="initBuffer" native="false" return="org.apache.http.util.CharArrayBuffer" static="false" synchronized="false" visibility="protected">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="DEFAULT" static="true" transient="false" type="org.apache.http.message.BasicLineFormatter" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BasicLineParser" static="false" visibility="public">
+<implements name="org.apache.http.message.LineParser">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicLineParser" static="false" type="org.apache.http.message.BasicLineParser" visibility="public">
+<parameter name="proto" type="org.apache.http.ProtocolVersion">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BasicLineParser" static="false" type="org.apache.http.message.BasicLineParser" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="createProtocolVersion" native="false" return="org.apache.http.ProtocolVersion" static="false" synchronized="false" visibility="protected">
+<parameter name="major" type="int">
+</parameter>
+<parameter name="minor" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createRequestLine" native="false" return="org.apache.http.RequestLine" static="false" synchronized="false" visibility="protected">
+<parameter name="method" type="java.lang.String">
+</parameter>
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<parameter name="ver" type="org.apache.http.ProtocolVersion">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createStatusLine" native="false" return="org.apache.http.StatusLine" static="false" synchronized="false" visibility="protected">
+<parameter name="ver" type="org.apache.http.ProtocolVersion">
+</parameter>
+<parameter name="status" type="int">
+</parameter>
+<parameter name="reason" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasProtocolVersion" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="cursor" type="org.apache.http.message.ParserCursor">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="parseHeader" native="false" return="org.apache.http.Header" static="true" synchronized="false" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+<parameter name="parser" type="org.apache.http.message.LineParser">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseHeader" native="false" return="org.apache.http.Header" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="parseProtocolVersion" native="false" return="org.apache.http.ProtocolVersion" static="true" synchronized="false" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+<parameter name="parser" type="org.apache.http.message.LineParser">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseProtocolVersion" native="false" return="org.apache.http.ProtocolVersion" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="cursor" type="org.apache.http.message.ParserCursor">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="parseRequestLine" native="false" return="org.apache.http.RequestLine" static="true" synchronized="false" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+<parameter name="parser" type="org.apache.http.message.LineParser">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseRequestLine" native="false" return="org.apache.http.RequestLine" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="cursor" type="org.apache.http.message.ParserCursor">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="parseStatusLine" native="false" return="org.apache.http.StatusLine" static="true" synchronized="false" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+<parameter name="parser" type="org.apache.http.message.LineParser">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseStatusLine" native="false" return="org.apache.http.StatusLine" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="cursor" type="org.apache.http.message.ParserCursor">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="skipWhitespace" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="cursor" type="org.apache.http.message.ParserCursor">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="DEFAULT" static="true" transient="false" type="org.apache.http.message.BasicLineParser" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="protocol" static="false" transient="false" type="org.apache.http.ProtocolVersion" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BasicListHeaderIterator" static="false" visibility="public">
+<implements name="org.apache.http.HeaderIterator">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicListHeaderIterator" static="false" type="org.apache.http.message.BasicListHeaderIterator" visibility="public">
+<parameter name="headers" type="java.util.List">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="filterHeader" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="findNext" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="from" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasNext" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="next" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="NoSuchElementException" type="java.util.NoSuchElementException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="nextHeader" native="false" return="org.apache.http.Header" static="false" synchronized="false" visibility="public">
+<exception name="NoSuchElementException" type="java.util.NoSuchElementException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="remove" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="allHeaders" static="false" transient="false" type="java.util.List" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="currentIndex" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="headerName" static="false" transient="false" type="java.lang.String" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="lastIndex" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BasicNameValuePair" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<implements name="org.apache.http.NameValuePair">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicNameValuePair" static="false" type="org.apache.http.message.BasicNameValuePair" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValue" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BasicRequestLine" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<implements name="org.apache.http.RequestLine">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicRequestLine" static="false" type="org.apache.http.message.BasicRequestLine" visibility="public">
+<parameter name="method" type="java.lang.String">
+</parameter>
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<parameter name="version" type="org.apache.http.ProtocolVersion">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMethod" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProtocolVersion" native="false" return="org.apache.http.ProtocolVersion" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUri" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BasicStatusLine" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<implements name="org.apache.http.StatusLine">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicStatusLine" static="false" type="org.apache.http.message.BasicStatusLine" visibility="public">
+<parameter name="version" type="org.apache.http.ProtocolVersion">
+</parameter>
+<parameter name="statusCode" type="int">
+</parameter>
+<parameter name="reasonPhrase" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProtocolVersion" native="false" return="org.apache.http.ProtocolVersion" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReasonPhrase" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStatusCode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BasicTokenIterator" static="false" visibility="public">
+<implements name="org.apache.http.TokenIterator">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicTokenIterator" static="false" type="org.apache.http.message.BasicTokenIterator" visibility="public">
+<parameter name="headerIterator" type="org.apache.http.HeaderIterator">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="createToken" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+<parameter name="value" type="java.lang.String">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="findNext" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="from" type="int">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="findTokenEnd" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="from" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="findTokenSeparator" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="from" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="findTokenStart" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="from" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasNext" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isHttpSeparator" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="ch" type="char">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isTokenChar" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="ch" type="char">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isTokenSeparator" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="ch" type="char">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isWhitespace" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="ch" type="char">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="next" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="NoSuchElementException" type="java.util.NoSuchElementException">
+</exception>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="nextToken" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<exception name="NoSuchElementException" type="java.util.NoSuchElementException">
+</exception>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="remove" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="HTTP_SEPARATORS" static="true" transient="false" type="java.lang.String" value="&quot; ,;=()&lt;&gt;@:\\\&quot;/[]?{}\t&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="currentHeader" static="false" transient="false" type="java.lang.String" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="currentToken" static="false" transient="false" type="java.lang.String" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="headerIt" static="false" transient="false" type="org.apache.http.HeaderIterator" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="searchPos" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BufferedHeader" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<implements name="org.apache.http.FormattedHeader">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BufferedHeader" static="false" type="org.apache.http.message.BufferedHeader" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBuffer" native="false" return="org.apache.http.util.CharArrayBuffer" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getElements" native="false" return="org.apache.http.HeaderElement[]" static="false" synchronized="false" visibility="public">
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValue" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValuePos" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="HeaderGroup" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="HeaderGroup" static="false" type="org.apache.http.message.HeaderGroup" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addHeader" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="header" type="org.apache.http.Header">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="containsHeader" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="copy" native="false" return="org.apache.http.message.HeaderGroup" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAllHeaders" native="false" return="org.apache.http.Header[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCondensedHeader" native="false" return="org.apache.http.Header" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFirstHeader" native="false" return="org.apache.http.Header" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaders" native="false" return="org.apache.http.Header[]" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLastHeader" native="false" return="org.apache.http.Header" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="iterator" native="false" return="org.apache.http.HeaderIterator" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="iterator" native="false" return="org.apache.http.HeaderIterator" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeHeader" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="header" type="org.apache.http.Header">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setHeaders" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="headers" type="org.apache.http.Header[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateHeader" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="header" type="org.apache.http.Header">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="HeaderValueFormatter" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="formatElements" native="false" return="org.apache.http.util.CharArrayBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="elems" type="org.apache.http.HeaderElement[]">
+</parameter>
+<parameter name="quote" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="formatHeaderElement" native="false" return="org.apache.http.util.CharArrayBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="elem" type="org.apache.http.HeaderElement">
+</parameter>
+<parameter name="quote" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="formatNameValuePair" native="false" return="org.apache.http.util.CharArrayBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="nvp" type="org.apache.http.NameValuePair">
+</parameter>
+<parameter name="quote" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="formatParameters" native="false" return="org.apache.http.util.CharArrayBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="nvps" type="org.apache.http.NameValuePair[]">
+</parameter>
+<parameter name="quote" type="boolean">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="HeaderValueParser" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="parseElements" native="false" return="org.apache.http.HeaderElement[]" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="cursor" type="org.apache.http.message.ParserCursor">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="parseHeaderElement" native="false" return="org.apache.http.HeaderElement" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="cursor" type="org.apache.http.message.ParserCursor">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="parseNameValuePair" native="false" return="org.apache.http.NameValuePair" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="cursor" type="org.apache.http.message.ParserCursor">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="parseParameters" native="false" return="org.apache.http.NameValuePair[]" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="cursor" type="org.apache.http.message.ParserCursor">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="LineFormatter" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="appendProtocolVersion" native="false" return="org.apache.http.util.CharArrayBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="version" type="org.apache.http.ProtocolVersion">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="formatHeader" native="false" return="org.apache.http.util.CharArrayBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="header" type="org.apache.http.Header">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="formatRequestLine" native="false" return="org.apache.http.util.CharArrayBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="reqline" type="org.apache.http.RequestLine">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="formatStatusLine" native="false" return="org.apache.http.util.CharArrayBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="statline" type="org.apache.http.StatusLine">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="LineParser" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="hasProtocolVersion" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="cursor" type="org.apache.http.message.ParserCursor">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="parseHeader" native="false" return="org.apache.http.Header" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="parseProtocolVersion" native="false" return="org.apache.http.ProtocolVersion" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="cursor" type="org.apache.http.message.ParserCursor">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="parseRequestLine" native="false" return="org.apache.http.RequestLine" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="cursor" type="org.apache.http.message.ParserCursor">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="parseStatusLine" native="false" return="org.apache.http.StatusLine" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="cursor" type="org.apache.http.message.ParserCursor">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ParserCursor" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ParserCursor" static="false" type="org.apache.http.message.ParserCursor" visibility="public">
+<parameter name="lowerBound" type="int">
+</parameter>
+<parameter name="upperBound" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="atEnd" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLowerBound" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPos" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUpperBound" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updatePos" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pos" type="int">
+</parameter>
+</method>
+</class>
+</package></api>

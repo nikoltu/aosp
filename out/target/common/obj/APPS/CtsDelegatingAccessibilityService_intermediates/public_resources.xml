@@ -1,0 +1,30 @@
+<!-- This file contains <public> resource definitions for all
+     resources that were generated from the source data. -->
+
+<resources>
+
+  <!-- PRIVATE SECTION.  These resources have not been declared public.
+       You can make them public my moving these lines into a file in res/values. -->
+
+  <!-- Declared at cts/tests/accessibilityservice/res/values/strings.xml:21 -->
+  <public type="string" name="title_delegating_accessibility_service" id="0x7f020000" />
+  <!-- Declared at cts/tests/accessibilityservice/res/values/strings.xml:24 -->
+  <public type="string" name="accessibility_end_to_end_test_activity" id="0x7f020001" />
+  <!-- Declared at cts/tests/accessibilityservice/res/values/strings.xml:27 -->
+  <public type="string" name="text_input_blah" id="0x7f020002" />
+  <!-- Declared at cts/tests/accessibilityservice/res/values/strings.xml:30 -->
+  <public type="string" name="text_input_blah_blah" id="0x7f020003" />
+  <!-- Declared at cts/tests/accessibilityservice/res/values/strings.xml:33 -->
+  <public type="string" name="button_title" id="0x7f020004" />
+  <!-- Declared at cts/tests/accessibilityservice/res/values/strings.xml:36 -->
+  <public type="string" name="first_list_item" id="0x7f020005" />
+  <!-- Declared at cts/tests/accessibilityservice/res/values/strings.xml:39 -->
+  <public type="string" name="second_list_item" id="0x7f020006" />
+  <!-- Declared at cts/tests/accessibilityservice/res/values/strings.xml:42 -->
+  <public type="string" name="alert_title" id="0x7f020007" />
+  <!-- Declared at cts/tests/accessibilityservice/res/values/strings.xml:45 -->
+  <public type="string" name="alert_message" id="0x7f020008" />
+  <!-- Declared at cts/tests/accessibilityservice/res/values/strings.xml:48 -->
+  <public type="string" name="notification_message" id="0x7f020009" />
+
+</resources>

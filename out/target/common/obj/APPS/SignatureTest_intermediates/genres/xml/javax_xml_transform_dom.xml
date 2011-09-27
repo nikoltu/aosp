@@ -1,0 +1,88 @@
+<?xml version="1.0" ?><api><package name="javax.xml.transform.dom">
+<interface abstract="true" deprecated="not deprecated" final="false" name="DOMLocator" static="false" visibility="public">
+<implements name="javax.xml.transform.SourceLocator">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getOriginatingNode" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DOMResult" static="false" visibility="public">
+<implements name="javax.xml.transform.Result">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DOMResult" static="false" type="javax.xml.transform.dom.DOMResult" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DOMResult" static="false" type="javax.xml.transform.dom.DOMResult" visibility="public">
+<parameter name="node" type="org.w3c.dom.Node">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DOMResult" static="false" type="javax.xml.transform.dom.DOMResult" visibility="public">
+<parameter name="node" type="org.w3c.dom.Node">
+</parameter>
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DOMResult" static="false" type="javax.xml.transform.dom.DOMResult" visibility="public">
+<parameter name="node" type="org.w3c.dom.Node">
+</parameter>
+<parameter name="nextSibling" type="org.w3c.dom.Node">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DOMResult" static="false" type="javax.xml.transform.dom.DOMResult" visibility="public">
+<parameter name="node" type="org.w3c.dom.Node">
+</parameter>
+<parameter name="nextSibling" type="org.w3c.dom.Node">
+</parameter>
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNextSibling" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNode" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSystemId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setNextSibling" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="nextSibling" type="org.w3c.dom.Node">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setNode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="node" type="org.w3c.dom.Node">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSystemId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="FEATURE" static="true" transient="false" type="java.lang.String" value="&quot;http://javax.xml.transform.dom.DOMResult/feature&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DOMSource" static="false" visibility="public">
+<implements name="javax.xml.transform.Source">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DOMSource" static="false" type="javax.xml.transform.dom.DOMSource" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DOMSource" static="false" type="javax.xml.transform.dom.DOMSource" visibility="public">
+<parameter name="n" type="org.w3c.dom.Node">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DOMSource" static="false" type="javax.xml.transform.dom.DOMSource" visibility="public">
+<parameter name="node" type="org.w3c.dom.Node">
+</parameter>
+<parameter name="systemID" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNode" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSystemId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setNode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="node" type="org.w3c.dom.Node">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSystemId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="systemID" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="FEATURE" static="true" transient="false" type="java.lang.String" value="&quot;http://javax.xml.transform.dom.DOMSource/feature&quot;" visibility="public" volatile="false">
+</field>
+</class>
+</package></api>

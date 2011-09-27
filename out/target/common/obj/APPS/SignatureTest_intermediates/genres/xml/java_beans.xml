@@ -1,0 +1,162 @@
+<?xml version="1.0" ?><api><package name="java.beans">
+<class abstract="false" deprecated="not deprecated" extends="java.beans.PropertyChangeEvent" final="false" name="IndexedPropertyChangeEvent" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IndexedPropertyChangeEvent" static="false" type="java.beans.IndexedPropertyChangeEvent" visibility="public">
+<parameter name="source" type="java.lang.Object">
+</parameter>
+<parameter name="propertyName" type="java.lang.String">
+</parameter>
+<parameter name="oldValue" type="java.lang.Object">
+</parameter>
+<parameter name="newValue" type="java.lang.Object">
+</parameter>
+<parameter name="index" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIndex" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.util.EventObject" final="false" name="PropertyChangeEvent" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PropertyChangeEvent" static="false" type="java.beans.PropertyChangeEvent" visibility="public">
+<parameter name="source" type="java.lang.Object">
+</parameter>
+<parameter name="propertyName" type="java.lang.String">
+</parameter>
+<parameter name="oldValue" type="java.lang.Object">
+</parameter>
+<parameter name="newValue" type="java.lang.Object">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNewValue" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOldValue" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPropagationId" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPropertyName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPropagationId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="propagationId" type="java.lang.Object">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PropertyChangeListener" static="false" visibility="public">
+<implements name="java.util.EventListener">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="propertyChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="event" type="java.beans.PropertyChangeEvent">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.util.EventListenerProxy" final="false" name="PropertyChangeListenerProxy" static="false" visibility="public">
+<implements name="java.beans.PropertyChangeListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="PropertyChangeListenerProxy" static="false" type="java.beans.PropertyChangeListenerProxy" visibility="public">
+<parameter name="propertyName" type="java.lang.String">
+</parameter>
+<parameter name="listener" type="java.beans.PropertyChangeListener">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPropertyName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="propertyChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="event" type="java.beans.PropertyChangeEvent">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="PropertyChangeSupport" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="PropertyChangeSupport" static="false" type="java.beans.PropertyChangeSupport" visibility="public">
+<parameter name="sourceBean" type="java.lang.Object">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addPropertyChangeListener" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="propertyName" type="java.lang.String">
+</parameter>
+<parameter name="listener" type="java.beans.PropertyChangeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addPropertyChangeListener" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="listener" type="java.beans.PropertyChangeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fireIndexedPropertyChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="propertyName" type="java.lang.String">
+</parameter>
+<parameter name="index" type="int">
+</parameter>
+<parameter name="oldValue" type="java.lang.Object">
+</parameter>
+<parameter name="newValue" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fireIndexedPropertyChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="propertyName" type="java.lang.String">
+</parameter>
+<parameter name="index" type="int">
+</parameter>
+<parameter name="oldValue" type="boolean">
+</parameter>
+<parameter name="newValue" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fireIndexedPropertyChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="propertyName" type="java.lang.String">
+</parameter>
+<parameter name="index" type="int">
+</parameter>
+<parameter name="oldValue" type="int">
+</parameter>
+<parameter name="newValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="firePropertyChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="propertyName" type="java.lang.String">
+</parameter>
+<parameter name="oldValue" type="java.lang.Object">
+</parameter>
+<parameter name="newValue" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="firePropertyChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="propertyName" type="java.lang.String">
+</parameter>
+<parameter name="oldValue" type="boolean">
+</parameter>
+<parameter name="newValue" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="firePropertyChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="propertyName" type="java.lang.String">
+</parameter>
+<parameter name="oldValue" type="int">
+</parameter>
+<parameter name="newValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="firePropertyChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="event" type="java.beans.PropertyChangeEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPropertyChangeListeners" native="false" return="java.beans.PropertyChangeListener[]" static="false" synchronized="true" visibility="public">
+<parameter name="propertyName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPropertyChangeListeners" native="false" return="java.beans.PropertyChangeListener[]" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasListeners" native="false" return="boolean" static="false" synchronized="true" visibility="public">
+<parameter name="propertyName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removePropertyChangeListener" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="propertyName" type="java.lang.String">
+</parameter>
+<parameter name="listener" type="java.beans.PropertyChangeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removePropertyChangeListener" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="listener" type="java.beans.PropertyChangeListener">
+</parameter>
+</method>
+</class>
+</package></api>

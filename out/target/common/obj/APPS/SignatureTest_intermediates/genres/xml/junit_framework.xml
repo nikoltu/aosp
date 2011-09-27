@@ -1,0 +1,478 @@
+<?xml version="1.0" ?><api><package name="junit.framework">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Assert" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Assert" static="false" type="junit.framework.Assert" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expected" type="java.lang.Object">
+</parameter>
+<parameter name="actual" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="expected" type="java.lang.Object">
+</parameter>
+<parameter name="actual" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expected" type="java.lang.String">
+</parameter>
+<parameter name="actual" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="expected" type="java.lang.String">
+</parameter>
+<parameter name="actual" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expected" type="double">
+</parameter>
+<parameter name="actual" type="double">
+</parameter>
+<parameter name="delta" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="expected" type="double">
+</parameter>
+<parameter name="actual" type="double">
+</parameter>
+<parameter name="delta" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expected" type="float">
+</parameter>
+<parameter name="actual" type="float">
+</parameter>
+<parameter name="delta" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="expected" type="float">
+</parameter>
+<parameter name="actual" type="float">
+</parameter>
+<parameter name="delta" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expected" type="long">
+</parameter>
+<parameter name="actual" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="expected" type="long">
+</parameter>
+<parameter name="actual" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expected" type="boolean">
+</parameter>
+<parameter name="actual" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="expected" type="boolean">
+</parameter>
+<parameter name="actual" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expected" type="byte">
+</parameter>
+<parameter name="actual" type="byte">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="expected" type="byte">
+</parameter>
+<parameter name="actual" type="byte">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expected" type="char">
+</parameter>
+<parameter name="actual" type="char">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="expected" type="char">
+</parameter>
+<parameter name="actual" type="char">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expected" type="short">
+</parameter>
+<parameter name="actual" type="short">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="expected" type="short">
+</parameter>
+<parameter name="actual" type="short">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expected" type="int">
+</parameter>
+<parameter name="actual" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertEquals" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="expected" type="int">
+</parameter>
+<parameter name="actual" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertFalse" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="condition" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertFalse" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="condition" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertNotNull" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="object" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertNotNull" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="object" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertNotSame" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expected" type="java.lang.Object">
+</parameter>
+<parameter name="actual" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertNotSame" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="expected" type="java.lang.Object">
+</parameter>
+<parameter name="actual" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertNull" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="object" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertNull" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="object" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertSame" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expected" type="java.lang.Object">
+</parameter>
+<parameter name="actual" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertSame" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="expected" type="java.lang.Object">
+</parameter>
+<parameter name="actual" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertTrue" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="condition" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="assertTrue" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="condition" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fail" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fail" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Error" final="false" name="AssertionFailedError" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AssertionFailedError" static="false" type="junit.framework.AssertionFailedError" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AssertionFailedError" static="false" type="junit.framework.AssertionFailedError" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="junit.framework.AssertionFailedError" final="false" name="ComparisonFailure" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ComparisonFailure" static="false" type="junit.framework.ComparisonFailure" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="expected" type="java.lang.String">
+</parameter>
+<parameter name="actual" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Protectable" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="protect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="Throwable" type="java.lang.Throwable">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Test" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="countTestCases" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="result" type="junit.framework.TestResult">
+</parameter>
+</method>
+</interface>
+<class abstract="true" deprecated="not deprecated" extends="junit.framework.Assert" final="false" name="TestCase" static="false" visibility="public">
+<implements name="junit.framework.Test">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="TestCase" static="false" type="junit.framework.TestCase" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="TestCase" static="false" type="junit.framework.TestCase" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="countTestCases" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createResult" native="false" return="junit.framework.TestResult" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="junit.framework.TestResult" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="result" type="junit.framework.TestResult">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="runBare" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="Throwable" type="java.lang.Throwable">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="runTest" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="Throwable" type="java.lang.Throwable">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setName" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setUp" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="Exception" type="java.lang.Exception">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tearDown" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="Exception" type="java.lang.Exception">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="TestFailure" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="TestFailure" static="false" type="junit.framework.TestFailure" visibility="public">
+<parameter name="failedTest" type="junit.framework.Test">
+</parameter>
+<parameter name="thrownException" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="exceptionMessage" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="failedTest" native="false" return="junit.framework.Test" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isFailure" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="thrownException" native="false" return="java.lang.Throwable" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="trace" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="false" name="fFailedTest" static="false" transient="false" type="junit.framework.Test" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="fThrownException" static="false" transient="false" type="java.lang.Throwable" visibility="protected" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="TestListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="addError" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="test" type="junit.framework.Test">
+</parameter>
+<parameter name="t" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="addFailure" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="test" type="junit.framework.Test">
+</parameter>
+<parameter name="t" type="junit.framework.AssertionFailedError">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="endTest" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="test" type="junit.framework.Test">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="startTest" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="test" type="junit.framework.Test">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="TestResult" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="TestResult" static="false" type="junit.framework.TestResult" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addError" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="test" type="junit.framework.Test">
+</parameter>
+<parameter name="t" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addFailure" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="test" type="junit.framework.Test">
+</parameter>
+<parameter name="t" type="junit.framework.AssertionFailedError">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addListener" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="listener" type="junit.framework.TestListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="endTest" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="test" type="junit.framework.Test">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="errorCount" native="false" return="int" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="errors" native="false" return="java.util.Enumeration" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="failureCount" native="false" return="int" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="failures" native="false" return="java.util.Enumeration" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeListener" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="listener" type="junit.framework.TestListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="test" type="junit.framework.TestCase">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="runCount" native="false" return="int" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="runProtected" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="test" type="junit.framework.Test">
+</parameter>
+<parameter name="p" type="junit.framework.Protectable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shouldStop" native="false" return="boolean" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startTest" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="test" type="junit.framework.Test">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stop" native="false" return="void" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="wasSuccessful" native="false" return="boolean" static="false" synchronized="true" visibility="public">
+</method>
+<field deprecated="not deprecated" final="false" name="fErrors" static="false" transient="false" type="java.util.Vector" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="fFailures" static="false" transient="false" type="java.util.Vector" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="fListeners" static="false" transient="false" type="java.util.Vector" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="fRunTests" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="TestSuite" static="false" visibility="public">
+<implements name="junit.framework.Test">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="TestSuite" static="false" type="junit.framework.TestSuite" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="TestSuite" static="false" type="junit.framework.TestSuite" visibility="public">
+<parameter name="theClass" type="java.lang.Class">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="TestSuite" static="false" type="junit.framework.TestSuite" visibility="public">
+<parameter name="theClass" type="java.lang.Class">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="TestSuite" static="false" type="junit.framework.TestSuite" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addTest" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="test" type="junit.framework.Test">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addTestSuite" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="testClass" type="java.lang.Class">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="countTestCases" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createTest" native="false" return="junit.framework.Test" static="true" synchronized="false" visibility="public">
+<parameter name="theClass" type="java.lang.Class">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTestConstructor" native="false" return="java.lang.reflect.Constructor" static="true" synchronized="false" visibility="public">
+<parameter name="theClass" type="java.lang.Class">
+</parameter>
+<exception name="NoSuchMethodException" type="java.lang.NoSuchMethodException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="run" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="result" type="junit.framework.TestResult">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="runTest" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="test" type="junit.framework.Test">
+</parameter>
+<parameter name="result" type="junit.framework.TestResult">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setName" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="testAt" native="false" return="junit.framework.Test" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="testCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="tests" native="false" return="java.util.Enumeration" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package></api>

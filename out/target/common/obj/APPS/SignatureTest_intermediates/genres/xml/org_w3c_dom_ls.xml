@@ -1,0 +1,234 @@
+<?xml version="1.0" ?><api><package name="org.w3c.dom.ls">
+<interface abstract="true" deprecated="not deprecated" final="false" name="DOMImplementationLS" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="createLSInput" native="false" return="org.w3c.dom.ls.LSInput" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createLSOutput" native="false" return="org.w3c.dom.ls.LSOutput" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createLSParser" native="false" return="org.w3c.dom.ls.LSParser" static="false" synchronized="false" visibility="public">
+<parameter name="mode" type="short">
+</parameter>
+<parameter name="schemaType" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createLSSerializer" native="false" return="org.w3c.dom.ls.LSSerializer" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="MODE_ASYNCHRONOUS" static="true" transient="false" type="short" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MODE_SYNCHRONOUS" static="true" transient="false" type="short" value="1" visibility="public" volatile="false">
+</field>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.RuntimeException" final="false" name="LSException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="LSException" static="false" type="org.w3c.dom.ls.LSException" visibility="public">
+<parameter name="code" type="short">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="true" name="PARSE_ERR" static="true" transient="false" type="short" value="81" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SERIALIZE_ERR" static="true" transient="false" type="short" value="82" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="code" static="false" transient="false" type="short" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="LSInput" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getBaseURI" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getByteStream" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getCertifiedText" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getCharacterStream" native="false" return="java.io.Reader" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEncoding" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPublicId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getStringData" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSystemId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setBaseURI" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="baseURI" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setByteStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="byteStream" type="java.io.InputStream">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setCertifiedText" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="certifiedText" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setCharacterStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="characterStream" type="java.io.Reader">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setEncoding" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="encoding" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setPublicId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="publicId" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setStringData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="stringData" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setSystemId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="LSOutput" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getByteStream" native="false" return="java.io.OutputStream" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getCharacterStream" native="false" return="java.io.Writer" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEncoding" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSystemId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setByteStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="byteStream" type="java.io.OutputStream">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setCharacterStream" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="characterStream" type="java.io.Writer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setEncoding" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="encoding" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setSystemId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="LSParser" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="abort" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getAsync" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getBusy" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDomConfig" native="false" return="org.w3c.dom.DOMConfiguration" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getFilter" native="false" return="org.w3c.dom.ls.LSParserFilter" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="parse" native="false" return="org.w3c.dom.Document" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="org.w3c.dom.ls.LSInput">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+<exception name="LSException" type="org.w3c.dom.ls.LSException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="parseURI" native="false" return="org.w3c.dom.Document" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+<exception name="LSException" type="org.w3c.dom.ls.LSException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="parseWithContext" native="false" return="org.w3c.dom.Node" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="org.w3c.dom.ls.LSInput">
+</parameter>
+<parameter name="contextArg" type="org.w3c.dom.Node">
+</parameter>
+<parameter name="action" type="short">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+<exception name="LSException" type="org.w3c.dom.ls.LSException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setFilter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="filter" type="org.w3c.dom.ls.LSParserFilter">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ACTION_APPEND_AS_CHILDREN" static="true" transient="false" type="short" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_INSERT_AFTER" static="true" transient="false" type="short" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_INSERT_BEFORE" static="true" transient="false" type="short" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_REPLACE" static="true" transient="false" type="short" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_REPLACE_CHILDREN" static="true" transient="false" type="short" value="2" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="LSParserFilter" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="acceptNode" native="false" return="short" static="false" synchronized="false" visibility="public">
+<parameter name="nodeArg" type="org.w3c.dom.Node">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getWhatToShow" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="startElement" native="false" return="short" static="false" synchronized="false" visibility="public">
+<parameter name="elementArg" type="org.w3c.dom.Element">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="FILTER_ACCEPT" static="true" transient="false" type="short" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FILTER_INTERRUPT" static="true" transient="false" type="short" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FILTER_REJECT" static="true" transient="false" type="short" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FILTER_SKIP" static="true" transient="false" type="short" value="3" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="LSResourceResolver" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="resolveResource" native="false" return="org.w3c.dom.ls.LSInput" static="false" synchronized="false" visibility="public">
+<parameter name="type" type="java.lang.String">
+</parameter>
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+<parameter name="publicId" type="java.lang.String">
+</parameter>
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+<parameter name="baseURI" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="LSSerializer" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getDomConfig" native="false" return="org.w3c.dom.DOMConfiguration" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getNewLine" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNewLine" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="newLine" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="write" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="nodeArg" type="org.w3c.dom.Node">
+</parameter>
+<parameter name="destination" type="org.w3c.dom.ls.LSOutput">
+</parameter>
+<exception name="LSException" type="org.w3c.dom.ls.LSException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeToString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="nodeArg" type="org.w3c.dom.Node">
+</parameter>
+<exception name="DOMException" type="org.w3c.dom.DOMException">
+</exception>
+<exception name="LSException" type="org.w3c.dom.ls.LSException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeToURI" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="nodeArg" type="org.w3c.dom.Node">
+</parameter>
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<exception name="LSException" type="org.w3c.dom.ls.LSException">
+</exception>
+</method>
+</interface>
+</package></api>

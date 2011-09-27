@@ -1,0 +1,348 @@
+<?xml version="1.0" ?><api><package name="org.xml.sax.ext">
+<interface abstract="true" deprecated="not deprecated" final="false" name="Attributes2" static="false" visibility="public">
+<implements name="org.xml.sax.Attributes">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="isDeclared" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isDeclared" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="qName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isDeclared" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<parameter name="localName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isSpecified" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isSpecified" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<parameter name="localName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isSpecified" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="qName" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="org.xml.sax.helpers.AttributesImpl" final="false" name="Attributes2Impl" static="false" visibility="public">
+<implements name="org.xml.sax.ext.Attributes2">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Attributes2Impl" static="false" type="org.xml.sax.ext.Attributes2Impl" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Attributes2Impl" static="false" type="org.xml.sax.ext.Attributes2Impl" visibility="public">
+<parameter name="atts" type="org.xml.sax.Attributes">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="isDeclared" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isDeclared" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<parameter name="localName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isDeclared" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="qName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isSpecified" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isSpecified" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<parameter name="localName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isSpecified" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="qName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDeclared" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="value" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSpecified" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="value" type="boolean">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DeclHandler" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="attributeDecl" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="eName" type="java.lang.String">
+</parameter>
+<parameter name="aName" type="java.lang.String">
+</parameter>
+<parameter name="type" type="java.lang.String">
+</parameter>
+<parameter name="mode" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="elementDecl" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="model" type="java.lang.String">
+</parameter>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="externalEntityDecl" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="publicId" type="java.lang.String">
+</parameter>
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="internalEntityDecl" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="org.xml.sax.helpers.DefaultHandler" final="false" name="DefaultHandler2" static="false" visibility="public">
+<implements name="org.xml.sax.ext.DeclHandler">
+</implements>
+<implements name="org.xml.sax.ext.EntityResolver2">
+</implements>
+<implements name="org.xml.sax.ext.LexicalHandler">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DefaultHandler2" static="false" type="org.xml.sax.ext.DefaultHandler2" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="attributeDecl" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="eName" type="java.lang.String">
+</parameter>
+<parameter name="aName" type="java.lang.String">
+</parameter>
+<parameter name="type" type="java.lang.String">
+</parameter>
+<parameter name="mode" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="comment" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ch" type="char[]">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="elementDecl" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="model" type="java.lang.String">
+</parameter>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="endCDATA" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="endDTD" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="endEntity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="externalEntityDecl" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="publicId" type="java.lang.String">
+</parameter>
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getExternalSubset" native="false" return="org.xml.sax.InputSource" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="baseURI" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="internalEntityDecl" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resolveEntity" native="false" return="org.xml.sax.InputSource" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="publicId" type="java.lang.String">
+</parameter>
+<parameter name="baseURI" type="java.lang.String">
+</parameter>
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startCDATA" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startDTD" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="publicId" type="java.lang.String">
+</parameter>
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startEntity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="EntityResolver2" static="false" visibility="public">
+<implements name="org.xml.sax.EntityResolver">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getExternalSubset" native="false" return="org.xml.sax.InputSource" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="baseURI" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="resolveEntity" native="false" return="org.xml.sax.InputSource" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="publicId" type="java.lang.String">
+</parameter>
+<parameter name="baseURI" type="java.lang.String">
+</parameter>
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="LexicalHandler" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="comment" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ch" type="char[]">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="endCDATA" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="endDTD" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="endEntity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="startCDATA" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="startDTD" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="publicId" type="java.lang.String">
+</parameter>
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="startEntity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Locator2" static="false" visibility="public">
+<implements name="org.xml.sax.Locator">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEncoding" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getXMLVersion" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="org.xml.sax.helpers.LocatorImpl" final="false" name="Locator2Impl" static="false" visibility="public">
+<implements name="org.xml.sax.ext.Locator2">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Locator2Impl" static="false" type="org.xml.sax.ext.Locator2Impl" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Locator2Impl" static="false" type="org.xml.sax.ext.Locator2Impl" visibility="public">
+<parameter name="locator" type="org.xml.sax.Locator">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEncoding" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getXMLVersion" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEncoding" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="encoding" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setXMLVersion" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="version" type="java.lang.String">
+</parameter>
+</method>
+</class>
+</package></api>

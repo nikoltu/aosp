@@ -1,0 +1,350 @@
+<?xml version="1.0" ?><api><package name="android.net.wifi">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ScanResult" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="BSSID" static="false" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="SSID" static="false" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="capabilities" static="false" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="frequency" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="level" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" final="true" name="SupplicantState" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isValidState" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="state" type="android.net.wifi.SupplicantState">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="android.net.wifi.SupplicantState" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="values" native="false" return="android.net.wifi.SupplicantState[]" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="WifiConfiguration" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="WifiConfiguration" static="false" type="android.net.wifi.WifiConfiguration" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="BSSID" static="false" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="SSID" static="false" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="allowedAuthAlgorithms" static="false" transient="false" type="java.util.BitSet" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="allowedGroupCiphers" static="false" transient="false" type="java.util.BitSet" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="allowedKeyManagement" static="false" transient="false" type="java.util.BitSet" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="allowedPairwiseCiphers" static="false" transient="false" type="java.util.BitSet" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="allowedProtocols" static="false" transient="false" type="java.util.BitSet" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="hiddenSSID" static="false" transient="false" type="boolean" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="networkId" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="preSharedKey" static="false" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="priority" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="status" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="wepKeys" static="false" transient="false" type="java.lang.String[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="wepTxKeyIndex" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="WifiConfiguration.AuthAlgorithm" static="true" visibility="public">
+<field deprecated="not deprecated" final="true" name="LEAP" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OPEN" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SHARED" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="strings" static="true" transient="false" type="java.lang.String[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="varName" static="true" transient="false" type="java.lang.String" value="&quot;auth_alg&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="WifiConfiguration.GroupCipher" static="true" visibility="public">
+<field deprecated="not deprecated" final="true" name="CCMP" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TKIP" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEP104" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEP40" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="strings" static="true" transient="false" type="java.lang.String[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="varName" static="true" transient="false" type="java.lang.String" value="&quot;group&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="WifiConfiguration.KeyMgmt" static="true" visibility="public">
+<field deprecated="not deprecated" final="true" name="IEEE8021X" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NONE" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WPA_EAP" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WPA_PSK" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="strings" static="true" transient="false" type="java.lang.String[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="varName" static="true" transient="false" type="java.lang.String" value="&quot;key_mgmt&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="WifiConfiguration.PairwiseCipher" static="true" visibility="public">
+<field deprecated="not deprecated" final="true" name="CCMP" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NONE" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TKIP" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="strings" static="true" transient="false" type="java.lang.String[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="varName" static="true" transient="false" type="java.lang.String" value="&quot;pairwise&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="WifiConfiguration.Protocol" static="true" visibility="public">
+<field deprecated="not deprecated" final="true" name="RSN" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WPA" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="strings" static="true" transient="false" type="java.lang.String[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="varName" static="true" transient="false" type="java.lang.String" value="&quot;proto&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="WifiConfiguration.Status" static="true" visibility="public">
+<field deprecated="not deprecated" final="true" name="CURRENT" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DISABLED" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ENABLED" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="strings" static="true" transient="false" type="java.lang.String[]" value="null" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="WifiInfo" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBSSID" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDetailedStateOf" native="false" return="android.net.NetworkInfo.DetailedState" static="true" synchronized="false" visibility="public">
+<parameter name="suppState" type="android.net.wifi.SupplicantState">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHiddenSSID" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIpAddress" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLinkSpeed" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMacAddress" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNetworkId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRssi" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSSID" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSupplicantState" native="false" return="android.net.wifi.SupplicantState" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="LINK_SPEED_UNITS" static="true" transient="false" type="java.lang.String" value="&quot;Mbps&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="WifiManager" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="addNetwork" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="config" type="android.net.wifi.WifiConfiguration">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="calculateSignalLevel" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="rssi" type="int">
+</parameter>
+<parameter name="numLevels" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="compareSignalLevel" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="rssiA" type="int">
+</parameter>
+<parameter name="rssiB" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createMulticastLock" native="false" return="android.net.wifi.WifiManager.MulticastLock" static="false" synchronized="false" visibility="public">
+<parameter name="tag" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createWifiLock" native="false" return="android.net.wifi.WifiManager.WifiLock" static="false" synchronized="false" visibility="public">
+<parameter name="lockType" type="int">
+</parameter>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createWifiLock" native="false" return="android.net.wifi.WifiManager.WifiLock" static="false" synchronized="false" visibility="public">
+<parameter name="tag" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="disableNetwork" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="netId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="disconnect" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="enableNetwork" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="netId" type="int">
+</parameter>
+<parameter name="disableOthers" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getConfiguredNetworks" native="false" return="java.util.List&lt;android.net.wifi.WifiConfiguration&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getConnectionInfo" native="false" return="android.net.wifi.WifiInfo" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDhcpInfo" native="false" return="android.net.DhcpInfo" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getScanResults" native="false" return="java.util.List&lt;android.net.wifi.ScanResult&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWifiState" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isWifiEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pingSupplicant" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reassociate" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reconnect" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeNetwork" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="netId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="saveConfiguration" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setWifiEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="enabled" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startScan" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateNetwork" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="config" type="android.net.wifi.WifiConfiguration">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ACTION_PICK_WIFI_NETWORK" static="true" transient="false" type="java.lang.String" value="&quot;android.net.wifi.PICK_WIFI_NETWORK&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_AUTHENTICATING" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_BSSID" static="true" transient="false" type="java.lang.String" value="&quot;bssid&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_NETWORK_INFO" static="true" transient="false" type="java.lang.String" value="&quot;networkInfo&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_NEW_RSSI" static="true" transient="false" type="java.lang.String" value="&quot;newRssi&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_NEW_STATE" static="true" transient="false" type="java.lang.String" value="&quot;newState&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_PREVIOUS_WIFI_STATE" static="true" transient="false" type="java.lang.String" value="&quot;previous_wifi_state&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_SUPPLICANT_CONNECTED" static="true" transient="false" type="java.lang.String" value="&quot;connected&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_SUPPLICANT_ERROR" static="true" transient="false" type="java.lang.String" value="&quot;supplicantError&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_WIFI_STATE" static="true" transient="false" type="java.lang.String" value="&quot;wifi_state&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NETWORK_IDS_CHANGED_ACTION" static="true" transient="false" type="java.lang.String" value="&quot;android.net.wifi.NETWORK_IDS_CHANGED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NETWORK_STATE_CHANGED_ACTION" static="true" transient="false" type="java.lang.String" value="&quot;android.net.wifi.STATE_CHANGE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RSSI_CHANGED_ACTION" static="true" transient="false" type="java.lang.String" value="&quot;android.net.wifi.RSSI_CHANGED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCAN_RESULTS_AVAILABLE_ACTION" static="true" transient="false" type="java.lang.String" value="&quot;android.net.wifi.SCAN_RESULTS&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SUPPLICANT_CONNECTION_CHANGE_ACTION" static="true" transient="false" type="java.lang.String" value="&quot;android.net.wifi.supplicant.CONNECTION_CHANGE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SUPPLICANT_STATE_CHANGED_ACTION" static="true" transient="false" type="java.lang.String" value="&quot;android.net.wifi.supplicant.STATE_CHANGE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WIFI_MODE_FULL" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WIFI_MODE_SCAN_ONLY" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WIFI_STATE_CHANGED_ACTION" static="true" transient="false" type="java.lang.String" value="&quot;android.net.wifi.WIFI_STATE_CHANGED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WIFI_STATE_DISABLED" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WIFI_STATE_DISABLING" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WIFI_STATE_ENABLED" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WIFI_STATE_ENABLING" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WIFI_STATE_UNKNOWN" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="WifiManager.MulticastLock" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="acquire" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isHeld" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="release" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReferenceCounted" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="refCounted" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="WifiManager.WifiLock" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="acquire" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isHeld" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="release" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReferenceCounted" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="refCounted" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setWorkSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ws" type="android.os.WorkSource">
+</parameter>
+</method>
+</class>
+</package></api>

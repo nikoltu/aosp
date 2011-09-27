@@ -1,0 +1,750 @@
+<?xml version="1.0" ?><api><package name="java.nio.channels">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.IllegalStateException" final="false" name="AlreadyConnectedException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AlreadyConnectedException" static="false" type="java.nio.channels.AlreadyConnectedException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.nio.channels.ClosedChannelException" final="false" name="AsynchronousCloseException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AsynchronousCloseException" static="false" type="java.nio.channels.AsynchronousCloseException" visibility="public">
+</constructor>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ByteChannel" static="false" visibility="public">
+<implements name="java.nio.channels.ReadableByteChannel">
+</implements>
+<implements name="java.nio.channels.WritableByteChannel">
+</implements>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.IllegalStateException" final="false" name="CancelledKeyException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CancelledKeyException" static="false" type="java.nio.channels.CancelledKeyException" visibility="public">
+</constructor>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Channel" static="false" visibility="public">
+<implements name="java.io.Closeable">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isOpen" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="Channels" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="newChannel" native="false" return="java.nio.channels.ReadableByteChannel" static="true" synchronized="false" visibility="public">
+<parameter name="inputStream" type="java.io.InputStream">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newChannel" native="false" return="java.nio.channels.WritableByteChannel" static="true" synchronized="false" visibility="public">
+<parameter name="outputStream" type="java.io.OutputStream">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInputStream" native="false" return="java.io.InputStream" static="true" synchronized="false" visibility="public">
+<parameter name="channel" type="java.nio.channels.ReadableByteChannel">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newOutputStream" native="false" return="java.io.OutputStream" static="true" synchronized="false" visibility="public">
+<parameter name="channel" type="java.nio.channels.WritableByteChannel">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newReader" native="false" return="java.io.Reader" static="true" synchronized="false" visibility="public">
+<parameter name="channel" type="java.nio.channels.ReadableByteChannel">
+</parameter>
+<parameter name="decoder" type="java.nio.charset.CharsetDecoder">
+</parameter>
+<parameter name="minBufferCapacity" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newReader" native="false" return="java.io.Reader" static="true" synchronized="false" visibility="public">
+<parameter name="channel" type="java.nio.channels.ReadableByteChannel">
+</parameter>
+<parameter name="charsetName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newWriter" native="false" return="java.io.Writer" static="true" synchronized="false" visibility="public">
+<parameter name="channel" type="java.nio.channels.WritableByteChannel">
+</parameter>
+<parameter name="encoder" type="java.nio.charset.CharsetEncoder">
+</parameter>
+<parameter name="minBufferCapacity" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newWriter" native="false" return="java.io.Writer" static="true" synchronized="false" visibility="public">
+<parameter name="channel" type="java.nio.channels.WritableByteChannel">
+</parameter>
+<parameter name="charsetName" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.nio.channels.AsynchronousCloseException" final="false" name="ClosedByInterruptException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ClosedByInterruptException" static="false" type="java.nio.channels.ClosedByInterruptException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.IOException" final="false" name="ClosedChannelException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ClosedChannelException" static="false" type="java.nio.channels.ClosedChannelException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.IllegalStateException" final="false" name="ClosedSelectorException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ClosedSelectorException" static="false" type="java.nio.channels.ClosedSelectorException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.IllegalStateException" final="false" name="ConnectionPendingException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ConnectionPendingException" static="false" type="java.nio.channels.ConnectionPendingException" visibility="public">
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.nio.channels.spi.AbstractSelectableChannel" final="false" name="DatagramChannel" static="false" visibility="public">
+<implements name="java.nio.channels.ByteChannel">
+</implements>
+<implements name="java.nio.channels.GatheringByteChannel">
+</implements>
+<implements name="java.nio.channels.ScatteringByteChannel">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DatagramChannel" static="false" type="java.nio.channels.DatagramChannel" visibility="protected">
+<parameter name="selectorProvider" type="java.nio.channels.spi.SelectorProvider">
+</parameter>
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="connect" native="false" return="java.nio.channels.DatagramChannel" static="false" synchronized="false" visibility="public">
+<parameter name="address" type="java.net.SocketAddress">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="disconnect" native="false" return="java.nio.channels.DatagramChannel" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isConnected" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="open" native="false" return="java.nio.channels.DatagramChannel" static="true" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="java.nio.ByteBuffer">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="read" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="targets" type="java.nio.ByteBuffer[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="read" native="false" return="long" static="false" synchronized="true" visibility="public">
+<parameter name="targets" type="java.nio.ByteBuffer[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="receive" native="false" return="java.net.SocketAddress" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="java.nio.ByteBuffer">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="send" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="source" type="java.nio.ByteBuffer">
+</parameter>
+<parameter name="address" type="java.net.SocketAddress">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="socket" native="false" return="java.net.DatagramSocket" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="validOps" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="write" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="source" type="java.nio.ByteBuffer">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="write" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="sources" type="java.nio.ByteBuffer[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="write" native="false" return="long" static="false" synchronized="true" visibility="public">
+<parameter name="sources" type="java.nio.ByteBuffer[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.nio.channels.spi.AbstractInterruptibleChannel" final="false" name="FileChannel" static="false" visibility="public">
+<implements name="java.nio.channels.ByteChannel">
+</implements>
+<implements name="java.nio.channels.GatheringByteChannel">
+</implements>
+<implements name="java.nio.channels.ScatteringByteChannel">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="FileChannel" static="false" type="java.nio.channels.FileChannel" visibility="protected">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="force" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="metadata" type="boolean">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="lock" native="false" return="java.nio.channels.FileLock" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="lock" native="false" return="java.nio.channels.FileLock" static="false" synchronized="false" visibility="public">
+<parameter name="position" type="long">
+</parameter>
+<parameter name="size" type="long">
+</parameter>
+<parameter name="shared" type="boolean">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="map" native="false" return="java.nio.MappedByteBuffer" static="false" synchronized="false" visibility="public">
+<parameter name="mode" type="java.nio.channels.FileChannel.MapMode">
+</parameter>
+<parameter name="position" type="long">
+</parameter>
+<parameter name="size" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="position" native="false" return="long" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="position" native="false" return="java.nio.channels.FileChannel" static="false" synchronized="false" visibility="public">
+<parameter name="offset" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="java.nio.ByteBuffer">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="java.nio.ByteBuffer">
+</parameter>
+<parameter name="position" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="read" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="buffers" type="java.nio.ByteBuffer[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="read" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="buffers" type="java.nio.ByteBuffer[]">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="number" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="size" native="false" return="long" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="transferFrom" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="src" type="java.nio.channels.ReadableByteChannel">
+</parameter>
+<parameter name="position" type="long">
+</parameter>
+<parameter name="count" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="transferTo" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="position" type="long">
+</parameter>
+<parameter name="count" type="long">
+</parameter>
+<parameter name="target" type="java.nio.channels.WritableByteChannel">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="truncate" native="false" return="java.nio.channels.FileChannel" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="tryLock" native="false" return="java.nio.channels.FileLock" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="tryLock" native="false" return="java.nio.channels.FileLock" static="false" synchronized="false" visibility="public">
+<parameter name="position" type="long">
+</parameter>
+<parameter name="size" type="long">
+</parameter>
+<parameter name="shared" type="boolean">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="write" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="src" type="java.nio.ByteBuffer">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="write" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="java.nio.ByteBuffer">
+</parameter>
+<parameter name="position" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="write" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="buffers" type="java.nio.ByteBuffer[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="write" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="buffers" type="java.nio.ByteBuffer[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="FileChannel.MapMode" static="true" visibility="public">
+<field deprecated="not deprecated" final="true" name="PRIVATE" static="true" transient="false" type="java.nio.channels.FileChannel.MapMode" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="READ_ONLY" static="true" transient="false" type="java.nio.channels.FileChannel.MapMode" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="READ_WRITE" static="true" transient="false" type="java.nio.channels.FileChannel.MapMode" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="FileLock" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="FileLock" static="false" type="java.nio.channels.FileLock" visibility="protected">
+<parameter name="channel" type="java.nio.channels.FileChannel">
+</parameter>
+<parameter name="position" type="long">
+</parameter>
+<parameter name="size" type="long">
+</parameter>
+<parameter name="shared" type="boolean">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="channel" native="false" return="java.nio.channels.FileChannel" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isShared" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isValid" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="overlaps" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="start" type="long">
+</parameter>
+<parameter name="length" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="position" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="release" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="size" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="toString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.IOException" final="false" name="FileLockInterruptionException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="FileLockInterruptionException" static="false" type="java.nio.channels.FileLockInterruptionException" visibility="public">
+</constructor>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="GatheringByteChannel" static="false" visibility="public">
+<implements name="java.nio.channels.WritableByteChannel">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="write" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="buffers" type="java.nio.ByteBuffer[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="write" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="buffers" type="java.nio.ByteBuffer[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.IllegalStateException" final="false" name="IllegalBlockingModeException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IllegalBlockingModeException" static="false" type="java.nio.channels.IllegalBlockingModeException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.IllegalArgumentException" final="false" name="IllegalSelectorException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IllegalSelectorException" static="false" type="java.nio.channels.IllegalSelectorException" visibility="public">
+</constructor>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="InterruptibleChannel" static="false" visibility="public">
+<implements name="java.nio.channels.Channel">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.IllegalStateException" final="false" name="NoConnectionPendingException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="NoConnectionPendingException" static="false" type="java.nio.channels.NoConnectionPendingException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.IllegalStateException" final="false" name="NonReadableChannelException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="NonReadableChannelException" static="false" type="java.nio.channels.NonReadableChannelException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.IllegalStateException" final="false" name="NonWritableChannelException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="NonWritableChannelException" static="false" type="java.nio.channels.NonWritableChannelException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.IllegalStateException" final="false" name="NotYetBoundException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="NotYetBoundException" static="false" type="java.nio.channels.NotYetBoundException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.IllegalStateException" final="false" name="NotYetConnectedException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="NotYetConnectedException" static="false" type="java.nio.channels.NotYetConnectedException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.IllegalStateException" final="false" name="OverlappingFileLockException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="OverlappingFileLockException" static="false" type="java.nio.channels.OverlappingFileLockException" visibility="public">
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Pipe" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Pipe" static="false" type="java.nio.channels.Pipe" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="open" native="false" return="java.nio.channels.Pipe" static="true" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="sink" native="false" return="java.nio.channels.Pipe.SinkChannel" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="source" native="false" return="java.nio.channels.Pipe.SourceChannel" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.nio.channels.spi.AbstractSelectableChannel" final="false" name="Pipe.SinkChannel" static="true" visibility="public">
+<implements name="java.nio.channels.GatheringByteChannel">
+</implements>
+<implements name="java.nio.channels.WritableByteChannel">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Pipe.SinkChannel" static="false" type="java.nio.channels.Pipe.SinkChannel" visibility="protected">
+<parameter name="provider" type="java.nio.channels.spi.SelectorProvider">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="validOps" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.nio.channels.spi.AbstractSelectableChannel" final="false" name="Pipe.SourceChannel" static="true" visibility="public">
+<implements name="java.nio.channels.ReadableByteChannel">
+</implements>
+<implements name="java.nio.channels.ScatteringByteChannel">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Pipe.SourceChannel" static="false" type="java.nio.channels.Pipe.SourceChannel" visibility="protected">
+<parameter name="provider" type="java.nio.channels.spi.SelectorProvider">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="validOps" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ReadableByteChannel" static="false" visibility="public">
+<implements name="java.nio.channels.Channel">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="java.nio.ByteBuffer">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ScatteringByteChannel" static="false" visibility="public">
+<implements name="java.nio.channels.ReadableByteChannel">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="read" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="buffers" type="java.nio.ByteBuffer[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="read" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="buffers" type="java.nio.ByteBuffer[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</interface>
+<class abstract="true" deprecated="not deprecated" extends="java.nio.channels.spi.AbstractInterruptibleChannel" final="false" name="SelectableChannel" static="false" visibility="public">
+<implements name="java.nio.channels.Channel">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="SelectableChannel" static="false" type="java.nio.channels.SelectableChannel" visibility="protected">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="blockingLock" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="configureBlocking" native="false" return="java.nio.channels.SelectableChannel" static="false" synchronized="false" visibility="public">
+<parameter name="block" type="boolean">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isBlocking" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isRegistered" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="keyFor" native="false" return="java.nio.channels.SelectionKey" static="false" synchronized="false" visibility="public">
+<parameter name="sel" type="java.nio.channels.Selector">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="provider" native="false" return="java.nio.channels.spi.SelectorProvider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="register" native="false" return="java.nio.channels.SelectionKey" static="false" synchronized="false" visibility="public">
+<parameter name="selector" type="java.nio.channels.Selector">
+</parameter>
+<parameter name="operations" type="int">
+</parameter>
+<exception name="ClosedChannelException" type="java.nio.channels.ClosedChannelException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="register" native="false" return="java.nio.channels.SelectionKey" static="false" synchronized="false" visibility="public">
+<parameter name="sel" type="java.nio.channels.Selector">
+</parameter>
+<parameter name="ops" type="int">
+</parameter>
+<parameter name="att" type="java.lang.Object">
+</parameter>
+<exception name="ClosedChannelException" type="java.nio.channels.ClosedChannelException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="validOps" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SelectionKey" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SelectionKey" static="false" type="java.nio.channels.SelectionKey" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="attach" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="anObject" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="attachment" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="cancel" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="channel" native="false" return="java.nio.channels.SelectableChannel" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="interestOps" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="interestOps" native="false" return="java.nio.channels.SelectionKey" static="false" synchronized="false" visibility="public">
+<parameter name="operations" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isAcceptable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isConnectable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isReadable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isValid" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isWritable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readyOps" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="selector" native="false" return="java.nio.channels.Selector" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="OP_ACCEPT" static="true" transient="false" type="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OP_CONNECT" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OP_READ" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OP_WRITE" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Selector" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Selector" static="false" type="java.nio.channels.Selector" visibility="protected">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isOpen" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="keys" native="false" return="java.util.Set&lt;java.nio.channels.SelectionKey&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="open" native="false" return="java.nio.channels.Selector" static="true" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="provider" native="false" return="java.nio.channels.spi.SelectorProvider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="select" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="select" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="selectNow" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="selectedKeys" native="false" return="java.util.Set&lt;java.nio.channels.SelectionKey&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="wakeup" native="false" return="java.nio.channels.Selector" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.nio.channels.spi.AbstractSelectableChannel" final="false" name="ServerSocketChannel" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ServerSocketChannel" static="false" type="java.nio.channels.ServerSocketChannel" visibility="protected">
+<parameter name="selectorProvider" type="java.nio.channels.spi.SelectorProvider">
+</parameter>
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="accept" native="false" return="java.nio.channels.SocketChannel" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="open" native="false" return="java.nio.channels.ServerSocketChannel" static="true" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="socket" native="false" return="java.net.ServerSocket" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="validOps" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.nio.channels.spi.AbstractSelectableChannel" final="false" name="SocketChannel" static="false" visibility="public">
+<implements name="java.nio.channels.ByteChannel">
+</implements>
+<implements name="java.nio.channels.GatheringByteChannel">
+</implements>
+<implements name="java.nio.channels.ScatteringByteChannel">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="SocketChannel" static="false" type="java.nio.channels.SocketChannel" visibility="protected">
+<parameter name="selectorProvider" type="java.nio.channels.spi.SelectorProvider">
+</parameter>
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="connect" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="address" type="java.net.SocketAddress">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="finishConnect" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isConnected" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isConnectionPending" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="open" native="false" return="java.nio.channels.SocketChannel" static="true" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="open" native="false" return="java.nio.channels.SocketChannel" static="true" synchronized="false" visibility="public">
+<parameter name="address" type="java.net.SocketAddress">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="java.nio.ByteBuffer">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="read" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="targets" type="java.nio.ByteBuffer[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="read" native="false" return="long" static="false" synchronized="true" visibility="public">
+<parameter name="targets" type="java.nio.ByteBuffer[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="socket" native="false" return="java.net.Socket" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="validOps" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="write" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="source" type="java.nio.ByteBuffer">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="write" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="sources" type="java.nio.ByteBuffer[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="write" native="false" return="long" static="false" synchronized="true" visibility="public">
+<parameter name="sources" type="java.nio.ByteBuffer[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.IllegalArgumentException" final="false" name="UnresolvedAddressException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="UnresolvedAddressException" static="false" type="java.nio.channels.UnresolvedAddressException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.IllegalArgumentException" final="false" name="UnsupportedAddressTypeException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="UnsupportedAddressTypeException" static="false" type="java.nio.channels.UnsupportedAddressTypeException" visibility="public">
+</constructor>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="WritableByteChannel" static="false" visibility="public">
+<implements name="java.nio.channels.Channel">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="write" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="java.nio.ByteBuffer">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</interface>
+</package></api>

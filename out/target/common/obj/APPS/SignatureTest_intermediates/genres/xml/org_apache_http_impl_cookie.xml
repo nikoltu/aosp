@@ -1,0 +1,746 @@
+<?xml version="1.0" ?><api><package name="org.apache.http.impl.cookie">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AbstractCookieAttributeHandler" static="false" visibility="public">
+<implements name="org.apache.http.cookie.CookieAttributeHandler">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractCookieAttributeHandler" static="false" type="org.apache.http.impl.cookie.AbstractCookieAttributeHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="match" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="validate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AbstractCookieSpec" static="false" visibility="public">
+<implements name="org.apache.http.cookie.CookieSpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractCookieSpec" static="false" type="org.apache.http.impl.cookie.AbstractCookieSpec" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="findAttribHandler" native="false" return="org.apache.http.cookie.CookieAttributeHandler" static="false" synchronized="false" visibility="protected">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAttribHandler" native="false" return="org.apache.http.cookie.CookieAttributeHandler" static="false" synchronized="false" visibility="protected">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAttribHandlers" native="false" return="java.util.Collection&lt;org.apache.http.cookie.CookieAttributeHandler&gt;" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="registerAttribHandler" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="handler" type="org.apache.http.cookie.CookieAttributeHandler">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BasicClientCookie" static="false" visibility="public">
+<implements name="org.apache.http.cookie.ClientCookie">
+</implements>
+<implements name="java.lang.Cloneable">
+</implements>
+<implements name="org.apache.http.cookie.SetCookie">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicClientCookie" static="false" type="org.apache.http.impl.cookie.BasicClientCookie" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="containsAttribute" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAttribute" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getComment" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCommentURL" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDomain" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getExpiryDate" native="false" return="java.util.Date" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPath" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPorts" native="false" return="int[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValue" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVersion" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isExpired" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="date" type="java.util.Date">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isPersistent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isSecure" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAttribute" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setComment" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="comment" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDomain" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="domain" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setExpiryDate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="expiryDate" type="java.util.Date">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPath" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSecure" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="secure" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setValue" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVersion" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="version" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.cookie.BasicClientCookie" final="false" name="BasicClientCookie2" static="false" visibility="public">
+<implements name="org.apache.http.cookie.SetCookie2">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicClientCookie2" static="false" type="org.apache.http.impl.cookie.BasicClientCookie2" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCommentURL" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="commentURL" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDiscard" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="discard" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPorts" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ports" type="int[]">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.cookie.AbstractCookieAttributeHandler" final="false" name="BasicCommentHandler" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BasicCommentHandler" static="false" type="org.apache.http.impl.cookie.BasicCommentHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.SetCookie">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BasicDomainHandler" static="false" visibility="public">
+<implements name="org.apache.http.cookie.CookieAttributeHandler">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicDomainHandler" static="false" type="org.apache.http.impl.cookie.BasicDomainHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="match" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.SetCookie">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="validate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.cookie.AbstractCookieAttributeHandler" final="false" name="BasicExpiresHandler" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BasicExpiresHandler" static="false" type="org.apache.http.impl.cookie.BasicExpiresHandler" visibility="public">
+<parameter name="datepatterns" type="java.lang.String[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.SetCookie">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.cookie.AbstractCookieAttributeHandler" final="false" name="BasicMaxAgeHandler" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BasicMaxAgeHandler" static="false" type="org.apache.http.impl.cookie.BasicMaxAgeHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.SetCookie">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BasicPathHandler" static="false" visibility="public">
+<implements name="org.apache.http.cookie.CookieAttributeHandler">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicPathHandler" static="false" type="org.apache.http.impl.cookie.BasicPathHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="match" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.SetCookie">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="validate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.cookie.AbstractCookieAttributeHandler" final="false" name="BasicSecureHandler" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BasicSecureHandler" static="false" type="org.apache.http.impl.cookie.BasicSecureHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.SetCookie">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BestMatchSpec" static="false" visibility="public">
+<implements name="org.apache.http.cookie.CookieSpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BestMatchSpec" static="false" type="org.apache.http.impl.cookie.BestMatchSpec" visibility="public">
+<parameter name="datepatterns" type="java.lang.String[]">
+</parameter>
+<parameter name="oneHeader" type="boolean">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BestMatchSpec" static="false" type="org.apache.http.impl.cookie.BestMatchSpec" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatCookies" native="false" return="java.util.List&lt;org.apache.http.Header&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="cookies" type="java.util.List&lt;org.apache.http.cookie.Cookie&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVersion" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVersionHeader" native="false" return="org.apache.http.Header" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="match" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="java.util.List&lt;org.apache.http.cookie.Cookie&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="header" type="org.apache.http.Header">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="validate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BestMatchSpecFactory" static="false" visibility="public">
+<implements name="org.apache.http.cookie.CookieSpecFactory">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BestMatchSpecFactory" static="false" type="org.apache.http.impl.cookie.BestMatchSpecFactory" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="org.apache.http.cookie.CookieSpec" static="false" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.cookie.CookieSpecBase" final="false" name="BrowserCompatSpec" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BrowserCompatSpec" static="false" type="org.apache.http.impl.cookie.BrowserCompatSpec" visibility="public">
+<parameter name="datepatterns" type="java.lang.String[]">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BrowserCompatSpec" static="false" type="org.apache.http.impl.cookie.BrowserCompatSpec" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatCookies" native="false" return="java.util.List&lt;org.apache.http.Header&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="cookies" type="java.util.List&lt;org.apache.http.cookie.Cookie&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVersion" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVersionHeader" native="false" return="org.apache.http.Header" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="java.util.List&lt;org.apache.http.cookie.Cookie&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="header" type="org.apache.http.Header">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="DATE_PATTERNS" static="true" transient="false" type="java.lang.String[]" value="null" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BrowserCompatSpecFactory" static="false" visibility="public">
+<implements name="org.apache.http.cookie.CookieSpecFactory">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BrowserCompatSpecFactory" static="false" type="org.apache.http.impl.cookie.BrowserCompatSpecFactory" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="org.apache.http.cookie.CookieSpec" static="false" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="org.apache.http.impl.cookie.AbstractCookieSpec" final="false" name="CookieSpecBase" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CookieSpecBase" static="false" type="org.apache.http.impl.cookie.CookieSpecBase" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultDomain" native="false" return="java.lang.String" static="true" synchronized="false" visibility="protected">
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultPath" native="false" return="java.lang.String" static="true" synchronized="false" visibility="protected">
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="match" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="java.util.List&lt;org.apache.http.cookie.Cookie&gt;" static="false" synchronized="false" visibility="protected">
+<parameter name="elems" type="org.apache.http.HeaderElement[]">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="validate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Exception" final="false" name="DateParseException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DateParseException" static="false" type="org.apache.http.impl.cookie.DateParseException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DateParseException" static="false" type="org.apache.http.impl.cookie.DateParseException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="DateUtils" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="formatDate" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="date" type="java.util.Date">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatDate" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="date" type="java.util.Date">
+</parameter>
+<parameter name="pattern" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseDate" native="false" return="java.util.Date" static="true" synchronized="false" visibility="public">
+<parameter name="dateValue" type="java.lang.String">
+</parameter>
+<exception name="DateParseException" type="org.apache.http.impl.cookie.DateParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseDate" native="false" return="java.util.Date" static="true" synchronized="false" visibility="public">
+<parameter name="dateValue" type="java.lang.String">
+</parameter>
+<parameter name="dateFormats" type="java.lang.String[]">
+</parameter>
+<exception name="DateParseException" type="org.apache.http.impl.cookie.DateParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseDate" native="false" return="java.util.Date" static="true" synchronized="false" visibility="public">
+<parameter name="dateValue" type="java.lang.String">
+</parameter>
+<parameter name="dateFormats" type="java.lang.String[]">
+</parameter>
+<parameter name="startDate" type="java.util.Date">
+</parameter>
+<exception name="DateParseException" type="org.apache.http.impl.cookie.DateParseException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="GMT" static="true" transient="false" type="java.util.TimeZone" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PATTERN_ASCTIME" static="true" transient="false" type="java.lang.String" value="&quot;EEE MMM d HH:mm:ss yyyy&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PATTERN_RFC1036" static="true" transient="false" type="java.lang.String" value="&quot;EEEE, dd-MMM-yy HH:mm:ss zzz&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PATTERN_RFC1123" static="true" transient="false" type="java.lang.String" value="&quot;EEE, dd MMM yyyy HH:mm:ss zzz&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.cookie.BasicDomainHandler" final="false" name="NetscapeDomainHandler" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="NetscapeDomainHandler" static="false" type="org.apache.http.impl.cookie.NetscapeDomainHandler" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="NetscapeDraftHeaderParser" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="NetscapeDraftHeaderParser" static="false" type="org.apache.http.impl.cookie.NetscapeDraftHeaderParser" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseHeader" native="false" return="org.apache.http.HeaderElement" static="false" synchronized="false" visibility="public">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="cursor" type="org.apache.http.message.ParserCursor">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="DEFAULT" static="true" transient="false" type="org.apache.http.impl.cookie.NetscapeDraftHeaderParser" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.cookie.CookieSpecBase" final="false" name="NetscapeDraftSpec" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="NetscapeDraftSpec" static="false" type="org.apache.http.impl.cookie.NetscapeDraftSpec" visibility="public">
+<parameter name="datepatterns" type="java.lang.String[]">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="NetscapeDraftSpec" static="false" type="org.apache.http.impl.cookie.NetscapeDraftSpec" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatCookies" native="false" return="java.util.List&lt;org.apache.http.Header&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="cookies" type="java.util.List&lt;org.apache.http.cookie.Cookie&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVersion" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVersionHeader" native="false" return="org.apache.http.Header" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="java.util.List&lt;org.apache.http.cookie.Cookie&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="header" type="org.apache.http.Header">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="EXPIRES_PATTERN" static="true" transient="false" type="java.lang.String" value="&quot;EEE, dd-MMM-yyyy HH:mm:ss z&quot;" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="NetscapeDraftSpecFactory" static="false" visibility="public">
+<implements name="org.apache.http.cookie.CookieSpecFactory">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="NetscapeDraftSpecFactory" static="false" type="org.apache.http.impl.cookie.NetscapeDraftSpecFactory" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="org.apache.http.cookie.CookieSpec" static="false" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RFC2109DomainHandler" static="false" visibility="public">
+<implements name="org.apache.http.cookie.CookieAttributeHandler">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RFC2109DomainHandler" static="false" type="org.apache.http.impl.cookie.RFC2109DomainHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="match" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.SetCookie">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="validate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.cookie.CookieSpecBase" final="false" name="RFC2109Spec" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RFC2109Spec" static="false" type="org.apache.http.impl.cookie.RFC2109Spec" visibility="public">
+<parameter name="datepatterns" type="java.lang.String[]">
+</parameter>
+<parameter name="oneHeader" type="boolean">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="RFC2109Spec" static="false" type="org.apache.http.impl.cookie.RFC2109Spec" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatCookieAsVer" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="version" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatCookies" native="false" return="java.util.List&lt;org.apache.http.Header&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="cookies" type="java.util.List&lt;org.apache.http.cookie.Cookie&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatParamAsVer" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="buffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<parameter name="version" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVersion" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVersionHeader" native="false" return="org.apache.http.Header" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="java.util.List&lt;org.apache.http.cookie.Cookie&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="header" type="org.apache.http.Header">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RFC2109SpecFactory" static="false" visibility="public">
+<implements name="org.apache.http.cookie.CookieSpecFactory">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RFC2109SpecFactory" static="false" type="org.apache.http.impl.cookie.RFC2109SpecFactory" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="org.apache.http.cookie.CookieSpec" static="false" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.cookie.AbstractCookieAttributeHandler" final="false" name="RFC2109VersionHandler" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RFC2109VersionHandler" static="false" type="org.apache.http.impl.cookie.RFC2109VersionHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.SetCookie">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RFC2965CommentUrlAttributeHandler" static="false" visibility="public">
+<implements name="org.apache.http.cookie.CookieAttributeHandler">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RFC2965CommentUrlAttributeHandler" static="false" type="org.apache.http.impl.cookie.RFC2965CommentUrlAttributeHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="match" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.SetCookie">
+</parameter>
+<parameter name="commenturl" type="java.lang.String">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="validate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RFC2965DiscardAttributeHandler" static="false" visibility="public">
+<implements name="org.apache.http.cookie.CookieAttributeHandler">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RFC2965DiscardAttributeHandler" static="false" type="org.apache.http.impl.cookie.RFC2965DiscardAttributeHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="match" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.SetCookie">
+</parameter>
+<parameter name="commenturl" type="java.lang.String">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="validate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RFC2965DomainAttributeHandler" static="false" visibility="public">
+<implements name="org.apache.http.cookie.CookieAttributeHandler">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RFC2965DomainAttributeHandler" static="false" type="org.apache.http.impl.cookie.RFC2965DomainAttributeHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="domainMatch" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="domain" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="match" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.SetCookie">
+</parameter>
+<parameter name="domain" type="java.lang.String">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="validate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RFC2965PortAttributeHandler" static="false" visibility="public">
+<implements name="org.apache.http.cookie.CookieAttributeHandler">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RFC2965PortAttributeHandler" static="false" type="org.apache.http.impl.cookie.RFC2965PortAttributeHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="match" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.SetCookie">
+</parameter>
+<parameter name="portValue" type="java.lang.String">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="validate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.cookie.RFC2109Spec" final="false" name="RFC2965Spec" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RFC2965Spec" static="false" type="org.apache.http.impl.cookie.RFC2965Spec" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="RFC2965Spec" static="false" type="org.apache.http.impl.cookie.RFC2965Spec" visibility="public">
+<parameter name="datepatterns" type="java.lang.String[]">
+</parameter>
+<parameter name="oneHeader" type="boolean">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RFC2965SpecFactory" static="false" visibility="public">
+<implements name="org.apache.http.cookie.CookieSpecFactory">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RFC2965SpecFactory" static="false" type="org.apache.http.impl.cookie.RFC2965SpecFactory" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="org.apache.http.cookie.CookieSpec" static="false" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RFC2965VersionAttributeHandler" static="false" visibility="public">
+<implements name="org.apache.http.cookie.CookieAttributeHandler">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RFC2965VersionAttributeHandler" static="false" type="org.apache.http.impl.cookie.RFC2965VersionAttributeHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="match" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.SetCookie">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="validate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+<parameter name="origin" type="org.apache.http.cookie.CookieOrigin">
+</parameter>
+<exception name="MalformedCookieException" type="org.apache.http.cookie.MalformedCookieException">
+</exception>
+</method>
+</class>
+</package></api>

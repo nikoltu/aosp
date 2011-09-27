@@ -1,0 +1,332 @@
+<?xml version="1.0" ?><api><package name="org.apache.http.util">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="ByteArrayBuffer" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ByteArrayBuffer" static="false" type="org.apache.http.util.ByteArrayBuffer" visibility="public">
+<parameter name="capacity" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="append" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="append" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="append" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="char[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="append" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="buffer" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="byteAt" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="capacity" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isEmpty" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isFull" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="length" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLength" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="len" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toByteArray" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="CharArrayBuffer" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CharArrayBuffer" static="false" type="org.apache.http.util.CharArrayBuffer" visibility="public">
+<parameter name="capacity" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="append" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="char[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="append" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="str" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="append" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="append" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="append" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ch" type="char">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="append" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="append" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="org.apache.http.util.ByteArrayBuffer">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="append" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="buffer" native="false" return="char[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="capacity" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="charAt" native="false" return="char" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ensureCapacity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="required" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="indexOf" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="ch" type="int">
+</parameter>
+<parameter name="beginIndex" type="int">
+</parameter>
+<parameter name="endIndex" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="indexOf" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="ch" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isEmpty" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isFull" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="length" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLength" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="len" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="substring" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="beginIndex" type="int">
+</parameter>
+<parameter name="endIndex" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="substringTrimmed" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="beginIndex" type="int">
+</parameter>
+<parameter name="endIndex" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toCharArray" native="false" return="char[]" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="EncodingUtils" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getAsciiBytes" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="data" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAsciiString" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAsciiString" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBytes" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="data" type="java.lang.String">
+</parameter>
+<parameter name="charset" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getString" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<parameter name="charset" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getString" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="charset" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="EntityUtils" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getContentCharSet" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="entity" type="org.apache.http.HttpEntity">
+</parameter>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toByteArray" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="entity" type="org.apache.http.HttpEntity">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toString" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="entity" type="org.apache.http.HttpEntity">
+</parameter>
+<parameter name="defaultCharset" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toString" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="entity" type="org.apache.http.HttpEntity">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="ExceptionUtils" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="initCause" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="throwable" type="java.lang.Throwable">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="LangUtils" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="equals" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="obj1" type="java.lang.Object">
+</parameter>
+<parameter name="obj2" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="equals" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="a1" type="java.lang.Object[]">
+</parameter>
+<parameter name="a2" type="java.lang.Object[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hashCode" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="seed" type="int">
+</parameter>
+<parameter name="hashcode" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hashCode" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="seed" type="int">
+</parameter>
+<parameter name="b" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hashCode" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="seed" type="int">
+</parameter>
+<parameter name="obj" type="java.lang.Object">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="HASH_OFFSET" static="true" transient="false" type="int" value="37" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HASH_SEED" static="true" transient="false" type="int" value="17" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="VersionInfo" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="VersionInfo" static="false" type="org.apache.http.util.VersionInfo" visibility="protected">
+<parameter name="pckg" type="java.lang.String">
+</parameter>
+<parameter name="module" type="java.lang.String">
+</parameter>
+<parameter name="release" type="java.lang.String">
+</parameter>
+<parameter name="time" type="java.lang.String">
+</parameter>
+<parameter name="clsldr" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="fromMap" native="false" return="org.apache.http.util.VersionInfo" static="true" synchronized="false" visibility="protected">
+<parameter name="pckg" type="java.lang.String">
+</parameter>
+<parameter name="info" type="java.util.Map">
+</parameter>
+<parameter name="clsldr" type="java.lang.ClassLoader">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getClassloader" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getModule" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getPackage" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getRelease" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getTimestamp" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="loadVersionInfo" native="false" return="org.apache.http.util.VersionInfo[]" static="true" synchronized="false" visibility="public">
+<parameter name="pckgs" type="java.lang.String[]">
+</parameter>
+<parameter name="clsldr" type="java.lang.ClassLoader">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="loadVersionInfo" native="false" return="org.apache.http.util.VersionInfo" static="true" synchronized="false" visibility="public">
+<parameter name="pckg" type="java.lang.String">
+</parameter>
+<parameter name="clsldr" type="java.lang.ClassLoader">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="PROPERTY_MODULE" static="true" transient="false" type="java.lang.String" value="&quot;info.module&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROPERTY_RELEASE" static="true" transient="false" type="java.lang.String" value="&quot;info.release&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROPERTY_TIMESTAMP" static="true" transient="false" type="java.lang.String" value="&quot;info.timestamp&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNAVAILABLE" static="true" transient="false" type="java.lang.String" value="&quot;UNAVAILABLE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_PROPERTY_FILE" static="true" transient="false" type="java.lang.String" value="&quot;version.properties&quot;" visibility="public" volatile="false">
+</field>
+</class>
+</package></api>

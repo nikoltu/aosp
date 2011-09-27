@@ -1,0 +1,820 @@
+<?xml version="1.0" ?><api><package name="org.apache.http.impl.client">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AbstractAuthenticationHandler" static="false" visibility="public">
+<implements name="org.apache.http.client.AuthenticationHandler">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractAuthenticationHandler" static="false" type="org.apache.http.impl.client.AbstractAuthenticationHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAuthPreferences" native="false" return="java.util.List&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseChallenges" native="false" return="java.util.Map&lt;java.lang.String, org.apache.http.Header&gt;" static="false" synchronized="false" visibility="protected">
+<parameter name="headers" type="org.apache.http.Header[]">
+</parameter>
+<exception name="MalformedChallengeException" type="org.apache.http.auth.MalformedChallengeException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="selectScheme" native="false" return="org.apache.http.auth.AuthScheme" static="false" synchronized="false" visibility="public">
+<parameter name="challenges" type="java.util.Map&lt;java.lang.String, org.apache.http.Header&gt;">
+</parameter>
+<parameter name="response" type="org.apache.http.HttpResponse">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="AuthenticationException" type="org.apache.http.auth.AuthenticationException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AbstractHttpClient" static="false" visibility="public">
+<implements name="org.apache.http.client.HttpClient">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractHttpClient" static="false" type="org.apache.http.impl.client.AbstractHttpClient" visibility="protected">
+<parameter name="conman" type="org.apache.http.conn.ClientConnectionManager">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addRequestInterceptor" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="itcp" type="org.apache.http.HttpRequestInterceptor">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addRequestInterceptor" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="itcp" type="org.apache.http.HttpRequestInterceptor">
+</parameter>
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addResponseInterceptor" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="itcp" type="org.apache.http.HttpResponseInterceptor">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addResponseInterceptor" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="itcp" type="org.apache.http.HttpResponseInterceptor">
+</parameter>
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearRequestInterceptors" native="false" return="void" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearResponseInterceptors" native="false" return="void" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createAuthSchemeRegistry" native="false" return="org.apache.http.auth.AuthSchemeRegistry" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createClientConnectionManager" native="false" return="org.apache.http.conn.ClientConnectionManager" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createClientRequestDirector" native="false" return="org.apache.http.client.RequestDirector" static="false" synchronized="false" visibility="protected">
+<parameter name="requestExec" type="org.apache.http.protocol.HttpRequestExecutor">
+</parameter>
+<parameter name="conman" type="org.apache.http.conn.ClientConnectionManager">
+</parameter>
+<parameter name="reustrat" type="org.apache.http.ConnectionReuseStrategy">
+</parameter>
+<parameter name="kastrat" type="org.apache.http.conn.ConnectionKeepAliveStrategy">
+</parameter>
+<parameter name="rouplan" type="org.apache.http.conn.routing.HttpRoutePlanner">
+</parameter>
+<parameter name="httpProcessor" type="org.apache.http.protocol.HttpProcessor">
+</parameter>
+<parameter name="retryHandler" type="org.apache.http.client.HttpRequestRetryHandler">
+</parameter>
+<parameter name="redirectHandler" type="org.apache.http.client.RedirectHandler">
+</parameter>
+<parameter name="targetAuthHandler" type="org.apache.http.client.AuthenticationHandler">
+</parameter>
+<parameter name="proxyAuthHandler" type="org.apache.http.client.AuthenticationHandler">
+</parameter>
+<parameter name="stateHandler" type="org.apache.http.client.UserTokenHandler">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createConnectionKeepAliveStrategy" native="false" return="org.apache.http.conn.ConnectionKeepAliveStrategy" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createConnectionReuseStrategy" native="false" return="org.apache.http.ConnectionReuseStrategy" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createCookieSpecRegistry" native="false" return="org.apache.http.cookie.CookieSpecRegistry" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createCookieStore" native="false" return="org.apache.http.client.CookieStore" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createCredentialsProvider" native="false" return="org.apache.http.client.CredentialsProvider" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createHttpContext" native="false" return="org.apache.http.protocol.HttpContext" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createHttpParams" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createHttpProcessor" native="false" return="org.apache.http.protocol.BasicHttpProcessor" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createHttpRequestRetryHandler" native="false" return="org.apache.http.client.HttpRequestRetryHandler" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createHttpRoutePlanner" native="false" return="org.apache.http.conn.routing.HttpRoutePlanner" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createProxyAuthenticationHandler" native="false" return="org.apache.http.client.AuthenticationHandler" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createRedirectHandler" native="false" return="org.apache.http.client.RedirectHandler" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createRequestExecutor" native="false" return="org.apache.http.protocol.HttpRequestExecutor" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createTargetAuthenticationHandler" native="false" return="org.apache.http.client.AuthenticationHandler" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createUserTokenHandler" native="false" return="org.apache.http.client.UserTokenHandler" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="determineParams" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="protected">
+<parameter name="req" type="org.apache.http.HttpRequest">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="execute" native="false" return="org.apache.http.HttpResponse" static="false" synchronized="false" visibility="public">
+<parameter name="request" type="org.apache.http.client.methods.HttpUriRequest">
+</parameter>
+<exception name="ClientProtocolException" type="org.apache.http.client.ClientProtocolException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="execute" native="false" return="org.apache.http.HttpResponse" static="false" synchronized="false" visibility="public">
+<parameter name="request" type="org.apache.http.client.methods.HttpUriRequest">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="ClientProtocolException" type="org.apache.http.client.ClientProtocolException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="execute" native="false" return="org.apache.http.HttpResponse" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<exception name="ClientProtocolException" type="org.apache.http.client.ClientProtocolException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="execute" native="false" return="org.apache.http.HttpResponse" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="ClientProtocolException" type="org.apache.http.client.ClientProtocolException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="execute" native="false" return="T" static="false" synchronized="false" visibility="public">
+<parameter name="request" type="org.apache.http.client.methods.HttpUriRequest">
+</parameter>
+<parameter name="responseHandler" type="org.apache.http.client.ResponseHandler&lt;? extends T&gt;">
+</parameter>
+<exception name="ClientProtocolException" type="org.apache.http.client.ClientProtocolException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="execute" native="false" return="T" static="false" synchronized="false" visibility="public">
+<parameter name="request" type="org.apache.http.client.methods.HttpUriRequest">
+</parameter>
+<parameter name="responseHandler" type="org.apache.http.client.ResponseHandler&lt;? extends T&gt;">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="ClientProtocolException" type="org.apache.http.client.ClientProtocolException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="execute" native="false" return="T" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<parameter name="responseHandler" type="org.apache.http.client.ResponseHandler&lt;? extends T&gt;">
+</parameter>
+<exception name="ClientProtocolException" type="org.apache.http.client.ClientProtocolException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="execute" native="false" return="T" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<parameter name="responseHandler" type="org.apache.http.client.ResponseHandler&lt;? extends T&gt;">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="ClientProtocolException" type="org.apache.http.client.ClientProtocolException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAuthSchemes" native="false" return="org.apache.http.auth.AuthSchemeRegistry" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getConnectionKeepAliveStrategy" native="false" return="org.apache.http.conn.ConnectionKeepAliveStrategy" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getConnectionManager" native="false" return="org.apache.http.conn.ClientConnectionManager" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getConnectionReuseStrategy" native="false" return="org.apache.http.ConnectionReuseStrategy" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getCookieSpecs" native="false" return="org.apache.http.cookie.CookieSpecRegistry" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getCookieStore" native="false" return="org.apache.http.client.CookieStore" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getCredentialsProvider" native="false" return="org.apache.http.client.CredentialsProvider" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getHttpProcessor" native="false" return="org.apache.http.protocol.BasicHttpProcessor" static="false" synchronized="true" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getHttpRequestRetryHandler" native="false" return="org.apache.http.client.HttpRequestRetryHandler" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getParams" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProxyAuthenticationHandler" native="false" return="org.apache.http.client.AuthenticationHandler" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getRedirectHandler" native="false" return="org.apache.http.client.RedirectHandler" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getRequestExecutor" native="false" return="org.apache.http.protocol.HttpRequestExecutor" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRequestInterceptor" native="false" return="org.apache.http.HttpRequestInterceptor" static="false" synchronized="true" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRequestInterceptorCount" native="false" return="int" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getResponseInterceptor" native="false" return="org.apache.http.HttpResponseInterceptor" static="false" synchronized="true" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getResponseInterceptorCount" native="false" return="int" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getRoutePlanner" native="false" return="org.apache.http.conn.routing.HttpRoutePlanner" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getTargetAuthenticationHandler" native="false" return="org.apache.http.client.AuthenticationHandler" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getUserTokenHandler" native="false" return="org.apache.http.client.UserTokenHandler" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeRequestInterceptorByClass" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="clazz" type="java.lang.Class&lt;? extends org.apache.http.HttpRequestInterceptor&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeResponseInterceptorByClass" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="clazz" type="java.lang.Class&lt;? extends org.apache.http.HttpResponseInterceptor&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAuthSchemes" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="authSchemeRegistry" type="org.apache.http.auth.AuthSchemeRegistry">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCookieSpecs" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="cookieSpecRegistry" type="org.apache.http.cookie.CookieSpecRegistry">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCookieStore" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="cookieStore" type="org.apache.http.client.CookieStore">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCredentialsProvider" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="credsProvider" type="org.apache.http.client.CredentialsProvider">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setHttpRequestRetryHandler" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="retryHandler" type="org.apache.http.client.HttpRequestRetryHandler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setKeepAliveStrategy" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="keepAliveStrategy" type="org.apache.http.conn.ConnectionKeepAliveStrategy">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setParams" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setProxyAuthenticationHandler" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="proxyAuthHandler" type="org.apache.http.client.AuthenticationHandler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRedirectHandler" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="redirectHandler" type="org.apache.http.client.RedirectHandler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReuseStrategy" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="reuseStrategy" type="org.apache.http.ConnectionReuseStrategy">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRoutePlanner" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="routePlanner" type="org.apache.http.conn.routing.HttpRoutePlanner">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTargetAuthenticationHandler" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="targetAuthHandler" type="org.apache.http.client.AuthenticationHandler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setUserTokenHandler" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="userTokenHandler" type="org.apache.http.client.UserTokenHandler">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BasicCookieStore" static="false" visibility="public">
+<implements name="org.apache.http.client.CookieStore">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicCookieStore" static="false" type="org.apache.http.impl.client.BasicCookieStore" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addCookie" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="cookie" type="org.apache.http.cookie.Cookie">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addCookies" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="cookies" type="org.apache.http.cookie.Cookie[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearExpired" native="false" return="boolean" static="false" synchronized="true" visibility="public">
+<parameter name="date" type="java.util.Date">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCookies" native="false" return="java.util.List&lt;org.apache.http.cookie.Cookie&gt;" static="false" synchronized="true" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BasicCredentialsProvider" static="false" visibility="public">
+<implements name="org.apache.http.client.CredentialsProvider">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicCredentialsProvider" static="false" type="org.apache.http.impl.client.BasicCredentialsProvider" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCredentials" native="false" return="org.apache.http.auth.Credentials" static="false" synchronized="true" visibility="public">
+<parameter name="authscope" type="org.apache.http.auth.AuthScope">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCredentials" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="authscope" type="org.apache.http.auth.AuthScope">
+</parameter>
+<parameter name="credentials" type="org.apache.http.auth.Credentials">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BasicResponseHandler" static="false" visibility="public">
+<implements name="org.apache.http.client.ResponseHandler">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicResponseHandler" static="false" type="org.apache.http.impl.client.BasicResponseHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="handleResponse" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="response" type="org.apache.http.HttpResponse">
+</parameter>
+<exception name="HttpResponseException" type="org.apache.http.client.HttpResponseException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.params.AbstractHttpParams" final="false" name="ClientParamsStack" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ClientParamsStack" static="false" type="org.apache.http.impl.client.ClientParamsStack" visibility="public">
+<parameter name="aparams" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="cparams" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="rparams" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="oparams" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ClientParamsStack" static="false" type="org.apache.http.impl.client.ClientParamsStack" visibility="public">
+<parameter name="stack" type="org.apache.http.impl.client.ClientParamsStack">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ClientParamsStack" static="false" type="org.apache.http.impl.client.ClientParamsStack" visibility="public">
+<parameter name="stack" type="org.apache.http.impl.client.ClientParamsStack">
+</parameter>
+<parameter name="aparams" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="cparams" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="rparams" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="oparams" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="copy" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getApplicationParams" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getClientParams" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getOverrideParams" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParameter" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getRequestParams" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeParameter" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setParameter" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="applicationParams" static="false" transient="false" type="org.apache.http.params.HttpParams" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="clientParams" static="false" transient="false" type="org.apache.http.params.HttpParams" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="overrideParams" static="false" transient="false" type="org.apache.http.params.HttpParams" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="requestParams" static="false" transient="false" type="org.apache.http.params.HttpParams" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DefaultConnectionKeepAliveStrategy" static="false" visibility="public">
+<implements name="org.apache.http.conn.ConnectionKeepAliveStrategy">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DefaultConnectionKeepAliveStrategy" static="false" type="org.apache.http.impl.client.DefaultConnectionKeepAliveStrategy" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getKeepAliveDuration" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="response" type="org.apache.http.HttpResponse">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.client.AbstractHttpClient" final="false" name="DefaultHttpClient" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DefaultHttpClient" static="false" type="org.apache.http.impl.client.DefaultHttpClient" visibility="public">
+<parameter name="conman" type="org.apache.http.conn.ClientConnectionManager">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DefaultHttpClient" static="false" type="org.apache.http.impl.client.DefaultHttpClient" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DefaultHttpClient" static="false" type="org.apache.http.impl.client.DefaultHttpClient" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="createAuthSchemeRegistry" native="false" return="org.apache.http.auth.AuthSchemeRegistry" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createClientConnectionManager" native="false" return="org.apache.http.conn.ClientConnectionManager" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createConnectionKeepAliveStrategy" native="false" return="org.apache.http.conn.ConnectionKeepAliveStrategy" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createConnectionReuseStrategy" native="false" return="org.apache.http.ConnectionReuseStrategy" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createCookieSpecRegistry" native="false" return="org.apache.http.cookie.CookieSpecRegistry" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createCookieStore" native="false" return="org.apache.http.client.CookieStore" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createCredentialsProvider" native="false" return="org.apache.http.client.CredentialsProvider" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createHttpContext" native="false" return="org.apache.http.protocol.HttpContext" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createHttpParams" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createHttpProcessor" native="false" return="org.apache.http.protocol.BasicHttpProcessor" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createHttpRequestRetryHandler" native="false" return="org.apache.http.client.HttpRequestRetryHandler" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createHttpRoutePlanner" native="false" return="org.apache.http.conn.routing.HttpRoutePlanner" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createProxyAuthenticationHandler" native="false" return="org.apache.http.client.AuthenticationHandler" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createRedirectHandler" native="false" return="org.apache.http.client.RedirectHandler" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createRequestExecutor" native="false" return="org.apache.http.protocol.HttpRequestExecutor" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createTargetAuthenticationHandler" native="false" return="org.apache.http.client.AuthenticationHandler" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createUserTokenHandler" native="false" return="org.apache.http.client.UserTokenHandler" static="false" synchronized="false" visibility="protected">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DefaultHttpRequestRetryHandler" static="false" visibility="public">
+<implements name="org.apache.http.client.HttpRequestRetryHandler">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DefaultHttpRequestRetryHandler" static="false" type="org.apache.http.impl.client.DefaultHttpRequestRetryHandler" visibility="public">
+<parameter name="retryCount" type="int">
+</parameter>
+<parameter name="requestSentRetryEnabled" type="boolean">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DefaultHttpRequestRetryHandler" static="false" type="org.apache.http.impl.client.DefaultHttpRequestRetryHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRetryCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isRequestSentRetryEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="retryRequest" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="exception" type="java.io.IOException">
+</parameter>
+<parameter name="executionCount" type="int">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.client.AbstractAuthenticationHandler" final="false" name="DefaultProxyAuthenticationHandler" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DefaultProxyAuthenticationHandler" static="false" type="org.apache.http.impl.client.DefaultProxyAuthenticationHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getChallenges" native="false" return="java.util.Map&lt;java.lang.String, org.apache.http.Header&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="response" type="org.apache.http.HttpResponse">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="MalformedChallengeException" type="org.apache.http.auth.MalformedChallengeException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isAuthenticationRequested" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="response" type="org.apache.http.HttpResponse">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DefaultRedirectHandler" static="false" visibility="public">
+<implements name="org.apache.http.client.RedirectHandler">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DefaultRedirectHandler" static="false" type="org.apache.http.impl.client.DefaultRedirectHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocationURI" native="false" return="java.net.URI" static="false" synchronized="false" visibility="public">
+<parameter name="response" type="org.apache.http.HttpResponse">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="ProtocolException" type="org.apache.http.ProtocolException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isRedirectRequested" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="response" type="org.apache.http.HttpResponse">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DefaultRequestDirector" static="false" visibility="public">
+<implements name="org.apache.http.client.RequestDirector">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DefaultRequestDirector" static="false" type="org.apache.http.impl.client.DefaultRequestDirector" visibility="public">
+<parameter name="requestExec" type="org.apache.http.protocol.HttpRequestExecutor">
+</parameter>
+<parameter name="conman" type="org.apache.http.conn.ClientConnectionManager">
+</parameter>
+<parameter name="reustrat" type="org.apache.http.ConnectionReuseStrategy">
+</parameter>
+<parameter name="kastrat" type="org.apache.http.conn.ConnectionKeepAliveStrategy">
+</parameter>
+<parameter name="rouplan" type="org.apache.http.conn.routing.HttpRoutePlanner">
+</parameter>
+<parameter name="httpProcessor" type="org.apache.http.protocol.HttpProcessor">
+</parameter>
+<parameter name="retryHandler" type="org.apache.http.client.HttpRequestRetryHandler">
+</parameter>
+<parameter name="redirectHandler" type="org.apache.http.client.RedirectHandler">
+</parameter>
+<parameter name="targetAuthHandler" type="org.apache.http.client.AuthenticationHandler">
+</parameter>
+<parameter name="proxyAuthHandler" type="org.apache.http.client.AuthenticationHandler">
+</parameter>
+<parameter name="userTokenHandler" type="org.apache.http.client.UserTokenHandler">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="createConnectRequest" native="false" return="org.apache.http.HttpRequest" static="false" synchronized="false" visibility="protected">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createTunnelToProxy" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+<parameter name="hop" type="int">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createTunnelToTarget" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="determineRoute" native="false" return="org.apache.http.conn.routing.HttpRoute" static="false" synchronized="false" visibility="protected">
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="establishRoute" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="execute" native="false" return="org.apache.http.HttpResponse" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="org.apache.http.HttpHost">
+</parameter>
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="handleResponse" native="false" return="org.apache.http.impl.client.RoutedRequest" static="false" synchronized="false" visibility="protected">
+<parameter name="roureq" type="org.apache.http.impl.client.RoutedRequest">
+</parameter>
+<parameter name="response" type="org.apache.http.HttpResponse">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="releaseConnection" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="rewriteRequestURI" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="request" type="org.apache.http.impl.client.RequestWrapper">
+</parameter>
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+<exception name="ProtocolException" type="org.apache.http.ProtocolException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="connManager" static="false" transient="false" type="org.apache.http.conn.ClientConnectionManager" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="httpProcessor" static="false" transient="false" type="org.apache.http.protocol.HttpProcessor" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="keepAliveStrategy" static="false" transient="false" type="org.apache.http.conn.ConnectionKeepAliveStrategy" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="managedConn" static="false" transient="false" type="org.apache.http.conn.ManagedClientConnection" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="params" static="false" transient="false" type="org.apache.http.params.HttpParams" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="redirectHandler" static="false" transient="false" type="org.apache.http.client.RedirectHandler" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="requestExec" static="false" transient="false" type="org.apache.http.protocol.HttpRequestExecutor" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="retryHandler" static="false" transient="false" type="org.apache.http.client.HttpRequestRetryHandler" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="reuseStrategy" static="false" transient="false" type="org.apache.http.ConnectionReuseStrategy" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="routePlanner" static="false" transient="false" type="org.apache.http.conn.routing.HttpRoutePlanner" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.client.AbstractAuthenticationHandler" final="false" name="DefaultTargetAuthenticationHandler" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DefaultTargetAuthenticationHandler" static="false" type="org.apache.http.impl.client.DefaultTargetAuthenticationHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getChallenges" native="false" return="java.util.Map&lt;java.lang.String, org.apache.http.Header&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="response" type="org.apache.http.HttpResponse">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+<exception name="MalformedChallengeException" type="org.apache.http.auth.MalformedChallengeException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isAuthenticationRequested" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="response" type="org.apache.http.HttpResponse">
+</parameter>
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DefaultUserTokenHandler" static="false" visibility="public">
+<implements name="org.apache.http.client.UserTokenHandler">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DefaultUserTokenHandler" static="false" type="org.apache.http.impl.client.DefaultUserTokenHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUserToken" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="org.apache.http.protocol.HttpContext">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.client.RequestWrapper" final="false" name="EntityEnclosingRequestWrapper" static="false" visibility="public">
+<implements name="org.apache.http.HttpEntityEnclosingRequest">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="EntityEnclosingRequestWrapper" static="false" type="org.apache.http.impl.client.EntityEnclosingRequestWrapper" visibility="public">
+<parameter name="request" type="org.apache.http.HttpEntityEnclosingRequest">
+</parameter>
+<exception name="ProtocolException" type="org.apache.http.ProtocolException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="expectContinue" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEntity" native="false" return="org.apache.http.HttpEntity" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEntity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="entity" type="org.apache.http.HttpEntity">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RedirectLocations" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RedirectLocations" static="false" type="org.apache.http.impl.client.RedirectLocations" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="add" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="contains" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="remove" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.message.AbstractHttpMessage" final="false" name="RequestWrapper" static="false" visibility="public">
+<implements name="org.apache.http.client.methods.HttpUriRequest">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RequestWrapper" static="false" type="org.apache.http.impl.client.RequestWrapper" visibility="public">
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<exception name="ProtocolException" type="org.apache.http.ProtocolException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="abort" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getExecCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMethod" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOriginal" native="false" return="org.apache.http.HttpRequest" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProtocolVersion" native="false" return="org.apache.http.ProtocolVersion" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRequestLine" native="false" return="org.apache.http.RequestLine" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getURI" native="false" return="java.net.URI" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="incrementExecCount" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isAborted" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isRepeatable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetHeaders" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMethod" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="method" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setProtocolVersion" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="version" type="org.apache.http.ProtocolVersion">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setURI" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RoutedRequest" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RoutedRequest" static="false" type="org.apache.http.impl.client.RoutedRequest" visibility="public">
+<parameter name="req" type="org.apache.http.impl.client.RequestWrapper">
+</parameter>
+<parameter name="route" type="org.apache.http.conn.routing.HttpRoute">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="getRequest" native="false" return="org.apache.http.impl.client.RequestWrapper" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getRoute" native="false" return="org.apache.http.conn.routing.HttpRoute" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="request" static="false" transient="false" type="org.apache.http.impl.client.RequestWrapper" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="route" static="false" transient="false" type="org.apache.http.conn.routing.HttpRoute" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.HttpException" final="false" name="TunnelRefusedException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="TunnelRefusedException" static="false" type="org.apache.http.impl.client.TunnelRefusedException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="response" type="org.apache.http.HttpResponse">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getResponse" native="false" return="org.apache.http.HttpResponse" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package></api>

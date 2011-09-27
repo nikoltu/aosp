@@ -1,0 +1,274 @@
+<?xml version="1.0" ?><api><package name="org.apache.http.auth">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="AUTH" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="PROXY_AUTH" static="true" transient="false" type="java.lang.String" value="&quot;Proxy-Authenticate&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROXY_AUTH_RESP" static="true" transient="false" type="java.lang.String" value="&quot;Proxy-Authorization&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WWW_AUTH" static="true" transient="false" type="java.lang.String" value="&quot;WWW-Authenticate&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WWW_AUTH_RESP" static="true" transient="false" type="java.lang.String" value="&quot;Authorization&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="AuthScheme" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="authenticate" native="false" return="org.apache.http.Header" static="false" synchronized="false" visibility="public">
+<parameter name="credentials" type="org.apache.http.auth.Credentials">
+</parameter>
+<parameter name="request" type="org.apache.http.HttpRequest">
+</parameter>
+<exception name="AuthenticationException" type="org.apache.http.auth.AuthenticationException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getParameter" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getRealm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSchemeName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isComplete" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isConnectionBased" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="processChallenge" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="header" type="org.apache.http.Header">
+</parameter>
+<exception name="MalformedChallengeException" type="org.apache.http.auth.MalformedChallengeException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="AuthSchemeFactory" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="newInstance" native="false" return="org.apache.http.auth.AuthScheme" static="false" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="AuthSchemeRegistry" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AuthSchemeRegistry" static="false" type="org.apache.http.auth.AuthSchemeRegistry" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAuthScheme" native="false" return="org.apache.http.auth.AuthScheme" static="false" synchronized="true" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSchemeNames" native="false" return="java.util.List&lt;java.lang.String&gt;" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="register" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="factory" type="org.apache.http.auth.AuthSchemeFactory">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setItems" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="map" type="java.util.Map&lt;java.lang.String, org.apache.http.auth.AuthSchemeFactory&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unregister" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AuthScope" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AuthScope" static="false" type="org.apache.http.auth.AuthScope" visibility="public">
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="realm" type="java.lang.String">
+</parameter>
+<parameter name="scheme" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AuthScope" static="false" type="org.apache.http.auth.AuthScope" visibility="public">
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="realm" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AuthScope" static="false" type="org.apache.http.auth.AuthScope" visibility="public">
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AuthScope" static="false" type="org.apache.http.auth.AuthScope" visibility="public">
+<parameter name="authscope" type="org.apache.http.auth.AuthScope">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHost" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPort" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRealm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getScheme" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="match" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="that" type="org.apache.http.auth.AuthScope">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ANY" static="true" transient="false" type="org.apache.http.auth.AuthScope" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ANY_HOST" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ANY_PORT" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ANY_REALM" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ANY_SCHEME" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AuthState" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AuthState" static="false" type="org.apache.http.auth.AuthState" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAuthScheme" native="false" return="org.apache.http.auth.AuthScheme" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAuthScope" native="false" return="org.apache.http.auth.AuthScope" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCredentials" native="false" return="org.apache.http.auth.Credentials" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="invalidate" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isValid" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAuthScheme" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="authScheme" type="org.apache.http.auth.AuthScheme">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAuthScope" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="authScope" type="org.apache.http.auth.AuthScope">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCredentials" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="credentials" type="org.apache.http.auth.Credentials">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.ProtocolException" final="false" name="AuthenticationException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AuthenticationException" static="false" type="org.apache.http.auth.AuthenticationException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AuthenticationException" static="false" type="org.apache.http.auth.AuthenticationException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AuthenticationException" static="false" type="org.apache.http.auth.AuthenticationException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="BasicUserPrincipal" static="false" visibility="public">
+<implements name="java.security.Principal">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicUserPrincipal" static="false" type="org.apache.http.auth.BasicUserPrincipal" visibility="public">
+<parameter name="username" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Credentials" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getPassword" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getUserPrincipal" native="false" return="java.security.Principal" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.auth.AuthenticationException" final="false" name="InvalidCredentialsException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="InvalidCredentialsException" static="false" type="org.apache.http.auth.InvalidCredentialsException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InvalidCredentialsException" static="false" type="org.apache.http.auth.InvalidCredentialsException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InvalidCredentialsException" static="false" type="org.apache.http.auth.InvalidCredentialsException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.ProtocolException" final="false" name="MalformedChallengeException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="MalformedChallengeException" static="false" type="org.apache.http.auth.MalformedChallengeException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="MalformedChallengeException" static="false" type="org.apache.http.auth.MalformedChallengeException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="MalformedChallengeException" static="false" type="org.apache.http.auth.MalformedChallengeException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="NTCredentials" static="false" visibility="public">
+<implements name="org.apache.http.auth.Credentials">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="NTCredentials" static="false" type="org.apache.http.auth.NTCredentials" visibility="public">
+<parameter name="usernamePassword" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="NTCredentials" static="false" type="org.apache.http.auth.NTCredentials" visibility="public">
+<parameter name="userName" type="java.lang.String">
+</parameter>
+<parameter name="password" type="java.lang.String">
+</parameter>
+<parameter name="workstation" type="java.lang.String">
+</parameter>
+<parameter name="domain" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDomain" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPassword" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUserName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUserPrincipal" native="false" return="java.security.Principal" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWorkstation" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="NTUserPrincipal" static="false" visibility="public">
+<implements name="java.security.Principal">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="NTUserPrincipal" static="false" type="org.apache.http.auth.NTUserPrincipal" visibility="public">
+<parameter name="domain" type="java.lang.String">
+</parameter>
+<parameter name="username" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDomain" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUsername" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="UsernamePasswordCredentials" static="false" visibility="public">
+<implements name="org.apache.http.auth.Credentials">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="UsernamePasswordCredentials" static="false" type="org.apache.http.auth.UsernamePasswordCredentials" visibility="public">
+<parameter name="usernamePassword" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="UsernamePasswordCredentials" static="false" type="org.apache.http.auth.UsernamePasswordCredentials" visibility="public">
+<parameter name="userName" type="java.lang.String">
+</parameter>
+<parameter name="password" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPassword" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUserName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUserPrincipal" native="false" return="java.security.Principal" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package></api>

@@ -1,0 +1,910 @@
+<?xml version="1.0" ?><api><package name="android.content.res">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AssetFileDescriptor" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AssetFileDescriptor" static="false" type="android.content.res.AssetFileDescriptor" visibility="public">
+<parameter name="fd" type="android.os.ParcelFileDescriptor">
+</parameter>
+<parameter name="startOffset" type="long">
+</parameter>
+<parameter name="length" type="long">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createInputStream" native="false" return="java.io.FileInputStream" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createOutputStream" native="false" return="java.io.FileOutputStream" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDeclaredLength" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFileDescriptor" native="false" return="java.io.FileDescriptor" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLength" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParcelFileDescriptor" native="false" return="android.os.ParcelFileDescriptor" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStartOffset" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="out" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNKNOWN_LENGTH" static="true" transient="false" type="long" value="-1L" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.os.ParcelFileDescriptor.AutoCloseInputStream" final="false" name="AssetFileDescriptor.AutoCloseInputStream" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AssetFileDescriptor.AutoCloseInputStream" static="false" type="android.content.res.AssetFileDescriptor.AutoCloseInputStream" visibility="public">
+<parameter name="fd" type="android.content.res.AssetFileDescriptor">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.os.ParcelFileDescriptor.AutoCloseOutputStream" final="false" name="AssetFileDescriptor.AutoCloseOutputStream" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AssetFileDescriptor.AutoCloseOutputStream" static="false" type="android.content.res.AssetFileDescriptor.AutoCloseOutputStream" visibility="public">
+<parameter name="fd" type="android.content.res.AssetFileDescriptor">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="AssetManager" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getLocales" native="true" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="list" native="true" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="open" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+<parameter name="fileName" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="open" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+<parameter name="fileName" type="java.lang.String">
+</parameter>
+<parameter name="accessMode" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="openFd" native="false" return="android.content.res.AssetFileDescriptor" static="false" synchronized="false" visibility="public">
+<parameter name="fileName" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="openNonAssetFd" native="false" return="android.content.res.AssetFileDescriptor" static="false" synchronized="false" visibility="public">
+<parameter name="fileName" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="openNonAssetFd" native="false" return="android.content.res.AssetFileDescriptor" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="int">
+</parameter>
+<parameter name="fileName" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="openXmlResourceParser" native="false" return="android.content.res.XmlResourceParser" static="false" synchronized="false" visibility="public">
+<parameter name="fileName" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="openXmlResourceParser" native="false" return="android.content.res.XmlResourceParser" static="false" synchronized="false" visibility="public">
+<parameter name="cookie" type="int">
+</parameter>
+<parameter name="fileName" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="ACCESS_BUFFER" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACCESS_RANDOM" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACCESS_STREAMING" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACCESS_UNKNOWN" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.InputStream" final="true" name="AssetManager.AssetInputStream" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="true" name="available" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAssetInt" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="mark" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="readlimit" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="markSupported" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="reset" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="skip" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="long">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ColorStateList" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ColorStateList" static="false" type="android.content.res.ColorStateList" visibility="public">
+<parameter name="states" type="int[][]">
+</parameter>
+<parameter name="colors" type="int[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="createFromXml" native="false" return="android.content.res.ColorStateList" static="true" synchronized="false" visibility="public">
+<parameter name="r" type="android.content.res.Resources">
+</parameter>
+<parameter name="parser" type="org.xmlpull.v1.XmlPullParser">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getColorForState" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="stateSet" type="int[]">
+</parameter>
+<parameter name="defaultColor" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultColor" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isStateful" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="android.content.res.ColorStateList" static="true" synchronized="false" visibility="public">
+<parameter name="color" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="withAlpha" native="false" return="android.content.res.ColorStateList" static="false" synchronized="false" visibility="public">
+<parameter name="alpha" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="Configuration" static="false" visibility="public">
+<implements name="java.lang.Comparable">
+</implements>
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Configuration" static="false" type="android.content.res.Configuration" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Configuration" static="false" type="android.content.res.Configuration" visibility="public">
+<parameter name="o" type="android.content.res.Configuration">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="compareTo" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="that" type="android.content.res.Configuration">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="diff" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="delta" type="android.content.res.Configuration">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="equals" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="that" type="android.content.res.Configuration">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="needNewResources" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="configChanges" type="int">
+</parameter>
+<parameter name="interestingChanges" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readFromParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="source" type="android.os.Parcel">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="o" type="android.content.res.Configuration">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setToDefaults" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateFrom" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="delta" type="android.content.res.Configuration">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HARDKEYBOARDHIDDEN_NO" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HARDKEYBOARDHIDDEN_UNDEFINED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HARDKEYBOARDHIDDEN_YES" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEYBOARDHIDDEN_NO" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEYBOARDHIDDEN_UNDEFINED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEYBOARDHIDDEN_YES" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEYBOARD_12KEY" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEYBOARD_NOKEYS" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEYBOARD_QWERTY" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEYBOARD_UNDEFINED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NAVIGATIONHIDDEN_NO" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NAVIGATIONHIDDEN_UNDEFINED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NAVIGATIONHIDDEN_YES" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NAVIGATION_DPAD" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NAVIGATION_NONAV" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NAVIGATION_TRACKBALL" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NAVIGATION_UNDEFINED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NAVIGATION_WHEEL" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ORIENTATION_LANDSCAPE" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ORIENTATION_PORTRAIT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ORIENTATION_SQUARE" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ORIENTATION_UNDEFINED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCREENLAYOUT_LONG_MASK" static="true" transient="false" type="int" value="48" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCREENLAYOUT_LONG_NO" static="true" transient="false" type="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCREENLAYOUT_LONG_UNDEFINED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCREENLAYOUT_LONG_YES" static="true" transient="false" type="int" value="32" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCREENLAYOUT_SIZE_LARGE" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCREENLAYOUT_SIZE_MASK" static="true" transient="false" type="int" value="15" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCREENLAYOUT_SIZE_NORMAL" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCREENLAYOUT_SIZE_SMALL" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCREENLAYOUT_SIZE_UNDEFINED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCREENLAYOUT_SIZE_XLARGE" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TOUCHSCREEN_FINGER" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TOUCHSCREEN_NOTOUCH" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TOUCHSCREEN_STYLUS" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TOUCHSCREEN_UNDEFINED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UI_MODE_NIGHT_MASK" static="true" transient="false" type="int" value="48" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UI_MODE_NIGHT_NO" static="true" transient="false" type="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UI_MODE_NIGHT_UNDEFINED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UI_MODE_NIGHT_YES" static="true" transient="false" type="int" value="32" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UI_MODE_TYPE_CAR" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UI_MODE_TYPE_DESK" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UI_MODE_TYPE_MASK" static="true" transient="false" type="int" value="15" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UI_MODE_TYPE_NORMAL" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UI_MODE_TYPE_UNDEFINED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="fontScale" static="false" transient="false" type="float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="hardKeyboardHidden" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="keyboard" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="keyboardHidden" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="locale" static="false" transient="false" type="java.util.Locale" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mcc" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mnc" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="navigation" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="navigationHidden" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="orientation" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="screenLayout" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="touchscreen" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="uiMode" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ObbInfo" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="parcelableFlags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OBB_OVERLAY" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="filename" static="false" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="flags" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="packageName" static="false" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="version" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ObbScanner" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getObbInfo" native="false" return="android.content.res.ObbInfo" static="true" synchronized="false" visibility="public">
+<parameter name="filePath" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Resources" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Resources" static="false" type="android.content.res.Resources" visibility="public">
+<parameter name="assets" type="android.content.res.AssetManager">
+</parameter>
+<parameter name="metrics" type="android.util.DisplayMetrics">
+</parameter>
+<parameter name="config" type="android.content.res.Configuration">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="finishPreloading" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="flushLayoutCache" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAnimation" native="false" return="android.content.res.XmlResourceParser" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAssets" native="false" return="android.content.res.AssetManager" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBoolean" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getColor" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getColorStateList" native="false" return="android.content.res.ColorStateList" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getConfiguration" native="false" return="android.content.res.Configuration" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDimension" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDimensionPixelOffset" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDimensionPixelSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDisplayMetrics" native="false" return="android.util.DisplayMetrics" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDrawable" native="false" return="android.graphics.drawable.Drawable" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFraction" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<parameter name="base" type="int">
+</parameter>
+<parameter name="pbase" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIdentifier" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="defType" type="java.lang.String">
+</parameter>
+<parameter name="defPackage" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIntArray" native="false" return="int[]" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInteger" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLayout" native="false" return="android.content.res.XmlResourceParser" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMovie" native="false" return="android.graphics.Movie" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getQuantityString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<parameter name="quantity" type="int">
+</parameter>
+<parameter name="formatArgs" type="java.lang.Object...">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getQuantityString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<parameter name="quantity" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getQuantityText" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<parameter name="quantity" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getResourceEntryName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="resid" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getResourceName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="resid" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getResourcePackageName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="resid" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getResourceTypeName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="resid" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<parameter name="formatArgs" type="java.lang.Object...">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStringArray" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSystem" native="false" return="android.content.res.Resources" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getText" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getText" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<parameter name="def" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTextArray" native="false" return="java.lang.CharSequence[]" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValue" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<parameter name="outValue" type="android.util.TypedValue">
+</parameter>
+<parameter name="resolveRefs" type="boolean">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValue" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="outValue" type="android.util.TypedValue">
+</parameter>
+<parameter name="resolveRefs" type="boolean">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getXml" native="false" return="android.content.res.XmlResourceParser" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="newTheme" native="false" return="android.content.res.Resources.Theme" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="obtainAttributes" native="false" return="android.content.res.TypedArray" static="false" synchronized="false" visibility="public">
+<parameter name="set" type="android.util.AttributeSet">
+</parameter>
+<parameter name="attrs" type="int[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="obtainTypedArray" native="false" return="android.content.res.TypedArray" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="openRawResource" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="openRawResource" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<parameter name="value" type="android.util.TypedValue">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="openRawResourceFd" native="false" return="android.content.res.AssetFileDescriptor" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseBundleExtra" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="tagName" type="java.lang.String">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<parameter name="outBundle" type="android.os.Bundle">
+</parameter>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseBundleExtras" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parser" type="android.content.res.XmlResourceParser">
+</parameter>
+<parameter name="outBundle" type="android.os.Bundle">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateConfiguration" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="config" type="android.content.res.Configuration">
+</parameter>
+<parameter name="metrics" type="android.util.DisplayMetrics">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.RuntimeException" final="false" name="Resources.NotFoundException" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Resources.NotFoundException" static="false" type="android.content.res.Resources.NotFoundException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Resources.NotFoundException" static="false" type="android.content.res.Resources.NotFoundException" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="Resources.Theme" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="applyStyle" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="resid" type="int">
+</parameter>
+<parameter name="force" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dump" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="priority" type="int">
+</parameter>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="prefix" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="obtainStyledAttributes" native="false" return="android.content.res.TypedArray" static="false" synchronized="false" visibility="public">
+<parameter name="attrs" type="int[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="obtainStyledAttributes" native="false" return="android.content.res.TypedArray" static="false" synchronized="false" visibility="public">
+<parameter name="resid" type="int">
+</parameter>
+<parameter name="attrs" type="int[]">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="obtainStyledAttributes" native="false" return="android.content.res.TypedArray" static="false" synchronized="false" visibility="public">
+<parameter name="set" type="android.util.AttributeSet">
+</parameter>
+<parameter name="attrs" type="int[]">
+</parameter>
+<parameter name="defStyleAttr" type="int">
+</parameter>
+<parameter name="defStyleRes" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resolveAttribute" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="resid" type="int">
+</parameter>
+<parameter name="outValue" type="android.util.TypedValue">
+</parameter>
+<parameter name="resolveRefs" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="other" type="android.content.res.Resources.Theme">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="TypedArray" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getBoolean" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="defValue" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getColor" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="defValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getColorStateList" native="false" return="android.content.res.ColorStateList" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDimension" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="defValue" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDimensionPixelOffset" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="defValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDimensionPixelSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="defValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDrawable" native="false" return="android.graphics.drawable.Drawable" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFloat" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="defValue" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFraction" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="base" type="int">
+</parameter>
+<parameter name="pbase" type="int">
+</parameter>
+<parameter name="defValue" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIndex" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="at" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIndexCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInt" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="defValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInteger" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="defValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLayoutDimension" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLayoutDimension" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="defValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNonResourceString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPositionDescription" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getResourceId" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="defValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getResources" native="false" return="android.content.res.Resources" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getText" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTextArray" native="false" return="java.lang.CharSequence[]" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValue" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+<parameter name="outValue" type="android.util.TypedValue">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasValue" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="length" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="peekValue" native="false" return="android.util.TypedValue" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="recycle" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="XmlResourceParser" static="false" visibility="public">
+<implements name="android.util.AttributeSet">
+</implements>
+<implements name="org.xmlpull.v1.XmlPullParser">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+</package></api>

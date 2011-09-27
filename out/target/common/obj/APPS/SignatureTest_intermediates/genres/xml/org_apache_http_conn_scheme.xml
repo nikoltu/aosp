@@ -1,0 +1,154 @@
+<?xml version="1.0" ?><api><package name="org.apache.http.conn.scheme">
+<interface abstract="true" deprecated="not deprecated" final="false" name="HostNameResolver" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="resolve" native="false" return="java.net.InetAddress" static="false" synchronized="false" visibility="public">
+<parameter name="hostname" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="LayeredSocketFactory" static="false" visibility="public">
+<implements name="org.apache.http.conn.scheme.SocketFactory">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="createSocket" native="false" return="java.net.Socket" static="false" synchronized="false" visibility="public">
+<parameter name="socket" type="java.net.Socket">
+</parameter>
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="autoClose" type="boolean">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="UnknownHostException" type="java.net.UnknownHostException">
+</exception>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="PlainSocketFactory" static="false" visibility="public">
+<implements name="org.apache.http.conn.scheme.SocketFactory">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="PlainSocketFactory" static="false" type="org.apache.http.conn.scheme.PlainSocketFactory" visibility="public">
+<parameter name="nameResolver" type="org.apache.http.conn.scheme.HostNameResolver">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="PlainSocketFactory" static="false" type="org.apache.http.conn.scheme.PlainSocketFactory" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="connectSocket" native="false" return="java.net.Socket" static="false" synchronized="false" visibility="public">
+<parameter name="sock" type="java.net.Socket">
+</parameter>
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="localAddress" type="java.net.InetAddress">
+</parameter>
+<parameter name="localPort" type="int">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createSocket" native="false" return="java.net.Socket" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSocketFactory" native="false" return="org.apache.http.conn.scheme.PlainSocketFactory" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isSecure" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="sock" type="java.net.Socket">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="Scheme" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Scheme" static="false" type="org.apache.http.conn.scheme.Scheme" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="factory" type="org.apache.http.conn.scheme.SocketFactory">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="equals" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getDefaultPort" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getSocketFactory" native="false" return="org.apache.http.conn.scheme.SocketFactory" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isLayered" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="resolvePort" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="port" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="toString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="SchemeRegistry" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SchemeRegistry" static="false" type="org.apache.http.conn.scheme.SchemeRegistry" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="get" native="false" return="org.apache.http.conn.scheme.Scheme" static="false" synchronized="true" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getScheme" native="false" return="org.apache.http.conn.scheme.Scheme" static="false" synchronized="true" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getScheme" native="false" return="org.apache.http.conn.scheme.Scheme" static="false" synchronized="true" visibility="public">
+<parameter name="host" type="org.apache.http.HttpHost">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getSchemeNames" native="false" return="java.util.List&lt;java.lang.String&gt;" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="register" native="false" return="org.apache.http.conn.scheme.Scheme" static="false" synchronized="true" visibility="public">
+<parameter name="sch" type="org.apache.http.conn.scheme.Scheme">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setItems" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="map" type="java.util.Map&lt;java.lang.String, org.apache.http.conn.scheme.Scheme&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="unregister" native="false" return="org.apache.http.conn.scheme.Scheme" static="false" synchronized="true" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="SocketFactory" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="connectSocket" native="false" return="java.net.Socket" static="false" synchronized="false" visibility="public">
+<parameter name="sock" type="java.net.Socket">
+</parameter>
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="localAddress" type="java.net.InetAddress">
+</parameter>
+<parameter name="localPort" type="int">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<exception name="ConnectTimeoutException" type="org.apache.http.conn.ConnectTimeoutException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="UnknownHostException" type="java.net.UnknownHostException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createSocket" native="false" return="java.net.Socket" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isSecure" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="sock" type="java.net.Socket">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</method>
+</interface>
+</package></api>

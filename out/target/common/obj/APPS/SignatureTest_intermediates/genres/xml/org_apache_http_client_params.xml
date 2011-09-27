@@ -1,0 +1,146 @@
+<?xml version="1.0" ?><api><package name="org.apache.http.client.params">
+<interface abstract="true" deprecated="not deprecated" final="false" name="AllClientPNames" static="false" visibility="public">
+<implements name="org.apache.http.auth.params.AuthPNames">
+</implements>
+<implements name="org.apache.http.client.params.ClientPNames">
+</implements>
+<implements name="org.apache.http.conn.params.ConnConnectionPNames">
+</implements>
+<implements name="org.apache.http.conn.params.ConnManagerPNames">
+</implements>
+<implements name="org.apache.http.conn.params.ConnRoutePNames">
+</implements>
+<implements name="org.apache.http.cookie.params.CookieSpecPNames">
+</implements>
+<implements name="org.apache.http.params.CoreConnectionPNames">
+</implements>
+<implements name="org.apache.http.params.CoreProtocolPNames">
+</implements>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="AuthPolicy" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="BASIC" static="true" transient="false" type="java.lang.String" value="&quot;Basic&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DIGEST" static="true" transient="false" type="java.lang.String" value="&quot;Digest&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NTLM" static="true" transient="false" type="java.lang.String" value="&quot;NTLM&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ClientPNames" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="ALLOW_CIRCULAR_REDIRECTS" static="true" transient="false" type="java.lang.String" value="&quot;http.protocol.allow-circular-redirects&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CONNECTION_MANAGER_FACTORY" static="true" transient="false" type="java.lang.String" value="&quot;http.connection-manager.factory-object&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CONNECTION_MANAGER_FACTORY_CLASS_NAME" static="true" transient="false" type="java.lang.String" value="&quot;http.connection-manager.factory-class-name&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="COOKIE_POLICY" static="true" transient="false" type="java.lang.String" value="&quot;http.protocol.cookie-policy&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFAULT_HEADERS" static="true" transient="false" type="java.lang.String" value="&quot;http.default-headers&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFAULT_HOST" static="true" transient="false" type="java.lang.String" value="&quot;http.default-host&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HANDLE_AUTHENTICATION" static="true" transient="false" type="java.lang.String" value="&quot;http.protocol.handle-authentication&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HANDLE_REDIRECTS" static="true" transient="false" type="java.lang.String" value="&quot;http.protocol.handle-redirects&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MAX_REDIRECTS" static="true" transient="false" type="java.lang.String" value="&quot;http.protocol.max-redirects&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REJECT_RELATIVE_REDIRECT" static="true" transient="false" type="java.lang.String" value="&quot;http.protocol.reject-relative-redirect&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VIRTUAL_HOST" static="true" transient="false" type="java.lang.String" value="&quot;http.virtual-host&quot;" visibility="public" volatile="false">
+</field>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.params.HttpAbstractParamBean" final="false" name="ClientParamBean" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ClientParamBean" static="false" type="org.apache.http.client.params.ClientParamBean" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAllowCircularRedirects" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="allow" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setConnectionManagerFactory" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="factory" type="org.apache.http.conn.ClientConnectionManagerFactory">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setConnectionManagerFactoryClassName" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="factory" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCookiePolicy" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="policy" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDefaultHeaders" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="headers" type="java.util.Collection&lt;org.apache.http.Header&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDefaultHost" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="host" type="org.apache.http.HttpHost">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setHandleAuthentication" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="handle" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setHandleRedirects" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="handle" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMaxRedirects" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="maxRedirects" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRejectRelativeRedirect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="reject" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVirtualHost" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="host" type="org.apache.http.HttpHost">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="CookiePolicy" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="BEST_MATCH" static="true" transient="false" type="java.lang.String" value="&quot;best-match&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BROWSER_COMPATIBILITY" static="true" transient="false" type="java.lang.String" value="&quot;compatibility&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NETSCAPE" static="true" transient="false" type="java.lang.String" value="&quot;netscape&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RFC_2109" static="true" transient="false" type="java.lang.String" value="&quot;rfc2109&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RFC_2965" static="true" transient="false" type="java.lang.String" value="&quot;rfc2965&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="HttpClientParams" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getCookiePolicy" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isAuthenticating" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isRedirecting" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAuthenticating" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="value" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCookiePolicy" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="cookiePolicy" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRedirecting" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="value" type="boolean">
+</parameter>
+</method>
+</class>
+</package></api>

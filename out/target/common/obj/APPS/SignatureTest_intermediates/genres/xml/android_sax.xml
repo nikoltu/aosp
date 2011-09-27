@@ -1,0 +1,86 @@
+<?xml version="1.0" ?><api><package name="android.sax">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Element" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getChild" native="false" return="android.sax.Element" static="false" synchronized="false" visibility="public">
+<parameter name="localName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getChild" native="false" return="android.sax.Element" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<parameter name="localName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="requireChild" native="false" return="android.sax.Element" static="false" synchronized="false" visibility="public">
+<parameter name="localName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="requireChild" native="false" return="android.sax.Element" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<parameter name="localName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setElementListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="elementListener" type="android.sax.ElementListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEndElementListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="endElementListener" type="android.sax.EndElementListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEndTextElementListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="endTextElementListener" type="android.sax.EndTextElementListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStartElementListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="startElementListener" type="android.sax.StartElementListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTextElementListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="elementListener" type="android.sax.TextElementListener">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ElementListener" static="false" visibility="public">
+<implements name="android.sax.EndElementListener">
+</implements>
+<implements name="android.sax.StartElementListener">
+</implements>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="EndElementListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="end" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="EndTextElementListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="end" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="body" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="android.sax.Element" final="false" name="RootElement" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RootElement" static="false" type="android.sax.RootElement" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<parameter name="localName" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="RootElement" static="false" type="android.sax.RootElement" visibility="public">
+<parameter name="localName" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContentHandler" native="false" return="org.xml.sax.ContentHandler" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="StartElementListener" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="start" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="attributes" type="org.xml.sax.Attributes">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="TextElementListener" static="false" visibility="public">
+<implements name="android.sax.EndTextElementListener">
+</implements>
+<implements name="android.sax.StartElementListener">
+</implements>
+</interface>
+</package></api>

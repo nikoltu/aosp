@@ -1,0 +1,572 @@
+<?xml version="1.0" ?><api><package name="java.math">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Number" final="false" name="BigDecimal" static="false" visibility="public">
+<implements name="java.lang.Comparable">
+</implements>
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BigDecimal" static="false" type="java.math.BigDecimal" visibility="public">
+<parameter name="in" type="char[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BigDecimal" static="false" type="java.math.BigDecimal" visibility="public">
+<parameter name="in" type="char[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+<parameter name="mc" type="java.math.MathContext">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BigDecimal" static="false" type="java.math.BigDecimal" visibility="public">
+<parameter name="in" type="char[]">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BigDecimal" static="false" type="java.math.BigDecimal" visibility="public">
+<parameter name="in" type="char[]">
+</parameter>
+<parameter name="mc" type="java.math.MathContext">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BigDecimal" static="false" type="java.math.BigDecimal" visibility="public">
+<parameter name="val" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BigDecimal" static="false" type="java.math.BigDecimal" visibility="public">
+<parameter name="val" type="java.lang.String">
+</parameter>
+<parameter name="mc" type="java.math.MathContext">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BigDecimal" static="false" type="java.math.BigDecimal" visibility="public">
+<parameter name="val" type="double">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BigDecimal" static="false" type="java.math.BigDecimal" visibility="public">
+<parameter name="val" type="double">
+</parameter>
+<parameter name="mc" type="java.math.MathContext">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BigDecimal" static="false" type="java.math.BigDecimal" visibility="public">
+<parameter name="val" type="java.math.BigInteger">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BigDecimal" static="false" type="java.math.BigDecimal" visibility="public">
+<parameter name="val" type="java.math.BigInteger">
+</parameter>
+<parameter name="mc" type="java.math.MathContext">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BigDecimal" static="false" type="java.math.BigDecimal" visibility="public">
+<parameter name="unscaledVal" type="java.math.BigInteger">
+</parameter>
+<parameter name="scale" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BigDecimal" static="false" type="java.math.BigDecimal" visibility="public">
+<parameter name="unscaledVal" type="java.math.BigInteger">
+</parameter>
+<parameter name="scale" type="int">
+</parameter>
+<parameter name="mc" type="java.math.MathContext">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BigDecimal" static="false" type="java.math.BigDecimal" visibility="public">
+<parameter name="val" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BigDecimal" static="false" type="java.math.BigDecimal" visibility="public">
+<parameter name="val" type="int">
+</parameter>
+<parameter name="mc" type="java.math.MathContext">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BigDecimal" static="false" type="java.math.BigDecimal" visibility="public">
+<parameter name="val" type="long">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BigDecimal" static="false" type="java.math.BigDecimal" visibility="public">
+<parameter name="val" type="long">
+</parameter>
+<parameter name="mc" type="java.math.MathContext">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="abs" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="abs" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="mc" type="java.math.MathContext">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="add" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="augend" type="java.math.BigDecimal">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="add" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="augend" type="java.math.BigDecimal">
+</parameter>
+<parameter name="mc" type="java.math.MathContext">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="byteValueExact" native="false" return="byte" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="compareTo" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="java.math.BigDecimal">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="divide" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="divisor" type="java.math.BigDecimal">
+</parameter>
+<parameter name="scale" type="int">
+</parameter>
+<parameter name="roundingMode" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="divide" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="divisor" type="java.math.BigDecimal">
+</parameter>
+<parameter name="scale" type="int">
+</parameter>
+<parameter name="roundingMode" type="java.math.RoundingMode">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="divide" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="divisor" type="java.math.BigDecimal">
+</parameter>
+<parameter name="roundingMode" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="divide" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="divisor" type="java.math.BigDecimal">
+</parameter>
+<parameter name="roundingMode" type="java.math.RoundingMode">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="divide" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="divisor" type="java.math.BigDecimal">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="divide" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="divisor" type="java.math.BigDecimal">
+</parameter>
+<parameter name="mc" type="java.math.MathContext">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="divideAndRemainder" native="false" return="java.math.BigDecimal[]" static="false" synchronized="false" visibility="public">
+<parameter name="divisor" type="java.math.BigDecimal">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="divideAndRemainder" native="false" return="java.math.BigDecimal[]" static="false" synchronized="false" visibility="public">
+<parameter name="divisor" type="java.math.BigDecimal">
+</parameter>
+<parameter name="mc" type="java.math.MathContext">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="divideToIntegralValue" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="divisor" type="java.math.BigDecimal">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="divideToIntegralValue" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="divisor" type="java.math.BigDecimal">
+</parameter>
+<parameter name="mc" type="java.math.MathContext">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doubleValue" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="floatValue" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="intValue" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="intValueExact" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="longValue" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="longValueExact" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="max" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="java.math.BigDecimal">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="min" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="java.math.BigDecimal">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="movePointLeft" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="movePointRight" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="multiply" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="multiplicand" type="java.math.BigDecimal">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="multiply" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="multiplicand" type="java.math.BigDecimal">
+</parameter>
+<parameter name="mc" type="java.math.MathContext">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="negate" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="negate" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="mc" type="java.math.MathContext">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="plus" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="plus" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="mc" type="java.math.MathContext">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pow" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pow" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<parameter name="mc" type="java.math.MathContext">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="precision" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="remainder" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="divisor" type="java.math.BigDecimal">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="remainder" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="divisor" type="java.math.BigDecimal">
+</parameter>
+<parameter name="mc" type="java.math.MathContext">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="round" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="mc" type="java.math.MathContext">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="scale" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="scaleByPowerOfTen" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setScale" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="newScale" type="int">
+</parameter>
+<parameter name="roundingMode" type="java.math.RoundingMode">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setScale" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="newScale" type="int">
+</parameter>
+<parameter name="roundingMode" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setScale" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="newScale" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shortValueExact" native="false" return="short" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="signum" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stripTrailingZeros" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="subtract" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="subtrahend" type="java.math.BigDecimal">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="subtract" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+<parameter name="subtrahend" type="java.math.BigDecimal">
+</parameter>
+<parameter name="mc" type="java.math.MathContext">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toBigInteger" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toBigIntegerExact" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toEngineeringString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toPlainString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ulp" native="false" return="java.math.BigDecimal" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unscaledValue" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="java.math.BigDecimal" static="true" synchronized="false" visibility="public">
+<parameter name="unscaledVal" type="long">
+</parameter>
+<parameter name="scale" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="java.math.BigDecimal" static="true" synchronized="false" visibility="public">
+<parameter name="unscaledVal" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="java.math.BigDecimal" static="true" synchronized="false" visibility="public">
+<parameter name="val" type="double">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ONE" static="true" transient="false" type="java.math.BigDecimal" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ROUND_CEILING" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ROUND_DOWN" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ROUND_FLOOR" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ROUND_HALF_DOWN" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ROUND_HALF_EVEN" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ROUND_HALF_UP" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ROUND_UNNECESSARY" static="true" transient="false" type="int" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ROUND_UP" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TEN" static="true" transient="false" type="java.math.BigDecimal" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ZERO" static="true" transient="false" type="java.math.BigDecimal" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Number" final="false" name="BigInteger" static="false" visibility="public">
+<implements name="java.lang.Comparable">
+</implements>
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BigInteger" static="false" type="java.math.BigInteger" visibility="public">
+<parameter name="numBits" type="int">
+</parameter>
+<parameter name="random" type="java.util.Random">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BigInteger" static="false" type="java.math.BigInteger" visibility="public">
+<parameter name="bitLength" type="int">
+</parameter>
+<parameter name="certainty" type="int">
+</parameter>
+<parameter name="unused" type="java.util.Random">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BigInteger" static="false" type="java.math.BigInteger" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BigInteger" static="false" type="java.math.BigInteger" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+<parameter name="radix" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BigInteger" static="false" type="java.math.BigInteger" visibility="public">
+<parameter name="signum" type="int">
+</parameter>
+<parameter name="magnitude" type="byte[]">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BigInteger" static="false" type="java.math.BigInteger" visibility="public">
+<parameter name="value" type="byte[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="abs" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="add" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.math.BigInteger">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="and" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.math.BigInteger">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="andNot" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.math.BigInteger">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="bitCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="bitLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearBit" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="compareTo" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.math.BigInteger">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="divide" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+<parameter name="divisor" type="java.math.BigInteger">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="divideAndRemainder" native="false" return="java.math.BigInteger[]" static="false" synchronized="false" visibility="public">
+<parameter name="divisor" type="java.math.BigInteger">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doubleValue" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="flipBit" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="floatValue" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="gcd" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.math.BigInteger">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLowestSetBit" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="intValue" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isProbablePrime" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="certainty" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="longValue" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="max" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.math.BigInteger">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="min" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.math.BigInteger">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="mod" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+<parameter name="m" type="java.math.BigInteger">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="modInverse" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+<parameter name="m" type="java.math.BigInteger">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="modPow" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+<parameter name="exponent" type="java.math.BigInteger">
+</parameter>
+<parameter name="m" type="java.math.BigInteger">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="multiply" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.math.BigInteger">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="negate" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="nextProbablePrime" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="not" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="or" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.math.BigInteger">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pow" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+<parameter name="exp" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="probablePrime" native="false" return="java.math.BigInteger" static="true" synchronized="false" visibility="public">
+<parameter name="bitLength" type="int">
+</parameter>
+<parameter name="unused" type="java.util.Random">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="remainder" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+<parameter name="divisor" type="java.math.BigInteger">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setBit" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shiftLeft" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shiftRight" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="signum" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="subtract" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.math.BigInteger">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="testBit" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toByteArray" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="radix" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="java.math.BigInteger" static="true" synchronized="false" visibility="public">
+<parameter name="value" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="xor" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.math.BigInteger">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ONE" static="true" transient="false" type="java.math.BigInteger" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TEN" static="true" transient="false" type="java.math.BigInteger" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ZERO" static="true" transient="false" type="java.math.BigInteger" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="MathContext" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="MathContext" static="false" type="java.math.MathContext" visibility="public">
+<parameter name="precision" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="MathContext" static="false" type="java.math.MathContext" visibility="public">
+<parameter name="precision" type="int">
+</parameter>
+<parameter name="roundingMode" type="java.math.RoundingMode">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="MathContext" static="false" type="java.math.MathContext" visibility="public">
+<parameter name="val" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrecision" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRoundingMode" native="false" return="java.math.RoundingMode" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="DECIMAL128" static="true" transient="false" type="java.math.MathContext" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DECIMAL32" static="true" transient="false" type="java.math.MathContext" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DECIMAL64" static="true" transient="false" type="java.math.MathContext" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNLIMITED" static="true" transient="false" type="java.math.MathContext" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" final="true" name="RoundingMode" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="java.math.RoundingMode" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="java.math.RoundingMode" static="true" synchronized="false" visibility="public">
+<parameter name="mode" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="values" native="false" return="java.math.RoundingMode[]" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+</package></api>

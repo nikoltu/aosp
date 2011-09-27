@@ -1,0 +1,238 @@
+<?xml version="1.0" ?><api><package name="android.app.admin">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="DeviceAdminInfo" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DeviceAdminInfo" static="false" type="android.app.admin.DeviceAdminInfo" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="receiver" type="android.content.pm.ResolveInfo">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dump" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pw" type="android.util.Printer">
+</parameter>
+<parameter name="prefix" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getActivityInfo" native="false" return="android.content.pm.ActivityInfo" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getComponent" native="false" return="android.content.ComponentName" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPackageName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReceiverName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTagForPolicy" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="policyIdent" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isVisible" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadDescription" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="pm" type="android.content.pm.PackageManager">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadIcon" native="false" return="android.graphics.drawable.Drawable" static="false" synchronized="false" visibility="public">
+<parameter name="pm" type="android.content.pm.PackageManager">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadLabel" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="pm" type="android.content.pm.PackageManager">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="usesPolicy" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="policyIdent" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="USES_POLICY_FORCE_LOCK" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="USES_POLICY_LIMIT_PASSWORD" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="USES_POLICY_RESET_PASSWORD" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="USES_POLICY_WATCH_LOGIN" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="USES_POLICY_WIPE_DATA" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.content.BroadcastReceiver" final="false" name="DeviceAdminReceiver" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DeviceAdminReceiver" static="false" type="android.app.admin.DeviceAdminReceiver" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getManager" native="false" return="android.app.admin.DevicePolicyManager" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWho" native="false" return="android.content.ComponentName" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDisableRequested" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDisabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onPasswordChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onPasswordFailed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onPasswordSucceeded" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onReceive" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ACTION_DEVICE_ADMIN_DISABLED" static="true" transient="false" type="java.lang.String" value="&quot;android.app.action.DEVICE_ADMIN_DISABLED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_DEVICE_ADMIN_DISABLE_REQUESTED" static="true" transient="false" type="java.lang.String" value="&quot;android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_DEVICE_ADMIN_ENABLED" static="true" transient="false" type="java.lang.String" value="&quot;android.app.action.DEVICE_ADMIN_ENABLED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_PASSWORD_CHANGED" static="true" transient="false" type="java.lang.String" value="&quot;android.app.action.ACTION_PASSWORD_CHANGED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_PASSWORD_FAILED" static="true" transient="false" type="java.lang.String" value="&quot;android.app.action.ACTION_PASSWORD_FAILED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_PASSWORD_SUCCEEDED" static="true" transient="false" type="java.lang.String" value="&quot;android.app.action.ACTION_PASSWORD_SUCCEEDED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEVICE_ADMIN_META_DATA" static="true" transient="false" type="java.lang.String" value="&quot;android.app.device_admin&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_DISABLE_WARNING" static="true" transient="false" type="java.lang.String" value="&quot;android.app.extra.DISABLE_WARNING&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DevicePolicyManager" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getActiveAdmins" native="false" return="java.util.List&lt;android.content.ComponentName&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentFailedPasswordAttempts" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMaximumFailedPasswordsForWipe" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="admin" type="android.content.ComponentName">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMaximumTimeToLock" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="admin" type="android.content.ComponentName">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPasswordMaximumLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="quality" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPasswordMinimumLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="admin" type="android.content.ComponentName">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPasswordQuality" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="admin" type="android.content.ComponentName">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isActivePasswordSufficient" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isAdminActive" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.content.ComponentName">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="lockNow" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeActiveAdmin" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="who" type="android.content.ComponentName">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetPassword" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="password" type="java.lang.String">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMaximumFailedPasswordsForWipe" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="admin" type="android.content.ComponentName">
+</parameter>
+<parameter name="num" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMaximumTimeToLock" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="admin" type="android.content.ComponentName">
+</parameter>
+<parameter name="timeMs" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPasswordMinimumLength" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="admin" type="android.content.ComponentName">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPasswordQuality" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="admin" type="android.content.ComponentName">
+</parameter>
+<parameter name="quality" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="wipeData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ACTION_ADD_DEVICE_ADMIN" static="true" transient="false" type="java.lang.String" value="&quot;android.app.action.ADD_DEVICE_ADMIN&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_SET_NEW_PASSWORD" static="true" transient="false" type="java.lang.String" value="&quot;android.app.action.SET_NEW_PASSWORD&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_ADD_EXPLANATION" static="true" transient="false" type="java.lang.String" value="&quot;android.app.extra.ADD_EXPLANATION&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_DEVICE_ADMIN" static="true" transient="false" type="java.lang.String" value="&quot;android.app.extra.DEVICE_ADMIN&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PASSWORD_QUALITY_ALPHABETIC" static="true" transient="false" type="int" value="262144" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PASSWORD_QUALITY_ALPHANUMERIC" static="true" transient="false" type="int" value="327680" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PASSWORD_QUALITY_NUMERIC" static="true" transient="false" type="int" value="131072" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PASSWORD_QUALITY_SOMETHING" static="true" transient="false" type="int" value="65536" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PASSWORD_QUALITY_UNSPECIFIED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RESET_PASSWORD_REQUIRE_ENTRY" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WIPE_EXTERNAL_STORAGE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+</class>
+</package></api>

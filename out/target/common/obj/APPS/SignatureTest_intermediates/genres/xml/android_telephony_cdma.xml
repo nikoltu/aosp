@@ -1,0 +1,46 @@
+<?xml version="1.0" ?><api><package name="android.telephony.cdma">
+<class abstract="false" deprecated="not deprecated" extends="android.telephony.CellLocation" final="false" name="CdmaCellLocation" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CdmaCellLocation" static="false" type="android.telephony.cdma.CdmaCellLocation" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="CdmaCellLocation" static="false" type="android.telephony.cdma.CdmaCellLocation" visibility="public">
+<parameter name="bundle" type="android.os.Bundle">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="fillInNotifierBundle" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="bundleToFill" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBaseStationId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBaseStationLatitude" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBaseStationLongitude" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNetworkId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSystemId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCellLocationData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="baseStationId" type="int">
+</parameter>
+<parameter name="baseStationLatitude" type="int">
+</parameter>
+<parameter name="baseStationLongitude" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCellLocationData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="baseStationId" type="int">
+</parameter>
+<parameter name="baseStationLatitude" type="int">
+</parameter>
+<parameter name="baseStationLongitude" type="int">
+</parameter>
+<parameter name="systemId" type="int">
+</parameter>
+<parameter name="networkId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStateInvalid" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package></api>

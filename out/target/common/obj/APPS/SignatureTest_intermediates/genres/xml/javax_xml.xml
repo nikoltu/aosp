@@ -1,0 +1,28 @@
+<?xml version="1.0" ?><api><package name="javax.xml">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="XMLConstants" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="DEFAULT_NS_PREFIX" static="true" transient="false" type="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FEATURE_SECURE_PROCESSING" static="true" transient="false" type="java.lang.String" value="&quot;http://javax.xml.XMLConstants/feature/secure-processing&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NULL_NS_URI" static="true" transient="false" type="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RELAXNG_NS_URI" static="true" transient="false" type="java.lang.String" value="&quot;http://relaxng.org/ns/structure/1.0&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="W3C_XML_SCHEMA_INSTANCE_NS_URI" static="true" transient="false" type="java.lang.String" value="&quot;http://www.w3.org/2001/XMLSchema-instance&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="W3C_XML_SCHEMA_NS_URI" static="true" transient="false" type="java.lang.String" value="&quot;http://www.w3.org/2001/XMLSchema&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="W3C_XPATH_DATATYPE_NS_URI" static="true" transient="false" type="java.lang.String" value="&quot;http://www.w3.org/2003/11/xpath-datatypes&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="XMLNS_ATTRIBUTE" static="true" transient="false" type="java.lang.String" value="&quot;xmlns&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="XMLNS_ATTRIBUTE_NS_URI" static="true" transient="false" type="java.lang.String" value="&quot;http://www.w3.org/2000/xmlns/&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="XML_DTD_NS_URI" static="true" transient="false" type="java.lang.String" value="&quot;http://www.w3.org/TR/REC-xml&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="XML_NS_PREFIX" static="true" transient="false" type="java.lang.String" value="&quot;xml&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="XML_NS_URI" static="true" transient="false" type="java.lang.String" value="&quot;http://www.w3.org/XML/1998/namespace&quot;" visibility="public" volatile="false">
+</field>
+</class>
+</package></api>

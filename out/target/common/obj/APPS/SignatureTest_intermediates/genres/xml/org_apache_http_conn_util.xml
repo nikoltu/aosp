@@ -1,0 +1,20 @@
+<?xml version="1.0" ?><api><package name="org.apache.http.conn.util">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="InetAddressUtils" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="isIPv4Address" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="input" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isIPv6Address" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="input" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isIPv6HexCompressedAddress" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="input" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isIPv6StdAddress" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="input" type="java.lang.String">
+</parameter>
+</method>
+</class>
+</package></api>

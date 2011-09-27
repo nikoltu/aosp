@@ -1,0 +1,206 @@
+<?xml version="1.0" ?><api><package name="java.awt.font">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="NumericShaper" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContextualShaper" native="false" return="java.awt.font.NumericShaper" static="true" synchronized="false" visibility="public">
+<parameter name="ranges" type="int">
+</parameter>
+<parameter name="defaultContext" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContextualShaper" native="false" return="java.awt.font.NumericShaper" static="true" synchronized="false" visibility="public">
+<parameter name="ranges" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRanges" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getShaper" native="false" return="java.awt.font.NumericShaper" static="true" synchronized="false" visibility="public">
+<parameter name="singleRange" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isContextual" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shape" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="char[]">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="count" type="int">
+</parameter>
+<parameter name="context" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shape" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="char[]">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="count" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ALL_RANGES" static="true" transient="false" type="int" value="524287" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ARABIC" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BENGALI" static="true" transient="false" type="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEVANAGARI" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EASTERN_ARABIC" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ETHIOPIC" static="true" transient="false" type="int" value="65536" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EUROPEAN" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GUJARATI" static="true" transient="false" type="int" value="64" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GURMUKHI" static="true" transient="false" type="int" value="32" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KANNADA" static="true" transient="false" type="int" value="1024" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KHMER" static="true" transient="false" type="int" value="131072" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LAO" static="true" transient="false" type="int" value="8192" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MALAYALAM" static="true" transient="false" type="int" value="2048" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MONGOLIAN" static="true" transient="false" type="int" value="262144" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MYANMAR" static="true" transient="false" type="int" value="32768" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ORIYA" static="true" transient="false" type="int" value="128" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TAMIL" static="true" transient="false" type="int" value="256" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TELUGU" static="true" transient="false" type="int" value="512" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="THAI" static="true" transient="false" type="int" value="4096" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TIBETAN" static="true" transient="false" type="int" value="16384" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.text.AttributedCharacterIterator.Attribute" final="true" name="TextAttribute" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="TextAttribute" static="false" type="java.awt.font.TextAttribute" visibility="protected">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="true" name="BACKGROUND" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BIDI_EMBEDDING" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CHAR_REPLACEMENT" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FAMILY" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FONT" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FOREGROUND" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INPUT_METHOD_HIGHLIGHT" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INPUT_METHOD_UNDERLINE" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="JUSTIFICATION" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="JUSTIFICATION_FULL" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="JUSTIFICATION_NONE" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KERNING" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KERNING_ON" static="true" transient="false" type="java.lang.Integer" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LIGATURES" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LIGATURES_ON" static="true" transient="false" type="java.lang.Integer" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NUMERIC_SHAPING" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="POSTURE" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="POSTURE_OBLIQUE" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="POSTURE_REGULAR" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RUN_DIRECTION" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RUN_DIRECTION_LTR" static="true" transient="false" type="java.lang.Boolean" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RUN_DIRECTION_RTL" static="true" transient="false" type="java.lang.Boolean" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SIZE" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STRIKETHROUGH" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STRIKETHROUGH_ON" static="true" transient="false" type="java.lang.Boolean" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SUPERSCRIPT" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SUPERSCRIPT_SUB" static="true" transient="false" type="java.lang.Integer" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SUPERSCRIPT_SUPER" static="true" transient="false" type="java.lang.Integer" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SWAP_COLORS" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SWAP_COLORS_ON" static="true" transient="false" type="java.lang.Boolean" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TRACKING" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TRACKING_LOOSE" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TRACKING_TIGHT" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TRANSFORM" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNDERLINE" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNDERLINE_LOW_DASHED" static="true" transient="false" type="java.lang.Integer" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNDERLINE_LOW_DOTTED" static="true" transient="false" type="java.lang.Integer" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNDERLINE_LOW_GRAY" static="true" transient="false" type="java.lang.Integer" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNDERLINE_LOW_ONE_PIXEL" static="true" transient="false" type="java.lang.Integer" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNDERLINE_LOW_TWO_PIXEL" static="true" transient="false" type="java.lang.Integer" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNDERLINE_ON" static="true" transient="false" type="java.lang.Integer" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEIGHT" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEIGHT_BOLD" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEIGHT_DEMIBOLD" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEIGHT_DEMILIGHT" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEIGHT_EXTRABOLD" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEIGHT_EXTRA_LIGHT" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEIGHT_HEAVY" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEIGHT_LIGHT" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEIGHT_MEDIUM" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEIGHT_REGULAR" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEIGHT_SEMIBOLD" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WEIGHT_ULTRABOLD" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WIDTH" static="true" transient="false" type="java.awt.font.TextAttribute" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WIDTH_CONDENSED" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WIDTH_EXTENDED" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WIDTH_REGULAR" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WIDTH_SEMI_CONDENSED" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WIDTH_SEMI_EXTENDED" static="true" transient="false" type="java.lang.Float" visibility="public" volatile="false">
+</field>
+</class>
+</package></api>

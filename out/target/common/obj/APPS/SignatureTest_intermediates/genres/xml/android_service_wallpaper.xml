@@ -1,0 +1,104 @@
+<?xml version="1.0" ?><api><package name="android.service.wallpaper">
+<class abstract="true" deprecated="not deprecated" extends="android.app.Service" final="false" name="WallpaperService" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="WallpaperService" static="false" type="android.service.wallpaper.WallpaperService" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="onBind" native="false" return="android.os.IBinder" static="false" synchronized="false" visibility="public">
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onCreateEngine" native="false" return="android.service.wallpaper.WallpaperService.Engine" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="SERVICE_INTERFACE" static="true" transient="false" type="java.lang.String" value="&quot;android.service.wallpaper.WallpaperService&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SERVICE_META_DATA" static="true" transient="false" type="java.lang.String" value="&quot;android.service.wallpaper&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="WallpaperService.Engine" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="WallpaperService.Engine" static="false" type="android.service.wallpaper.WallpaperService.Engine" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDesiredMinimumHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDesiredMinimumWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSurfaceHolder" native="false" return="android.view.SurfaceHolder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isPreview" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isVisible" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCommand" native="false" return="android.os.Bundle" static="false" synchronized="false" visibility="public">
+<parameter name="action" type="java.lang.String">
+</parameter>
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+<parameter name="z" type="int">
+</parameter>
+<parameter name="extras" type="android.os.Bundle">
+</parameter>
+<parameter name="resultRequested" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCreate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="surfaceHolder" type="android.view.SurfaceHolder">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDesiredSizeChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="desiredWidth" type="int">
+</parameter>
+<parameter name="desiredHeight" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDestroy" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onOffsetsChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="xOffset" type="float">
+</parameter>
+<parameter name="yOffset" type="float">
+</parameter>
+<parameter name="xOffsetStep" type="float">
+</parameter>
+<parameter name="yOffsetStep" type="float">
+</parameter>
+<parameter name="xPixelOffset" type="int">
+</parameter>
+<parameter name="yPixelOffset" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSurfaceChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="holder" type="android.view.SurfaceHolder">
+</parameter>
+<parameter name="format" type="int">
+</parameter>
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSurfaceCreated" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="holder" type="android.view.SurfaceHolder">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSurfaceDestroyed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="holder" type="android.view.SurfaceHolder">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSurfaceRedrawNeeded" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="holder" type="android.view.SurfaceHolder">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTouchEvent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="event" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onVisibilityChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="visible" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTouchEventsEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="enabled" type="boolean">
+</parameter>
+</method>
+</class>
+</package></api>

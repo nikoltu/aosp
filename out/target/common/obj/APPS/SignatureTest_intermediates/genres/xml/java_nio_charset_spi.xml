@@ -1,0 +1,12 @@
+<?xml version="1.0" ?><api><package name="java.nio.charset.spi">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="CharsetProvider" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CharsetProvider" static="false" type="java.nio.charset.spi.CharsetProvider" visibility="protected">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="charsetForName" native="false" return="java.nio.charset.Charset" static="false" synchronized="false" visibility="public">
+<parameter name="charsetName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="charsets" native="false" return="java.util.Iterator&lt;java.nio.charset.Charset&gt;" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package></api>

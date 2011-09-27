@@ -1,0 +1,266 @@
+<?xml version="1.0" ?><api><package name="javax.xml.validation">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Schema" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Schema" static="false" type="javax.xml.validation.Schema" visibility="protected">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="newValidator" native="false" return="javax.xml.validation.Validator" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newValidatorHandler" native="false" return="javax.xml.validation.ValidatorHandler" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SchemaFactory" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SchemaFactory" static="false" type="javax.xml.validation.SchemaFactory" visibility="protected">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="getErrorHandler" native="false" return="org.xml.sax.ErrorHandler" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFeature" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="SAXNotRecognizedException" type="org.xml.sax.SAXNotRecognizedException">
+</exception>
+<exception name="SAXNotSupportedException" type="org.xml.sax.SAXNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProperty" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="SAXNotRecognizedException" type="org.xml.sax.SAXNotRecognizedException">
+</exception>
+<exception name="SAXNotSupportedException" type="org.xml.sax.SAXNotSupportedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getResourceResolver" native="false" return="org.w3c.dom.ls.LSResourceResolver" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isSchemaLanguageSupported" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="schemaLanguage" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="javax.xml.validation.SchemaFactory" static="true" synchronized="false" visibility="public">
+<parameter name="schemaLanguage" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="javax.xml.validation.SchemaFactory" static="true" synchronized="false" visibility="public">
+<parameter name="schemaLanguage" type="java.lang.String">
+</parameter>
+<parameter name="factoryClassName" type="java.lang.String">
+</parameter>
+<parameter name="classLoader" type="java.lang.ClassLoader">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newSchema" native="false" return="javax.xml.validation.Schema" static="false" synchronized="false" visibility="public">
+<parameter name="schema" type="javax.xml.transform.Source">
+</parameter>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newSchema" native="false" return="javax.xml.validation.Schema" static="false" synchronized="false" visibility="public">
+<parameter name="schema" type="java.io.File">
+</parameter>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newSchema" native="false" return="javax.xml.validation.Schema" static="false" synchronized="false" visibility="public">
+<parameter name="schema" type="java.net.URL">
+</parameter>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newSchema" native="false" return="javax.xml.validation.Schema" static="false" synchronized="false" visibility="public">
+<parameter name="schemas" type="javax.xml.transform.Source[]">
+</parameter>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newSchema" native="false" return="javax.xml.validation.Schema" static="false" synchronized="false" visibility="public">
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setErrorHandler" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="errorHandler" type="org.xml.sax.ErrorHandler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFeature" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="boolean">
+</parameter>
+<exception name="SAXNotRecognizedException" type="org.xml.sax.SAXNotRecognizedException">
+</exception>
+<exception name="SAXNotSupportedException" type="org.xml.sax.SAXNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setProperty" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="object" type="java.lang.Object">
+</parameter>
+<exception name="SAXNotRecognizedException" type="org.xml.sax.SAXNotRecognizedException">
+</exception>
+<exception name="SAXNotSupportedException" type="org.xml.sax.SAXNotSupportedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setResourceResolver" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="resourceResolver" type="org.w3c.dom.ls.LSResourceResolver">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SchemaFactoryLoader" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SchemaFactoryLoader" static="false" type="javax.xml.validation.SchemaFactoryLoader" visibility="protected">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="newFactory" native="false" return="javax.xml.validation.SchemaFactory" static="false" synchronized="false" visibility="public">
+<parameter name="schemaLanguage" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="TypeInfoProvider" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="TypeInfoProvider" static="false" type="javax.xml.validation.TypeInfoProvider" visibility="protected">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="getAttributeTypeInfo" native="false" return="org.w3c.dom.TypeInfo" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getElementTypeInfo" native="false" return="org.w3c.dom.TypeInfo" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isIdAttribute" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isSpecified" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Validator" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Validator" static="false" type="javax.xml.validation.Validator" visibility="protected">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="getErrorHandler" native="false" return="org.xml.sax.ErrorHandler" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFeature" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="SAXNotRecognizedException" type="org.xml.sax.SAXNotRecognizedException">
+</exception>
+<exception name="SAXNotSupportedException" type="org.xml.sax.SAXNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProperty" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="SAXNotRecognizedException" type="org.xml.sax.SAXNotRecognizedException">
+</exception>
+<exception name="SAXNotSupportedException" type="org.xml.sax.SAXNotSupportedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getResourceResolver" native="false" return="org.w3c.dom.ls.LSResourceResolver" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setErrorHandler" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="errorHandler" type="org.xml.sax.ErrorHandler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFeature" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="boolean">
+</parameter>
+<exception name="SAXNotRecognizedException" type="org.xml.sax.SAXNotRecognizedException">
+</exception>
+<exception name="SAXNotSupportedException" type="org.xml.sax.SAXNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setProperty" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="object" type="java.lang.Object">
+</parameter>
+<exception name="SAXNotRecognizedException" type="org.xml.sax.SAXNotRecognizedException">
+</exception>
+<exception name="SAXNotSupportedException" type="org.xml.sax.SAXNotSupportedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setResourceResolver" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="resourceResolver" type="org.w3c.dom.ls.LSResourceResolver">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="validate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="source" type="javax.xml.transform.Source">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="validate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="source" type="javax.xml.transform.Source">
+</parameter>
+<parameter name="result" type="javax.xml.transform.Result">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ValidatorHandler" static="false" visibility="public">
+<implements name="org.xml.sax.ContentHandler">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ValidatorHandler" static="false" type="javax.xml.validation.ValidatorHandler" visibility="protected">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="getContentHandler" native="false" return="org.xml.sax.ContentHandler" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getErrorHandler" native="false" return="org.xml.sax.ErrorHandler" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFeature" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="SAXNotRecognizedException" type="org.xml.sax.SAXNotRecognizedException">
+</exception>
+<exception name="SAXNotSupportedException" type="org.xml.sax.SAXNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProperty" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="SAXNotRecognizedException" type="org.xml.sax.SAXNotRecognizedException">
+</exception>
+<exception name="SAXNotSupportedException" type="org.xml.sax.SAXNotSupportedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getResourceResolver" native="false" return="org.w3c.dom.ls.LSResourceResolver" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTypeInfoProvider" native="false" return="javax.xml.validation.TypeInfoProvider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setContentHandler" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="receiver" type="org.xml.sax.ContentHandler">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setErrorHandler" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="errorHandler" type="org.xml.sax.ErrorHandler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFeature" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="boolean">
+</parameter>
+<exception name="SAXNotRecognizedException" type="org.xml.sax.SAXNotRecognizedException">
+</exception>
+<exception name="SAXNotSupportedException" type="org.xml.sax.SAXNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setProperty" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="object" type="java.lang.Object">
+</parameter>
+<exception name="SAXNotRecognizedException" type="org.xml.sax.SAXNotRecognizedException">
+</exception>
+<exception name="SAXNotSupportedException" type="org.xml.sax.SAXNotSupportedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setResourceResolver" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="resourceResolver" type="org.w3c.dom.ls.LSResourceResolver">
+</parameter>
+</method>
+</class>
+</package></api>

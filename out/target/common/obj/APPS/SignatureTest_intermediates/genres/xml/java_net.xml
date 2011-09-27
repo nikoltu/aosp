@@ -1,0 +1,2644 @@
+<?xml version="1.0" ?><api><package name="java.net">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Authenticator" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Authenticator" static="false" type="java.net.Authenticator" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPasswordAuthentication" native="false" return="java.net.PasswordAuthentication" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getRequestingHost" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getRequestingPort" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getRequestingPrompt" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getRequestingProtocol" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getRequestingScheme" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getRequestingSite" native="false" return="java.net.InetAddress" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRequestingURL" native="false" return="java.net.URL" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRequestorType" native="false" return="java.net.Authenticator.RequestorType" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="requestPasswordAuthentication" native="false" return="java.net.PasswordAuthentication" static="true" synchronized="true" visibility="public">
+<parameter name="rAddr" type="java.net.InetAddress">
+</parameter>
+<parameter name="rPort" type="int">
+</parameter>
+<parameter name="rProtocol" type="java.lang.String">
+</parameter>
+<parameter name="rPrompt" type="java.lang.String">
+</parameter>
+<parameter name="rScheme" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="requestPasswordAuthentication" native="false" return="java.net.PasswordAuthentication" static="true" synchronized="true" visibility="public">
+<parameter name="rHost" type="java.lang.String">
+</parameter>
+<parameter name="rAddr" type="java.net.InetAddress">
+</parameter>
+<parameter name="rPort" type="int">
+</parameter>
+<parameter name="rProtocol" type="java.lang.String">
+</parameter>
+<parameter name="rPrompt" type="java.lang.String">
+</parameter>
+<parameter name="rScheme" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="requestPasswordAuthentication" native="false" return="java.net.PasswordAuthentication" static="true" synchronized="false" visibility="public">
+<parameter name="rHost" type="java.lang.String">
+</parameter>
+<parameter name="rAddr" type="java.net.InetAddress">
+</parameter>
+<parameter name="rPort" type="int">
+</parameter>
+<parameter name="rProtocol" type="java.lang.String">
+</parameter>
+<parameter name="rPrompt" type="java.lang.String">
+</parameter>
+<parameter name="rScheme" type="java.lang.String">
+</parameter>
+<parameter name="rURL" type="java.net.URL">
+</parameter>
+<parameter name="reqType" type="java.net.Authenticator.RequestorType">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDefault" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="a" type="java.net.Authenticator">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" final="true" name="Authenticator.RequestorType" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="java.net.Authenticator.RequestorType" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="values" native="false" return="java.net.Authenticator.RequestorType[]" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.net.SocketException" final="false" name="BindException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BindException" static="false" type="java.net.BindException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BindException" static="false" type="java.net.BindException" visibility="public">
+<parameter name="detailMessage" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="CacheRequest" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CacheRequest" static="false" type="java.net.CacheRequest" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="abort" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getBody" native="false" return="java.io.OutputStream" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="CacheResponse" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CacheResponse" static="false" type="java.net.CacheResponse" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="getBody" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getHeaders" native="false" return="java.util.Map&lt;java.lang.String, java.util.List&lt;java.lang.String&gt;&gt;" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.net.SocketException" final="false" name="ConnectException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ConnectException" static="false" type="java.net.ConnectException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ConnectException" static="false" type="java.net.ConnectException" visibility="public">
+<parameter name="detailMessage" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ContentHandler" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ContentHandler" static="false" type="java.net.ContentHandler" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="getContent" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="uConn" type="java.net.URLConnection">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContent" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="uConn" type="java.net.URLConnection">
+</parameter>
+<parameter name="types" type="java.lang.Class[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ContentHandlerFactory" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="createContentHandler" native="false" return="java.net.ContentHandler" static="false" synchronized="false" visibility="public">
+<parameter name="contentType" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="CookieHandler" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CookieHandler" static="false" type="java.net.CookieHandler" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="get" native="false" return="java.util.Map&lt;java.lang.String, java.util.List&lt;java.lang.String&gt;&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+<parameter name="requestHeaders" type="java.util.Map&lt;java.lang.String, java.util.List&lt;java.lang.String&gt;&gt;">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefault" native="false" return="java.net.CookieHandler" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="put" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+<parameter name="responseHeaders" type="java.util.Map&lt;java.lang.String, java.util.List&lt;java.lang.String&gt;&gt;">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDefault" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="cHandler" type="java.net.CookieHandler">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.net.CookieHandler" final="false" name="CookieManager" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CookieManager" static="false" type="java.net.CookieManager" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="CookieManager" static="false" type="java.net.CookieManager" visibility="public">
+<parameter name="store" type="java.net.CookieStore">
+</parameter>
+<parameter name="cookiePolicy" type="java.net.CookiePolicy">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="java.util.Map&lt;java.lang.String, java.util.List&lt;java.lang.String&gt;&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+<parameter name="requestHeaders" type="java.util.Map&lt;java.lang.String, java.util.List&lt;java.lang.String&gt;&gt;">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCookieStore" native="false" return="java.net.CookieStore" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="put" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+<parameter name="responseHeaders" type="java.util.Map&lt;java.lang.String, java.util.List&lt;java.lang.String&gt;&gt;">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCookiePolicy" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cookiePolicy" type="java.net.CookiePolicy">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="CookiePolicy" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="shouldAccept" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+<parameter name="cookie" type="java.net.HttpCookie">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ACCEPT_ALL" static="true" transient="false" type="java.net.CookiePolicy" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACCEPT_NONE" static="true" transient="false" type="java.net.CookiePolicy" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACCEPT_ORIGINAL_SERVER" static="true" transient="false" type="java.net.CookiePolicy" value="null" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="CookieStore" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="add" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+<parameter name="cookie" type="java.net.HttpCookie">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="get" native="false" return="java.util.List&lt;java.net.HttpCookie&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getCookies" native="false" return="java.util.List&lt;java.net.HttpCookie&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getURIs" native="false" return="java.util.List&lt;java.net.URI&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="remove" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+<parameter name="cookie" type="java.net.HttpCookie">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeAll" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="DatagramPacket" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DatagramPacket" static="false" type="java.net.DatagramPacket" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DatagramPacket" static="false" type="java.net.DatagramPacket" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DatagramPacket" static="false" type="java.net.DatagramPacket" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<parameter name="host" type="java.net.InetAddress">
+</parameter>
+<parameter name="aPort" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DatagramPacket" static="false" type="java.net.DatagramPacket" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<parameter name="host" type="java.net.InetAddress">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DatagramPacket" static="false" type="java.net.DatagramPacket" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<parameter name="sockAddr" type="java.net.SocketAddress">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DatagramPacket" static="false" type="java.net.DatagramPacket" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<parameter name="sockAddr" type="java.net.SocketAddress">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAddress" native="false" return="java.net.InetAddress" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getData" native="false" return="byte[]" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLength" native="false" return="int" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOffset" native="false" return="int" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPort" native="false" return="int" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSocketAddress" native="false" return="java.net.SocketAddress" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAddress" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="addr" type="java.net.InetAddress">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setData" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="buf" type="byte[]">
+</parameter>
+<parameter name="anOffset" type="int">
+</parameter>
+<parameter name="aLength" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setData" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="buf" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLength" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="len" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPort" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="aPort" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSocketAddress" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="sockAddr" type="java.net.SocketAddress">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DatagramSocket" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DatagramSocket" static="false" type="java.net.DatagramSocket" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DatagramSocket" static="false" type="java.net.DatagramSocket" visibility="public">
+<parameter name="aPort" type="int">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DatagramSocket" static="false" type="java.net.DatagramSocket" visibility="public">
+<parameter name="aPort" type="int">
+</parameter>
+<parameter name="addr" type="java.net.InetAddress">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DatagramSocket" static="false" type="java.net.DatagramSocket" visibility="protected">
+<parameter name="socketImpl" type="java.net.DatagramSocketImpl">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DatagramSocket" static="false" type="java.net.DatagramSocket" visibility="public">
+<parameter name="localAddr" type="java.net.SocketAddress">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="bind" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="localAddr" type="java.net.SocketAddress">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="connect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="anAddress" type="java.net.InetAddress">
+</parameter>
+<parameter name="aPort" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="connect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="remoteAddr" type="java.net.SocketAddress">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="disconnect" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBroadcast" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getChannel" native="false" return="java.nio.channels.DatagramChannel" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInetAddress" native="false" return="java.net.InetAddress" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalAddress" native="false" return="java.net.InetAddress" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalPort" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalSocketAddress" native="false" return="java.net.SocketAddress" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPort" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReceiveBufferSize" native="false" return="int" static="false" synchronized="true" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRemoteSocketAddress" native="false" return="java.net.SocketAddress" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReuseAddress" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSendBufferSize" native="false" return="int" static="false" synchronized="true" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSoTimeout" native="false" return="int" static="false" synchronized="true" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTrafficClass" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isBound" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isClosed" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isConnected" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="receive" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="pack" type="java.net.DatagramPacket">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="send" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pack" type="java.net.DatagramPacket">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setBroadcast" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="broadcast" type="boolean">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDatagramSocketImplFactory" native="false" return="void" static="true" synchronized="true" visibility="public">
+<parameter name="fac" type="java.net.DatagramSocketImplFactory">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReceiveBufferSize" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReuseAddress" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="reuse" type="boolean">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSendBufferSize" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSoTimeout" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="timeout" type="int">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTrafficClass" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="int">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DatagramSocketImpl" static="false" visibility="public">
+<implements name="java.net.SocketOptions">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DatagramSocketImpl" static="false" type="java.net.DatagramSocketImpl" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="bind" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="port" type="int">
+</parameter>
+<parameter name="addr" type="java.net.InetAddress">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="connect" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="inetAddr" type="java.net.InetAddress">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="create" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="disconnect" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFileDescriptor" native="false" return="java.io.FileDescriptor" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalPort" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="deprecated" final="false" name="getTTL" native="false" return="byte" static="false" synchronized="false" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTimeToLive" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="join" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="addr" type="java.net.InetAddress">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="joinGroup" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="addr" type="java.net.SocketAddress">
+</parameter>
+<parameter name="netInterface" type="java.net.NetworkInterface">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="leave" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="addr" type="java.net.InetAddress">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="leaveGroup" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="addr" type="java.net.SocketAddress">
+</parameter>
+<parameter name="netInterface" type="java.net.NetworkInterface">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="peek" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="sender" type="java.net.InetAddress">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="peekData" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="pack" type="java.net.DatagramPacket">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="receive" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="pack" type="java.net.DatagramPacket">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="send" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="pack" type="java.net.DatagramPacket">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="deprecated" final="false" name="setTTL" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="ttl" type="byte">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setTimeToLive" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="ttl" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="false" name="fd" static="false" transient="false" type="java.io.FileDescriptor" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="localPort" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DatagramSocketImplFactory" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="createDatagramSocketImpl" native="false" return="java.net.DatagramSocketImpl" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="FileNameMap" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getContentTypeFor" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="filename" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="HttpCookie" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="HttpCookie" static="false" type="java.net.HttpCookie" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="domainMatches" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="domainPattern" type="java.lang.String">
+</parameter>
+<parameter name="host" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getComment" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCommentURL" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDiscard" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDomain" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMaxAge" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPath" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPortlist" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSecure" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValue" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVersion" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasExpired" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="java.util.List&lt;java.net.HttpCookie&gt;" static="true" synchronized="false" visibility="public">
+<parameter name="header" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setComment" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="comment" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCommentURL" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="commentURL" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDiscard" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="discard" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDomain" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pattern" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMaxAge" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="deltaSeconds" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPath" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPortlist" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="portList" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSecure" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="secure" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setValue" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVersion" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="v" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.IOException" final="false" name="HttpRetryException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HttpRetryException" static="false" type="java.net.HttpRetryException" visibility="public">
+<parameter name="detail" type="java.lang.String">
+</parameter>
+<parameter name="code" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpRetryException" static="false" type="java.net.HttpRetryException" visibility="public">
+<parameter name="detail" type="java.lang.String">
+</parameter>
+<parameter name="code" type="int">
+</parameter>
+<parameter name="location" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocation" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReason" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="responseCode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.net.URLConnection" final="false" name="HttpURLConnection" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HttpURLConnection" static="false" type="java.net.HttpURLConnection" visibility="protected">
+<parameter name="url" type="java.net.URL">
+</parameter>
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="disconnect" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getErrorStream" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFollowRedirects" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstanceFollowRedirects" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRequestMethod" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getResponseCode" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getResponseMessage" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setChunkedStreamingMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="chunkLength" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFixedLengthStreamingMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="contentLength" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFollowRedirects" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="auto" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setInstanceFollowRedirects" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="followRedirects" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRequestMethod" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="method" type="java.lang.String">
+</parameter>
+<exception name="ProtocolException" type="java.net.ProtocolException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="usingProxy" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="HTTP_ACCEPTED" static="true" transient="false" type="int" value="202" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_BAD_GATEWAY" static="true" transient="false" type="int" value="502" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_BAD_METHOD" static="true" transient="false" type="int" value="405" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_BAD_REQUEST" static="true" transient="false" type="int" value="400" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_CLIENT_TIMEOUT" static="true" transient="false" type="int" value="408" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_CONFLICT" static="true" transient="false" type="int" value="409" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_CREATED" static="true" transient="false" type="int" value="201" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_ENTITY_TOO_LARGE" static="true" transient="false" type="int" value="413" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_FORBIDDEN" static="true" transient="false" type="int" value="403" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_GATEWAY_TIMEOUT" static="true" transient="false" type="int" value="504" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_GONE" static="true" transient="false" type="int" value="410" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_INTERNAL_ERROR" static="true" transient="false" type="int" value="500" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_LENGTH_REQUIRED" static="true" transient="false" type="int" value="411" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_MOVED_PERM" static="true" transient="false" type="int" value="301" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_MOVED_TEMP" static="true" transient="false" type="int" value="302" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_MULT_CHOICE" static="true" transient="false" type="int" value="300" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_NOT_ACCEPTABLE" static="true" transient="false" type="int" value="406" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_NOT_AUTHORITATIVE" static="true" transient="false" type="int" value="203" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_NOT_FOUND" static="true" transient="false" type="int" value="404" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_NOT_IMPLEMENTED" static="true" transient="false" type="int" value="501" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_NOT_MODIFIED" static="true" transient="false" type="int" value="304" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_NO_CONTENT" static="true" transient="false" type="int" value="204" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_OK" static="true" transient="false" type="int" value="200" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_PARTIAL" static="true" transient="false" type="int" value="206" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_PAYMENT_REQUIRED" static="true" transient="false" type="int" value="402" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_PRECON_FAILED" static="true" transient="false" type="int" value="412" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_PROXY_AUTH" static="true" transient="false" type="int" value="407" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_REQ_TOO_LONG" static="true" transient="false" type="int" value="414" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_RESET" static="true" transient="false" type="int" value="205" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_SEE_OTHER" static="true" transient="false" type="int" value="303" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="HTTP_SERVER_ERROR" static="true" transient="false" type="int" value="500" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_UNAUTHORIZED" static="true" transient="false" type="int" value="401" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_UNAVAILABLE" static="true" transient="false" type="int" value="503" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_UNSUPPORTED_TYPE" static="true" transient="false" type="int" value="415" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_USE_PROXY" static="true" transient="false" type="int" value="305" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_VERSION" static="true" transient="false" type="int" value="505" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="chunkLength" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="fixedContentLength" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="instanceFollowRedirects" static="false" transient="false" type="boolean" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="method" static="false" transient="false" type="java.lang.String" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="responseCode" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="responseMessage" static="false" transient="false" type="java.lang.String" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="IDN" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="toASCII" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="input" type="java.lang.String">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toASCII" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="input" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toUnicode" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="input" type="java.lang.String">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toUnicode" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="input" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ALLOW_UNASSIGNED" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="USE_STD3_ASCII_RULES" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.net.InetAddress" final="true" name="Inet4Address" static="false" visibility="public">
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.net.InetAddress" final="true" name="Inet6Address" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getByAddress" native="false" return="java.net.Inet6Address" static="true" synchronized="false" visibility="public">
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="addr" type="byte[]">
+</parameter>
+<parameter name="scope_id" type="int">
+</parameter>
+<exception name="UnknownHostException" type="java.net.UnknownHostException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getByAddress" native="false" return="java.net.Inet6Address" static="true" synchronized="false" visibility="public">
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="addr" type="byte[]">
+</parameter>
+<parameter name="nif" type="java.net.NetworkInterface">
+</parameter>
+<exception name="UnknownHostException" type="java.net.UnknownHostException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getScopeId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getScopedInterface" native="false" return="java.net.NetworkInterface" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isIPv4CompatibleAddress" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="InetAddress" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAddress" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAllByName" native="false" return="java.net.InetAddress[]" static="true" synchronized="false" visibility="public">
+<parameter name="host" type="java.lang.String">
+</parameter>
+<exception name="UnknownHostException" type="java.net.UnknownHostException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getByAddress" native="false" return="java.net.InetAddress" static="true" synchronized="false" visibility="public">
+<parameter name="ipAddress" type="byte[]">
+</parameter>
+<exception name="UnknownHostException" type="java.net.UnknownHostException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getByAddress" native="false" return="java.net.InetAddress" static="true" synchronized="false" visibility="public">
+<parameter name="hostName" type="java.lang.String">
+</parameter>
+<parameter name="ipAddress" type="byte[]">
+</parameter>
+<exception name="UnknownHostException" type="java.net.UnknownHostException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getByName" native="false" return="java.net.InetAddress" static="true" synchronized="false" visibility="public">
+<parameter name="host" type="java.lang.String">
+</parameter>
+<exception name="UnknownHostException" type="java.net.UnknownHostException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCanonicalHostName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHostAddress" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHostName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalHost" native="false" return="java.net.InetAddress" static="true" synchronized="false" visibility="public">
+<exception name="UnknownHostException" type="java.net.UnknownHostException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isAnyLocalAddress" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isLinkLocalAddress" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isLoopbackAddress" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isMCGlobal" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isMCLinkLocal" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isMCNodeLocal" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isMCOrgLocal" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isMCSiteLocal" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isMulticastAddress" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isReachable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isReachable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="networkInterface" type="java.net.NetworkInterface">
+</parameter>
+<parameter name="ttl" type="int">
+</parameter>
+<parameter name="timeout" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isSiteLocalAddress" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.net.SocketAddress" final="false" name="InetSocketAddress" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="InetSocketAddress" static="false" type="java.net.InetSocketAddress" visibility="public">
+<parameter name="port" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InetSocketAddress" static="false" type="java.net.InetSocketAddress" visibility="public">
+<parameter name="address" type="java.net.InetAddress">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InetSocketAddress" static="false" type="java.net.InetSocketAddress" visibility="public">
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="createUnresolved" native="false" return="java.net.InetSocketAddress" static="true" synchronized="false" visibility="public">
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="equals" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="socketAddr" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAddress" native="false" return="java.net.InetAddress" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getHostName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getPort" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="hashCode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isUnresolved" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="InterfaceAddress" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getAddress" native="false" return="java.net.InetAddress" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBroadcast" native="false" return="java.net.InetAddress" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNetworkPrefixLength" native="false" return="short" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.net.URLConnection" final="false" name="JarURLConnection" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="JarURLConnection" static="false" type="java.net.JarURLConnection" visibility="protected">
+<parameter name="url" type="java.net.URL">
+</parameter>
+<exception name="MalformedURLException" type="java.net.MalformedURLException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAttributes" native="false" return="java.util.jar.Attributes" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCertificates" native="false" return="java.security.cert.Certificate[]" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEntryName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getJarEntry" native="false" return="java.util.jar.JarEntry" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getJarFile" native="false" return="java.util.jar.JarFile" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getJarFileURL" native="false" return="java.net.URL" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMainAttributes" native="false" return="java.util.jar.Attributes" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getManifest" native="false" return="java.util.jar.Manifest" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="false" name="jarFileURLConnection" static="false" transient="false" type="java.net.URLConnection" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.IOException" final="false" name="MalformedURLException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="MalformedURLException" static="false" type="java.net.MalformedURLException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="MalformedURLException" static="false" type="java.net.MalformedURLException" visibility="public">
+<parameter name="detailMessage" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.net.DatagramSocket" final="false" name="MulticastSocket" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="MulticastSocket" static="false" type="java.net.MulticastSocket" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="MulticastSocket" static="false" type="java.net.MulticastSocket" visibility="public">
+<parameter name="aPort" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="MulticastSocket" static="false" type="java.net.MulticastSocket" visibility="public">
+<parameter name="localAddr" type="java.net.SocketAddress">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInterface" native="false" return="java.net.InetAddress" static="false" synchronized="false" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLoopbackMode" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNetworkInterface" native="false" return="java.net.NetworkInterface" static="false" synchronized="false" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getTTL" native="false" return="byte" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTimeToLive" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="joinGroup" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="groupAddr" type="java.net.InetAddress">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="joinGroup" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="groupAddress" type="java.net.SocketAddress">
+</parameter>
+<parameter name="netInterface" type="java.net.NetworkInterface">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="leaveGroup" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="groupAddr" type="java.net.InetAddress">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="leaveGroup" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="groupAddress" type="java.net.SocketAddress">
+</parameter>
+<parameter name="netInterface" type="java.net.NetworkInterface">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="send" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pack" type="java.net.DatagramPacket">
+</parameter>
+<parameter name="ttl" type="byte">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setInterface" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="addr" type="java.net.InetAddress">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLoopbackMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="disable" type="boolean">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setNetworkInterface" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="netInterface" type="java.net.NetworkInterface">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="setTTL" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ttl" type="byte">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTimeToLive" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ttl" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.BasicPermission" final="true" name="NetPermission" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="NetPermission" static="false" type="java.net.NetPermission" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="NetPermission" static="false" type="java.net.NetPermission" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="actions" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="NetworkInterface" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getByInetAddress" native="false" return="java.net.NetworkInterface" static="true" synchronized="false" visibility="public">
+<parameter name="address" type="java.net.InetAddress">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getByName" native="false" return="java.net.NetworkInterface" static="true" synchronized="false" visibility="public">
+<parameter name="interfaceName" type="java.lang.String">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDisplayName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHardwareAddress" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInetAddresses" native="false" return="java.util.Enumeration&lt;java.net.InetAddress&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInterfaceAddresses" native="false" return="java.util.List&lt;java.net.InterfaceAddress&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMTU" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNetworkInterfaces" native="false" return="java.util.Enumeration&lt;java.net.NetworkInterface&gt;" static="true" synchronized="false" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParent" native="false" return="java.net.NetworkInterface" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSubInterfaces" native="false" return="java.util.Enumeration&lt;java.net.NetworkInterface&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isLoopback" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isPointToPoint" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isUp" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isVirtual" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="supportsMulticast" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.net.SocketException" final="false" name="NoRouteToHostException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="NoRouteToHostException" static="false" type="java.net.NoRouteToHostException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="NoRouteToHostException" static="false" type="java.net.NoRouteToHostException" visibility="public">
+<parameter name="detailMessage" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="PasswordAuthentication" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PasswordAuthentication" static="false" type="java.net.PasswordAuthentication" visibility="public">
+<parameter name="userName" type="java.lang.String">
+</parameter>
+<parameter name="password" type="char[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPassword" native="false" return="char[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUserName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.net.SocketException" final="false" name="PortUnreachableException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PortUnreachableException" static="false" type="java.net.PortUnreachableException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="PortUnreachableException" static="false" type="java.net.PortUnreachableException" visibility="public">
+<parameter name="detailMessage" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.IOException" final="false" name="ProtocolException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ProtocolException" static="false" type="java.net.ProtocolException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ProtocolException" static="false" type="java.net.ProtocolException" visibility="public">
+<parameter name="detailMessage" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Proxy" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Proxy" static="false" type="java.net.Proxy" visibility="public">
+<parameter name="type" type="java.net.Proxy.Type">
+</parameter>
+<parameter name="sa" type="java.net.SocketAddress">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="address" native="false" return="java.net.SocketAddress" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="equals" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="hashCode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="type" native="false" return="java.net.Proxy.Type" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="NO_PROXY" static="true" transient="false" type="java.net.Proxy" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" final="true" name="Proxy.Type" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="java.net.Proxy.Type" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="values" native="false" return="java.net.Proxy.Type[]" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ProxySelector" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ProxySelector" static="false" type="java.net.ProxySelector" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="connectFailed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+<parameter name="sa" type="java.net.SocketAddress">
+</parameter>
+<parameter name="ioe" type="java.io.IOException">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefault" native="false" return="java.net.ProxySelector" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="select" native="false" return="java.util.List&lt;java.net.Proxy&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDefault" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="selector" type="java.net.ProxySelector">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ResponseCache" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ResponseCache" static="false" type="java.net.ResponseCache" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="get" native="false" return="java.net.CacheResponse" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+<parameter name="requestMethod" type="java.lang.String">
+</parameter>
+<parameter name="requestHeaders" type="java.util.Map&lt;java.lang.String, java.util.List&lt;java.lang.String&gt;&gt;">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefault" native="false" return="java.net.ResponseCache" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="put" native="false" return="java.net.CacheRequest" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+<parameter name="conn" type="java.net.URLConnection">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDefault" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="responseCache" type="java.net.ResponseCache">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.net.CacheResponse" final="false" name="SecureCacheResponse" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SecureCacheResponse" static="false" type="java.net.SecureCacheResponse" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="getCipherSuite" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLocalCertificateChain" native="false" return="java.util.List&lt;java.security.cert.Certificate&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLocalPrincipal" native="false" return="java.security.Principal" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPeerPrincipal" native="false" return="java.security.Principal" static="false" synchronized="false" visibility="public">
+<exception name="SSLPeerUnverifiedException" type="javax.net.ssl.SSLPeerUnverifiedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getServerCertificateChain" native="false" return="java.util.List&lt;java.security.cert.Certificate&gt;" static="false" synchronized="false" visibility="public">
+<exception name="SSLPeerUnverifiedException" type="javax.net.ssl.SSLPeerUnverifiedException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ServerSocket" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ServerSocket" static="false" type="java.net.ServerSocket" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ServerSocket" static="false" type="java.net.ServerSocket" visibility="public">
+<parameter name="aport" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ServerSocket" static="false" type="java.net.ServerSocket" visibility="public">
+<parameter name="aport" type="int">
+</parameter>
+<parameter name="backlog" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ServerSocket" static="false" type="java.net.ServerSocket" visibility="public">
+<parameter name="aport" type="int">
+</parameter>
+<parameter name="backlog" type="int">
+</parameter>
+<parameter name="localAddr" type="java.net.InetAddress">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="accept" native="false" return="java.net.Socket" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="bind" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="localAddr" type="java.net.SocketAddress">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="bind" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="localAddr" type="java.net.SocketAddress">
+</parameter>
+<parameter name="backlog" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getChannel" native="false" return="java.nio.channels.ServerSocketChannel" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInetAddress" native="false" return="java.net.InetAddress" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalPort" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalSocketAddress" native="false" return="java.net.SocketAddress" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReceiveBufferSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReuseAddress" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSoTimeout" native="false" return="int" static="false" synchronized="true" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="implAccept" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="aSocket" type="java.net.Socket">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isBound" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isClosed" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPerformancePreferences" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="connectionTime" type="int">
+</parameter>
+<parameter name="latency" type="int">
+</parameter>
+<parameter name="bandwidth" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReceiveBufferSize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReuseAddress" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="reuse" type="boolean">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSoTimeout" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="timeout" type="int">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSocketFactory" native="false" return="void" static="true" synchronized="true" visibility="public">
+<parameter name="aFactory" type="java.net.SocketImplFactory">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Socket" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Socket" static="false" type="java.net.Socket" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Socket" static="false" type="java.net.Socket" visibility="public">
+<parameter name="proxy" type="java.net.Proxy">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Socket" static="false" type="java.net.Socket" visibility="public">
+<parameter name="dstName" type="java.lang.String">
+</parameter>
+<parameter name="dstPort" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="UnknownHostException" type="java.net.UnknownHostException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Socket" static="false" type="java.net.Socket" visibility="public">
+<parameter name="dstName" type="java.lang.String">
+</parameter>
+<parameter name="dstPort" type="int">
+</parameter>
+<parameter name="localAddress" type="java.net.InetAddress">
+</parameter>
+<parameter name="localPort" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="deprecated" final="false" name="Socket" static="false" type="java.net.Socket" visibility="public">
+<parameter name="hostName" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="streaming" type="boolean">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Socket" static="false" type="java.net.Socket" visibility="public">
+<parameter name="dstAddress" type="java.net.InetAddress">
+</parameter>
+<parameter name="dstPort" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Socket" static="false" type="java.net.Socket" visibility="public">
+<parameter name="dstAddress" type="java.net.InetAddress">
+</parameter>
+<parameter name="dstPort" type="int">
+</parameter>
+<parameter name="localAddress" type="java.net.InetAddress">
+</parameter>
+<parameter name="localPort" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="deprecated" final="false" name="Socket" static="false" type="java.net.Socket" visibility="public">
+<parameter name="addr" type="java.net.InetAddress">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="streaming" type="boolean">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Socket" static="false" type="java.net.Socket" visibility="protected">
+<parameter name="impl" type="java.net.SocketImpl">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="bind" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="localAddr" type="java.net.SocketAddress">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="true" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="connect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="remoteAddr" type="java.net.SocketAddress">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="connect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="remoteAddr" type="java.net.SocketAddress">
+</parameter>
+<parameter name="timeout" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getChannel" native="false" return="java.nio.channels.SocketChannel" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInetAddress" native="false" return="java.net.InetAddress" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputStream" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getKeepAlive" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalAddress" native="false" return="java.net.InetAddress" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalPort" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalSocketAddress" native="false" return="java.net.SocketAddress" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOOBInline" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOutputStream" native="false" return="java.io.OutputStream" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPort" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReceiveBufferSize" native="false" return="int" static="false" synchronized="true" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRemoteSocketAddress" native="false" return="java.net.SocketAddress" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReuseAddress" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSendBufferSize" native="false" return="int" static="false" synchronized="true" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSoLinger" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSoTimeout" native="false" return="int" static="false" synchronized="true" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTcpNoDelay" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTrafficClass" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isBound" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isClosed" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isConnected" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isInputShutdown" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isOutputShutdown" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendUrgentData" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setKeepAlive" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="keepAlive" type="boolean">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOOBInline" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="oobinline" type="boolean">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPerformancePreferences" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="connectionTime" type="int">
+</parameter>
+<parameter name="latency" type="int">
+</parameter>
+<parameter name="bandwidth" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReceiveBufferSize" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReuseAddress" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="reuse" type="boolean">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSendBufferSize" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSoLinger" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="on" type="boolean">
+</parameter>
+<parameter name="timeout" type="int">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSoTimeout" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="timeout" type="int">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSocketImplFactory" native="false" return="void" static="true" synchronized="true" visibility="public">
+<parameter name="fac" type="java.net.SocketImplFactory">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTcpNoDelay" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="on" type="boolean">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTrafficClass" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="int">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shutdownInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shutdownOutput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SocketAddress" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="SocketAddress" static="false" type="java.net.SocketAddress" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.IOException" final="false" name="SocketException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SocketException" static="false" type="java.net.SocketException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SocketException" static="false" type="java.net.SocketException" visibility="public">
+<parameter name="detailMessage" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SocketImpl" static="false" visibility="public">
+<implements name="java.net.SocketOptions">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="SocketImpl" static="false" type="java.net.SocketImpl" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="accept" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="newSocket" type="java.net.SocketImpl">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="available" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="bind" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="address" type="java.net.InetAddress">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="connect" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="connect" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="address" type="java.net.InetAddress">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="connect" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="remoteAddr" type="java.net.SocketAddress">
+</parameter>
+<parameter name="timeout" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="create" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="isStreaming" type="boolean">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFileDescriptor" native="false" return="java.io.FileDescriptor" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInetAddress" native="false" return="java.net.InetAddress" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getInputStream" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalPort" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getOutputStream" native="false" return="java.io.OutputStream" static="false" synchronized="false" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPort" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="listen" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="backlog" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="sendUrgentData" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="value" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPerformancePreferences" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="connectionTime" type="int">
+</parameter>
+<parameter name="latency" type="int">
+</parameter>
+<parameter name="bandwidth" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shutdownInput" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shutdownOutput" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="supportsUrgentData" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+</method>
+<field deprecated="not deprecated" final="false" name="address" static="false" transient="false" type="java.net.InetAddress" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="fd" static="false" transient="false" type="java.io.FileDescriptor" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="localport" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="port" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="SocketImplFactory" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="createSocketImpl" native="false" return="java.net.SocketImpl" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="SocketOptions" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getOption" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="optID" type="int">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setOption" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="optID" type="int">
+</parameter>
+<parameter name="val" type="java.lang.Object">
+</parameter>
+<exception name="SocketException" type="java.net.SocketException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="IP_MULTICAST_IF" static="true" transient="false" type="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IP_MULTICAST_IF2" static="true" transient="false" type="int" value="31" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IP_MULTICAST_LOOP" static="true" transient="false" type="int" value="18" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IP_TOS" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SO_BINDADDR" static="true" transient="false" type="int" value="15" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SO_BROADCAST" static="true" transient="false" type="int" value="32" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SO_KEEPALIVE" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SO_LINGER" static="true" transient="false" type="int" value="128" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SO_OOBINLINE" static="true" transient="false" type="int" value="4099" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SO_RCVBUF" static="true" transient="false" type="int" value="4098" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SO_REUSEADDR" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SO_SNDBUF" static="true" transient="false" type="int" value="4097" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SO_TIMEOUT" static="true" transient="false" type="int" value="4102" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TCP_NODELAY" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.security.Permission" final="true" name="SocketPermission" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="SocketPermission" static="false" type="java.net.SocketPermission" visibility="public">
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="action" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="equals" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="other" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getActions" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hashCode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="implies" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p" type="java.security.Permission">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.InterruptedIOException" final="false" name="SocketTimeoutException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SocketTimeoutException" static="false" type="java.net.SocketTimeoutException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SocketTimeoutException" static="false" type="java.net.SocketTimeoutException" visibility="public">
+<parameter name="detailMessage" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="URI" static="false" visibility="public">
+<implements name="java.lang.Comparable">
+</implements>
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="URI" static="false" type="java.net.URI" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<exception name="URISyntaxException" type="java.net.URISyntaxException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="URI" static="false" type="java.net.URI" visibility="public">
+<parameter name="scheme" type="java.lang.String">
+</parameter>
+<parameter name="ssp" type="java.lang.String">
+</parameter>
+<parameter name="frag" type="java.lang.String">
+</parameter>
+<exception name="URISyntaxException" type="java.net.URISyntaxException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="URI" static="false" type="java.net.URI" visibility="public">
+<parameter name="scheme" type="java.lang.String">
+</parameter>
+<parameter name="userInfo" type="java.lang.String">
+</parameter>
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="query" type="java.lang.String">
+</parameter>
+<parameter name="fragment" type="java.lang.String">
+</parameter>
+<exception name="URISyntaxException" type="java.net.URISyntaxException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="URI" static="false" type="java.net.URI" visibility="public">
+<parameter name="scheme" type="java.lang.String">
+</parameter>
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="fragment" type="java.lang.String">
+</parameter>
+<exception name="URISyntaxException" type="java.net.URISyntaxException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="URI" static="false" type="java.net.URI" visibility="public">
+<parameter name="scheme" type="java.lang.String">
+</parameter>
+<parameter name="authority" type="java.lang.String">
+</parameter>
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="query" type="java.lang.String">
+</parameter>
+<parameter name="fragment" type="java.lang.String">
+</parameter>
+<exception name="URISyntaxException" type="java.net.URISyntaxException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="compareTo" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="create" native="false" return="java.net.URI" static="true" synchronized="false" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAuthority" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFragment" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHost" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPath" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPort" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getQuery" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRawAuthority" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRawFragment" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRawPath" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRawQuery" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRawSchemeSpecificPart" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRawUserInfo" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getScheme" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSchemeSpecificPart" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUserInfo" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isAbsolute" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isOpaque" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="normalize" native="false" return="java.net.URI" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseServerAuthority" native="false" return="java.net.URI" static="false" synchronized="false" visibility="public">
+<exception name="URISyntaxException" type="java.net.URISyntaxException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="relativize" native="false" return="java.net.URI" static="false" synchronized="false" visibility="public">
+<parameter name="relative" type="java.net.URI">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resolve" native="false" return="java.net.URI" static="false" synchronized="false" visibility="public">
+<parameter name="relative" type="java.net.URI">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resolve" native="false" return="java.net.URI" static="false" synchronized="false" visibility="public">
+<parameter name="relative" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toASCIIString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toURL" native="false" return="java.net.URL" static="false" synchronized="false" visibility="public">
+<exception name="MalformedURLException" type="java.net.MalformedURLException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Exception" final="false" name="URISyntaxException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="URISyntaxException" static="false" type="java.net.URISyntaxException" visibility="public">
+<parameter name="input" type="java.lang.String">
+</parameter>
+<parameter name="reason" type="java.lang.String">
+</parameter>
+<parameter name="index" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="URISyntaxException" static="false" type="java.net.URISyntaxException" visibility="public">
+<parameter name="input" type="java.lang.String">
+</parameter>
+<parameter name="reason" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIndex" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInput" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReason" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="URL" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="URL" static="false" type="java.net.URL" visibility="public">
+<parameter name="spec" type="java.lang.String">
+</parameter>
+<exception name="MalformedURLException" type="java.net.MalformedURLException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="URL" static="false" type="java.net.URL" visibility="public">
+<parameter name="context" type="java.net.URL">
+</parameter>
+<parameter name="spec" type="java.lang.String">
+</parameter>
+<exception name="MalformedURLException" type="java.net.MalformedURLException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="URL" static="false" type="java.net.URL" visibility="public">
+<parameter name="context" type="java.net.URL">
+</parameter>
+<parameter name="spec" type="java.lang.String">
+</parameter>
+<parameter name="handler" type="java.net.URLStreamHandler">
+</parameter>
+<exception name="MalformedURLException" type="java.net.MalformedURLException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="URL" static="false" type="java.net.URL" visibility="public">
+<parameter name="protocol" type="java.lang.String">
+</parameter>
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="file" type="java.lang.String">
+</parameter>
+<exception name="MalformedURLException" type="java.net.MalformedURLException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="URL" static="false" type="java.net.URL" visibility="public">
+<parameter name="protocol" type="java.lang.String">
+</parameter>
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="file" type="java.lang.String">
+</parameter>
+<exception name="MalformedURLException" type="java.net.MalformedURLException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="URL" static="false" type="java.net.URL" visibility="public">
+<parameter name="protocol" type="java.lang.String">
+</parameter>
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="file" type="java.lang.String">
+</parameter>
+<parameter name="handler" type="java.net.URLStreamHandler">
+</parameter>
+<exception name="MalformedURLException" type="java.net.MalformedURLException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAuthority" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getContent" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getContent" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="types" type="java.lang.Class[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultPort" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFile" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHost" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPath" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPort" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProtocol" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getQuery" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRef" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUserInfo" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="openConnection" native="false" return="java.net.URLConnection" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="openConnection" native="false" return="java.net.URLConnection" static="false" synchronized="false" visibility="public">
+<parameter name="proxy" type="java.net.Proxy">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="openStream" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sameFile" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="otherURL" type="java.net.URL">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="set" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="protocol" type="java.lang.String">
+</parameter>
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="file" type="java.lang.String">
+</parameter>
+<parameter name="ref" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="set" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="protocol" type="java.lang.String">
+</parameter>
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="authority" type="java.lang.String">
+</parameter>
+<parameter name="userInfo" type="java.lang.String">
+</parameter>
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="query" type="java.lang.String">
+</parameter>
+<parameter name="ref" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setURLStreamHandlerFactory" native="false" return="void" static="true" synchronized="true" visibility="public">
+<parameter name="streamFactory" type="java.net.URLStreamHandlerFactory">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toExternalForm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toURI" native="false" return="java.net.URI" static="false" synchronized="false" visibility="public">
+<exception name="URISyntaxException" type="java.net.URISyntaxException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.SecureClassLoader" final="false" name="URLClassLoader" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="URLClassLoader" static="false" type="java.net.URLClassLoader" visibility="public">
+<parameter name="urls" type="java.net.URL[]">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="URLClassLoader" static="false" type="java.net.URLClassLoader" visibility="public">
+<parameter name="urls" type="java.net.URL[]">
+</parameter>
+<parameter name="parent" type="java.lang.ClassLoader">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="URLClassLoader" static="false" type="java.net.URLClassLoader" visibility="public">
+<parameter name="searchUrls" type="java.net.URL[]">
+</parameter>
+<parameter name="parent" type="java.lang.ClassLoader">
+</parameter>
+<parameter name="factory" type="java.net.URLStreamHandlerFactory">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addURL" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="url" type="java.net.URL">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="definePackage" native="false" return="java.lang.Package" static="false" synchronized="false" visibility="protected">
+<parameter name="packageName" type="java.lang.String">
+</parameter>
+<parameter name="manifest" type="java.util.jar.Manifest">
+</parameter>
+<parameter name="url" type="java.net.URL">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="findResource" native="false" return="java.net.URL" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="findResources" native="false" return="java.util.Enumeration&lt;java.net.URL&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getURLs" native="false" return="java.net.URL[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="java.net.URLClassLoader" static="true" synchronized="false" visibility="public">
+<parameter name="urls" type="java.net.URL[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="java.net.URLClassLoader" static="true" synchronized="false" visibility="public">
+<parameter name="urls" type="java.net.URL[]">
+</parameter>
+<parameter name="parentCl" type="java.lang.ClassLoader">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="URLConnection" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="URLConnection" static="false" type="java.net.URLConnection" visibility="protected">
+<parameter name="url" type="java.net.URL">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addRequestProperty" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="field" type="java.lang.String">
+</parameter>
+<parameter name="newValue" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="connect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAllowUserInteraction" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getConnectTimeout" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContent" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContent" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="types" type="java.lang.Class[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContentEncoding" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContentLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContentType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDate" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultAllowUserInteraction" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getDefaultRequestProperty" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="field" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultUseCaches" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDoInput" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDoOutput" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getExpiration" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFileNameMap" native="false" return="java.net.FileNameMap" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaderField" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="pos" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaderField" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaderFieldDate" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="field" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaderFieldInt" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="field" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaderFieldKey" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="posn" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaderFields" native="false" return="java.util.Map&lt;java.lang.String, java.util.List&lt;java.lang.String&gt;&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIfModifiedSince" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputStream" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLastModified" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOutputStream" native="false" return="java.io.OutputStream" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPermission" native="false" return="java.security.Permission" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReadTimeout" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRequestProperties" native="false" return="java.util.Map&lt;java.lang.String, java.util.List&lt;java.lang.String&gt;&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRequestProperty" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="field" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getURL" native="false" return="java.net.URL" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUseCaches" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="guessContentTypeFromName" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="url" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="guessContentTypeFromStream" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAllowUserInteraction" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="newValue" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setConnectTimeout" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setContentHandlerFactory" native="false" return="void" static="true" synchronized="true" visibility="public">
+<parameter name="contentFactory" type="java.net.ContentHandlerFactory">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDefaultAllowUserInteraction" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="allows" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="setDefaultRequestProperty" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="field" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDefaultUseCaches" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="newValue" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDoInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="newValue" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDoOutput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="newValue" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFileNameMap" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="map" type="java.net.FileNameMap">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setIfModifiedSince" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="newValue" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReadTimeout" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRequestProperty" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="field" type="java.lang.String">
+</parameter>
+<parameter name="newValue" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setUseCaches" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="newValue" type="boolean">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="allowUserInteraction" static="false" transient="false" type="boolean" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="connected" static="false" transient="false" type="boolean" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="doInput" static="false" transient="false" type="boolean" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="doOutput" static="false" transient="false" type="boolean" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="ifModifiedSince" static="false" transient="false" type="long" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="url" static="false" transient="false" type="java.net.URL" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="useCaches" static="false" transient="false" type="boolean" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="URLDecoder" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="URLDecoder" static="false" type="java.net.URLDecoder" visibility="public">
+</constructor>
+<method abstract="false" deprecated="deprecated" final="false" name="decode" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="decode" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+<parameter name="encoding" type="java.lang.String">
+</parameter>
+<exception name="UnsupportedEncodingException" type="java.io.UnsupportedEncodingException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="URLEncoder" static="false" visibility="public">
+<method abstract="false" deprecated="deprecated" final="false" name="encode" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="encode" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+<parameter name="enc" type="java.lang.String">
+</parameter>
+<exception name="UnsupportedEncodingException" type="java.io.UnsupportedEncodingException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="URLStreamHandler" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="URLStreamHandler" static="false" type="java.net.URLStreamHandler" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="equals" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="url1" type="java.net.URL">
+</parameter>
+<parameter name="url2" type="java.net.URL">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultPort" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHostAddress" native="false" return="java.net.InetAddress" static="false" synchronized="false" visibility="protected">
+<parameter name="url" type="java.net.URL">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hashCode" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="url" type="java.net.URL">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hostsEqual" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="a" type="java.net.URL">
+</parameter>
+<parameter name="b" type="java.net.URL">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="openConnection" native="false" return="java.net.URLConnection" static="false" synchronized="false" visibility="protected">
+<parameter name="u" type="java.net.URL">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="openConnection" native="false" return="java.net.URLConnection" static="false" synchronized="false" visibility="protected">
+<parameter name="u" type="java.net.URL">
+</parameter>
+<parameter name="proxy" type="java.net.Proxy">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseURL" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="u" type="java.net.URL">
+</parameter>
+<parameter name="str" type="java.lang.String">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sameFile" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="url1" type="java.net.URL">
+</parameter>
+<parameter name="url2" type="java.net.URL">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="setURL" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="u" type="java.net.URL">
+</parameter>
+<parameter name="protocol" type="java.lang.String">
+</parameter>
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="file" type="java.lang.String">
+</parameter>
+<parameter name="ref" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setURL" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="u" type="java.net.URL">
+</parameter>
+<parameter name="protocol" type="java.lang.String">
+</parameter>
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="authority" type="java.lang.String">
+</parameter>
+<parameter name="userInfo" type="java.lang.String">
+</parameter>
+<parameter name="file" type="java.lang.String">
+</parameter>
+<parameter name="query" type="java.lang.String">
+</parameter>
+<parameter name="ref" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toExternalForm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+<parameter name="url" type="java.net.URL">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="URLStreamHandlerFactory" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="createURLStreamHandler" native="false" return="java.net.URLStreamHandler" static="false" synchronized="false" visibility="public">
+<parameter name="protocol" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.io.IOException" final="false" name="UnknownHostException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="UnknownHostException" static="false" type="java.net.UnknownHostException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="UnknownHostException" static="false" type="java.net.UnknownHostException" visibility="public">
+<parameter name="detailMessage" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.IOException" final="false" name="UnknownServiceException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="UnknownServiceException" static="false" type="java.net.UnknownServiceException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="UnknownServiceException" static="false" type="java.net.UnknownServiceException" visibility="public">
+<parameter name="detailMessage" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+</package></api>

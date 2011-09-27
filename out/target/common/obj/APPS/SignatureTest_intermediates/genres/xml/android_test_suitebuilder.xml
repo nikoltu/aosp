@@ -1,0 +1,84 @@
+<?xml version="1.0" ?><api><package name="android.test.suitebuilder">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="TestMethod" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="TestMethod" static="false" type="android.test.suitebuilder.TestMethod" visibility="public">
+<parameter name="method" type="java.lang.reflect.Method">
+</parameter>
+<parameter name="enclosingClass" type="java.lang.Class&lt;? extends junit.framework.TestCase&gt;">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="TestMethod" static="false" type="android.test.suitebuilder.TestMethod" visibility="public">
+<parameter name="methodName" type="java.lang.String">
+</parameter>
+<parameter name="enclosingClass" type="java.lang.Class&lt;? extends junit.framework.TestCase&gt;">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="TestMethod" static="false" type="android.test.suitebuilder.TestMethod" visibility="public">
+<parameter name="testCase" type="junit.framework.TestCase">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="createTest" native="false" return="junit.framework.TestCase" static="false" synchronized="false" visibility="public">
+<exception name="IllegalAccessException" type="java.lang.IllegalAccessException">
+</exception>
+<exception name="InstantiationException" type="java.lang.InstantiationException">
+</exception>
+<exception name="InvocationTargetException" type="java.lang.reflect.InvocationTargetException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAnnotation" native="false" return="T" static="false" synchronized="false" visibility="public">
+<parameter name="annotationClass" type="java.lang.Class&lt;T&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEnclosingClass" native="false" return="java.lang.Class&lt;? extends junit.framework.TestCase&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEnclosingClassname" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="TestSuiteBuilder" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="TestSuiteBuilder" static="false" type="android.test.suitebuilder.TestSuiteBuilder" visibility="public">
+<parameter name="clazz" type="java.lang.Class">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="TestSuiteBuilder" static="false" type="android.test.suitebuilder.TestSuiteBuilder" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="classLoader" type="java.lang.ClassLoader">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addRequirements" native="false" return="android.test.suitebuilder.TestSuiteBuilder" static="false" synchronized="false" visibility="public">
+<parameter name="predicates" type="java.util.List&lt;com.android.internal.util.Predicate&lt;android.test.suitebuilder.TestMethod&gt;&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="addRequirements" native="false" return="android.test.suitebuilder.TestSuiteBuilder" static="false" synchronized="false" visibility="public">
+<parameter name="predicates" type="com.android.internal.util.Predicate&lt;android.test.suitebuilder.TestMethod&gt;...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="build" native="false" return="junit.framework.TestSuite" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="excludePackages" native="false" return="android.test.suitebuilder.TestSuiteBuilder" static="false" synchronized="false" visibility="public">
+<parameter name="packageNames" type="java.lang.String...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSuiteName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="includeAllPackagesUnderHere" native="false" return="android.test.suitebuilder.TestSuiteBuilder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="includePackages" native="false" return="android.test.suitebuilder.TestSuiteBuilder" static="false" synchronized="false" visibility="public">
+<parameter name="packageNames" type="java.lang.String...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="named" native="false" return="android.test.suitebuilder.TestSuiteBuilder" static="false" synchronized="false" visibility="public">
+<parameter name="newSuiteName" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="junit.framework.TestCase" final="false" name="TestSuiteBuilder.FailedToCreateTests" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="TestSuiteBuilder.FailedToCreateTests" static="false" type="android.test.suitebuilder.TestSuiteBuilder.FailedToCreateTests" visibility="public">
+<parameter name="exception" type="java.lang.Exception">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="testSuiteConstructionFailed" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package></api>

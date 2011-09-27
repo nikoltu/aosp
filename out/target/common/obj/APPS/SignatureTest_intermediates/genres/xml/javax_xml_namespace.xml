@@ -1,0 +1,54 @@
+<?xml version="1.0" ?><api><package name="javax.xml.namespace">
+<interface abstract="true" deprecated="not deprecated" final="false" name="NamespaceContext" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getNamespaceURI" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="prefix" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPrefix" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPrefixes" native="false" return="java.util.Iterator" static="false" synchronized="false" visibility="public">
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="QName" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="QName" static="false" type="javax.xml.namespace.QName" visibility="public">
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+<parameter name="localPart" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="QName" static="false" type="javax.xml.namespace.QName" visibility="public">
+<parameter name="namespaceURI" type="java.lang.String">
+</parameter>
+<parameter name="localPart" type="java.lang.String">
+</parameter>
+<parameter name="prefix" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="QName" static="false" type="javax.xml.namespace.QName" visibility="public">
+<parameter name="localPart" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="equals" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="objectToTest" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalPart" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNamespaceURI" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrefix" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="hashCode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="javax.xml.namespace.QName" static="true" synchronized="false" visibility="public">
+<parameter name="qNameAsString" type="java.lang.String">
+</parameter>
+</method>
+</class>
+</package></api>

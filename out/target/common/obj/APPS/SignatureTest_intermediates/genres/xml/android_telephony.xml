@@ -1,0 +1,748 @@
+<?xml version="1.0" ?><api><package name="android.telephony">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="CellLocation" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CellLocation" static="false" type="android.telephony.CellLocation" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEmpty" native="false" return="android.telephony.CellLocation" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="requestLocationUpdate" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="NeighboringCellInfo" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="deprecated" final="false" name="NeighboringCellInfo" static="false" type="android.telephony.NeighboringCellInfo" visibility="public">
+</constructor>
+<constructor deprecated="deprecated" final="false" name="NeighboringCellInfo" static="false" type="android.telephony.NeighboringCellInfo" visibility="public">
+<parameter name="rssi" type="int">
+</parameter>
+<parameter name="cid" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="NeighboringCellInfo" static="false" type="android.telephony.NeighboringCellInfo" visibility="public">
+<parameter name="rssi" type="int">
+</parameter>
+<parameter name="location" type="java.lang.String">
+</parameter>
+<parameter name="radioType" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="NeighboringCellInfo" static="false" type="android.telephony.NeighboringCellInfo" visibility="public">
+<parameter name="in" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCid" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLac" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNetworkType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPsc" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRssi" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="setCid" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cid" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="setRssi" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="rssi" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNKNOWN_CID" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNKNOWN_RSSI" static="true" transient="false" type="int" value="99" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="PhoneNumberFormattingTextWatcher" static="false" visibility="public">
+<implements name="android.text.TextWatcher">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="PhoneNumberFormattingTextWatcher" static="false" type="android.telephony.PhoneNumberFormattingTextWatcher" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="afterTextChanged" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="text" type="android.text.Editable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="beforeTextChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="count" type="int">
+</parameter>
+<parameter name="after" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTextChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.CharSequence">
+</parameter>
+<parameter name="start" type="int">
+</parameter>
+<parameter name="before" type="int">
+</parameter>
+<parameter name="count" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="PhoneNumberUtils" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PhoneNumberUtils" static="false" type="android.telephony.PhoneNumberUtils" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="calledPartyBCDFragmentToString" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="bytes" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="calledPartyBCDToString" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="bytes" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="compare" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="a" type="java.lang.String">
+</parameter>
+<parameter name="b" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="compare" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="a" type="java.lang.String">
+</parameter>
+<parameter name="b" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="convertKeypadLettersToDigits" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="input" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="extractNetworkPortion" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="phoneNumber" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="extractPostDialPortion" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="phoneNumber" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatJapaneseNumber" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="text" type="android.text.Editable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatNanpNumber" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="text" type="android.text.Editable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatNumber" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="source" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatNumber" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="text" type="android.text.Editable">
+</parameter>
+<parameter name="defaultFormattingType" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFormatTypeForLocale" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="locale" type="java.util.Locale">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNumberFromIntent" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStrippedReversed" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="phoneNumber" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="is12Key" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="c" type="char">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isDialable" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="c" type="char">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isEmergencyNumber" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="number" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isGlobalPhoneNumber" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="phoneNumber" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isISODigit" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="c" type="char">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isNonSeparator" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="c" type="char">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isReallyDialable" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="c" type="char">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isStartsPostDial" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="c" type="char">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isWellFormedSmsAddress" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="address" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="networkPortionToCalledPartyBCD" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="networkPortionToCalledPartyBCDWithLength" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="numberToCalledPartyBCD" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="number" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stringFromStringAndTOA" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+<parameter name="TOA" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stripSeparators" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="phoneNumber" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toCallerIDMinMatch" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="phoneNumber" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toaFromString" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="FORMAT_JAPAN" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_NANP" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FORMAT_UNKNOWN" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PAUSE" static="true" transient="false" type="char" value="44" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TOA_International" static="true" transient="false" type="int" value="145" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TOA_Unknown" static="true" transient="false" type="int" value="129" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WAIT" static="true" transient="false" type="char" value="59" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WILD" static="true" transient="false" type="char" value="78" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="PhoneStateListener" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PhoneStateListener" static="false" type="android.telephony.PhoneStateListener" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCallForwardingIndicatorChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="cfi" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCallStateChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="state" type="int">
+</parameter>
+<parameter name="incomingNumber" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCellLocationChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="location" type="android.telephony.CellLocation">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDataActivity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="direction" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDataConnectionStateChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="state" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDataConnectionStateChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="state" type="int">
+</parameter>
+<parameter name="networkType" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onMessageWaitingIndicatorChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mwi" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onServiceStateChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="serviceState" type="android.telephony.ServiceState">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="onSignalStrengthChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="asu" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSignalStrengthsChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="signalStrength" type="android.telephony.SignalStrength">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="LISTEN_CALL_FORWARDING_INDICATOR" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LISTEN_CALL_STATE" static="true" transient="false" type="int" value="32" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LISTEN_CELL_LOCATION" static="true" transient="false" type="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LISTEN_DATA_ACTIVITY" static="true" transient="false" type="int" value="128" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LISTEN_DATA_CONNECTION_STATE" static="true" transient="false" type="int" value="64" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LISTEN_MESSAGE_WAITING_INDICATOR" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LISTEN_NONE" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LISTEN_SERVICE_STATE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="deprecated" final="true" name="LISTEN_SIGNAL_STRENGTH" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LISTEN_SIGNAL_STRENGTHS" static="true" transient="false" type="int" value="256" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ServiceState" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ServiceState" static="false" type="android.telephony.ServiceState" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ServiceState" static="false" type="android.telephony.ServiceState" visibility="public">
+<parameter name="s" type="android.telephony.ServiceState">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ServiceState" static="false" type="android.telephony.ServiceState" visibility="public">
+<parameter name="in" type="android.os.Parcel">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="copyFrom" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="s" type="android.telephony.ServiceState">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIsManualSelection" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOperatorAlphaLong" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOperatorAlphaShort" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOperatorNumeric" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRoaming" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getState" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setIsManualSelection" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="isManual" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOperatorName" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="longName" type="java.lang.String">
+</parameter>
+<parameter name="shortName" type="java.lang.String">
+</parameter>
+<parameter name="numeric" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRoaming" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="roaming" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="state" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStateOff" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStateOutOfService" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="out" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATE_EMERGENCY_ONLY" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATE_IN_SERVICE" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATE_OUT_OF_SERVICE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATE_POWER_OFF" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SignalStrength" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCdmaDbm" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCdmaEcio" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEvdoDbm" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEvdoEcio" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEvdoSnr" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGsmBitErrorRate" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGsmSignalStrength" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isGsm" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="out" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="SmsManager" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="divideMessage" native="false" return="java.util.ArrayList&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefault" native="false" return="android.telephony.SmsManager" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendDataMessage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="destinationAddress" type="java.lang.String">
+</parameter>
+<parameter name="scAddress" type="java.lang.String">
+</parameter>
+<parameter name="destinationPort" type="short">
+</parameter>
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="sentIntent" type="android.app.PendingIntent">
+</parameter>
+<parameter name="deliveryIntent" type="android.app.PendingIntent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendMultipartTextMessage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="destinationAddress" type="java.lang.String">
+</parameter>
+<parameter name="scAddress" type="java.lang.String">
+</parameter>
+<parameter name="parts" type="java.util.ArrayList&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="sentIntents" type="java.util.ArrayList&lt;android.app.PendingIntent&gt;">
+</parameter>
+<parameter name="deliveryIntents" type="java.util.ArrayList&lt;android.app.PendingIntent&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendTextMessage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="destinationAddress" type="java.lang.String">
+</parameter>
+<parameter name="scAddress" type="java.lang.String">
+</parameter>
+<parameter name="text" type="java.lang.String">
+</parameter>
+<parameter name="sentIntent" type="android.app.PendingIntent">
+</parameter>
+<parameter name="deliveryIntent" type="android.app.PendingIntent">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="RESULT_ERROR_GENERIC_FAILURE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RESULT_ERROR_NO_SERVICE" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RESULT_ERROR_NULL_PDU" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RESULT_ERROR_RADIO_OFF" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATUS_ON_ICC_FREE" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATUS_ON_ICC_READ" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATUS_ON_ICC_SENT" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATUS_ON_ICC_UNREAD" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATUS_ON_ICC_UNSENT" static="true" transient="false" type="int" value="7" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SmsMessage" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="calculateLength" native="false" return="int[]" static="true" synchronized="false" visibility="public">
+<parameter name="msgBody" type="java.lang.CharSequence">
+</parameter>
+<parameter name="use7bitOnly" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="calculateLength" native="false" return="int[]" static="true" synchronized="false" visibility="public">
+<parameter name="messageBody" type="java.lang.String">
+</parameter>
+<parameter name="use7bitOnly" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createFromPdu" native="false" return="android.telephony.SmsMessage" static="true" synchronized="false" visibility="public">
+<parameter name="pdu" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDisplayMessageBody" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDisplayOriginatingAddress" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEmailBody" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEmailFrom" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIndexOnIcc" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getIndexOnSim" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMessageBody" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMessageClass" native="false" return="android.telephony.SmsMessage.MessageClass" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOriginatingAddress" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPdu" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProtocolIdentifier" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPseudoSubject" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getServiceCenterAddress" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStatus" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStatusOnIcc" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getStatusOnSim" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSubmitPdu" native="false" return="android.telephony.SmsMessage.SubmitPdu" static="true" synchronized="false" visibility="public">
+<parameter name="scAddress" type="java.lang.String">
+</parameter>
+<parameter name="destinationAddress" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="statusReportRequested" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSubmitPdu" native="false" return="android.telephony.SmsMessage.SubmitPdu" static="true" synchronized="false" visibility="public">
+<parameter name="scAddress" type="java.lang.String">
+</parameter>
+<parameter name="destinationAddress" type="java.lang.String">
+</parameter>
+<parameter name="destinationPort" type="short">
+</parameter>
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="statusReportRequested" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTPLayerLengthForPDU" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="pdu" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTimestampMillis" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUserData" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isCphsMwiMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isEmail" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isMWIClearMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isMWISetMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isMwiDontStore" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isReplace" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isReplyPathPresent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isStatusReportMessage" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="ENCODING_16BIT" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ENCODING_7BIT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ENCODING_8BIT" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ENCODING_UNKNOWN" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MAX_USER_DATA_BYTES" static="true" transient="false" type="int" value="140" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MAX_USER_DATA_BYTES_WITH_HEADER" static="true" transient="false" type="int" value="134" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MAX_USER_DATA_SEPTETS" static="true" transient="false" type="int" value="160" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MAX_USER_DATA_SEPTETS_WITH_HEADER" static="true" transient="false" type="int" value="153" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" final="true" name="SmsMessage.MessageClass" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="android.telephony.SmsMessage.MessageClass" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="values" native="false" return="android.telephony.SmsMessage.MessageClass[]" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SmsMessage.SubmitPdu" static="true" visibility="public">
+<field deprecated="not deprecated" final="false" name="encodedMessage" static="false" transient="false" type="byte[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="encodedScAddress" static="false" transient="false" type="byte[]" value="null" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="TelephonyManager" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getCallState" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCellLocation" native="false" return="android.telephony.CellLocation" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDataActivity" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDataState" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDeviceId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDeviceSoftwareVersion" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLine1Number" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNeighboringCellInfo" native="false" return="java.util.List&lt;android.telephony.NeighboringCellInfo&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNetworkCountryIso" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNetworkOperator" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNetworkOperatorName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNetworkType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPhoneType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSimCountryIso" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSimOperator" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSimOperatorName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSimSerialNumber" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSimState" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSubscriberId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVoiceMailAlphaTag" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVoiceMailNumber" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasIccCard" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isNetworkRoaming" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="listen" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.telephony.PhoneStateListener">
+</parameter>
+<parameter name="events" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ACTION_PHONE_STATE_CHANGED" static="true" transient="false" type="java.lang.String" value="&quot;android.intent.action.PHONE_STATE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CALL_STATE_IDLE" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CALL_STATE_OFFHOOK" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CALL_STATE_RINGING" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DATA_ACTIVITY_DORMANT" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DATA_ACTIVITY_IN" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DATA_ACTIVITY_INOUT" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DATA_ACTIVITY_NONE" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DATA_ACTIVITY_OUT" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DATA_CONNECTED" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DATA_CONNECTING" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DATA_DISCONNECTED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DATA_SUSPENDED" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_INCOMING_NUMBER" static="true" transient="false" type="java.lang.String" value="&quot;incoming_number&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_STATE" static="true" transient="false" type="java.lang.String" value="&quot;state&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_STATE_IDLE" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_STATE_OFFHOOK" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_STATE_RINGING" static="true" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NETWORK_TYPE_1xRTT" static="true" transient="false" type="int" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NETWORK_TYPE_CDMA" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NETWORK_TYPE_EDGE" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NETWORK_TYPE_EVDO_0" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NETWORK_TYPE_EVDO_A" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NETWORK_TYPE_EVDO_B" static="true" transient="false" type="int" value="12" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NETWORK_TYPE_GPRS" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NETWORK_TYPE_HSDPA" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NETWORK_TYPE_HSPA" static="true" transient="false" type="int" value="10" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NETWORK_TYPE_HSUPA" static="true" transient="false" type="int" value="9" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NETWORK_TYPE_IDEN" static="true" transient="false" type="int" value="11" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NETWORK_TYPE_UMTS" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NETWORK_TYPE_UNKNOWN" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PHONE_TYPE_CDMA" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PHONE_TYPE_GSM" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PHONE_TYPE_NONE" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SIM_STATE_ABSENT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SIM_STATE_NETWORK_LOCKED" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SIM_STATE_PIN_REQUIRED" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SIM_STATE_PUK_REQUIRED" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SIM_STATE_READY" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SIM_STATE_UNKNOWN" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+</package></api>

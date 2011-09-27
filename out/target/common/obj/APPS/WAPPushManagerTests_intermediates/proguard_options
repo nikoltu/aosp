@@ -1,0 +1,18 @@
+# view AndroidManifest.xml #generated:66
+-keep class android.test.InstrumentationTestRunner { <init>(...); }
+
+# view AndroidManifest.xml #generated:29
+-keep class com.android.smspush.unitTests.ClientTest { <init>(...); }
+
+# view AndroidManifest.xml #generated:51
+-keep class com.android.smspush.unitTests.DataVerify { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class com.android.smspush.unitTests.DrmReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:48
+-keep class com.android.smspush.unitTests.ReceiverActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:45
+-keep class com.android.smspush.unitTests.ReceiverService { <init>(...); }
+

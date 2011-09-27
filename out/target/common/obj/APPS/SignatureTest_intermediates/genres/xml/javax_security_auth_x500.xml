@@ -1,0 +1,46 @@
+<?xml version="1.0" ?><api><package name="javax.security.auth.x500">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="X500Principal" static="false" visibility="public">
+<implements name="java.security.Principal">
+</implements>
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="X500Principal" static="false" type="javax.security.auth.x500.X500Principal" visibility="public">
+<parameter name="name" type="byte[]">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="X500Principal" static="false" type="javax.security.auth.x500.X500Principal" visibility="public">
+<parameter name="in" type="java.io.InputStream">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="X500Principal" static="false" type="javax.security.auth.x500.X500Principal" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="X500Principal" static="false" type="javax.security.auth.x500.X500Principal" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="keywordMap" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEncoded" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="format" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="format" type="java.lang.String">
+</parameter>
+<parameter name="oidMap" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CANONICAL" static="true" transient="false" type="java.lang.String" value="&quot;CANONICAL&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RFC1779" static="true" transient="false" type="java.lang.String" value="&quot;RFC1779&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RFC2253" static="true" transient="false" type="java.lang.String" value="&quot;RFC2253&quot;" visibility="public" volatile="false">
+</field>
+</class>
+</package></api>

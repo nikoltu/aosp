@@ -1,0 +1,892 @@
+<?xml version="1.0" ?><api><package name="android.view.inputmethod">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BaseInputConnection" static="false" visibility="public">
+<implements name="android.view.inputmethod.InputConnection">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BaseInputConnection" static="false" type="android.view.inputmethod.BaseInputConnection" visibility="public">
+<parameter name="targetView" type="android.view.View">
+</parameter>
+<parameter name="fullEditor" type="boolean">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="beginBatchEdit" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearMetaKeyStates" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="states" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="commitCompletion" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="android.view.inputmethod.CompletionInfo">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="commitText" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="newCursorPosition" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="deleteSurroundingText" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="leftLength" type="int">
+</parameter>
+<parameter name="rightLength" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="endBatchEdit" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="finishComposingText" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getComposingSpanEnd" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getComposingSpanStart" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCursorCapsMode" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="reqModes" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEditable" native="false" return="android.text.Editable" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getExtractedText" native="false" return="android.view.inputmethod.ExtractedText" static="false" synchronized="false" visibility="public">
+<parameter name="request" type="android.view.inputmethod.ExtractedTextRequest">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSelectedText" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTextAfterCursor" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="length" type="int">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTextBeforeCursor" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="length" type="int">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="performContextMenuAction" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="performEditorAction" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="actionCode" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="performPrivateCommand" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="action" type="java.lang.String">
+</parameter>
+<parameter name="data" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="removeComposingSpans" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reportFullscreenMode" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="enabled" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendKeyEvent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setComposingRegion" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setComposingSpans" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="text" type="android.text.Spannable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setComposingText" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="newCursorPosition" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSelection" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="CompletionInfo" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="CompletionInfo" static="false" type="android.view.inputmethod.CompletionInfo" visibility="public">
+<parameter name="id" type="long">
+</parameter>
+<parameter name="index" type="int">
+</parameter>
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="CompletionInfo" static="false" type="android.view.inputmethod.CompletionInfo" visibility="public">
+<parameter name="id" type="long">
+</parameter>
+<parameter name="index" type="int">
+</parameter>
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="label" type="java.lang.CharSequence">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getId" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLabel" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPosition" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getText" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="EditorInfo" static="false" visibility="public">
+<implements name="android.text.InputType">
+</implements>
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="EditorInfo" static="false" type="android.view.inputmethod.EditorInfo" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dump" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pw" type="android.util.Printer">
+</parameter>
+<parameter name="prefix" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IME_ACTION_DONE" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IME_ACTION_GO" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IME_ACTION_NEXT" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IME_ACTION_NONE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IME_ACTION_SEARCH" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IME_ACTION_SEND" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IME_ACTION_UNSPECIFIED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IME_FLAG_NO_ACCESSORY_ACTION" static="true" transient="false" type="int" value="536870912" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IME_FLAG_NO_ENTER_ACTION" static="true" transient="false" type="int" value="1073741824" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IME_FLAG_NO_EXTRACT_UI" static="true" transient="false" type="int" value="268435456" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IME_MASK_ACTION" static="true" transient="false" type="int" value="255" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IME_NULL" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="actionId" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="actionLabel" static="false" transient="false" type="java.lang.CharSequence" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="extras" static="false" transient="false" type="android.os.Bundle" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="fieldId" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="fieldName" static="false" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="hintText" static="false" transient="false" type="java.lang.CharSequence" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="imeOptions" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="initialCapsMode" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="initialSelEnd" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="initialSelStart" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="inputType" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="label" static="false" transient="false" type="java.lang.CharSequence" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="packageName" static="false" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="privateImeOptions" static="false" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ExtractedText" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ExtractedText" static="false" type="android.view.inputmethod.ExtractedText" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAG_SELECTING" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAG_SINGLE_LINE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="flags" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="partialEndOffset" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="partialStartOffset" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="selectionEnd" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="selectionStart" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="startOffset" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="text" static="false" transient="false" type="java.lang.CharSequence" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ExtractedTextRequest" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ExtractedTextRequest" static="false" type="android.view.inputmethod.ExtractedTextRequest" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="flags" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="hintMaxChars" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="hintMaxLines" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="token" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="InputBinding" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="InputBinding" static="false" type="android.view.inputmethod.InputBinding" visibility="public">
+<parameter name="conn" type="android.view.inputmethod.InputConnection">
+</parameter>
+<parameter name="connToken" type="android.os.IBinder">
+</parameter>
+<parameter name="uid" type="int">
+</parameter>
+<parameter name="pid" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InputBinding" static="false" type="android.view.inputmethod.InputBinding" visibility="public">
+<parameter name="conn" type="android.view.inputmethod.InputConnection">
+</parameter>
+<parameter name="binding" type="android.view.inputmethod.InputBinding">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getConnection" native="false" return="android.view.inputmethod.InputConnection" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getConnectionToken" native="false" return="android.os.IBinder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPid" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUid" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="InputConnection" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="beginBatchEdit" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="clearMetaKeyStates" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="states" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="commitCompletion" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="android.view.inputmethod.CompletionInfo">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="commitText" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="newCursorPosition" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="deleteSurroundingText" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="leftLength" type="int">
+</parameter>
+<parameter name="rightLength" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="endBatchEdit" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="finishComposingText" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getCursorCapsMode" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="reqModes" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getExtractedText" native="false" return="android.view.inputmethod.ExtractedText" static="false" synchronized="false" visibility="public">
+<parameter name="request" type="android.view.inputmethod.ExtractedTextRequest">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSelectedText" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTextAfterCursor" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTextBeforeCursor" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="performContextMenuAction" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="performEditorAction" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="editorAction" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="performPrivateCommand" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="action" type="java.lang.String">
+</parameter>
+<parameter name="data" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="reportFullscreenMode" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="enabled" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="sendKeyEvent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setComposingRegion" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setComposingText" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="newCursorPosition" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setSelection" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="GET_EXTRACTED_TEXT_MONITOR" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GET_TEXT_WITH_STYLES" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="InputConnectionWrapper" static="false" visibility="public">
+<implements name="android.view.inputmethod.InputConnection">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="InputConnectionWrapper" static="false" type="android.view.inputmethod.InputConnectionWrapper" visibility="public">
+<parameter name="target" type="android.view.inputmethod.InputConnection">
+</parameter>
+<parameter name="mutable" type="boolean">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="beginBatchEdit" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearMetaKeyStates" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="states" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="commitCompletion" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="android.view.inputmethod.CompletionInfo">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="commitText" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="newCursorPosition" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="deleteSurroundingText" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="leftLength" type="int">
+</parameter>
+<parameter name="rightLength" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="endBatchEdit" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="finishComposingText" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCursorCapsMode" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="reqModes" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getExtractedText" native="false" return="android.view.inputmethod.ExtractedText" static="false" synchronized="false" visibility="public">
+<parameter name="request" type="android.view.inputmethod.ExtractedTextRequest">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSelectedText" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTextAfterCursor" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTextBeforeCursor" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="performContextMenuAction" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="performEditorAction" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="editorAction" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="performPrivateCommand" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="action" type="java.lang.String">
+</parameter>
+<parameter name="data" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reportFullscreenMode" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="enabled" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendKeyEvent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setComposingRegion" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setComposingText" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+<parameter name="newCursorPosition" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSelection" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTarget" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="target" type="android.view.inputmethod.InputConnection">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="InputMethod" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="attachToken" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="token" type="android.os.IBinder">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="bindInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="binding" type="android.view.inputmethod.InputBinding">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="createSession" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="callback" type="android.view.inputmethod.InputMethod.SessionCallback">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="hideSoftInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="flags" type="int">
+</parameter>
+<parameter name="resultReceiver" type="android.os.ResultReceiver">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="restartInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="inputConnection" type="android.view.inputmethod.InputConnection">
+</parameter>
+<parameter name="attribute" type="android.view.inputmethod.EditorInfo">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="revokeSession" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="session" type="android.view.inputmethod.InputMethodSession">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setSessionEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="session" type="android.view.inputmethod.InputMethodSession">
+</parameter>
+<parameter name="enabled" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="showSoftInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="flags" type="int">
+</parameter>
+<parameter name="resultReceiver" type="android.os.ResultReceiver">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="startInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="inputConnection" type="android.view.inputmethod.InputConnection">
+</parameter>
+<parameter name="info" type="android.view.inputmethod.EditorInfo">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="unbindInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="SERVICE_INTERFACE" static="true" transient="false" type="java.lang.String" value="&quot;android.view.InputMethod&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SERVICE_META_DATA" static="true" transient="false" type="java.lang.String" value="&quot;android.view.im&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SHOW_EXPLICIT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SHOW_FORCED" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="InputMethod.SessionCallback" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="sessionCreated" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="session" type="android.view.inputmethod.InputMethodSession">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="InputMethodInfo" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="InputMethodInfo" static="false" type="android.view.inputmethod.InputMethodInfo" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="service" type="android.content.pm.ResolveInfo">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="XmlPullParserException" type="org.xmlpull.v1.XmlPullParserException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InputMethodInfo" static="false" type="android.view.inputmethod.InputMethodInfo" visibility="public">
+<parameter name="packageName" type="java.lang.String">
+</parameter>
+<parameter name="className" type="java.lang.String">
+</parameter>
+<parameter name="label" type="java.lang.CharSequence">
+</parameter>
+<parameter name="settingsActivity" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dump" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pw" type="android.util.Printer">
+</parameter>
+<parameter name="prefix" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getComponent" native="false" return="android.content.ComponentName" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIsDefaultResourceId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPackageName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getServiceInfo" native="false" return="android.content.pm.ServiceInfo" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getServiceName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSettingsActivity" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadIcon" native="false" return="android.graphics.drawable.Drawable" static="false" synchronized="false" visibility="public">
+<parameter name="pm" type="android.content.pm.PackageManager">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadLabel" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="pm" type="android.content.pm.PackageManager">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="InputMethodManager" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="displayCompletions" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="completions" type="android.view.inputmethod.CompletionInfo[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEnabledInputMethodList" native="false" return="java.util.List&lt;android.view.inputmethod.InputMethodInfo&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputMethodList" native="false" return="java.util.List&lt;android.view.inputmethod.InputMethodInfo&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hideSoftInputFromInputMethod" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="token" type="android.os.IBinder">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hideSoftInputFromWindow" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="windowToken" type="android.os.IBinder">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hideSoftInputFromWindow" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="windowToken" type="android.os.IBinder">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+<parameter name="resultReceiver" type="android.os.ResultReceiver">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hideStatusIcon" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="imeToken" type="android.os.IBinder">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isAcceptingText" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isActive" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isActive" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isFullscreenMode" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isWatchingCursor" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="restartInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendAppPrivateCommand" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="action" type="java.lang.String">
+</parameter>
+<parameter name="data" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setInputMethod" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="token" type="android.os.IBinder">
+</parameter>
+<parameter name="id" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showInputMethodPicker" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showSoftInput" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showSoftInput" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+<parameter name="resultReceiver" type="android.os.ResultReceiver">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showSoftInputFromInputMethod" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="token" type="android.os.IBinder">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showStatusIcon" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="imeToken" type="android.os.IBinder">
+</parameter>
+<parameter name="packageName" type="java.lang.String">
+</parameter>
+<parameter name="iconId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toggleSoftInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="showFlags" type="int">
+</parameter>
+<parameter name="hideFlags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toggleSoftInputFromWindow" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="windowToken" type="android.os.IBinder">
+</parameter>
+<parameter name="showFlags" type="int">
+</parameter>
+<parameter name="hideFlags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateCursor" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="left" type="int">
+</parameter>
+<parameter name="top" type="int">
+</parameter>
+<parameter name="right" type="int">
+</parameter>
+<parameter name="bottom" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateExtractedText" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="token" type="int">
+</parameter>
+<parameter name="text" type="android.view.inputmethod.ExtractedText">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateSelection" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="selStart" type="int">
+</parameter>
+<parameter name="selEnd" type="int">
+</parameter>
+<parameter name="candidatesStart" type="int">
+</parameter>
+<parameter name="candidatesEnd" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="HIDE_IMPLICIT_ONLY" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HIDE_NOT_ALWAYS" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RESULT_HIDDEN" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RESULT_SHOWN" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RESULT_UNCHANGED_HIDDEN" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RESULT_UNCHANGED_SHOWN" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SHOW_FORCED" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SHOW_IMPLICIT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="InputMethodSession" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="appPrivateCommand" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="action" type="java.lang.String">
+</parameter>
+<parameter name="data" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="dispatchKeyEvent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="seq" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+<parameter name="callback" type="android.view.inputmethod.InputMethodSession.EventCallback">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="dispatchTrackballEvent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="seq" type="int">
+</parameter>
+<parameter name="event" type="android.view.MotionEvent">
+</parameter>
+<parameter name="callback" type="android.view.inputmethod.InputMethodSession.EventCallback">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="displayCompletions" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="completions" type="android.view.inputmethod.CompletionInfo[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="finishInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="toggleSoftInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="showFlags" type="int">
+</parameter>
+<parameter name="hideFlags" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="updateCursor" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="newCursor" type="android.graphics.Rect">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="updateExtractedText" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="token" type="int">
+</parameter>
+<parameter name="text" type="android.view.inputmethod.ExtractedText">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="updateSelection" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="oldSelStart" type="int">
+</parameter>
+<parameter name="oldSelEnd" type="int">
+</parameter>
+<parameter name="newSelStart" type="int">
+</parameter>
+<parameter name="newSelEnd" type="int">
+</parameter>
+<parameter name="candidatesStart" type="int">
+</parameter>
+<parameter name="candidatesEnd" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="InputMethodSession.EventCallback" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="finishedEvent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="seq" type="int">
+</parameter>
+<parameter name="handled" type="boolean">
+</parameter>
+</method>
+</interface>
+</package></api>

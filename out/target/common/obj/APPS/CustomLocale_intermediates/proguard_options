@@ -1,0 +1,9 @@
+# view AndroidManifest.xml #generated:33
+-keep class com.android.customlocale2.CustomLocaleActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class com.android.customlocale2.CustomLocaleReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class com.android.customlocale2.NewLocaleDialog { <init>(...); }
+

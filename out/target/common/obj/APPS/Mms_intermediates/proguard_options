@@ -1,0 +1,129 @@
+# view res/layout/conversation_list_item.xml #generated:27
+# view res/layout/message_list_item.xml #generated:56
+-keep class android.widget.QuickContactBadge { <init>(...); }
+
+# view AndroidManifest.xml #generated:43
+-keep class com.android.mms.MmsApp { <init>(...); }
+
+# view AndroidManifest.xml #generated:255
+-keep class com.android.mms.SuggestionsProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:214
+-keep class com.android.mms.transaction.MessageStatusReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:174
+-keep class com.android.mms.transaction.MmsSystemEventReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:192
+-keep class com.android.mms.transaction.PrivilegedSmsReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:166
+-keep class com.android.mms.transaction.PushReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:220
+-keep class com.android.mms.transaction.SimFullReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:200
+-keep class com.android.mms.transaction.SmsReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class com.android.mms.transaction.SmsReceiverService { <init>(...); }
+
+# view AndroidManifest.xml #generated:226
+-keep class com.android.mms.transaction.SmsRejectedReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class com.android.mms.transaction.TransactionService { <init>(...); }
+
+# view res/layout/compose_message_activity.xml #generated:89
+-keep class com.android.mms.ui.AttachmentEditor { <init>(...); }
+
+# view res/layout/audio_attachment_view_landscape.xml #generated:21
+# view res/layout/audio_attachment_view_portrait.xml #generated:21
+-keep class com.android.mms.ui.AudioAttachmentView { <init>(...); }
+
+# view res/layout/edit_slide_activity.xml #generated:21
+-keep class com.android.mms.ui.BasicSlideEditorView { <init>(...); }
+
+# view AndroidManifest.xml #generated:157
+-keep class com.android.mms.ui.ClassZeroActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class com.android.mms.ui.ComposeMessageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:232
+-keep class com.android.mms.ui.ConfirmRateLimitActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class com.android.mms.ui.ConversationList { <init>(...); }
+
+# view res/layout/conversation_list_item.xml #generated:21
+-keep class com.android.mms.ui.ConversationListItem { <init>(...); }
+
+# view AndroidManifest.xml #generated:129
+-keep class com.android.mms.ui.DeliveryReportActivity { <init>(...); }
+
+# view res/layout/delivery_report_list_item.xml #generated:21
+-keep class com.android.mms.ui.DeliveryReportListItem { <init>(...); }
+
+# view AndroidManifest.xml #generated:140
+-keep class com.android.mms.ui.EditSlideDurationActivity { <init>(...); }
+
+# view res/layout/image_attachment_view_landscape.xml #generated:21
+# view res/layout/image_attachment_view_portrait.xml #generated:21
+-keep class com.android.mms.ui.ImageAttachmentView { <init>(...); }
+
+# view AndroidManifest.xml #generated:183
+-keep class com.android.mms.ui.ManageSimMessages { <init>(...); }
+
+# view res/layout/message_list_item.xml #generated:21
+-keep class com.android.mms.ui.MessageListItem { <init>(...); }
+
+# view res/layout/compose_message_activity.xml #generated:61
+-keep class com.android.mms.ui.MessageListView { <init>(...); }
+
+# view AndroidManifest.xml #generated:163
+-keep class com.android.mms.ui.MessagingPreferenceActivity { <init>(...); }
+
+# view res/layout/number_picker.xml #generated:22
+# view res/layout/number_picker.xml #generated:37
+-keep class com.android.mms.ui.NumberPickerButton { <init>(...); }
+
+# view res/layout/number_picker_dialog.xml #generated:39
+-keep class com.android.mms.ui.NumberPickerDialog$NonWrapNumberPicker { <init>(...); }
+
+# view res/layout/recipients_editor.xml #generated:21
+-keep class com.android.mms.ui.RecipientsEditor { <init>(...); }
+
+# view AndroidManifest.xml #generated:240
+-keep class com.android.mms.ui.SearchActivity { <init>(...); }
+
+# view res/layout/search_item.xml #generated:56
+-keep class com.android.mms.ui.SearchActivity$TextViewSnippet { <init>(...); }
+
+# view AndroidManifest.xml #generated:148
+-keep class com.android.mms.ui.SlideEditorActivity { <init>(...); }
+
+# view res/layout/slideshow_edit_item.xml #generated:21
+-keep class com.android.mms.ui.SlideListItemView { <init>(...); }
+
+# view res/layout/slideshow.xml #generated:23
+-keep class com.android.mms.ui.SlideView { <init>(...); }
+
+# view AndroidManifest.xml #generated:152
+-keep class com.android.mms.ui.SlideshowActivity { <init>(...); }
+
+# view res/layout/slideshow_attachment_view_landscape.xml #generated:21
+# view res/layout/slideshow_attachment_view_portrait.xml #generated:21
+-keep class com.android.mms.ui.SlideshowAttachmentView { <init>(...); }
+
+# view AndroidManifest.xml #generated:145
+-keep class com.android.mms.ui.SlideshowEditActivity { <init>(...); }
+
+# view res/layout/video_attachment_view_landscape.xml #generated:21
+# view res/layout/video_attachment_view_portrait.xml #generated:21
+-keep class com.android.mms.ui.VideoAttachmentView { <init>(...); }
+
+# view AndroidManifest.xml #generated:134
+-keep class com.android.mms.ui.WarnOfStorageLimitsActivity { <init>(...); }
+

@@ -1,0 +1,940 @@
+<?xml version="1.0" ?><api><package name="android.media.audiofx">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AudioEffect" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getDescriptor" native="false" return="android.media.audiofx.AudioEffect.Descriptor" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getId" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasControl" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="queryEffects" native="false" return="android.media.audiofx.AudioEffect.Descriptor[]" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="release" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setControlStatusListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.audiofx.AudioEffect.OnControlStatusChangeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEnableStatusListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.audiofx.AudioEffect.OnEnableStatusChangeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEnabled" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="enabled" type="boolean">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="ACTION_CLOSE_AUDIO_EFFECT_CONTROL_SESSION" static="true" transient="false" type="java.lang.String" value="&quot;android.media.action.CLOSE_AUDIO_EFFECT_CONTROL_SESSION&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL" static="true" transient="false" type="java.lang.String" value="&quot;android.media.action.DISPLAY_AUDIO_EFFECT_CONTROL_PANEL&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ACTION_OPEN_AUDIO_EFFECT_CONTROL_SESSION" static="true" transient="false" type="java.lang.String" value="&quot;android.media.action.OPEN_AUDIO_EFFECT_CONTROL_SESSION&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ALREADY_EXISTS" static="true" transient="false" type="int" value="-2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CONTENT_TYPE_GAME" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CONTENT_TYPE_MOVIE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CONTENT_TYPE_MUSIC" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CONTENT_TYPE_VOICE" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EFFECT_AUXILIARY" static="true" transient="false" type="java.lang.String" value="&quot;Auxiliary&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EFFECT_INSERT" static="true" transient="false" type="java.lang.String" value="&quot;Insert&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_BAD_VALUE" static="true" transient="false" type="int" value="-4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_DEAD_OBJECT" static="true" transient="false" type="int" value="-7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_INVALID_OPERATION" static="true" transient="false" type="int" value="-5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_NO_INIT" static="true" transient="false" type="int" value="-3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_NO_MEMORY" static="true" transient="false" type="int" value="-6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_AUDIO_SESSION" static="true" transient="false" type="java.lang.String" value="&quot;android.media.extra.AUDIO_SESSION&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_CONTENT_TYPE" static="true" transient="false" type="java.lang.String" value="&quot;android.media.extra.CONTENT_TYPE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_PACKAGE_NAME" static="true" transient="false" type="java.lang.String" value="&quot;android.media.extra.PACKAGE_NAME&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SUCCESS" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AudioEffect.Descriptor" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AudioEffect.Descriptor" static="false" type="android.media.audiofx.AudioEffect.Descriptor" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AudioEffect.Descriptor" static="false" type="android.media.audiofx.AudioEffect.Descriptor" visibility="public">
+<parameter name="type" type="java.lang.String">
+</parameter>
+<parameter name="uuid" type="java.lang.String">
+</parameter>
+<parameter name="connectMode" type="java.lang.String">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="implementor" type="java.lang.String">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="false" name="connectMode" static="false" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="implementor" static="false" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="name" static="false" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="type" static="false" transient="false" type="java.util.UUID" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="uuid" static="false" transient="false" type="java.util.UUID" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="AudioEffect.OnControlStatusChangeListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onControlStatusChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="effect" type="android.media.audiofx.AudioEffect">
+</parameter>
+<parameter name="controlGranted" type="boolean">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="AudioEffect.OnEnableStatusChangeListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onEnableStatusChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="effect" type="android.media.audiofx.AudioEffect">
+</parameter>
+<parameter name="enabled" type="boolean">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="android.media.audiofx.AudioEffect" final="false" name="BassBoost" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BassBoost" static="false" type="android.media.audiofx.BassBoost" visibility="public">
+<parameter name="priority" type="int">
+</parameter>
+<parameter name="audioSession" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="RuntimeException" type="java.lang.RuntimeException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProperties" native="false" return="android.media.audiofx.BassBoost.Settings" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRoundedStrength" native="false" return="short" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStrengthSupported" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setParameterListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.audiofx.BassBoost.OnParameterChangeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setProperties" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="settings" type="android.media.audiofx.BassBoost.Settings">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStrength" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="strength" type="short">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="PARAM_STRENGTH" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARAM_STRENGTH_SUPPORTED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="BassBoost.OnParameterChangeListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onParameterChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="effect" type="android.media.audiofx.BassBoost">
+</parameter>
+<parameter name="status" type="int">
+</parameter>
+<parameter name="param" type="int">
+</parameter>
+<parameter name="value" type="short">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BassBoost.Settings" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BassBoost.Settings" static="false" type="android.media.audiofx.BassBoost.Settings" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BassBoost.Settings" static="false" type="android.media.audiofx.BassBoost.Settings" visibility="public">
+<parameter name="settings" type="java.lang.String">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="false" name="strength" static="false" transient="false" type="short" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.media.audiofx.AudioEffect" final="false" name="EnvironmentalReverb" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="EnvironmentalReverb" static="false" type="android.media.audiofx.EnvironmentalReverb" visibility="public">
+<parameter name="priority" type="int">
+</parameter>
+<parameter name="audioSession" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="RuntimeException" type="java.lang.RuntimeException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDecayHFRatio" native="false" return="short" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDecayTime" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDensity" native="false" return="short" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDiffusion" native="false" return="short" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProperties" native="false" return="android.media.audiofx.EnvironmentalReverb.Settings" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReflectionsDelay" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReflectionsLevel" native="false" return="short" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReverbDelay" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReverbLevel" native="false" return="short" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRoomHFLevel" native="false" return="short" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRoomLevel" native="false" return="short" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDecayHFRatio" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="decayHFRatio" type="short">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDecayTime" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="decayTime" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDensity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="density" type="short">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDiffusion" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="diffusion" type="short">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setParameterListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.audiofx.EnvironmentalReverb.OnParameterChangeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setProperties" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="settings" type="android.media.audiofx.EnvironmentalReverb.Settings">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReflectionsDelay" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="reflectionsDelay" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReflectionsLevel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="reflectionsLevel" type="short">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReverbDelay" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="reverbDelay" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReverbLevel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="reverbLevel" type="short">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRoomHFLevel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="roomHF" type="short">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRoomLevel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="room" type="short">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="PARAM_DECAY_HF_RATIO" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARAM_DECAY_TIME" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARAM_DENSITY" static="true" transient="false" type="int" value="9" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARAM_DIFFUSION" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARAM_REFLECTIONS_DELAY" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARAM_REFLECTIONS_LEVEL" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARAM_REVERB_DELAY" static="true" transient="false" type="int" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARAM_REVERB_LEVEL" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARAM_ROOM_HF_LEVEL" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARAM_ROOM_LEVEL" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="EnvironmentalReverb.OnParameterChangeListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onParameterChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="effect" type="android.media.audiofx.EnvironmentalReverb">
+</parameter>
+<parameter name="status" type="int">
+</parameter>
+<parameter name="param" type="int">
+</parameter>
+<parameter name="value" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="EnvironmentalReverb.Settings" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="EnvironmentalReverb.Settings" static="false" type="android.media.audiofx.EnvironmentalReverb.Settings" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="EnvironmentalReverb.Settings" static="false" type="android.media.audiofx.EnvironmentalReverb.Settings" visibility="public">
+<parameter name="settings" type="java.lang.String">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="false" name="decayHFRatio" static="false" transient="false" type="short" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="decayTime" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="density" static="false" transient="false" type="short" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="diffusion" static="false" transient="false" type="short" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="reflectionsDelay" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="reflectionsLevel" static="false" transient="false" type="short" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="reverbDelay" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="reverbLevel" static="false" transient="false" type="short" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="roomHFLevel" static="false" transient="false" type="short" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="roomLevel" static="false" transient="false" type="short" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.media.audiofx.AudioEffect" final="false" name="Equalizer" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Equalizer" static="false" type="android.media.audiofx.Equalizer" visibility="public">
+<parameter name="priority" type="int">
+</parameter>
+<parameter name="audioSession" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="RuntimeException" type="java.lang.RuntimeException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBand" native="false" return="short" static="false" synchronized="false" visibility="public">
+<parameter name="frequency" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBandFreqRange" native="false" return="int[]" static="false" synchronized="false" visibility="public">
+<parameter name="band" type="short">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBandLevel" native="false" return="short" static="false" synchronized="false" visibility="public">
+<parameter name="band" type="short">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBandLevelRange" native="false" return="short[]" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCenterFreq" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="band" type="short">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentPreset" native="false" return="short" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNumberOfBands" native="false" return="short" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNumberOfPresets" native="false" return="short" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPresetName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="preset" type="short">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProperties" native="false" return="android.media.audiofx.Equalizer.Settings" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setBandLevel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="band" type="short">
+</parameter>
+<parameter name="level" type="short">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setParameterListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.audiofx.Equalizer.OnParameterChangeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setProperties" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="settings" type="android.media.audiofx.Equalizer.Settings">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="usePreset" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="preset" type="short">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="PARAM_BAND_FREQ_RANGE" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARAM_BAND_LEVEL" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARAM_CENTER_FREQ" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARAM_CURRENT_PRESET" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARAM_GET_BAND" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARAM_GET_NUM_OF_PRESETS" static="true" transient="false" type="int" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARAM_GET_PRESET_NAME" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARAM_LEVEL_RANGE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARAM_NUM_BANDS" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARAM_STRING_SIZE_MAX" static="true" transient="false" type="int" value="32" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Equalizer.OnParameterChangeListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onParameterChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="effect" type="android.media.audiofx.Equalizer">
+</parameter>
+<parameter name="status" type="int">
+</parameter>
+<parameter name="param1" type="int">
+</parameter>
+<parameter name="param2" type="int">
+</parameter>
+<parameter name="value" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Equalizer.Settings" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Equalizer.Settings" static="false" type="android.media.audiofx.Equalizer.Settings" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Equalizer.Settings" static="false" type="android.media.audiofx.Equalizer.Settings" visibility="public">
+<parameter name="settings" type="java.lang.String">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="false" name="bandLevels" static="false" transient="false" type="short[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="curPreset" static="false" transient="false" type="short" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="numBands" static="false" transient="false" type="short" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.media.audiofx.AudioEffect" final="false" name="PresetReverb" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PresetReverb" static="false" type="android.media.audiofx.PresetReverb" visibility="public">
+<parameter name="priority" type="int">
+</parameter>
+<parameter name="audioSession" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="RuntimeException" type="java.lang.RuntimeException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPreset" native="false" return="short" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProperties" native="false" return="android.media.audiofx.PresetReverb.Settings" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setParameterListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.audiofx.PresetReverb.OnParameterChangeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPreset" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="preset" type="short">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setProperties" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="settings" type="android.media.audiofx.PresetReverb.Settings">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="PARAM_PRESET" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PRESET_LARGEHALL" static="true" transient="false" type="short" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PRESET_LARGEROOM" static="true" transient="false" type="short" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PRESET_MEDIUMHALL" static="true" transient="false" type="short" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PRESET_MEDIUMROOM" static="true" transient="false" type="short" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PRESET_NONE" static="true" transient="false" type="short" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PRESET_PLATE" static="true" transient="false" type="short" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PRESET_SMALLROOM" static="true" transient="false" type="short" value="1" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PresetReverb.OnParameterChangeListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onParameterChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="effect" type="android.media.audiofx.PresetReverb">
+</parameter>
+<parameter name="status" type="int">
+</parameter>
+<parameter name="param" type="int">
+</parameter>
+<parameter name="value" type="short">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="PresetReverb.Settings" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PresetReverb.Settings" static="false" type="android.media.audiofx.PresetReverb.Settings" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="PresetReverb.Settings" static="false" type="android.media.audiofx.PresetReverb.Settings" visibility="public">
+<parameter name="settings" type="java.lang.String">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="false" name="preset" static="false" transient="false" type="short" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.media.audiofx.AudioEffect" final="false" name="Virtualizer" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Virtualizer" static="false" type="android.media.audiofx.Virtualizer" visibility="public">
+<parameter name="priority" type="int">
+</parameter>
+<parameter name="audioSession" type="int">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="RuntimeException" type="java.lang.RuntimeException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProperties" native="false" return="android.media.audiofx.Virtualizer.Settings" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRoundedStrength" native="false" return="short" static="false" synchronized="false" visibility="public">
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStrengthSupported" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setParameterListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.audiofx.Virtualizer.OnParameterChangeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setProperties" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="settings" type="android.media.audiofx.Virtualizer.Settings">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStrength" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="strength" type="short">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="PARAM_STRENGTH" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PARAM_STRENGTH_SUPPORTED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Virtualizer.OnParameterChangeListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onParameterChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="effect" type="android.media.audiofx.Virtualizer">
+</parameter>
+<parameter name="status" type="int">
+</parameter>
+<parameter name="param" type="int">
+</parameter>
+<parameter name="value" type="short">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Virtualizer.Settings" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Virtualizer.Settings" static="false" type="android.media.audiofx.Virtualizer.Settings" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Virtualizer.Settings" static="false" type="android.media.audiofx.Virtualizer.Settings" visibility="public">
+<parameter name="settings" type="java.lang.String">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="false" name="strength" static="false" transient="false" type="short" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Visualizer" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Visualizer" static="false" type="android.media.audiofx.Visualizer" visibility="public">
+<parameter name="audioSession" type="int">
+</parameter>
+<exception name="RuntimeException" type="java.lang.RuntimeException">
+</exception>
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCaptureSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCaptureSizeRange" native="true" return="int[]" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFft" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="fft" type="byte[]">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMaxCaptureRate" native="true" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSamplingRate" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWaveForm" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="waveform" type="byte[]">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="release" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCaptureSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataCaptureListener" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.media.audiofx.Visualizer.OnDataCaptureListener">
+</parameter>
+<parameter name="rate" type="int">
+</parameter>
+<parameter name="waveform" type="boolean">
+</parameter>
+<parameter name="fft" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEnabled" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="enabled" type="boolean">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="ALREADY_EXISTS" static="true" transient="false" type="int" value="-2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_BAD_VALUE" static="true" transient="false" type="int" value="-4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_DEAD_OBJECT" static="true" transient="false" type="int" value="-7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_INVALID_OPERATION" static="true" transient="false" type="int" value="-5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_NO_INIT" static="true" transient="false" type="int" value="-3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_NO_MEMORY" static="true" transient="false" type="int" value="-6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATE_ENABLED" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATE_INITIALIZED" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATE_UNINITIALIZED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SUCCESS" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Visualizer.OnDataCaptureListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onFftDataCapture" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="visualizer" type="android.media.audiofx.Visualizer">
+</parameter>
+<parameter name="fft" type="byte[]">
+</parameter>
+<parameter name="samplingRate" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onWaveFormDataCapture" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="visualizer" type="android.media.audiofx.Visualizer">
+</parameter>
+<parameter name="waveform" type="byte[]">
+</parameter>
+<parameter name="samplingRate" type="int">
+</parameter>
+</method>
+</interface>
+</package></api>

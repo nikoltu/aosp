@@ -1,0 +1,26 @@
+# view res/layout/candidates_container.xml #generated:44
+# view res/layout/candidates_container.xml #generated:48
+-keep class com.android.inputmethod.pinyin.CandidateView { <init>(...); }
+
+# view res/layout/candidates_container.xml #generated:16
+-keep class com.android.inputmethod.pinyin.CandidatesContainer { <init>(...); }
+
+# view res/layout/floating_container.xml #generated:22
+-keep class com.android.inputmethod.pinyin.ComposingView { <init>(...); }
+
+# view AndroidManifest.xml #generated:29
+-keep class com.android.inputmethod.pinyin.PinyinDecoderService { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class com.android.inputmethod.pinyin.PinyinIME { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class com.android.inputmethod.pinyin.SettingsActivity { <init>(...); }
+
+# view res/layout/skb_container.xml #generated:16
+-keep class com.android.inputmethod.pinyin.SkbContainer { <init>(...); }
+
+# view res/layout/skb_container.xml #generated:28
+# view res/layout/skb_container.xml #generated:32
+-keep class com.android.inputmethod.pinyin.SoftKeyboardView { <init>(...); }
+

@@ -1,0 +1,798 @@
+<?xml version="1.0" ?><api><package name="android.inputmethodservice">
+<class abstract="true" deprecated="not deprecated" extends="android.app.Service" final="false" name="AbstractInputMethodService" static="false" visibility="public">
+<implements name="android.view.KeyEvent.Callback">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractInputMethodService" static="false" type="android.inputmethodservice.AbstractInputMethodService" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getKeyDispatcherState" native="false" return="android.view.KeyEvent.DispatcherState" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="onBind" native="false" return="android.os.IBinder" static="false" synchronized="false" visibility="public">
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onCreateInputMethodInterface" native="false" return="android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onCreateInputMethodSessionInterface" native="false" return="android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTrackballEvent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="event" type="android.view.MotionEvent">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AbstractInputMethodService.AbstractInputMethodImpl" static="false" visibility="public">
+<implements name="android.view.inputmethod.InputMethod">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractInputMethodService.AbstractInputMethodImpl" static="false" type="android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="createSession" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="callback" type="android.view.inputmethod.InputMethod.SessionCallback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="revokeSession" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="session" type="android.view.inputmethod.InputMethodSession">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSessionEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="session" type="android.view.inputmethod.InputMethodSession">
+</parameter>
+<parameter name="enabled" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AbstractInputMethodService.AbstractInputMethodSessionImpl" static="false" visibility="public">
+<implements name="android.view.inputmethod.InputMethodSession">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractInputMethodService.AbstractInputMethodSessionImpl" static="false" type="android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="dispatchKeyEvent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="seq" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+<parameter name="callback" type="android.view.inputmethod.InputMethodSession.EventCallback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dispatchTrackballEvent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="seq" type="int">
+</parameter>
+<parameter name="event" type="android.view.MotionEvent">
+</parameter>
+<parameter name="callback" type="android.view.inputmethod.InputMethodSession.EventCallback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isRevoked" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="revokeSelf" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="enabled" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.widget.EditText" final="false" name="ExtractEditText" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ExtractEditText" static="false" type="android.inputmethodservice.ExtractEditText" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ExtractEditText" static="false" type="android.inputmethodservice.ExtractEditText" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ExtractEditText" static="false" type="android.inputmethodservice.ExtractEditText" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<parameter name="defStyle" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="finishInternalChanges" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasVerticalScrollBar" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startInternalChanges" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.inputmethodservice.AbstractInputMethodService" final="false" name="InputMethodService" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="InputMethodService" static="false" type="android.inputmethodservice.InputMethodService" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCandidatesHiddenVisibility" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentInputBinding" native="false" return="android.view.inputmethod.InputBinding" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentInputConnection" native="false" return="android.view.inputmethod.InputConnection" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentInputEditorInfo" native="false" return="android.view.inputmethod.EditorInfo" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentInputStarted" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLayoutInflater" native="false" return="android.view.LayoutInflater" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMaxWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTextForImeAction" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+<parameter name="imeOptions" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWindow" native="false" return="android.app.Dialog" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hideStatusIcon" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hideWindow" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isExtractViewShown" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isFullscreenMode" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isInputViewShown" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isShowInputRequested" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onAppPrivateCommand" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="action" type="java.lang.String">
+</parameter>
+<parameter name="data" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onBindInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onComputeInsets" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="outInsets" type="android.inputmethodservice.InputMethodService.Insets">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onConfigureWindow" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="win" type="android.view.Window">
+</parameter>
+<parameter name="isFullscreen" type="boolean">
+</parameter>
+<parameter name="isCandidatesOnly" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCreateCandidatesView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCreateExtractTextView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCreateInputMethodInterface" native="false" return="android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCreateInputMethodSessionInterface" native="false" return="android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCreateInputView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDisplayCompletions" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="completions" type="android.view.inputmethod.CompletionInfo[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onEvaluateFullscreenMode" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onEvaluateInputViewShown" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onExtractTextContextMenuItem" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onExtractedCursorMovement" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dx" type="int">
+</parameter>
+<parameter name="dy" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onExtractedSelectionChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="start" type="int">
+</parameter>
+<parameter name="end" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onExtractedTextClicked" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onExtractingInputChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ei" type="android.view.inputmethod.EditorInfo">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onFinishCandidatesView" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="finishingInput" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onFinishInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onFinishInputView" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="finishingInput" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onInitializeInterface" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onKeyDown" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onKeyLongPress" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onKeyMultiple" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="count" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onKeyUp" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="keyCode" type="int">
+</parameter>
+<parameter name="event" type="android.view.KeyEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onShowInputRequested" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="flags" type="int">
+</parameter>
+<parameter name="configChange" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onStartCandidatesView" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="info" type="android.view.inputmethod.EditorInfo">
+</parameter>
+<parameter name="restarting" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onStartInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="attribute" type="android.view.inputmethod.EditorInfo">
+</parameter>
+<parameter name="restarting" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onStartInputView" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="info" type="android.view.inputmethod.EditorInfo">
+</parameter>
+<parameter name="restarting" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onUnbindInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onUpdateCursor" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="newCursor" type="android.graphics.Rect">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onUpdateExtractedText" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="token" type="int">
+</parameter>
+<parameter name="text" type="android.view.inputmethod.ExtractedText">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onUpdateExtractingViews" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ei" type="android.view.inputmethod.EditorInfo">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onUpdateExtractingVisibility" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ei" type="android.view.inputmethod.EditorInfo">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onUpdateSelection" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="oldSelStart" type="int">
+</parameter>
+<parameter name="oldSelEnd" type="int">
+</parameter>
+<parameter name="newSelStart" type="int">
+</parameter>
+<parameter name="newSelEnd" type="int">
+</parameter>
+<parameter name="candidatesStart" type="int">
+</parameter>
+<parameter name="candidatesEnd" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onWindowHidden" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onWindowShown" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="requestHideSelf" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendDefaultEditorAction" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="fromEnterKey" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendDownUpKeyEvents" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="keyEventCode" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sendKeyChar" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="charCode" type="char">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCandidatesView" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCandidatesViewShown" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="shown" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setExtractView" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setExtractViewShown" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="shown" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setInputView" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showStatusIcon" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="iconResId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showWindow" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="showInput" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="switchInputMethod" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="id" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateFullscreenMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateInputViewShown" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodImpl" final="false" name="InputMethodService.InputMethodImpl" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="InputMethodService.InputMethodImpl" static="false" type="android.inputmethodservice.InputMethodService.InputMethodImpl" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="attachToken" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="token" type="android.os.IBinder">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="bindInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="binding" type="android.view.inputmethod.InputBinding">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hideSoftInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="flags" type="int">
+</parameter>
+<parameter name="resultReceiver" type="android.os.ResultReceiver">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="restartInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ic" type="android.view.inputmethod.InputConnection">
+</parameter>
+<parameter name="attribute" type="android.view.inputmethod.EditorInfo">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showSoftInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="flags" type="int">
+</parameter>
+<parameter name="resultReceiver" type="android.os.ResultReceiver">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ic" type="android.view.inputmethod.InputConnection">
+</parameter>
+<parameter name="attribute" type="android.view.inputmethod.EditorInfo">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unbindInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.inputmethodservice.AbstractInputMethodService.AbstractInputMethodSessionImpl" final="false" name="InputMethodService.InputMethodSessionImpl" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="InputMethodService.InputMethodSessionImpl" static="false" type="android.inputmethodservice.InputMethodService.InputMethodSessionImpl" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="appPrivateCommand" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="action" type="java.lang.String">
+</parameter>
+<parameter name="data" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="displayCompletions" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="completions" type="android.view.inputmethod.CompletionInfo[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="finishInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toggleSoftInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="showFlags" type="int">
+</parameter>
+<parameter name="hideFlags" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateCursor" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="newCursor" type="android.graphics.Rect">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateExtractedText" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="token" type="int">
+</parameter>
+<parameter name="text" type="android.view.inputmethod.ExtractedText">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="updateSelection" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="oldSelStart" type="int">
+</parameter>
+<parameter name="oldSelEnd" type="int">
+</parameter>
+<parameter name="newSelStart" type="int">
+</parameter>
+<parameter name="newSelEnd" type="int">
+</parameter>
+<parameter name="candidatesStart" type="int">
+</parameter>
+<parameter name="candidatesEnd" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="InputMethodService.Insets" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="InputMethodService.Insets" static="false" type="android.inputmethodservice.InputMethodService.Insets" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="TOUCHABLE_INSETS_CONTENT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TOUCHABLE_INSETS_FRAME" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TOUCHABLE_INSETS_VISIBLE" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="contentTopInsets" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="touchableInsets" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="visibleTopInsets" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Keyboard" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Keyboard" static="false" type="android.inputmethodservice.Keyboard" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="xmlLayoutResId" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Keyboard" static="false" type="android.inputmethodservice.Keyboard" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="xmlLayoutResId" type="int">
+</parameter>
+<parameter name="modeId" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Keyboard" static="false" type="android.inputmethodservice.Keyboard" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="layoutTemplateResId" type="int">
+</parameter>
+<parameter name="characters" type="java.lang.CharSequence">
+</parameter>
+<parameter name="columns" type="int">
+</parameter>
+<parameter name="horizontalPadding" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="createKeyFromXml" native="false" return="android.inputmethodservice.Keyboard.Key" static="false" synchronized="false" visibility="protected">
+<parameter name="res" type="android.content.res.Resources">
+</parameter>
+<parameter name="parent" type="android.inputmethodservice.Keyboard.Row">
+</parameter>
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+<parameter name="parser" type="android.content.res.XmlResourceParser">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createRowFromXml" native="false" return="android.inputmethodservice.Keyboard.Row" static="false" synchronized="false" visibility="protected">
+<parameter name="res" type="android.content.res.Resources">
+</parameter>
+<parameter name="parser" type="android.content.res.XmlResourceParser">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHorizontalGap" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getKeyHeight" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getKeyWidth" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getKeys" native="false" return="java.util.List&lt;android.inputmethodservice.Keyboard.Key&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMinWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getModifierKeys" native="false" return="java.util.List&lt;android.inputmethodservice.Keyboard.Key&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNearestKeys" native="false" return="int[]" static="false" synchronized="false" visibility="public">
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getShiftKeyIndex" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVerticalGap" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isShifted" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setHorizontalGap" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="gap" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setKeyHeight" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="height" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setKeyWidth" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="width" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setShifted" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="shiftState" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVerticalGap" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="gap" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="EDGE_BOTTOM" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EDGE_LEFT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EDGE_RIGHT" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EDGE_TOP" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEYCODE_ALT" static="true" transient="false" type="int" value="-6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEYCODE_CANCEL" static="true" transient="false" type="int" value="-3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEYCODE_DELETE" static="true" transient="false" type="int" value="-5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEYCODE_DONE" static="true" transient="false" type="int" value="-4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEYCODE_MODE_CHANGE" static="true" transient="false" type="int" value="-2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEYCODE_SHIFT" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Keyboard.Key" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Keyboard.Key" static="false" type="android.inputmethodservice.Keyboard.Key" visibility="public">
+<parameter name="parent" type="android.inputmethodservice.Keyboard.Row">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Keyboard.Key" static="false" type="android.inputmethodservice.Keyboard.Key" visibility="public">
+<parameter name="res" type="android.content.res.Resources">
+</parameter>
+<parameter name="parent" type="android.inputmethodservice.Keyboard.Row">
+</parameter>
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+<parameter name="parser" type="android.content.res.XmlResourceParser">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentDrawableState" native="false" return="int[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isInside" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onPressed" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onReleased" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="inside" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="squaredDistanceFrom" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="codes" static="false" transient="false" type="int[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="edgeFlags" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="gap" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="height" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="icon" static="false" transient="false" type="android.graphics.drawable.Drawable" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="iconPreview" static="false" transient="false" type="android.graphics.drawable.Drawable" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="label" static="false" transient="false" type="java.lang.CharSequence" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="modifier" static="false" transient="false" type="boolean" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="on" static="false" transient="false" type="boolean" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="popupCharacters" static="false" transient="false" type="java.lang.CharSequence" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="popupResId" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="pressed" static="false" transient="false" type="boolean" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="repeatable" static="false" transient="false" type="boolean" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="sticky" static="false" transient="false" type="boolean" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="text" static="false" transient="false" type="java.lang.CharSequence" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="width" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="x" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="y" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Keyboard.Row" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Keyboard.Row" static="false" type="android.inputmethodservice.Keyboard.Row" visibility="public">
+<parameter name="parent" type="android.inputmethodservice.Keyboard">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Keyboard.Row" static="false" type="android.inputmethodservice.Keyboard.Row" visibility="public">
+<parameter name="res" type="android.content.res.Resources">
+</parameter>
+<parameter name="parent" type="android.inputmethodservice.Keyboard">
+</parameter>
+<parameter name="parser" type="android.content.res.XmlResourceParser">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="false" name="defaultHeight" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="defaultHorizontalGap" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="defaultWidth" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mode" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="rowEdgeFlags" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="verticalGap" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.view.View" final="false" name="KeyboardView" static="false" visibility="public">
+<implements name="android.view.View.OnClickListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="KeyboardView" static="false" type="android.inputmethodservice.KeyboardView" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="KeyboardView" static="false" type="android.inputmethodservice.KeyboardView" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<parameter name="defStyle" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="closing" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getKeyboard" native="false" return="android.inputmethodservice.Keyboard" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOnKeyboardActionListener" native="false" return="android.inputmethodservice.KeyboardView.OnKeyboardActionListener" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="handleBack" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="invalidateAllKeys" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="invalidateKey" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="keyIndex" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isPreviewEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isProximityCorrectionEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isShifted" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="v" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDetachedFromWindow" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDraw" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="canvas" type="android.graphics.Canvas">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onLongPress" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="popupKey" type="android.inputmethodservice.Keyboard.Key">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onMeasure" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="widthMeasureSpec" type="int">
+</parameter>
+<parameter name="heightMeasureSpec" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSizeChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="w" type="int">
+</parameter>
+<parameter name="h" type="int">
+</parameter>
+<parameter name="oldw" type="int">
+</parameter>
+<parameter name="oldh" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setKeyboard" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="keyboard" type="android.inputmethodservice.Keyboard">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnKeyboardActionListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.inputmethodservice.KeyboardView.OnKeyboardActionListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPopupOffset" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="x" type="int">
+</parameter>
+<parameter name="y" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPopupParent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="v" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPreviewEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="previewEnabled" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setProximityCorrectionEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="enabled" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setShifted" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="shifted" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVerticalCorrection" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="verticalOffset" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="swipeDown" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="swipeLeft" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="swipeRight" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="swipeUp" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="KeyboardView.OnKeyboardActionListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onKey" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="primaryCode" type="int">
+</parameter>
+<parameter name="keyCodes" type="int[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onPress" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="primaryCode" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onRelease" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="primaryCode" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onText" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="swipeDown" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="swipeLeft" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="swipeRight" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="swipeUp" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+</package></api>

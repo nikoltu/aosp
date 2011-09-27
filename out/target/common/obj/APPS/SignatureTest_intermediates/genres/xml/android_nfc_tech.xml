@@ -1,0 +1,334 @@
+<?xml version="1.0" ?><api><package name="android.nfc.tech">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BasicTagTechnology" static="false" visibility="">
+<implements name="android.nfc.tech.TagTechnology">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="connect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTag" native="false" return="android.nfc.Tag" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isConnected" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.nfc.tech.BasicTagTechnology" final="true" name="IsoDep" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="android.nfc.tech.IsoDep" static="true" synchronized="false" visibility="public">
+<parameter name="tag" type="android.nfc.Tag">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHiLayerResponse" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHistoricalBytes" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTimeout" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="transceive" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.nfc.tech.BasicTagTechnology" final="true" name="MifareClassic" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="authenticateSectorWithKeyA" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="sectorIndex" type="int">
+</parameter>
+<parameter name="key" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="authenticateSectorWithKeyB" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="sectorIndex" type="int">
+</parameter>
+<parameter name="key" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="blockToSector" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="blockIndex" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="decrement" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="blockIndex" type="int">
+</parameter>
+<parameter name="value" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="android.nfc.tech.MifareClassic" static="true" synchronized="false" visibility="public">
+<parameter name="tag" type="android.nfc.Tag">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBlockCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBlockCountInSector" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="sectorIndex" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSectorCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="increment" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="blockIndex" type="int">
+</parameter>
+<parameter name="value" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readBlock" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="blockIndex" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="restore" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="blockIndex" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sectorToBlock" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="sectorIndex" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="transceive" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="transfer" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="blockIndex" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeBlock" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="blockIndex" type="int">
+</parameter>
+<parameter name="data" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="BLOCK_SIZE" static="true" transient="false" type="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEY_DEFAULT" static="true" transient="false" type="byte[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEY_MIFARE_APPLICATION_DIRECTORY" static="true" transient="false" type="byte[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEY_NFC_FORUM" static="true" transient="false" type="byte[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SIZE_1K" static="true" transient="false" type="int" value="1024" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SIZE_2K" static="true" transient="false" type="int" value="2048" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SIZE_4K" static="true" transient="false" type="int" value="4096" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SIZE_MINI" static="true" transient="false" type="int" value="320" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_CLASSIC" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_PLUS" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_PRO" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_UNKNOWN" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.nfc.tech.BasicTagTechnology" final="true" name="MifareUltralight" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="android.nfc.tech.MifareUltralight" static="true" synchronized="false" visibility="public">
+<parameter name="tag" type="android.nfc.Tag">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readPages" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="pageOffset" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="transceive" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writePage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pageOffset" type="int">
+</parameter>
+<parameter name="data" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="PAGE_SIZE" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_ULTRALIGHT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_ULTRALIGHT_C" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_UNKNOWN" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.nfc.tech.BasicTagTechnology" final="true" name="Ndef" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="canMakeReadOnly" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="android.nfc.tech.Ndef" static="true" synchronized="false" visibility="public">
+<parameter name="tag" type="android.nfc.Tag">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCachedNdefMessage" native="false" return="android.nfc.NdefMessage" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMaxSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNdefMessage" native="false" return="android.nfc.NdefMessage" static="false" synchronized="false" visibility="public">
+<exception name="FormatException" type="android.nfc.FormatException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isWritable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="makeReadOnly" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeNdefMessage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="msg" type="android.nfc.NdefMessage">
+</parameter>
+<exception name="FormatException" type="android.nfc.FormatException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="MIFARE_CLASSIC" static="true" transient="false" type="java.lang.String" value="&quot;com.nxp.ndef.mifareclassic&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NFC_FORUM_TYPE_1" static="true" transient="false" type="java.lang.String" value="&quot;org.nfcforum.ndef.type1&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NFC_FORUM_TYPE_2" static="true" transient="false" type="java.lang.String" value="&quot;org.nfcforum.ndef.type2&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NFC_FORUM_TYPE_3" static="true" transient="false" type="java.lang.String" value="&quot;org.nfcforum.ndef.type3&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NFC_FORUM_TYPE_4" static="true" transient="false" type="java.lang.String" value="&quot;org.nfcforum.ndef.type4&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.nfc.tech.BasicTagTechnology" final="true" name="NdefFormatable" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="format" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="firstMessage" type="android.nfc.NdefMessage">
+</parameter>
+<exception name="FormatException" type="android.nfc.FormatException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="formatReadOnly" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="firstMessage" type="android.nfc.NdefMessage">
+</parameter>
+<exception name="FormatException" type="android.nfc.FormatException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="android.nfc.tech.NdefFormatable" static="true" synchronized="false" visibility="public">
+<parameter name="tag" type="android.nfc.Tag">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.nfc.tech.BasicTagTechnology" final="true" name="NfcA" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="android.nfc.tech.NfcA" static="true" synchronized="false" visibility="public">
+<parameter name="tag" type="android.nfc.Tag">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAtqa" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSak" native="false" return="short" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="transceive" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.nfc.tech.BasicTagTechnology" final="true" name="NfcB" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="android.nfc.tech.NfcB" static="true" synchronized="false" visibility="public">
+<parameter name="tag" type="android.nfc.Tag">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getApplicationData" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProtocolInfo" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="transceive" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.nfc.tech.BasicTagTechnology" final="true" name="NfcF" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="android.nfc.tech.NfcF" static="true" synchronized="false" visibility="public">
+<parameter name="tag" type="android.nfc.Tag">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getManufacturer" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSystemCode" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="transceive" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.nfc.tech.BasicTagTechnology" final="true" name="NfcV" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="android.nfc.tech.NfcV" static="true" synchronized="false" visibility="public">
+<parameter name="tag" type="android.nfc.Tag">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDsfId" native="false" return="byte" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getResponseFlags" native="false" return="byte" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="transceive" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="TagTechnology" static="false" visibility="public">
+<implements name="java.io.Closeable">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="connect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTag" native="false" return="android.nfc.Tag" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isConnected" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+</package></api>

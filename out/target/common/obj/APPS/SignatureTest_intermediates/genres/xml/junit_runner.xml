@@ -1,0 +1,142 @@
+<?xml version="1.0" ?><api><package name="junit.runner">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BaseTestRunner" static="false" visibility="public">
+<implements name="junit.framework.TestListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BaseTestRunner" static="false" type="junit.runner.BaseTestRunner" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addError" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="test" type="junit.framework.Test">
+</parameter>
+<parameter name="t" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addFailure" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="test" type="junit.framework.Test">
+</parameter>
+<parameter name="t" type="junit.framework.AssertionFailedError">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearStatus" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="elapsedTimeAsString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="runTime" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="endTest" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="test" type="junit.framework.Test">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="extractClassName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="className" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFilteredTrace" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="t" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFilteredTrace" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="stack" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLoader" native="false" return="junit.runner.TestSuiteLoader" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPreference" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPreference" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="dflt" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPreferences" native="false" return="java.util.Properties" static="true" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTest" native="false" return="junit.framework.Test" static="false" synchronized="false" visibility="public">
+<parameter name="suiteClassName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="inVAJava" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadSuiteClass" native="false" return="java.lang.Class" static="false" synchronized="false" visibility="protected">
+<parameter name="suiteClassName" type="java.lang.String">
+</parameter>
+<exception name="ClassNotFoundException" type="java.lang.ClassNotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="processArguments" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+<parameter name="args" type="java.lang.String[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="runFailed" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="message" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="savePreferences" native="false" return="void" static="true" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLoading" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="enable" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPreference" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPreferences" native="false" return="void" static="true" synchronized="false" visibility="protected">
+<parameter name="preferences" type="java.util.Properties">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showStackRaw" native="false" return="boolean" static="true" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startTest" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="test" type="junit.framework.Test">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="testEnded" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="testName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="testFailed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="status" type="int">
+</parameter>
+<parameter name="test" type="junit.framework.Test">
+</parameter>
+<parameter name="t" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="testStarted" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="testName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="truncate" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="useReloadingTestSuiteLoader" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+</method>
+<field deprecated="not deprecated" final="true" name="SUITE_METHODNAME" static="true" transient="false" type="java.lang.String" value="&quot;suite&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="TestSuiteLoader" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="load" native="false" return="java.lang.Class" static="false" synchronized="false" visibility="public">
+<parameter name="suiteClassName" type="java.lang.String">
+</parameter>
+<exception name="ClassNotFoundException" type="java.lang.ClassNotFoundException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="reload" native="false" return="java.lang.Class" static="false" synchronized="false" visibility="public">
+<parameter name="aClass" type="java.lang.Class">
+</parameter>
+<exception name="ClassNotFoundException" type="java.lang.ClassNotFoundException">
+</exception>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Version" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="id" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+</package></api>

@@ -1,0 +1,116 @@
+# view AndroidManifest.xml #generated:62
+-keep class com.android.email.Email { <init>(...); }
+
+# view AndroidManifest.xml #generated:236
+-keep class com.android.email.SecurityPolicy$PolicyAdmin { <init>(...); }
+
+# view AndroidManifest.xml #generated:147
+-keep class com.android.email.activity.AccountFolderList { <init>(...); }
+
+# view res/layout/account_folder_list_item.xml #generated:17
+-keep class com.android.email.activity.AccountFolderListItem { <init>(...); }
+
+# view AndroidManifest.xml #generated:152
+-keep class com.android.email.activity.AccountShortcutPicker { <init>(...); }
+
+# view res/layout/message_compose.xml #generated:29
+# view res/layout/message_compose.xml #generated:39
+# view res/layout/message_compose.xml #generated:50
+-keep class com.android.email.activity.AddressTextView { <init>(...); }
+
+# view AndroidManifest.xml #generated:143
+-keep class com.android.email.activity.Debug { <init>(...); }
+
+# view AndroidManifest.xml #generated:184
+-keep class com.android.email.activity.FolderMessageList { <init>(...); }
+
+# view AndroidManifest.xml #generated:163
+-keep class com.android.email.activity.MailboxList { <init>(...); }
+
+# view AndroidManifest.xml #generated:198
+-keep class com.android.email.activity.MessageCompose { <init>(...); }
+
+# view AndroidManifest.xml #generated:168
+-keep class com.android.email.activity.MessageList { <init>(...); }
+
+# view res/layout/message_list_item.xml #generated:17
+-keep class com.android.email.activity.MessageListItem { <init>(...); }
+
+# view AndroidManifest.xml #generated:194
+-keep class com.android.email.activity.MessageView { <init>(...); }
+
+# view AndroidManifest.xml #generated:72
+-keep class com.android.email.activity.UpgradeAccounts { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class com.android.email.activity.Welcome { <init>(...); }
+
+# view AndroidManifest.xml #generated:137
+-keep class com.android.email.activity.setup.AccountSecurity { <init>(...); }
+
+# view AndroidManifest.xml #generated:128
+-keep class com.android.email.activity.setup.AccountSettings { <init>(...); }
+
+# view AndroidManifest.xml #generated:85
+-keep class com.android.email.activity.setup.AccountSetupAccountType { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class com.android.email.activity.setup.AccountSetupBasics { <init>(...); }
+
+# view AndroidManifest.xml #generated:122
+-keep class com.android.email.activity.setup.AccountSetupCheckSettings { <init>(...); }
+
+# view AndroidManifest.xml #generated:103
+-keep class com.android.email.activity.setup.AccountSetupExchange { <init>(...); }
+
+# view AndroidManifest.xml #generated:90
+-keep class com.android.email.activity.setup.AccountSetupIncoming { <init>(...); }
+
+# view AndroidManifest.xml #generated:115
+-keep class com.android.email.activity.setup.AccountSetupNames { <init>(...); }
+
+# view AndroidManifest.xml #generated:110
+-keep class com.android.email.activity.setup.AccountSetupOptions { <init>(...); }
+
+# view AndroidManifest.xml #generated:95
+-keep class com.android.email.activity.setup.AccountSetupOutgoing { <init>(...); }
+
+# view AndroidManifest.xml #generated:318
+-keep class com.android.email.provider.AttachmentProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:328
+-keep class com.android.email.provider.EmailProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:286
+-keep class com.android.email.service.EasAuthenticatorService { <init>(...); }
+
+# view AndroidManifest.xml #generated:303
+-keep class com.android.email.service.EasAuthenticatorServiceAlternate { <init>(...); }
+
+# view AndroidManifest.xml #generated:233
+-keep class com.android.email.service.EmailBroadcastProcessorService { <init>(...); }
+
+# view AndroidManifest.xml #generated:226
+-keep class com.android.email.service.EmailBroadcastReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:249
+-keep class com.android.email.service.MailService { <init>(...); }
+
+# view AndroidManifest.xml #generated:268
+-keep class com.android.exchange.CalendarSyncAdapterService { <init>(...); }
+
+# view AndroidManifest.xml #generated:257
+-keep class com.android.exchange.ContactsSyncAdapterService { <init>(...); }
+
+# view AndroidManifest.xml #generated:222
+-keep class com.android.exchange.EmailSyncAlarmReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:223
+-keep class com.android.exchange.MailboxAlarmReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:279
+-keep class com.android.exchange.SyncManager { <init>(...); }
+
+# view AndroidManifest.xml #generated:338
+-keep class com.android.exchange.provider.ExchangeProvider { <init>(...); }
+

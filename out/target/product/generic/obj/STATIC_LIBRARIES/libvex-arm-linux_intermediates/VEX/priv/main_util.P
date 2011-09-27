@@ -1,0 +1,19 @@
+out/target/product/generic/obj/STATIC_LIBRARIES/libvex-arm-linux_intermediates/VEX/priv/main_util.o: \
+ external/valgrind/main/VEX/priv/main_util.c \
+ system/core/include/arch/linux-arm/AndroidConfig.h \
+ external/valgrind/main/VEX/pub/libvex_basictypes.h \
+ external/valgrind/main/VEX/pub/libvex.h \
+ external/valgrind/main/VEX/pub/libvex_basictypes.h \
+ external/valgrind/main/VEX/pub/libvex_ir.h \
+ external/valgrind/main/VEX/priv/main_globals.h \
+ external/valgrind/main/VEX/priv/main_util.h \
+ prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include/stdarg.h
+ external/valgrind/main/VEX/priv/main_util.c :
+ system/core/include/arch/linux-arm/AndroidConfig.h :
+ external/valgrind/main/VEX/pub/libvex_basictypes.h :
+ external/valgrind/main/VEX/pub/libvex.h :
+ external/valgrind/main/VEX/pub/libvex_basictypes.h :
+ external/valgrind/main/VEX/pub/libvex_ir.h :
+ external/valgrind/main/VEX/priv/main_globals.h :
+ external/valgrind/main/VEX/priv/main_util.h :
+ prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include/stdarg.h :

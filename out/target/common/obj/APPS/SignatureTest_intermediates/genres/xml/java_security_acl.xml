@@ -1,0 +1,140 @@
+<?xml version="1.0" ?><api><package name="java.security.acl">
+<interface abstract="true" deprecated="not deprecated" final="false" name="Acl" static="false" visibility="public">
+<implements name="java.security.acl.Owner">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="addEntry" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="caller" type="java.security.Principal">
+</parameter>
+<parameter name="entry" type="java.security.acl.AclEntry">
+</parameter>
+<exception name="NotOwnerException" type="java.security.acl.NotOwnerException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="checkPermission" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="principal" type="java.security.Principal">
+</parameter>
+<parameter name="permission" type="java.security.acl.Permission">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="entries" native="false" return="java.util.Enumeration&lt;java.security.acl.AclEntry&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPermissions" native="false" return="java.util.Enumeration&lt;java.security.acl.Permission&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="user" type="java.security.Principal">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeEntry" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="caller" type="java.security.Principal">
+</parameter>
+<parameter name="entry" type="java.security.acl.AclEntry">
+</parameter>
+<exception name="NotOwnerException" type="java.security.acl.NotOwnerException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setName" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="caller" type="java.security.Principal">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="NotOwnerException" type="java.security.acl.NotOwnerException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="toString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="AclEntry" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="addPermission" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="permission" type="java.security.acl.Permission">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="checkPermission" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="permission" type="java.security.acl.Permission">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPrincipal" native="false" return="java.security.Principal" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isNegative" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="permissions" native="false" return="java.util.Enumeration&lt;java.security.acl.Permission&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removePermission" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="permission" type="java.security.acl.Permission">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setNegativePermissions" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setPrincipal" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="user" type="java.security.Principal">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="toString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Exception" final="false" name="AclNotFoundException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AclNotFoundException" static="false" type="java.security.acl.AclNotFoundException" visibility="public">
+</constructor>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Group" static="false" visibility="public">
+<implements name="java.security.Principal">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="addMember" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="user" type="java.security.Principal">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isMember" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="member" type="java.security.Principal">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="members" native="false" return="java.util.Enumeration&lt;? extends java.security.Principal&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeMember" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="user" type="java.security.Principal">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Exception" final="false" name="LastOwnerException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="LastOwnerException" static="false" type="java.security.acl.LastOwnerException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Exception" final="false" name="NotOwnerException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="NotOwnerException" static="false" type="java.security.acl.NotOwnerException" visibility="public">
+</constructor>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Owner" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="addOwner" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="caller" type="java.security.Principal">
+</parameter>
+<parameter name="owner" type="java.security.Principal">
+</parameter>
+<exception name="NotOwnerException" type="java.security.acl.NotOwnerException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="deleteOwner" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="caller" type="java.security.Principal">
+</parameter>
+<parameter name="owner" type="java.security.Principal">
+</parameter>
+<exception name="LastOwnerException" type="java.security.acl.LastOwnerException">
+</exception>
+<exception name="NotOwnerException" type="java.security.acl.NotOwnerException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isOwner" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="owner" type="java.security.Principal">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Permission" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="equals" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="another" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="toString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+</package></api>

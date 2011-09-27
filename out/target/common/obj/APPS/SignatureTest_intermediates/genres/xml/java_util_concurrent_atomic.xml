@@ -1,0 +1,704 @@
+<?xml version="1.0" ?><api><package name="java.util.concurrent.atomic">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AtomicBoolean" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AtomicBoolean" static="false" type="java.util.concurrent.atomic.AtomicBoolean" visibility="public">
+<parameter name="initialValue" type="boolean">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AtomicBoolean" static="false" type="java.util.concurrent.atomic.AtomicBoolean" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="compareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="expect" type="boolean">
+</parameter>
+<parameter name="update" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="get" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="newValue" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="lazySet" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="newValue" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="newValue" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="weakCompareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="expect" type="boolean">
+</parameter>
+<parameter name="update" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Number" final="false" name="AtomicInteger" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AtomicInteger" static="false" type="java.util.concurrent.atomic.AtomicInteger" visibility="public">
+<parameter name="initialValue" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AtomicInteger" static="false" type="java.util.concurrent.atomic.AtomicInteger" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="addAndGet" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="delta" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="compareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="expect" type="int">
+</parameter>
+<parameter name="update" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="decrementAndGet" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doubleValue" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="floatValue" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="get" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAndAdd" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="delta" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAndDecrement" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAndIncrement" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAndSet" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="newValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="incrementAndGet" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="intValue" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="lazySet" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="newValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="longValue" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="newValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="weakCompareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="expect" type="int">
+</parameter>
+<parameter name="update" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AtomicIntegerArray" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AtomicIntegerArray" static="false" type="java.util.concurrent.atomic.AtomicIntegerArray" visibility="public">
+<parameter name="length" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AtomicIntegerArray" static="false" type="java.util.concurrent.atomic.AtomicIntegerArray" visibility="public">
+<parameter name="array" type="int[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="addAndGet" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+<parameter name="delta" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="compareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+<parameter name="expect" type="int">
+</parameter>
+<parameter name="update" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="decrementAndGet" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="get" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAndAdd" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+<parameter name="delta" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAndDecrement" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAndIncrement" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAndSet" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+<parameter name="newValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="incrementAndGet" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="lazySet" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+<parameter name="newValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="length" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+<parameter name="newValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="weakCompareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+<parameter name="expect" type="int">
+</parameter>
+<parameter name="update" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AtomicIntegerFieldUpdater" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AtomicIntegerFieldUpdater" static="false" type="java.util.concurrent.atomic.AtomicIntegerFieldUpdater" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addAndGet" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+<parameter name="delta" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="compareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+<parameter name="expect" type="int">
+</parameter>
+<parameter name="update" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="decrementAndGet" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="get" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAndAdd" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+<parameter name="delta" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAndDecrement" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAndIncrement" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAndSet" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+<parameter name="newValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="incrementAndGet" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="lazySet" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+<parameter name="newValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newUpdater" native="false" return="java.util.concurrent.atomic.AtomicIntegerFieldUpdater&lt;U&gt;" static="true" synchronized="false" visibility="public">
+<parameter name="tclass" type="java.lang.Class&lt;U&gt;">
+</parameter>
+<parameter name="fieldName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+<parameter name="newValue" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="weakCompareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+<parameter name="expect" type="int">
+</parameter>
+<parameter name="update" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Number" final="false" name="AtomicLong" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AtomicLong" static="false" type="java.util.concurrent.atomic.AtomicLong" visibility="public">
+<parameter name="initialValue" type="long">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AtomicLong" static="false" type="java.util.concurrent.atomic.AtomicLong" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="addAndGet" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="delta" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="compareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="expect" type="long">
+</parameter>
+<parameter name="update" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="decrementAndGet" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doubleValue" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="floatValue" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="get" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAndAdd" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="delta" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAndDecrement" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAndIncrement" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAndSet" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="newValue" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="incrementAndGet" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="intValue" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="lazySet" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="newValue" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="longValue" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="newValue" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="weakCompareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="expect" type="long">
+</parameter>
+<parameter name="update" type="long">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AtomicLongArray" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AtomicLongArray" static="false" type="java.util.concurrent.atomic.AtomicLongArray" visibility="public">
+<parameter name="length" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AtomicLongArray" static="false" type="java.util.concurrent.atomic.AtomicLongArray" visibility="public">
+<parameter name="array" type="long[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addAndGet" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+<parameter name="delta" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="compareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+<parameter name="expect" type="long">
+</parameter>
+<parameter name="update" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="decrementAndGet" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="get" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAndAdd" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+<parameter name="delta" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAndDecrement" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAndIncrement" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAndSet" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+<parameter name="newValue" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="incrementAndGet" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="lazySet" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+<parameter name="newValue" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="length" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+<parameter name="newValue" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="weakCompareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+<parameter name="expect" type="long">
+</parameter>
+<parameter name="update" type="long">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AtomicLongFieldUpdater" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AtomicLongFieldUpdater" static="false" type="java.util.concurrent.atomic.AtomicLongFieldUpdater" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addAndGet" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+<parameter name="delta" type="long">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="compareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+<parameter name="expect" type="long">
+</parameter>
+<parameter name="update" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="decrementAndGet" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="get" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAndAdd" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+<parameter name="delta" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAndDecrement" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAndIncrement" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAndSet" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+<parameter name="newValue" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="incrementAndGet" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="lazySet" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+<parameter name="newValue" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newUpdater" native="false" return="java.util.concurrent.atomic.AtomicLongFieldUpdater&lt;U&gt;" static="true" synchronized="false" visibility="public">
+<parameter name="tclass" type="java.lang.Class&lt;U&gt;">
+</parameter>
+<parameter name="fieldName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+<parameter name="newValue" type="long">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="weakCompareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+<parameter name="expect" type="long">
+</parameter>
+<parameter name="update" type="long">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AtomicMarkableReference" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AtomicMarkableReference" static="false" type="java.util.concurrent.atomic.AtomicMarkableReference" visibility="public">
+<parameter name="initialRef" type="V">
+</parameter>
+<parameter name="initialMark" type="boolean">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="attemptMark" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="expectedReference" type="V">
+</parameter>
+<parameter name="newMark" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="compareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="expectedReference" type="V">
+</parameter>
+<parameter name="newReference" type="V">
+</parameter>
+<parameter name="expectedMark" type="boolean">
+</parameter>
+<parameter name="newMark" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="V" static="false" synchronized="false" visibility="public">
+<parameter name="markHolder" type="boolean[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReference" native="false" return="V" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isMarked" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="newReference" type="V">
+</parameter>
+<parameter name="newMark" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="weakCompareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="expectedReference" type="V">
+</parameter>
+<parameter name="newReference" type="V">
+</parameter>
+<parameter name="expectedMark" type="boolean">
+</parameter>
+<parameter name="newMark" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AtomicReference" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AtomicReference" static="false" type="java.util.concurrent.atomic.AtomicReference" visibility="public">
+<parameter name="initialValue" type="V">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AtomicReference" static="false" type="java.util.concurrent.atomic.AtomicReference" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="compareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="expect" type="V">
+</parameter>
+<parameter name="update" type="V">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="get" native="false" return="V" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAndSet" native="false" return="V" static="false" synchronized="false" visibility="public">
+<parameter name="newValue" type="V">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="lazySet" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="newValue" type="V">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="newValue" type="V">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="weakCompareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="expect" type="V">
+</parameter>
+<parameter name="update" type="V">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AtomicReferenceArray" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AtomicReferenceArray" static="false" type="java.util.concurrent.atomic.AtomicReferenceArray" visibility="public">
+<parameter name="length" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AtomicReferenceArray" static="false" type="java.util.concurrent.atomic.AtomicReferenceArray" visibility="public">
+<parameter name="array" type="E[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="compareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+<parameter name="expect" type="E">
+</parameter>
+<parameter name="update" type="E">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="get" native="false" return="E" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAndSet" native="false" return="E" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+<parameter name="newValue" type="E">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="lazySet" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+<parameter name="newValue" type="E">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="length" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+<parameter name="newValue" type="E">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="weakCompareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+<parameter name="expect" type="E">
+</parameter>
+<parameter name="update" type="E">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AtomicReferenceFieldUpdater" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AtomicReferenceFieldUpdater" static="false" type="java.util.concurrent.atomic.AtomicReferenceFieldUpdater" visibility="protected">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="compareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+<parameter name="expect" type="V">
+</parameter>
+<parameter name="update" type="V">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="get" native="false" return="V" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAndSet" native="false" return="V" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+<parameter name="newValue" type="V">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="lazySet" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+<parameter name="newValue" type="V">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newUpdater" native="false" return="java.util.concurrent.atomic.AtomicReferenceFieldUpdater&lt;U, W&gt;" static="true" synchronized="false" visibility="public">
+<parameter name="tclass" type="java.lang.Class&lt;U&gt;">
+</parameter>
+<parameter name="vclass" type="java.lang.Class&lt;W&gt;">
+</parameter>
+<parameter name="fieldName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+<parameter name="newValue" type="V">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="weakCompareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="T">
+</parameter>
+<parameter name="expect" type="V">
+</parameter>
+<parameter name="update" type="V">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AtomicStampedReference" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AtomicStampedReference" static="false" type="java.util.concurrent.atomic.AtomicStampedReference" visibility="public">
+<parameter name="initialRef" type="V">
+</parameter>
+<parameter name="initialStamp" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="attemptStamp" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="expectedReference" type="V">
+</parameter>
+<parameter name="newStamp" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="compareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="expectedReference" type="V">
+</parameter>
+<parameter name="newReference" type="V">
+</parameter>
+<parameter name="expectedStamp" type="int">
+</parameter>
+<parameter name="newStamp" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="V" static="false" synchronized="false" visibility="public">
+<parameter name="stampHolder" type="int[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReference" native="false" return="V" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStamp" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="newReference" type="V">
+</parameter>
+<parameter name="newStamp" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="weakCompareAndSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="expectedReference" type="V">
+</parameter>
+<parameter name="newReference" type="V">
+</parameter>
+<parameter name="expectedStamp" type="int">
+</parameter>
+<parameter name="newStamp" type="int">
+</parameter>
+</method>
+</class>
+</package></api>

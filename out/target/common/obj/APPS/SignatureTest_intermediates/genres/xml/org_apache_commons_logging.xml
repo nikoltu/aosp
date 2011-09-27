@@ -1,0 +1,76 @@
+<?xml version="1.0" ?><api><package name="org.apache.commons.logging">
+<interface abstract="true" deprecated="not deprecated" final="false" name="Log" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="debug" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg0" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="debug" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg0" type="java.lang.Object">
+</parameter>
+<parameter name="arg1" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="error" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg0" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="error" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg0" type="java.lang.Object">
+</parameter>
+<parameter name="arg1" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="fatal" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg0" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="fatal" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg0" type="java.lang.Object">
+</parameter>
+<parameter name="arg1" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="info" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg0" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="info" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg0" type="java.lang.Object">
+</parameter>
+<parameter name="arg1" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isDebugEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isErrorEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isFatalEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isInfoEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isTraceEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isWarnEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="trace" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg0" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="trace" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg0" type="java.lang.Object">
+</parameter>
+<parameter name="arg1" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="warn" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg0" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="warn" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg0" type="java.lang.Object">
+</parameter>
+<parameter name="arg1" type="java.lang.Throwable">
+</parameter>
+</method>
+</interface>
+</package></api>

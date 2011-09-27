@@ -1,0 +1,398 @@
+<?xml version="1.0" ?><api><package name="javax.xml.parsers">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DocumentBuilder" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DocumentBuilder" static="false" type="javax.xml.parsers.DocumentBuilder" visibility="protected">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDOMImplementation" native="false" return="org.w3c.dom.DOMImplementation" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSchema" native="false" return="javax.xml.validation.Schema" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isNamespaceAware" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isValidating" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isXIncludeAware" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newDocument" native="false" return="org.w3c.dom.Document" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="org.w3c.dom.Document" static="false" synchronized="false" visibility="public">
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="org.w3c.dom.Document" static="false" synchronized="false" visibility="public">
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="org.w3c.dom.Document" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="org.w3c.dom.Document" static="false" synchronized="false" visibility="public">
+<parameter name="f" type="java.io.File">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="parse" native="false" return="org.w3c.dom.Document" static="false" synchronized="false" visibility="public">
+<parameter name="is" type="org.xml.sax.InputSource">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setEntityResolver" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="er" type="org.xml.sax.EntityResolver">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setErrorHandler" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="eh" type="org.xml.sax.ErrorHandler">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DocumentBuilderFactory" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DocumentBuilderFactory" static="false" type="javax.xml.parsers.DocumentBuilderFactory" visibility="protected">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="getAttribute" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getFeature" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="ParserConfigurationException" type="javax.xml.parsers.ParserConfigurationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSchema" native="false" return="javax.xml.validation.Schema" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isCoalescing" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isExpandEntityReferences" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isIgnoringComments" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isIgnoringElementContentWhitespace" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isNamespaceAware" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isValidating" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isXIncludeAware" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newDocumentBuilder" native="false" return="javax.xml.parsers.DocumentBuilder" static="false" synchronized="false" visibility="public">
+<exception name="ParserConfigurationException" type="javax.xml.parsers.ParserConfigurationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="javax.xml.parsers.DocumentBuilderFactory" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="javax.xml.parsers.DocumentBuilderFactory" static="true" synchronized="false" visibility="public">
+<parameter name="factoryClassName" type="java.lang.String">
+</parameter>
+<parameter name="classLoader" type="java.lang.ClassLoader">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setAttribute" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCoalescing" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="coalescing" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setExpandEntityReferences" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="expandEntityRef" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setFeature" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="boolean">
+</parameter>
+<exception name="ParserConfigurationException" type="javax.xml.parsers.ParserConfigurationException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setIgnoringComments" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ignoreComments" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setIgnoringElementContentWhitespace" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="whitespace" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setNamespaceAware" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="awareness" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSchema" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="schema" type="javax.xml.validation.Schema">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setValidating" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="validating" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setXIncludeAware" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="state" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Error" final="false" name="FactoryConfigurationError" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="FactoryConfigurationError" static="false" type="javax.xml.parsers.FactoryConfigurationError" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="FactoryConfigurationError" static="false" type="javax.xml.parsers.FactoryConfigurationError" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="FactoryConfigurationError" static="false" type="javax.xml.parsers.FactoryConfigurationError" visibility="public">
+<parameter name="e" type="java.lang.Exception">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="FactoryConfigurationError" static="false" type="javax.xml.parsers.FactoryConfigurationError" visibility="public">
+<parameter name="e" type="java.lang.Exception">
+</parameter>
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getException" native="false" return="java.lang.Exception" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Exception" final="false" name="ParserConfigurationException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ParserConfigurationException" static="false" type="javax.xml.parsers.ParserConfigurationException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ParserConfigurationException" static="false" type="javax.xml.parsers.ParserConfigurationException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SAXParser" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SAXParser" static="false" type="javax.xml.parsers.SAXParser" visibility="protected">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="getParser" native="false" return="org.xml.sax.Parser" static="false" synchronized="false" visibility="public">
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getProperty" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="SAXNotRecognizedException" type="org.xml.sax.SAXNotRecognizedException">
+</exception>
+<exception name="SAXNotSupportedException" type="org.xml.sax.SAXNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSchema" native="false" return="javax.xml.validation.Schema" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getXMLReader" native="false" return="org.xml.sax.XMLReader" static="false" synchronized="false" visibility="public">
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isNamespaceAware" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isValidating" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isXIncludeAware" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<parameter name="hb" type="org.xml.sax.HandlerBase">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<parameter name="hb" type="org.xml.sax.HandlerBase">
+</parameter>
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<parameter name="dh" type="org.xml.sax.helpers.DefaultHandler">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<parameter name="dh" type="org.xml.sax.helpers.DefaultHandler">
+</parameter>
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<parameter name="hb" type="org.xml.sax.HandlerBase">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+<parameter name="dh" type="org.xml.sax.helpers.DefaultHandler">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="f" type="java.io.File">
+</parameter>
+<parameter name="hb" type="org.xml.sax.HandlerBase">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="f" type="java.io.File">
+</parameter>
+<parameter name="dh" type="org.xml.sax.helpers.DefaultHandler">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="is" type="org.xml.sax.InputSource">
+</parameter>
+<parameter name="hb" type="org.xml.sax.HandlerBase">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="is" type="org.xml.sax.InputSource">
+</parameter>
+<parameter name="dh" type="org.xml.sax.helpers.DefaultHandler">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setProperty" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+<exception name="SAXNotRecognizedException" type="org.xml.sax.SAXNotRecognizedException">
+</exception>
+<exception name="SAXNotSupportedException" type="org.xml.sax.SAXNotSupportedException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SAXParserFactory" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SAXParserFactory" static="false" type="javax.xml.parsers.SAXParserFactory" visibility="protected">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="getFeature" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="ParserConfigurationException" type="javax.xml.parsers.ParserConfigurationException">
+</exception>
+<exception name="SAXNotRecognizedException" type="org.xml.sax.SAXNotRecognizedException">
+</exception>
+<exception name="SAXNotSupportedException" type="org.xml.sax.SAXNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSchema" native="false" return="javax.xml.validation.Schema" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isNamespaceAware" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isValidating" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isXIncludeAware" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="javax.xml.parsers.SAXParserFactory" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="javax.xml.parsers.SAXParserFactory" static="true" synchronized="false" visibility="public">
+<parameter name="factoryClassName" type="java.lang.String">
+</parameter>
+<parameter name="classLoader" type="java.lang.ClassLoader">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newSAXParser" native="false" return="javax.xml.parsers.SAXParser" static="false" synchronized="false" visibility="public">
+<exception name="ParserConfigurationException" type="javax.xml.parsers.ParserConfigurationException">
+</exception>
+<exception name="SAXException" type="org.xml.sax.SAXException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setFeature" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="boolean">
+</parameter>
+<exception name="ParserConfigurationException" type="javax.xml.parsers.ParserConfigurationException">
+</exception>
+<exception name="SAXNotRecognizedException" type="org.xml.sax.SAXNotRecognizedException">
+</exception>
+<exception name="SAXNotSupportedException" type="org.xml.sax.SAXNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setNamespaceAware" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="awareness" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSchema" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="schema" type="javax.xml.validation.Schema">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setValidating" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="validating" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setXIncludeAware" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="state" type="boolean">
+</parameter>
+</method>
+</class>
+</package></api>

@@ -1,0 +1,416 @@
+<?xml version="1.0" ?><api><package name="org.apache.http.impl.io">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AbstractMessageParser" static="false" visibility="public">
+<implements name="org.apache.http.io.HttpMessageParser">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractMessageParser" static="false" type="org.apache.http.impl.io.AbstractMessageParser" visibility="public">
+<parameter name="buffer" type="org.apache.http.io.SessionInputBuffer">
+</parameter>
+<parameter name="parser" type="org.apache.http.message.LineParser">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="org.apache.http.HttpMessage" static="false" synchronized="false" visibility="public">
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="parseHead" native="false" return="org.apache.http.HttpMessage" static="false" synchronized="false" visibility="protected">
+<parameter name="sessionBuffer" type="org.apache.http.io.SessionInputBuffer">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseHeaders" native="false" return="org.apache.http.Header[]" static="true" synchronized="false" visibility="public">
+<parameter name="inbuffer" type="org.apache.http.io.SessionInputBuffer">
+</parameter>
+<parameter name="maxHeaderCount" type="int">
+</parameter>
+<parameter name="maxLineLen" type="int">
+</parameter>
+<parameter name="parser" type="org.apache.http.message.LineParser">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="lineParser" static="false" transient="false" type="org.apache.http.message.LineParser" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AbstractMessageWriter" static="false" visibility="public">
+<implements name="org.apache.http.io.HttpMessageWriter">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractMessageWriter" static="false" type="org.apache.http.impl.io.AbstractMessageWriter" visibility="public">
+<parameter name="buffer" type="org.apache.http.io.SessionOutputBuffer">
+</parameter>
+<parameter name="formatter" type="org.apache.http.message.LineFormatter">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="message" type="org.apache.http.HttpMessage">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="writeHeadLine" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="message" type="org.apache.http.HttpMessage">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="lineBuf" static="false" transient="false" type="org.apache.http.util.CharArrayBuffer" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="lineFormatter" static="false" transient="false" type="org.apache.http.message.LineFormatter" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="sessionBuffer" static="false" transient="false" type="org.apache.http.io.SessionOutputBuffer" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AbstractSessionInputBuffer" static="false" visibility="public">
+<implements name="org.apache.http.io.SessionInputBuffer">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractSessionInputBuffer" static="false" type="org.apache.http.impl.io.AbstractSessionInputBuffer" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="fillBuffer" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMetrics" native="false" return="org.apache.http.io.HttpTransportMetrics" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasBufferedData" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="init" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="instream" type="java.io.InputStream">
+</parameter>
+<parameter name="buffersize" type="int">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readLine" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="charbuffer" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readLine" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AbstractSessionOutputBuffer" static="false" visibility="public">
+<implements name="org.apache.http.io.SessionOutputBuffer">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractSessionOutputBuffer" static="false" type="org.apache.http.impl.io.AbstractSessionOutputBuffer" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="flush" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="flushBuffer" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMetrics" native="false" return="org.apache.http.io.HttpTransportMetrics" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="init" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="outstream" type="java.io.OutputStream">
+</parameter>
+<parameter name="buffersize" type="int">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeLine" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeLine" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="s" type="org.apache.http.util.CharArrayBuffer">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.InputStream" final="false" name="ChunkedInputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ChunkedInputStream" static="false" type="org.apache.http.impl.io.ChunkedInputStream" visibility="public">
+<parameter name="in" type="org.apache.http.io.SessionInputBuffer">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFooters" native="false" return="org.apache.http.Header[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.OutputStream" final="false" name="ChunkedOutputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ChunkedOutputStream" static="false" type="org.apache.http.impl.io.ChunkedOutputStream" visibility="public">
+<parameter name="out" type="org.apache.http.io.SessionOutputBuffer">
+</parameter>
+<parameter name="bufferSize" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ChunkedOutputStream" static="false" type="org.apache.http.impl.io.ChunkedOutputStream" visibility="public">
+<parameter name="out" type="org.apache.http.io.SessionOutputBuffer">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="finish" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="flushCache" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="flushCacheWithAppend" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="bufferToAppend" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeClosingChunk" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.InputStream" final="false" name="ContentLengthInputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ContentLengthInputStream" static="false" type="org.apache.http.impl.io.ContentLengthInputStream" visibility="public">
+<parameter name="in" type="org.apache.http.io.SessionInputBuffer">
+</parameter>
+<parameter name="contentLength" type="long">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.OutputStream" final="false" name="ContentLengthOutputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ContentLengthOutputStream" static="false" type="org.apache.http.impl.io.ContentLengthOutputStream" visibility="public">
+<parameter name="out" type="org.apache.http.io.SessionOutputBuffer">
+</parameter>
+<parameter name="contentLength" type="long">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.io.AbstractMessageParser" final="false" name="HttpRequestParser" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HttpRequestParser" static="false" type="org.apache.http.impl.io.HttpRequestParser" visibility="public">
+<parameter name="buffer" type="org.apache.http.io.SessionInputBuffer">
+</parameter>
+<parameter name="parser" type="org.apache.http.message.LineParser">
+</parameter>
+<parameter name="requestFactory" type="org.apache.http.HttpRequestFactory">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseHead" native="false" return="org.apache.http.HttpMessage" static="false" synchronized="false" visibility="protected">
+<parameter name="sessionBuffer" type="org.apache.http.io.SessionInputBuffer">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.io.AbstractMessageWriter" final="false" name="HttpRequestWriter" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HttpRequestWriter" static="false" type="org.apache.http.impl.io.HttpRequestWriter" visibility="public">
+<parameter name="buffer" type="org.apache.http.io.SessionOutputBuffer">
+</parameter>
+<parameter name="formatter" type="org.apache.http.message.LineFormatter">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeHeadLine" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="message" type="org.apache.http.HttpMessage">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.io.AbstractMessageParser" final="false" name="HttpResponseParser" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HttpResponseParser" static="false" type="org.apache.http.impl.io.HttpResponseParser" visibility="public">
+<parameter name="buffer" type="org.apache.http.io.SessionInputBuffer">
+</parameter>
+<parameter name="parser" type="org.apache.http.message.LineParser">
+</parameter>
+<parameter name="responseFactory" type="org.apache.http.HttpResponseFactory">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseHead" native="false" return="org.apache.http.HttpMessage" static="false" synchronized="false" visibility="protected">
+<parameter name="sessionBuffer" type="org.apache.http.io.SessionInputBuffer">
+</parameter>
+<exception name="HttpException" type="org.apache.http.HttpException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="ParseException" type="org.apache.http.ParseException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.io.AbstractMessageWriter" final="false" name="HttpResponseWriter" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HttpResponseWriter" static="false" type="org.apache.http.impl.io.HttpResponseWriter" visibility="public">
+<parameter name="buffer" type="org.apache.http.io.SessionOutputBuffer">
+</parameter>
+<parameter name="formatter" type="org.apache.http.message.LineFormatter">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeHeadLine" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="message" type="org.apache.http.HttpMessage">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="HttpTransportMetricsImpl" static="false" visibility="public">
+<implements name="org.apache.http.io.HttpTransportMetrics">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="HttpTransportMetricsImpl" static="false" type="org.apache.http.impl.io.HttpTransportMetricsImpl" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBytesTransferred" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="incrementBytesTransferred" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="count" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setBytesTransferred" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="count" type="long">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.InputStream" final="false" name="IdentityInputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IdentityInputStream" static="false" type="org.apache.http.impl.io.IdentityInputStream" visibility="public">
+<parameter name="in" type="org.apache.http.io.SessionInputBuffer">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.OutputStream" final="false" name="IdentityOutputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IdentityOutputStream" static="false" type="org.apache.http.impl.io.IdentityOutputStream" visibility="public">
+<parameter name="out" type="org.apache.http.io.SessionOutputBuffer">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.io.AbstractSessionInputBuffer" final="false" name="SocketInputBuffer" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SocketInputBuffer" static="false" type="org.apache.http.impl.io.SocketInputBuffer" visibility="public">
+<parameter name="socket" type="java.net.Socket">
+</parameter>
+<parameter name="buffersize" type="int">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="isDataAvailable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="timeout" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.impl.io.AbstractSessionOutputBuffer" final="false" name="SocketOutputBuffer" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SocketOutputBuffer" static="false" type="org.apache.http.impl.io.SocketOutputBuffer" visibility="public">
+<parameter name="socket" type="java.net.Socket">
+</parameter>
+<parameter name="buffersize" type="int">
+</parameter>
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+</class>
+</package></api>

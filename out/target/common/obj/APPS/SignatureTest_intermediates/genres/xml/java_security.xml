@@ -1,0 +1,2480 @@
+<?xml version="1.0" ?><api><package name="java.security">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="AccessControlContext" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AccessControlContext" static="false" type="java.security.AccessControlContext" visibility="public">
+<parameter name="acc" type="java.security.AccessControlContext">
+</parameter>
+<parameter name="combiner" type="java.security.DomainCombiner">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AccessControlContext" static="false" type="java.security.AccessControlContext" visibility="public">
+<parameter name="context" type="java.security.ProtectionDomain[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="checkPermission" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="perm" type="java.security.Permission">
+</parameter>
+<exception name="AccessControlException" type="java.security.AccessControlException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDomainCombiner" native="false" return="java.security.DomainCombiner" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.SecurityException" final="false" name="AccessControlException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AccessControlException" static="false" type="java.security.AccessControlException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AccessControlException" static="false" type="java.security.AccessControlException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="perm" type="java.security.Permission">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPermission" native="false" return="java.security.Permission" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="AccessController" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="checkPermission" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="permission" type="java.security.Permission">
+</parameter>
+<exception name="AccessControlException" type="java.security.AccessControlException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doPrivileged" native="false" return="T" static="true" synchronized="false" visibility="public">
+<parameter name="action" type="java.security.PrivilegedAction&lt;T&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doPrivileged" native="false" return="T" static="true" synchronized="false" visibility="public">
+<parameter name="action" type="java.security.PrivilegedAction&lt;T&gt;">
+</parameter>
+<parameter name="context" type="java.security.AccessControlContext">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doPrivileged" native="false" return="T" static="true" synchronized="false" visibility="public">
+<parameter name="action" type="java.security.PrivilegedExceptionAction&lt;T&gt;">
+</parameter>
+<exception name="PrivilegedActionException" type="java.security.PrivilegedActionException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doPrivileged" native="false" return="T" static="true" synchronized="false" visibility="public">
+<parameter name="action" type="java.security.PrivilegedExceptionAction&lt;T&gt;">
+</parameter>
+<parameter name="context" type="java.security.AccessControlContext">
+</parameter>
+<exception name="PrivilegedActionException" type="java.security.PrivilegedActionException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doPrivilegedWithCombiner" native="false" return="T" static="true" synchronized="false" visibility="public">
+<parameter name="action" type="java.security.PrivilegedAction&lt;T&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="doPrivilegedWithCombiner" native="false" return="T" static="true" synchronized="false" visibility="public">
+<parameter name="action" type="java.security.PrivilegedExceptionAction&lt;T&gt;">
+</parameter>
+<exception name="PrivilegedActionException" type="java.security.PrivilegedActionException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContext" native="false" return="java.security.AccessControlContext" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AlgorithmParameterGenerator" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AlgorithmParameterGenerator" static="false" type="java.security.AlgorithmParameterGenerator" visibility="protected">
+<parameter name="paramGenSpi" type="java.security.AlgorithmParameterGeneratorSpi">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="generateParameters" native="false" return="java.security.AlgorithmParameters" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.AlgorithmParameterGenerator" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.AlgorithmParameterGenerator" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.AlgorithmParameterGenerator" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProvider" native="false" return="java.security.Provider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="genParamSpec" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="genParamSpec" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AlgorithmParameterGeneratorSpi" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AlgorithmParameterGeneratorSpi" static="false" type="java.security.AlgorithmParameterGeneratorSpi" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGenerateParameters" native="false" return="java.security.AlgorithmParameters" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="size" type="int">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="genParamSpec" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AlgorithmParameters" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AlgorithmParameters" static="false" type="java.security.AlgorithmParameters" visibility="protected">
+<parameter name="algPramSpi" type="java.security.AlgorithmParametersSpi">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getEncoded" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getEncoded" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="format" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.AlgorithmParameters" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.AlgorithmParameters" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.AlgorithmParameters" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getParameterSpec" native="false" return="T" static="false" synchronized="false" visibility="public">
+<parameter name="paramSpec" type="java.lang.Class&lt;T&gt;">
+</parameter>
+<exception name="InvalidParameterSpecException" type="java.security.spec.InvalidParameterSpecException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProvider" native="false" return="java.security.Provider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="paramSpec" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<exception name="InvalidParameterSpecException" type="java.security.spec.InvalidParameterSpecException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="params" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="init" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="params" type="byte[]">
+</parameter>
+<parameter name="format" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="toString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AlgorithmParametersSpi" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AlgorithmParametersSpi" static="false" type="java.security.AlgorithmParametersSpi" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetEncoded" native="false" return="byte[]" static="false" synchronized="false" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetEncoded" native="false" return="byte[]" static="false" synchronized="false" visibility="protected">
+<parameter name="format" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetParameterSpec" native="false" return="T" static="false" synchronized="false" visibility="protected">
+<parameter name="paramSpec" type="java.lang.Class&lt;T&gt;">
+</parameter>
+<exception name="InvalidParameterSpecException" type="java.security.spec.InvalidParameterSpecException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="paramSpec" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<exception name="InvalidParameterSpecException" type="java.security.spec.InvalidParameterSpecException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="params" type="byte[]">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInit" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="params" type="byte[]">
+</parameter>
+<parameter name="format" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineToString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.Permission" final="true" name="AllPermission" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AllPermission" static="false" type="java.security.AllPermission" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="actions" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AllPermission" static="false" type="java.security.AllPermission" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="equals" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getActions" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hashCode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="implies" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="permission" type="java.security.Permission">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.security.Provider" final="false" name="AuthProvider" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AuthProvider" static="false" type="java.security.AuthProvider" visibility="protected">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="version" type="double">
+</parameter>
+<parameter name="info" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="login" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="subject" type="javax.security.auth.Subject">
+</parameter>
+<parameter name="handler" type="javax.security.auth.callback.CallbackHandler">
+</parameter>
+<exception name="LoginException" type="javax.security.auth.login.LoginException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="logout" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="LoginException" type="javax.security.auth.login.LoginException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setCallbackHandler" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="handler" type="javax.security.auth.callback.CallbackHandler">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.security.Permission" final="false" name="BasicPermission" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicPermission" static="false" type="java.security.BasicPermission" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BasicPermission" static="false" type="java.security.BasicPermission" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="action" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="equals" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getActions" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hashCode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="implies" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="permission" type="java.security.Permission">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="deprecated" final="false" name="Certificate" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="decode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="stream" type="java.io.InputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="KeyException" type="java.security.KeyException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="encode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="stream" type="java.io.OutputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="KeyException" type="java.security.KeyException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getFormat" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getGuarantor" native="false" return="java.security.Principal" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPrincipal" native="false" return="java.security.Principal" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPublicKey" native="false" return="java.security.PublicKey" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="toString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="detailed" type="boolean">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="CodeSigner" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="CodeSigner" static="false" type="java.security.CodeSigner" visibility="public">
+<parameter name="signerCertPath" type="java.security.cert.CertPath">
+</parameter>
+<parameter name="timestamp" type="java.security.Timestamp">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSignerCertPath" native="false" return="java.security.cert.CertPath" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTimestamp" native="false" return="java.security.Timestamp" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="CodeSource" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="CodeSource" static="false" type="java.security.CodeSource" visibility="public">
+<parameter name="location" type="java.net.URL">
+</parameter>
+<parameter name="certs" type="java.security.cert.Certificate[]">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="CodeSource" static="false" type="java.security.CodeSource" visibility="public">
+<parameter name="location" type="java.net.URL">
+</parameter>
+<parameter name="signers" type="java.security.CodeSigner[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="getCertificates" native="false" return="java.security.cert.Certificate[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getCodeSigners" native="false" return="java.security.CodeSigner[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getLocation" native="false" return="java.net.URL" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="implies" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="cs" type="java.security.CodeSource">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.GeneralSecurityException" final="false" name="DigestException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DigestException" static="false" type="java.security.DigestException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DigestException" static="false" type="java.security.DigestException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DigestException" static="false" type="java.security.DigestException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DigestException" static="false" type="java.security.DigestException" visibility="public">
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.FilterInputStream" final="false" name="DigestInputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DigestInputStream" static="false" type="java.security.DigestInputStream" visibility="public">
+<parameter name="stream" type="java.io.InputStream">
+</parameter>
+<parameter name="digest" type="java.security.MessageDigest">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMessageDigest" native="false" return="java.security.MessageDigest" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="on" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="on" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMessageDigest" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="digest" type="java.security.MessageDigest">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="digest" static="false" transient="false" type="java.security.MessageDigest" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.FilterOutputStream" final="false" name="DigestOutputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DigestOutputStream" static="false" type="java.security.DigestOutputStream" visibility="public">
+<parameter name="stream" type="java.io.OutputStream">
+</parameter>
+<parameter name="digest" type="java.security.MessageDigest">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMessageDigest" native="false" return="java.security.MessageDigest" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="on" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="on" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMessageDigest" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="digest" type="java.security.MessageDigest">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="digest" static="false" transient="false" type="java.security.MessageDigest" visibility="protected" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DomainCombiner" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="combine" native="false" return="java.security.ProtectionDomain[]" static="false" synchronized="false" visibility="public">
+<parameter name="current" type="java.security.ProtectionDomain[]">
+</parameter>
+<parameter name="assigned" type="java.security.ProtectionDomain[]">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Exception" final="false" name="GeneralSecurityException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="GeneralSecurityException" static="false" type="java.security.GeneralSecurityException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="GeneralSecurityException" static="false" type="java.security.GeneralSecurityException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="GeneralSecurityException" static="false" type="java.security.GeneralSecurityException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="GeneralSecurityException" static="false" type="java.security.GeneralSecurityException" visibility="public">
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Guard" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="checkGuard" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="object" type="java.lang.Object">
+</parameter>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="GuardedObject" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="GuardedObject" static="false" type="java.security.GuardedObject" visibility="public">
+<parameter name="object" type="java.lang.Object">
+</parameter>
+<parameter name="guard" type="java.security.Guard">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getObject" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="deprecated" extends="java.lang.Object" final="false" name="Identity" static="false" visibility="public">
+<implements name="java.security.Principal">
+</implements>
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Identity" static="false" type="java.security.Identity" visibility="protected">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Identity" static="false" type="java.security.Identity" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Identity" static="false" type="java.security.Identity" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="scope" type="java.security.IdentityScope">
+</parameter>
+<exception name="KeyManagementException" type="java.security.KeyManagementException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addCertificate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="certificate" type="java.security.Certificate">
+</parameter>
+<exception name="KeyManagementException" type="java.security.KeyManagementException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="certificates" native="false" return="java.security.Certificate[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="equals" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInfo" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPublicKey" native="false" return="java.security.PublicKey" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getScope" native="false" return="java.security.IdentityScope" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="identityEquals" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="identity" type="java.security.Identity">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeCertificate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="certificate" type="java.security.Certificate">
+</parameter>
+<exception name="KeyManagementException" type="java.security.KeyManagementException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setInfo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="info" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPublicKey" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.security.PublicKey">
+</parameter>
+<exception name="KeyManagementException" type="java.security.KeyManagementException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="detailed" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="deprecated" extends="java.security.Identity" final="false" name="IdentityScope" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IdentityScope" static="false" type="java.security.IdentityScope" visibility="protected">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="IdentityScope" static="false" type="java.security.IdentityScope" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="IdentityScope" static="false" type="java.security.IdentityScope" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="scope" type="java.security.IdentityScope">
+</parameter>
+<exception name="KeyManagementException" type="java.security.KeyManagementException">
+</exception>
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="addIdentity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="identity" type="java.security.Identity">
+</parameter>
+<exception name="KeyManagementException" type="java.security.KeyManagementException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getIdentity" native="false" return="java.security.Identity" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIdentity" native="false" return="java.security.Identity" static="false" synchronized="false" visibility="public">
+<parameter name="principal" type="java.security.Principal">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getIdentity" native="false" return="java.security.Identity" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.security.PublicKey">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSystemScope" native="false" return="java.security.IdentityScope" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="identities" native="false" return="java.util.Enumeration&lt;java.security.Identity&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeIdentity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="identity" type="java.security.Identity">
+</parameter>
+<exception name="KeyManagementException" type="java.security.KeyManagementException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSystemScope" native="false" return="void" static="true" synchronized="false" visibility="protected">
+<parameter name="scope" type="java.security.IdentityScope">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="size" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.GeneralSecurityException" final="false" name="InvalidAlgorithmParameterException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="InvalidAlgorithmParameterException" static="false" type="java.security.InvalidAlgorithmParameterException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InvalidAlgorithmParameterException" static="false" type="java.security.InvalidAlgorithmParameterException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InvalidAlgorithmParameterException" static="false" type="java.security.InvalidAlgorithmParameterException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InvalidAlgorithmParameterException" static="false" type="java.security.InvalidAlgorithmParameterException" visibility="public">
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.KeyException" final="false" name="InvalidKeyException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="InvalidKeyException" static="false" type="java.security.InvalidKeyException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InvalidKeyException" static="false" type="java.security.InvalidKeyException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InvalidKeyException" static="false" type="java.security.InvalidKeyException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InvalidKeyException" static="false" type="java.security.InvalidKeyException" visibility="public">
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.IllegalArgumentException" final="false" name="InvalidParameterException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="InvalidParameterException" static="false" type="java.security.InvalidParameterException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InvalidParameterException" static="false" type="java.security.InvalidParameterException" visibility="public">
+</constructor>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Key" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEncoded" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getFormat" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="serialVersionUID" static="true" transient="false" type="long" value="6603384152749567654L" visibility="public" volatile="false">
+</field>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.security.GeneralSecurityException" final="false" name="KeyException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="KeyException" static="false" type="java.security.KeyException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="KeyException" static="false" type="java.security.KeyException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="KeyException" static="false" type="java.security.KeyException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="KeyException" static="false" type="java.security.KeyException" visibility="public">
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="KeyFactory" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="KeyFactory" static="false" type="java.security.KeyFactory" visibility="protected">
+<parameter name="keyFacSpi" type="java.security.KeyFactorySpi">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="generatePrivate" native="false" return="java.security.PrivateKey" static="false" synchronized="false" visibility="public">
+<parameter name="keySpec" type="java.security.spec.KeySpec">
+</parameter>
+<exception name="InvalidKeySpecException" type="java.security.spec.InvalidKeySpecException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="generatePublic" native="false" return="java.security.PublicKey" static="false" synchronized="false" visibility="public">
+<parameter name="keySpec" type="java.security.spec.KeySpec">
+</parameter>
+<exception name="InvalidKeySpecException" type="java.security.spec.InvalidKeySpecException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.KeyFactory" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.KeyFactory" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.KeyFactory" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getKeySpec" native="false" return="T" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="keySpec" type="java.lang.Class&lt;T&gt;">
+</parameter>
+<exception name="InvalidKeySpecException" type="java.security.spec.InvalidKeySpecException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProvider" native="false" return="java.security.Provider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="translateKey" native="false" return="java.security.Key" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="KeyFactorySpi" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="KeyFactorySpi" static="false" type="java.security.KeyFactorySpi" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGeneratePrivate" native="false" return="java.security.PrivateKey" static="false" synchronized="false" visibility="protected">
+<parameter name="keySpec" type="java.security.spec.KeySpec">
+</parameter>
+<exception name="InvalidKeySpecException" type="java.security.spec.InvalidKeySpecException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGeneratePublic" native="false" return="java.security.PublicKey" static="false" synchronized="false" visibility="protected">
+<parameter name="keySpec" type="java.security.spec.KeySpec">
+</parameter>
+<exception name="InvalidKeySpecException" type="java.security.spec.InvalidKeySpecException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetKeySpec" native="false" return="T" static="false" synchronized="false" visibility="protected">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="keySpec" type="java.lang.Class&lt;T&gt;">
+</parameter>
+<exception name="InvalidKeySpecException" type="java.security.spec.InvalidKeySpecException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineTranslateKey" native="false" return="java.security.Key" static="false" synchronized="false" visibility="protected">
+<parameter name="key" type="java.security.Key">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.KeyException" final="false" name="KeyManagementException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="KeyManagementException" static="false" type="java.security.KeyManagementException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="KeyManagementException" static="false" type="java.security.KeyManagementException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="KeyManagementException" static="false" type="java.security.KeyManagementException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="KeyManagementException" static="false" type="java.security.KeyManagementException" visibility="public">
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="KeyPair" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="KeyPair" static="false" type="java.security.KeyPair" visibility="public">
+<parameter name="publicKey" type="java.security.PublicKey">
+</parameter>
+<parameter name="privateKey" type="java.security.PrivateKey">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrivate" native="false" return="java.security.PrivateKey" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPublic" native="false" return="java.security.PublicKey" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.security.KeyPairGeneratorSpi" final="false" name="KeyPairGenerator" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="KeyPairGenerator" static="false" type="java.security.KeyPairGenerator" visibility="protected">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="genKeyPair" native="false" return="java.security.KeyPair" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="generateKeyPair" native="false" return="java.security.KeyPair" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.KeyPairGenerator" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.KeyPairGenerator" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.KeyPairGenerator" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProvider" native="false" return="java.security.Provider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="initialize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="keysize" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="initialize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="param" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="initialize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="keysize" type="int">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="KeyPairGeneratorSpi" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="KeyPairGeneratorSpi" static="false" type="java.security.KeyPairGeneratorSpi" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="generateKeyPair" native="false" return="java.security.KeyPair" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="initialize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="keysize" type="int">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="initialize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="params" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="KeyRep" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="KeyRep" static="false" type="java.security.KeyRep" visibility="public">
+<parameter name="type" type="java.security.KeyRep.Type">
+</parameter>
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="format" type="java.lang.String">
+</parameter>
+<parameter name="encoded" type="byte[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="readResolve" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="protected">
+<exception name="ObjectStreamException" type="java.io.ObjectStreamException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" final="true" name="KeyRep.Type" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="java.security.KeyRep.Type" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="values" native="false" return="java.security.KeyRep.Type[]" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="KeyStore" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="KeyStore" static="false" type="java.security.KeyStore" visibility="protected">
+<parameter name="keyStoreSpi" type="java.security.KeyStoreSpi">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<parameter name="type" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="aliases" native="false" return="java.util.Enumeration&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="containsAlias" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="deleteEntry" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="entryInstanceOf" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<parameter name="entryClass" type="java.lang.Class&lt;? extends java.security.KeyStore.Entry&gt;">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getCertificate" native="false" return="java.security.cert.Certificate" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getCertificateAlias" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="cert" type="java.security.cert.Certificate">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getCertificateChain" native="false" return="java.security.cert.Certificate[]" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getCreationDate" native="false" return="java.util.Date" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getDefaultType" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getEntry" native="false" return="java.security.KeyStore.Entry" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<parameter name="param" type="java.security.KeyStore.ProtectionParameter">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="UnrecoverableEntryException" type="java.security.UnrecoverableEntryException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.KeyStore" static="true" synchronized="false" visibility="public">
+<parameter name="type" type="java.lang.String">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.KeyStore" static="true" synchronized="false" visibility="public">
+<parameter name="type" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.lang.String">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.KeyStore" static="true" synchronized="false" visibility="public">
+<parameter name="type" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getKey" native="false" return="java.security.Key" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<parameter name="password" type="char[]">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="UnrecoverableKeyException" type="java.security.UnrecoverableKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProvider" native="false" return="java.security.Provider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isCertificateEntry" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="isKeyEntry" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="load" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="stream" type="java.io.InputStream">
+</parameter>
+<parameter name="password" type="char[]">
+</parameter>
+<exception name="CertificateException" type="java.security.cert.CertificateException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="load" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="param" type="java.security.KeyStore.LoadStoreParameter">
+</parameter>
+<exception name="CertificateException" type="java.security.cert.CertificateException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setCertificateEntry" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<parameter name="cert" type="java.security.cert.Certificate">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setEntry" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<parameter name="entry" type="java.security.KeyStore.Entry">
+</parameter>
+<parameter name="param" type="java.security.KeyStore.ProtectionParameter">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setKeyEntry" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="password" type="char[]">
+</parameter>
+<parameter name="chain" type="java.security.cert.Certificate[]">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setKeyEntry" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<parameter name="key" type="byte[]">
+</parameter>
+<parameter name="chain" type="java.security.cert.Certificate[]">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="size" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="store" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="stream" type="java.io.OutputStream">
+</parameter>
+<parameter name="password" type="char[]">
+</parameter>
+<exception name="CertificateException" type="java.security.cert.CertificateException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="store" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="param" type="java.security.KeyStore.LoadStoreParameter">
+</parameter>
+<exception name="CertificateException" type="java.security.cert.CertificateException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="KeyStore.Builder" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="KeyStore.Builder" static="false" type="java.security.KeyStore.Builder" visibility="protected">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="getKeyStore" native="false" return="java.security.KeyStore" static="false" synchronized="false" visibility="public">
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getProtectionParameter" native="false" return="java.security.KeyStore.ProtectionParameter" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="java.security.KeyStore.Builder" static="true" synchronized="false" visibility="public">
+<parameter name="keyStore" type="java.security.KeyStore">
+</parameter>
+<parameter name="protectionParameter" type="java.security.KeyStore.ProtectionParameter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="java.security.KeyStore.Builder" static="true" synchronized="false" visibility="public">
+<parameter name="type" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<parameter name="file" type="java.io.File">
+</parameter>
+<parameter name="protectionParameter" type="java.security.KeyStore.ProtectionParameter">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="java.security.KeyStore.Builder" static="true" synchronized="false" visibility="public">
+<parameter name="type" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<parameter name="protectionParameter" type="java.security.KeyStore.ProtectionParameter">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="KeyStore.CallbackHandlerProtection" static="true" visibility="public">
+<implements name="java.security.KeyStore.ProtectionParameter">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="KeyStore.CallbackHandlerProtection" static="false" type="java.security.KeyStore.CallbackHandlerProtection" visibility="public">
+<parameter name="handler" type="javax.security.auth.callback.CallbackHandler">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCallbackHandler" native="false" return="javax.security.auth.callback.CallbackHandler" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="KeyStore.Entry" static="true" visibility="public">
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="KeyStore.LoadStoreParameter" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getProtectionParameter" native="false" return="java.security.KeyStore.ProtectionParameter" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="KeyStore.PasswordProtection" static="true" visibility="public">
+<implements name="javax.security.auth.Destroyable">
+</implements>
+<implements name="java.security.KeyStore.ProtectionParameter">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="KeyStore.PasswordProtection" static="false" type="java.security.KeyStore.PasswordProtection" visibility="public">
+<parameter name="password" type="char[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="destroy" native="false" return="void" static="false" synchronized="true" visibility="public">
+<exception name="DestroyFailedException" type="javax.security.auth.DestroyFailedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPassword" native="false" return="char[]" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isDestroyed" native="false" return="boolean" static="false" synchronized="true" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="KeyStore.PrivateKeyEntry" static="true" visibility="public">
+<implements name="java.security.KeyStore.Entry">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="KeyStore.PrivateKeyEntry" static="false" type="java.security.KeyStore.PrivateKeyEntry" visibility="public">
+<parameter name="privateKey" type="java.security.PrivateKey">
+</parameter>
+<parameter name="chain" type="java.security.cert.Certificate[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCertificate" native="false" return="java.security.cert.Certificate" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCertificateChain" native="false" return="java.security.cert.Certificate[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrivateKey" native="false" return="java.security.PrivateKey" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="KeyStore.ProtectionParameter" static="true" visibility="public">
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="KeyStore.SecretKeyEntry" static="true" visibility="public">
+<implements name="java.security.KeyStore.Entry">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="KeyStore.SecretKeyEntry" static="false" type="java.security.KeyStore.SecretKeyEntry" visibility="public">
+<parameter name="secretKey" type="javax.crypto.SecretKey">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSecretKey" native="false" return="javax.crypto.SecretKey" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="KeyStore.TrustedCertificateEntry" static="true" visibility="public">
+<implements name="java.security.KeyStore.Entry">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="KeyStore.TrustedCertificateEntry" static="false" type="java.security.KeyStore.TrustedCertificateEntry" visibility="public">
+<parameter name="trustCertificate" type="java.security.cert.Certificate">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTrustedCertificate" native="false" return="java.security.cert.Certificate" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.GeneralSecurityException" final="false" name="KeyStoreException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="KeyStoreException" static="false" type="java.security.KeyStoreException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="KeyStoreException" static="false" type="java.security.KeyStoreException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="KeyStoreException" static="false" type="java.security.KeyStoreException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="KeyStoreException" static="false" type="java.security.KeyStoreException" visibility="public">
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="KeyStoreSpi" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="KeyStoreSpi" static="false" type="java.security.KeyStoreSpi" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineAliases" native="false" return="java.util.Enumeration&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineContainsAlias" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineDeleteEntry" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineEntryInstanceOf" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<parameter name="entryClass" type="java.lang.Class&lt;? extends java.security.KeyStore.Entry&gt;">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetCertificate" native="false" return="java.security.cert.Certificate" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetCertificateAlias" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="cert" type="java.security.cert.Certificate">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetCertificateChain" native="false" return="java.security.cert.Certificate[]" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetCreationDate" native="false" return="java.util.Date" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineGetEntry" native="false" return="java.security.KeyStore.Entry" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<parameter name="protParam" type="java.security.KeyStore.ProtectionParameter">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="UnrecoverableEntryException" type="java.security.UnrecoverableEntryException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGetKey" native="false" return="java.security.Key" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<parameter name="password" type="char[]">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="UnrecoverableKeyException" type="java.security.UnrecoverableKeyException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineIsCertificateEntry" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineIsKeyEntry" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineLoad" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="stream" type="java.io.InputStream">
+</parameter>
+<parameter name="password" type="char[]">
+</parameter>
+<exception name="CertificateException" type="java.security.cert.CertificateException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineLoad" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="param" type="java.security.KeyStore.LoadStoreParameter">
+</parameter>
+<exception name="CertificateException" type="java.security.cert.CertificateException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineSetCertificateEntry" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<parameter name="cert" type="java.security.cert.Certificate">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineSetEntry" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<parameter name="entry" type="java.security.KeyStore.Entry">
+</parameter>
+<parameter name="protParam" type="java.security.KeyStore.ProtectionParameter">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineSetKeyEntry" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<parameter name="key" type="java.security.Key">
+</parameter>
+<parameter name="password" type="char[]">
+</parameter>
+<parameter name="chain" type="java.security.cert.Certificate[]">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineSetKeyEntry" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alias" type="java.lang.String">
+</parameter>
+<parameter name="key" type="byte[]">
+</parameter>
+<parameter name="chain" type="java.security.cert.Certificate[]">
+</parameter>
+<exception name="KeyStoreException" type="java.security.KeyStoreException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineStore" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="stream" type="java.io.OutputStream">
+</parameter>
+<parameter name="password" type="char[]">
+</parameter>
+<exception name="CertificateException" type="java.security.cert.CertificateException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineStore" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="param" type="java.security.KeyStore.LoadStoreParameter">
+</parameter>
+<exception name="CertificateException" type="java.security.cert.CertificateException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.security.MessageDigestSpi" final="false" name="MessageDigest" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="MessageDigest" static="false" type="java.security.MessageDigest" visibility="protected">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="digest" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="digest" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="buf" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+<exception name="DigestException" type="java.security.DigestException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="digest" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getDigestLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.MessageDigest" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.MessageDigest" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.MessageDigest" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProvider" native="false" return="java.security.Provider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isEqual" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="digesta" type="byte[]">
+</parameter>
+<parameter name="digestb" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="arg0" type="byte">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="java.nio.ByteBuffer">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="MessageDigestSpi" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="MessageDigestSpi" static="false" type="java.security.MessageDigestSpi" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineDigest" native="false" return="byte[]" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineDigest" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="buf" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+<exception name="DigestException" type="java.security.DigestException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineGetDigestLength" native="false" return="int" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineReset" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineUpdate" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="input" type="byte">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineUpdate" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="input" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineUpdate" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="input" type="java.nio.ByteBuffer">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.GeneralSecurityException" final="false" name="NoSuchAlgorithmException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="NoSuchAlgorithmException" static="false" type="java.security.NoSuchAlgorithmException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="NoSuchAlgorithmException" static="false" type="java.security.NoSuchAlgorithmException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="NoSuchAlgorithmException" static="false" type="java.security.NoSuchAlgorithmException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="NoSuchAlgorithmException" static="false" type="java.security.NoSuchAlgorithmException" visibility="public">
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.GeneralSecurityException" final="false" name="NoSuchProviderException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="NoSuchProviderException" static="false" type="java.security.NoSuchProviderException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="NoSuchProviderException" static="false" type="java.security.NoSuchProviderException" visibility="public">
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Permission" static="false" visibility="public">
+<implements name="java.security.Guard">
+</implements>
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Permission" static="false" type="java.security.Permission" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="checkGuard" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="java.lang.Object">
+</parameter>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="equals" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getActions" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="hashCode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="implies" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="permission" type="java.security.Permission">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newPermissionCollection" native="false" return="java.security.PermissionCollection" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="PermissionCollection" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="PermissionCollection" static="false" type="java.security.PermissionCollection" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="add" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="permission" type="java.security.Permission">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="elements" native="false" return="java.util.Enumeration&lt;java.security.Permission&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="implies" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="permission" type="java.security.Permission">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isReadOnly" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReadOnly" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.PermissionCollection" final="true" name="Permissions" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Permissions" static="false" type="java.security.Permissions" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="add" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="permission" type="java.security.Permission">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="elements" native="false" return="java.util.Enumeration&lt;java.security.Permission&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="implies" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="permission" type="java.security.Permission">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Policy" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Policy" static="false" type="java.security.Policy" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.Policy" static="true" synchronized="false" visibility="public">
+<parameter name="type" type="java.lang.String">
+</parameter>
+<parameter name="params" type="java.security.Policy.Parameters">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.Policy" static="true" synchronized="false" visibility="public">
+<parameter name="type" type="java.lang.String">
+</parameter>
+<parameter name="params" type="java.security.Policy.Parameters">
+</parameter>
+<parameter name="provider" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.Policy" static="true" synchronized="false" visibility="public">
+<parameter name="type" type="java.lang.String">
+</parameter>
+<parameter name="params" type="java.security.Policy.Parameters">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParameters" native="false" return="java.security.Policy.Parameters" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPermissions" native="false" return="java.security.PermissionCollection" static="false" synchronized="false" visibility="public">
+<parameter name="cs" type="java.security.CodeSource">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPermissions" native="false" return="java.security.PermissionCollection" static="false" synchronized="false" visibility="public">
+<parameter name="domain" type="java.security.ProtectionDomain">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPolicy" native="false" return="java.security.Policy" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProvider" native="false" return="java.security.Provider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="implies" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="domain" type="java.security.ProtectionDomain">
+</parameter>
+<parameter name="permission" type="java.security.Permission">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="refresh" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPolicy" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="policy" type="java.security.Policy">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="UNSUPPORTED_EMPTY_COLLECTION" static="true" transient="false" type="java.security.PermissionCollection" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Policy.Parameters" static="true" visibility="public">
+</interface>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="PolicySpi" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PolicySpi" static="false" type="java.security.PolicySpi" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineGetPermissions" native="false" return="java.security.PermissionCollection" static="false" synchronized="false" visibility="protected">
+<parameter name="codesource" type="java.security.CodeSource">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineGetPermissions" native="false" return="java.security.PermissionCollection" static="false" synchronized="false" visibility="protected">
+<parameter name="domain" type="java.security.ProtectionDomain">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineImplies" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="domain" type="java.security.ProtectionDomain">
+</parameter>
+<parameter name="permission" type="java.security.Permission">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineRefresh" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Principal" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="equals" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="hashCode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="toString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PrivateKey" static="false" visibility="public">
+<implements name="java.security.Key">
+</implements>
+<field deprecated="not deprecated" final="true" name="serialVersionUID" static="true" transient="false" type="long" value="6034044314589513430L" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PrivilegedAction" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="run" native="false" return="T" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Exception" final="false" name="PrivilegedActionException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PrivilegedActionException" static="false" type="java.security.PrivilegedActionException" visibility="public">
+<parameter name="ex" type="java.lang.Exception">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getException" native="false" return="java.lang.Exception" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PrivilegedExceptionAction" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="run" native="false" return="T" static="false" synchronized="false" visibility="public">
+<exception name="Exception" type="java.lang.Exception">
+</exception>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ProtectionDomain" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ProtectionDomain" static="false" type="java.security.ProtectionDomain" visibility="public">
+<parameter name="cs" type="java.security.CodeSource">
+</parameter>
+<parameter name="permissions" type="java.security.PermissionCollection">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ProtectionDomain" static="false" type="java.security.ProtectionDomain" visibility="public">
+<parameter name="cs" type="java.security.CodeSource">
+</parameter>
+<parameter name="permissions" type="java.security.PermissionCollection">
+</parameter>
+<parameter name="cl" type="java.lang.ClassLoader">
+</parameter>
+<parameter name="principals" type="java.security.Principal[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="getClassLoader" native="false" return="java.lang.ClassLoader" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getCodeSource" native="false" return="java.security.CodeSource" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getPermissions" native="false" return="java.security.PermissionCollection" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getPrincipals" native="false" return="java.security.Principal[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="implies" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="permission" type="java.security.Permission">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.util.Properties" final="false" name="Provider" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Provider" static="false" type="java.security.Provider" visibility="protected">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="version" type="double">
+</parameter>
+<parameter name="info" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInfo" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getService" native="false" return="java.security.Provider.Service" static="false" synchronized="true" visibility="public">
+<parameter name="type" type="java.lang.String">
+</parameter>
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getServices" native="false" return="java.util.Set&lt;java.security.Provider.Service&gt;" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVersion" native="false" return="double" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="put" native="false" return="java.lang.Object" static="false" synchronized="true" visibility="public">
+<parameter name="key" type="java.lang.Object">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putAll" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="t" type="java.util.Map&lt;?, ?&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putService" native="false" return="void" static="false" synchronized="true" visibility="protected">
+<parameter name="s" type="java.security.Provider.Service">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeService" native="false" return="void" static="false" synchronized="true" visibility="protected">
+<parameter name="s" type="java.security.Provider.Service">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Provider.Service" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Provider.Service" static="false" type="java.security.Provider.Service" visibility="public">
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<parameter name="type" type="java.lang.String">
+</parameter>
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="className" type="java.lang.String">
+</parameter>
+<parameter name="aliases" type="java.util.List&lt;java.lang.String&gt;">
+</parameter>
+<parameter name="attributes" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAttribute" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getClassName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProvider" native="false" return="java.security.Provider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newInstance" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="constructorParameter" type="java.lang.Object">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="supportsParameter" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="parameter" type="java.lang.Object">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.RuntimeException" final="false" name="ProviderException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ProviderException" static="false" type="java.security.ProviderException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ProviderException" static="false" type="java.security.ProviderException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ProviderException" static="false" type="java.security.ProviderException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ProviderException" static="false" type="java.security.ProviderException" visibility="public">
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PublicKey" static="false" visibility="public">
+<implements name="java.security.Key">
+</implements>
+<field deprecated="not deprecated" final="true" name="serialVersionUID" static="true" transient="false" type="long" value="7187392471159151072L" visibility="public" volatile="false">
+</field>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.ClassLoader" final="false" name="SecureClassLoader" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SecureClassLoader" static="false" type="java.security.SecureClassLoader" visibility="protected">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SecureClassLoader" static="false" type="java.security.SecureClassLoader" visibility="protected">
+<parameter name="parent" type="java.lang.ClassLoader">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="defineClass" native="false" return="java.lang.Class&lt;?&gt;" static="false" synchronized="false" visibility="protected">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="b" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+<parameter name="cs" type="java.security.CodeSource">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="defineClass" native="false" return="java.lang.Class&lt;?&gt;" static="false" synchronized="false" visibility="protected">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="b" type="java.nio.ByteBuffer">
+</parameter>
+<parameter name="cs" type="java.security.CodeSource">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPermissions" native="false" return="java.security.PermissionCollection" static="false" synchronized="false" visibility="protected">
+<parameter name="codesource" type="java.security.CodeSource">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.util.Random" final="false" name="SecureRandom" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SecureRandom" static="false" type="java.security.SecureRandom" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SecureRandom" static="false" type="java.security.SecureRandom" visibility="public">
+<parameter name="seed" type="byte[]">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SecureRandom" static="false" type="java.security.SecureRandom" visibility="protected">
+<parameter name="secureRandomSpi" type="java.security.SecureRandomSpi">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="generateSeed" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<parameter name="numBytes" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.SecureRandom" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.SecureRandom" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.SecureRandom" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProvider" native="false" return="java.security.Provider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSeed" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="numBytes" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="next" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="numBits" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSeed" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="seed" type="byte[]">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SecureRandomSpi" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="SecureRandomSpi" static="false" type="java.security.SecureRandomSpi" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineGenerateSeed" native="false" return="byte[]" static="false" synchronized="false" visibility="protected">
+<parameter name="numBytes" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineNextBytes" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="bytes" type="byte[]">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineSetSeed" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="seed" type="byte[]">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="Security" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="addProvider" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+</method>
+<method abstract="false" deprecated="deprecated" final="false" name="getAlgorithmProperty" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="algName" type="java.lang.String">
+</parameter>
+<parameter name="propName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAlgorithms" native="false" return="java.util.Set&lt;java.lang.String&gt;" static="true" synchronized="false" visibility="public">
+<parameter name="serviceName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProperty" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProvider" native="false" return="java.security.Provider" static="true" synchronized="true" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProviders" native="false" return="java.security.Provider[]" static="true" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProviders" native="false" return="java.security.Provider[]" static="true" synchronized="false" visibility="public">
+<parameter name="filter" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProviders" native="false" return="java.security.Provider[]" static="true" synchronized="true" visibility="public">
+<parameter name="filter" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="insertProviderAt" native="false" return="int" static="true" synchronized="true" visibility="public">
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<parameter name="position" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeProvider" native="false" return="void" static="true" synchronized="true" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setProperty" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="datnum" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.BasicPermission" final="true" name="SecurityPermission" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SecurityPermission" static="false" type="java.security.SecurityPermission" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SecurityPermission" static="false" type="java.security.SecurityPermission" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="action" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.security.SignatureSpi" final="false" name="Signature" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Signature" static="false" type="java.security.Signature" visibility="protected">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.Signature" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.Signature" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.lang.String">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+<exception name="NoSuchProviderException" type="java.security.NoSuchProviderException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="java.security.Signature" static="true" synchronized="false" visibility="public">
+<parameter name="algorithm" type="java.lang.String">
+</parameter>
+<parameter name="provider" type="java.security.Provider">
+</parameter>
+<exception name="NoSuchAlgorithmException" type="java.security.NoSuchAlgorithmException">
+</exception>
+</method>
+<method abstract="false" deprecated="deprecated" final="true" name="getParameter" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="param" type="java.lang.String">
+</parameter>
+<exception name="InvalidParameterException" type="java.security.InvalidParameterException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getParameters" native="false" return="java.security.AlgorithmParameters" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getProvider" native="false" return="java.security.Provider" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="initSign" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="privateKey" type="java.security.PrivateKey">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="initSign" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="privateKey" type="java.security.PrivateKey">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="initVerify" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="publicKey" type="java.security.PublicKey">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="initVerify" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="certificate" type="java.security.cert.Certificate">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="deprecated" final="true" name="setParameter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="param" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+<exception name="InvalidParameterException" type="java.security.InvalidParameterException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setParameter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="params" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="sign" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+<exception name="SignatureException" type="java.security.SignatureException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="sign" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="outbuf" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+<exception name="SignatureException" type="java.security.SignatureException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="b" type="byte">
+</parameter>
+<exception name="SignatureException" type="java.security.SignatureException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<exception name="SignatureException" type="java.security.SignatureException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+<exception name="SignatureException" type="java.security.SignatureException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="java.nio.ByteBuffer">
+</parameter>
+<exception name="SignatureException" type="java.security.SignatureException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="verify" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="signature" type="byte[]">
+</parameter>
+<exception name="SignatureException" type="java.security.SignatureException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="verify" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="signature" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<exception name="SignatureException" type="java.security.SignatureException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="SIGN" static="true" transient="false" type="int" value="2" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNINITIALIZED" static="true" transient="false" type="int" value="0" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERIFY" static="true" transient="false" type="int" value="3" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="state" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.GeneralSecurityException" final="false" name="SignatureException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SignatureException" static="false" type="java.security.SignatureException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SignatureException" static="false" type="java.security.SignatureException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SignatureException" static="false" type="java.security.SignatureException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SignatureException" static="false" type="java.security.SignatureException" visibility="public">
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SignatureSpi" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SignatureSpi" static="false" type="java.security.SignatureSpi" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
+<method abstract="true" deprecated="deprecated" final="false" name="engineGetParameter" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="protected">
+<parameter name="param" type="java.lang.String">
+</parameter>
+<exception name="InvalidParameterException" type="java.security.InvalidParameterException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineGetParameters" native="false" return="java.security.AlgorithmParameters" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInitSign" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="privateKey" type="java.security.PrivateKey">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineInitSign" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="privateKey" type="java.security.PrivateKey">
+</parameter>
+<parameter name="random" type="java.security.SecureRandom">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineInitVerify" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="publicKey" type="java.security.PublicKey">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+</method>
+<method abstract="true" deprecated="deprecated" final="false" name="engineSetParameter" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="param" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+<exception name="InvalidParameterException" type="java.security.InvalidParameterException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineSetParameter" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="params" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<exception name="InvalidAlgorithmParameterException" type="java.security.InvalidAlgorithmParameterException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineSign" native="false" return="byte[]" static="false" synchronized="false" visibility="protected">
+<exception name="SignatureException" type="java.security.SignatureException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineSign" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="outbuf" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+<exception name="SignatureException" type="java.security.SignatureException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineUpdate" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="b" type="byte">
+</parameter>
+<exception name="SignatureException" type="java.security.SignatureException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineUpdate" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="b" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="len" type="int">
+</parameter>
+<exception name="SignatureException" type="java.security.SignatureException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineUpdate" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="input" type="java.nio.ByteBuffer">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="engineVerify" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="sigBytes" type="byte[]">
+</parameter>
+<exception name="SignatureException" type="java.security.SignatureException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="engineVerify" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="sigBytes" type="byte[]">
+</parameter>
+<parameter name="offset" type="int">
+</parameter>
+<parameter name="length" type="int">
+</parameter>
+<exception name="SignatureException" type="java.security.SignatureException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="false" name="appRandom" static="false" transient="false" type="java.security.SecureRandom" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="SignedObject" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="SignedObject" static="false" type="java.security.SignedObject" visibility="public">
+<parameter name="object" type="java.io.Serializable">
+</parameter>
+<parameter name="signingKey" type="java.security.PrivateKey">
+</parameter>
+<parameter name="signingEngine" type="java.security.Signature">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+<exception name="SignatureException" type="java.security.SignatureException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getObject" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="ClassNotFoundException" type="java.lang.ClassNotFoundException">
+</exception>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSignature" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="verify" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="verificationKey" type="java.security.PublicKey">
+</parameter>
+<parameter name="verificationEngine" type="java.security.Signature">
+</parameter>
+<exception name="InvalidKeyException" type="java.security.InvalidKeyException">
+</exception>
+<exception name="SignatureException" type="java.security.SignatureException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="deprecated" extends="java.security.Identity" final="false" name="Signer" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Signer" static="false" type="java.security.Signer" visibility="protected">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Signer" static="false" type="java.security.Signer" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Signer" static="false" type="java.security.Signer" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="scope" type="java.security.IdentityScope">
+</parameter>
+<exception name="KeyManagementException" type="java.security.KeyManagementException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrivateKey" native="false" return="java.security.PrivateKey" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setKeyPair" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="pair" type="java.security.KeyPair">
+</parameter>
+<exception name="InvalidParameterException" type="java.security.InvalidParameterException">
+</exception>
+<exception name="KeyException" type="java.security.KeyException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="Timestamp" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Timestamp" static="false" type="java.security.Timestamp" visibility="public">
+<parameter name="timestamp" type="java.util.Date">
+</parameter>
+<parameter name="signerCertPath" type="java.security.cert.CertPath">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSignerCertPath" native="false" return="java.security.cert.CertPath" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTimestamp" native="false" return="java.util.Date" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.GeneralSecurityException" final="false" name="UnrecoverableEntryException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="UnrecoverableEntryException" static="false" type="java.security.UnrecoverableEntryException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="UnrecoverableEntryException" static="false" type="java.security.UnrecoverableEntryException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.UnrecoverableEntryException" final="false" name="UnrecoverableKeyException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="UnrecoverableKeyException" static="false" type="java.security.UnrecoverableKeyException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="UnrecoverableKeyException" static="false" type="java.security.UnrecoverableKeyException" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.Permission" final="true" name="UnresolvedPermission" static="false" visibility="public">
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="UnresolvedPermission" static="false" type="java.security.UnresolvedPermission" visibility="public">
+<parameter name="type" type="java.lang.String">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="actions" type="java.lang.String">
+</parameter>
+<parameter name="certs" type="java.security.cert.Certificate[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="equals" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="obj" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getActions" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUnresolvedActions" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUnresolvedCerts" native="false" return="java.security.cert.Certificate[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUnresolvedName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUnresolvedType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hashCode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="implies" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="permission" type="java.security.Permission">
+</parameter>
+</method>
+</class>
+</package></api>

@@ -1,0 +1,784 @@
+<?xml version="1.0" ?><api><package name="android.view.animation">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AccelerateDecelerateInterpolator" static="false" visibility="public">
+<implements name="android.view.animation.Interpolator">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AccelerateDecelerateInterpolator" static="false" type="android.view.animation.AccelerateDecelerateInterpolator" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AccelerateDecelerateInterpolator" static="false" type="android.view.animation.AccelerateDecelerateInterpolator" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInterpolation" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="float">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AccelerateInterpolator" static="false" visibility="public">
+<implements name="android.view.animation.Interpolator">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AccelerateInterpolator" static="false" type="android.view.animation.AccelerateInterpolator" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AccelerateInterpolator" static="false" type="android.view.animation.AccelerateInterpolator" visibility="public">
+<parameter name="factor" type="float">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AccelerateInterpolator" static="false" type="android.view.animation.AccelerateInterpolator" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInterpolation" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="float">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.view.animation.Animation" final="false" name="AlphaAnimation" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AlphaAnimation" static="false" type="android.view.animation.AlphaAnimation" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AlphaAnimation" static="false" type="android.view.animation.AlphaAnimation" visibility="public">
+<parameter name="fromAlpha" type="float">
+</parameter>
+<parameter name="toAlpha" type="float">
+</parameter>
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Animation" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Animation" static="false" type="android.view.animation.Animation" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Animation" static="false" type="android.view.animation.Animation" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="applyTransformation" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="interpolatedTime" type="float">
+</parameter>
+<parameter name="t" type="android.view.animation.Transformation">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="cancel" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="computeDurationHint" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ensureInterpolator" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDetachWallpaper" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDuration" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFillAfter" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFillBefore" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInterpolator" native="false" return="android.view.animation.Interpolator" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRepeatCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRepeatMode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStartOffset" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStartTime" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTransformation" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="currentTime" type="long">
+</parameter>
+<parameter name="outTransformation" type="android.view.animation.Transformation">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getZAdjustment" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasEnded" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasStarted" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="initialize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+<parameter name="parentWidth" type="int">
+</parameter>
+<parameter name="parentHeight" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isFillEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isInitialized" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resolveSize" native="false" return="float" static="false" synchronized="false" visibility="protected">
+<parameter name="type" type="int">
+</parameter>
+<parameter name="value" type="float">
+</parameter>
+<parameter name="size" type="int">
+</parameter>
+<parameter name="parentSize" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="restrictDuration" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="durationMillis" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="scaleCurrentDuration" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="scale" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAnimationListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.view.animation.Animation.AnimationListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDetachWallpaper" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="detachWallpaper" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDuration" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="durationMillis" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFillAfter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="fillAfter" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFillBefore" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="fillBefore" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFillEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="fillEnabled" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setInterpolator" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="resID" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setInterpolator" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="android.view.animation.Interpolator">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRepeatCount" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="repeatCount" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRepeatMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="repeatMode" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStartOffset" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="startOffset" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStartTime" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="startTimeMillis" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setZAdjustment" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="zAdjustment" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="start" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startNow" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="willChangeBounds" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="willChangeTransformationMatrix" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="ABSOLUTE" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INFINITE" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RELATIVE_TO_PARENT" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RELATIVE_TO_SELF" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RESTART" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REVERSE" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="START_ON_FIRST_FRAME" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ZORDER_BOTTOM" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ZORDER_NORMAL" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ZORDER_TOP" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Animation.AnimationListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onAnimationEnd" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="animation" type="android.view.animation.Animation">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onAnimationRepeat" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="animation" type="android.view.animation.Animation">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onAnimationStart" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="animation" type="android.view.animation.Animation">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Animation.Description" static="true" visibility="protected">
+<constructor deprecated="not deprecated" final="false" name="Animation.Description" static="false" type="android.view.animation.Animation.Description" visibility="protected">
+</constructor>
+<field deprecated="not deprecated" final="false" name="type" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="value" static="false" transient="false" type="float" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.view.animation.Animation" final="false" name="AnimationSet" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AnimationSet" static="false" type="android.view.animation.AnimationSet" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AnimationSet" static="false" type="android.view.animation.AnimationSet" visibility="public">
+<parameter name="shareInterpolator" type="boolean">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addAnimation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="a" type="android.view.animation.Animation">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAnimations" native="false" return="java.util.List&lt;android.view.animation.Animation&gt;" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AnimationUtils" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AnimationUtils" static="false" type="android.view.animation.AnimationUtils" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="currentAnimationTimeMillis" native="false" return="long" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadAnimation" native="false" return="android.view.animation.Animation" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadInterpolator" native="false" return="android.view.animation.Interpolator" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadLayoutAnimation" native="false" return="android.view.animation.LayoutAnimationController" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="id" type="int">
+</parameter>
+<exception name="Resources.NotFoundException" type="android.content.res.Resources.NotFoundException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="makeInAnimation" native="false" return="android.view.animation.Animation" static="true" synchronized="false" visibility="public">
+<parameter name="c" type="android.content.Context">
+</parameter>
+<parameter name="fromLeft" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="makeInChildBottomAnimation" native="false" return="android.view.animation.Animation" static="true" synchronized="false" visibility="public">
+<parameter name="c" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="makeOutAnimation" native="false" return="android.view.animation.Animation" static="true" synchronized="false" visibility="public">
+<parameter name="c" type="android.content.Context">
+</parameter>
+<parameter name="toRight" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AnticipateInterpolator" static="false" visibility="public">
+<implements name="android.view.animation.Interpolator">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AnticipateInterpolator" static="false" type="android.view.animation.AnticipateInterpolator" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AnticipateInterpolator" static="false" type="android.view.animation.AnticipateInterpolator" visibility="public">
+<parameter name="tension" type="float">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AnticipateInterpolator" static="false" type="android.view.animation.AnticipateInterpolator" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInterpolation" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="t" type="float">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AnticipateOvershootInterpolator" static="false" visibility="public">
+<implements name="android.view.animation.Interpolator">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AnticipateOvershootInterpolator" static="false" type="android.view.animation.AnticipateOvershootInterpolator" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AnticipateOvershootInterpolator" static="false" type="android.view.animation.AnticipateOvershootInterpolator" visibility="public">
+<parameter name="tension" type="float">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AnticipateOvershootInterpolator" static="false" type="android.view.animation.AnticipateOvershootInterpolator" visibility="public">
+<parameter name="tension" type="float">
+</parameter>
+<parameter name="extraTension" type="float">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="AnticipateOvershootInterpolator" static="false" type="android.view.animation.AnticipateOvershootInterpolator" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInterpolation" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="t" type="float">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="BounceInterpolator" static="false" visibility="public">
+<implements name="android.view.animation.Interpolator">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BounceInterpolator" static="false" type="android.view.animation.BounceInterpolator" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="BounceInterpolator" static="false" type="android.view.animation.BounceInterpolator" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInterpolation" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="t" type="float">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="CycleInterpolator" static="false" visibility="public">
+<implements name="android.view.animation.Interpolator">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="CycleInterpolator" static="false" type="android.view.animation.CycleInterpolator" visibility="public">
+<parameter name="cycles" type="float">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="CycleInterpolator" static="false" type="android.view.animation.CycleInterpolator" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInterpolation" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="float">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DecelerateInterpolator" static="false" visibility="public">
+<implements name="android.view.animation.Interpolator">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DecelerateInterpolator" static="false" type="android.view.animation.DecelerateInterpolator" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DecelerateInterpolator" static="false" type="android.view.animation.DecelerateInterpolator" visibility="public">
+<parameter name="factor" type="float">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DecelerateInterpolator" static="false" type="android.view.animation.DecelerateInterpolator" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInterpolation" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="float">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.view.animation.LayoutAnimationController" final="false" name="GridLayoutAnimationController" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="GridLayoutAnimationController" static="false" type="android.view.animation.GridLayoutAnimationController" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="GridLayoutAnimationController" static="false" type="android.view.animation.GridLayoutAnimationController" visibility="public">
+<parameter name="animation" type="android.view.animation.Animation">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="GridLayoutAnimationController" static="false" type="android.view.animation.GridLayoutAnimationController" visibility="public">
+<parameter name="animation" type="android.view.animation.Animation">
+</parameter>
+<parameter name="columnDelay" type="float">
+</parameter>
+<parameter name="rowDelay" type="float">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getColumnDelay" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDirection" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDirectionPriority" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRowDelay" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setColumnDelay" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="columnDelay" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDirection" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="direction" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDirectionPriority" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="directionPriority" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRowDelay" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="rowDelay" type="float">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="DIRECTION_BOTTOM_TO_TOP" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DIRECTION_HORIZONTAL_MASK" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DIRECTION_LEFT_TO_RIGHT" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DIRECTION_RIGHT_TO_LEFT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DIRECTION_TOP_TO_BOTTOM" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DIRECTION_VERTICAL_MASK" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PRIORITY_COLUMN" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PRIORITY_NONE" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PRIORITY_ROW" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.view.animation.LayoutAnimationController.AnimationParameters" final="false" name="GridLayoutAnimationController.AnimationParameters" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="GridLayoutAnimationController.AnimationParameters" static="false" type="android.view.animation.GridLayoutAnimationController.AnimationParameters" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="false" name="column" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="columnsCount" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="row" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="rowsCount" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Interpolator" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getInterpolation" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="float">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="LayoutAnimationController" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="LayoutAnimationController" static="false" type="android.view.animation.LayoutAnimationController" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="LayoutAnimationController" static="false" type="android.view.animation.LayoutAnimationController" visibility="public">
+<parameter name="animation" type="android.view.animation.Animation">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="LayoutAnimationController" static="false" type="android.view.animation.LayoutAnimationController" visibility="public">
+<parameter name="animation" type="android.view.animation.Animation">
+</parameter>
+<parameter name="delay" type="float">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAnimation" native="false" return="android.view.animation.Animation" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAnimationForView" native="false" return="android.view.animation.Animation" static="false" synchronized="false" visibility="public">
+<parameter name="view" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDelay" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDelayForView" native="false" return="long" static="false" synchronized="false" visibility="protected">
+<parameter name="view" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInterpolator" native="false" return="android.view.animation.Interpolator" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOrder" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTransformedIndex" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="params" type="android.view.animation.LayoutAnimationController.AnimationParameters">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isDone" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAnimation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="resourceID" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAnimation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="animation" type="android.view.animation.Animation">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDelay" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="delay" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setInterpolator" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="resourceID" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setInterpolator" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="interpolator" type="android.view.animation.Interpolator">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOrder" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="order" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="start" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="willOverlap" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="ORDER_NORMAL" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ORDER_RANDOM" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ORDER_REVERSE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mAnimation" static="false" transient="false" type="android.view.animation.Animation" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mInterpolator" static="false" transient="false" type="android.view.animation.Interpolator" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mRandomizer" static="false" transient="false" type="java.util.Random" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="LayoutAnimationController.AnimationParameters" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="LayoutAnimationController.AnimationParameters" static="false" type="android.view.animation.LayoutAnimationController.AnimationParameters" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="false" name="count" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="index" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="LinearInterpolator" static="false" visibility="public">
+<implements name="android.view.animation.Interpolator">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="LinearInterpolator" static="false" type="android.view.animation.LinearInterpolator" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="LinearInterpolator" static="false" type="android.view.animation.LinearInterpolator" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInterpolation" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="input" type="float">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="OvershootInterpolator" static="false" visibility="public">
+<implements name="android.view.animation.Interpolator">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="OvershootInterpolator" static="false" type="android.view.animation.OvershootInterpolator" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="OvershootInterpolator" static="false" type="android.view.animation.OvershootInterpolator" visibility="public">
+<parameter name="tension" type="float">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="OvershootInterpolator" static="false" type="android.view.animation.OvershootInterpolator" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInterpolation" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="t" type="float">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.view.animation.Animation" final="false" name="RotateAnimation" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RotateAnimation" static="false" type="android.view.animation.RotateAnimation" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="RotateAnimation" static="false" type="android.view.animation.RotateAnimation" visibility="public">
+<parameter name="fromDegrees" type="float">
+</parameter>
+<parameter name="toDegrees" type="float">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="RotateAnimation" static="false" type="android.view.animation.RotateAnimation" visibility="public">
+<parameter name="fromDegrees" type="float">
+</parameter>
+<parameter name="toDegrees" type="float">
+</parameter>
+<parameter name="pivotX" type="float">
+</parameter>
+<parameter name="pivotY" type="float">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="RotateAnimation" static="false" type="android.view.animation.RotateAnimation" visibility="public">
+<parameter name="fromDegrees" type="float">
+</parameter>
+<parameter name="toDegrees" type="float">
+</parameter>
+<parameter name="pivotXType" type="int">
+</parameter>
+<parameter name="pivotXValue" type="float">
+</parameter>
+<parameter name="pivotYType" type="int">
+</parameter>
+<parameter name="pivotYValue" type="float">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.view.animation.Animation" final="false" name="ScaleAnimation" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ScaleAnimation" static="false" type="android.view.animation.ScaleAnimation" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ScaleAnimation" static="false" type="android.view.animation.ScaleAnimation" visibility="public">
+<parameter name="fromX" type="float">
+</parameter>
+<parameter name="toX" type="float">
+</parameter>
+<parameter name="fromY" type="float">
+</parameter>
+<parameter name="toY" type="float">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ScaleAnimation" static="false" type="android.view.animation.ScaleAnimation" visibility="public">
+<parameter name="fromX" type="float">
+</parameter>
+<parameter name="toX" type="float">
+</parameter>
+<parameter name="fromY" type="float">
+</parameter>
+<parameter name="toY" type="float">
+</parameter>
+<parameter name="pivotX" type="float">
+</parameter>
+<parameter name="pivotY" type="float">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ScaleAnimation" static="false" type="android.view.animation.ScaleAnimation" visibility="public">
+<parameter name="fromX" type="float">
+</parameter>
+<parameter name="toX" type="float">
+</parameter>
+<parameter name="fromY" type="float">
+</parameter>
+<parameter name="toY" type="float">
+</parameter>
+<parameter name="pivotXType" type="int">
+</parameter>
+<parameter name="pivotXValue" type="float">
+</parameter>
+<parameter name="pivotYType" type="int">
+</parameter>
+<parameter name="pivotYValue" type="float">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Transformation" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Transformation" static="false" type="android.view.animation.Transformation" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="compose" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="t" type="android.view.animation.Transformation">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAlpha" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMatrix" native="false" return="android.graphics.Matrix" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTransformationType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="set" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="t" type="android.view.animation.Transformation">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAlpha" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="alpha" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTransformationType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="transformationType" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toShortString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="false" name="TYPE_ALPHA" static="true" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="TYPE_BOTH" static="true" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="TYPE_IDENTITY" static="true" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="TYPE_MATRIX" static="true" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mAlpha" static="false" transient="false" type="float" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mMatrix" static="false" transient="false" type="android.graphics.Matrix" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mTransformationType" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.view.animation.Animation" final="false" name="TranslateAnimation" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="TranslateAnimation" static="false" type="android.view.animation.TranslateAnimation" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="TranslateAnimation" static="false" type="android.view.animation.TranslateAnimation" visibility="public">
+<parameter name="fromXDelta" type="float">
+</parameter>
+<parameter name="toXDelta" type="float">
+</parameter>
+<parameter name="fromYDelta" type="float">
+</parameter>
+<parameter name="toYDelta" type="float">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="TranslateAnimation" static="false" type="android.view.animation.TranslateAnimation" visibility="public">
+<parameter name="fromXType" type="int">
+</parameter>
+<parameter name="fromXValue" type="float">
+</parameter>
+<parameter name="toXType" type="int">
+</parameter>
+<parameter name="toXValue" type="float">
+</parameter>
+<parameter name="fromYType" type="int">
+</parameter>
+<parameter name="fromYValue" type="float">
+</parameter>
+<parameter name="toYType" type="int">
+</parameter>
+<parameter name="toYValue" type="float">
+</parameter>
+</constructor>
+</class>
+</package></api>

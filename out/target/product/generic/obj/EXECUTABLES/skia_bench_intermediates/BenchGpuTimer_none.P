@@ -1,0 +1,7 @@
+out/target/product/generic/obj/EXECUTABLES/skia_bench_intermediates/BenchGpuTimer_none.o: \
+ external/skia/bench/BenchGpuTimer_none.cpp \
+ system/core/include/arch/linux-arm/AndroidConfig.h \
+ external/skia/bench/BenchGpuTimer_none.h
+ external/skia/bench/BenchGpuTimer_none.cpp :
+ system/core/include/arch/linux-arm/AndroidConfig.h :
+ external/skia/bench/BenchGpuTimer_none.h :

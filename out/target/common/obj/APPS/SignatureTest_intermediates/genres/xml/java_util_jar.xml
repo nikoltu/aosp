@@ -1,0 +1,382 @@
+<?xml version="1.0" ?><api><package name="java.util.jar">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Attributes" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<implements name="java.util.Map">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Attributes" static="false" type="java.util.jar.Attributes" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Attributes" static="false" type="java.util.jar.Attributes" visibility="public">
+<parameter name="attrib" type="java.util.jar.Attributes">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Attributes" static="false" type="java.util.jar.Attributes" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="containsKey" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="containsValue" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="entrySet" native="false" return="java.util.Set&lt;java.util.Map.Entry&lt;java.lang.Object, java.lang.Object&gt;&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValue" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.util.jar.Attributes.Name">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValue" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isEmpty" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="keySet" native="false" return="java.util.Set&lt;java.lang.Object&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="put" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.Object">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putAll" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="attrib" type="java.util.Map&lt;?, ?&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putValue" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="val" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="remove" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="size" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="values" native="false" return="java.util.Collection&lt;java.lang.Object&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="false" name="map" static="false" transient="false" type="java.util.Map" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Attributes.Name" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Attributes.Name" static="false" type="java.util.jar.Attributes.Name" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="true" name="CLASS_PATH" static="true" transient="false" type="java.util.jar.Attributes.Name" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CONTENT_TYPE" static="true" transient="false" type="java.util.jar.Attributes.Name" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTENSION_INSTALLATION" static="true" transient="false" type="java.util.jar.Attributes.Name" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTENSION_LIST" static="true" transient="false" type="java.util.jar.Attributes.Name" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTENSION_NAME" static="true" transient="false" type="java.util.jar.Attributes.Name" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IMPLEMENTATION_TITLE" static="true" transient="false" type="java.util.jar.Attributes.Name" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IMPLEMENTATION_URL" static="true" transient="false" type="java.util.jar.Attributes.Name" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IMPLEMENTATION_VENDOR" static="true" transient="false" type="java.util.jar.Attributes.Name" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IMPLEMENTATION_VENDOR_ID" static="true" transient="false" type="java.util.jar.Attributes.Name" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IMPLEMENTATION_VERSION" static="true" transient="false" type="java.util.jar.Attributes.Name" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MAIN_CLASS" static="true" transient="false" type="java.util.jar.Attributes.Name" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MANIFEST_VERSION" static="true" transient="false" type="java.util.jar.Attributes.Name" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SEALED" static="true" transient="false" type="java.util.jar.Attributes.Name" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SIGNATURE_VERSION" static="true" transient="false" type="java.util.jar.Attributes.Name" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SPECIFICATION_TITLE" static="true" transient="false" type="java.util.jar.Attributes.Name" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SPECIFICATION_VENDOR" static="true" transient="false" type="java.util.jar.Attributes.Name" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SPECIFICATION_VERSION" static="true" transient="false" type="java.util.jar.Attributes.Name" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.util.zip.ZipEntry" final="false" name="JarEntry" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="JarEntry" static="false" type="java.util.jar.JarEntry" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="JarEntry" static="false" type="java.util.jar.JarEntry" visibility="public">
+<parameter name="entry" type="java.util.zip.ZipEntry">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="JarEntry" static="false" type="java.util.jar.JarEntry" visibility="public">
+<parameter name="je" type="java.util.jar.JarEntry">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAttributes" native="false" return="java.util.jar.Attributes" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCertificates" native="false" return="java.security.cert.Certificate[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCodeSigners" native="false" return="java.security.CodeSigner[]" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.util.zip.ZipException" final="false" name="JarException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="JarException" static="false" type="java.util.jar.JarException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="JarException" static="false" type="java.util.jar.JarException" visibility="public">
+<parameter name="detailMessage" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.util.zip.ZipFile" final="false" name="JarFile" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="JarFile" static="false" type="java.util.jar.JarFile" visibility="public">
+<parameter name="file" type="java.io.File">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="JarFile" static="false" type="java.util.jar.JarFile" visibility="public">
+<parameter name="file" type="java.io.File">
+</parameter>
+<parameter name="verify" type="boolean">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="JarFile" static="false" type="java.util.jar.JarFile" visibility="public">
+<parameter name="file" type="java.io.File">
+</parameter>
+<parameter name="verify" type="boolean">
+</parameter>
+<parameter name="mode" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="JarFile" static="false" type="java.util.jar.JarFile" visibility="public">
+<parameter name="filename" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="JarFile" static="false" type="java.util.jar.JarFile" visibility="public">
+<parameter name="filename" type="java.lang.String">
+</parameter>
+<parameter name="verify" type="boolean">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getJarEntry" native="false" return="java.util.jar.JarEntry" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getManifest" native="false" return="java.util.jar.Manifest" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="MANIFEST_NAME" static="true" transient="false" type="java.lang.String" value="&quot;META-INF/MANIFEST.MF&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.util.zip.ZipInputStream" final="false" name="JarInputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="JarInputStream" static="false" type="java.util.jar.JarInputStream" visibility="public">
+<parameter name="stream" type="java.io.InputStream">
+</parameter>
+<parameter name="verify" type="boolean">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="JarInputStream" static="false" type="java.util.jar.JarInputStream" visibility="public">
+<parameter name="stream" type="java.io.InputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getManifest" native="false" return="java.util.jar.Manifest" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNextJarEntry" native="false" return="java.util.jar.JarEntry" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.util.zip.ZipOutputStream" final="false" name="JarOutputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="JarOutputStream" static="false" type="java.util.jar.JarOutputStream" visibility="public">
+<parameter name="os" type="java.io.OutputStream">
+</parameter>
+<parameter name="mf" type="java.util.jar.Manifest">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="JarOutputStream" static="false" type="java.util.jar.JarOutputStream" visibility="public">
+<parameter name="os" type="java.io.OutputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Manifest" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Manifest" static="false" type="java.util.jar.Manifest" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Manifest" static="false" type="java.util.jar.Manifest" visibility="public">
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Manifest" static="false" type="java.util.jar.Manifest" visibility="public">
+<parameter name="man" type="java.util.jar.Manifest">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAttributes" native="false" return="java.util.jar.Attributes" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEntries" native="false" return="java.util.Map&lt;java.lang.String, java.util.jar.Attributes&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMainAttributes" native="false" return="java.util.jar.Attributes" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="read" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="write" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="os" type="java.io.OutputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Pack200" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="newPacker" native="false" return="java.util.jar.Pack200.Packer" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="newUnpacker" native="false" return="java.util.jar.Pack200.Unpacker" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Pack200.Packer" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="addPropertyChangeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="java.beans.PropertyChangeListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="pack" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="in" type="java.util.jar.JarFile">
+</parameter>
+<parameter name="out" type="java.io.OutputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="pack" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="in" type="java.util.jar.JarInputStream">
+</parameter>
+<parameter name="out" type="java.io.OutputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="properties" native="false" return="java.util.SortedMap&lt;java.lang.String, java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removePropertyChangeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="java.beans.PropertyChangeListener">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CLASS_ATTRIBUTE_PFX" static="true" transient="false" type="java.lang.String" value="&quot;pack.class.attribute.&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CODE_ATTRIBUTE_PFX" static="true" transient="false" type="java.lang.String" value="&quot;pack.code.attribute.&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFLATE_HINT" static="true" transient="false" type="java.lang.String" value="&quot;pack.deflate.hint&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EFFORT" static="true" transient="false" type="java.lang.String" value="&quot;pack.effort&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR" static="true" transient="false" type="java.lang.String" value="&quot;error&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FALSE" static="true" transient="false" type="java.lang.String" value="&quot;false&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FIELD_ATTRIBUTE_PFX" static="true" transient="false" type="java.lang.String" value="&quot;pack.field.attribute.&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEEP" static="true" transient="false" type="java.lang.String" value="&quot;keep&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEEP_FILE_ORDER" static="true" transient="false" type="java.lang.String" value="&quot;pack.keep.file.order&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LATEST" static="true" transient="false" type="java.lang.String" value="&quot;latest&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="METHOD_ATTRIBUTE_PFX" static="true" transient="false" type="java.lang.String" value="&quot;pack.method.attribute.&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MODIFICATION_TIME" static="true" transient="false" type="java.lang.String" value="&quot;pack.modification.time&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PASS" static="true" transient="false" type="java.lang.String" value="&quot;pass&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PASS_FILE_PFX" static="true" transient="false" type="java.lang.String" value="&quot;pack.pass.file.&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROGRESS" static="true" transient="false" type="java.lang.String" value="&quot;pack.progress&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SEGMENT_LIMIT" static="true" transient="false" type="java.lang.String" value="&quot;pack.segment.limit&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STRIP" static="true" transient="false" type="java.lang.String" value="&quot;strip&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TRUE" static="true" transient="false" type="java.lang.String" value="&quot;true&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNKNOWN_ATTRIBUTE" static="true" transient="false" type="java.lang.String" value="&quot;pack.unknown.attribute&quot;" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Pack200.Unpacker" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="addPropertyChangeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="java.beans.PropertyChangeListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="properties" native="false" return="java.util.SortedMap&lt;java.lang.String, java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removePropertyChangeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="java.beans.PropertyChangeListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="unpack" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="in" type="java.io.InputStream">
+</parameter>
+<parameter name="out" type="java.util.jar.JarOutputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="unpack" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="in" type="java.io.File">
+</parameter>
+<parameter name="out" type="java.util.jar.JarOutputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="DEFLATE_HINT" static="true" transient="false" type="java.lang.String" value="&quot;unpack.deflate.hint&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FALSE" static="true" transient="false" type="java.lang.String" value="&quot;false&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEEP" static="true" transient="false" type="java.lang.String" value="&quot;keep&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROGRESS" static="true" transient="false" type="java.lang.String" value="&quot;unpack.progress&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TRUE" static="true" transient="false" type="java.lang.String" value="&quot;true&quot;" visibility="public" volatile="false">
+</field>
+</interface>
+</package></api>

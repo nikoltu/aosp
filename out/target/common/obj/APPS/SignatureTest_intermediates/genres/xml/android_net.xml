@@ -1,0 +1,854 @@
+<?xml version="1.0" ?><api><package name="android.net">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ConnectivityManager" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getActiveNetworkInfo" native="false" return="android.net.NetworkInfo" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAllNetworkInfo" native="false" return="android.net.NetworkInfo[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBackgroundDataSetting" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNetworkInfo" native="false" return="android.net.NetworkInfo" static="false" synchronized="false" visibility="public">
+<parameter name="networkType" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNetworkPreference" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isNetworkTypeValid" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="networkType" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="requestRouteToHost" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="networkType" type="int">
+</parameter>
+<parameter name="hostAddress" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setNetworkPreference" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="preference" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="startUsingNetworkFeature" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="networkType" type="int">
+</parameter>
+<parameter name="feature" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stopUsingNetworkFeature" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="networkType" type="int">
+</parameter>
+<parameter name="feature" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ACTION_BACKGROUND_DATA_SETTING_CHANGED" static="true" transient="false" type="java.lang.String" value="&quot;android.net.conn.BACKGROUND_DATA_SETTING_CHANGED&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CONNECTIVITY_ACTION" static="true" transient="false" type="java.lang.String" value="&quot;android.net.conn.CONNECTIVITY_CHANGE&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFAULT_NETWORK_PREFERENCE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_EXTRA_INFO" static="true" transient="false" type="java.lang.String" value="&quot;extraInfo&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_IS_FAILOVER" static="true" transient="false" type="java.lang.String" value="&quot;isFailover&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_NETWORK_INFO" static="true" transient="false" type="java.lang.String" value="&quot;networkInfo&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_NO_CONNECTIVITY" static="true" transient="false" type="java.lang.String" value="&quot;noConnectivity&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_OTHER_NETWORK_INFO" static="true" transient="false" type="java.lang.String" value="&quot;otherNetwork&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXTRA_REASON" static="true" transient="false" type="java.lang.String" value="&quot;reason&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_MOBILE" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_MOBILE_DUN" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_MOBILE_HIPRI" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_MOBILE_MMS" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_MOBILE_SUPL" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_WIFI" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_WIMAX" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Credentials" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Credentials" static="false" type="android.net.Credentials" visibility="public">
+<parameter name="pid" type="int">
+</parameter>
+<parameter name="uid" type="int">
+</parameter>
+<parameter name="gid" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGid" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPid" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUid" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DhcpInfo" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DhcpInfo" static="false" type="android.net.DhcpInfo" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="dns1" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="dns2" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="gateway" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="ipAddress" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="leaseDuration" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="netmask" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="serverAddress" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="LocalServerSocket" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="LocalServerSocket" static="false" type="android.net.LocalServerSocket" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="LocalServerSocket" static="false" type="android.net.LocalServerSocket" visibility="public">
+<parameter name="fd" type="java.io.FileDescriptor">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="accept" native="false" return="android.net.LocalSocket" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFileDescriptor" native="false" return="java.io.FileDescriptor" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalSocketAddress" native="false" return="android.net.LocalSocketAddress" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="LocalSocket" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="LocalSocket" static="false" type="android.net.LocalSocket" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="bind" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="bindpoint" type="android.net.LocalSocketAddress">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="connect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="endpoint" type="android.net.LocalSocketAddress">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="connect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="endpoint" type="android.net.LocalSocketAddress">
+</parameter>
+<parameter name="timeout" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAncillaryFileDescriptors" native="false" return="java.io.FileDescriptor[]" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFileDescriptor" native="false" return="java.io.FileDescriptor" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputStream" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLocalSocketAddress" native="false" return="android.net.LocalSocketAddress" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOutputStream" native="false" return="java.io.OutputStream" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPeerCredentials" native="false" return="android.net.Credentials" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReceiveBufferSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRemoteSocketAddress" native="false" return="android.net.LocalSocketAddress" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSendBufferSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSoTimeout" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isBound" native="false" return="boolean" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isClosed" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isConnected" native="false" return="boolean" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isInputShutdown" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isOutputShutdown" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFileDescriptorsForSend" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="fds" type="java.io.FileDescriptor[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReceiveBufferSize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="size" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSendBufferSize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSoTimeout" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="n" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shutdownInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shutdownOutput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="LocalSocketAddress" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="LocalSocketAddress" static="false" type="android.net.LocalSocketAddress" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="namespace" type="android.net.LocalSocketAddress.Namespace">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="LocalSocketAddress" static="false" type="android.net.LocalSocketAddress" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNamespace" native="false" return="android.net.LocalSocketAddress.Namespace" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" final="true" name="LocalSocketAddress.Namespace" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="android.net.LocalSocketAddress.Namespace" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="values" native="false" return="android.net.LocalSocketAddress.Namespace[]" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="MailTo" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getBody" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCc" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHeaders" native="false" return="java.util.Map&lt;java.lang.String, java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSubject" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTo" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isMailTo" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="url" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="android.net.MailTo" static="true" synchronized="false" visibility="public">
+<parameter name="url" type="java.lang.String">
+</parameter>
+<exception name="ParseException" type="android.net.ParseException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="MAILTO_SCHEME" static="true" transient="false" type="java.lang.String" value="&quot;mailto:&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="NetworkInfo" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDetailedState" native="false" return="android.net.NetworkInfo.DetailedState" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getExtraInfo" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReason" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getState" native="false" return="android.net.NetworkInfo.State" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSubtype" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSubtypeName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTypeName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isAvailable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isConnected" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isConnectedOrConnecting" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isFailover" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isRoaming" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" final="true" name="NetworkInfo.DetailedState" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="android.net.NetworkInfo.DetailedState" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="values" native="false" return="android.net.NetworkInfo.DetailedState[]" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Enum" final="true" name="NetworkInfo.State" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="valueOf" native="false" return="android.net.NetworkInfo.State" static="true" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="values" native="false" return="android.net.NetworkInfo.State[]" static="true" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.RuntimeException" final="false" name="ParseException" static="false" visibility="public">
+<field deprecated="not deprecated" final="false" name="response" static="false" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="Proxy" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Proxy" static="false" type="android.net.Proxy" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="getDefaultHost" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getDefaultPort" native="false" return="int" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getHost" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="ctx" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getPort" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="ctx" type="android.content.Context">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="PROXY_CHANGE_ACTION" static="true" transient="false" type="java.lang.String" value="&quot;android.intent.action.PROXY_CHANGE&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="javax.net.ssl.SSLSocketFactory" final="false" name="SSLCertificateSocketFactory" static="false" visibility="public">
+<constructor deprecated="deprecated" final="false" name="SSLCertificateSocketFactory" static="false" type="android.net.SSLCertificateSocketFactory" visibility="public">
+<parameter name="handshakeTimeoutMillis" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="createSocket" native="false" return="java.net.Socket" static="false" synchronized="false" visibility="public">
+<parameter name="k" type="java.net.Socket">
+</parameter>
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="close" type="boolean">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createSocket" native="false" return="java.net.Socket" static="false" synchronized="false" visibility="public">
+<parameter name="addr" type="java.net.InetAddress">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="localAddr" type="java.net.InetAddress">
+</parameter>
+<parameter name="localPort" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createSocket" native="false" return="java.net.Socket" static="false" synchronized="false" visibility="public">
+<parameter name="addr" type="java.net.InetAddress">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createSocket" native="false" return="java.net.Socket" static="false" synchronized="false" visibility="public">
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<parameter name="localAddr" type="java.net.InetAddress">
+</parameter>
+<parameter name="localPort" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createSocket" native="false" return="java.net.Socket" static="false" synchronized="false" visibility="public">
+<parameter name="host" type="java.lang.String">
+</parameter>
+<parameter name="port" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefault" native="false" return="javax.net.SocketFactory" static="true" synchronized="false" visibility="public">
+<parameter name="handshakeTimeoutMillis" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefault" native="false" return="javax.net.ssl.SSLSocketFactory" static="true" synchronized="false" visibility="public">
+<parameter name="handshakeTimeoutMillis" type="int">
+</parameter>
+<parameter name="cache" type="android.net.SSLSessionCache">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultCipherSuites" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHttpSocketFactory" native="false" return="org.apache.http.conn.ssl.SSLSocketFactory" static="true" synchronized="false" visibility="public">
+<parameter name="handshakeTimeoutMillis" type="int">
+</parameter>
+<parameter name="cache" type="android.net.SSLSessionCache">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInsecure" native="false" return="javax.net.ssl.SSLSocketFactory" static="true" synchronized="false" visibility="public">
+<parameter name="handshakeTimeoutMillis" type="int">
+</parameter>
+<parameter name="cache" type="android.net.SSLSessionCache">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSupportedCipherSuites" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="SSLSessionCache" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SSLSessionCache" static="false" type="android.net.SSLSessionCache" visibility="public">
+<parameter name="dir" type="java.io.File">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SSLSessionCache" static="false" type="android.net.SSLSessionCache" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="TrafficStats" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="TrafficStats" static="false" type="android.net.TrafficStats" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMobileRxBytes" native="true" return="long" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMobileRxPackets" native="true" return="long" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMobileTxBytes" native="true" return="long" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMobileTxPackets" native="true" return="long" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTotalRxBytes" native="true" return="long" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTotalRxPackets" native="true" return="long" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTotalTxBytes" native="true" return="long" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTotalTxPackets" native="true" return="long" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUidRxBytes" native="true" return="long" static="true" synchronized="false" visibility="public">
+<parameter name="uid" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUidTxBytes" native="true" return="long" static="true" synchronized="false" visibility="public">
+<parameter name="uid" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="UNSUPPORTED" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Uri" static="false" visibility="public">
+<implements name="java.lang.Comparable">
+</implements>
+<implements name="android.os.Parcelable">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="buildUpon" native="false" return="android.net.Uri.Builder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="compareTo" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="other" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="decode" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="encode" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="encode" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+<parameter name="allow" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fromFile" native="false" return="android.net.Uri" static="true" synchronized="false" visibility="public">
+<parameter name="file" type="java.io.File">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fromParts" native="false" return="android.net.Uri" static="true" synchronized="false" visibility="public">
+<parameter name="scheme" type="java.lang.String">
+</parameter>
+<parameter name="ssp" type="java.lang.String">
+</parameter>
+<parameter name="fragment" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getAuthority" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEncodedAuthority" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEncodedFragment" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEncodedPath" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEncodedQuery" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEncodedSchemeSpecificPart" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getEncodedUserInfo" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getFragment" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getHost" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLastPathSegment" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPath" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPathSegments" native="false" return="java.util.List&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPort" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getQuery" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getQueryParameter" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getQueryParameters" native="false" return="java.util.List&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getScheme" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSchemeSpecificPart" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getUserInfo" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isAbsolute" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isHierarchical" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isOpaque" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isRelative" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="android.net.Uri" static="true" synchronized="false" visibility="public">
+<parameter name="uriString" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="toString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="withAppendedPath" native="false" return="android.net.Uri" static="true" synchronized="false" visibility="public">
+<parameter name="baseUri" type="android.net.Uri">
+</parameter>
+<parameter name="pathSegment" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="out" type="android.os.Parcel">
+</parameter>
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EMPTY" static="true" transient="false" type="android.net.Uri" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="Uri.Builder" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Uri.Builder" static="false" type="android.net.Uri.Builder" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="appendEncodedPath" native="false" return="android.net.Uri.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="newSegment" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="appendPath" native="false" return="android.net.Uri.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="newSegment" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="appendQueryParameter" native="false" return="android.net.Uri.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="authority" native="false" return="android.net.Uri.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="authority" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="build" native="false" return="android.net.Uri" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="encodedAuthority" native="false" return="android.net.Uri.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="authority" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="encodedFragment" native="false" return="android.net.Uri.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="fragment" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="encodedOpaquePart" native="false" return="android.net.Uri.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="opaquePart" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="encodedPath" native="false" return="android.net.Uri.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="encodedQuery" native="false" return="android.net.Uri.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="query" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fragment" native="false" return="android.net.Uri.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="fragment" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="opaquePart" native="false" return="android.net.Uri.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="opaquePart" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="path" native="false" return="android.net.Uri.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="query" native="false" return="android.net.Uri.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="query" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="scheme" native="false" return="android.net.Uri.Builder" static="false" synchronized="false" visibility="public">
+<parameter name="scheme" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="UrlQuerySanitizer" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="UrlQuerySanitizer" static="false" type="android.net.UrlQuerySanitizer" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="UrlQuerySanitizer" static="false" type="android.net.UrlQuerySanitizer" visibility="public">
+<parameter name="url" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addSanitizedEntry" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="parameter" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="decodeHexDigit" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="c" type="char">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAllButNulAndAngleBracketsLegal" native="false" return="android.net.UrlQuerySanitizer.ValueSanitizer" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAllButNulLegal" native="false" return="android.net.UrlQuerySanitizer.ValueSanitizer" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAllButWhitespaceLegal" native="false" return="android.net.UrlQuerySanitizer.ValueSanitizer" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAllIllegal" native="false" return="android.net.UrlQuerySanitizer.ValueSanitizer" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAllowUnregisteredParamaters" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAmpAndSpaceLegal" native="false" return="android.net.UrlQuerySanitizer.ValueSanitizer" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getAmpLegal" native="false" return="android.net.UrlQuerySanitizer.ValueSanitizer" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEffectiveValueSanitizer" native="false" return="android.net.UrlQuerySanitizer.ValueSanitizer" static="false" synchronized="false" visibility="public">
+<parameter name="parameter" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParameterList" native="false" return="java.util.List&lt;android.net.UrlQuerySanitizer.ParameterValuePair&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParameterSet" native="false" return="java.util.Set&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPreferFirstRepeatedParameter" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getSpaceLegal" native="false" return="android.net.UrlQuerySanitizer.ValueSanitizer" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUnregisteredParameterValueSanitizer" native="false" return="android.net.UrlQuerySanitizer.ValueSanitizer" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getUrlAndSpaceLegal" native="false" return="android.net.UrlQuerySanitizer.ValueSanitizer" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getUrlLegal" native="false" return="android.net.UrlQuerySanitizer.ValueSanitizer" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValue" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="parameter" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValueSanitizer" native="false" return="android.net.UrlQuerySanitizer.ValueSanitizer" static="false" synchronized="false" visibility="public">
+<parameter name="parameter" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasParameter" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="parameter" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isHexDigit" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="c" type="char">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseEntry" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="parameter" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseQuery" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="query" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parseUrl" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="url" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="registerParameter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameter" type="java.lang.String">
+</parameter>
+<parameter name="valueSanitizer" type="android.net.UrlQuerySanitizer.ValueSanitizer">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="registerParameters" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parameters" type="java.lang.String[]">
+</parameter>
+<parameter name="valueSanitizer" type="android.net.UrlQuerySanitizer.ValueSanitizer">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAllowUnregisteredParamaters" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="allowUnregisteredParamaters" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPreferFirstRepeatedParameter" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="preferFirstRepeatedParameter" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setUnregisteredParameterValueSanitizer" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="sanitizer" type="android.net.UrlQuerySanitizer.ValueSanitizer">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unescape" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="string" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="UrlQuerySanitizer.IllegalCharacterValueSanitizer" static="true" visibility="public">
+<implements name="android.net.UrlQuerySanitizer.ValueSanitizer">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="UrlQuerySanitizer.IllegalCharacterValueSanitizer" static="false" type="android.net.UrlQuerySanitizer.IllegalCharacterValueSanitizer" visibility="public">
+<parameter name="flags" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="sanitize" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ALL_BUT_NUL_AND_ANGLE_BRACKETS_LEGAL" static="true" transient="false" type="int" value="1439" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ALL_BUT_NUL_LEGAL" static="true" transient="false" type="int" value="1535" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ALL_BUT_WHITESPACE_LEGAL" static="true" transient="false" type="int" value="1532" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ALL_ILLEGAL" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ALL_OK" static="true" transient="false" type="int" value="2047" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ALL_WHITESPACE_OK" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AMP_AND_SPACE_LEGAL" static="true" transient="false" type="int" value="129" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AMP_LEGAL" static="true" transient="false" type="int" value="128" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AMP_OK" static="true" transient="false" type="int" value="128" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DQUOTE_OK" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GT_OK" static="true" transient="false" type="int" value="64" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LT_OK" static="true" transient="false" type="int" value="32" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NON_7_BIT_ASCII_OK" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NUL_OK" static="true" transient="false" type="int" value="512" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OTHER_WHITESPACE_OK" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PCT_OK" static="true" transient="false" type="int" value="256" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SCRIPT_URL_OK" static="true" transient="false" type="int" value="1024" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SPACE_LEGAL" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SPACE_OK" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SQUOTE_OK" static="true" transient="false" type="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="URL_AND_SPACE_LEGAL" static="true" transient="false" type="int" value="405" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="URL_LEGAL" static="true" transient="false" type="int" value="404" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="UrlQuerySanitizer.ParameterValuePair" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="UrlQuerySanitizer.ParameterValuePair" static="false" type="android.net.UrlQuerySanitizer.ParameterValuePair" visibility="public">
+<parameter name="parameter" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="false" name="mParameter" static="false" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mValue" static="false" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="UrlQuerySanitizer.ValueSanitizer" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="sanitize" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+</package></api>

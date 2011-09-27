@@ -1,0 +1,450 @@
+<?xml version="1.0" ?><api><package name="java.security.spec">
+<interface abstract="true" deprecated="not deprecated" final="false" name="AlgorithmParameterSpec" static="false" visibility="public">
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DSAParameterSpec" static="false" visibility="public">
+<implements name="java.security.spec.AlgorithmParameterSpec">
+</implements>
+<implements name="java.security.interfaces.DSAParams">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DSAParameterSpec" static="false" type="java.security.spec.DSAParameterSpec" visibility="public">
+<parameter name="p" type="java.math.BigInteger">
+</parameter>
+<parameter name="q" type="java.math.BigInteger">
+</parameter>
+<parameter name="g" type="java.math.BigInteger">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getG" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getP" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getQ" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DSAPrivateKeySpec" static="false" visibility="public">
+<implements name="java.security.spec.KeySpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DSAPrivateKeySpec" static="false" type="java.security.spec.DSAPrivateKeySpec" visibility="public">
+<parameter name="x" type="java.math.BigInteger">
+</parameter>
+<parameter name="p" type="java.math.BigInteger">
+</parameter>
+<parameter name="q" type="java.math.BigInteger">
+</parameter>
+<parameter name="g" type="java.math.BigInteger">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getG" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getP" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getQ" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getX" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DSAPublicKeySpec" static="false" visibility="public">
+<implements name="java.security.spec.KeySpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DSAPublicKeySpec" static="false" type="java.security.spec.DSAPublicKeySpec" visibility="public">
+<parameter name="y" type="java.math.BigInteger">
+</parameter>
+<parameter name="p" type="java.math.BigInteger">
+</parameter>
+<parameter name="q" type="java.math.BigInteger">
+</parameter>
+<parameter name="g" type="java.math.BigInteger">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getG" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getP" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getQ" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getY" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ECField" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getFieldSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ECFieldF2m" static="false" visibility="public">
+<implements name="java.security.spec.ECField">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ECFieldF2m" static="false" type="java.security.spec.ECFieldF2m" visibility="public">
+<parameter name="m" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ECFieldF2m" static="false" type="java.security.spec.ECFieldF2m" visibility="public">
+<parameter name="m" type="int">
+</parameter>
+<parameter name="rp" type="java.math.BigInteger">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ECFieldF2m" static="false" type="java.security.spec.ECFieldF2m" visibility="public">
+<parameter name="m" type="int">
+</parameter>
+<parameter name="ks" type="int[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFieldSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getM" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMidTermsOfReductionPolynomial" native="false" return="int[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getReductionPolynomial" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ECFieldFp" static="false" visibility="public">
+<implements name="java.security.spec.ECField">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ECFieldFp" static="false" type="java.security.spec.ECFieldFp" visibility="public">
+<parameter name="p" type="java.math.BigInteger">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFieldSize" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getP" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ECGenParameterSpec" static="false" visibility="public">
+<implements name="java.security.spec.AlgorithmParameterSpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ECGenParameterSpec" static="false" type="java.security.spec.ECGenParameterSpec" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ECParameterSpec" static="false" visibility="public">
+<implements name="java.security.spec.AlgorithmParameterSpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ECParameterSpec" static="false" type="java.security.spec.ECParameterSpec" visibility="public">
+<parameter name="curve" type="java.security.spec.EllipticCurve">
+</parameter>
+<parameter name="generator" type="java.security.spec.ECPoint">
+</parameter>
+<parameter name="order" type="java.math.BigInteger">
+</parameter>
+<parameter name="cofactor" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCofactor" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurve" native="false" return="java.security.spec.EllipticCurve" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGenerator" native="false" return="java.security.spec.ECPoint" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOrder" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ECPoint" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ECPoint" static="false" type="java.security.spec.ECPoint" visibility="public">
+<parameter name="affineX" type="java.math.BigInteger">
+</parameter>
+<parameter name="affineY" type="java.math.BigInteger">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAffineX" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAffineY" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="POINT_INFINITY" static="true" transient="false" type="java.security.spec.ECPoint" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ECPrivateKeySpec" static="false" visibility="public">
+<implements name="java.security.spec.KeySpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ECPrivateKeySpec" static="false" type="java.security.spec.ECPrivateKeySpec" visibility="public">
+<parameter name="s" type="java.math.BigInteger">
+</parameter>
+<parameter name="params" type="java.security.spec.ECParameterSpec">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParams" native="false" return="java.security.spec.ECParameterSpec" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getS" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ECPublicKeySpec" static="false" visibility="public">
+<implements name="java.security.spec.KeySpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ECPublicKeySpec" static="false" type="java.security.spec.ECPublicKeySpec" visibility="public">
+<parameter name="w" type="java.security.spec.ECPoint">
+</parameter>
+<parameter name="params" type="java.security.spec.ECParameterSpec">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParams" native="false" return="java.security.spec.ECParameterSpec" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getW" native="false" return="java.security.spec.ECPoint" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="EllipticCurve" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="EllipticCurve" static="false" type="java.security.spec.EllipticCurve" visibility="public">
+<parameter name="field" type="java.security.spec.ECField">
+</parameter>
+<parameter name="a" type="java.math.BigInteger">
+</parameter>
+<parameter name="b" type="java.math.BigInteger">
+</parameter>
+<parameter name="seed" type="byte[]">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="EllipticCurve" static="false" type="java.security.spec.EllipticCurve" visibility="public">
+<parameter name="field" type="java.security.spec.ECField">
+</parameter>
+<parameter name="a" type="java.math.BigInteger">
+</parameter>
+<parameter name="b" type="java.math.BigInteger">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getA" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getB" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getField" native="false" return="java.security.spec.ECField" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSeed" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="EncodedKeySpec" static="false" visibility="public">
+<implements name="java.security.spec.KeySpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="EncodedKeySpec" static="false" type="java.security.spec.EncodedKeySpec" visibility="public">
+<parameter name="encodedKey" type="byte[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEncoded" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getFormat" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.GeneralSecurityException" final="false" name="InvalidKeySpecException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="InvalidKeySpecException" static="false" type="java.security.spec.InvalidKeySpecException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InvalidKeySpecException" static="false" type="java.security.spec.InvalidKeySpecException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InvalidKeySpecException" static="false" type="java.security.spec.InvalidKeySpecException" visibility="public">
+<parameter name="message" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InvalidKeySpecException" static="false" type="java.security.spec.InvalidKeySpecException" visibility="public">
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.GeneralSecurityException" final="false" name="InvalidParameterSpecException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="InvalidParameterSpecException" static="false" type="java.security.spec.InvalidParameterSpecException" visibility="public">
+<parameter name="msg" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InvalidParameterSpecException" static="false" type="java.security.spec.InvalidParameterSpecException" visibility="public">
+</constructor>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="KeySpec" static="false" visibility="public">
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="MGF1ParameterSpec" static="false" visibility="public">
+<implements name="java.security.spec.AlgorithmParameterSpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="MGF1ParameterSpec" static="false" type="java.security.spec.MGF1ParameterSpec" visibility="public">
+<parameter name="mdName" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDigestAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="SHA1" static="true" transient="false" type="java.security.spec.MGF1ParameterSpec" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SHA256" static="true" transient="false" type="java.security.spec.MGF1ParameterSpec" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SHA384" static="true" transient="false" type="java.security.spec.MGF1ParameterSpec" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SHA512" static="true" transient="false" type="java.security.spec.MGF1ParameterSpec" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.spec.EncodedKeySpec" final="false" name="PKCS8EncodedKeySpec" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PKCS8EncodedKeySpec" static="false" type="java.security.spec.PKCS8EncodedKeySpec" visibility="public">
+<parameter name="encodedKey" type="byte[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="getFormat" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="PSSParameterSpec" static="false" visibility="public">
+<implements name="java.security.spec.AlgorithmParameterSpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="PSSParameterSpec" static="false" type="java.security.spec.PSSParameterSpec" visibility="public">
+<parameter name="saltLen" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="PSSParameterSpec" static="false" type="java.security.spec.PSSParameterSpec" visibility="public">
+<parameter name="mdName" type="java.lang.String">
+</parameter>
+<parameter name="mgfName" type="java.lang.String">
+</parameter>
+<parameter name="mgfSpec" type="java.security.spec.AlgorithmParameterSpec">
+</parameter>
+<parameter name="saltLen" type="int">
+</parameter>
+<parameter name="trailerField" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDigestAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMGFAlgorithm" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMGFParameters" native="false" return="java.security.spec.AlgorithmParameterSpec" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSaltLength" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTrailerField" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="DEFAULT" static="true" transient="false" type="java.security.spec.PSSParameterSpec" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RSAKeyGenParameterSpec" static="false" visibility="public">
+<implements name="java.security.spec.AlgorithmParameterSpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RSAKeyGenParameterSpec" static="false" type="java.security.spec.RSAKeyGenParameterSpec" visibility="public">
+<parameter name="keysize" type="int">
+</parameter>
+<parameter name="publicExponent" type="java.math.BigInteger">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getKeysize" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPublicExponent" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="F0" static="true" transient="false" type="java.math.BigInteger" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="F4" static="true" transient="false" type="java.math.BigInteger" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.spec.RSAPrivateKeySpec" final="false" name="RSAMultiPrimePrivateCrtKeySpec" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RSAMultiPrimePrivateCrtKeySpec" static="false" type="java.security.spec.RSAMultiPrimePrivateCrtKeySpec" visibility="public">
+<parameter name="modulus" type="java.math.BigInteger">
+</parameter>
+<parameter name="publicExponent" type="java.math.BigInteger">
+</parameter>
+<parameter name="privateExponent" type="java.math.BigInteger">
+</parameter>
+<parameter name="primeP" type="java.math.BigInteger">
+</parameter>
+<parameter name="primeQ" type="java.math.BigInteger">
+</parameter>
+<parameter name="primeExponentP" type="java.math.BigInteger">
+</parameter>
+<parameter name="primeExponentQ" type="java.math.BigInteger">
+</parameter>
+<parameter name="crtCoefficient" type="java.math.BigInteger">
+</parameter>
+<parameter name="otherPrimeInfo" type="java.security.spec.RSAOtherPrimeInfo[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCrtCoefficient" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOtherPrimeInfo" native="false" return="java.security.spec.RSAOtherPrimeInfo[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrimeExponentP" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrimeExponentQ" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrimeP" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrimeQ" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPublicExponent" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RSAOtherPrimeInfo" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RSAOtherPrimeInfo" static="false" type="java.security.spec.RSAOtherPrimeInfo" visibility="public">
+<parameter name="prime" type="java.math.BigInteger">
+</parameter>
+<parameter name="primeExponent" type="java.math.BigInteger">
+</parameter>
+<parameter name="crtCoefficient" type="java.math.BigInteger">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="getCrtCoefficient" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getExponent" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="getPrime" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.spec.RSAPrivateKeySpec" final="false" name="RSAPrivateCrtKeySpec" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="RSAPrivateCrtKeySpec" static="false" type="java.security.spec.RSAPrivateCrtKeySpec" visibility="public">
+<parameter name="modulus" type="java.math.BigInteger">
+</parameter>
+<parameter name="publicExponent" type="java.math.BigInteger">
+</parameter>
+<parameter name="privateExponent" type="java.math.BigInteger">
+</parameter>
+<parameter name="primeP" type="java.math.BigInteger">
+</parameter>
+<parameter name="primeQ" type="java.math.BigInteger">
+</parameter>
+<parameter name="primeExponentP" type="java.math.BigInteger">
+</parameter>
+<parameter name="primeExponentQ" type="java.math.BigInteger">
+</parameter>
+<parameter name="crtCoefficient" type="java.math.BigInteger">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCrtCoefficient" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrimeExponentP" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrimeExponentQ" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrimeP" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrimeQ" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPublicExponent" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RSAPrivateKeySpec" static="false" visibility="public">
+<implements name="java.security.spec.KeySpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RSAPrivateKeySpec" static="false" type="java.security.spec.RSAPrivateKeySpec" visibility="public">
+<parameter name="modulus" type="java.math.BigInteger">
+</parameter>
+<parameter name="privateExponent" type="java.math.BigInteger">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getModulus" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPrivateExponent" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="RSAPublicKeySpec" static="false" visibility="public">
+<implements name="java.security.spec.KeySpec">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RSAPublicKeySpec" static="false" type="java.security.spec.RSAPublicKeySpec" visibility="public">
+<parameter name="modulus" type="java.math.BigInteger">
+</parameter>
+<parameter name="publicExponent" type="java.math.BigInteger">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getModulus" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPublicExponent" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.security.spec.EncodedKeySpec" final="false" name="X509EncodedKeySpec" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="X509EncodedKeySpec" static="false" type="java.security.spec.X509EncodedKeySpec" visibility="public">
+<parameter name="encodedKey" type="byte[]">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="getFormat" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package></api>

@@ -1,0 +1,792 @@
+<?xml version="1.0" ?><api><package name="android.preference">
+<class abstract="false" deprecated="not deprecated" extends="android.preference.Preference" final="false" name="CheckBoxPreference" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CheckBoxPreference" static="false" type="android.preference.CheckBoxPreference" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<parameter name="defStyle" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="CheckBoxPreference" static="false" type="android.preference.CheckBoxPreference" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="CheckBoxPreference" static="false" type="android.preference.CheckBoxPreference" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDisableDependentsState" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSummaryOff" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSummaryOn" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isChecked" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setChecked" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="checked" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDisableDependentsState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="disableDependentsState" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSummaryOff" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="summary" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSummaryOff" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="summaryResId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSummaryOn" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="summary" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSummaryOn" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="summaryResId" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="android.preference.Preference" final="false" name="DialogPreference" static="false" visibility="public">
+<implements name="android.content.DialogInterface.OnClickListener">
+</implements>
+<implements name="android.content.DialogInterface.OnDismissListener">
+</implements>
+<implements name="android.preference.PreferenceManager.OnActivityDestroyListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="DialogPreference" static="false" type="android.preference.DialogPreference" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<parameter name="defStyle" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DialogPreference" static="false" type="android.preference.DialogPreference" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDialog" native="false" return="android.app.Dialog" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDialogIcon" native="false" return="android.graphics.drawable.Drawable" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDialogLayoutResource" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDialogMessage" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDialogTitle" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNegativeButtonText" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPositiveButtonText" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onActivityDestroy" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onBindDialogView" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="view" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dialog" type="android.content.DialogInterface">
+</parameter>
+<parameter name="which" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCreateDialogView" native="false" return="android.view.View" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDialogClosed" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="positiveResult" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDismiss" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dialog" type="android.content.DialogInterface">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onPrepareDialogBuilder" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="builder" type="android.app.AlertDialog.Builder">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDialogIcon" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dialogIcon" type="android.graphics.drawable.Drawable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDialogIcon" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dialogIconRes" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDialogLayoutResource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dialogLayoutResId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDialogMessage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dialogMessage" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDialogMessage" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dialogMessageResId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDialogTitle" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dialogTitle" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDialogTitle" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dialogTitleResId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setNegativeButtonText" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="negativeButtonText" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setNegativeButtonText" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="negativeButtonTextResId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPositiveButtonText" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="positiveButtonText" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPositiveButtonText" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="positiveButtonTextResId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="showDialog" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="state" type="android.os.Bundle">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.preference.DialogPreference" final="false" name="EditTextPreference" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="EditTextPreference" static="false" type="android.preference.EditTextPreference" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<parameter name="defStyle" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="EditTextPreference" static="false" type="android.preference.EditTextPreference" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="EditTextPreference" static="false" type="android.preference.EditTextPreference" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEditText" native="false" return="android.widget.EditText" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getText" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onAddEditTextToDialogView" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="dialogView" type="android.view.View">
+</parameter>
+<parameter name="editText" type="android.widget.EditText">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setText" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="text" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.preference.DialogPreference" final="false" name="ListPreference" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ListPreference" static="false" type="android.preference.ListPreference" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ListPreference" static="false" type="android.preference.ListPreference" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="findIndexOfValue" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEntries" native="false" return="java.lang.CharSequence[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEntry" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEntryValues" native="false" return="java.lang.CharSequence[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValue" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEntries" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="entries" type="java.lang.CharSequence[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEntries" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="entriesResId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEntryValues" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="entryValues" type="java.lang.CharSequence[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEntryValues" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="entryValuesResId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setValue" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setValueIndex" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Preference" static="false" visibility="public">
+<implements name="java.lang.Comparable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Preference" static="false" type="android.preference.Preference" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<parameter name="defStyle" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Preference" static="false" type="android.preference.Preference" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Preference" static="false" type="android.preference.Preference" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="callChangeListener" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="newValue" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="compareTo" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="another" type="android.preference.Preference">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="findPreferenceInHierarchy" native="false" return="android.preference.Preference" static="false" synchronized="false" visibility="protected">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContext" native="false" return="android.content.Context" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDependency" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEditor" native="false" return="android.content.SharedPreferences.Editor" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIntent" native="false" return="android.content.Intent" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getKey" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLayoutResource" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOnPreferenceChangeListener" native="false" return="android.preference.Preference.OnPreferenceChangeListener" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOnPreferenceClickListener" native="false" return="android.preference.Preference.OnPreferenceClickListener" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOrder" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPersistedBoolean" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="defaultReturnValue" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPersistedFloat" native="false" return="float" static="false" synchronized="false" visibility="protected">
+<parameter name="defaultReturnValue" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPersistedInt" native="false" return="int" static="false" synchronized="false" visibility="protected">
+<parameter name="defaultReturnValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPersistedLong" native="false" return="long" static="false" synchronized="false" visibility="protected">
+<parameter name="defaultReturnValue" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPersistedString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+<parameter name="defaultReturnValue" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPreferenceManager" native="false" return="android.preference.PreferenceManager" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSharedPreferences" native="false" return="android.content.SharedPreferences" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getShouldDisableView" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSummary" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTitle" native="false" return="java.lang.CharSequence" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getView" native="false" return="android.view.View" static="false" synchronized="false" visibility="public">
+<parameter name="convertView" type="android.view.View">
+</parameter>
+<parameter name="parent" type="android.view.ViewGroup">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getWidgetLayoutResource" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasKey" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isPersistent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isSelectable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="notifyChanged" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="notifyDependencyChange" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="disableDependents" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="notifyHierarchyChanged" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onAttachedToActivity" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onAttachedToHierarchy" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="preferenceManager" type="android.preference.PreferenceManager">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onBindView" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="view" type="android.view.View">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onClick" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCreateView" native="false" return="android.view.View" static="false" synchronized="false" visibility="protected">
+<parameter name="parent" type="android.view.ViewGroup">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDependencyChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dependency" type="android.preference.Preference">
+</parameter>
+<parameter name="disableDependent" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onGetDefaultValue" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="protected">
+<parameter name="a" type="android.content.res.TypedArray">
+</parameter>
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onPrepareForRemoval" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onRestoreInstanceState" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="state" type="android.os.Parcelable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSaveInstanceState" native="false" return="android.os.Parcelable" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSetInitialValue" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="restorePersistedValue" type="boolean">
+</parameter>
+<parameter name="defaultValue" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="persistBoolean" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="value" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="persistFloat" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="value" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="persistInt" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="value" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="persistLong" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="value" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="persistString" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="restoreHierarchyState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="container" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="saveHierarchyState" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="container" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDefaultValue" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="defaultValue" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDependency" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dependencyKey" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="enabled" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setIntent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setKey" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLayoutResource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="layoutResId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnPreferenceChangeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="onPreferenceChangeListener" type="android.preference.Preference.OnPreferenceChangeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnPreferenceClickListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="onPreferenceClickListener" type="android.preference.Preference.OnPreferenceClickListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOrder" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="order" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPersistent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="persistent" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSelectable" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="selectable" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setShouldDisableView" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="shouldDisableView" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSummary" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="summary" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSummary" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="summaryResId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTitle" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="title" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTitle" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="titleResId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setWidgetLayoutResource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="widgetLayoutResId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shouldCommit" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shouldDisableDependents" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="shouldPersist" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+</method>
+<field deprecated="not deprecated" final="true" name="DEFAULT_ORDER" static="true" transient="false" type="int" value="2147483647" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.view.AbsSavedState" final="false" name="Preference.BaseSavedState" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Preference.BaseSavedState" static="false" type="android.preference.Preference.BaseSavedState" visibility="public">
+<parameter name="source" type="android.os.Parcel">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Preference.BaseSavedState" static="false" type="android.preference.Preference.BaseSavedState" visibility="public">
+<parameter name="superState" type="android.os.Parcelable">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Preference.OnPreferenceChangeListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onPreferenceChange" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="preference" type="android.preference.Preference">
+</parameter>
+<parameter name="newValue" type="java.lang.Object">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Preference.OnPreferenceClickListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onPreferenceClick" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="preference" type="android.preference.Preference">
+</parameter>
+</method>
+</interface>
+<class abstract="true" deprecated="not deprecated" extends="android.app.ListActivity" final="false" name="PreferenceActivity" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PreferenceActivity" static="false" type="android.preference.PreferenceActivity" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addPreferencesFromIntent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addPreferencesFromResource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="preferencesResId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="findPreference" native="false" return="android.preference.Preference" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPreferenceManager" native="false" return="android.preference.PreferenceManager" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPreferenceScreen" native="false" return="android.preference.PreferenceScreen" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onPreferenceTreeClick" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="preferenceScreen" type="android.preference.PreferenceScreen">
+</parameter>
+<parameter name="preference" type="android.preference.Preference">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setPreferenceScreen" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="preferenceScreen" type="android.preference.PreferenceScreen">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.preference.PreferenceGroup" final="false" name="PreferenceCategory" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PreferenceCategory" static="false" type="android.preference.PreferenceCategory" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<parameter name="defStyle" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="PreferenceCategory" static="false" type="android.preference.PreferenceCategory" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="PreferenceCategory" static="false" type="android.preference.PreferenceCategory" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="android.preference.Preference" final="false" name="PreferenceGroup" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="PreferenceGroup" static="false" type="android.preference.PreferenceGroup" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<parameter name="defStyle" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="PreferenceGroup" static="false" type="android.preference.PreferenceGroup" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addItemFromInflater" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="preference" type="android.preference.Preference">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addPreference" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="preference" type="android.preference.Preference">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dispatchRestoreInstanceState" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="container" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dispatchSaveInstanceState" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="container" type="android.os.Bundle">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="findPreference" native="false" return="android.preference.Preference" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPreference" native="false" return="android.preference.Preference" static="false" synchronized="false" visibility="public">
+<parameter name="index" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPreferenceCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isOnSameScreenAsChildren" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isOrderingAsAdded" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onPrepareAddPreference" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="preference" type="android.preference.Preference">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeAll" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removePreference" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="preference" type="android.preference.Preference">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOrderingAsAdded" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="orderingAsAdded" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="PreferenceManager" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="createPreferenceScreen" native="false" return="android.preference.PreferenceScreen" static="false" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="findPreference" native="false" return="android.preference.Preference" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.CharSequence">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultSharedPreferences" native="false" return="android.content.SharedPreferences" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSharedPreferences" native="false" return="android.content.SharedPreferences" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSharedPreferencesMode" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSharedPreferencesName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDefaultValues" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="resId" type="int">
+</parameter>
+<parameter name="readAgain" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDefaultValues" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="sharedPreferencesName" type="java.lang.String">
+</parameter>
+<parameter name="sharedPreferencesMode" type="int">
+</parameter>
+<parameter name="resId" type="int">
+</parameter>
+<parameter name="readAgain" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSharedPreferencesMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="sharedPreferencesMode" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSharedPreferencesName" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="sharedPreferencesName" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="KEY_HAS_SET_DEFAULT_VALUES" static="true" transient="false" type="java.lang.String" value="&quot;_has_set_default_values&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="METADATA_KEY_PREFERENCES" static="true" transient="false" type="java.lang.String" value="&quot;android.preference&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PreferenceManager.OnActivityDestroyListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onActivityDestroy" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PreferenceManager.OnActivityResultListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onActivityResult" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="requestCode" type="int">
+</parameter>
+<parameter name="resultCode" type="int">
+</parameter>
+<parameter name="data" type="android.content.Intent">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PreferenceManager.OnActivityStopListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onActivityStop" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="android.preference.PreferenceGroup" final="true" name="PreferenceScreen" static="false" visibility="public">
+<implements name="android.widget.AdapterView.OnItemClickListener">
+</implements>
+<implements name="android.content.DialogInterface.OnDismissListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="bind" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listView" type="android.widget.ListView">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDialog" native="false" return="android.app.Dialog" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRootAdapter" native="false" return="android.widget.ListAdapter" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCreateRootAdapter" native="false" return="android.widget.ListAdapter" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDismiss" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="dialog" type="android.content.DialogInterface">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onItemClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parent" type="android.widget.AdapterView">
+</parameter>
+<parameter name="view" type="android.view.View">
+</parameter>
+<parameter name="position" type="int">
+</parameter>
+<parameter name="id" type="long">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.preference.Preference" final="false" name="RingtonePreference" static="false" visibility="public">
+<implements name="android.preference.PreferenceManager.OnActivityResultListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="RingtonePreference" static="false" type="android.preference.RingtonePreference" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<parameter name="defStyle" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="RingtonePreference" static="false" type="android.preference.RingtonePreference" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="RingtonePreference" static="false" type="android.preference.RingtonePreference" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRingtoneType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getShowDefault" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getShowSilent" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onActivityResult" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="requestCode" type="int">
+</parameter>
+<parameter name="resultCode" type="int">
+</parameter>
+<parameter name="data" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onPrepareRingtonePickerIntent" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="ringtonePickerIntent" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onRestoreRingtone" native="false" return="android.net.Uri" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSaveRingtone" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="ringtoneUri" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setRingtoneType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="type" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setShowDefault" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="showDefault" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setShowSilent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="showSilent" type="boolean">
+</parameter>
+</method>
+</class>
+</package></api>

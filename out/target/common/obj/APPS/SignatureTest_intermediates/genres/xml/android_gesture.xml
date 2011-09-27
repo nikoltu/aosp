@@ -1,0 +1,530 @@
+<?xml version="1.0" ?><api><package name="android.gesture">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Gesture" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Gesture" static="false" type="android.gesture.Gesture" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addStroke" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="stroke" type="android.gesture.GestureStroke">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBoundingBox" native="false" return="android.graphics.RectF" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getID" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLength" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStrokes" native="false" return="java.util.ArrayList&lt;android.gesture.GestureStroke&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getStrokesCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+<parameter name="edge" type="int">
+</parameter>
+<parameter name="numSample" type="int">
+</parameter>
+<parameter name="color" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toBitmap" native="false" return="android.graphics.Bitmap" static="false" synchronized="false" visibility="public">
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+<parameter name="inset" type="int">
+</parameter>
+<parameter name="color" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toPath" native="false" return="android.graphics.Path" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toPath" native="false" return="android.graphics.Path" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="android.graphics.Path">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toPath" native="false" return="android.graphics.Path" static="false" synchronized="false" visibility="public">
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+<parameter name="edge" type="int">
+</parameter>
+<parameter name="numSample" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toPath" native="false" return="android.graphics.Path" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="android.graphics.Path">
+</parameter>
+<parameter name="width" type="int">
+</parameter>
+<parameter name="height" type="int">
+</parameter>
+<parameter name="edge" type="int">
+</parameter>
+<parameter name="numSample" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="out" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="GestureLibraries" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="fromFile" native="false" return="android.gesture.GestureLibrary" static="true" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fromFile" native="false" return="android.gesture.GestureLibrary" static="true" synchronized="false" visibility="public">
+<parameter name="path" type="java.io.File">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fromPrivateFile" native="false" return="android.gesture.GestureLibrary" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="fromRawResource" native="false" return="android.gesture.GestureLibrary" static="true" synchronized="false" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="resourceId" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="GestureLibrary" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="GestureLibrary" static="false" type="android.gesture.GestureLibrary" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addGesture" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="entryName" type="java.lang.String">
+</parameter>
+<parameter name="gesture" type="android.gesture.Gesture">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGestureEntries" native="false" return="java.util.Set&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGestures" native="false" return="java.util.ArrayList&lt;android.gesture.Gesture&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="entryName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOrientationStyle" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSequenceType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isReadOnly" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="load" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="recognize" native="false" return="java.util.ArrayList&lt;android.gesture.Prediction&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="gesture" type="android.gesture.Gesture">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeEntry" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="entryName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeGesture" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="entryName" type="java.lang.String">
+</parameter>
+<parameter name="gesture" type="android.gesture.Gesture">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="save" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOrientationStyle" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="style" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSequenceType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="type" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="mStore" static="false" transient="false" type="android.gesture.GestureStore" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.widget.FrameLayout" final="false" name="GestureOverlayView" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="GestureOverlayView" static="false" type="android.gesture.GestureOverlayView" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="GestureOverlayView" static="false" type="android.gesture.GestureOverlayView" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="GestureOverlayView" static="false" type="android.gesture.GestureOverlayView" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="attrs" type="android.util.AttributeSet">
+</parameter>
+<parameter name="defStyle" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addOnGestureListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.gesture.GestureOverlayView.OnGestureListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addOnGesturePerformedListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.gesture.GestureOverlayView.OnGesturePerformedListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addOnGesturingListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.gesture.GestureOverlayView.OnGesturingListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="cancelClearAnimation" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="cancelGesture" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="animated" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentStroke" native="false" return="java.util.ArrayList&lt;android.gesture.GesturePoint&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFadeOffset" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGesture" native="false" return="android.gesture.Gesture" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGestureColor" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGesturePath" native="false" return="android.graphics.Path" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGesturePath" native="false" return="android.graphics.Path" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="android.graphics.Path">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGestureStrokeAngleThreshold" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGestureStrokeLengthThreshold" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGestureStrokeSquarenessTreshold" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGestureStrokeType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGestureStrokeWidth" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOrientation" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUncertainGestureColor" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isEventsInterceptionEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isFadeEnabled" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isGestureVisible" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isGesturing" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeAllOnGestureListeners" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeAllOnGesturePerformedListeners" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeAllOnGesturingListeners" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeOnGestureListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.gesture.GestureOverlayView.OnGestureListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeOnGesturePerformedListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.gesture.GestureOverlayView.OnGesturePerformedListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeOnGesturingListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="listener" type="android.gesture.GestureOverlayView.OnGesturingListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEventsInterceptionEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="enabled" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFadeEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="fadeEnabled" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFadeOffset" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="fadeOffset" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGesture" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="gesture" type="android.gesture.Gesture">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGestureColor" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="color" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGestureStrokeAngleThreshold" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="gestureStrokeAngleThreshold" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGestureStrokeLengthThreshold" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="gestureStrokeLengthThreshold" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGestureStrokeSquarenessTreshold" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="gestureStrokeSquarenessTreshold" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGestureStrokeType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="gestureStrokeType" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGestureStrokeWidth" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="gestureStrokeWidth" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setGestureVisible" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="visible" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOrientation" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="orientation" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setUncertainGestureColor" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="color" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="GESTURE_STROKE_TYPE_MULTIPLE" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="GESTURE_STROKE_TYPE_SINGLE" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ORIENTATION_HORIZONTAL" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ORIENTATION_VERTICAL" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="GestureOverlayView.OnGestureListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onGesture" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="overlay" type="android.gesture.GestureOverlayView">
+</parameter>
+<parameter name="event" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onGestureCancelled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="overlay" type="android.gesture.GestureOverlayView">
+</parameter>
+<parameter name="event" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onGestureEnded" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="overlay" type="android.gesture.GestureOverlayView">
+</parameter>
+<parameter name="event" type="android.view.MotionEvent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onGestureStarted" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="overlay" type="android.gesture.GestureOverlayView">
+</parameter>
+<parameter name="event" type="android.view.MotionEvent">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="GestureOverlayView.OnGesturePerformedListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onGesturePerformed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="overlay" type="android.gesture.GestureOverlayView">
+</parameter>
+<parameter name="gesture" type="android.gesture.Gesture">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="GestureOverlayView.OnGesturingListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onGesturingEnded" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="overlay" type="android.gesture.GestureOverlayView">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onGesturingStarted" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="overlay" type="android.gesture.GestureOverlayView">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="GesturePoint" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="GesturePoint" static="false" type="android.gesture.GesturePoint" visibility="public">
+<parameter name="x" type="float">
+</parameter>
+<parameter name="y" type="float">
+</parameter>
+<parameter name="t" type="long">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="timestamp" static="false" transient="false" type="long" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="x" static="false" transient="false" type="float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="y" static="false" transient="false" type="float" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="GestureStore" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="GestureStore" static="false" type="android.gesture.GestureStore" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addGesture" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="entryName" type="java.lang.String">
+</parameter>
+<parameter name="gesture" type="android.gesture.Gesture">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGestureEntries" native="false" return="java.util.Set&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getGestures" native="false" return="java.util.ArrayList&lt;android.gesture.Gesture&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="entryName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOrientationStyle" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSequenceType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hasChanged" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="load" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="stream" type="java.io.InputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="load" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="stream" type="java.io.InputStream">
+</parameter>
+<parameter name="closeStream" type="boolean">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="recognize" native="false" return="java.util.ArrayList&lt;android.gesture.Prediction&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="gesture" type="android.gesture.Gesture">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeEntry" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="entryName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeGesture" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="entryName" type="java.lang.String">
+</parameter>
+<parameter name="gesture" type="android.gesture.Gesture">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="save" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="stream" type="java.io.OutputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="save" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="stream" type="java.io.OutputStream">
+</parameter>
+<parameter name="closeStream" type="boolean">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOrientationStyle" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="style" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSequenceType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="type" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ORIENTATION_INVARIANT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ORIENTATION_SENSITIVE" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SEQUENCE_INVARIANT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SEQUENCE_SENSITIVE" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="GestureStroke" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="GestureStroke" static="false" type="android.gesture.GestureStroke" visibility="public">
+<parameter name="points" type="java.util.ArrayList&lt;android.gesture.GesturePoint&gt;">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clearPath" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="computeOrientedBoundingBox" native="false" return="android.gesture.OrientedBoundingBox" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getPath" native="false" return="android.graphics.Path" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="toPath" native="false" return="android.graphics.Path" static="false" synchronized="false" visibility="public">
+<parameter name="width" type="float">
+</parameter>
+<parameter name="height" type="float">
+</parameter>
+<parameter name="numSample" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="boundingBox" static="false" transient="false" type="android.graphics.RectF" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="length" static="false" transient="false" type="float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="points" static="false" transient="false" type="float[]" value="null" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="GestureUtils" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="computeOrientedBoundingBox" native="false" return="android.gesture.OrientedBoundingBox" static="true" synchronized="false" visibility="public">
+<parameter name="originalPoints" type="java.util.ArrayList&lt;android.gesture.GesturePoint&gt;">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="computeOrientedBoundingBox" native="false" return="android.gesture.OrientedBoundingBox" static="true" synchronized="false" visibility="public">
+<parameter name="originalPoints" type="float[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="spatialSampling" native="false" return="float[]" static="true" synchronized="false" visibility="public">
+<parameter name="gesture" type="android.gesture.Gesture">
+</parameter>
+<parameter name="bitmapSize" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="spatialSampling" native="false" return="float[]" static="true" synchronized="false" visibility="public">
+<parameter name="gesture" type="android.gesture.Gesture">
+</parameter>
+<parameter name="bitmapSize" type="int">
+</parameter>
+<parameter name="keepAspectRatio" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="temporalSampling" native="false" return="float[]" static="true" synchronized="false" visibility="public">
+<parameter name="stroke" type="android.gesture.GestureStroke">
+</parameter>
+<parameter name="numPoints" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="OrientedBoundingBox" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="centerX" static="false" transient="false" type="float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="centerY" static="false" transient="false" type="float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="height" static="false" transient="false" type="float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="orientation" static="false" transient="false" type="float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="squareness" static="false" transient="false" type="float" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="width" static="false" transient="false" type="float" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Prediction" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="name" static="false" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="score" static="false" transient="false" type="double" visibility="public" volatile="false">
+</field>
+</class>
+</package></api>

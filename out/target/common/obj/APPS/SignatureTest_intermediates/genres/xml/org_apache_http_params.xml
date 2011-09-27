@@ -1,0 +1,430 @@
+<?xml version="1.0" ?><api><package name="org.apache.http.params">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AbstractHttpParams" static="false" visibility="public">
+<implements name="org.apache.http.params.HttpParams">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractHttpParams" static="false" type="org.apache.http.params.AbstractHttpParams" visibility="protected">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBooleanParameter" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDoubleParameter" native="false" return="double" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getIntParameter" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLongParameter" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isParameterFalse" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isParameterTrue" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setBooleanParameter" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDoubleParameter" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="double">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setIntParameter" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLongParameter" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="long">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.params.AbstractHttpParams" final="true" name="BasicHttpParams" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<implements name="java.io.Serializable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="BasicHttpParams" static="false" type="org.apache.http.params.BasicHttpParams" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clear" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="copy" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="copyParams" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="target" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParameter" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isParameterSet" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isParameterSetLocally" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeParameter" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setParameter" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setParameters" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="names" type="java.lang.String[]">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="CoreConnectionPNames" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="CONNECTION_TIMEOUT" static="true" transient="false" type="java.lang.String" value="&quot;http.connection.timeout&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MAX_HEADER_COUNT" static="true" transient="false" type="java.lang.String" value="&quot;http.connection.max-header-count&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MAX_LINE_LENGTH" static="true" transient="false" type="java.lang.String" value="&quot;http.connection.max-line-length&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SOCKET_BUFFER_SIZE" static="true" transient="false" type="java.lang.String" value="&quot;http.socket.buffer-size&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SO_LINGER" static="true" transient="false" type="java.lang.String" value="&quot;http.socket.linger&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SO_TIMEOUT" static="true" transient="false" type="java.lang.String" value="&quot;http.socket.timeout&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STALE_CONNECTION_CHECK" static="true" transient="false" type="java.lang.String" value="&quot;http.connection.stalecheck&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TCP_NODELAY" static="true" transient="false" type="java.lang.String" value="&quot;http.tcp.nodelay&quot;" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="CoreProtocolPNames" static="false" visibility="public">
+<field deprecated="not deprecated" final="true" name="HTTP_CONTENT_CHARSET" static="true" transient="false" type="java.lang.String" value="&quot;http.protocol.content-charset&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HTTP_ELEMENT_CHARSET" static="true" transient="false" type="java.lang.String" value="&quot;http.protocol.element-charset&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ORIGIN_SERVER" static="true" transient="false" type="java.lang.String" value="&quot;http.origin-server&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROTOCOL_VERSION" static="true" transient="false" type="java.lang.String" value="&quot;http.protocol.version&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STRICT_TRANSFER_ENCODING" static="true" transient="false" type="java.lang.String" value="&quot;http.protocol.strict-transfer-encoding&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="USER_AGENT" static="true" transient="false" type="java.lang.String" value="&quot;http.useragent&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="USE_EXPECT_CONTINUE" static="true" transient="false" type="java.lang.String" value="&quot;http.protocol.expect-continue&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="WAIT_FOR_CONTINUE" static="true" transient="false" type="java.lang.String" value="&quot;http.protocol.wait-for-continue&quot;" visibility="public" volatile="false">
+</field>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.params.AbstractHttpParams" final="true" name="DefaultedHttpParams" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DefaultedHttpParams" static="false" type="org.apache.http.params.DefaultedHttpParams" visibility="public">
+<parameter name="local" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="defaults" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="copy" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaults" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParameter" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeParameter" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setParameter" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" final="false" name="HttpAbstractParamBean" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HttpAbstractParamBean" static="false" type="org.apache.http.params.HttpAbstractParamBean" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="true" name="params" static="false" transient="false" type="org.apache.http.params.HttpParams" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.params.HttpAbstractParamBean" final="false" name="HttpConnectionParamBean" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HttpConnectionParamBean" static="false" type="org.apache.http.params.HttpConnectionParamBean" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="setConnectionTimeout" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="connectionTimeout" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLinger" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="linger" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSoTimeout" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="soTimeout" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSocketBufferSize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="socketBufferSize" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStaleCheckingEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="staleCheckingEnabled" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTcpNoDelay" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="tcpNoDelay" type="boolean">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="HttpConnectionParams" static="false" visibility="public">
+<implements name="org.apache.http.params.CoreConnectionPNames">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="getConnectionTimeout" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLinger" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSoTimeout" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSocketBufferSize" native="false" return="int" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTcpNoDelay" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isStaleCheckingEnabled" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setConnectionTimeout" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="timeout" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLinger" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="value" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSoTimeout" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="timeout" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSocketBufferSize" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="size" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStaleCheckingEnabled" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="value" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTcpNoDelay" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="value" type="boolean">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="HttpParams" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="copy" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getBooleanParameter" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDoubleParameter" native="false" return="double" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="double">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getIntParameter" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLongParameter" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="long">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getParameter" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isParameterFalse" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isParameterTrue" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="removeParameter" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setBooleanParameter" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setDoubleParameter" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="double">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setIntParameter" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setLongParameter" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="long">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setParameter" native="false" return="org.apache.http.params.HttpParams" static="false" synchronized="false" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.params.HttpAbstractParamBean" final="false" name="HttpProtocolParamBean" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HttpProtocolParamBean" static="false" type="org.apache.http.params.HttpProtocolParamBean" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="setContentCharset" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="contentCharset" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setHttpElementCharset" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="httpElementCharset" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setUseExpectContinue" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="useExpectContinue" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setUserAgent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="userAgent" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVersion" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="version" type="org.apache.http.HttpVersion">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="true" name="HttpProtocolParams" static="false" visibility="public">
+<implements name="org.apache.http.params.CoreProtocolPNames">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="getContentCharset" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHttpElementCharset" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUserAgent" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVersion" native="false" return="org.apache.http.ProtocolVersion" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setContentCharset" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="charset" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setHttpElementCharset" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="charset" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setUseExpectContinue" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="b" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setUserAgent" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="useragent" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVersion" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+<parameter name="version" type="org.apache.http.ProtocolVersion">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="useExpectContinue" native="false" return="boolean" static="true" synchronized="false" visibility="public">
+<parameter name="params" type="org.apache.http.params.HttpParams">
+</parameter>
+</method>
+</class>
+</package></api>

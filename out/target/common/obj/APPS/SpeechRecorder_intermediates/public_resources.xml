@@ -1,0 +1,46 @@
+<!-- This file contains <public> resource definitions for all
+     resources that were generated from the source data. -->
+
+<resources>
+
+  <!-- PRIVATE SECTION.  These resources have not been declared public.
+       You can make them public my moving these lines into a file in res/values. -->
+
+  <!-- Declared at res/layout/recorder.xml:0 -->
+  <public type="layout" name="recorder" id="0x7f020000" />
+
+  <!-- Declared at packages/apps/SpeechRecorder/res/values/strings.xml:19 -->
+  <public type="string" name="app_name" id="0x7f030000" />
+  <!-- Declared at packages/apps/SpeechRecorder/res/values/strings.xml:21 -->
+  <public type="string" name="speechrecorderlabel" id="0x7f030001" />
+  <!-- Declared at packages/apps/SpeechRecorder/res/values/strings.xml:22 -->
+  <public type="string" name="recordButton" id="0x7f030002" />
+  <!-- Declared at packages/apps/SpeechRecorder/res/values/strings.xml:23 -->
+  <public type="string" name="redoButton" id="0x7f030003" />
+  <!-- Declared at packages/apps/SpeechRecorder/res/values/strings.xml:24 -->
+  <public type="string" name="callRadioButton" id="0x7f030004" />
+  <!-- Declared at packages/apps/SpeechRecorder/res/values/strings.xml:25 -->
+  <public type="string" name="dialNanpRadioButton" id="0x7f030005" />
+  <!-- Declared at packages/apps/SpeechRecorder/res/values/strings.xml:26 -->
+  <public type="string" name="dialPairsRadioButton" id="0x7f030006" />
+
+  <!-- Declared at packages/apps/SpeechRecorder/res/layout/recorder.xml:30 -->
+  <public type="id" name="commandText" id="0x7f040000" />
+  <!-- Declared at packages/apps/SpeechRecorder/res/layout/recorder.xml:35 -->
+  <public type="id" name="statusText" id="0x7f040001" />
+  <!-- Declared at packages/apps/SpeechRecorder/res/layout/recorder.xml:44 -->
+  <public type="id" name="recordButton" id="0x7f040002" />
+  <!-- Declared at packages/apps/SpeechRecorder/res/layout/recorder.xml:49 -->
+  <public type="id" name="redoButton" id="0x7f040003" />
+  <!-- Declared at packages/apps/SpeechRecorder/res/layout/recorder.xml:60 -->
+  <public type="id" name="codec11KHzRadioButton" id="0x7f040004" />
+  <!-- Declared at packages/apps/SpeechRecorder/res/layout/recorder.xml:64 -->
+  <public type="id" name="codec8KHzRadioButton" id="0x7f040005" />
+  <!-- Declared at packages/apps/SpeechRecorder/res/layout/recorder.xml:73 -->
+  <public type="id" name="callRadioButton" id="0x7f040006" />
+  <!-- Declared at packages/apps/SpeechRecorder/res/layout/recorder.xml:78 -->
+  <public type="id" name="dialNanpRadioButton" id="0x7f040007" />
+  <!-- Declared at packages/apps/SpeechRecorder/res/layout/recorder.xml:83 -->
+  <public type="id" name="dialPairsRadioButton" id="0x7f040008" />
+
+</resources>

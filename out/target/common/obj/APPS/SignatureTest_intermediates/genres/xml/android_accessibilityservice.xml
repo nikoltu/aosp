@@ -1,0 +1,62 @@
+<?xml version="1.0" ?><api><package name="android.accessibilityservice">
+<class abstract="true" deprecated="not deprecated" extends="android.app.Service" final="false" name="AccessibilityService" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AccessibilityService" static="false" type="android.accessibilityservice.AccessibilityService" visibility="public">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="onAccessibilityEvent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="event" type="android.view.accessibility.AccessibilityEvent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="onBind" native="false" return="android.os.IBinder" static="false" synchronized="false" visibility="public">
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onInterrupt" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onServiceConnected" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setServiceInfo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="info" type="android.accessibilityservice.AccessibilityServiceInfo">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="SERVICE_INTERFACE" static="true" transient="false" type="java.lang.String" value="&quot;android.accessibilityservice.AccessibilityService&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="AccessibilityServiceInfo" static="false" visibility="public">
+<implements name="android.os.Parcelable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AccessibilityServiceInfo" static="false" type="android.accessibilityservice.AccessibilityServiceInfo" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="describeContents" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="writeToParcel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="parcel" type="android.os.Parcel">
+</parameter>
+<parameter name="flagz" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CREATOR" static="true" transient="false" type="android.os.Parcelable.Creator" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFAULT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FEEDBACK_AUDIBLE" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FEEDBACK_GENERIC" static="true" transient="false" type="int" value="16" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FEEDBACK_HAPTIC" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FEEDBACK_SPOKEN" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FEEDBACK_VISUAL" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="eventTypes" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="feedbackType" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="flags" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="notificationTimeout" static="false" transient="false" type="long" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="packageNames" static="false" transient="false" type="java.lang.String[]" value="null" visibility="public" volatile="false">
+</field>
+</class>
+</package></api>

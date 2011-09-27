@@ -1,0 +1,594 @@
+<?xml version="1.0" ?><api><package name="java.util.zip">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Adler32" static="false" visibility="public">
+<implements name="java.util.zip.Checksum">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="Adler32" static="false" type="java.util.zip.Adler32" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValue" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="i" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="buf" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="buf" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="nbytes" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="CRC32" static="false" visibility="public">
+<implements name="java.util.zip.Checksum">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="CRC32" static="false" type="java.util.zip.CRC32" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getValue" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="buf" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="buf" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="nbytes" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.FilterInputStream" final="false" name="CheckedInputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CheckedInputStream" static="false" type="java.util.zip.CheckedInputStream" visibility="public">
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<parameter name="csum" type="java.util.zip.Checksum">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getChecksum" native="false" return="java.util.zip.Checksum" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.FilterOutputStream" final="false" name="CheckedOutputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="CheckedOutputStream" static="false" type="java.util.zip.CheckedOutputStream" visibility="public">
+<parameter name="os" type="java.io.OutputStream">
+</parameter>
+<parameter name="cs" type="java.util.zip.Checksum">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getChecksum" native="false" return="java.util.zip.Checksum" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="Checksum" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getValue" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="buf" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="nbytes" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="update" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="val" type="int">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Exception" final="false" name="DataFormatException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DataFormatException" static="false" type="java.util.zip.DataFormatException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DataFormatException" static="false" type="java.util.zip.DataFormatException" visibility="public">
+<parameter name="detailMessage" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Deflater" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Deflater" static="false" type="java.util.zip.Deflater" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Deflater" static="false" type="java.util.zip.Deflater" visibility="public">
+<parameter name="level" type="int">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Deflater" static="false" type="java.util.zip.Deflater" visibility="public">
+<parameter name="level" type="int">
+</parameter>
+<parameter name="noHeader" type="boolean">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="deflate" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="buf" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="deflate" native="false" return="int" static="false" synchronized="true" visibility="public">
+<parameter name="buf" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="nbytes" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="end" native="false" return="void" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="finish" native="false" return="void" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="finished" native="false" return="boolean" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAdler" native="false" return="int" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBytesRead" native="false" return="long" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBytesWritten" native="false" return="long" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTotalIn" native="false" return="int" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTotalOut" native="false" return="int" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="needsInput" native="false" return="boolean" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDictionary" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="buf" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDictionary" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="buf" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="nbytes" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setInput" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="buf" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setInput" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="buf" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="nbytes" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLevel" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="level" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setStrategy" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="strategy" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="BEST_COMPRESSION" static="true" transient="false" type="int" value="9" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BEST_SPEED" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFAULT_COMPRESSION" static="true" transient="false" type="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFAULT_STRATEGY" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEFLATED" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FILTERED" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="HUFFMAN_ONLY" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NO_COMPRESSION" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.FilterInputStream" final="false" name="DeflaterInputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DeflaterInputStream" static="false" type="java.util.zip.DeflaterInputStream" visibility="public">
+<parameter name="in" type="java.io.InputStream">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DeflaterInputStream" static="false" type="java.util.zip.DeflaterInputStream" visibility="public">
+<parameter name="in" type="java.io.InputStream">
+</parameter>
+<parameter name="deflater" type="java.util.zip.Deflater">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DeflaterInputStream" static="false" type="java.util.zip.DeflaterInputStream" visibility="public">
+<parameter name="in" type="java.io.InputStream">
+</parameter>
+<parameter name="deflater" type="java.util.zip.Deflater">
+</parameter>
+<parameter name="bufferSize" type="int">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="true" name="buf" static="false" transient="false" type="byte[]" value="null" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="def" static="false" transient="false" type="java.util.zip.Deflater" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.FilterOutputStream" final="false" name="DeflaterOutputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DeflaterOutputStream" static="false" type="java.util.zip.DeflaterOutputStream" visibility="public">
+<parameter name="os" type="java.io.OutputStream">
+</parameter>
+<parameter name="def" type="java.util.zip.Deflater">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DeflaterOutputStream" static="false" type="java.util.zip.DeflaterOutputStream" visibility="public">
+<parameter name="os" type="java.io.OutputStream">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DeflaterOutputStream" static="false" type="java.util.zip.DeflaterOutputStream" visibility="public">
+<parameter name="os" type="java.io.OutputStream">
+</parameter>
+<parameter name="def" type="java.util.zip.Deflater">
+</parameter>
+<parameter name="bsize" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="deflate" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="finish" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="false" name="buf" static="false" transient="false" type="byte[]" value="null" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="def" static="false" transient="false" type="java.util.zip.Deflater" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.util.zip.InflaterInputStream" final="false" name="GZIPInputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="GZIPInputStream" static="false" type="java.util.zip.GZIPInputStream" visibility="public">
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="GZIPInputStream" static="false" type="java.util.zip.GZIPInputStream" visibility="public">
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<parameter name="size" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<field deprecated="not deprecated" final="true" name="GZIP_MAGIC" static="true" transient="false" type="int" value="35615" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="crc" static="false" transient="false" type="java.util.zip.CRC32" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="eos" static="false" transient="false" type="boolean" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.util.zip.DeflaterOutputStream" final="false" name="GZIPOutputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="GZIPOutputStream" static="false" type="java.util.zip.GZIPOutputStream" visibility="public">
+<parameter name="os" type="java.io.OutputStream">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="GZIPOutputStream" static="false" type="java.util.zip.GZIPOutputStream" visibility="public">
+<parameter name="os" type="java.io.OutputStream">
+</parameter>
+<parameter name="size" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<field deprecated="not deprecated" final="false" name="crc" static="false" transient="false" type="java.util.zip.CRC32" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="Inflater" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Inflater" static="false" type="java.util.zip.Inflater" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Inflater" static="false" type="java.util.zip.Inflater" visibility="public">
+<parameter name="noHeader" type="boolean">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="end" native="false" return="void" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="finished" native="false" return="boolean" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAdler" native="false" return="int" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBytesRead" native="false" return="long" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBytesWritten" native="false" return="long" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRemaining" native="false" return="int" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTotalIn" native="false" return="int" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTotalOut" native="false" return="int" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="inflate" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="buf" type="byte[]">
+</parameter>
+<exception name="DataFormatException" type="java.util.zip.DataFormatException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="inflate" native="false" return="int" static="false" synchronized="true" visibility="public">
+<parameter name="buf" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="nbytes" type="int">
+</parameter>
+<exception name="DataFormatException" type="java.util.zip.DataFormatException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="needsDictionary" native="false" return="boolean" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="needsInput" native="false" return="boolean" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="false" synchronized="true" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDictionary" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="buf" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDictionary" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="buf" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="nbytes" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setInput" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="buf" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setInput" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="buf" type="byte[]">
+</parameter>
+<parameter name="off" type="int">
+</parameter>
+<parameter name="nbytes" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.FilterInputStream" final="false" name="InflaterInputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="InflaterInputStream" static="false" type="java.util.zip.InflaterInputStream" visibility="public">
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InflaterInputStream" static="false" type="java.util.zip.InflaterInputStream" visibility="public">
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<parameter name="inflater" type="java.util.zip.Inflater">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InflaterInputStream" static="false" type="java.util.zip.InflaterInputStream" visibility="public">
+<parameter name="is" type="java.io.InputStream">
+</parameter>
+<parameter name="inflater" type="java.util.zip.Inflater">
+</parameter>
+<parameter name="bsize" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="fill" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="false" name="buf" static="false" transient="false" type="byte[]" value="null" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="inf" static="false" transient="false" type="java.util.zip.Inflater" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="len" static="false" transient="false" type="int" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.FilterOutputStream" final="false" name="InflaterOutputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="InflaterOutputStream" static="false" type="java.util.zip.InflaterOutputStream" visibility="public">
+<parameter name="out" type="java.io.OutputStream">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InflaterOutputStream" static="false" type="java.util.zip.InflaterOutputStream" visibility="public">
+<parameter name="out" type="java.io.OutputStream">
+</parameter>
+<parameter name="inf" type="java.util.zip.Inflater">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="InflaterOutputStream" static="false" type="java.util.zip.InflaterOutputStream" visibility="public">
+<parameter name="out" type="java.io.OutputStream">
+</parameter>
+<parameter name="inf" type="java.util.zip.Inflater">
+</parameter>
+<parameter name="bufferSize" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="finish" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="buf" static="false" transient="false" type="byte[]" value="null" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="inf" static="false" transient="false" type="java.util.zip.Inflater" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ZipEntry" static="false" visibility="public">
+<implements name="java.lang.Cloneable">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="ZipEntry" static="false" type="java.util.zip.ZipEntry" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ZipEntry" static="false" type="java.util.zip.ZipEntry" visibility="public">
+<parameter name="ze" type="java.util.zip.ZipEntry">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getComment" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCompressedSize" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCrc" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getExtra" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMethod" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSize" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTime" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isDirectory" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setComment" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="string" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCompressedSize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCrc" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setExtra" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="data" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMethod" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSize" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTime" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="value" type="long">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="DEFLATED" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STORED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.InternalError" final="false" name="ZipError" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ZipError" static="false" type="java.util.zip.ZipError" visibility="public">
+<parameter name="s" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.io.IOException" final="false" name="ZipException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ZipException" static="false" type="java.util.zip.ZipException" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ZipException" static="false" type="java.util.zip.ZipException" visibility="public">
+<parameter name="detailMessage" type="java.lang.String">
+</parameter>
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ZipFile" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ZipFile" static="false" type="java.util.zip.ZipFile" visibility="public">
+<parameter name="file" type="java.io.File">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="ZipException" type="java.util.zip.ZipException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ZipFile" static="false" type="java.util.zip.ZipFile" visibility="public">
+<parameter name="file" type="java.io.File">
+</parameter>
+<parameter name="mode" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="ZipFile" static="false" type="java.util.zip.ZipFile" visibility="public">
+<parameter name="name" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="entries" native="false" return="java.util.Enumeration&lt;? extends java.util.zip.ZipEntry&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEntry" native="false" return="java.util.zip.ZipEntry" static="false" synchronized="false" visibility="public">
+<parameter name="entryName" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputStream" native="false" return="java.io.InputStream" static="false" synchronized="false" visibility="public">
+<parameter name="entry" type="java.util.zip.ZipEntry">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getName" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="size" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="OPEN_DELETE" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OPEN_READ" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.util.zip.InflaterInputStream" final="false" name="ZipInputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ZipInputStream" static="false" type="java.util.zip.ZipInputStream" visibility="public">
+<parameter name="stream" type="java.io.InputStream">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="closeEntry" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="createZipEntry" native="false" return="java.util.zip.ZipEntry" static="false" synchronized="false" visibility="protected">
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getNextEntry" native="false" return="java.util.zip.ZipEntry" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.util.zip.DeflaterOutputStream" final="false" name="ZipOutputStream" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="ZipOutputStream" static="false" type="java.util.zip.ZipOutputStream" visibility="public">
+<parameter name="p1" type="java.io.OutputStream">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="closeEntry" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="putNextEntry" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="ze" type="java.util.zip.ZipEntry">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setComment" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="comment" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLevel" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="level" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMethod" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="method" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="DEFLATED" static="true" transient="false" type="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STORED" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+</package></api>

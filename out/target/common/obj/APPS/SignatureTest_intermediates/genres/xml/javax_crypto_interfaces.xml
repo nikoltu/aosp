@@ -1,0 +1,38 @@
+<?xml version="1.0" ?><api><package name="javax.crypto.interfaces">
+<interface abstract="true" deprecated="not deprecated" final="false" name="DHKey" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getParams" native="false" return="javax.crypto.spec.DHParameterSpec" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DHPrivateKey" static="false" visibility="public">
+<implements name="javax.crypto.interfaces.DHKey">
+</implements>
+<implements name="java.security.PrivateKey">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getX" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="serialVersionUID" static="true" transient="false" type="long" value="2211791113380396553L" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DHPublicKey" static="false" visibility="public">
+<implements name="javax.crypto.interfaces.DHKey">
+</implements>
+<implements name="java.security.PublicKey">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getY" native="false" return="java.math.BigInteger" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="serialVersionUID" static="true" transient="false" type="long" value="-6628103563352519193L" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="PBEKey" static="false" visibility="public">
+<implements name="javax.crypto.SecretKey">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getIterationCount" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getPassword" native="false" return="char[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSalt" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="serialVersionUID" static="true" transient="false" type="long" value="-1430015993304333921L" visibility="public" volatile="false">
+</field>
+</interface>
+</package></api>

@@ -1,0 +1,204 @@
+<?xml version="1.0" ?><api><package name="org.apache.http.client.methods">
+<interface abstract="true" deprecated="not deprecated" final="false" name="AbortableHttpRequest" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="abort" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setConnectionRequest" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="connRequest" type="org.apache.http.conn.ClientConnectionRequest">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setReleaseTrigger" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="releaseTrigger" type="org.apache.http.conn.ConnectionReleaseTrigger">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.client.methods.HttpRequestBase" final="false" name="HttpDelete" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HttpDelete" static="false" type="org.apache.http.client.methods.HttpDelete" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpDelete" static="false" type="org.apache.http.client.methods.HttpDelete" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpDelete" static="false" type="org.apache.http.client.methods.HttpDelete" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMethod" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="METHOD_NAME" static="true" transient="false" type="java.lang.String" value="&quot;DELETE&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="org.apache.http.client.methods.HttpRequestBase" final="false" name="HttpEntityEnclosingRequestBase" static="false" visibility="public">
+<implements name="org.apache.http.HttpEntityEnclosingRequest">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="HttpEntityEnclosingRequestBase" static="false" type="org.apache.http.client.methods.HttpEntityEnclosingRequestBase" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="expectContinue" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getEntity" native="false" return="org.apache.http.HttpEntity" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setEntity" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="entity" type="org.apache.http.HttpEntity">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.client.methods.HttpRequestBase" final="false" name="HttpGet" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HttpGet" static="false" type="org.apache.http.client.methods.HttpGet" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpGet" static="false" type="org.apache.http.client.methods.HttpGet" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpGet" static="false" type="org.apache.http.client.methods.HttpGet" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMethod" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="METHOD_NAME" static="true" transient="false" type="java.lang.String" value="&quot;GET&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.client.methods.HttpRequestBase" final="false" name="HttpHead" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HttpHead" static="false" type="org.apache.http.client.methods.HttpHead" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpHead" static="false" type="org.apache.http.client.methods.HttpHead" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpHead" static="false" type="org.apache.http.client.methods.HttpHead" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMethod" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="METHOD_NAME" static="true" transient="false" type="java.lang.String" value="&quot;HEAD&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.client.methods.HttpRequestBase" final="false" name="HttpOptions" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HttpOptions" static="false" type="org.apache.http.client.methods.HttpOptions" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpOptions" static="false" type="org.apache.http.client.methods.HttpOptions" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpOptions" static="false" type="org.apache.http.client.methods.HttpOptions" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAllowedMethods" native="false" return="java.util.Set&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="response" type="org.apache.http.HttpResponse">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMethod" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="METHOD_NAME" static="true" transient="false" type="java.lang.String" value="&quot;OPTIONS&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.client.methods.HttpEntityEnclosingRequestBase" final="false" name="HttpPost" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HttpPost" static="false" type="org.apache.http.client.methods.HttpPost" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpPost" static="false" type="org.apache.http.client.methods.HttpPost" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpPost" static="false" type="org.apache.http.client.methods.HttpPost" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMethod" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="METHOD_NAME" static="true" transient="false" type="java.lang.String" value="&quot;POST&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.client.methods.HttpEntityEnclosingRequestBase" final="false" name="HttpPut" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HttpPut" static="false" type="org.apache.http.client.methods.HttpPut" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpPut" static="false" type="org.apache.http.client.methods.HttpPut" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpPut" static="false" type="org.apache.http.client.methods.HttpPut" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMethod" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="METHOD_NAME" static="true" transient="false" type="java.lang.String" value="&quot;PUT&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="org.apache.http.message.AbstractHttpMessage" final="false" name="HttpRequestBase" static="false" visibility="public">
+<implements name="org.apache.http.client.methods.AbortableHttpRequest">
+</implements>
+<implements name="java.lang.Cloneable">
+</implements>
+<implements name="org.apache.http.client.methods.HttpUriRequest">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="HttpRequestBase" static="false" type="org.apache.http.client.methods.HttpRequestBase" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="abort" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="clone" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<exception name="CloneNotSupportedException" type="java.lang.CloneNotSupportedException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getMethod" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProtocolVersion" native="false" return="org.apache.http.ProtocolVersion" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getRequestLine" native="false" return="org.apache.http.RequestLine" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getURI" native="false" return="java.net.URI" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isAborted" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setConnectionRequest" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="connRequest" type="org.apache.http.conn.ClientConnectionRequest">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setReleaseTrigger" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="releaseTrigger" type="org.apache.http.conn.ConnectionReleaseTrigger">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setURI" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.client.methods.HttpRequestBase" final="false" name="HttpTrace" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="HttpTrace" static="false" type="org.apache.http.client.methods.HttpTrace" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpTrace" static="false" type="org.apache.http.client.methods.HttpTrace" visibility="public">
+<parameter name="uri" type="java.net.URI">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="HttpTrace" static="false" type="org.apache.http.client.methods.HttpTrace" visibility="public">
+<parameter name="uri" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMethod" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="METHOD_NAME" static="true" transient="false" type="java.lang.String" value="&quot;TRACE&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="HttpUriRequest" static="false" visibility="public">
+<implements name="org.apache.http.HttpRequest">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="abort" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="UnsupportedOperationException" type="java.lang.UnsupportedOperationException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getMethod" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getURI" native="false" return="java.net.URI" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isAborted" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+</package></api>

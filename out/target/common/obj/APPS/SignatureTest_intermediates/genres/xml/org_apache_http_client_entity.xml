@@ -1,0 +1,18 @@
+<?xml version="1.0" ?><api><package name="org.apache.http.client.entity">
+<class abstract="false" deprecated="not deprecated" extends="org.apache.http.entity.StringEntity" final="false" name="UrlEncodedFormEntity" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="UrlEncodedFormEntity" static="false" type="org.apache.http.client.entity.UrlEncodedFormEntity" visibility="public">
+<parameter name="parameters" type="java.util.List&lt;? extends org.apache.http.NameValuePair&gt;">
+</parameter>
+<parameter name="encoding" type="java.lang.String">
+</parameter>
+<exception name="UnsupportedEncodingException" type="java.io.UnsupportedEncodingException">
+</exception>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="UrlEncodedFormEntity" static="false" type="org.apache.http.client.entity.UrlEncodedFormEntity" visibility="public">
+<parameter name="parameters" type="java.util.List&lt;? extends org.apache.http.NameValuePair&gt;">
+</parameter>
+<exception name="UnsupportedEncodingException" type="java.io.UnsupportedEncodingException">
+</exception>
+</constructor>
+</class>
+</package></api>

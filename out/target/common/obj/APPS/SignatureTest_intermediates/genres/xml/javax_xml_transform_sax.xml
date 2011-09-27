@@ -1,0 +1,146 @@
+<?xml version="1.0" ?><api><package name="javax.xml.transform.sax">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SAXResult" static="false" visibility="public">
+<implements name="javax.xml.transform.Result">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="SAXResult" static="false" type="javax.xml.transform.sax.SAXResult" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SAXResult" static="false" type="javax.xml.transform.sax.SAXResult" visibility="public">
+<parameter name="handler" type="org.xml.sax.ContentHandler">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getHandler" native="false" return="org.xml.sax.ContentHandler" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLexicalHandler" native="false" return="org.xml.sax.ext.LexicalHandler" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSystemId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setHandler" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="handler" type="org.xml.sax.ContentHandler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLexicalHandler" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="handler" type="org.xml.sax.ext.LexicalHandler">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSystemId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="FEATURE" static="true" transient="false" type="java.lang.String" value="&quot;http://javax.xml.transform.sax.SAXResult/feature&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="SAXSource" static="false" visibility="public">
+<implements name="javax.xml.transform.Source">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="SAXSource" static="false" type="javax.xml.transform.sax.SAXSource" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SAXSource" static="false" type="javax.xml.transform.sax.SAXSource" visibility="public">
+<parameter name="reader" type="org.xml.sax.XMLReader">
+</parameter>
+<parameter name="inputSource" type="org.xml.sax.InputSource">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="SAXSource" static="false" type="javax.xml.transform.sax.SAXSource" visibility="public">
+<parameter name="inputSource" type="org.xml.sax.InputSource">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInputSource" native="false" return="org.xml.sax.InputSource" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSystemId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getXMLReader" native="false" return="org.xml.sax.XMLReader" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setInputSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="inputSource" type="org.xml.sax.InputSource">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSystemId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="systemId" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setXMLReader" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="reader" type="org.xml.sax.XMLReader">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="sourceToInputSource" native="false" return="org.xml.sax.InputSource" static="true" synchronized="false" visibility="public">
+<parameter name="source" type="javax.xml.transform.Source">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="FEATURE" static="true" transient="false" type="java.lang.String" value="&quot;http://javax.xml.transform.sax.SAXSource/feature&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="javax.xml.transform.TransformerFactory" final="false" name="SAXTransformerFactory" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="SAXTransformerFactory" static="false" type="javax.xml.transform.sax.SAXTransformerFactory" visibility="protected">
+</constructor>
+<method abstract="true" deprecated="not deprecated" final="false" name="newTemplatesHandler" native="false" return="javax.xml.transform.sax.TemplatesHandler" static="false" synchronized="false" visibility="public">
+<exception name="TransformerConfigurationException" type="javax.xml.transform.TransformerConfigurationException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newTransformerHandler" native="false" return="javax.xml.transform.sax.TransformerHandler" static="false" synchronized="false" visibility="public">
+<parameter name="src" type="javax.xml.transform.Source">
+</parameter>
+<exception name="TransformerConfigurationException" type="javax.xml.transform.TransformerConfigurationException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newTransformerHandler" native="false" return="javax.xml.transform.sax.TransformerHandler" static="false" synchronized="false" visibility="public">
+<parameter name="templates" type="javax.xml.transform.Templates">
+</parameter>
+<exception name="TransformerConfigurationException" type="javax.xml.transform.TransformerConfigurationException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newTransformerHandler" native="false" return="javax.xml.transform.sax.TransformerHandler" static="false" synchronized="false" visibility="public">
+<exception name="TransformerConfigurationException" type="javax.xml.transform.TransformerConfigurationException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newXMLFilter" native="false" return="org.xml.sax.XMLFilter" static="false" synchronized="false" visibility="public">
+<parameter name="src" type="javax.xml.transform.Source">
+</parameter>
+<exception name="TransformerConfigurationException" type="javax.xml.transform.TransformerConfigurationException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="newXMLFilter" native="false" return="org.xml.sax.XMLFilter" static="false" synchronized="false" visibility="public">
+<parameter name="templates" type="javax.xml.transform.Templates">
+</parameter>
+<exception name="TransformerConfigurationException" type="javax.xml.transform.TransformerConfigurationException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="FEATURE" static="true" transient="false" type="java.lang.String" value="&quot;http://javax.xml.transform.sax.SAXTransformerFactory/feature&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FEATURE_XMLFILTER" static="true" transient="false" type="java.lang.String" value="&quot;http://javax.xml.transform.sax.SAXTransformerFactory/feature/xmlfilter&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="TemplatesHandler" static="false" visibility="public">
+<implements name="org.xml.sax.ContentHandler">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSystemId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTemplates" native="false" return="javax.xml.transform.Templates" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setSystemId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="systemID" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="TransformerHandler" static="false" visibility="public">
+<implements name="org.xml.sax.ContentHandler">
+</implements>
+<implements name="org.xml.sax.DTDHandler">
+</implements>
+<implements name="org.xml.sax.ext.LexicalHandler">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSystemId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTransformer" native="false" return="javax.xml.transform.Transformer" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setResult" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="result" type="javax.xml.transform.Result">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setSystemId" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="systemID" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+</package></api>

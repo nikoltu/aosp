@@ -1,0 +1,526 @@
+<?xml version="1.0" ?><api><package name="android.drm">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DrmConvertedStatus" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DrmConvertedStatus" static="false" type="android.drm.DrmConvertedStatus" visibility="public">
+<parameter name="_statusCode" type="int">
+</parameter>
+<parameter name="_convertedData" type="byte[]">
+</parameter>
+<parameter name="_offset" type="int">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="true" name="STATUS_ERROR" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATUS_INPUTDATA_ERROR" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATUS_OK" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="convertedData" static="false" transient="false" type="byte[]" value="null" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="offset" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="statusCode" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.drm.DrmEvent" final="false" name="DrmErrorEvent" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DrmErrorEvent" static="false" type="android.drm.DrmErrorEvent" visibility="public">
+<parameter name="uniqueId" type="int">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="true" name="TYPE_NOT_SUPPORTED" static="true" transient="false" type="int" value="2003" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_NO_INTERNET_CONNECTION" static="true" transient="false" type="int" value="2005" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_OUT_OF_MEMORY" static="true" transient="false" type="int" value="2004" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_PROCESS_DRM_INFO_FAILED" static="true" transient="false" type="int" value="2006" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_REMOVE_ALL_RIGHTS_FAILED" static="true" transient="false" type="int" value="2007" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_RIGHTS_NOT_INSTALLED" static="true" transient="false" type="int" value="2001" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_RIGHTS_RENEWAL_NOT_ALLOWED" static="true" transient="false" type="int" value="2002" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DrmEvent" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DrmEvent" static="false" type="android.drm.DrmEvent" visibility="protected">
+<parameter name="uniqueId" type="int">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMessage" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getUniqueId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="DRM_INFO_STATUS_OBJECT" static="true" transient="false" type="java.lang.String" value="&quot;drm_info_status_object&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_ALL_RIGHTS_REMOVED" static="true" transient="false" type="int" value="1001" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_DRM_INFO_PROCESSED" static="true" transient="false" type="int" value="1002" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DrmInfo" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DrmInfo" static="false" type="android.drm.DrmInfo" visibility="public">
+<parameter name="infoType" type="int">
+</parameter>
+<parameter name="data" type="byte[]">
+</parameter>
+<parameter name="mimeType" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DrmInfo" static="false" type="android.drm.DrmInfo" visibility="public">
+<parameter name="infoType" type="int">
+</parameter>
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="mimeType" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getData" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInfoType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMimeType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="iterator" native="false" return="java.util.Iterator&lt;java.lang.Object&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="keyIterator" native="false" return="java.util.Iterator&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="put" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.drm.DrmEvent" final="false" name="DrmInfoEvent" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DrmInfoEvent" static="false" type="android.drm.DrmInfoEvent" visibility="public">
+<parameter name="uniqueId" type="int">
+</parameter>
+<parameter name="type" type="int">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="true" name="TYPE_ACCOUNT_ALREADY_REGISTERED" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_ALREADY_REGISTERED_BY_ANOTHER_ACCOUNT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_REMOVE_RIGHTS" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_RIGHTS_INSTALLED" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_WAIT_FOR_RIGHTS" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DrmInfoRequest" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DrmInfoRequest" static="false" type="android.drm.DrmInfoRequest" visibility="public">
+<parameter name="infoType" type="int">
+</parameter>
+<parameter name="mimeType" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="java.lang.Object" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInfoType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMimeType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="iterator" native="false" return="java.util.Iterator&lt;java.lang.Object&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="keyIterator" native="false" return="java.util.Iterator&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="put" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.Object">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ACCOUNT_ID" static="true" transient="false" type="java.lang.String" value="&quot;account_id&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SUBSCRIPTION_ID" static="true" transient="false" type="java.lang.String" value="&quot;subscription_id&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_REGISTRATION_INFO" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_RIGHTS_ACQUISITION_INFO" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_RIGHTS_ACQUISITION_PROGRESS_INFO" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TYPE_UNREGISTRATION_INFO" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DrmInfoStatus" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DrmInfoStatus" static="false" type="android.drm.DrmInfoStatus" visibility="public">
+<parameter name="_statusCode" type="int">
+</parameter>
+<parameter name="_infoType" type="int">
+</parameter>
+<parameter name="_data" type="android.drm.ProcessedData">
+</parameter>
+<parameter name="_mimeType" type="java.lang.String">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="true" name="STATUS_ERROR" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STATUS_OK" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="data" static="false" transient="false" type="android.drm.ProcessedData" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="infoType" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="mimeType" static="false" transient="false" type="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="statusCode" static="false" transient="false" type="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DrmManagerClient" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DrmManagerClient" static="false" type="android.drm.DrmManagerClient" visibility="public">
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="acquireDrmInfo" native="false" return="android.drm.DrmInfo" static="false" synchronized="false" visibility="public">
+<parameter name="drmInfoRequest" type="android.drm.DrmInfoRequest">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="acquireRights" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="drmInfoRequest" type="android.drm.DrmInfoRequest">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="canHandle" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="mimeType" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="canHandle" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+<parameter name="mimeType" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="checkRightsStatus" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="checkRightsStatus" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="checkRightsStatus" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="action" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="checkRightsStatus" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+<parameter name="action" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="closeConvertSession" native="false" return="android.drm.DrmConvertedStatus" static="false" synchronized="false" visibility="public">
+<parameter name="convertId" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="convertData" native="false" return="android.drm.DrmConvertedStatus" static="false" synchronized="false" visibility="public">
+<parameter name="convertId" type="int">
+</parameter>
+<parameter name="inputData" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAvailableDrmEngines" native="false" return="java.lang.String[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getConstraints" native="false" return="android.content.ContentValues" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="action" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getConstraints" native="false" return="android.content.ContentValues" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+<parameter name="action" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDrmObjectType" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+<parameter name="mimeType" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDrmObjectType" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+<parameter name="mimeType" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMetadata" native="false" return="android.content.ContentValues" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMetadata" native="false" return="android.content.ContentValues" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOriginalMimeType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getOriginalMimeType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="openConvertSession" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="mimeType" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="processDrmInfo" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="drmInfo" type="android.drm.DrmInfo">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeAllRights" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeRights" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="path" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeRights" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="uri" type="android.net.Uri">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="saveRights" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="drmRights" type="android.drm.DrmRights">
+</parameter>
+<parameter name="rightsPath" type="java.lang.String">
+</parameter>
+<parameter name="contentPath" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnErrorListener" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="errorListener" type="android.drm.DrmManagerClient.OnErrorListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnEventListener" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="eventListener" type="android.drm.DrmManagerClient.OnEventListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnInfoListener" native="false" return="void" static="false" synchronized="true" visibility="public">
+<parameter name="infoListener" type="android.drm.DrmManagerClient.OnInfoListener">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ERROR_NONE" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ERROR_UNKNOWN" static="true" transient="false" type="int" value="-2000" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DrmManagerClient.OnErrorListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onError" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="client" type="android.drm.DrmManagerClient">
+</parameter>
+<parameter name="event" type="android.drm.DrmErrorEvent">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DrmManagerClient.OnEventListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onEvent" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="client" type="android.drm.DrmManagerClient">
+</parameter>
+<parameter name="event" type="android.drm.DrmEvent">
+</parameter>
+<parameter name="attributes" type="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DrmManagerClient.OnInfoListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onInfo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="client" type="android.drm.DrmManagerClient">
+</parameter>
+<parameter name="event" type="android.drm.DrmInfoEvent">
+</parameter>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DrmRights" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DrmRights" static="false" type="android.drm.DrmRights" visibility="public">
+<parameter name="rightsFilePath" type="java.lang.String">
+</parameter>
+<parameter name="mimeType" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DrmRights" static="false" type="android.drm.DrmRights" visibility="public">
+<parameter name="rightsFilePath" type="java.lang.String">
+</parameter>
+<parameter name="mimeType" type="java.lang.String">
+</parameter>
+<parameter name="accountId" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DrmRights" static="false" type="android.drm.DrmRights" visibility="public">
+<parameter name="rightsFilePath" type="java.lang.String">
+</parameter>
+<parameter name="mimeType" type="java.lang.String">
+</parameter>
+<parameter name="accountId" type="java.lang.String">
+</parameter>
+<parameter name="subscriptionId" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DrmRights" static="false" type="android.drm.DrmRights" visibility="public">
+<parameter name="rightsFile" type="java.io.File">
+</parameter>
+<parameter name="mimeType" type="java.lang.String">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="DrmRights" static="false" type="android.drm.DrmRights" visibility="public">
+<parameter name="data" type="android.drm.ProcessedData">
+</parameter>
+<parameter name="mimeType" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAccountId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getData" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMimeType" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSubscriptionId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DrmStore" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DrmStore" static="false" type="android.drm.DrmStore" visibility="public">
+</constructor>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DrmStore.Action" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DrmStore.Action" static="false" type="android.drm.DrmStore.Action" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="DEFAULT" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DISPLAY" static="true" transient="false" type="int" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EXECUTE" static="true" transient="false" type="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OUTPUT" static="true" transient="false" type="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PLAY" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PREVIEW" static="true" transient="false" type="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RINGTONE" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TRANSFER" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="DrmStore.ConstraintsColumns" static="true" visibility="public">
+<field deprecated="not deprecated" final="true" name="EXTENDED_METADATA" static="true" transient="false" type="java.lang.String" value="&quot;extended_metadata&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LICENSE_AVAILABLE_TIME" static="true" transient="false" type="java.lang.String" value="&quot;license_available_time&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LICENSE_EXPIRY_TIME" static="true" transient="false" type="java.lang.String" value="&quot;license_expiry_time&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="LICENSE_START_TIME" static="true" transient="false" type="java.lang.String" value="&quot;license_start_time&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MAX_REPEAT_COUNT" static="true" transient="false" type="java.lang.String" value="&quot;max_repeat_count&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REMAINING_REPEAT_COUNT" static="true" transient="false" type="java.lang.String" value="&quot;remaining_repeat_count&quot;" visibility="public" volatile="false">
+</field>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DrmStore.DrmObjectType" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DrmStore.DrmObjectType" static="false" type="android.drm.DrmStore.DrmObjectType" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="CONTENT" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RIGHTS_OBJECT" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="TRIGGER_OBJECT" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNKNOWN" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DrmStore.Playback" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DrmStore.Playback" static="false" type="android.drm.DrmStore.Playback" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="PAUSE" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RESUME" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="START" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="STOP" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DrmStore.RightsStatus" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DrmStore.RightsStatus" static="false" type="android.drm.DrmStore.RightsStatus" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="RIGHTS_EXPIRED" static="true" transient="false" type="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RIGHTS_INVALID" static="true" transient="false" type="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RIGHTS_NOT_ACQUIRED" static="true" transient="false" type="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RIGHTS_VALID" static="true" transient="false" type="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DrmSupportInfo" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DrmSupportInfo" static="false" type="android.drm.DrmSupportInfo" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addFileSuffix" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="fileSuffix" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="addMimeType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="mimeType" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDescriprition" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFileSuffixIterator" native="false" return="java.util.Iterator&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMimeTypeIterator" native="false" return="java.util.Iterator&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDescription" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="description" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DrmUtils" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DrmUtils" static="false" type="android.drm.DrmUtils" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getExtendedMetadataParser" native="false" return="android.drm.DrmUtils.ExtendedMetadataParser" static="true" synchronized="false" visibility="public">
+<parameter name="extendedMetadata" type="byte[]">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="DrmUtils.ExtendedMetadataParser" static="true" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="get" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="iterator" native="false" return="java.util.Iterator&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="keyIterator" native="false" return="java.util.Iterator&lt;java.lang.String&gt;" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" final="false" name="ProcessedData" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="getAccountId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getData" native="false" return="byte[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSubscriptionId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+</package></api>
